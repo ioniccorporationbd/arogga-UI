@@ -666,7 +666,7 @@ export default function CategoryNav() {
 
         .category-navbar-current-text small {
           color: var(--category-muted);
-          font-size: 9px;
+          font-size: 12px;
           font-weight: 650;
           line-height: 1.3;
           text-transform: uppercase;
@@ -677,7 +677,7 @@ export default function CategoryNav() {
           max-width: 122px;
           overflow: hidden;
           color: #101828;
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 750;
           line-height: 1.35;
           text-overflow: ellipsis;
@@ -807,7 +807,7 @@ export default function CategoryNav() {
           border-radius: 999px;
           color: #92570d;
           background: rgba(255, 255, 255, 0.78);
-          font-size: 7px;
+          font-size: 12px;
           font-weight: 800;
           line-height: 1;
           text-transform: uppercase;
@@ -981,7 +981,7 @@ export default function CategoryNav() {
 
           .category-navbar-link {
             padding: 0 13px;
-            font-size: 11px;
+            font-size: 12px;
           }
         }
 
@@ -1013,7 +1013,7 @@ export default function CategoryNav() {
             padding: 0 13px;
             border-color: rgba(15, 23, 42, 0.07);
             background: #f8faf9;
-            font-size: 11px;
+            font-size: 12px;
           }
 
           .category-navbar-link.is-active {

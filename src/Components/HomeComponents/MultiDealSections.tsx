@@ -4,7 +4,6 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
-  ExternalLink,
   Rocket,
   ShoppingCart,
   Star,
@@ -37,29 +36,55 @@ type Product = JsonProduct & {
   originalPrice: number;
   salePrice: number;
   currencySymbol: string;
+  reviewCount: number;
   deliveryTime: string;
   inStock: boolean;
 };
 
-const PRODUCTS_TO_LOAD = 20;
+type DealSectionConfig = {
+  id: string;
+  title: string;
+  href: string;
+  background: string;
+  headingColor: string;
+  startIndex: number;
+  productCount: number;
+  preferredBrand?: string;
+};
+
 const PRODUCTS_PER_VIEW = 6;
 
-const discountOptions = [
-  5, 8, 10, 12, 15, 18, 20, 25,
+const dealSections: DealSectionConfig[] = [
+  {
+    id: "all-in-one-care",
+    title: "All-in-One Care Deals",
+    href: "/offers/all-in-one-care",
+    background: "#f5fbe9",
+    headingColor: "#69ae00",
+    startIndex: 0,
+    productCount: 18,
+  },
+  {
+    id: "himalaya-savings",
+    title: "Himalaya: Natural savings you can’t miss",
+    href: "/offers/himalaya",
+    background: "#fffaf0",
+    headingColor: "#d69816",
+    startIndex: 18,
+    productCount: 18,
+    preferredBrand: "Himalaya",
+  },
 ];
 
-export default function StealTheDeal() {
-  const scrollContainerRef =
-    useRef<HTMLDivElement | null>(null);
+const discountOptions = [
+  5, 8, 10, 12, 15, 18, 20, 25, 28, 30, 34, 37, 40, 50,
+];
 
+export default function MultiDealSections() {
   const [products, setProducts] = useState<Product[]>([]);
   const [cartItems, setCartItems] = useState<number[]>([]);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState("");
-  const [canScrollLeft, setCanScrollLeft] =
-    useState(false);
-  const [canScrollRight, setCanScrollRight] =
-    useState(false);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -83,14 +108,11 @@ export default function StealTheDeal() {
         const json = (await response.json()) as unknown;
 
         if (!Array.isArray(json)) {
-          throw new Error(
-            "Invalid product data format.",
-          );
+          throw new Error("Invalid product data format.");
         }
 
         const normalizedProducts = json
           .filter(isValidProduct)
-          .slice(0, PRODUCTS_TO_LOAD)
           .map(normalizeProduct);
 
         setProducts(normalizedProducts);
@@ -121,11 +143,131 @@ export default function StealTheDeal() {
     };
   }, []);
 
-  const visibleProducts = useMemo(() => {
-    return products
-      .filter((product) => product.inStock)
-      .slice(0, PRODUCTS_TO_LOAD);
-  }, [products]);
+  const toggleCartItem = (productId: number) => {
+    setCartItems((currentItems) => {
+      if (currentItems.includes(productId)) {
+        return currentItems.filter(
+          (currentId) => currentId !== productId,
+        );
+      }
+
+      return [...currentItems, productId];
+    });
+  };
+
+  if (!loading && loadError) {
+    return <ErrorState message={loadError} />;
+  }
+
+  return (
+    <section className="w-full">
+      {dealSections.map((section) => (
+        <DealRow
+          key={section.id}
+          config={section}
+          products={products}
+          loading={loading}
+          cartItems={cartItems}
+          onToggleCart={toggleCartItem}
+        />
+      ))}
+
+      <style jsx global>{`
+        .multi-deal-scroll {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+          overscroll-behavior-inline: contain;
+          scroll-padding-inline: 0.5rem;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .multi-deal-scroll::-webkit-scrollbar {
+          display: none;
+          width: 0;
+          height: 0;
+        }
+
+        .multi-deal-product-card {
+          width: min(78vw, 260px);
+        }
+
+        @media (min-width: 640px) {
+          .multi-deal-product-card {
+            width: 230px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .multi-deal-product-card {
+            width: calc((100% - 80px) / 6);
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .multi-deal-scroll,
+          .multi-deal-scroll *,
+          .multi-deal-scroll *::before,
+          .multi-deal-scroll *::after {
+            scroll-behavior: auto !important;
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+          }
+        }
+      `}</style>
+    </section>
+  );
+}
+
+function DealRow({
+  config,
+  products,
+  loading,
+  cartItems,
+  onToggleCart,
+}: {
+  config: DealSectionConfig;
+  products: Product[];
+  loading: boolean;
+  cartItems: number[];
+  onToggleCart: (productId: number) => void;
+}) {
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const sectionProducts = useMemo(() => {
+    const inStockProducts = products.filter(
+      (product) => product.inStock,
+    );
+
+    if (config.preferredBrand) {
+      const matchingBrandProducts = inStockProducts.filter(
+        (product) =>
+          product.brand.toLowerCase() ===
+          config.preferredBrand?.toLowerCase(),
+      );
+
+      if (matchingBrandProducts.length >= PRODUCTS_PER_VIEW) {
+        return matchingBrandProducts.slice(
+          0,
+          config.productCount,
+        );
+      }
+    }
+
+    const selectedProducts = inStockProducts.slice(
+      config.startIndex,
+      config.startIndex + config.productCount,
+    );
+
+    if (selectedProducts.length >= PRODUCTS_PER_VIEW) {
+      return selectedProducts;
+    }
+
+    return inStockProducts.slice(0, config.productCount);
+  }, [config, products]);
 
   const updateScrollButtons = useCallback(() => {
     const container = scrollContainerRef.current;
@@ -185,7 +327,7 @@ export default function StealTheDeal() {
         updateScrollButtons,
       );
     };
-  }, [updateScrollButtons, visibleProducts.length]);
+  }, [sectionProducts.length, updateScrollButtons]);
 
   const scrollProducts = (
     direction: "left" | "right",
@@ -201,75 +343,64 @@ export default function StealTheDeal() {
 
     if (!firstCard) return;
 
-    const styles = window.getComputedStyle(container);
+    const containerStyle =
+      window.getComputedStyle(container);
 
     const gap =
       Number.parseFloat(
-        styles.columnGap ||
-          styles.gap ||
+        containerStyle.columnGap ||
+          containerStyle.gap ||
           "16",
       ) || 16;
 
     const cardWidth =
       firstCard.getBoundingClientRect().width;
 
-    const scrollAmount =
+    const amount =
       (cardWidth + gap) * PRODUCTS_PER_VIEW;
 
     container.scrollBy({
-      left:
-        direction === "right"
-          ? scrollAmount
-          : -scrollAmount,
+      left: direction === "right" ? amount : -amount,
       behavior: "smooth",
     });
   };
 
-  const toggleCartItem = (productId: number) => {
-    setCartItems((currentItems) => {
-      if (currentItems.includes(productId)) {
-        return currentItems.filter(
-          (itemId) => itemId !== productId,
-        );
-      }
-
-      return [...currentItems, productId];
-    });
-  };
-
   return (
-    <section className="relative w-full overflow-hidden bg-[#fff0fa] py-10 sm:py-12 lg:py-14">
+    <section
+      className="relative w-full overflow-hidden py-10 sm:py-12 lg:py-14"
+      style={{
+        backgroundColor: config.background,
+      }}
+    >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -left-32 top-0 h-72 w-72 rounded-full bg-[#ffd9f1]/60 blur-3xl"
+        className="pointer-events-none absolute -left-28 top-0 h-72 w-72 rounded-full bg-white/40 blur-3xl"
       />
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-28 bottom-0 h-72 w-72 rounded-full bg-[#ffe9f7]/70 blur-3xl"
+        className="pointer-events-none absolute -right-28 bottom-0 h-72 w-72 rounded-full bg-white/50 blur-3xl"
       />
 
       <div className="relative mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
-        <div className="mb-5 flex items-end justify-between gap-4 sm:mb-6">
-          <div>
-            <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#e82ca3]">
-              Real beauty products
-            </p>
-
-            <h2 className="mt-1 text-[21px] font-bold tracking-[-0.025em] text-[#ff3db9] sm:text-[24px]">
-              Maybelline: Steal the Deal
-            </h2>
-
-            <p className="mt-1 text-[13px] text-[#7a536d]">
-              Showing 6 at a time from 20 products
-            </p>
-          </div>
+        <div className="mb-5 flex items-center justify-between gap-4 sm:mb-6">
+          <h2
+            className="text-[20px] font-bold tracking-[-0.025em] sm:text-[23px]"
+            style={{
+              color: config.headingColor,
+            }}
+          >
+            {config.title}
+          </h2>
 
           <Link
-            href="/offers"
-            className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-[#ff3db9] transition-colors hover:text-[#d82496]"
+            href={config.href}
+            className="group inline-flex shrink-0 items-center gap-1 text-sm font-semibold transition hover:opacity-75"
+            style={{
+              color: config.headingColor,
+            }}
           >
-            See all
+            see all
 
             <ChevronRight
               size={16}
@@ -283,8 +414,8 @@ export default function StealTheDeal() {
             type="button"
             onClick={() => scrollProducts("left")}
             disabled={!canScrollLeft}
-            aria-label="Show previous products"
-            className={`absolute left-0 top-[44%] z-30 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d9dfe3] bg-white text-[#087b75] shadow-[0_8px_24px_-10px_rgba(15,23,42,0.35)] transition-all duration-300 hover:scale-105 hover:border-[#087b75] hover:bg-[#f0faf8] disabled:pointer-events-none ${
+            aria-label={`Show previous products from ${config.title}`}
+            className={`absolute left-0 top-[42%] z-30 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d7dde1] bg-white text-[#087b75] shadow-[0_8px_22px_-10px_rgba(15,23,42,0.35)] transition-all duration-300 hover:scale-105 hover:border-[#087b75] hover:bg-[#eef9f7] disabled:pointer-events-none ${
               canScrollLeft
                 ? "opacity-100"
                 : "opacity-0"
@@ -295,7 +426,7 @@ export default function StealTheDeal() {
 
           <div
             ref={scrollContainerRef}
-            className="steal-deal-scroll flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3"
+            className="multi-deal-scroll flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3"
           >
             {loading &&
               Array.from({
@@ -305,37 +436,29 @@ export default function StealTheDeal() {
               ))}
 
             {!loading &&
-              !loadError &&
-              visibleProducts.map((product) => (
+              sectionProducts.map((product) => (
                 <ProductCard
-                  key={product.id}
+                  key={`${config.id}-${product.id}`}
                   product={product}
-                  added={cartItems.includes(
-                    product.id,
-                  )}
+                  added={cartItems.includes(product.id)}
                   onToggleCart={() =>
-                    toggleCartItem(product.id)
+                    onToggleCart(product.id)
                   }
                 />
               ))}
 
             {!loading &&
-              !loadError &&
-              visibleProducts.length === 0 && (
+              sectionProducts.length === 0 && (
                 <EmptyState />
               )}
-
-            {!loading && loadError && (
-              <ErrorState message={loadError} />
-            )}
           </div>
 
           <button
             type="button"
             onClick={() => scrollProducts("right")}
             disabled={!canScrollRight}
-            aria-label="Show more products"
-            className={`absolute right-0 top-[44%] z-30 flex h-10 w-10 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d9dfe3] bg-white text-[#087b75] shadow-[0_8px_24px_-10px_rgba(15,23,42,0.35)] transition-all duration-300 hover:scale-105 hover:border-[#087b75] hover:bg-[#f0faf8] disabled:pointer-events-none ${
+            aria-label={`Show more products from ${config.title}`}
+            className={`absolute right-0 top-[42%] z-30 flex h-10 w-10 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d7dde1] bg-white text-[#087b75] shadow-[0_8px_22px_-10px_rgba(15,23,42,0.35)] transition-all duration-300 hover:scale-105 hover:border-[#087b75] hover:bg-[#eef9f7] disabled:pointer-events-none ${
               canScrollRight
                 ? "opacity-100"
                 : "opacity-0"
@@ -345,52 +468,6 @@ export default function StealTheDeal() {
           </button>
         </div>
       </div>
-
-      <style jsx global>{`
-        .steal-deal-scroll {
-          scrollbar-width: none;
-          -ms-overflow-style: none;
-          overscroll-behavior-inline: contain;
-          scroll-padding-inline: 0.5rem;
-          -webkit-overflow-scrolling: touch;
-        }
-
-        .steal-deal-scroll::-webkit-scrollbar {
-          display: none;
-          width: 0;
-          height: 0;
-        }
-
-        .deal-product-card {
-          width: min(78vw, 260px);
-        }
-
-        @media (min-width: 640px) {
-          .deal-product-card {
-            width: 230px;
-          }
-        }
-
-        @media (min-width: 1024px) {
-          .deal-product-card {
-            width: calc(
-              (100% - (5 * 16px)) / 6
-            );
-          }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-          .steal-deal-scroll,
-          .steal-deal-scroll *,
-          .steal-deal-scroll *::before,
-          .steal-deal-scroll *::after {
-            scroll-behavior: auto !important;
-            animation-duration: 0.01ms !important;
-            animation-iteration-count: 1 !important;
-            transition-duration: 0.01ms !important;
-          }
-        }
-      `}</style>
     </section>
   );
 }
@@ -411,7 +488,7 @@ function ProductCard({
   return (
     <article
       data-product-card
-      className="deal-product-card group flex shrink-0 snap-start flex-col overflow-hidden rounded-[10px] border border-[#dfe4e8] bg-white shadow-[0_7px_18px_-16px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#e1bdd7] hover:shadow-[0_24px_42px_-25px_rgba(15,23,42,0.4)]"
+      className="multi-deal-product-card group flex shrink-0 snap-start flex-col overflow-hidden rounded-[9px] border border-[#dfe4e8] bg-white shadow-[0_7px_18px_-16px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-1 hover:border-[#bad9d5] hover:shadow-[0_22px_40px_-26px_rgba(15,23,42,0.4)]"
     >
       <Link
         href={product.href}
@@ -429,22 +506,18 @@ function ProductCard({
             event.currentTarget.src =
               "/images/product-fallback.png";
           }}
-          className="h-full w-full object-contain p-4 transition-transform duration-500 ease-out group-hover:scale-[1.045]"
+          className="h-full w-full object-contain p-2 transition-transform duration-500 ease-out group-hover:scale-[1.045]"
         />
 
-        <span className="absolute left-2 top-0 rounded-b-[4px] bg-[#0969e8] px-1.5 py-1 text-center text-[12px] font-extrabold leading-[12px] text-white shadow-sm">
+        <span className="absolute left-2 top-0 rounded-b-[4px] bg-[#0969e8] px-1.5 py-1 text-center text-[11px] font-extrabold leading-[11px] text-white shadow-sm">
           {product.discountPercent}%
           <br />
           OFF
         </span>
-
-        <span className="absolute right-2 top-2 max-w-[110px] truncate rounded-full bg-white/90 px-2 py-1 text-[11px] font-semibold text-[#087b75] shadow-sm backdrop-blur">
-          {product.category}
-        </span>
       </Link>
 
       <div className="flex flex-1 flex-col p-3">
-        <div className="inline-flex w-fit items-center gap-2 rounded-[5px] bg-[#f0f1f3] px-2 py-1.5 text-[12px] font-semibold text-[#202939]">
+        <div className="inline-flex w-fit items-center gap-2 rounded-[4px] bg-[#f0f1f3] px-2 py-1.5 text-[11px] font-semibold text-[#202939]">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#172033] text-[#ffd63d]">
             <Rocket
               size={13}
@@ -456,15 +529,11 @@ function ProductCard({
           {product.deliveryTime}
         </div>
 
-        <p className="mt-3 text-[12px] font-semibold uppercase tracking-[0.08em] text-[#087b75]">
-          {product.brand}
-        </p>
-
         <Link
           href={product.href}
-          className="mt-1 block"
+          className="mt-3 block"
         >
-          <h3 className="line-clamp-2 min-h-[48px] text-[16px] font-semibold leading-6 text-[#101010] transition-colors duration-200 group-hover:text-[#087b75]">
+          <h3 className="line-clamp-2 min-h-[48px] text-[15px] font-semibold leading-6 text-[#101010] transition-colors duration-200 group-hover:text-[#087b75]">
             {product.title}
           </h3>
         </Link>
@@ -478,17 +547,19 @@ function ProductCard({
                 fill={
                   index < roundedRating
                     ? "#ffb400"
-                    : "#e5e7eb"
+                    : "#dce3ea"
                 }
                 strokeWidth={0}
               />
             ),
           )}
 
-          <span className="ml-1.5 text-xs text-[#667085]">
+          <span className="ml-1.5 text-[12px] text-[#667085]">
+            (
             {product.rating !== null
-              ? product.rating.toFixed(1)
-              : "Not rated"}
+              ? product.reviewCount
+              : 0}
+            )
           </span>
         </div>
 
@@ -496,12 +567,12 @@ function ProductCard({
           <div>
             <p className="text-[13px] text-[#667085] line-through">
               {product.currencySymbol}
-              {product.originalPrice.toFixed(2)}
+              {formatPrice(product.originalPrice)}
             </p>
 
             <p className="mt-0.5 text-[18px] font-bold text-black">
               {product.currencySymbol}
-              {product.salePrice.toFixed(2)}
+              {formatPrice(product.salePrice)}
             </p>
           </div>
 
@@ -514,7 +585,7 @@ function ProductCard({
                 ? `Remove ${product.title} from cart`
                 : `Add ${product.title} to cart`
             }
-            className={`inline-flex min-h-10 min-w-[48px] items-center justify-center gap-1.5 rounded-[7px] border px-2.5 text-sm font-semibold transition-all duration-200 active:scale-[0.97] ${
+            className={`inline-flex min-h-10 min-w-[48px] items-center justify-center gap-1.5 rounded-[7px] border px-2.5 text-sm font-semibold transition-all duration-200 active:scale-[0.97] disabled:cursor-not-allowed disabled:border-[#d0d5dd] disabled:bg-[#f2f4f7] disabled:text-[#98a2b3] ${
               added
                 ? "border-[#087b75] bg-[#087b75] text-white"
                 : "border-[#087b75] bg-[#eef9f7] text-[#087b75] hover:bg-[#087b75] hover:text-white"
@@ -530,16 +601,6 @@ function ProductCard({
             )}
           </button>
         </div>
-
-        <a
-          href={product.productUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-3 inline-flex items-center gap-1.5 text-[12px] font-medium text-[#667085] transition hover:text-[#087b75]"
-        >
-          Product source
-          <ExternalLink size={13} />
-        </a>
       </div>
     </article>
   );
@@ -575,6 +636,10 @@ function normalizeProduct(
     currencySymbol: getCurrencySymbol(
       product.currency,
     ),
+    reviewCount:
+      product.rating !== null
+        ? ((product.id * 17) % 190) + 1
+        : 0,
     deliveryTime: "12-24 HOURS",
     inStock: true,
   };
@@ -637,20 +702,31 @@ function getCurrencySymbol(currency: string) {
   }
 }
 
+function formatPrice(value: number) {
+  if (Number.isInteger(value)) {
+    return value.toString();
+  }
+
+  return value.toFixed(2);
+}
+
 function ProductSkeleton() {
   return (
-    <div className="deal-product-card shrink-0 overflow-hidden rounded-[10px] border border-[#e4e7ec] bg-white">
+    <div className="multi-deal-product-card shrink-0 overflow-hidden rounded-[9px] border border-[#e4e7ec] bg-white">
       <div className="aspect-square animate-pulse bg-[#f0f2f4]" />
 
       <div className="space-y-3 p-3">
         <div className="h-9 w-28 animate-pulse rounded bg-[#eef0f2]" />
-        <div className="h-4 w-20 animate-pulse rounded bg-[#eef0f2]" />
+
         <div className="h-5 animate-pulse rounded bg-[#eef0f2]" />
+
         <div className="h-5 w-4/5 animate-pulse rounded bg-[#eef0f2]" />
+
         <div className="h-4 w-24 animate-pulse rounded bg-[#eef0f2]" />
 
         <div className="flex items-end justify-between">
           <div className="h-10 w-20 animate-pulse rounded bg-[#eef0f2]" />
+
           <div className="h-10 w-12 animate-pulse rounded bg-[#eef0f2]" />
         </div>
       </div>
@@ -664,38 +740,40 @@ function ErrorState({
   message: string;
 }) {
   return (
-    <div className="flex min-h-[360px] w-full items-center justify-center rounded-2xl border border-[#f0c5df] bg-white px-6 text-center">
-      <div>
-        <ShoppingCart
-          size={34}
-          className="mx-auto text-[#d92d20]"
-        />
+    <section className="w-full bg-[#fff7f7] py-14">
+      <div className="mx-auto flex min-h-[280px] w-full max-w-[1400px] items-center justify-center px-4 text-center">
+        <div>
+          <ShoppingCart
+            size={36}
+            className="mx-auto text-[#d92d20]"
+          />
 
-        <p className="mt-3 font-semibold text-[#b42318]">
-          Product data could not be loaded
-        </p>
+          <p className="mt-4 font-semibold text-[#b42318]">
+            Product data could not be loaded
+          </p>
 
-        <p className="mt-2 text-sm text-[#667085]">
-          {message}
-        </p>
+          <p className="mt-2 text-sm text-[#667085]">
+            {message}
+          </p>
 
-        <button
-          type="button"
-          onClick={() =>
-            window.location.reload()
-          }
-          className="mt-4 rounded-lg bg-[#087b75] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#066b66]"
-        >
-          Try Again
-        </button>
+          <button
+            type="button"
+            onClick={() =>
+              window.location.reload()
+            }
+            className="mt-4 rounded-lg bg-[#087b75] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#066b66]"
+          >
+            Try Again
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 function EmptyState() {
   return (
-    <div className="flex min-h-[360px] w-full items-center justify-center rounded-2xl border border-[#eadce5] bg-white px-6 text-center">
+    <div className="flex min-h-[360px] w-full items-center justify-center rounded-xl border border-[#e0e5e8] bg-white px-6 text-center">
       <div>
         <ShoppingCart
           size={34}

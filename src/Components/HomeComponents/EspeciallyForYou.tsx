@@ -203,7 +203,7 @@ export default function EspeciallyForYou() {
 
           <div className="-mx-4 px-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0">
             <div
-              className="
+              className={`
                 offer-scroll-local
                 flex snap-x snap-mandatory items-stretch gap-[10px]
                 overflow-x-auto overflow-y-visible px-[10px] pb-12 pt-6
@@ -216,7 +216,7 @@ export default function EspeciallyForYou() {
                 lg:pt-7
 
                 xl:grid-cols-6
-              "
+              `}
             >
               {cards.map((card, index) => (
                 <div
@@ -257,7 +257,7 @@ export default function EspeciallyForYou() {
           >
             <Link
               href="/offers"
-              className="
+              className={`
                 inline-flex min-h-11 items-center justify-center gap-2
                 rounded-full border border-[#cce8e5] bg-white px-6
                 text-sm font-semibold text-[#087b75] shadow-sm
@@ -266,7 +266,7 @@ export default function EspeciallyForYou() {
                 hover:border-[#087b75]
                 hover:bg-[#f2fbfa]
                 hover:shadow-md
-              "
+              `}
             >
               View all offers
 
@@ -312,19 +312,19 @@ export default function EspeciallyForYou() {
 function OfferCardItem({ card }: { card: OfferCard }) {
   const cardContent = (
     <div
-      className="
+      className={`
         group/card relative flex h-full w-[250px]
         shrink-0 snap-start
 
         sm:w-[272px]
         lg:w-full
-      "
+      `}
     >
       {/* Outside glow */}
 
       <div
         aria-hidden="true"
-        className="
+        className={`
           pointer-events-none absolute -inset-2
           rounded-[34px] opacity-0 blur-xl
 
@@ -333,14 +333,14 @@ function OfferCardItem({ card }: { card: OfferCard }) {
 
           group-hover/card:scale-105
           group-hover/card:opacity-35
-        "
+        `}
         style={{
           backgroundColor: card.iconBackground,
         }}
       />
 
       <article
-        className="
+        className={`
           relative z-10 flex h-[286px] w-full flex-col
           overflow-hidden rounded-[28px]
           border border-white/80 p-5
@@ -363,7 +363,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
 
           sm:h-[294px]
           lg:h-[302px]
-        "
+        `}
         style={{
           background: card.background,
         }}
@@ -372,20 +372,20 @@ function OfferCardItem({ card }: { card: OfferCard }) {
 
         <div
           aria-hidden="true"
-          className="
+          className={`
             pointer-events-none absolute inset-0
             bg-gradient-to-br
             from-white/30
             via-transparent
             to-black/[0.04]
-          "
+          `}
         />
 
         {/* Top decorative ring */}
 
         <div
           aria-hidden="true"
-          className="
+          className={`
             pointer-events-none absolute -right-12 -top-12
             h-36 w-36 rounded-full
             border-[20px] border-white/20
@@ -397,14 +397,14 @@ function OfferCardItem({ card }: { card: OfferCard }) {
             group-hover/card:translate-y-3
             group-hover/card:scale-110
             group-hover/card:rotate-12
-          "
+          `}
         />
 
         {/* Bottom decorative circle */}
 
         <div
           aria-hidden="true"
-          className="
+          className={`
             pointer-events-none absolute -bottom-20 -left-16
             h-44 w-44 rounded-full bg-white/20 blur-sm
 
@@ -414,14 +414,14 @@ function OfferCardItem({ card }: { card: OfferCard }) {
             group-hover/card:translate-x-6
             group-hover/card:-translate-y-5
             group-hover/card:scale-125
-          "
+          `}
         />
 
         {/* Small decorative dot */}
 
         <div
           aria-hidden="true"
-          className="
+          className={`
             pointer-events-none absolute bottom-[76px] right-5
             h-3 w-3 rounded-full bg-white/55
 
@@ -430,14 +430,14 @@ function OfferCardItem({ card }: { card: OfferCard }) {
             group-hover/card:-translate-x-3
             group-hover/card:-translate-y-2
             group-hover/card:scale-150
-          "
+          `}
         />
 
         {/* Shine animation */}
 
         <div
           aria-hidden="true"
-          className="
+          className={`
             pointer-events-none absolute inset-y-0 -left-[85%]
             z-20 w-[45%] rotate-[18deg]
 
@@ -449,19 +449,19 @@ function OfferCardItem({ card }: { card: OfferCard }) {
             transition-[left] duration-700 ease-out
 
             group-hover/card:left-[135%]
-          "
+          `}
         />
 
         {/* Card top */}
 
         <div className="relative z-10 mb-7 flex items-start justify-between gap-3">
           <span
-            className="
+            className={`
               inline-flex min-h-7 items-center
               rounded-full border border-white/70
               bg-white/60 px-3 py-1.5
 
-              text-[10px] font-bold uppercase
+              text-[12px] font-bold uppercase
               tracking-[0.14em] text-black/65
 
               shadow-sm backdrop-blur-md
@@ -471,13 +471,13 @@ function OfferCardItem({ card }: { card: OfferCard }) {
               group-hover/card:-translate-y-0.5
               group-hover/card:bg-white/85
               group-hover/card:shadow-md
-            "
+            `}
           >
             {card.eyebrow}
           </span>
 
           <span
-            className="
+            className={`
               relative flex h-[62px] w-[62px] shrink-0
               items-center justify-center overflow-hidden
 
@@ -492,14 +492,14 @@ function OfferCardItem({ card }: { card: OfferCard }) {
               group-hover/card:scale-110
               group-hover/card:rounded-[23px]
               group-hover/card:shadow-[0_18px_35px_-12px_rgba(15,23,42,0.5)]
-            "
+            `}
             style={{
               backgroundColor: card.iconBackground,
             }}
           >
             <span
               aria-hidden="true"
-              className="
+              className={`
                 absolute inset-0
                 bg-gradient-to-br
                 from-white/30
@@ -509,7 +509,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
                 transition-opacity duration-500
 
                 group-hover/card:opacity-100
-              "
+              `}
             />
 
             <img
@@ -519,7 +519,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
               height={34}
               loading="lazy"
               draggable={false}
-              className="
+              className={`
                 relative z-10 h-[34px] w-[34px]
                 object-contain
 
@@ -527,7 +527,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
 
                 group-hover/card:rotate-6
                 group-hover/card:scale-110
-              "
+              `}
             />
           </span>
         </div>
@@ -536,7 +536,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
 
         <div className="relative z-10 flex min-h-0 flex-1 flex-col">
           <h3
-            className="
+            className={`
               max-w-[178px]
               text-[25px] font-extrabold
               leading-[1.08]
@@ -546,7 +546,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
               transition-all duration-500
 
               group-hover/card:-translate-y-1
-            "
+            `}
           >
             {card.title}
           </h3>
@@ -554,14 +554,14 @@ function OfferCardItem({ card }: { card: OfferCard }) {
           <div className="min-h-[52px]">
             {card.subtitle && (
               <p
-                className="
+                className={`
                   mt-2 text-[16px] font-semibold
                   leading-5 text-[#344054]
 
                   transition-transform duration-500
 
                   group-hover/card:-translate-y-1
-                "
+                `}
               >
                 {card.subtitle}
               </p>
@@ -569,16 +569,16 @@ function OfferCardItem({ card }: { card: OfferCard }) {
 
             {card.phone && (
               <div
-                className="
+                className={`
                   mt-3 flex items-center gap-2
 
                   transition-transform duration-500
 
                   group-hover/card:translate-x-1
-                "
+                `}
               >
                 <span
-                  className="
+                  className={`
                     flex h-7 w-7 items-center justify-center
                     rounded-full bg-white/80 shadow-sm
 
@@ -587,7 +587,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
                     group-hover/card:scale-110
                     group-hover/card:bg-white
                     group-hover/card:shadow-md
-                  "
+                  `}
                   style={{
                     color: card.accent,
                   }}
@@ -606,7 +606,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
         {/* CTA button */}
 
         <span
-          className="
+          className={`
             relative z-10 mt-auto flex min-h-12 w-full
             items-center justify-between overflow-hidden
 
@@ -624,14 +624,14 @@ function OfferCardItem({ card }: { card: OfferCard }) {
             group-hover/card:scale-[1.015]
             group-hover/card:bg-white
             group-hover/card:shadow-[0_15px_28px_-12px_rgba(15,23,42,0.45)]
-          "
+          `}
           style={{
             color: card.buttonColor,
           }}
         >
           <span
             aria-hidden="true"
-            className="
+            className={`
               absolute inset-y-0 -left-full w-1/2
 
               bg-gradient-to-r
@@ -642,7 +642,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
               transition-[left] duration-700
 
               group-hover/card:left-[125%]
-            "
+            `}
           />
 
           <span className="relative z-10 line-clamp-1 pr-2">
@@ -650,7 +650,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
           </span>
 
           <span
-            className="
+            className={`
               relative z-10 flex h-7 w-7 shrink-0
               items-center justify-center rounded-full
 
@@ -658,7 +658,7 @@ function OfferCardItem({ card }: { card: OfferCard }) {
 
               group-hover/card:translate-x-1
               group-hover/card:scale-110
-            "
+            `}
             style={{
               backgroundColor: `${card.buttonColor}18`,
             }}

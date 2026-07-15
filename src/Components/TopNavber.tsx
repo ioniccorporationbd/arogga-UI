@@ -17,7 +17,6 @@ import {
   History,
   Home,
   Inbox,
-  Lab,
   LocateFixed,
   MapPin,
   Menu,
@@ -1685,7 +1684,7 @@ export default function TopNavber() {
 
         .top-navbar-delivery-text span {
           color: #667085;
-          font-size: 11px;
+          font-size: 12px;
           line-height: 1.3;
         }
 
@@ -1740,7 +1739,7 @@ export default function TopNavber() {
 
         .top-navbar-dropdown-heading span {
           color: #667085;
-          font-size: 10px;
+          font-size: 12px;
           font-weight: 600;
           text-transform: uppercase;
           letter-spacing: 0.08em;
@@ -1812,7 +1811,7 @@ export default function TopNavber() {
 
         .top-navbar-current-location small {
           color: #5f7774;
-          font-size: 10px;
+          font-size: 12px;
         }
 
         .top-navbar-location-list {
@@ -1871,7 +1870,7 @@ export default function TopNavber() {
 
         .top-navbar-location-list small {
           color: #8a94a3;
-          font-size: 10px;
+          font-size: 12px;
         }
 
         .top-navbar-manage-address {
@@ -1936,7 +1935,7 @@ export default function TopNavber() {
           color: #344054;
           background: transparent;
           font-family: inherit;
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 650;
           cursor: pointer;
         }
@@ -2122,7 +2121,7 @@ export default function TopNavber() {
 
         .top-navbar-search-panel-title small {
           color: #98a2b3;
-          font-size: 10px;
+          font-size: 12px;
         }
 
         .top-navbar-trending-list {
@@ -2138,7 +2137,7 @@ export default function TopNavber() {
           color: #475467;
           background: #fafcfc;
           font-family: inherit;
-          font-size: 10px;
+          font-size: 12px;
           font-weight: 600;
           cursor: pointer;
         }
@@ -2206,7 +2205,7 @@ export default function TopNavber() {
 
         .top-navbar-suggestion-content small {
           color: #8a94a3;
-          font-size: 9px;
+          font-size: 12px;
         }
 
         .top-navbar-suggestion-price {
@@ -2232,7 +2231,7 @@ export default function TopNavber() {
         }
 
         .top-navbar-no-search-result span {
-          font-size: 10px;
+          font-size: 12px;
         }
 
         .top-navbar-prescription-link {
@@ -2272,7 +2271,7 @@ export default function TopNavber() {
 
         .top-navbar-prescription-link small {
           color: #66827e;
-          font-size: 9px;
+          font-size: 12px;
         }
 
         .top-navbar-actions {
@@ -2329,14 +2328,14 @@ export default function TopNavber() {
         .top-navbar-action-button small,
         .top-navbar-cart-button small {
           color: #667085;
-          font-size: 9px;
+          font-size: 12px;
           line-height: 1.3;
         }
 
         .top-navbar-action-button strong,
         .top-navbar-cart-button strong {
           color: #101828;
-          font-size: 11px;
+          font-size: 12px;
           line-height: 1.3;
         }
 
@@ -2374,7 +2373,7 @@ export default function TopNavber() {
           border-radius: 999px;
           color: white;
           background: #e5484d;
-          font-size: 8px;
+          font-size: 12px;
           font-weight: 800;
         }
 
@@ -2405,7 +2404,7 @@ export default function TopNavber() {
           border-radius: 999px;
           color: white;
           background: #087b75;
-          font-size: 8px;
+          font-size: 12px;
           font-weight: 800;
         }
 
@@ -2448,7 +2447,7 @@ export default function TopNavber() {
 
         .top-navbar-account-header small {
           color: #8a94a3;
-          font-size: 9px;
+          font-size: 12px;
         }
 
         .top-navbar-account-buttons {
@@ -2468,7 +2467,7 @@ export default function TopNavber() {
           border-radius: 10px;
           color: #344054;
           background: white;
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 750;
           text-decoration: none;
         }
@@ -2493,7 +2492,7 @@ export default function TopNavber() {
           padding: 10px;
           border-radius: 10px;
           color: #475467;
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 600;
           text-decoration: none;
         }
@@ -2568,12 +2567,12 @@ export default function TopNavber() {
 
         .top-navbar-notification-list strong {
           color: #101828;
-          font-size: 11px;
+          font-size: 12px;
         }
 
         .top-navbar-notification-list small {
           color: #667085;
-          font-size: 9px;
+          font-size: 12px;
           line-height: 1.5;
         }
 
@@ -2582,7 +2581,7 @@ export default function TopNavber() {
           align-items: center;
           gap: 4px;
           color: #98a2b3;
-          font-size: 8px;
+          font-size: 12px;
           font-style: normal;
         }
 
@@ -2603,7 +2602,7 @@ export default function TopNavber() {
           padding: 10px;
           border-top: 1px solid rgba(15, 23, 42, 0.07);
           color: #087b75;
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 750;
           text-decoration: none;
         }
@@ -2641,7 +2640,7 @@ export default function TopNavber() {
           border-radius: 11px;
           color: #087b75;
           background: #e4f6f3;
-          font-size: 10px;
+          font-size: 12px;
           font-weight: 800;
         }
 
@@ -2656,19 +2655,19 @@ export default function TopNavber() {
         .top-navbar-cart-content strong {
           overflow: hidden;
           color: #101828;
-          font-size: 11px;
+          font-size: 12px;
           text-overflow: ellipsis;
           white-space: nowrap;
         }
 
         .top-navbar-cart-content small {
           color: #8a94a3;
-          font-size: 9px;
+          font-size: 12px;
         }
 
         .top-navbar-cart-content b {
           color: #087b75;
-          font-size: 11px;
+          font-size: 12px;
         }
 
         .top-navbar-cart-list > div > button {
@@ -2702,7 +2701,7 @@ export default function TopNavber() {
 
         .top-navbar-cart-summary small {
           color: #667085;
-          font-size: 10px;
+          font-size: 12px;
         }
 
         .top-navbar-cart-summary strong {
@@ -2713,7 +2712,7 @@ export default function TopNavber() {
         .top-navbar-cart-summary p {
           margin: 6px 0 11px;
           color: #98a2b3;
-          font-size: 8px;
+          font-size: 12px;
         }
 
         .top-navbar-cart-summary > div {
@@ -2730,7 +2729,7 @@ export default function TopNavber() {
           border: 1px solid #d8dee3;
           border-radius: 10px;
           color: #344054;
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 750;
           text-decoration: none;
         }
@@ -2781,12 +2780,12 @@ export default function TopNavber() {
         }
 
         .top-navbar-flash-sale strong {
-          font-size: 10px;
+          font-size: 12px;
         }
 
         .top-navbar-flash-sale small {
           color: #8a94a3;
-          font-size: 8px;
+          font-size: 12px;
         }
 
         .top-navbar-countdown {
@@ -2794,7 +2793,7 @@ export default function TopNavber() {
           border-radius: 7px;
           color: #b54708;
           background: #fff4e5;
-          font-size: 9px;
+          font-size: 12px;
           font-weight: 800;
           letter-spacing: 0.03em;
         }
@@ -2821,7 +2820,7 @@ export default function TopNavber() {
           color: #344054;
           background: transparent;
           font-family: inherit;
-          font-size: 11px;
+          font-size: 12px;
           font-weight: 650;
           text-decoration: none;
           cursor: pointer;
@@ -2842,7 +2841,7 @@ export default function TopNavber() {
           border-radius: 999px;
           color: white;
           background: #e5484d;
-          font-size: 6px;
+          font-size: 12px;
           font-weight: 800;
         }
 
@@ -2908,7 +2907,7 @@ export default function TopNavber() {
 
         .top-navbar-more-dropdown a strong {
           flex: 1;
-          font-size: 11px;
+          font-size: 12px;
         }
 
         .top-navbar-track-order {
@@ -2920,7 +2919,7 @@ export default function TopNavber() {
           border-radius: 10px;
           color: #087b75;
           background: #eef9f7;
-          font-size: 10px;
+          font-size: 12px;
           font-weight: 750;
           text-decoration: none;
         }
@@ -3151,7 +3150,7 @@ export default function TopNavber() {
             border-radius: 999px;
             color: white;
             background: #e5484d;
-            font-size: 8px;
+            font-size: 12px;
             font-weight: 800;
           }
 
@@ -3196,7 +3195,7 @@ export default function TopNavber() {
             color: white;
             background: #087b75;
             font-family: inherit;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 750;
           }
 
@@ -3296,7 +3295,7 @@ export default function TopNavber() {
 
           .top-navbar-mobile-account-card small {
             color: #667085;
-            font-size: 8px;
+            font-size: 12px;
           }
 
           .top-navbar-mobile-account-card > a {
@@ -3304,7 +3303,7 @@ export default function TopNavber() {
             border-radius: 8px;
             color: white;
             background: #087b75;
-            font-size: 9px;
+            font-size: 12px;
             font-weight: 750;
             text-decoration: none;
           }
@@ -3329,12 +3328,12 @@ export default function TopNavber() {
 
           .top-navbar-mobile-delivery-card small {
             color: #8a94a3;
-            font-size: 8px;
+            font-size: 12px;
           }
 
           .top-navbar-mobile-delivery-card strong {
             color: #101828;
-            font-size: 11px;
+            font-size: 12px;
           }
 
           .top-navbar-mobile-drawer-nav {
@@ -3373,7 +3372,7 @@ export default function TopNavber() {
 
           .top-navbar-mobile-drawer-nav strong {
             flex: 1;
-            font-size: 11px;
+            font-size: 12px;
           }
 
           .top-navbar-mobile-drawer-nav small {
@@ -3381,7 +3380,7 @@ export default function TopNavber() {
             border-radius: 999px;
             color: white;
             background: #e5484d;
-            font-size: 7px;
+            font-size: 12px;
             font-weight: 800;
           }
 
@@ -3401,7 +3400,7 @@ export default function TopNavber() {
             padding: 10px;
             border-radius: 10px;
             color: #475467;
-            font-size: 10px;
+            font-size: 12px;
             font-weight: 600;
             text-decoration: none;
           }
@@ -3435,7 +3434,7 @@ export default function TopNavber() {
             justify-content: center;
             gap: 3px;
             color: #667085;
-            font-size: 8px;
+            font-size: 12px;
             font-weight: 650;
             text-decoration: none;
           }

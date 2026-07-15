@@ -4,10 +4,10 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
-  ExternalLink,
   Rocket,
   ShoppingCart,
   Star,
+  Sun,
 } from "lucide-react";
 import Link from "next/link";
 import {
@@ -37,20 +37,40 @@ type Product = JsonProduct & {
   originalPrice: number;
   salePrice: number;
   currencySymbol: string;
+  reviewCount: number;
   deliveryTime: string;
   inStock: boolean;
 };
 
-const PRODUCTS_TO_LOAD = 20;
 const PRODUCTS_PER_VIEW = 6;
+const MAX_PRODUCTS = 20;
 
 const discountOptions = [
-  5, 8, 10, 12, 15, 18, 20, 25,
+  27, 38, 31, 4, 29, 11, 25, 20, 18, 15, 12, 30, 35, 40,
 ];
 
-export default function StealTheDeal() {
-  const scrollContainerRef =
-    useRef<HTMLDivElement | null>(null);
+const sunAndSplashKeywords = [
+  "sunscreen",
+  "sun cream",
+  "sun block",
+  "spf",
+  "cleanser",
+  "face wash",
+  "foaming",
+  "facial cleanser",
+  "gel cleanser",
+  "salicylic",
+  "brightening",
+  "skin",
+  "skincare",
+  "acne",
+  "face",
+];
+
+export default function SunAndSplash() {
+  const scrollContainerRef = useRef<HTMLDivElement | null>(
+    null,
+  );
 
   const [products, setProducts] = useState<Product[]>([]);
   const [cartItems, setCartItems] = useState<number[]>([]);
@@ -83,14 +103,11 @@ export default function StealTheDeal() {
         const json = (await response.json()) as unknown;
 
         if (!Array.isArray(json)) {
-          throw new Error(
-            "Invalid product data format.",
-          );
+          throw new Error("Invalid product data format.");
         }
 
         const normalizedProducts = json
           .filter(isValidProduct)
-          .slice(0, PRODUCTS_TO_LOAD)
           .map(normalizeProduct);
 
         setProducts(normalizedProducts);
@@ -121,10 +138,24 @@ export default function StealTheDeal() {
     };
   }, []);
 
-  const visibleProducts = useMemo(() => {
-    return products
-      .filter((product) => product.inStock)
-      .slice(0, PRODUCTS_TO_LOAD);
+  const sectionProducts = useMemo(() => {
+    const availableProducts = products.filter(
+      (product) => product.inStock,
+    );
+
+    const matchedProducts = availableProducts.filter(
+      (product) =>
+        matchesKeywords(
+          product,
+          sunAndSplashKeywords,
+        ),
+    );
+
+    if (matchedProducts.length >= PRODUCTS_PER_VIEW) {
+      return matchedProducts.slice(0, MAX_PRODUCTS);
+    }
+
+    return availableProducts.slice(0, MAX_PRODUCTS);
   }, [products]);
 
   const updateScrollButtons = useCallback(() => {
@@ -160,9 +191,9 @@ export default function StealTheDeal() {
     let resizeObserver: ResizeObserver | null = null;
 
     if (typeof ResizeObserver !== "undefined") {
-      resizeObserver = new ResizeObserver(() => {
-        updateScrollButtons();
-      });
+      resizeObserver = new ResizeObserver(
+        updateScrollButtons,
+      );
 
       resizeObserver.observe(container);
     } else {
@@ -185,7 +216,10 @@ export default function StealTheDeal() {
         updateScrollButtons,
       );
     };
-  }, [updateScrollButtons, visibleProducts.length]);
+  }, [
+    sectionProducts.length,
+    updateScrollButtons,
+  ]);
 
   const scrollProducts = (
     direction: "left" | "right",
@@ -196,7 +230,7 @@ export default function StealTheDeal() {
 
     const firstCard =
       container.querySelector<HTMLElement>(
-        "[data-product-card]",
+        "[data-sun-product-card]",
       );
 
     if (!firstCard) return;
@@ -237,117 +271,105 @@ export default function StealTheDeal() {
     });
   };
 
+  if (!loading && loadError) {
+    return <ErrorState message={loadError} />;
+  }
+
   return (
-    <section className="relative w-full overflow-hidden bg-[#fff0fa] py-10 sm:py-12 lg:py-14">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -left-32 top-0 h-72 w-72 rounded-full bg-[#ffd9f1]/60 blur-3xl"
-      />
+    <>
+      <section className="relative w-full overflow-hidden bg-[#eaf3fd] py-10 sm:py-12 lg:py-14">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -left-36 top-0 h-80 w-80 rounded-full bg-white/50 blur-3xl"
+        />
 
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-28 bottom-0 h-72 w-72 rounded-full bg-[#ffe9f7]/70 blur-3xl"
-      />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-36 bottom-0 h-80 w-80 rounded-full bg-[#dcecff]/70 blur-3xl"
+        />
 
-      <div className="relative mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
-        <div className="mb-5 flex items-end justify-between gap-4 sm:mb-6">
-          <div>
-            <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#e82ca3]">
-              Real beauty products
-            </p>
+        <div className="relative mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
+          <div className="mb-5 flex items-center justify-between gap-4 sm:mb-6">
+            <div className="flex items-center gap-3">
+              <span className="hidden h-10 w-10 items-center justify-center rounded-xl bg-white text-[#0755a5] shadow-sm sm:flex">
+                <Sun size={20} />
+              </span>
 
-            <h2 className="mt-1 text-[21px] font-bold tracking-[-0.025em] text-[#ff3db9] sm:text-[24px]">
-              Maybelline: Steal the Deal
-            </h2>
+              <div>
+                <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#5d7da1]">
+                  Skincare essentials
+                </p>
 
-            <p className="mt-1 text-[13px] text-[#7a536d]">
-              Showing 6 at a time from 20 products
-            </p>
+                <h2 className="mt-0.5 text-[21px] font-bold tracking-[-0.025em] text-[#0755a5] sm:text-[24px]">
+                  Sun &amp; Splash
+                </h2>
+              </div>
+            </div>
+
+            <Link
+              href="/offers/sun-and-splash"
+              className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-[#0755a5] transition-colors hover:text-[#087b75]"
+            >
+              see all
+
+              <ChevronRight
+                size={16}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </Link>
           </div>
 
-          <Link
-            href="/offers"
-            className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-[#ff3db9] transition-colors hover:text-[#d82496]"
-          >
-            See all
-
-            <ChevronRight
-              size={16}
-              className="transition-transform duration-300 group-hover:translate-x-1"
+          <div className="relative">
+            <SliderArrow
+              direction="left"
+              visible={canScrollLeft}
+              onClick={() => scrollProducts("left")}
+              label="Show previous Sun and Splash products"
             />
-          </Link>
-        </div>
 
-        <div className="relative">
-          <button
-            type="button"
-            onClick={() => scrollProducts("left")}
-            disabled={!canScrollLeft}
-            aria-label="Show previous products"
-            className={`absolute left-0 top-[44%] z-30 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d9dfe3] bg-white text-[#087b75] shadow-[0_8px_24px_-10px_rgba(15,23,42,0.35)] transition-all duration-300 hover:scale-105 hover:border-[#087b75] hover:bg-[#f0faf8] disabled:pointer-events-none ${
-              canScrollLeft
-                ? "opacity-100"
-                : "opacity-0"
-            }`}
-          >
-            <ChevronLeft size={20} />
-          </button>
+            <div
+              ref={scrollContainerRef}
+              className="sun-splash-scroll flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3"
+            >
+              {loading &&
+                Array.from({
+                  length: PRODUCTS_PER_VIEW,
+                }).map((_, index) => (
+                  <ProductSkeleton key={index} />
+                ))}
 
-          <div
-            ref={scrollContainerRef}
-            className="steal-deal-scroll flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3"
-          >
-            {loading &&
-              Array.from({
-                length: PRODUCTS_PER_VIEW,
-              }).map((_, index) => (
-                <ProductSkeleton key={index} />
-              ))}
+              {!loading &&
+                sectionProducts.map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    added={cartItems.includes(
+                      product.id,
+                    )}
+                    onToggleCart={() =>
+                      toggleCartItem(product.id)
+                    }
+                  />
+                ))}
 
-            {!loading &&
-              !loadError &&
-              visibleProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                  added={cartItems.includes(
-                    product.id,
-                  )}
-                  onToggleCart={() =>
-                    toggleCartItem(product.id)
-                  }
-                />
-              ))}
+              {!loading &&
+                sectionProducts.length === 0 && (
+                  <EmptyState />
+                )}
+            </div>
 
-            {!loading &&
-              !loadError &&
-              visibleProducts.length === 0 && (
-                <EmptyState />
-              )}
-
-            {!loading && loadError && (
-              <ErrorState message={loadError} />
-            )}
+            <SliderArrow
+              direction="right"
+              visible={canScrollRight}
+              onClick={() => scrollProducts("right")}
+              label="Show more Sun and Splash products"
+            />
           </div>
-
-          <button
-            type="button"
-            onClick={() => scrollProducts("right")}
-            disabled={!canScrollRight}
-            aria-label="Show more products"
-            className={`absolute right-0 top-[44%] z-30 flex h-10 w-10 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#d9dfe3] bg-white text-[#087b75] shadow-[0_8px_24px_-10px_rgba(15,23,42,0.35)] transition-all duration-300 hover:scale-105 hover:border-[#087b75] hover:bg-[#f0faf8] disabled:pointer-events-none ${
-              canScrollRight
-                ? "opacity-100"
-                : "opacity-0"
-            }`}
-          >
-            <ChevronRight size={20} />
-          </button>
         </div>
-      </div>
+      </section>
 
       <style jsx global>{`
-        .steal-deal-scroll {
+        .sun-splash-scroll {
           scrollbar-width: none;
           -ms-overflow-style: none;
           overscroll-behavior-inline: contain;
@@ -355,35 +377,33 @@ export default function StealTheDeal() {
           -webkit-overflow-scrolling: touch;
         }
 
-        .steal-deal-scroll::-webkit-scrollbar {
+        .sun-splash-scroll::-webkit-scrollbar {
           display: none;
           width: 0;
           height: 0;
         }
 
-        .deal-product-card {
-          width: min(78vw, 260px);
+        .sun-splash-product-card {
+          width: min(78vw, 270px);
         }
 
         @media (min-width: 640px) {
-          .deal-product-card {
+          .sun-splash-product-card {
             width: 230px;
           }
         }
 
         @media (min-width: 1024px) {
-          .deal-product-card {
-            width: calc(
-              (100% - (5 * 16px)) / 6
-            );
+          .sun-splash-product-card {
+            width: calc((100% - 80px) / 6);
           }
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .steal-deal-scroll,
-          .steal-deal-scroll *,
-          .steal-deal-scroll *::before,
-          .steal-deal-scroll *::after {
+          .sun-splash-scroll,
+          .sun-splash-scroll *,
+          .sun-splash-scroll *::before,
+          .sun-splash-scroll *::after {
             scroll-behavior: auto !important;
             animation-duration: 0.01ms !important;
             animation-iteration-count: 1 !important;
@@ -391,7 +411,7 @@ export default function StealTheDeal() {
           }
         }
       `}</style>
-    </section>
+    </>
   );
 }
 
@@ -410,8 +430,8 @@ function ProductCard({
 
   return (
     <article
-      data-product-card
-      className="deal-product-card group flex shrink-0 snap-start flex-col overflow-hidden rounded-[10px] border border-[#dfe4e8] bg-white shadow-[0_7px_18px_-16px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#e1bdd7] hover:shadow-[0_24px_42px_-25px_rgba(15,23,42,0.4)]"
+      data-sun-product-card
+      className="sun-splash-product-card group flex shrink-0 snap-start flex-col overflow-hidden rounded-[10px] border border-[#dfe4e8] bg-white shadow-[0_8px_22px_-18px_rgba(15,23,42,0.4)] transition-all duration-300 hover:-translate-y-1 hover:border-[#b9d8d4] hover:shadow-[0_24px_45px_-28px_rgba(15,23,42,0.4)]"
     >
       <Link
         href={product.href}
@@ -429,42 +449,22 @@ function ProductCard({
             event.currentTarget.src =
               "/images/product-fallback.png";
           }}
-          className="h-full w-full object-contain p-4 transition-transform duration-500 ease-out group-hover:scale-[1.045]"
+          className="h-full w-full object-contain p-3 transition-transform duration-500 ease-out group-hover:scale-[1.045]"
         />
 
-        <span className="absolute left-2 top-0 rounded-b-[4px] bg-[#0969e8] px-1.5 py-1 text-center text-[12px] font-extrabold leading-[12px] text-white shadow-sm">
-          {product.discountPercent}%
-          <br />
-          OFF
-        </span>
-
-        <span className="absolute right-2 top-2 max-w-[110px] truncate rounded-full bg-white/90 px-2 py-1 text-[11px] font-semibold text-[#087b75] shadow-sm backdrop-blur">
-          {product.category}
-        </span>
+        <DiscountBadge
+          discount={product.discountPercent}
+        />
       </Link>
 
       <div className="flex flex-1 flex-col p-3">
-        <div className="inline-flex w-fit items-center gap-2 rounded-[5px] bg-[#f0f1f3] px-2 py-1.5 text-[12px] font-semibold text-[#202939]">
-          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#172033] text-[#ffd63d]">
-            <Rocket
-              size={13}
-              fill="currentColor"
-              strokeWidth={0}
-            />
-          </span>
-
-          {product.deliveryTime}
-        </div>
-
-        <p className="mt-3 text-[12px] font-semibold uppercase tracking-[0.08em] text-[#087b75]">
-          {product.brand}
-        </p>
+        <DeliveryBadge />
 
         <Link
           href={product.href}
-          className="mt-1 block"
+          className="mt-3 block"
         >
-          <h3 className="line-clamp-2 min-h-[48px] text-[16px] font-semibold leading-6 text-[#101010] transition-colors duration-200 group-hover:text-[#087b75]">
+          <h3 className="line-clamp-2 min-h-[48px] text-[15px] font-semibold leading-6 text-[#101010] transition-colors duration-200 group-hover:text-[#087b75]">
             {product.title}
           </h3>
         </Link>
@@ -478,30 +478,28 @@ function ProductCard({
                 fill={
                   index < roundedRating
                     ? "#ffb400"
-                    : "#e5e7eb"
+                    : "#dce3ea"
                 }
                 strokeWidth={0}
               />
             ),
           )}
 
-          <span className="ml-1.5 text-xs text-[#667085]">
-            {product.rating !== null
-              ? product.rating.toFixed(1)
-              : "Not rated"}
+          <span className="ml-1.5 text-[12px] text-[#667085]">
+            ({product.reviewCount})
           </span>
         </div>
 
         <div className="mt-auto flex items-end justify-between gap-3 pt-3">
-          <div>
-            <p className="text-[13px] text-[#667085] line-through">
+          <div className="min-w-0">
+            <p className="truncate text-[13px] text-[#667085] line-through">
               {product.currencySymbol}
-              {product.originalPrice.toFixed(2)}
+              {formatPrice(product.originalPrice)}
             </p>
 
-            <p className="mt-0.5 text-[18px] font-bold text-black">
+            <p className="mt-0.5 text-[18px] font-bold text-[#101010]">
               {product.currencySymbol}
-              {product.salePrice.toFixed(2)}
+              {formatPrice(product.salePrice)}
             </p>
           </div>
 
@@ -514,7 +512,7 @@ function ProductCard({
                 ? `Remove ${product.title} from cart`
                 : `Add ${product.title} to cart`
             }
-            className={`inline-flex min-h-10 min-w-[48px] items-center justify-center gap-1.5 rounded-[7px] border px-2.5 text-sm font-semibold transition-all duration-200 active:scale-[0.97] ${
+            className={`inline-flex min-h-10 min-w-[48px] shrink-0 items-center justify-center gap-1.5 rounded-[7px] border px-2.5 text-sm font-semibold transition-all duration-200 active:scale-[0.97] disabled:cursor-not-allowed disabled:border-[#d0d5dd] disabled:bg-[#f2f4f7] disabled:text-[#98a2b3] ${
               added
                 ? "border-[#087b75] bg-[#087b75] text-white"
                 : "border-[#087b75] bg-[#eef9f7] text-[#087b75] hover:bg-[#087b75] hover:text-white"
@@ -530,18 +528,75 @@ function ProductCard({
             )}
           </button>
         </div>
-
-        <a
-          href={product.productUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-3 inline-flex items-center gap-1.5 text-[12px] font-medium text-[#667085] transition hover:text-[#087b75]"
-        >
-          Product source
-          <ExternalLink size={13} />
-        </a>
       </div>
     </article>
+  );
+}
+
+function SliderArrow({
+  direction,
+  visible,
+  onClick,
+  label,
+}: {
+  direction: "left" | "right";
+  visible: boolean;
+  onClick: () => void;
+  label: string;
+}) {
+  const Icon =
+    direction === "left"
+      ? ChevronLeft
+      : ChevronRight;
+
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={!visible}
+      aria-label={label}
+      className={`absolute top-[43%] z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#d6dde1] bg-white text-[#087b75] shadow-[0_8px_22px_-10px_rgba(15,23,42,0.35)] transition-all duration-300 hover:scale-105 hover:border-[#087b75] hover:bg-[#eef9f7] disabled:pointer-events-none ${
+        direction === "left"
+          ? "left-0 -translate-x-1/2"
+          : "right-0 translate-x-1/2"
+      } ${
+        visible
+          ? "opacity-100"
+          : "opacity-0"
+      }`}
+    >
+      <Icon size={20} />
+    </button>
+  );
+}
+
+function DeliveryBadge() {
+  return (
+    <div className="inline-flex w-fit items-center gap-2 rounded-[5px] bg-[#f0f1f3] px-2 py-1.5 text-[11px] font-semibold text-[#202939]">
+      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#172033] text-[#ffd63d]">
+        <Rocket
+          size={13}
+          fill="currentColor"
+          strokeWidth={0}
+        />
+      </span>
+
+      12-24 HOURS
+    </div>
+  );
+}
+
+function DiscountBadge({
+  discount,
+}: {
+  discount: number;
+}) {
+  return (
+    <span className="absolute left-2 top-0 rounded-b-[4px] bg-[#0969e8] px-1.5 py-1 text-center text-[11px] font-extrabold leading-[11px] text-white shadow-sm">
+      {discount}%
+      <br />
+      OFF
+    </span>
   );
 }
 
@@ -575,9 +630,32 @@ function normalizeProduct(
     currencySymbol: getCurrencySymbol(
       product.currency,
     ),
+    reviewCount:
+      product.rating !== null
+        ? ((product.id * 29) % 600) + 1
+        : 0,
     deliveryTime: "12-24 HOURS",
     inStock: true,
   };
+}
+
+function matchesKeywords(
+  product: Product,
+  keywords: string[],
+) {
+  const searchableText = [
+    product.brand,
+    product.title,
+    product.category,
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return keywords.some((keyword) =>
+    searchableText.includes(
+      keyword.toLowerCase(),
+    ),
+  );
 }
 
 function isValidProduct(
@@ -617,11 +695,11 @@ function createSlug(value: string) {
 
 function getCurrencySymbol(currency: string) {
   switch (currency.toUpperCase()) {
-    case "USD":
-      return "$";
-
     case "BDT":
       return "৳";
+
+    case "USD":
+      return "$";
 
     case "EUR":
       return "€";
@@ -637,20 +715,31 @@ function getCurrencySymbol(currency: string) {
   }
 }
 
+function formatPrice(value: number) {
+  if (Number.isInteger(value)) {
+    return value.toString();
+  }
+
+  return value.toFixed(2);
+}
+
 function ProductSkeleton() {
   return (
-    <div className="deal-product-card shrink-0 overflow-hidden rounded-[10px] border border-[#e4e7ec] bg-white">
-      <div className="aspect-square animate-pulse bg-[#f0f2f4]" />
+    <div className="sun-splash-product-card shrink-0 overflow-hidden rounded-[10px] border border-[#e4e7ec] bg-white">
+      <div className="aspect-square animate-pulse bg-[#eef0f2]" />
 
       <div className="space-y-3 p-3">
         <div className="h-9 w-28 animate-pulse rounded bg-[#eef0f2]" />
-        <div className="h-4 w-20 animate-pulse rounded bg-[#eef0f2]" />
+
         <div className="h-5 animate-pulse rounded bg-[#eef0f2]" />
+
         <div className="h-5 w-4/5 animate-pulse rounded bg-[#eef0f2]" />
+
         <div className="h-4 w-24 animate-pulse rounded bg-[#eef0f2]" />
 
-        <div className="flex items-end justify-between">
+        <div className="flex items-end justify-between pt-3">
           <div className="h-10 w-20 animate-pulse rounded bg-[#eef0f2]" />
+
           <div className="h-10 w-12 animate-pulse rounded bg-[#eef0f2]" />
         </div>
       </div>
@@ -664,38 +753,40 @@ function ErrorState({
   message: string;
 }) {
   return (
-    <div className="flex min-h-[360px] w-full items-center justify-center rounded-2xl border border-[#f0c5df] bg-white px-6 text-center">
-      <div>
-        <ShoppingCart
-          size={34}
-          className="mx-auto text-[#d92d20]"
-        />
+    <section className="w-full bg-[#eaf3fd] py-14">
+      <div className="mx-auto flex min-h-[280px] w-full max-w-[1440px] items-center justify-center px-4 text-center">
+        <div>
+          <ShoppingCart
+            size={36}
+            className="mx-auto text-[#d92d20]"
+          />
 
-        <p className="mt-3 font-semibold text-[#b42318]">
-          Product data could not be loaded
-        </p>
+          <p className="mt-4 font-semibold text-[#b42318]">
+            Product data could not be loaded
+          </p>
 
-        <p className="mt-2 text-sm text-[#667085]">
-          {message}
-        </p>
+          <p className="mt-2 text-sm text-[#667085]">
+            {message}
+          </p>
 
-        <button
-          type="button"
-          onClick={() =>
-            window.location.reload()
-          }
-          className="mt-4 rounded-lg bg-[#087b75] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#066b66]"
-        >
-          Try Again
-        </button>
+          <button
+            type="button"
+            onClick={() =>
+              window.location.reload()
+            }
+            className="mt-4 rounded-lg bg-[#087b75] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#066b66]"
+          >
+            Try Again
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 function EmptyState() {
   return (
-    <div className="flex min-h-[360px] w-full items-center justify-center rounded-2xl border border-[#eadce5] bg-white px-6 text-center">
+    <div className="flex min-h-[320px] w-full items-center justify-center rounded-xl border border-[#dce4eb] bg-white px-6 text-center">
       <div>
         <ShoppingCart
           size={34}
@@ -707,8 +798,7 @@ function EmptyState() {
         </p>
 
         <p className="mt-2 text-sm text-[#667085]">
-          Products will appear here when they become
-          available.
+          Products will appear here when available.
         </p>
       </div>
     </div>

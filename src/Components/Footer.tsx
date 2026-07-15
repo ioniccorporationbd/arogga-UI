@@ -614,7 +614,7 @@ function QuickContact({
       </span>
 
       <span className="leading-tight">
-        <small className="block text-[11px] text-[#667085]">
+        <small className="block text-[12px] text-[#667085]">
           {title}
         </small>
 
@@ -829,7 +829,7 @@ function ContactCard({
         rel={external ? "noopener noreferrer" : undefined}
         className="min-w-0 flex-1"
       >
-        <small className="block text-[11px] text-[#667085]">
+        <small className="block text-[12px] text-[#667085]">
           {label}
         </small>
 
@@ -994,7 +994,7 @@ function InfoCard({
 }) {
   return (
     <div className="rounded-xl border border-[#e2e9e7] bg-[#f8fbfa] p-3">
-      <span className="block text-[11px] font-medium text-[#667085]">
+      <span className="block text-[12px] font-medium text-[#667085]">
         {title}
       </span>
 

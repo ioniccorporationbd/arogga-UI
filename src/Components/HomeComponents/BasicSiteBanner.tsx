@@ -706,7 +706,7 @@ export default function BasicSiteBanner() {
           color: white;
           background: linear-gradient(135deg, #0d9488, #116b68);
           box-shadow: 0 7px 15px -8px rgba(15, 23, 42, 0.7);
-          font-size: 9px;
+          font-size: 12px;
           font-weight: 800;
         }
 
@@ -930,7 +930,7 @@ export default function BasicSiteBanner() {
           border-radius: 8px;
           color: #8b96a5;
           background: #ffffff;
-          font-size: 9px;
+          font-size: 12px;
           font-weight: 600;
         }
 
@@ -1042,7 +1042,7 @@ export default function BasicSiteBanner() {
 
         .basic-dashboard-welcome span {
           color: #8a94a3;
-          font-size: 10px;
+          font-size: 12px;
           font-weight: 600;
         }
 
@@ -1116,7 +1116,7 @@ export default function BasicSiteBanner() {
         .basic-dashboard-stat-top > span:first-child {
           overflow: hidden;
           color: #7d8998;
-          font-size: 9px;
+          font-size: 12px;
           font-weight: 650;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -1157,7 +1157,7 @@ export default function BasicSiteBanner() {
           border-radius: 6px;
           color: #198754;
           background: #e9f9ef;
-          font-size: 8px;
+          font-size: 12px;
           font-weight: 800;
         }
 
@@ -1185,7 +1185,7 @@ export default function BasicSiteBanner() {
 
         .basic-chart-header span {
           color: #8994a3;
-          font-size: 8px;
+          font-size: 12px;
           font-weight: 650;
         }
 
@@ -1205,7 +1205,7 @@ export default function BasicSiteBanner() {
           color: #667085;
           background: #f9fbfb;
           font-family: inherit;
-          font-size: 8px;
+          font-size: 12px;
           font-weight: 650;
           cursor: default;
         }
@@ -1284,7 +1284,7 @@ export default function BasicSiteBanner() {
         .basic-chart-labels span {
           width: min(24px, 9%);
           color: #a1aab6;
-          font-size: 7px;
+          font-size: 12px;
           text-align: center;
         }
 
@@ -1305,13 +1305,13 @@ export default function BasicSiteBanner() {
 
         .basic-dashboard-progress span {
           color: #7b8796;
-          font-size: 9px;
+          font-size: 12px;
           font-weight: 650;
         }
 
         .basic-dashboard-progress strong {
           color: var(--banner-primary);
-          font-size: 10px;
+          font-size: 12px;
         }
 
         .basic-progress-track {
@@ -1383,13 +1383,13 @@ export default function BasicSiteBanner() {
 
         .basic-floating-card strong {
           color: #253142;
-          font-size: 11px;
+          font-size: 12px;
           white-space: nowrap;
         }
 
         .basic-floating-card > div:last-child > span {
           color: #8a94a3;
-          font-size: 8px;
+          font-size: 12px;
           white-space: nowrap;
         }
 
@@ -1412,7 +1412,7 @@ export default function BasicSiteBanner() {
           border-radius: 50%;
           color: white;
           background: linear-gradient(135deg, #0d9488, #05645f);
-          font-size: 7px;
+          font-size: 12px;
           font-weight: 800;
         }
 
@@ -1677,7 +1677,7 @@ export default function BasicSiteBanner() {
           }
 
           .basic-banner-feature span {
-            font-size: 10px;
+            font-size: 12px;
           }
 
           .basic-banner-visual {
@@ -1792,7 +1792,7 @@ export default function BasicSiteBanner() {
           }
 
           .basic-floating-card strong {
-            font-size: 9px;
+            font-size: 12px;
           }
 
           .basic-floating-icon {
@@ -1817,7 +1817,7 @@ export default function BasicSiteBanner() {
         @media (max-width: 410px) {
           .basic-banner-badge {
             max-width: 100%;
-            font-size: 10px;
+            font-size: 12px;
           }
 
           .basic-banner-title {
@@ -1855,7 +1855,7 @@ export default function BasicSiteBanner() {
           }
 
           .basic-dashboard-stat-top > span:first-child {
-            font-size: 7px;
+            font-size: 12px;
           }
 
           .basic-chart-period {
