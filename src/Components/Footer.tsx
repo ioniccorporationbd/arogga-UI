@@ -3,12 +3,22 @@
 import Link from "next/link";
 import {
   ArrowUp,
+  Check,
+  ChevronDown,
+  Copy,
+  HeartPulse,
+  Mail,
   MapPin,
   MessageCircle,
   Phone,
+  Send,
+  ShieldCheck,
+  Smartphone,
+  Sparkles,
+  Truck,
 } from "lucide-react";
-import type { ReactNode } from "react";
-import { useEffect, useState } from "react";
+import type { FormEvent, ReactNode } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type FooterLink = {
   label: string;
@@ -18,7 +28,11 @@ type FooterLink = {
 type PartnerLogo = {
   name: string;
   src: string;
-  imageClassName?: string;
+};
+
+type FooterSection = {
+  title: string;
+  links: FooterLink[];
 };
 
 const IMAGE_URLS = {
@@ -81,77 +95,79 @@ const IMAGE_URLS = {
   appStore:
     "https://www.arogga.com/_next/image?q=75&url=%2Fassets%2Fimg%2Fapple_store.webp&w=256",
 
-  linkedin:
-    "https://cdn.simpleicons.org/linkedin/0A66C2",
-
-  facebook:
-    "https://cdn.simpleicons.org/facebook/0866FF",
-
-  instagram:
-    "https://cdn.simpleicons.org/instagram/E4405F",
-
-  youtube:
-    "https://cdn.simpleicons.org/youtube/FF0000",
+  linkedin: "https://cdn.simpleicons.org/linkedin/0A66C2",
+  facebook: "https://cdn.simpleicons.org/facebook/0866FF",
+  instagram: "https://cdn.simpleicons.org/instagram/E4405F",
+  youtube: "https://cdn.simpleicons.org/youtube/FF0000",
 } as const;
 
-const quickLinks: FooterLink[] = [
+const footerSections: FooterSection[] = [
   {
-    label: "Careers",
-    href: "/careers",
+    title: "Quick Links",
+    links: [
+      {
+        label: "Careers",
+        href: "/careers",
+      },
+      {
+        label: "Privacy Policy",
+        href: "/privacy-policy",
+      },
+      {
+        label: "Terms and Conditions",
+        href: "/terms-and-conditions",
+      },
+      {
+        label: "Return and Refund Policy",
+        href: "/return-and-refund-policy",
+      },
+    ],
   },
   {
-    label: "Privacy Policy",
-    href: "/privacy-policy",
+    title: "Our Services",
+    links: [
+      {
+        label: "Online Doctor Consultation",
+        href: "/doctor",
+      },
+      {
+        label: "Lab Test - Home Sample Collection",
+        href: "/lab",
+      },
+      {
+        label: "Doorstep Medicine Delivery",
+        href: "/store",
+      },
+      {
+        label: "Healthcare and Beauty Products",
+        href: "/store",
+      },
+    ],
   },
   {
-    label: "Terms and Conditions",
-    href: "/terms-and-conditions",
-  },
-  {
-    label: "Return and Refund Policy",
-    href: "/return-and-refund-policy",
-  },
-];
-
-const serviceLinks: FooterLink[] = [
-  {
-    label: "Online Doctor Consultation",
-    href: "/doctor",
-  },
-  {
-    label: "Lab Test - Home Sample Collection",
-    href: "/lab",
-  },
-  {
-    label: "Doorstep Medicine Delivery",
-    href: "/store",
-  },
-  {
-    label: "Healthcare and Beauty Products",
-    href: "/store",
-  },
-];
-
-const usefulLinks: FooterLink[] = [
-  {
-    label: "Blog",
-    href: "/blog",
-  },
-  {
-    label: "FAQ",
-    href: "/faq",
-  },
-  {
-    label: "Account",
-    href: "/account",
-  },
-  {
-    label: "Register Your Pharmacy",
-    href: "/register-your-pharmacy",
-  },
-  {
-    label: "Special Offers",
-    href: "/special-offers",
+    title: "Useful Links",
+    links: [
+      {
+        label: "Blog",
+        href: "/blog",
+      },
+      {
+        label: "FAQ",
+        href: "/faq",
+      },
+      {
+        label: "Account",
+        href: "/account",
+      },
+      {
+        label: "Register Your Pharmacy",
+        href: "/register-your-pharmacy",
+      },
+      {
+        label: "Special Offers",
+        href: "/special-offers",
+      },
+    ],
   },
 ];
 
@@ -192,22 +208,6 @@ const paymentPartners: PartnerLogo[] = [
     name: "American Express",
     src: IMAGE_URLS.americanExpress,
   },
-  {
-    name: "bKash",
-    src: IMAGE_URLS.bkash,
-  },
-  {
-    name: "Nagad",
-    src: IMAGE_URLS.nagad,
-  },
-  {
-    name: "Rocket",
-    src: IMAGE_URLS.rocket,
-  },
-  {
-    name: "SureCash",
-    src: IMAGE_URLS.sureCash,
-  },
 ];
 
 const logisticsPartners: PartnerLogo[] = [
@@ -230,12 +230,51 @@ const logisticsPartners: PartnerLogo[] = [
 ];
 
 export default function Footer() {
+  const currentYear = useMemo(() => new Date().getFullYear(), []);
+
+  const [email, setEmail] = useState("");
+
+  const [status, setStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
+
+  const [openSection, setOpenSection] =
+    useState<string | null>("Quick Links");
+
+  const submitNewsletter = (
+    event: FormEvent<HTMLFormElement>,
+  ) => {
+    event.preventDefault();
+
+    const normalized = email.trim().toLowerCase();
+
+    const isValid =
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalized);
+
+    if (!isValid) {
+      setStatus("error");
+      return;
+    }
+
+    setStatus("success");
+    setEmail("");
+  };
+
   return (
-    <footer className="relative w-full bg-white">
-      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
-        <div className="border-t border-[#e3e7eb] pt-[32px]">
-          {/* Top feature row */}
-          <section className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-[72px]">
+    <footer className="relative isolate overflow-hidden border-t border-[#e4ebe9] bg-[#f8fbfa] text-[#111827]">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-48 top-12 -z-10 h-96 w-96 rounded-full bg-[#dff7f2] blur-3xl"
+      />
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-40 bottom-10 -z-10 h-96 w-96 rounded-full bg-[#fff0dc] blur-3xl"
+      />
+
+      <div className="mx-auto w-full max-w-[1440px] px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-14">
+        <section className="rounded-[28px] border border-white/80 bg-white/90 p-5 shadow-[0_26px_70px_-48px_rgba(15,23,42,0.5)] backdrop-blur-xl sm:p-7 lg:p-8">
+          <div className="grid gap-8 lg:grid-cols-[1fr_1.85fr] lg:items-center">
             <div>
               <Link
                 href="/"
@@ -247,194 +286,300 @@ export default function Footer() {
                   alt="Arogga"
                   width={184}
                   height={64}
-                  className="h-[64px] w-[184px] object-contain object-left"
+                  className="h-[58px] w-auto object-contain"
                 />
               </Link>
 
-              <p className="mt-[27px] max-w-[270px] text-[15px] leading-[23px] text-[#111827]">
-                The Primary Healthcare Platform for Bangladesh
+              <p className="mt-4 max-w-[470px] text-[15px] leading-7 text-[#5f6b78]">
+                Bangladesh&apos;s primary healthcare
+                platform for authentic medicines, doctor
+                consultation, lab tests and wellness
+                support.
               </p>
-            </div>
 
-            <FeatureBlock
-              image={IMAGE_URLS.authenticity}
-              alt="Authentic products"
-            >
-              Authentic products sourced from manufacturers, distributors and
-              importers
-            </FeatureBlock>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <QuickContact
+                  href="tel:09610016778"
+                  icon={<Phone size={17} />}
+                  title="Hotline"
+                  value="09610016778"
+                />
 
-            <FeatureBlock
-              image={IMAGE_URLS.customerCentric}
-              alt="Customer centric service"
-            >
-              Our customers are at the heart of everything we do
-            </FeatureBlock>
-
-            <FeatureBlock
-              image={IMAGE_URLS.techDriven}
-              alt="Technology driven service"
-            >
-              We innovate with cutting-edge technology to deliver the highest
-              standards of performance and quality
-            </FeatureBlock>
-          </section>
-
-          {/* Link row */}
-          <section className="mt-[66px] grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-[72px]">
-            <FooterColumn
-              title="Quick Links"
-              links={quickLinks}
-            />
-
-            <FooterColumn
-              title="Our Services"
-              links={serviceLinks}
-            />
-
-            <FooterColumn
-              title="Useful Links"
-              links={usefulLinks}
-            />
-
-            <ContactInfo />
-          </section>
-
-          {/* Payment and delivery partners */}
-          <section className="mt-[58px] grid grid-cols-1 gap-12 lg:grid-cols-[3fr_1fr] lg:gap-x-[70px]">
-            <div>
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-                <h3 className="text-[16px] font-semibold text-[#111827]">
-                  Online Payment Partners
-                </h3>
-
-                <span className="text-[14px] text-[#374151]">
-                  Verified by
-                </span>
-
-                <img
-                  src={IMAGE_URLS.sslCommerz}
-                  alt="SSLCommerz"
-                  width={90}
-                  height={18}
-                  className="h-[18px] w-auto object-contain"
+                <QuickContact
+                  href="https://wa.me/8801810117100"
+                  icon={<MessageCircle size={17} />}
+                  title="WhatsApp"
+                  value="01810117100"
+                  external
                 />
               </div>
-
-              <div className="mt-[25px] flex flex-wrap gap-x-[20px] gap-y-3">
-                {paymentPartners.map((partner, index) => (
-                  <PartnerImage
-                    key={`${partner.name}-${index}`}
-                    partner={partner}
-                  />
-                ))}
-              </div>
             </div>
 
-            <div>
-              <h3 className="text-[16px] font-semibold text-[#111827]">
-                3PL Partners
-              </h3>
+            <div className="rounded-[22px] border border-[#dcebe8] bg-gradient-to-br from-[#effaf8] to-white p-5 sm:p-6">
+              <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+                <div className="max-w-xl">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[#087b75] shadow-sm">
+                    <Sparkles size={14} />
+                    Health updates and offers
+                  </div>
 
-              <div className="mt-[25px] flex flex-wrap gap-x-[20px] gap-y-3">
-                {logisticsPartners.map((partner) => (
-                  <PartnerImage
-                    key={partner.name}
-                    partner={partner}
-                  />
-                ))}
-              </div>
-            </div>
-          </section>
+                  <h2 className="mt-3 text-[24px] font-bold tracking-[-0.03em] text-[#101828] sm:text-[28px]">
+                    Get useful healthcare updates in your
+                    inbox
+                  </h2>
 
-          {/* Bottom details row */}
-          <section className="mt-[55px] grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-[72px]">
-            <div>
-              <FooterHeading>Download Our App</FooterHeading>
+                  <p className="mt-2 text-sm leading-6 text-[#667085]">
+                    Subscribe for health tips, service
+                    updates and exclusive offers.
+                  </p>
+                </div>
 
-              <div className="mt-[24px] flex flex-wrap items-center gap-5">
-                <a
-                  href="#"
-                  aria-label="Download from Google Play"
-                  className="inline-flex transition-opacity hover:opacity-85"
+                <form
+                  onSubmit={submitNewsletter}
+                  className="w-full md:max-w-[430px]"
+                  noValidate
                 >
-                  <img
-                    src={IMAGE_URLS.googlePlay}
-                    alt="Get it on Google Play"
-                    width={97}
-                    height={30}
-                    className="h-[30px] w-auto object-contain"
-                  />
-                </a>
+                  <div
+                    className={`flex min-h-12 overflow-hidden rounded-xl border bg-white shadow-sm transition ${
+                      status === "error"
+                        ? "border-[#f04438] ring-4 ring-[#f04438]/10"
+                        : "border-[#d6e1df] focus-within:border-[#087b75] focus-within:ring-4 focus-within:ring-[#087b75]/10"
+                    }`}
+                  >
+                    <span className="flex items-center pl-4 text-[#667085]">
+                      <Mail size={18} />
+                    </span>
 
-                <a
-                  href="#"
-                  aria-label="Download from the App Store"
-                  className="inline-flex transition-opacity hover:opacity-85"
-                >
-                  <img
-                    src={IMAGE_URLS.appStore}
-                    alt="Download on the App Store"
-                    width={97}
-                    height={30}
-                    className="h-[30px] w-auto object-contain"
-                  />
-                </a>
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(event) => {
+                        setEmail(event.target.value);
+
+                        if (status !== "idle") {
+                          setStatus("idle");
+                        }
+                      }}
+                      placeholder="Enter your email address"
+                      aria-label="Email address"
+                      className="min-w-0 flex-1 bg-transparent px-3 text-sm outline-none placeholder:text-[#98a2b3]"
+                    />
+
+                    <button
+                      type="submit"
+                      className="m-1 inline-flex min-w-[110px] items-center justify-center gap-2 rounded-lg bg-[#087b75] px-4 text-sm font-semibold text-white transition hover:bg-[#066b66] active:scale-[0.98]"
+                    >
+                      Subscribe
+                      <Send size={15} />
+                    </button>
+                  </div>
+
+                  <div className="mt-2 min-h-5 text-xs">
+                    {status === "success" && (
+                      <p className="flex items-center gap-1.5 text-[#087b75]">
+                        <Check size={14} />
+                        Subscribed successfully.
+                      </p>
+                    )}
+
+                    {status === "error" && (
+                      <p className="text-[#d92d20]">
+                        Please enter a valid email address.
+                      </p>
+                    )}
+                  </div>
+                </form>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div>
-              <FooterHeading>Connect in Social</FooterHeading>
+        <section className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <TrustCard
+            image={IMAGE_URLS.authenticity}
+            title="Authentic Products"
+            description="Products sourced from verified manufacturers, importers and distributors."
+          />
 
-              <div className="mt-[24px] flex items-center gap-[13px]">
-                <SocialImage
-                  href="https://www.linkedin.com"
-                  label="LinkedIn"
-                  src={IMAGE_URLS.linkedin}
-                />
+          <TrustCard
+            image={IMAGE_URLS.customerCentric}
+            title="Customer First"
+            description="Our customers remain at the heart of every service and decision."
+          />
 
-                <SocialImage
-                  href="https://www.facebook.com"
-                  label="Facebook"
-                  src={IMAGE_URLS.facebook}
-                />
+          <TrustCard
+            image={IMAGE_URLS.techDriven}
+            title="Technology Driven"
+            description="Modern technology powers faster, safer and more reliable healthcare."
+          />
 
-                <SocialImage
-                  href="https://www.instagram.com"
-                  label="Instagram"
-                  src={IMAGE_URLS.instagram}
-                />
+          <TrustCard
+            icon={<Truck size={26} />}
+            title="Nationwide Delivery"
+            description="Secure delivery support across Bangladesh through trusted logistics partners."
+          />
+        </section>
 
-                <SocialImage
-                  href="https://www.youtube.com"
-                  label="YouTube"
-                  src={IMAGE_URLS.youtube}
-                />
-              </div>
-            </div>
+        <section className="mt-10 grid gap-10 lg:grid-cols-[1fr_1fr_1fr_1.15fr] lg:gap-8">
+          {footerSections.map((section) => (
+            <FooterColumn
+              key={section.title}
+              section={section}
+              open={openSection === section.title}
+              onToggle={() =>
+                setOpenSection((current) =>
+                  current === section.title
+                    ? null
+                    : section.title,
+                )
+              }
+            />
+          ))}
 
-            <div>
-              <FooterHeading>Trade License Number</FooterHeading>
+          <ContactInfo />
+        </section>
 
-              <p className="mt-[25px] text-[15px] text-[#111827]">
-                TRAD/DNCC/057602/2022
-              </p>
-            </div>
+        <section className="mt-10 grid gap-5 lg:grid-cols-[1.8fr_1fr]">
+          <PartnerPanel
+            title="Online Payment Partners"
+            subtitle="Secure payments verified by"
+            verifier={
+              <img
+                src={IMAGE_URLS.sslCommerz}
+                alt="SSLCommerz"
+                width={100}
+                height={22}
+                className="h-[20px] w-auto object-contain"
+              />
+            }
+            partners={paymentPartners}
+          />
 
-            <div>
-              <FooterHeading>DBID</FooterHeading>
+          <PartnerPanel
+            title="Delivery Partners"
+            subtitle="Trusted logistics network"
+            partners={logisticsPartners}
+          />
+        </section>
 
-              <p className="mt-[25px] text-[15px] text-[#111827]">
-                915741315
-              </p>
-            </div>
-          </section>
+        <section className="mt-10 grid gap-6 rounded-[24px] border border-[#e0e9e7] bg-white/85 p-5 shadow-[0_18px_45px_-36px_rgba(15,23,42,0.4)] sm:p-6 lg:grid-cols-[1.1fr_1fr_1fr]">
+          <div>
+            <FooterHeading icon={<Smartphone size={18} />}>
+              Download Our App
+            </FooterHeading>
 
-          {/* Copyright */}
-          <div className="mt-[34px] border-t border-[#e3e7eb] py-[32px] text-center">
-            <p className="text-[14px] text-[#111827]">
-              © 2026 Arogga Limited. All rights reserved.
+            <p className="mt-3 text-sm leading-6 text-[#667085]">
+              Order medicines, book doctors and track
+              services from your phone.
             </p>
+
+            <div className="mt-4 flex flex-wrap gap-3">
+              <StoreBadge
+                href="#"
+                src={IMAGE_URLS.googlePlay}
+                alt="Get it on Google Play"
+              />
+
+              <StoreBadge
+                href="#"
+                src={IMAGE_URLS.appStore}
+                alt="Download on the App Store"
+              />
+            </div>
+          </div>
+
+          <div>
+            <FooterHeading icon={<HeartPulse size={18} />}>
+              Connect With Us
+            </FooterHeading>
+
+            <p className="mt-3 text-sm leading-6 text-[#667085]">
+              Follow Arogga for updates, health tips and
+              community stories.
+            </p>
+
+            <div className="mt-4 flex flex-wrap gap-3">
+              <SocialImage
+                href="https://www.linkedin.com"
+                label="LinkedIn"
+                src={IMAGE_URLS.linkedin}
+              />
+
+              <SocialImage
+                href="https://www.facebook.com"
+                label="Facebook"
+                src={IMAGE_URLS.facebook}
+              />
+
+              <SocialImage
+                href="https://www.instagram.com"
+                label="Instagram"
+                src={IMAGE_URLS.instagram}
+              />
+
+              <SocialImage
+                href="https://www.youtube.com"
+                label="YouTube"
+                src={IMAGE_URLS.youtube}
+              />
+            </div>
+          </div>
+
+          <div>
+            <FooterHeading icon={<ShieldCheck size={18} />}>
+              Business Verification
+            </FooterHeading>
+
+            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              <InfoCard
+                title="Trade License"
+                value="TRAD/DNCC/057602/2022"
+              />
+
+              <InfoCard
+                title="DBID"
+                value="915741315"
+              />
+            </div>
+          </div>
+        </section>
+
+        <div className="mt-8 flex flex-col gap-4 border-t border-[#dfe7e5] pt-6 text-sm text-[#667085] md:flex-row md:items-center md:justify-between">
+          <p>
+            © {currentYear} Arogga Limited. All rights
+            reserved.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <Link
+              href="/privacy-policy"
+              className="transition hover:text-[#087b75]"
+            >
+              Privacy
+            </Link>
+
+            <Link
+              href="/terms-and-conditions"
+              className="transition hover:text-[#087b75]"
+            >
+              Terms
+            </Link>
+
+            <Link
+              href="/faq"
+              className="transition hover:text-[#087b75]"
+            >
+              Help
+            </Link>
+
+            <span className="inline-flex items-center gap-1.5">
+              Made with
+              <HeartPulse
+                size={14}
+                className="text-[#ef4545]"
+              />
+              in Bangladesh
+            </span>
           </div>
         </div>
       </div>
@@ -444,136 +589,306 @@ export default function Footer() {
   );
 }
 
-function FeatureBlock({
-  image,
-  alt,
-  children,
+function QuickContact({
+  href,
+  icon,
+  title,
+  value,
+  external = false,
 }: {
-  image: string;
-  alt: string;
-  children: ReactNode;
+  href: string;
+  icon: ReactNode;
+  title: string;
+  value: string;
+  external?: boolean;
 }) {
   return (
-    <div>
-      <div className="flex min-h-[65px] items-start">
-        <img
-          src={image}
-          alt={alt}
-          width={63}
-          height={63}
-          loading="lazy"
-          className="h-[62px] w-[62px] object-contain object-left"
-        />
+    <a
+      href={href}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      className="group inline-flex items-center gap-3 rounded-xl border border-[#dbe7e4] bg-white px-3 py-2.5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#087b75]/30 hover:shadow-md"
+    >
+      <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#eaf8f5] text-[#087b75] transition group-hover:bg-[#087b75] group-hover:text-white">
+        {icon}
+      </span>
+
+      <span className="leading-tight">
+        <small className="block text-[11px] text-[#667085]">
+          {title}
+        </small>
+
+        <strong className="text-sm text-[#101828]">
+          {value}
+        </strong>
+      </span>
+    </a>
+  );
+}
+
+function TrustCard({
+  image,
+  icon,
+  title,
+  description,
+}: {
+  image?: string;
+  icon?: ReactNode;
+  title: string;
+  description: string;
+}) {
+  return (
+    <article className="group rounded-[20px] border border-[#e2ebe9] bg-white/85 p-5 shadow-[0_18px_40px_-34px_rgba(15,23,42,0.45)] transition duration-300 hover:-translate-y-1 hover:border-[#087b75]/20 hover:shadow-[0_24px_50px_-34px_rgba(8,123,117,0.35)]">
+      <div className="flex h-12 w-12 items-center justify-center rounded-[14px] bg-[#eef9f7] text-[#087b75] transition duration-300 group-hover:scale-105 group-hover:bg-[#087b75] group-hover:text-white">
+        {image ? (
+          <img
+            src={image}
+            alt=""
+            width={48}
+            height={48}
+            loading="lazy"
+            className="h-10 w-10 object-contain"
+          />
+        ) : (
+          icon
+        )}
       </div>
 
-      <p className="mt-[18px] max-w-[296px] text-[15px] leading-[23px] text-[#111827]">
-        {children}
+      <h3 className="mt-4 text-[16px] font-semibold text-[#101828]">
+        {title}
+      </h3>
+
+      <p className="mt-2 text-sm leading-6 text-[#667085]">
+        {description}
       </p>
-    </div>
+    </article>
   );
 }
 
 function FooterColumn({
-  title,
-  links,
+  section,
+  open,
+  onToggle,
 }: {
-  title: string;
-  links: FooterLink[];
+  section: FooterSection;
+  open: boolean;
+  onToggle: () => void;
 }) {
   return (
     <div>
-      <h3 className="text-[21px] font-semibold leading-7 text-[#111827]">
-        {title}
-      </h3>
+      <button
+        type="button"
+        onClick={onToggle}
+        className="flex w-full items-center justify-between gap-3 border-b border-[#e4eae8] pb-3 text-left lg:pointer-events-none lg:border-0 lg:pb-0"
+        aria-expanded={open}
+      >
+        <span className="text-[17px] font-semibold text-[#101828]">
+          {section.title}
+        </span>
 
-      <nav className="mt-[22px] flex flex-col items-start gap-[11px]">
-        {links.map((link) => (
-          <Link
-            key={link.label}
-            href={link.href}
-            className="text-[15px] leading-[21px] text-[#111827] transition-colors duration-200 hover:text-[#087b75]"
-          >
-            {link.label}
-          </Link>
-        ))}
+        <ChevronDown
+          size={18}
+          className={`transition-transform lg:hidden ${
+            open ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      <nav
+        className={`grid overflow-hidden transition-all duration-300 lg:mt-4 lg:grid-rows-[1fr] ${
+          open
+            ? "mt-3 grid-rows-[1fr]"
+            : "grid-rows-[0fr] lg:grid-rows-[1fr]"
+        }`}
+        aria-label={section.title}
+      >
+        <div className="min-h-0">
+          <div className="flex flex-col gap-3">
+            {section.links.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="w-fit text-sm leading-6 text-[#5f6b78] transition hover:translate-x-1 hover:text-[#087b75]"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
       </nav>
     </div>
   );
 }
 
 function ContactInfo() {
+  const [copied, setCopied] =
+    useState<string | null>(null);
+
+  const copyText = async (
+    value: string,
+    key: string,
+  ) => {
+    try {
+      await navigator.clipboard.writeText(value);
+
+      setCopied(key);
+
+      window.setTimeout(() => {
+        setCopied(null);
+      }, 1500);
+    } catch {
+      setCopied(null);
+    }
+  };
+
   return (
     <div>
-      <h3 className="text-[21px] font-semibold leading-7 text-[#111827]">
+      <h3 className="text-[17px] font-semibold text-[#101828]">
         Contact Info
       </h3>
 
-      <div className="mt-[22px] flex flex-col gap-[11px]">
-        <ContactRow
-          icon={<Phone size={17} strokeWidth={1.5} />}
-          label="Hotline:"
-        >
-          <a
-            href="tel:09610016778"
-            className="text-[#007b75] underline underline-offset-[3px]"
-          >
-            09610016778
-          </a>
-        </ContactRow>
-
-        <ContactRow
-          icon={
-            <MessageCircle
-              size={17}
-              strokeWidth={1.5}
-            />
+      <div className="mt-4 flex flex-col gap-3">
+        <ContactCard
+          icon={<Phone size={17} />}
+          label="Hotline"
+          value="09610016778"
+          href="tel:09610016778"
+          onCopy={() =>
+            copyText("09610016778", "phone")
           }
-          label="Whatsapp:"
-        >
-          <a
-            href="https://wa.me/8801810117100"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#007b75] underline underline-offset-[3px]"
-          >
-            01810117100
-          </a>
-        </ContactRow>
+          copied={copied === "phone"}
+        />
 
-        <div className="flex items-start gap-[9px] text-[15px] leading-[21px] text-[#111827]">
-          <MapPin
-            size={17}
-            strokeWidth={1.5}
-            className="mt-[2px] shrink-0 text-[#374151]"
-          />
+        <ContactCard
+          icon={<MessageCircle size={17} />}
+          label="WhatsApp"
+          value="01810117100"
+          href="https://wa.me/8801810117100"
+          external
+          onCopy={() =>
+            copyText("01810117100", "whatsapp")
+          }
+          copied={copied === "whatsapp"}
+        />
 
-          <p className="max-w-[280px]">
-            Address: D/15-1, Road-36, Block-D, Section-10, Mirpur, Dhaka-1216
-          </p>
+        <div className="flex gap-3 rounded-xl border border-[#e1e8e6] bg-white/80 p-3">
+          <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#eef8f6] text-[#087b75]">
+            <MapPin size={17} />
+          </span>
+
+          <div>
+            <span className="block text-xs font-medium text-[#667085]">
+              Head Office
+            </span>
+
+            <p className="mt-1 text-sm leading-6 text-[#344054]">
+              D/15-1, Road-36, Block-D, Section-10,
+              Mirpur, Dhaka-1216
+            </p>
+          </div>
         </div>
+
+        <a
+          href="mailto:support@arogga.com"
+          className="inline-flex items-center gap-2 text-sm font-medium text-[#087b75] hover:underline"
+        >
+          <Mail size={16} />
+          support@arogga.com
+        </a>
       </div>
     </div>
   );
 }
 
-function ContactRow({
+function ContactCard({
   icon,
   label,
-  children,
+  value,
+  href,
+  external = false,
+  onCopy,
+  copied,
 }: {
   icon: ReactNode;
   label: string;
-  children: ReactNode;
+  value: string;
+  href: string;
+  external?: boolean;
+  onCopy: () => void;
+  copied: boolean;
 }) {
   return (
-    <div className="flex flex-wrap items-center gap-[9px] text-[15px] leading-[21px] text-[#111827]">
-      <span className="shrink-0 text-[#374151]">
+    <div className="flex items-center gap-3 rounded-xl border border-[#e1e8e6] bg-white/80 p-3">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#eef8f6] text-[#087b75]">
         {icon}
       </span>
 
-      <span>{label}</span>
+      <a
+        href={href}
+        target={external ? "_blank" : undefined}
+        rel={external ? "noopener noreferrer" : undefined}
+        className="min-w-0 flex-1"
+      >
+        <small className="block text-[11px] text-[#667085]">
+          {label}
+        </small>
 
-      {children}
+        <strong className="text-sm text-[#101828]">
+          {value}
+        </strong>
+      </a>
+
+      <button
+        type="button"
+        onClick={onCopy}
+        aria-label={`Copy ${label}`}
+        className="flex h-8 w-8 items-center justify-center rounded-lg text-[#667085] transition hover:bg-[#eef8f6] hover:text-[#087b75]"
+      >
+        {copied ? (
+          <Check size={15} />
+        ) : (
+          <Copy size={15} />
+        )}
+      </button>
+    </div>
+  );
+}
+
+function PartnerPanel({
+  title,
+  subtitle,
+  verifier,
+  partners,
+}: {
+  title: string;
+  subtitle: string;
+  verifier?: ReactNode;
+  partners: PartnerLogo[];
+}) {
+  return (
+    <div className="rounded-[22px] border border-[#e0e8e6] bg-white/85 p-5 shadow-[0_18px_42px_-36px_rgba(15,23,42,0.4)] sm:p-6">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h3 className="text-[16px] font-semibold text-[#101828]">
+            {title}
+          </h3>
+
+          <p className="mt-1 text-xs text-[#667085]">
+            {subtitle}
+          </p>
+        </div>
+
+        {verifier}
+      </div>
+
+      <div className="mt-5 flex flex-wrap gap-3">
+        {partners.map((partner) => (
+          <PartnerImage
+            key={partner.name}
+            partner={partner}
+          />
+        ))}
+      </div>
     </div>
   );
 }
@@ -584,30 +899,60 @@ function PartnerImage({
   partner: PartnerLogo;
 }) {
   return (
-    <div className="flex h-[31px] min-w-[56px] items-center justify-center rounded-[5px] border border-[#dde2e7] bg-white px-[7px]">
+    <div className="group flex h-[42px] min-w-[70px] items-center justify-center rounded-xl border border-[#dde5e3] bg-white px-3 shadow-sm transition hover:-translate-y-0.5 hover:border-[#087b75]/25 hover:shadow-md">
       <img
         src={partner.src}
         alt={partner.name}
-        width={48}
-        height={21}
+        width={58}
+        height={26}
         loading="lazy"
-        className={`max-h-[21px] max-w-[52px] object-contain ${
-          partner.imageClassName ?? ""
-        }`}
+        className="max-h-[24px] max-w-[62px] object-contain transition group-hover:scale-105"
       />
     </div>
   );
 }
 
 function FooterHeading({
+  icon,
   children,
 }: {
+  icon: ReactNode;
   children: ReactNode;
 }) {
   return (
-    <h3 className="text-[17px] font-semibold text-[#111827]">
+    <h3 className="flex items-center gap-2 text-[16px] font-semibold text-[#101828]">
+      <span className="text-[#087b75]">
+        {icon}
+      </span>
+
       {children}
     </h3>
+  );
+}
+
+function StoreBadge({
+  href,
+  src,
+  alt,
+}: {
+  href: string;
+  src: string;
+  alt: string;
+}) {
+  return (
+    <a
+      href={href}
+      aria-label={alt}
+      className="inline-flex rounded-lg transition hover:-translate-y-0.5 hover:shadow-md"
+    >
+      <img
+        src={src}
+        alt={alt}
+        width={118}
+        height={36}
+        className="h-9 w-auto object-contain"
+      />
+    </a>
   );
 }
 
@@ -626,58 +971,100 @@ function SocialImage({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="inline-flex h-[30px] w-[30px] items-center justify-center transition-transform duration-200 hover:-translate-y-[2px]"
+      className="group inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[#dfe7e5] bg-white shadow-sm transition hover:-translate-y-1 hover:border-[#087b75]/25 hover:shadow-md"
     >
       <img
         src={src}
-        alt={label}
-        width={30}
-        height={30}
+        alt=""
+        width={24}
+        height={24}
         loading="lazy"
-        className="h-[30px] w-[30px] object-contain"
+        className="h-6 w-6 object-contain transition duration-300 group-hover:scale-110"
       />
     </a>
   );
 }
 
+function InfoCard({
+  title,
+  value,
+}: {
+  title: string;
+  value: string;
+}) {
+  return (
+    <div className="rounded-xl border border-[#e2e9e7] bg-[#f8fbfa] p-3">
+      <span className="block text-[11px] font-medium text-[#667085]">
+        {title}
+      </span>
+
+      <strong className="mt-1 block break-words text-sm text-[#101828]">
+        {value}
+      </strong>
+    </div>
+  );
+}
+
 function BackToTop() {
   const [visible, setVisible] = useState(false);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const updateVisibility = () => {
-      setVisible(window.scrollY > 300);
+    const update = () => {
+      const scrollTop = window.scrollY;
+
+      const total =
+        document.documentElement.scrollHeight -
+        window.innerHeight;
+
+      setVisible(scrollTop > 350);
+
+      setProgress(
+        total > 0
+          ? Math.min((scrollTop / total) * 100, 100)
+          : 0,
+      );
     };
 
-    updateVisibility();
+    update();
 
-    window.addEventListener("scroll", updateVisibility, {
+    window.addEventListener("scroll", update, {
       passive: true,
     });
 
+    window.addEventListener("resize", update);
+
     return () => {
-      window.removeEventListener("scroll", updateVisibility);
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
     };
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <button
       type="button"
-      onClick={scrollToTop}
+      onClick={() =>
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        })
+      }
       aria-label="Back to top"
-      className={`fixed bottom-7 right-5 z-50 flex h-[42px] w-[42px] items-center justify-center rounded-full border border-[#d5d9dd] bg-[#f8f9fa] text-[#111827] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#087b75] hover:text-[#087b75] md:bottom-[104px] md:right-[38px] ${
+      className={`fixed bottom-6 right-5 z-50 flex h-12 w-12 items-center justify-center rounded-full text-white shadow-[0_14px_30px_-14px_rgba(8,123,117,0.85)] transition-all duration-300 hover:-translate-y-1 md:bottom-8 md:right-8 ${
         visible
           ? "pointer-events-auto translate-y-0 opacity-100"
           : "pointer-events-none translate-y-3 opacity-0"
       }`}
+      style={{
+        backgroundImage: `conic-gradient(
+          #43d4c2 ${progress}%,
+          #087b75 ${progress}%
+        )`,
+      }}
     >
-      <ArrowUp size={24} strokeWidth={1.8} />
+      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#087b75]">
+        <ArrowUp size={20} />
+      </span>
     </button>
   );
 }

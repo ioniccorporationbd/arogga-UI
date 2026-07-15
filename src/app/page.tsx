@@ -1,14 +1,15 @@
-import EspeciallyForYou from '@/Components/HomeComponents/EspeciallyForYou';
-import HeroBanner from '@/Components/HomeComponents/HeroBanner';
-import React from 'react';
+import AllYouNeed from "@/Components/HomeComponents/AllYouNeed";
+import BasicSiteBanner from "@/Components/HomeComponents/BasicSiteBanner";
+import EspeciallyForYou from "@/Components/HomeComponents/EspeciallyForYou";
+import StealTheDeal from "@/Components/HomeComponents/StealTheDeal";
 
-const page = () => {
+export default function HomePage() {
   return (
-    <div>
-      <HeroBanner/>
-      <EspeciallyForYou/>
-    </div>
+    <>
+      <BasicSiteBanner />
+      <EspeciallyForYou />
+      <AllYouNeed />
+        <StealTheDeal/>
+    </>
   );
-};
-
-export default page;
+}
