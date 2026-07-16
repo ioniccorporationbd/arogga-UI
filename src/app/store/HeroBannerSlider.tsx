@@ -1,1122 +1,828 @@
 "use client";
 
-import {
-  ChevronLeft,
-  ChevronRight,
-  Pause,
-  Play,
-} from "lucide-react";
 import Link from "next/link";
 import {
-  type KeyboardEvent,
-  type PointerEvent,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+  A11y,
+  Autoplay,
+  EffectFade,
+  Keyboard,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 type BannerSlide = {
   id: number;
-  title: string;
-  description: string;
-  image: string;
-  mobileImage?: string;
+  desktopImage: string;
+  mobileImage: string;
   href: string;
   alt: string;
+  desktopPosition?: string;
+  mobilePosition?: string;
 };
 
-const slides: BannerSlide[] = [
+const bannerSlides: BannerSlide[] = [
   {
     id: 1,
-    title: "Wellness Essentials",
-    description:
-      "Explore trusted personal care and wellness products.",
-    image: "/images/banners/wellness-banner-01.webp",
+    desktopImage:
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1800&h=520&q=90",
     mobileImage:
-      "/images/banners/wellness-banner-01-mobile.webp",
-    href: "/sexual-wellness",
-    alt: "Personal wellness products promotional offer",
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&h=1000&q=88",
+    href: "/beauty",
+    alt: "Beauty and cosmetics promotional collection",
+    desktopPosition: "center",
+    mobilePosition: "center",
   },
   {
     id: 2,
-    title: "Beauty & Skincare",
-    description:
-      "Discover skincare and beauty products for everyday care.",
-    image: "/images/banners/beauty-banner-02.webp",
+    desktopImage:
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1800&h=520&q=90",
     mobileImage:
-      "/images/banners/beauty-banner-02-mobile.webp",
-    href: "/beauty",
-    alt: "Beauty and skincare products promotional banner",
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&h=1000&q=88",
+    href: "/medicine",
+    alt: "Medicine and pharmacy products promotional collection",
+    desktopPosition: "center",
+    mobilePosition: "center",
   },
   {
     id: 3,
-    title: "Healthcare Savings",
-    description:
-      "Shop healthcare products with selected special offers.",
-    image: "/images/banners/healthcare-banner-03.webp",
+    desktopImage:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&h=520&q=90",
     mobileImage:
-      "/images/banners/healthcare-banner-03-mobile.webp",
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&h=1000&q=88",
     href: "/healthcare",
-    alt: "Healthcare products promotional banner",
+    alt: "Healthcare and medical service promotional collection",
+    desktopPosition: "center",
+    mobilePosition: "center",
   },
   {
     id: 4,
-    title: "Baby & Mom Care",
-    description:
-      "Find daily care products for mothers and babies.",
-    image: "/images/banners/baby-care-banner-04.webp",
+    desktopImage:
+      "https://images.unsplash.com/photo-1584839404042-8bc21d240e91?auto=format&fit=crop&w=1800&h=520&q=90",
     mobileImage:
-      "/images/banners/baby-care-banner-04-mobile.webp",
+      "https://images.unsplash.com/photo-1584839404042-8bc21d240e91?auto=format&fit=crop&w=900&h=1000&q=88",
     href: "/baby-mom-care",
-    alt: "Baby and mother care promotional banner",
+    alt: "Baby and mother care promotional collection",
+    desktopPosition: "center",
+    mobilePosition: "center",
   },
   {
     id: 5,
-    title: "Supplement Offers",
-    description:
-      "Browse vitamins, minerals and nutritional supplements.",
-    image: "/images/banners/supplement-banner-05.webp",
+    desktopImage:
+      "https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=1800&h=520&q=90",
     mobileImage:
-      "/images/banners/supplement-banner-05-mobile.webp",
+      "https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=900&h=1000&q=88",
     href: "/supplement",
-    alt: "Supplement products promotional banner",
+    alt: "Vitamins and supplements promotional collection",
+    desktopPosition: "center",
+    mobilePosition: "center",
   },
   {
     id: 6,
-    title: "Home Care Deals",
-    description:
-      "Shop useful products for a cleaner and healthier home.",
-    image: "/images/banners/home-care-banner-06.webp",
+    desktopImage:
+      "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=1800&h=520&q=90",
     mobileImage:
-      "/images/banners/home-care-banner-06-mobile.webp",
+      "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=900&h=1000&q=88",
     href: "/home-care",
-    alt: "Home care products promotional banner",
+    alt: "Home care and cleaning products promotional collection",
+    desktopPosition: "center",
+    mobilePosition: "center",
   },
   {
     id: 7,
-    title: "New Arrivals",
-    description:
-      "See the latest products recently added to Anukov.",
-    image: "/images/banners/new-arrival-banner-07.webp",
+    desktopImage:
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1800&h=520&q=90",
     mobileImage:
-      "/images/banners/new-arrival-banner-07-mobile.webp",
-    href: "/new-arrivals",
-    alt: "Newly launched products promotional banner",
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&h=1000&q=88",
+    href: "/skincare",
+    alt: "Skincare and wellness promotional collection",
+    desktopPosition: "center",
+    mobilePosition: "center",
   },
 ];
 
-const AUTO_PLAY_DELAY = 5000;
-const SWIPE_THRESHOLD = 45;
-
 export default function HeroBannerSlider() {
-  const sliderRef = useRef<HTMLDivElement | null>(null);
-  const timerRef = useRef<ReturnType<
-    typeof setInterval
-  > | null>(null);
-
-  const pointerStartRef = useRef({
-    x: 0,
-    y: 0,
-    active: false,
-  });
-
-  const [activeIndex, setActiveIndex] =
-    useState(0);
-
-  const [isPlaying, setIsPlaying] =
-    useState(true);
-
-  const [isHovered, setIsHovered] =
-    useState(false);
-
-  const [imageErrors, setImageErrors] =
-    useState<number[]>([]);
-
-  const totalSlides = slides.length;
-
-  const goToSlide = useCallback(
-    (index: number) => {
-      const normalizedIndex =
-        (index + totalSlides) % totalSlides;
-
-      setActiveIndex(normalizedIndex);
-    },
-    [totalSlides],
-  );
-
-  const showPrevious = useCallback(() => {
-    setActiveIndex((current) =>
-      current === 0
-        ? totalSlides - 1
-        : current - 1,
-    );
-  }, [totalSlides]);
-
-  const showNext = useCallback(() => {
-    setActiveIndex((current) =>
-      current === totalSlides - 1
-        ? 0
-        : current + 1,
-    );
-  }, [totalSlides]);
-
-  useEffect(() => {
-    if (
-      !isPlaying ||
-      isHovered ||
-      totalSlides <= 1
-    ) {
-      return;
-    }
-
-    timerRef.current = setInterval(() => {
-      showNext();
-    }, AUTO_PLAY_DELAY);
-
-    return () => {
-      if (timerRef.current) {
-        clearInterval(timerRef.current);
-      }
-    };
-  }, [
-    isPlaying,
-    isHovered,
-    showNext,
-    totalSlides,
-  ]);
-
-  useEffect(() => {
-    const slider = sliderRef.current;
-
-    if (!slider) {
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          setIsHovered(true);
-          return;
-        }
-
-        setIsHovered(false);
-      },
-      {
-        threshold: 0.15,
-      },
-    );
-
-    observer.observe(slider);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
-  const handleKeyboard = (
-    event: KeyboardEvent<HTMLDivElement>,
-  ) => {
-    if (event.key === "ArrowLeft") {
-      event.preventDefault();
-      showPrevious();
-    }
-
-    if (event.key === "ArrowRight") {
-      event.preventDefault();
-      showNext();
-    }
-
-    if (event.key === " ") {
-      event.preventDefault();
-      setIsPlaying((current) => !current);
-    }
-  };
-
-  const handlePointerDown = (
-    event: PointerEvent<HTMLDivElement>,
-  ) => {
-    pointerStartRef.current = {
-      x: event.clientX,
-      y: event.clientY,
-      active: true,
-    };
-
-    event.currentTarget.setPointerCapture(
-      event.pointerId,
-    );
-  };
-
-  const handlePointerUp = (
-    event: PointerEvent<HTMLDivElement>,
-  ) => {
-    if (!pointerStartRef.current.active) {
-      return;
-    }
-
-    const movementX =
-      event.clientX -
-      pointerStartRef.current.x;
-
-    const movementY =
-      event.clientY -
-      pointerStartRef.current.y;
-
-    pointerStartRef.current.active = false;
-
-    if (
-      Math.abs(movementX) <
-        SWIPE_THRESHOLD ||
-      Math.abs(movementX) <
-        Math.abs(movementY)
-    ) {
-      return;
-    }
-
-    if (movementX > 0) {
-      showPrevious();
-    } else {
-      showNext();
-    }
-  };
-
-  const handlePointerCancel = () => {
-    pointerStartRef.current.active = false;
-  };
-
-  const markImageError = (
-    slideId: number,
-  ) => {
-    setImageErrors((current) => {
-      if (current.includes(slideId)) {
-        return current;
-      }
-
-      return [...current, slideId];
-    });
-  };
-
   return (
     <>
       <section
-        aria-label="Anukov promotional offers"
-        className="anukov-banner-section"
+        aria-label="Anukov promotional banners"
+        className="anukov-hero-section"
       >
-        <div className="anukov-banner-container">
-          <div
-            ref={sliderRef}
-            role="region"
-            aria-roledescription="carousel"
-            aria-label="Promotional banner carousel"
-            tabIndex={0}
-            onKeyDown={handleKeyboard}
-            onMouseEnter={() =>
-              setIsHovered(true)
-            }
-            onMouseLeave={() =>
-              setIsHovered(false)
-            }
-            onPointerDown={handlePointerDown}
-            onPointerUp={handlePointerUp}
-            onPointerCancel={
-              handlePointerCancel
-            }
-            className="anukov-banner-slider"
-          >
-            <div
-              className="anukov-banner-track"
-              style={{
-                transform: `translate3d(-${
-                  activeIndex * 100
-                }%, 0, 0)`,
+        <div className="anukov-hero-container">
+          <div className="anukov-hero-shell">
+            <Swiper
+              modules={[
+                Navigation,
+                Pagination,
+                Autoplay,
+                Keyboard,
+                A11y,
+                EffectFade,
+              ]}
+              effect="fade"
+              fadeEffect={{
+                crossFade: true,
               }}
+              slidesPerView={1}
+              spaceBetween={0}
+              loop
+              speed={1100}
+              grabCursor
+              watchSlidesProgress
+              resistance
+              resistanceRatio={0.7}
+              threshold={8}
+              touchRatio={1}
+              followFinger
+              longSwipes
+              shortSwipes
+              keyboard={{
+                enabled: true,
+                onlyInViewport: true,
+              }}
+              autoplay={{
+                delay: 5200,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+                waitForTransition: true,
+              }}
+              navigation={{
+                prevEl: ".anukov-hero-prev",
+                nextEl: ".anukov-hero-next",
+              }}
+              pagination={{
+                el: ".anukov-hero-pagination",
+                clickable: true,
+                renderBullet: (index, className) =>
+                  `<button type="button" class="${className}" aria-label="Go to banner ${
+                    index + 1
+                  }"><span></span></button>`,
+              }}
+              a11y={{
+                enabled: true,
+                prevSlideMessage: "Previous promotional banner",
+                nextSlideMessage: "Next promotional banner",
+                firstSlideMessage: "First promotional banner",
+                lastSlideMessage: "Last promotional banner",
+                paginationBulletMessage: "Go to promotional banner {{index}}",
+              }}
+              className="anukov-hero-swiper"
             >
-              {slides.map((slide, index) => {
-                const failed =
-                  imageErrors.includes(slide.id);
-
-                return (
-                  <article
-                    key={slide.id}
-                    role="group"
-                    aria-roledescription="slide"
-                    aria-label={`${index + 1} of ${totalSlides}`}
-                    aria-hidden={
-                      activeIndex !== index
-                    }
-                    className="anukov-banner-slide"
-                  >
-                    <Link
-                      href={slide.href}
-                      aria-label={`${slide.title}: ${slide.description}`}
-                      tabIndex={
-                        activeIndex === index
-                          ? 0
-                          : -1
-                      }
-                      className="anukov-banner-link"
+              {bannerSlides.map((slide, index) => (
+                <SwiperSlide key={slide.id}>
+                  {({ isActive }) => (
+                    <article
+                      className={[
+                        "anukov-hero-slide",
+                        isActive ? "is-active" : "",
+                      ].join(" ")}
                     >
-                      {!failed ? (
+                      <Link
+                        href={slide.href}
+                        aria-label={slide.alt}
+                        className="anukov-hero-link"
+                      >
                         <picture>
-                          {slide.mobileImage && (
-                            <source
-                              media="(max-width: 639px)"
-                              srcSet={
-                                slide.mobileImage
-                              }
-                            />
-                          )}
+                          <source
+                            media="(max-width: 639px)"
+                            srcSet={slide.mobileImage}
+                          />
 
                           <img
-                            src={slide.image}
+                            src={slide.desktopImage}
                             alt={slide.alt}
-                            width={1440}
-                            height={340}
+                            width={1800}
+                            height={520}
                             draggable={false}
-                            loading={
-                              index === 0
-                                ? "eager"
-                                : "lazy"
-                            }
-                            fetchPriority={
-                              index === 0
-                                ? "high"
-                                : "auto"
-                            }
-                            onError={() =>
-                              markImageError(
-                                slide.id,
-                              )
-                            }
-                            className="anukov-banner-image"
+                            loading={index === 0 ? "eager" : "lazy"}
+                            fetchPriority={index === 0 ? "high" : "auto"}
+                            className="anukov-hero-image"
+                            style={{
+                              objectPosition:
+                                slide.desktopPosition ?? "center",
+                            }}
                           />
                         </picture>
-                      ) : (
-                        <div className="anukov-banner-fallback">
-                          <span>
-                            Anukov Offers
-                          </span>
 
-                          <strong>
-                            {slide.title}
-                          </strong>
+                        <span
+                          aria-hidden="true"
+                          className="anukov-hero-overlay"
+                        />
 
-                          <p>
-                            {
-                              slide.description
-                            }
-                          </p>
-                        </div>
-                      )}
+                        <span
+                          aria-hidden="true"
+                          className="anukov-hero-shine"
+                        />
+                      </Link>
+                    </article>
+                  )}
+                </SwiperSlide>
+              ))}
 
-                      <span
-                        aria-hidden="true"
-                        className="anukov-banner-overlay"
-                      />
-                    </Link>
-                  </article>
-                );
-              })}
-            </div>
+              <button
+                type="button"
+                aria-label="Previous banner"
+                className="anukov-hero-arrow anukov-hero-prev"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M14.5 5 7.5 12l7 7"
+                    stroke="currentColor"
+                    strokeWidth="1.9"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
 
-            {totalSlides > 1 && (
-              <>
-                <SliderButton
-                  direction="left"
-                  onClick={showPrevious}
-                />
+              <button
+                type="button"
+                aria-label="Next banner"
+                className="anukov-hero-arrow anukov-hero-next"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m9.5 5 7 7-7 7"
+                    stroke="currentColor"
+                    strokeWidth="1.9"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
 
-                <SliderButton
-                  direction="right"
-                  onClick={showNext}
-                />
-              </>
-            )}
-
-            <button
-              type="button"
-              onClick={() =>
-                setIsPlaying(
-                  (current) => !current,
-                )
-              }
-              aria-label={
-                isPlaying
-                  ? "Pause automatic slideshow"
-                  : "Start automatic slideshow"
-              }
-              className="anukov-banner-play-button"
-            >
-              {isPlaying ? (
-                <Pause
-                  size={16}
-                  fill="currentColor"
-                />
-              ) : (
-                <Play
-                  size={16}
-                  fill="currentColor"
-                />
-              )}
-            </button>
-          </div>
-
-          {totalSlides > 1 && (
-            <div
-              role="tablist"
-              aria-label="Choose banner"
-              className="anukov-banner-dots"
-            >
-              {slides.map((slide, index) => {
-                const active =
-                  index === activeIndex;
-
-                return (
-                  <button
-                    key={slide.id}
-                    type="button"
-                    role="tab"
-                    aria-selected={active}
-                    aria-label={`Show slide ${
-                      index + 1
-                    }: ${slide.title}`}
-                    onClick={() =>
-                      goToSlide(index)
-                    }
-                    className={
-                      active
-                        ? "anukov-banner-dot is-active"
-                        : "anukov-banner-dot"
-                    }
-                  >
-                    <span />
-                  </button>
-                );
-              })}
-            </div>
-          )}
-
-          <div
-            aria-live="polite"
-            className="anukov-banner-screen-reader"
-          >
-            Slide {activeIndex + 1} of{" "}
-            {totalSlides}:{" "}
-            {slides[activeIndex]?.title}
+              <div
+                className="anukov-hero-pagination"
+                aria-label="Banner pagination"
+              />
+            </Swiper>
           </div>
         </div>
       </section>
 
       <style jsx global>{`
-        .anukov-banner-section {
-          --banner-text-20: 20px;
-          --banner-text-18: 18px;
-          --banner-text-16: 16px;
-          --banner-text-13: 13px;
-
+        .anukov-hero-section {
           position: relative;
           width: 100%;
           overflow: hidden;
-          padding: 24px 0 12px;
-          background: #ffffff;
-          -webkit-font-smoothing: antialiased;
-          text-rendering: optimizeLegibility;
+          padding: 22px 0 14px;
+          background:
+            radial-gradient(
+              circle at 5% 10%,
+              rgba(222, 246, 241, 0.48),
+              transparent 26%
+            ),
+            radial-gradient(
+              circle at 95% 90%,
+              rgba(238, 232, 255, 0.44),
+              transparent 27%
+            ),
+            #ffffff;
         }
 
-        .anukov-banner-container {
-          width: min(
-            1440px,
-            calc(100% - 48px)
-          );
+        .anukov-hero-container {
+          width: min(1440px, calc(100% - 48px));
           margin-inline: auto;
         }
 
-        .anukov-banner-slider {
+        .anukov-hero-shell {
+          position: relative;
+          padding: 5px;
+          border-radius: 22px;
+          background:
+            linear-gradient(
+              135deg,
+              rgba(255, 255, 255, 0.98),
+              rgba(224, 243, 239, 0.7),
+              rgba(255, 255, 255, 0.98)
+            );
+          box-shadow:
+            0 30px 75px -50px rgba(15, 23, 42, 0.5),
+            inset 0 1px rgba(255, 255, 255, 0.9);
+        }
+
+        .anukov-hero-swiper {
           position: relative;
           overflow: hidden;
-          border: 1px solid
-            rgba(15, 23, 42, 0.08);
-          border-radius: 14px;
-          background: #eef2f5;
+          border: 1px solid rgba(15, 23, 42, 0.07);
+          border-radius: 17px;
+          background: #eef2f3;
           box-shadow:
-            0 22px 50px -38px
-              rgba(15, 23, 42, 0.48),
-            0 5px 16px -12px
-              rgba(15, 23, 42, 0.2);
-          outline: none;
-          touch-action: pan-y;
-          user-select: none;
+            0 20px 45px -36px rgba(15, 23, 42, 0.48),
+            0 6px 18px -15px rgba(15, 23, 42, 0.22);
+          transform: translateZ(0);
+          isolation: isolate;
+        }
+
+        .anukov-hero-swiper .swiper-wrapper {
+          align-items: stretch;
+        }
+
+        .anukov-hero-swiper .swiper-slide {
+          height: auto;
+          overflow: hidden;
+          background: #edf2f3;
+        }
+
+        .anukov-hero-slide,
+        .anukov-hero-link,
+        .anukov-hero-link picture {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+
+        .anukov-hero-link {
+          text-decoration: none;
+          background: #edf2f3;
           transform: translateZ(0);
         }
 
-        .anukov-banner-slider:focus-visible {
-          box-shadow:
-            0 0 0 4px
-              rgba(8, 123, 117, 0.14),
-            0 22px 50px -38px
-              rgba(15, 23, 42, 0.48);
-        }
-
-        .anukov-banner-track {
-          display: flex;
-          width: 100%;
-          transition: transform 650ms
-            cubic-bezier(
-              0.22,
-              1,
-              0.36,
-              1
-            );
-          will-change: transform;
-        }
-
-        .anukov-banner-slide {
-          position: relative;
-          width: 100%;
-          min-width: 100%;
-          flex: 0 0 100%;
-        }
-
-        .anukov-banner-link {
-          position: relative;
+        .anukov-hero-image {
           display: block;
           width: 100%;
-          overflow: hidden;
-          text-decoration: none;
-        }
-
-        .anukov-banner-image {
-          display: block;
-          width: 100%;
-          height: clamp(
-            190px,
-            22.5vw,
-            340px
-          );
+          height: clamp(210px, 23vw, 350px);
           object-fit: cover;
-          object-position: center;
-          background: #eef2f5;
-          transform: scale(1.001);
+          background: #edf2f3;
+          transform: scale(1.055);
+          filter: saturate(0.96) contrast(0.99);
           transition:
-            transform 900ms
-              cubic-bezier(
-                0.22,
-                1,
-                0.36,
-                1
-              ),
-            filter 500ms ease;
+            transform 6200ms cubic-bezier(0.16, 1, 0.3, 1),
+            filter 900ms ease,
+            opacity 650ms ease;
           will-change: transform;
+          backface-visibility: hidden;
         }
 
-        .anukov-banner-slide[aria-hidden="false"]
-          .anukov-banner-image {
-          animation: anukovBannerZoom
-            6s ease-out both;
+        .anukov-hero-slide.is-active .anukov-hero-image {
+          transform: scale(1.001);
+          filter: saturate(1.035) contrast(1.015);
         }
 
-        .anukov-banner-link:hover
-          .anukov-banner-image {
-          filter: saturate(1.035)
-            contrast(1.015);
-          transform: scale(1.012);
-        }
-
-        .anukov-banner-overlay {
+        .anukov-hero-overlay {
           position: absolute;
           inset: 0;
           pointer-events: none;
           background:
             linear-gradient(
               90deg,
-              rgba(0, 0, 0, 0.025),
-              transparent 25%,
-              transparent 75%,
-              rgba(0, 0, 0, 0.025)
+              rgba(7, 16, 38, 0.06),
+              transparent 20%,
+              transparent 80%,
+              rgba(7, 16, 38, 0.06)
             ),
             linear-gradient(
-              to bottom,
-              rgba(255, 255, 255, 0.02),
-              rgba(0, 0, 0, 0.025)
+              180deg,
+              rgba(255, 255, 255, 0.015),
+              transparent 58%,
+              rgba(6, 20, 35, 0.1)
             );
+          opacity: 0.72;
         }
 
-        .anukov-banner-fallback {
-          display: flex;
-          height: clamp(
-            190px,
-            22.5vw,
-            340px
+        .anukov-hero-shine {
+          position: absolute;
+          inset: 0 auto 0 -28%;
+          width: 14%;
+          pointer-events: none;
+          transform: skewX(-18deg);
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.16),
+            transparent
           );
-          width: 100%;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          padding: 30px;
-          color: #ffffff;
-          background:
-            radial-gradient(
-              circle at 15% 40%,
-              rgba(255, 122, 68, 0.42),
-              transparent 28%
-            ),
-            radial-gradient(
-              circle at 85% 40%,
-              rgba(206, 70, 180, 0.38),
-              transparent 28%
-            ),
-            linear-gradient(
-              135deg,
-              #130c35,
-              #29105b 54%,
-              #40156f
-            );
-          text-align: center;
+          opacity: 0;
         }
 
-        .anukov-banner-fallback span {
-          font-size: var(
-            --banner-text-13
-          );
-          font-weight: 800;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
+        .anukov-hero-slide.is-active .anukov-hero-shine {
+          animation: anukovHeroShine 5.4s ease-in-out 800ms both;
         }
 
-        .anukov-banner-fallback strong {
-          margin-top: 9px;
-          font-size: var(
-            --banner-text-20
-          );
-          font-weight: 850;
-          line-height: 1.4;
-        }
-
-        .anukov-banner-fallback p {
-          max-width: 500px;
-          margin: 8px 0 0;
-          font-size: var(
-            --banner-text-16
-          );
-          line-height: 1.6;
-        }
-
-        .anukov-banner-arrow {
+        .anukov-hero-arrow {
           position: absolute;
           top: 50%;
-          z-index: 20;
+          z-index: 30;
           display: flex;
-          width: 38px;
-          height: 38px;
+          width: 44px;
+          height: 44px;
           align-items: center;
           justify-content: center;
-          border: 1px solid
-            rgba(15, 23, 42, 0.1);
-          border-radius: 8px;
-          color: #475467;
-          background: rgba(
-            255,
-            255,
-            255,
-            0.96
-          );
-          box-shadow: 0 12px 28px -18px
-            rgba(15, 23, 42, 0.52);
-          backdrop-filter: blur(10px);
+          padding: 0;
+          border: 1px solid rgba(255, 255, 255, 0.7);
+          border-radius: 13px;
+          color: #087b75;
+          background: rgba(255, 255, 255, 0.92);
+          box-shadow:
+            0 16px 36px -20px rgba(15, 23, 42, 0.58),
+            inset 0 1px rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(14px);
           cursor: pointer;
           transform: translateY(-50%);
+          opacity: 0;
           transition:
+            opacity 300ms ease,
+            transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
             color 250ms ease,
-            border-color 250ms ease,
             background-color 250ms ease,
-            transform 250ms ease,
-            box-shadow 250ms ease;
+            border-color 250ms ease,
+            box-shadow 300ms ease;
         }
 
-        .anukov-banner-arrow-left {
-          left: 5px;
+        .anukov-hero-arrow svg {
+          width: 20px;
+          height: 20px;
+          transition: transform 250ms ease;
         }
 
-        .anukov-banner-arrow-right {
-          right: 5px;
+        .anukov-hero-prev {
+          left: 18px;
+          transform: translate(-8px, -50%);
         }
 
-        .anukov-banner-arrow:hover {
-          border-color: rgba(
-            8,
-            123,
-            117,
-            0.4
-          );
-          color: #087b75;
-          background: #ffffff;
-          box-shadow: 0 16px 32px -18px
-            rgba(8, 123, 117, 0.55);
-          transform: translateY(-50%)
-            scale(1.06);
+        .anukov-hero-next {
+          right: 18px;
+          transform: translate(8px, -50%);
         }
 
-        .anukov-banner-arrow:active {
-          transform: translateY(-50%)
-            scale(0.96);
+        .anukov-hero-swiper:hover .anukov-hero-arrow,
+        .anukov-hero-swiper:focus-within .anukov-hero-arrow {
+          opacity: 1;
         }
 
-        .anukov-banner-arrow:focus-visible,
-        .anukov-banner-play-button:focus-visible,
-        .anukov-banner-dot:focus-visible {
-          outline: 3px solid
-            rgba(8, 123, 117, 0.22);
+        .anukov-hero-swiper:hover .anukov-hero-prev,
+        .anukov-hero-swiper:focus-within .anukov-hero-prev {
+          transform: translate(0, -50%);
+        }
+
+        .anukov-hero-swiper:hover .anukov-hero-next,
+        .anukov-hero-swiper:focus-within .anukov-hero-next {
+          transform: translate(0, -50%);
+        }
+
+        .anukov-hero-arrow:hover {
+          border-color: rgba(8, 123, 117, 0.28);
+          color: #ffffff;
+          background: rgba(8, 123, 117, 0.94);
+          box-shadow:
+            0 20px 42px -20px rgba(8, 123, 117, 0.68),
+            inset 0 1px rgba(255, 255, 255, 0.22);
+        }
+
+        .anukov-hero-prev:hover svg {
+          transform: translateX(-2px);
+        }
+
+        .anukov-hero-next:hover svg {
+          transform: translateX(2px);
+        }
+
+        .anukov-hero-arrow:active {
+          scale: 0.94;
+        }
+
+        .anukov-hero-arrow:focus-visible {
+          outline: 3px solid rgba(8, 123, 117, 0.2);
           outline-offset: 3px;
         }
 
-        .anukov-banner-play-button {
+        .anukov-hero-pagination {
           position: absolute;
-          right: 12px;
-          bottom: 12px;
-          z-index: 20;
+          bottom: 14px;
+          left: 50%;
+          z-index: 35;
           display: flex;
-          width: 38px;
-          height: 38px;
-          align-items: center;
-          justify-content: center;
-          border: 1px solid
-            rgba(255, 255, 255, 0.55);
-          border-radius: 50%;
-          color: #ffffff;
-          background: rgba(
-            15,
-            23,
-            42,
-            0.58
-          );
-          box-shadow: 0 12px 24px -14px
-            rgba(15, 23, 42, 0.75);
-          backdrop-filter: blur(10px);
-          cursor: pointer;
-          opacity: 0;
-          transform: translateY(5px);
-          transition:
-            opacity 250ms ease,
-            transform 250ms ease,
-            background-color 250ms ease;
-        }
-
-        .anukov-banner-slider:hover
-          .anukov-banner-play-button,
-        .anukov-banner-slider:focus-within
-          .anukov-banner-play-button {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        .anukov-banner-play-button:hover {
-          background: rgba(
-            8,
-            123,
-            117,
-            0.9
-          );
-        }
-
-        .anukov-banner-dots {
-          display: flex;
+          width: auto !important;
           min-height: 34px;
           align-items: center;
           justify-content: center;
-          gap: 10px;
-          margin-top: 9px;
+          gap: 6px;
+          padding: 7px 10px;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.74);
+          box-shadow:
+            0 14px 32px -20px rgba(15, 23, 42, 0.5),
+            inset 0 1px rgba(255, 255, 255, 0.9);
+          backdrop-filter: blur(14px);
+          transform: translateX(-50%);
         }
 
-        .anukov-banner-dot {
+        .anukov-hero-pagination .swiper-pagination-bullet {
+          position: relative;
           display: flex;
-          width: 18px;
-          height: 18px;
+          width: 24px;
+          height: 8px;
           align-items: center;
           justify-content: center;
+          margin: 0 !important;
           padding: 0;
           border: 0;
-          border-radius: 50%;
-          background: transparent;
+          border-radius: 999px;
+          background: rgba(8, 123, 117, 0.16);
+          opacity: 1;
+          overflow: hidden;
           cursor: pointer;
-        }
-
-        .anukov-banner-dot > span {
-          display: block;
-          width: 12px;
-          height: 12px;
-          border: 1.5px solid #15948c;
-          border-radius: 50%;
-          background: #ffffff;
           transition:
-            width 250ms ease,
-            height 250ms ease,
-            border-color 250ms ease,
-            background-color 250ms ease,
-            box-shadow 250ms ease,
+            width 350ms cubic-bezier(0.22, 1, 0.36, 1),
+            background-color 300ms ease,
             transform 250ms ease;
         }
 
-        .anukov-banner-dot:hover
-          > span {
-          transform: scale(1.12);
+        .anukov-hero-pagination .swiper-pagination-bullet span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: inherit;
+          background: transparent;
         }
 
-        .anukov-banner-dot.is-active
-          > span {
-          width: 14px;
-          height: 14px;
-          border-color: #087b75;
+        .anukov-hero-pagination
+          .swiper-pagination-bullet:hover {
+          transform: scaleY(1.2);
+          background: rgba(8, 123, 117, 0.28);
+        }
+
+        .anukov-hero-pagination
+          .swiper-pagination-bullet-active {
+          width: 48px;
+          background: rgba(8, 123, 117, 0.14);
+        }
+
+        .anukov-hero-pagination
+          .swiper-pagination-bullet-active
+          span {
+          transform-origin: left center;
           background: #087b75;
-          box-shadow: 0 0 0 5px
-            rgba(8, 123, 117, 0.14);
+          animation: anukovHeroProgress 5.2s linear both;
         }
 
-        .anukov-banner-screen-reader {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          overflow: hidden;
-          margin: -1px;
-          padding: 0;
-          border: 0;
-          clip: rect(0, 0, 0, 0);
-          white-space: nowrap;
+        .anukov-hero-pagination
+          .swiper-pagination-bullet:focus-visible {
+          outline: 3px solid rgba(8, 123, 117, 0.22);
+          outline-offset: 3px;
         }
 
-        @keyframes anukovBannerZoom {
+        .anukov-hero-swiper .swiper-notification {
+          font-size: 13px;
+        }
+
+        @keyframes anukovHeroShine {
+          0%,
+          20% {
+            left: -28%;
+            opacity: 0;
+          }
+
+          35% {
+            opacity: 1;
+          }
+
+          70%,
+          100% {
+            left: 118%;
+            opacity: 0;
+          }
+        }
+
+        @keyframes anukovHeroProgress {
           from {
-            transform: scale(1.02);
+            transform: scaleX(0);
           }
 
           to {
-            transform: scale(1.001);
+            transform: scaleX(1);
           }
         }
 
         @media (min-width: 1024px) and (max-width: 1279px) {
-          .anukov-banner-section {
-            padding-top: 20px;
+          .anukov-hero-section {
+            padding: 20px 0 12px;
           }
 
-          .anukov-banner-container {
-            width: min(
-              1180px,
-              calc(100% - 40px)
-            );
+          .anukov-hero-container {
+            width: min(1180px, calc(100% - 40px));
           }
 
-          .anukov-banner-image,
-          .anukov-banner-fallback {
-            height: clamp(
-              210px,
-              23vw,
-              295px
-            );
+          .anukov-hero-image {
+            height: clamp(220px, 24vw, 310px);
           }
         }
 
         @media (min-width: 768px) and (max-width: 1023px) {
-          .anukov-banner-section {
-            padding: 18px 0 10px;
+          .anukov-hero-section {
+            padding: 17px 0 10px;
           }
 
-          .anukov-banner-container {
+          .anukov-hero-container {
             width: calc(100% - 32px);
           }
 
-          .anukov-banner-slider {
+          .anukov-hero-shell {
+            border-radius: 18px;
+          }
+
+          .anukov-hero-swiper {
+            border-radius: 14px;
+          }
+
+          .anukov-hero-image {
+            height: clamp(220px, 31vw, 285px);
+          }
+
+          .anukov-hero-arrow {
+            width: 40px;
+            height: 40px;
             border-radius: 12px;
+            opacity: 1;
           }
 
-          .anukov-banner-image,
-          .anukov-banner-fallback {
-            height: clamp(
-              205px,
-              30vw,
-              275px
-            );
+          .anukov-hero-prev {
+            left: 14px;
+            transform: translate(0, -50%);
           }
 
-          .anukov-banner-arrow {
-            width: 36px;
-            height: 36px;
+          .anukov-hero-next {
+            right: 14px;
+            transform: translate(0, -50%);
           }
         }
 
         @media (min-width: 640px) and (max-width: 767px) {
-          .anukov-banner-section {
+          .anukov-hero-section {
             padding: 14px 0 8px;
           }
 
-          .anukov-banner-container {
+          .anukov-hero-container {
             width: calc(100% - 24px);
           }
 
-          .anukov-banner-slider {
+          .anukov-hero-shell {
+            padding: 4px;
+            border-radius: 17px;
+          }
+
+          .anukov-hero-swiper {
+            border-radius: 13px;
+          }
+
+          .anukov-hero-image {
+            height: 235px;
+          }
+
+          .anukov-hero-arrow {
+            width: 38px;
+            height: 38px;
             border-radius: 11px;
+            opacity: 1;
           }
 
-          .anukov-banner-image,
-          .anukov-banner-fallback {
-            height: 230px;
+          .anukov-hero-prev {
+            left: 12px;
+            transform: translate(0, -50%);
           }
 
-          .anukov-banner-arrow {
-            width: 36px;
-            height: 36px;
+          .anukov-hero-next {
+            right: 12px;
+            transform: translate(0, -50%);
           }
         }
 
         @media (max-width: 639px) {
-          .anukov-banner-section {
-            padding: 10px 0 6px;
+          .anukov-hero-section {
+            padding: 10px 0 7px;
           }
 
-          .anukov-banner-container {
+          .anukov-hero-container {
             width: 100%;
           }
 
-          .anukov-banner-slider {
+          .anukov-hero-shell {
+            padding: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+          }
+
+          .anukov-hero-swiper {
             border-right: 0;
             border-left: 0;
             border-radius: 0;
-            box-shadow: 0 15px 35px -30px
-              rgba(15, 23, 42, 0.5);
+            box-shadow: 0 18px 38px -32px rgba(15, 23, 42, 0.55);
           }
 
-          .anukov-banner-image,
-          .anukov-banner-fallback {
-            height: clamp(
-              205px,
-              67vw,
-              285px
-            );
+          .anukov-hero-image {
+            height: clamp(220px, 68vw, 300px);
           }
 
-          .anukov-banner-image {
-            object-position: center;
-          }
-
-          .anukov-banner-arrow {
-            width: 34px;
-            height: 34px;
-            border-radius: 8px;
-          }
-
-          .anukov-banner-arrow-left {
-            left: 6px;
-          }
-
-          .anukov-banner-arrow-right {
-            right: 6px;
-          }
-
-          .anukov-banner-play-button {
-            right: 9px;
-            bottom: 9px;
+          .anukov-hero-arrow {
             width: 36px;
             height: 36px;
+            border-radius: 11px;
             opacity: 1;
-            transform: none;
           }
 
-          .anukov-banner-dots {
-            gap: 8px;
-            margin-top: 6px;
+          .anukov-hero-arrow svg {
+            width: 18px;
+            height: 18px;
           }
 
-          .anukov-banner-dot {
-            width: 17px;
-            height: 17px;
+          .anukov-hero-prev {
+            left: 10px;
+            transform: translate(0, -50%);
           }
 
-          .anukov-banner-dot > span {
-            width: 10px;
-            height: 10px;
+          .anukov-hero-next {
+            right: 10px;
+            transform: translate(0, -50%);
           }
 
-          .anukov-banner-dot.is-active
-            > span {
-            width: 13px;
-            height: 13px;
+          .anukov-hero-pagination {
+            bottom: 10px;
+            min-height: 30px;
+            gap: 5px;
+            padding: 6px 8px;
+          }
+
+          .anukov-hero-pagination .swiper-pagination-bullet {
+            width: 18px;
+            height: 7px;
+          }
+
+          .anukov-hero-pagination
+            .swiper-pagination-bullet-active {
+            width: 38px;
           }
         }
 
         @media (max-width: 380px) {
-          .anukov-banner-image,
-          .anukov-banner-fallback {
-            height: 220px;
+          .anukov-hero-image {
+            height: 225px;
           }
 
-          .anukov-banner-arrow {
-            width: 32px;
-            height: 32px;
+          .anukov-hero-arrow {
+            width: 34px;
+            height: 34px;
           }
 
-          .anukov-banner-fallback {
-            padding: 22px;
+          .anukov-hero-prev {
+            left: 7px;
+          }
+
+          .anukov-hero-next {
+            right: 7px;
           }
         }
 
         @media (hover: none) {
-          .anukov-banner-link:hover
-            .anukov-banner-image,
-          .anukov-banner-arrow:hover {
-            transform: none;
+          .anukov-hero-arrow {
+            opacity: 1;
           }
 
-          .anukov-banner-play-button {
-            opacity: 1;
-            transform: none;
+          .anukov-hero-prev,
+          .anukov-hero-next {
+            transform: translate(0, -50%);
+          }
+
+          .anukov-hero-arrow:hover {
+            color: #087b75;
+            background: rgba(255, 255, 255, 0.92);
+            scale: 1;
           }
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .anukov-banner-section *,
-          .anukov-banner-section
-            *::before,
-          .anukov-banner-section
-            *::after {
+          .anukov-hero-section *,
+          .anukov-hero-section *::before,
+          .anukov-hero-section *::after {
             scroll-behavior: auto !important;
             animation-duration: 0.01ms !important;
             animation-iteration-count: 1 !important;
             transition-duration: 0.01ms !important;
           }
+
+          .anukov-hero-pagination
+            .swiper-pagination-bullet-active
+            span {
+            transform: scaleX(1);
+          }
         }
       `}</style>
     </>
-  );
-}
-
-function SliderButton({
-  direction,
-  onClick,
-}: {
-  direction: "left" | "right";
-  onClick: () => void;
-}) {
-  const Icon =
-    direction === "left"
-      ? ChevronLeft
-      : ChevronRight;
-
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-label={
-        direction === "left"
-          ? "Show previous banner"
-          : "Show next banner"
-      }
-      className={[
-        "anukov-banner-arrow",
-        direction === "left"
-          ? "anukov-banner-arrow-left"
-          : "anukov-banner-arrow-right",
-      ].join(" ")}
-    >
-      <Icon size={20} strokeWidth={1.8} />
-    </button>
   );
 }
