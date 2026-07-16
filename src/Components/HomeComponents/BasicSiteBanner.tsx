@@ -49,8 +49,8 @@ export default function BasicSiteBanner() {
         observer.unobserve(entry.target);
       },
       {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px",
+        threshold: 0.12,
+        rootMargin: "0px 0px -40px 0px",
       },
     );
 
@@ -66,7 +66,6 @@ export default function BasicSiteBanner() {
         className="basic-banner-section"
         aria-labelledby="basic-banner-title"
       >
-        {/* Background effects */}
         <div
           aria-hidden="true"
           className="basic-banner-grid-pattern"
@@ -97,7 +96,6 @@ export default function BasicSiteBanner() {
             isVisible ? "is-visible" : ""
           }`}
         >
-          {/* Left content */}
           <div className="basic-banner-content">
             <div className="basic-banner-badge">
               <span className="basic-banner-badge-icon">
@@ -143,7 +141,10 @@ export default function BasicSiteBanner() {
             </div>
 
             <div className="basic-banner-trust">
-              <div className="basic-trust-avatars">
+              <div
+                className="basic-trust-avatars"
+                aria-label="Trusted customer avatars"
+              >
                 <span>JM</span>
                 <span>AR</span>
                 <span>SH</span>
@@ -151,7 +152,10 @@ export default function BasicSiteBanner() {
               </div>
 
               <div className="basic-trust-content">
-                <div className="basic-trust-stars" aria-label="5 out of 5 stars">
+                <div
+                  className="basic-trust-stars"
+                  aria-label="5 out of 5 stars"
+                >
                   <StarIcon />
                   <StarIcon />
                   <StarIcon />
@@ -170,7 +174,7 @@ export default function BasicSiteBanner() {
                   className="basic-banner-feature"
                   style={{
                     transitionDelay: isVisible
-                      ? `${500 + index * 100}ms`
+                      ? `${450 + index * 110}ms`
                       : "0ms",
                   }}
                 >
@@ -181,7 +185,6 @@ export default function BasicSiteBanner() {
             </div>
           </div>
 
-          {/* Right visual */}
           <div className="basic-banner-visual">
             <div
               aria-hidden="true"
@@ -194,10 +197,16 @@ export default function BasicSiteBanner() {
             />
 
             <div className="basic-banner-dashboard">
-              <div className="basic-dashboard-shine" />
+              <div
+                aria-hidden="true"
+                className="basic-dashboard-shine"
+              />
 
               <div className="basic-dashboard-header">
-                <div className="basic-dashboard-dots" aria-hidden="true">
+                <div
+                  className="basic-dashboard-dots"
+                  aria-hidden="true"
+                >
                   <span />
                   <span />
                   <span />
@@ -208,7 +217,10 @@ export default function BasicSiteBanner() {
                   <span>dashboard.example.com</span>
                 </div>
 
-                <div className="basic-dashboard-header-action">
+                <div
+                  className="basic-dashboard-header-action"
+                  aria-hidden="true"
+                >
                   <span />
                 </div>
               </div>
@@ -295,7 +307,10 @@ export default function BasicSiteBanner() {
                     </div>
 
                     <div className="basic-chart-area">
-                      <div className="basic-chart-guides" aria-hidden="true">
+                      <div
+                        className="basic-chart-guides"
+                        aria-hidden="true"
+                      >
                         <span />
                         <span />
                         <span />
@@ -309,7 +324,7 @@ export default function BasicSiteBanner() {
                             className="basic-chart-bar"
                             style={{
                               height: `${height}%`,
-                              animationDelay: `${900 + index * 75}ms`,
+                              animationDelay: `${800 + index * 75}ms`,
                             }}
                           >
                             <i />
@@ -318,7 +333,10 @@ export default function BasicSiteBanner() {
                       </div>
                     </div>
 
-                    <div className="basic-chart-labels" aria-hidden="true">
+                    <div
+                      className="basic-chart-labels"
+                      aria-hidden="true"
+                    >
                       <span>Mon</span>
                       <span>Tue</span>
                       <span>Wed</span>
@@ -344,7 +362,6 @@ export default function BasicSiteBanner() {
               </div>
             </div>
 
-            {/* Floating completed card */}
             <div className="basic-floating-card basic-floating-card-top">
               <span className="basic-floating-icon">
                 <CheckIcon />
@@ -356,7 +373,6 @@ export default function BasicSiteBanner() {
               </div>
             </div>
 
-            {/* Floating users card */}
             <div className="basic-floating-card basic-floating-card-bottom">
               <div className="basic-user-stack">
                 <span>JM</span>
@@ -370,7 +386,6 @@ export default function BasicSiteBanner() {
               </div>
             </div>
 
-            {/* Floating notification */}
             <div className="basic-floating-notification">
               <span>
                 <BellIcon />
@@ -386,18 +401,22 @@ export default function BasicSiteBanner() {
         .basic-banner-section {
           --banner-primary: #087b75;
           --banner-primary-dark: #055f5a;
-          --banner-primary-light: #dff7f3;
           --banner-heading: #101828;
           --banner-text: #5f6c7b;
-          --banner-border: rgba(8, 123, 117, 0.13);
+
+          --text-large: 20px;
+          --text-medium: 18px;
+          --text-normal: 16px;
+          --text-small: 13px;
 
           position: relative;
           isolation: isolate;
-          width: 100%;
-          min-height: 720px;
           display: flex;
+          width: 100%;
+          min-height: 680px;
           align-items: center;
           overflow: hidden;
+          padding: clamp(64px, 7vw, 94px) 0;
           background:
             radial-gradient(
               circle at 10% 20%,
@@ -410,7 +429,8 @@ export default function BasicSiteBanner() {
               transparent 30%
             ),
             linear-gradient(145deg, #f9fffe 0%, #ffffff 49%, #f7fbff 100%);
-          padding: 88px 0 96px;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
         }
 
         .basic-banner-grid-pattern {
@@ -432,8 +452,8 @@ export default function BasicSiteBanner() {
           background-size: 44px 44px;
           mask-image: linear-gradient(
             to bottom,
-            rgba(0, 0, 0, 0.85),
-            transparent 88%
+            rgba(0, 0, 0, 0.9),
+            transparent 92%
           );
         }
 
@@ -445,16 +465,16 @@ export default function BasicSiteBanner() {
         }
 
         .basic-banner-pattern {
-          border-radius: 50%;
           border: 1px solid rgba(8, 123, 117, 0.1);
+          border-radius: 50%;
         }
 
         .basic-banner-pattern::before,
         .basic-banner-pattern::after {
           content: "";
           position: absolute;
-          border-radius: inherit;
           border: inherit;
+          border-radius: inherit;
         }
 
         .basic-banner-pattern::before {
@@ -466,18 +486,18 @@ export default function BasicSiteBanner() {
         }
 
         .basic-banner-pattern-one {
-          width: 360px;
-          height: 360px;
           top: -170px;
           left: -120px;
+          width: 360px;
+          height: 360px;
           animation: basicPatternRotate 22s linear infinite;
         }
 
         .basic-banner-pattern-two {
-          width: 440px;
-          height: 440px;
           right: -210px;
           bottom: -250px;
+          width: 440px;
+          height: 440px;
           border-color: rgba(241, 163, 77, 0.12);
           animation: basicPatternRotate 28s linear infinite reverse;
         }
@@ -491,8 +511,8 @@ export default function BasicSiteBanner() {
         }
 
         .basic-banner-glow-left {
-          left: -190px;
           top: 22%;
+          left: -190px;
           background: rgba(54, 198, 174, 0.22);
           animation: basicGlowFloat 8s ease-in-out infinite;
         }
@@ -505,12 +525,12 @@ export default function BasicSiteBanner() {
         }
 
         .basic-banner-container {
+          display: grid;
           width: min(1440px, calc(100% - 48px));
           margin: 0 auto;
-          display: grid;
           grid-template-columns: minmax(0, 0.92fr) minmax(520px, 1.08fr);
           align-items: center;
-          gap: clamp(54px, 7vw, 112px);
+          gap: clamp(48px, 6vw, 94px);
         }
 
         .basic-banner-content {
@@ -518,10 +538,12 @@ export default function BasicSiteBanner() {
           z-index: 5;
           max-width: 660px;
           opacity: 0;
-          transform: translate3d(-42px, 24px, 0);
+          transform: translate3d(-40px, 22px, 0);
           transition:
-            opacity 800ms ease,
+            opacity 750ms ease,
             transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+          will-change: transform, opacity;
+          backface-visibility: hidden;
         }
 
         .basic-banner-container.is-visible .basic-banner-content {
@@ -530,32 +552,33 @@ export default function BasicSiteBanner() {
         }
 
         .basic-banner-badge {
-          width: fit-content;
-          min-height: 38px;
           display: inline-flex;
+          width: fit-content;
+          min-height: 40px;
           align-items: center;
           gap: 9px;
-          padding: 7px 13px 7px 8px;
+          padding: 7px 14px 7px 8px;
           border: 1px solid rgba(8, 123, 117, 0.14);
           border-radius: 999px;
-          background: rgba(255, 255, 255, 0.82);
           color: var(--banner-primary-dark);
+          background: rgba(255, 255, 255, 0.84);
           box-shadow: 0 10px 30px -20px rgba(8, 123, 117, 0.6);
           backdrop-filter: blur(12px);
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 700;
-          letter-spacing: 0.035em;
+          line-height: 1.4;
+          letter-spacing: 0.02em;
         }
 
         .basic-banner-badge-icon {
-          width: 24px;
-          height: 24px;
           display: inline-flex;
+          width: 26px;
+          height: 26px;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
           border-radius: 50%;
-          color: white;
+          color: #ffffff;
           background: linear-gradient(135deg, #0d9488, #087b75);
           box-shadow: 0 6px 14px -6px rgba(8, 123, 117, 0.9);
         }
@@ -564,15 +587,14 @@ export default function BasicSiteBanner() {
           max-width: 640px;
           margin: 24px 0 0;
           color: var(--banner-heading);
-          font-size: clamp(44px, 5vw, 72px);
+          font-size: var(--text-large);
           font-weight: 800;
-          line-height: 1.03;
-          letter-spacing: -0.055em;
+          line-height: 1.3;
+          letter-spacing: -0.025em;
           text-wrap: balance;
         }
 
         .basic-banner-title span {
-          display: inline;
           color: transparent;
           background: linear-gradient(
             115deg,
@@ -586,11 +608,11 @@ export default function BasicSiteBanner() {
 
         .basic-banner-description {
           max-width: 590px;
-          margin: 24px 0 0;
+          margin: 20px 0 0;
           color: var(--banner-text);
-          font-size: 17px;
-          line-height: 1.8;
-          letter-spacing: -0.01em;
+          font-size: var(--text-normal);
+          line-height: 1.75;
+          letter-spacing: -0.005em;
         }
 
         .basic-banner-actions {
@@ -598,24 +620,28 @@ export default function BasicSiteBanner() {
           align-items: center;
           flex-wrap: wrap;
           gap: 14px;
-          margin-top: 34px;
+          margin-top: 30px;
         }
 
         .basic-banner-primary-button,
         .basic-banner-secondary-button {
-          min-height: 54px;
           display: inline-flex;
+          min-height: 52px;
           align-items: center;
           justify-content: center;
-          text-decoration: none;
           border-radius: 15px;
-          font-size: 15px;
-          font-weight: 750;
+          text-decoration: none;
+          font-size: var(--text-normal);
+          font-weight: 700;
+          line-height: 1;
           transition:
-            transform 260ms ease,
-            box-shadow 260ms ease,
-            border-color 260ms ease,
-            background-color 260ms ease;
+            transform 350ms cubic-bezier(0.22, 1, 0.36, 1),
+            box-shadow 350ms ease,
+            border-color 350ms ease,
+            background-color 350ms ease,
+            color 350ms ease;
+          will-change: transform;
+          backface-visibility: hidden;
         }
 
         .basic-banner-primary-button {
@@ -634,16 +660,16 @@ export default function BasicSiteBanner() {
         }
 
         .basic-button-arrow {
-          width: 41px;
-          height: 41px;
           display: inline-flex;
+          width: 40px;
+          height: 40px;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
           border-radius: 11px;
           color: var(--banner-primary-dark);
-          background: rgba(255, 255, 255, 0.95);
-          transition: transform 260ms ease;
+          background: rgba(255, 255, 255, 0.96);
+          transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
         }
 
         .basic-banner-primary-button:hover {
@@ -660,18 +686,18 @@ export default function BasicSiteBanner() {
         .basic-banner-secondary-button {
           gap: 10px;
           padding: 0 22px;
-          color: #344054;
           border: 1px solid rgba(16, 24, 40, 0.1);
-          background: rgba(255, 255, 255, 0.84);
+          color: #344054;
+          background: rgba(255, 255, 255, 0.85);
           box-shadow: 0 14px 30px -24px rgba(15, 23, 42, 0.5);
           backdrop-filter: blur(10px);
         }
 
         .basic-banner-secondary-button:hover {
           transform: translateY(-3px);
-          color: var(--banner-primary);
           border-color: rgba(8, 123, 117, 0.25);
-          background: white;
+          color: var(--banner-primary);
+          background: #ffffff;
           box-shadow: 0 18px 34px -22px rgba(8, 123, 117, 0.45);
         }
 
@@ -685,7 +711,7 @@ export default function BasicSiteBanner() {
           display: flex;
           align-items: center;
           gap: 14px;
-          margin-top: 30px;
+          margin-top: 28px;
         }
 
         .basic-trust-avatars {
@@ -695,18 +721,18 @@ export default function BasicSiteBanner() {
         }
 
         .basic-trust-avatars span {
-          width: 34px;
-          height: 34px;
           display: inline-flex;
+          width: 36px;
+          height: 36px;
           align-items: center;
           justify-content: center;
           margin-left: -7px;
           border: 3px solid #ffffff;
           border-radius: 50%;
-          color: white;
+          color: #ffffff;
           background: linear-gradient(135deg, #0d9488, #116b68);
           box-shadow: 0 7px 15px -8px rgba(15, 23, 42, 0.7);
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 800;
         }
 
@@ -737,16 +763,17 @@ export default function BasicSiteBanner() {
         .basic-trust-content p {
           margin: 4px 0 0;
           color: #667085;
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 600;
+          line-height: 1.5;
         }
 
         .basic-banner-features {
           display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
           max-width: 570px;
-          margin-top: 36px;
-          padding-top: 27px;
+          margin-top: 34px;
+          padding-top: 25px;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
           border-top: 1px solid rgba(8, 123, 117, 0.11);
         }
 
@@ -755,12 +782,13 @@ export default function BasicSiteBanner() {
           display: flex;
           flex-direction: column;
           gap: 6px;
-          padding: 0 24px;
+          padding: 0 22px;
           opacity: 0;
           transform: translateY(18px);
           transition:
             opacity 600ms ease,
             transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+          will-change: transform, opacity;
         }
 
         .basic-banner-container.is-visible .basic-banner-feature {
@@ -772,28 +800,32 @@ export default function BasicSiteBanner() {
           padding-left: 0;
         }
 
+        .basic-banner-feature:last-child {
+          padding-right: 0;
+        }
+
         .basic-banner-feature:not(:last-child)::after {
           content: "";
           position: absolute;
           top: 3px;
           right: 0;
           width: 1px;
-          height: 41px;
+          height: 42px;
           background: rgba(8, 123, 117, 0.12);
         }
 
         .basic-banner-feature strong {
           color: #101828;
-          font-size: clamp(22px, 2.2vw, 29px);
-          line-height: 1;
-          letter-spacing: -0.04em;
+          font-size: var(--text-large);
+          line-height: 1.15;
+          letter-spacing: -0.03em;
         }
 
         .basic-banner-feature span {
           color: #778292;
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 600;
-          line-height: 1.4;
+          line-height: 1.5;
         }
 
         .basic-banner-visual {
@@ -803,10 +835,12 @@ export default function BasicSiteBanner() {
           min-width: 0;
           padding: 36px 20px 38px;
           opacity: 0;
-          transform: translate3d(52px, 26px, 0) scale(0.97);
+          transform: translate3d(50px, 24px, 0) scale(0.97);
           transition:
-            opacity 850ms ease 120ms,
-            transform 1000ms cubic-bezier(0.22, 1, 0.36, 1) 120ms;
+            opacity 850ms ease 100ms,
+            transform 1000ms cubic-bezier(0.22, 1, 0.36, 1) 100ms;
+          will-change: transform, opacity;
+          backface-visibility: hidden;
         }
 
         .basic-banner-container.is-visible .basic-banner-visual {
@@ -817,24 +851,24 @@ export default function BasicSiteBanner() {
         .basic-visual-orbit {
           position: absolute;
           z-index: -2;
+          border: 1px dashed rgba(8, 123, 117, 0.18);
           border-radius: 50%;
           pointer-events: none;
-          border: 1px dashed rgba(8, 123, 117, 0.18);
         }
 
         .basic-visual-orbit-one {
-          width: 520px;
-          height: 520px;
           top: -28px;
           right: 0;
+          width: 520px;
+          height: 520px;
           animation: basicPatternRotate 34s linear infinite;
         }
 
         .basic-visual-orbit-two {
+          top: 38px;
+          right: 65px;
           width: 390px;
           height: 390px;
-          right: 65px;
-          top: 38px;
           border-style: solid;
           border-color: rgba(8, 123, 117, 0.08);
           animation: basicPatternRotate 25s linear infinite reverse;
@@ -853,13 +887,15 @@ export default function BasicSiteBanner() {
             0 20px 45px -32px rgba(15, 23, 42, 0.28),
             inset 0 0 0 1px rgba(8, 123, 117, 0.06);
           backdrop-filter: blur(22px);
+          transform: translateZ(0);
           transition:
             transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
             box-shadow 500ms ease;
+          will-change: transform;
         }
 
         .basic-banner-visual:hover .basic-banner-dashboard {
-          transform: translateY(-8px) rotateX(1deg) rotateY(-1deg);
+          transform: translate3d(0, -7px, 0);
           box-shadow:
             0 58px 110px -48px rgba(15, 64, 61, 0.56),
             0 24px 55px -32px rgba(15, 23, 42, 0.32),
@@ -887,8 +923,8 @@ export default function BasicSiteBanner() {
         }
 
         .basic-dashboard-header {
-          height: 54px;
           display: grid;
+          height: 54px;
           grid-template-columns: 90px 1fr 90px;
           align-items: center;
           padding: 0 18px;
@@ -918,20 +954,26 @@ export default function BasicSiteBanner() {
         }
 
         .basic-dashboard-address {
-          justify-self: center;
+          display: flex;
           width: min(270px, 100%);
           height: 30px;
-          display: flex;
           align-items: center;
           justify-content: center;
+          justify-self: center;
           gap: 7px;
           overflow: hidden;
           border: 1px solid rgba(16, 24, 40, 0.06);
           border-radius: 8px;
           color: #8b96a5;
           background: #ffffff;
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 600;
+        }
+
+        .basic-dashboard-address span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
 
         .basic-dashboard-header-action {
@@ -953,8 +995,8 @@ export default function BasicSiteBanner() {
         }
 
         .basic-dashboard-body {
-          min-height: 446px;
           display: grid;
+          min-height: 446px;
           grid-template-columns: 68px minmax(0, 1fr);
         }
 
@@ -968,14 +1010,14 @@ export default function BasicSiteBanner() {
         }
 
         .basic-dashboard-logo {
+          display: flex;
           width: 38px;
           height: 38px;
-          display: flex;
           align-items: center;
           justify-content: center;
           margin-bottom: 24px;
           border-radius: 12px;
-          color: white;
+          color: #ffffff;
           background: linear-gradient(135deg, #0f9f92, #087b75);
           box-shadow: 0 10px 22px -10px rgba(8, 123, 117, 0.78);
         }
@@ -988,9 +1030,9 @@ export default function BasicSiteBanner() {
 
         .basic-dashboard-sidebar nav span,
         .basic-sidebar-bottom span {
+          display: flex;
           width: 38px;
           height: 38px;
-          display: flex;
           align-items: center;
           justify-content: center;
           border-radius: 11px;
@@ -1019,12 +1061,11 @@ export default function BasicSiteBanner() {
         .basic-dashboard-main {
           min-width: 0;
           padding: 22px;
-          background:
-            linear-gradient(
-              135deg,
-              rgba(248, 252, 251, 0.65),
-              rgba(255, 255, 255, 0.92)
-            );
+          background: linear-gradient(
+            135deg,
+            rgba(248, 252, 251, 0.65),
+            rgba(255, 255, 255, 0.92)
+          );
         }
 
         .basic-dashboard-welcome {
@@ -1038,28 +1079,33 @@ export default function BasicSiteBanner() {
           display: flex;
           flex-direction: column;
           gap: 5px;
+          min-width: 0;
         }
 
         .basic-dashboard-welcome span {
           color: #8a94a3;
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 600;
         }
 
         .basic-dashboard-welcome strong {
+          overflow: hidden;
           color: #1d2939;
-          font-size: 17px;
-          letter-spacing: -0.025em;
+          font-size: var(--text-medium);
+          line-height: 1.35;
+          letter-spacing: -0.02em;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
 
         .basic-dashboard-avatar {
           position: relative;
+          display: flex;
           width: 42px;
           height: 42px;
-          display: flex;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
           border: 3px solid #ffffff;
           border-radius: 14px;
           color: var(--banner-primary);
@@ -1073,16 +1119,16 @@ export default function BasicSiteBanner() {
           bottom: -2px;
           width: 10px;
           height: 10px;
-          border: 2px solid white;
+          border: 2px solid #ffffff;
           border-radius: 50%;
           background: #35c66f;
         }
 
         .basic-dashboard-cards {
           display: grid;
+          margin-top: 20px;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 13px;
-          margin-top: 20px;
         }
 
         .basic-dashboard-stat-card {
@@ -1095,9 +1141,10 @@ export default function BasicSiteBanner() {
           background: rgba(255, 255, 255, 0.88);
           box-shadow: 0 16px 30px -26px rgba(15, 23, 42, 0.45);
           transition:
-            transform 260ms ease,
-            box-shadow 260ms ease,
-            border-color 260ms ease;
+            transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+            box-shadow 320ms ease,
+            border-color 320ms ease;
+          will-change: transform;
         }
 
         .basic-dashboard-stat-card:hover {
@@ -1116,19 +1163,19 @@ export default function BasicSiteBanner() {
         .basic-dashboard-stat-top > span:first-child {
           overflow: hidden;
           color: #7d8998;
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 650;
           text-overflow: ellipsis;
           white-space: nowrap;
         }
 
         .basic-stat-icon {
-          width: 28px;
-          height: 28px;
           display: inline-flex;
+          width: 30px;
+          height: 30px;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
           border-radius: 9px;
           color: var(--banner-primary);
           background: #e8f9f6;
@@ -1145,8 +1192,9 @@ export default function BasicSiteBanner() {
         .basic-dashboard-stat-card strong {
           overflow: hidden;
           color: #1d2939;
-          font-size: clamp(16px, 1.7vw, 21px);
-          letter-spacing: -0.04em;
+          font-size: var(--text-medium);
+          line-height: 1.2;
+          letter-spacing: -0.03em;
           text-overflow: ellipsis;
           white-space: nowrap;
         }
@@ -1157,7 +1205,7 @@ export default function BasicSiteBanner() {
           border-radius: 6px;
           color: #198754;
           background: #e9f9ef;
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 800;
         }
 
@@ -1185,14 +1233,15 @@ export default function BasicSiteBanner() {
 
         .basic-chart-header span {
           color: #8994a3;
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 650;
         }
 
         .basic-chart-header strong {
           color: #253142;
-          font-size: 12px;
-          letter-spacing: -0.02em;
+          font-size: var(--text-small);
+          line-height: 1.4;
+          letter-spacing: -0.01em;
         }
 
         .basic-chart-period {
@@ -1205,7 +1254,7 @@ export default function BasicSiteBanner() {
           color: #667085;
           background: #f9fbfb;
           font-family: inherit;
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 650;
           cursor: default;
         }
@@ -1253,8 +1302,8 @@ export default function BasicSiteBanner() {
             #71d6c7 100%
           );
           box-shadow: 0 9px 14px -10px rgba(8, 123, 117, 0.72);
-          transform-origin: bottom;
           transform: scaleY(0);
+          transform-origin: bottom;
         }
 
         .basic-banner-container.is-visible .basic-chart-bar {
@@ -1284,7 +1333,7 @@ export default function BasicSiteBanner() {
         .basic-chart-labels span {
           width: min(24px, 9%);
           color: #a1aab6;
-          font-size: 12px;
+          font-size: var(--text-small);
           text-align: center;
         }
 
@@ -1305,13 +1354,13 @@ export default function BasicSiteBanner() {
 
         .basic-dashboard-progress span {
           color: #7b8796;
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 650;
         }
 
         .basic-dashboard-progress strong {
           color: var(--banner-primary);
-          font-size: 12px;
+          font-size: var(--text-small);
         }
 
         .basic-progress-track {
@@ -1328,12 +1377,12 @@ export default function BasicSiteBanner() {
           height: 100%;
           border-radius: inherit;
           background: linear-gradient(90deg, #087b75, #3bc6b3);
-          transform-origin: left;
           transform: scaleX(0);
+          transform-origin: left;
         }
 
         .basic-banner-container.is-visible .basic-progress-track span {
-          animation: basicProgressGrow 900ms ease 1.3s forwards;
+          animation: basicProgressGrow 900ms ease 1.2s forwards;
         }
 
         .basic-floating-card {
@@ -1348,6 +1397,8 @@ export default function BasicSiteBanner() {
           background: rgba(255, 255, 255, 0.92);
           box-shadow: 0 22px 45px -24px rgba(15, 23, 42, 0.45);
           backdrop-filter: blur(16px);
+          will-change: transform;
+          backface-visibility: hidden;
         }
 
         .basic-floating-card-top {
@@ -1357,20 +1408,20 @@ export default function BasicSiteBanner() {
         }
 
         .basic-floating-card-bottom {
-          left: -18px;
           bottom: 2px;
+          left: -18px;
           animation: basicFloatingBottom 6.2s ease-in-out infinite;
         }
 
         .basic-floating-icon {
-          width: 37px;
-          height: 37px;
           display: flex;
+          width: 38px;
+          height: 38px;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
           border-radius: 12px;
-          color: white;
+          color: #ffffff;
           background: linear-gradient(135deg, #13b981, #087b75);
           box-shadow: 0 10px 20px -10px rgba(8, 123, 117, 0.8);
         }
@@ -1383,13 +1434,15 @@ export default function BasicSiteBanner() {
 
         .basic-floating-card strong {
           color: #253142;
-          font-size: 12px;
+          font-size: var(--text-normal);
+          line-height: 1.3;
           white-space: nowrap;
         }
 
         .basic-floating-card > div:last-child > span {
           color: #8a94a3;
-          font-size: 12px;
+          font-size: var(--text-small);
+          line-height: 1.4;
           white-space: nowrap;
         }
 
@@ -1402,17 +1455,17 @@ export default function BasicSiteBanner() {
         }
 
         .basic-user-stack span {
-          width: 29px;
-          height: 29px;
           display: flex;
+          width: 30px;
+          height: 30px;
           align-items: center;
           justify-content: center;
           margin-left: -6px;
-          border: 2px solid white;
+          border: 2px solid #ffffff;
           border-radius: 50%;
-          color: white;
+          color: #ffffff;
           background: linear-gradient(135deg, #0d9488, #05645f);
-          font-size: 12px;
+          font-size: var(--text-small);
           font-weight: 800;
         }
 
@@ -1426,12 +1479,12 @@ export default function BasicSiteBanner() {
 
         .basic-floating-notification {
           position: absolute;
-          z-index: 29;
           top: 31%;
           right: -5px;
+          z-index: 29;
+          display: flex;
           width: 46px;
           height: 46px;
-          display: flex;
           align-items: center;
           justify-content: center;
           border: 1px solid rgba(255, 255, 255, 0.95);
@@ -1447,9 +1500,9 @@ export default function BasicSiteBanner() {
           position: absolute;
           top: 8px;
           right: 8px;
-          width: 7px;
-          height: 7px;
-          border: 2px solid white;
+          width: 8px;
+          height: 8px;
+          border: 2px solid #ffffff;
           border-radius: 50%;
           background: #f04438;
         }
@@ -1474,22 +1527,22 @@ export default function BasicSiteBanner() {
         @keyframes basicFloatingTop {
           0%,
           100% {
-            transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0);
           }
 
           50% {
-            transform: translate3d(-4px, -10px, 0) rotate(-1deg);
+            transform: translate3d(-4px, -10px, 0);
           }
         }
 
         @keyframes basicFloatingBottom {
           0%,
           100% {
-            transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0);
           }
 
           50% {
-            transform: translate3d(5px, -9px, 0) rotate(1deg);
+            transform: translate3d(5px, -9px, 0);
           }
         }
 
@@ -1524,19 +1577,23 @@ export default function BasicSiteBanner() {
           }
         }
 
-        @media (max-width: 1180px) {
+        @media (min-width: 1440px) {
+          .basic-banner-container {
+            width: min(1440px, calc(100% - 80px));
+            grid-template-columns: minmax(0, 0.94fr) minmax(560px, 1.06fr);
+          }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1439px) {
           .basic-banner-section {
-            min-height: auto;
-            padding: 78px 0 86px;
+            min-height: 640px;
+            padding: 72px 0;
           }
 
           .basic-banner-container {
-            grid-template-columns: minmax(0, 0.9fr) minmax(480px, 1.1fr);
+            width: min(1180px, calc(100% - 48px));
+            grid-template-columns: minmax(0, 0.92fr) minmax(470px, 1.08fr);
             gap: 42px;
-          }
-
-          .basic-banner-title {
-            font-size: clamp(42px, 5vw, 60px);
           }
 
           .basic-dashboard-main {
@@ -1556,84 +1613,81 @@ export default function BasicSiteBanner() {
           }
         }
 
-        @media (max-width: 980px) {
+        @media (min-width: 768px) and (max-width: 1023px) {
           .basic-banner-section {
-            padding: 72px 0 82px;
+            min-height: auto;
+            padding: 64px 0 72px;
           }
 
           .basic-banner-container {
             width: min(760px, calc(100% - 40px));
             grid-template-columns: 1fr;
-            gap: 56px;
+            gap: 50px;
           }
 
           .basic-banner-content {
             max-width: 700px;
+            margin: 0 auto;
             text-align: center;
           }
 
           .basic-banner-badge,
           .basic-banner-actions,
-          .basic-banner-trust {
-            margin-left: auto;
-            margin-right: auto;
-          }
-
-          .basic-banner-description {
-            margin-left: auto;
-            margin-right: auto;
-          }
-
+          .basic-banner-trust,
+          .basic-banner-description,
           .basic-banner-features {
-            margin-left: auto;
             margin-right: auto;
+            margin-left: auto;
+          }
+
+          .basic-banner-actions {
+            justify-content: center;
           }
 
           .basic-banner-visual {
             max-width: 720px;
             margin: 0 auto;
+            padding-right: 12px;
+            padding-left: 12px;
           }
 
-          .basic-visual-orbit-one {
-            right: 50%;
-            transform: translateX(50%);
-          }
-
+          .basic-visual-orbit-one,
           .basic-visual-orbit-two {
             right: 50%;
             transform: translateX(50%);
           }
         }
 
-        @media (max-width: 640px) {
+        @media (min-width: 480px) and (max-width: 767px) {
           .basic-banner-section {
-            padding: 56px 0 68px;
+            min-height: auto;
+            padding: 52px 0 62px;
           }
 
           .basic-banner-container {
-            width: min(100% - 28px, 560px);
-            gap: 42px;
+            width: min(100% - 32px, 620px);
+            grid-template-columns: 1fr;
+            gap: 40px;
           }
 
-          .basic-banner-title {
-            margin-top: 20px;
-            font-size: clamp(38px, 12vw, 50px);
-            line-height: 1.07;
-            letter-spacing: -0.05em;
+          .basic-banner-content {
+            text-align: center;
           }
 
-          .basic-banner-description {
-            margin-top: 19px;
-            font-size: 15px;
-            line-height: 1.7;
+          .basic-banner-badge,
+          .basic-banner-description,
+          .basic-banner-trust,
+          .basic-banner-features {
+            margin-right: auto;
+            margin-left: auto;
           }
 
           .basic-banner-actions {
             display: grid;
-            grid-template-columns: 1fr;
             width: 100%;
-            gap: 11px;
-            margin-top: 28px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 26px;
           }
 
           .basic-banner-primary-button,
@@ -1645,48 +1699,21 @@ export default function BasicSiteBanner() {
             justify-content: space-between;
           }
 
-          .basic-banner-trust {
-            justify-content: center;
-            margin-top: 24px;
-          }
-
-          .basic-trust-content {
-            text-align: left;
-          }
-
-          .basic-banner-features {
-            gap: 0;
-            margin-top: 30px;
-            padding-top: 23px;
-          }
-
           .basic-banner-feature {
             padding: 0 10px;
           }
 
-          .basic-banner-feature:first-child {
-            padding-left: 0;
-          }
-
-          .basic-banner-feature:last-child {
-            padding-right: 0;
-          }
-
           .basic-banner-feature strong {
-            font-size: 21px;
-          }
-
-          .basic-banner-feature span {
-            font-size: 12px;
+            font-size: var(--text-medium);
           }
 
           .basic-banner-visual {
-            padding: 24px 0 36px;
+            padding: 18px 0 30px;
           }
 
           .basic-banner-dashboard {
-            min-height: 435px;
-            border-radius: 21px;
+            min-height: 430px;
+            border-radius: 20px;
           }
 
           .basic-dashboard-header {
@@ -1695,11 +1722,11 @@ export default function BasicSiteBanner() {
           }
 
           .basic-dashboard-address {
-            max-width: 170px;
+            max-width: 180px;
           }
 
           .basic-dashboard-body {
-            min-height: 381px;
+            min-height: 376px;
             grid-template-columns: 48px minmax(0, 1fr);
           }
 
@@ -1729,7 +1756,7 @@ export default function BasicSiteBanner() {
           }
 
           .basic-dashboard-welcome strong {
-            font-size: 14px;
+            font-size: var(--text-normal);
           }
 
           .basic-dashboard-avatar {
@@ -1747,13 +1774,8 @@ export default function BasicSiteBanner() {
             border-radius: 12px;
           }
 
-          .basic-stat-icon {
-            width: 24px;
-            height: 24px;
-          }
-
           .basic-dashboard-stat-card strong {
-            font-size: 14px;
+            font-size: var(--text-normal);
           }
 
           .basic-dashboard-stat-card small {
@@ -1777,67 +1799,124 @@ export default function BasicSiteBanner() {
           }
 
           .basic-floating-card {
-            padding: 10px 12px;
-            border-radius: 13px;
-          }
-
-          .basic-floating-card-top {
-            top: -6px;
-            right: -4px;
-          }
-
-          .basic-floating-card-bottom {
-            left: -4px;
-            bottom: -4px;
+            padding: 9px 11px;
           }
 
           .basic-floating-card strong {
-            font-size: 12px;
+            font-size: var(--text-small);
           }
 
-          .basic-floating-icon {
-            width: 32px;
-            height: 32px;
-          }
-
-          .basic-user-stack span {
-            width: 25px;
-            height: 25px;
-          }
-
-          .basic-floating-notification {
-            display: none;
-          }
-
+          .basic-floating-notification,
           .basic-visual-orbit {
             display: none;
           }
         }
 
-        @media (max-width: 410px) {
+        @media (max-width: 479px) {
+          .basic-banner-section {
+            min-height: auto;
+            padding: 46px 0 56px;
+          }
+
+          .basic-banner-container {
+            width: calc(100% - 24px);
+            grid-template-columns: minmax(0, 1fr);
+            gap: 34px;
+          }
+
+          .basic-banner-content {
+            width: 100%;
+            text-align: center;
+          }
+
           .basic-banner-badge {
             max-width: 100%;
-            font-size: 12px;
+            margin-right: auto;
+            margin-left: auto;
           }
 
           .basic-banner-title {
-            font-size: 36px;
+            margin-top: 18px;
+          }
+
+          .basic-banner-description {
+            margin-top: 16px;
+          }
+
+          .basic-banner-actions {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-top: 24px;
+          }
+
+          .basic-banner-primary-button,
+          .basic-banner-secondary-button {
+            width: 100%;
+            min-height: 50px;
+          }
+
+          .basic-banner-primary-button {
+            justify-content: space-between;
           }
 
           .basic-banner-trust {
-            align-items: flex-start;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 22px;
+          }
+
+          .basic-trust-content {
+            text-align: left;
+          }
+
+          .basic-banner-features {
+            margin-top: 26px;
+            padding-top: 20px;
+          }
+
+          .basic-banner-feature {
+            padding: 0 7px;
+          }
+
+          .basic-banner-feature strong {
+            font-size: var(--text-medium);
+          }
+
+          .basic-banner-visual {
+            padding: 12px 0 26px;
+          }
+
+          .basic-banner-dashboard {
+            min-height: 410px;
+            border-radius: 18px;
           }
 
           .basic-dashboard-header {
-            grid-template-columns: 52px 1fr 30px;
+            height: 48px;
+            grid-template-columns: 48px 1fr 28px;
+            padding: 0 10px;
           }
 
           .basic-dashboard-address {
-            max-width: 145px;
+            max-width: 150px;
+            height: 28px;
           }
 
           .basic-dashboard-body {
+            min-height: 362px;
             grid-template-columns: 42px minmax(0, 1fr);
+          }
+
+          .basic-dashboard-sidebar {
+            padding: 12px 4px 10px;
+          }
+
+          .basic-dashboard-logo {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 16px;
           }
 
           .basic-dashboard-sidebar nav span,
@@ -1847,29 +1926,125 @@ export default function BasicSiteBanner() {
           }
 
           .basic-dashboard-main {
-            padding: 12px 9px;
+            padding: 11px 8px;
           }
 
           .basic-dashboard-welcome > div:first-child > span {
             display: none;
           }
 
-          .basic-dashboard-stat-top > span:first-child {
-            font-size: 12px;
+          .basic-dashboard-welcome strong {
+            font-size: var(--text-normal);
+          }
+
+          .basic-dashboard-cards {
+            gap: 7px;
+            margin-top: 13px;
+          }
+
+          .basic-dashboard-stat-card {
+            padding: 9px;
+          }
+
+          .basic-dashboard-stat-card strong {
+            font-size: var(--text-normal);
+          }
+
+          .basic-dashboard-stat-card small {
+            display: none;
+          }
+
+          .basic-dashboard-chart {
+            padding: 10px;
           }
 
           .basic-chart-period {
             display: none;
           }
 
+          .basic-chart-area {
+            height: 88px;
+            margin-top: 12px;
+          }
+
+          .basic-floating-card {
+            padding: 8px 10px;
+          }
+
+          .basic-floating-card strong,
+          .basic-floating-card > div:last-child > span {
+            font-size: var(--text-small);
+          }
+
           .basic-floating-card-top {
-            transform: scale(0.88);
+            top: -8px;
+            right: -2px;
+            transform: scale(0.84);
             transform-origin: top right;
           }
 
           .basic-floating-card-bottom {
-            transform: scale(0.88);
+            bottom: -6px;
+            left: -2px;
+            transform: scale(0.84);
             transform-origin: bottom left;
+          }
+
+          .basic-floating-notification,
+          .basic-visual-orbit {
+            display: none;
+          }
+        }
+
+        @media (max-width: 370px) {
+          .basic-banner-section {
+            padding-top: 40px;
+          }
+
+          .basic-banner-container {
+            width: calc(100% - 18px);
+          }
+
+          .basic-banner-trust {
+            align-items: flex-start;
+          }
+
+          .basic-trust-avatars span {
+            width: 32px;
+            height: 32px;
+          }
+
+          .basic-dashboard-header {
+            grid-template-columns: 44px 1fr 24px;
+          }
+
+          .basic-dashboard-address {
+            max-width: 130px;
+          }
+
+          .basic-dashboard-body {
+            grid-template-columns: 38px minmax(0, 1fr);
+          }
+
+          .basic-dashboard-main {
+            padding: 9px 6px;
+          }
+
+          .basic-chart-labels span:nth-child(even) {
+            visibility: hidden;
+          }
+
+          .basic-floating-card {
+            display: none;
+          }
+        }
+
+        @media (hover: none) {
+          .basic-banner-visual:hover .basic-banner-dashboard,
+          .basic-dashboard-stat-card:hover,
+          .basic-banner-primary-button:hover,
+          .basic-banner-secondary-button:hover {
+            transform: none;
           }
         }
 
@@ -1885,7 +2060,9 @@ export default function BasicSiteBanner() {
 
           .basic-banner-content,
           .basic-banner-visual,
-          .basic-banner-feature {
+          .basic-banner-feature,
+          .basic-chart-bar,
+          .basic-progress-track span {
             opacity: 1 !important;
             transform: none !important;
           }

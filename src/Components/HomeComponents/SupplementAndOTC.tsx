@@ -4,6 +4,7 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
+  Pill,
   Rocket,
   ShoppingCart,
   Star,
@@ -41,77 +42,26 @@ type Product = JsonProduct & {
   inStock: boolean;
 };
 
-type ProductSectionConfig = {
+type SliderSectionProps = {
   id: string;
   title: string;
   subtitle?: string;
   href: string;
-  keywords: string[];
-  fallbackStart: number;
-  maxProducts: number;
-  fixedDiscount?: number;
-  showRating: boolean;
+  products: Product[];
+  loading: boolean;
+  cartItems: number[];
+  onToggleCart: (productId: number) => void;
+  compact?: boolean;
 };
 
 const PRODUCTS_PER_VIEW = 6;
-const PRODUCTS_PER_SECTION = 20;
+const MAX_PRODUCTS_PER_SECTION = 20;
 
 const discountOptions = [
   55, 45, 38, 20, 40, 40, 30, 25, 18, 15, 35, 50, 28, 22,
 ];
 
-const sectionConfigs: ProductSectionConfig[] = [
-  {
-    id: "supplement-festival",
-    title: "Supplement Festival",
-    subtitle: "Up-To 70% Discount",
-    href: "/offers/supplements",
-    keywords: [
-      "supplement",
-      "vitamin",
-      "ashwagandha",
-      "liver tonic",
-      "liver",
-      "arginine",
-      "cod liver",
-      "sea moss",
-      "nutrition",
-      "herbal",
-      "protein",
-      "omega",
-      "mineral",
-      "multivitamin",
-    ],
-    fallbackStart: 0,
-    maxProducts: PRODUCTS_PER_SECTION,
-    showRating: true,
-  },
-  {
-    id: "otc-medicine",
-    title: "OTC Medicine",
-    href: "/medicine",
-    keywords: [
-      "medicine",
-      "tablet",
-      "capsule",
-      "syrup",
-      "montair",
-      "pantonix",
-      "bisol",
-      "adovas",
-      "alcet",
-      "cinaron",
-      "pharmaceutical",
-      "otc",
-    ],
-    fallbackStart: 20,
-    maxProducts: PRODUCTS_PER_SECTION,
-    fixedDiscount: 10,
-    showRating: false,
-  },
-];
-
-export default function SupplementAndOTC() {
+export default function SupplementFestival() {
   const [products, setProducts] = useState<Product[]>([]);
   const [cartItems, setCartItems] = useState<number[]>([]);
   const [loading, setLoading] = useState(true);
@@ -174,13 +124,66 @@ export default function SupplementAndOTC() {
     };
   }, []);
 
+  const supplementProducts = useMemo(() => {
+    const matched = products.filter((product) =>
+      matchesAnyText(product, [
+        "supplement",
+        "vitamin",
+        "ashwagandha",
+        "liver",
+        "arginine",
+        "cod liver",
+        "sea moss",
+        "nutrition",
+        "herbal",
+      ]),
+    );
+
+    const source =
+      matched.length >= PRODUCTS_PER_VIEW
+        ? matched
+        : products;
+
+    return source.slice(0, MAX_PRODUCTS_PER_SECTION);
+  }, [products]);
+
+  const medicineProducts = useMemo(() => {
+    const matched = products.filter((product) =>
+      matchesAnyText(product, [
+        "medicine",
+        "tablet",
+        "capsule",
+        "syrup",
+        "pharmaceutical",
+        "healthcare",
+      ]),
+    );
+
+    const source =
+      matched.length >= PRODUCTS_PER_VIEW
+        ? matched
+        : products.slice(20);
+
+    if (source.length >= PRODUCTS_PER_VIEW) {
+      return source.slice(0, MAX_PRODUCTS_PER_SECTION);
+    }
+
+    return createLoopedProducts(
+      products,
+      20,
+      MAX_PRODUCTS_PER_SECTION,
+    );
+  }, [products]);
+
   const toggleCartItem = (productId: number) => {
-    setCartItems((current) => {
-      if (current.includes(productId)) {
-        return current.filter((id) => id !== productId);
+    setCartItems((currentItems) => {
+      if (currentItems.includes(productId)) {
+        return currentItems.filter(
+          (currentId) => currentId !== productId,
+        );
       }
 
-      return [...current, productId];
+      return [...currentItems, productId];
     });
   };
 
@@ -190,67 +193,1018 @@ export default function SupplementAndOTC() {
 
   return (
     <>
-      <section className="relative w-full overflow-hidden bg-white py-10 sm:py-12 lg:py-14">
+      <section
+        className="supplement-festival-section"
+        aria-label="Supplement and medicine offers"
+      >
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -left-40 top-0 h-96 w-96 rounded-full bg-[#f3fae8]/60 blur-3xl"
+          className="supplement-background-pattern"
         />
 
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#eff7ff]/70 blur-3xl"
+          className="supplement-background-glow supplement-background-glow-left"
         />
 
-        <div className="relative mx-auto w-full max-w-[1440px] space-y-14 px-4 sm:px-6 lg:space-y-16 lg:px-8">
-          {sectionConfigs.map((config) => (
-            <ProductSliderSection
-              key={config.id}
-              config={config}
-              allProducts={products}
-              loading={loading}
-              cartItems={cartItems}
-              onToggleCart={toggleCartItem}
-            />
-          ))}
+        <div
+          aria-hidden="true"
+          className="supplement-background-glow supplement-background-glow-right"
+        />
+
+        <div className="supplement-main-container">
+          <SliderSection
+            id="supplement-festival"
+            title="Supplement Festival"
+            subtitle="Up-To 70% Discount"
+            href="/offers/supplements"
+            products={supplementProducts}
+            loading={loading}
+            cartItems={cartItems}
+            onToggleCart={toggleCartItem}
+          />
+
+          <PromoBanner />
+
+          <SliderSection
+            id="medicine-essentials"
+            title="Medicine Essentials"
+            subtitle="Everyday healthcare savings"
+            href="/medicine"
+            products={medicineProducts}
+            loading={loading}
+            cartItems={cartItems}
+            onToggleCart={toggleCartItem}
+            compact
+          />
         </div>
       </section>
 
       <style jsx global>{`
-        .festival-product-scroll {
+        .supplement-festival-section {
+          --supplement-text-20: 20px;
+          --supplement-text-18: 18px;
+          --supplement-text-16: 16px;
+          --supplement-text-13: 13px;
+
+          position: relative;
+          isolation: isolate;
+          width: 100%;
+          overflow: hidden;
+          padding: 64px 0;
+          background:
+            radial-gradient(
+              circle at 6% 12%,
+              rgba(228, 248, 205, 0.75),
+              transparent 28%
+            ),
+            radial-gradient(
+              circle at 95% 88%,
+              rgba(255, 230, 194, 0.65),
+              transparent 30%
+            ),
+            linear-gradient(
+              145deg,
+              #ffffff 0%,
+              #fbfef9 52%,
+              #fffdf9 100%
+            );
+
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+        }
+
+        .supplement-background-pattern {
+          position: absolute;
+          inset: 0;
+          z-index: -4;
+          pointer-events: none;
+          opacity: 0.26;
+          background-image:
+            linear-gradient(
+              rgba(91, 151, 20, 0.04) 1px,
+              transparent 1px
+            ),
+            linear-gradient(
+              90deg,
+              rgba(91, 151, 20, 0.04) 1px,
+              transparent 1px
+            );
+          background-size: 44px 44px;
+          mask-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.75),
+            transparent 97%
+          );
+        }
+
+        .supplement-background-glow {
+          position: absolute;
+          z-index: -3;
+          width: 380px;
+          height: 380px;
+          border-radius: 50%;
+          pointer-events: none;
+          filter: blur(100px);
+          opacity: 0.56;
+          will-change: transform;
+        }
+
+        .supplement-background-glow-left {
+          top: 20px;
+          left: -210px;
+          background: rgba(199, 238, 153, 0.66);
+          animation: supplementGlowLeft 11s ease-in-out infinite;
+        }
+
+        .supplement-background-glow-right {
+          right: -210px;
+          bottom: -90px;
+          background: rgba(255, 213, 155, 0.58);
+          animation: supplementGlowRight 13s ease-in-out infinite;
+        }
+
+        .supplement-main-container {
+          position: relative;
+          width: min(1440px, calc(100% - 64px));
+          margin-inline: auto;
+        }
+
+        .supplement-main-container > section + a,
+        .supplement-main-container > a + section {
+          margin-top: 48px;
+        }
+
+        .supplement-slider-section {
+          position: relative;
+        }
+
+        .supplement-slider-header {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          align-items: end;
+          gap: 28px;
+          margin-bottom: 26px;
+        }
+
+        .supplement-heading-group {
+          min-width: 0;
+        }
+
+        .supplement-eyebrow {
+          margin: 0;
+          color: #5f9200;
+          font-size: var(--supplement-text-13);
+          font-weight: 800;
+          line-height: 1.4;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+        }
+
+        .supplement-title {
+          margin: 7px 0 0;
+          color: #101828;
+          font-size: var(--supplement-text-20);
+          font-weight: 850;
+          line-height: 1.3;
+          letter-spacing: -0.025em;
+          text-wrap: balance;
+        }
+
+        .supplement-subtitle {
+          margin: 7px 0 0;
+          color: #667085;
+          font-size: var(--supplement-text-13);
+          font-weight: 600;
+          line-height: 1.6;
+        }
+
+        .supplement-see-all {
+          display: inline-flex;
+          min-height: 44px;
+          flex-shrink: 0;
+          align-items: center;
+          justify-content: center;
+          gap: 7px;
+          padding-inline: 6px;
+          border-radius: 999px;
+          color: #087b75;
+          font-size: var(--supplement-text-13);
+          font-weight: 800;
+          line-height: 1;
+          text-decoration: none;
+          transition:
+            color 260ms ease,
+            transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .supplement-see-all:hover {
+          color: #055f5a;
+          transform: translateY(-2px);
+        }
+
+        .supplement-see-all svg {
+          transition: transform 280ms ease;
+        }
+
+        .supplement-see-all:hover svg {
+          transform: translateX(4px);
+        }
+
+        .supplement-slider-shell {
+          position: relative;
+        }
+
+        .supplement-slider-scroll {
+          display: flex;
+          gap: 16px;
+          overflow-x: auto;
+          overflow-y: visible;
+          padding: 12px 2px 22px;
+          scroll-padding-inline: 8px;
+          scroll-snap-type: x mandatory;
           scrollbar-width: none;
           -ms-overflow-style: none;
           overscroll-behavior-inline: contain;
-          scroll-padding-inline: 0.5rem;
           -webkit-overflow-scrolling: touch;
         }
 
-        .festival-product-scroll::-webkit-scrollbar {
+        .supplement-slider-scroll::-webkit-scrollbar {
           display: none;
           width: 0;
           height: 0;
         }
 
-        .festival-product-card {
-          width: min(78vw, 270px);
+        .supplement-product-card {
+          width: min(78vw, 268px);
+          flex: 0 0 min(78vw, 268px);
+          scroll-snap-align: start;
+          scroll-snap-stop: always;
         }
 
-        @media (min-width: 640px) {
-          .festival-product-card {
-            width: 230px;
+        .supplement-card {
+          display: flex;
+          height: 100%;
+          flex-direction: column;
+          overflow: hidden;
+          border: 1px solid #dfe4e8;
+          border-radius: 15px;
+          background: rgba(255, 255, 255, 0.97);
+          box-shadow:
+            0 10px 28px -23px rgba(15, 23, 42, 0.5),
+            0 2px 7px rgba(15, 23, 42, 0.03);
+          transform: translateZ(0);
+          transition:
+            transform 430ms cubic-bezier(0.22, 1, 0.36, 1),
+            border-color 350ms ease,
+            box-shadow 430ms ease;
+          will-change: transform;
+          backface-visibility: hidden;
+        }
+
+        .supplement-card:hover {
+          border-color: #bedca1;
+          transform: translate3d(0, -7px, 0);
+          box-shadow:
+            0 31px 60px -34px rgba(95, 146, 0, 0.38),
+            0 15px 32px -24px rgba(15, 23, 42, 0.35);
+        }
+
+        .supplement-image-link {
+          position: relative;
+          display: block;
+          aspect-ratio: 1 / 1;
+          overflow: hidden;
+          background:
+            radial-gradient(
+              circle at center,
+              #ffffff 0%,
+              #fbfcfa 68%,
+              #f3f8ed 100%
+            );
+        }
+
+        .supplement-product-image {
+          width: 100%;
+          height: 100%;
+          padding: 15px;
+          object-fit: contain;
+          transform: scale(1.001);
+          transition:
+            transform 680ms cubic-bezier(0.22, 1, 0.36, 1),
+            filter 500ms ease;
+          will-change: transform;
+        }
+
+        .supplement-card:hover .supplement-product-image {
+          transform: scale(1.055);
+          filter: saturate(1.04) contrast(1.02);
+        }
+
+        .supplement-image-overlay {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          background: linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.16),
+            transparent 48%,
+            rgba(95, 146, 0, 0.04)
+          );
+        }
+
+        .supplement-image-shine {
+          position: absolute;
+          inset: 0 auto 0 -88%;
+          width: 42%;
+          pointer-events: none;
+          transform: rotate(18deg);
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.52),
+            transparent
+          );
+          transition: left 760ms ease;
+        }
+
+        .supplement-card:hover .supplement-image-shine {
+          left: 135%;
+        }
+
+        .supplement-discount {
+          position: absolute;
+          top: 0;
+          left: 9px;
+          padding: 6px 8px;
+          border-radius: 0 0 6px 6px;
+          color: #ffffff;
+          background: linear-gradient(
+            180deg,
+            #1677ef,
+            #0755a5
+          );
+          box-shadow: 0 7px 15px -8px rgba(7, 85, 165, 0.85);
+          font-size: var(--supplement-text-13);
+          font-weight: 800;
+          line-height: 1.05;
+          text-align: center;
+        }
+
+        .supplement-discount.is-highlighted {
+          background: linear-gradient(
+            180deg,
+            #f0526b,
+            #d92745
+          );
+          box-shadow: 0 7px 15px -8px rgba(217, 39, 69, 0.82);
+        }
+
+        .supplement-brand {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          max-width: 120px;
+          overflow: hidden;
+          padding: 6px 9px;
+          border: 1px solid rgba(255, 255, 255, 0.9);
+          border-radius: 999px;
+          color: #5f9200;
+          background: rgba(255, 255, 255, 0.94);
+          box-shadow: 0 9px 20px -14px rgba(15, 23, 42, 0.5);
+          backdrop-filter: blur(10px);
+          font-size: var(--supplement-text-13);
+          font-weight: 700;
+          line-height: 1;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .supplement-card-content {
+          display: flex;
+          min-height: 238px;
+          flex: 1;
+          flex-direction: column;
+          padding: 14px;
+        }
+
+        .supplement-card-content.is-compact {
+          min-height: 214px;
+        }
+
+        .supplement-delivery {
+          display: inline-flex;
+          width: fit-content;
+          min-height: 34px;
+          align-items: center;
+          gap: 8px;
+          padding: 5px 9px;
+          border-radius: 7px;
+          color: #202939;
+          background: #f0f1f3;
+          font-size: var(--supplement-text-13);
+          font-weight: 700;
+          line-height: 1;
+        }
+
+        .supplement-delivery-icon {
+          display: flex;
+          width: 24px;
+          height: 24px;
+          flex-shrink: 0;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          color: #ffd63d;
+          background: #172033;
+        }
+
+        .supplement-product-title {
+          display: -webkit-box;
+          min-height: 48px;
+          overflow: hidden;
+          margin: 13px 0 0;
+          color: #101828;
+          font-size: var(--supplement-text-16);
+          font-weight: 650;
+          line-height: 1.5;
+          text-decoration: none;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          transition: color 250ms ease;
+        }
+
+        .supplement-card:hover .supplement-product-title {
+          color: #087b75;
+        }
+
+        .supplement-rating {
+          display: flex;
+          min-height: 22px;
+          align-items: center;
+          gap: 2px;
+          margin-top: 8px;
+        }
+
+        .supplement-rating-text {
+          margin-left: 6px;
+          color: #667085;
+          font-size: var(--supplement-text-13);
+          line-height: 1.4;
+        }
+
+        .supplement-price-row {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          gap: 12px;
+          margin-top: auto;
+          padding-top: 15px;
+        }
+
+        .supplement-old-price {
+          margin: 0;
+          color: #667085;
+          font-size: var(--supplement-text-13);
+          line-height: 1.4;
+          text-decoration: line-through;
+        }
+
+        .supplement-sale-price {
+          margin: 3px 0 0;
+          color: #101828;
+          font-size: var(--supplement-text-18);
+          font-weight: 800;
+          line-height: 1.2;
+          letter-spacing: -0.02em;
+        }
+
+        .supplement-add-button {
+          display: inline-flex;
+          min-width: 56px;
+          min-height: 42px;
+          flex-shrink: 0;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          padding: 0 11px;
+          border: 1px solid #087b75;
+          border-radius: 8px;
+          color: #087b75;
+          background: #eef9f7;
+          font-family: inherit;
+          font-size: var(--supplement-text-13);
+          font-weight: 800;
+          cursor: pointer;
+          transition:
+            color 250ms ease,
+            background-color 250ms ease,
+            transform 250ms ease,
+            box-shadow 250ms ease;
+        }
+
+        .supplement-add-button:hover {
+          color: #ffffff;
+          background: #087b75;
+          box-shadow: 0 12px 24px -14px rgba(8, 123, 117, 0.7);
+          transform: translateY(-2px);
+        }
+
+        .supplement-add-button:active {
+          transform: scale(0.97);
+        }
+
+        .supplement-add-button.is-added {
+          color: #ffffff;
+          background: #087b75;
+        }
+
+        .supplement-add-button:disabled {
+          border-color: #d0d5dd;
+          color: #98a2b3;
+          background: #f2f4f7;
+          cursor: not-allowed;
+          box-shadow: none;
+          transform: none;
+        }
+
+        .supplement-slider-arrow {
+          position: absolute;
+          top: 43%;
+          z-index: 30;
+          display: flex;
+          width: 42px;
+          height: 42px;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #d6dde1;
+          border-radius: 50%;
+          color: #087b75;
+          background: rgba(255, 255, 255, 0.97);
+          box-shadow: 0 10px 25px -12px rgba(15, 23, 42, 0.42);
+          backdrop-filter: blur(10px);
+          cursor: pointer;
+          transition:
+            opacity 260ms ease,
+            transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+            border-color 250ms ease,
+            background-color 250ms ease,
+            box-shadow 250ms ease;
+        }
+
+        .supplement-slider-arrow-left {
+          left: 0;
+          transform: translate(-50%, -50%);
+        }
+
+        .supplement-slider-arrow-right {
+          right: 0;
+          transform: translate(50%, -50%);
+        }
+
+        .supplement-slider-arrow:hover {
+          border-color: #087b75;
+          background: #eef9f7;
+          box-shadow: 0 14px 28px -14px rgba(8, 123, 117, 0.45);
+        }
+
+        .supplement-slider-arrow-left:hover {
+          transform: translate(-50%, -50%) scale(1.07);
+        }
+
+        .supplement-slider-arrow-right:hover {
+          transform: translate(50%, -50%) scale(1.07);
+        }
+
+        .supplement-slider-arrow.is-hidden {
+          pointer-events: none;
+          opacity: 0;
+        }
+
+        .supplement-promo-banner {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          padding: 32px;
+          border: 1px solid #dce5de;
+          border-radius: 22px;
+          color: inherit;
+          background:
+            linear-gradient(
+              120deg,
+              rgba(255, 255, 255, 0.97),
+              rgba(237, 249, 243, 0.94) 48%,
+              rgba(238, 246, 255, 0.95)
+            );
+          box-shadow:
+            0 22px 52px -38px rgba(15, 23, 42, 0.45),
+            inset 0 1px rgba(255, 255, 255, 0.9);
+          text-decoration: none;
+          transform: translateZ(0);
+          transition:
+            transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+            border-color 350ms ease,
+            box-shadow 420ms ease;
+          will-change: transform;
+        }
+
+        .supplement-promo-banner:hover {
+          border-color: #b9dbcf;
+          transform: translateY(-5px);
+          box-shadow:
+            0 32px 65px -38px rgba(8, 123, 117, 0.34),
+            inset 0 1px rgba(255, 255, 255, 0.95);
+        }
+
+        .supplement-promo-pattern {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          opacity: 0.25;
+          background-image:
+            radial-gradient(
+              circle at 1px 1px,
+              rgba(8, 123, 117, 0.13) 1px,
+              transparent 0
+            );
+          background-size: 22px 22px;
+          mask-image: linear-gradient(
+            to right,
+            transparent,
+            rgba(0, 0, 0, 0.9)
+          );
+        }
+
+        .supplement-promo-glow {
+          position: absolute;
+          right: -80px;
+          top: -100px;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          pointer-events: none;
+          background: rgba(166, 225, 213, 0.55);
+          filter: blur(72px);
+          transition: transform 600ms ease;
+        }
+
+        .supplement-promo-banner:hover .supplement-promo-glow {
+          transform: scale(1.15) translateX(-12px);
+        }
+
+        .supplement-promo-content {
+          position: relative;
+          display: flex;
+          min-height: 190px;
+          max-width: 760px;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .supplement-promo-badge {
+          display: inline-flex;
+          width: fit-content;
+          min-height: 38px;
+          align-items: center;
+          gap: 8px;
+          padding: 6px 12px;
+          border: 1px solid rgba(8, 123, 117, 0.1);
+          border-radius: 999px;
+          color: #087b75;
+          background: rgba(255, 255, 255, 0.94);
+          box-shadow: 0 10px 25px -20px rgba(8, 123, 117, 0.5);
+          font-size: var(--supplement-text-13);
+          font-weight: 800;
+          line-height: 1;
+        }
+
+        .supplement-promo-title {
+          max-width: 720px;
+          margin: 18px 0 0;
+          color: #101828;
+          font-size: var(--supplement-text-20);
+          font-weight: 850;
+          line-height: 1.35;
+          letter-spacing: -0.025em;
+          text-wrap: balance;
+        }
+
+        .supplement-promo-description {
+          max-width: 620px;
+          margin: 10px 0 0;
+          color: #667085;
+          font-size: var(--supplement-text-16);
+          line-height: 1.7;
+        }
+
+        .supplement-promo-action {
+          display: inline-flex;
+          width: fit-content;
+          align-items: center;
+          gap: 7px;
+          margin-top: 20px;
+          color: #087b75;
+          font-size: var(--supplement-text-13);
+          font-weight: 800;
+          line-height: 1;
+        }
+
+        .supplement-promo-action svg {
+          transition: transform 280ms ease;
+        }
+
+        .supplement-promo-banner:hover
+          .supplement-promo-action
+          svg {
+          transform: translateX(4px);
+        }
+
+        .supplement-state {
+          display: flex;
+          min-height: 310px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #e0e5e8;
+          border-radius: 18px;
+          background: #ffffff;
+          padding: 24px;
+          text-align: center;
+        }
+
+        .supplement-state-title {
+          margin: 13px 0 0;
+          color: #344054;
+          font-size: var(--supplement-text-16);
+          font-weight: 750;
+          line-height: 1.4;
+        }
+
+        .supplement-state-message {
+          margin: 7px 0 0;
+          color: #667085;
+          font-size: var(--supplement-text-13);
+          line-height: 1.6;
+        }
+
+        .supplement-error {
+          display: flex;
+          min-height: 300px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          padding: 56px 24px;
+          background: #ffffff;
+          text-align: center;
+        }
+
+        .supplement-error-title {
+          margin: 14px 0 0;
+          color: #b42318;
+          font-size: var(--supplement-text-16);
+          font-weight: 750;
+          line-height: 1.4;
+        }
+
+        .supplement-retry-button {
+          min-height: 42px;
+          margin-top: 15px;
+          padding-inline: 18px;
+          border: 0;
+          border-radius: 8px;
+          color: #ffffff;
+          background: #087b75;
+          font-family: inherit;
+          font-size: var(--supplement-text-13);
+          font-weight: 750;
+          cursor: pointer;
+          transition:
+            background-color 250ms ease,
+            transform 250ms ease;
+        }
+
+        .supplement-retry-button:hover {
+          background: #066b66;
+          transform: translateY(-2px);
+        }
+
+        @keyframes supplementGlowLeft {
+          0%,
+          100% {
+            transform: translate3d(0, 0, 0) scale(1);
+          }
+
+          50% {
+            transform: translate3d(32px, -20px, 0) scale(1.08);
           }
         }
 
-        @media (min-width: 1024px) {
-          .festival-product-card {
+        @keyframes supplementGlowRight {
+          0%,
+          100% {
+            transform: translate3d(0, 0, 0) scale(1);
+          }
+
+          50% {
+            transform: translate3d(-30px, -18px, 0) scale(1.07);
+          }
+        }
+
+        @media (min-width: 1280px) {
+          .supplement-product-card {
             width: calc((100% - 80px) / 6);
+            flex-basis: calc((100% - 80px) / 6);
+          }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1279px) {
+          .supplement-festival-section {
+            padding: 58px 0;
+          }
+
+          .supplement-main-container {
+            width: min(980px, calc(100% - 48px));
+          }
+
+          .supplement-product-card {
+            width: calc((100% - 48px) / 4);
+            flex-basis: calc((100% - 48px) / 4);
+          }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .supplement-festival-section {
+            padding: 54px 0;
+          }
+
+          .supplement-main-container {
+            width: min(760px, calc(100% - 40px));
+          }
+
+          .supplement-product-card {
+            width: calc((100% - 32px) / 3);
+            flex-basis: calc((100% - 32px) / 3);
+          }
+
+          .supplement-slider-arrow {
+            width: 40px;
+            height: 40px;
+          }
+
+          .supplement-promo-banner {
+            padding: 28px;
+          }
+
+          .supplement-promo-content {
+            min-height: 175px;
+          }
+        }
+
+        @media (min-width: 640px) and (max-width: 767px) {
+          .supplement-festival-section {
+            padding: 50px 0;
+          }
+
+          .supplement-main-container {
+            width: calc(100% - 32px);
+          }
+
+          .supplement-product-card {
+            width: calc((100% - 16px) / 2);
+            flex-basis: calc((100% - 16px) / 2);
+          }
+
+          .supplement-slider-arrow {
+            display: none;
+          }
+
+          .supplement-promo-banner {
+            padding: 25px;
+          }
+        }
+
+        @media (max-width: 639px) {
+          .supplement-festival-section {
+            padding: 44px 0 48px;
+          }
+
+          .supplement-main-container {
+            width: 100%;
+          }
+
+          .supplement-main-container > section + a,
+          .supplement-main-container > a + section {
+            margin-top: 40px;
+          }
+
+          .supplement-slider-header {
+            align-items: start;
+            gap: 14px;
+            margin-bottom: 18px;
+            padding-inline: 14px;
+          }
+
+          .supplement-heading-group {
+            max-width: 250px;
+          }
+
+          .supplement-title {
+            max-width: 250px;
+          }
+
+          .supplement-see-all {
+            min-height: 40px;
+            padding-inline: 2px;
+          }
+
+          .supplement-slider-scroll {
+            gap: 12px;
+            padding: 10px 14px 20px;
+            scroll-padding-inline: 14px;
+          }
+
+          .supplement-product-card {
+            width: min(82vw, 268px);
+            flex-basis: min(82vw, 268px);
+          }
+
+          .supplement-slider-arrow {
+            display: none;
+          }
+
+          .supplement-card-content {
+            min-height: 226px;
+            padding: 13px;
+          }
+
+          .supplement-card-content.is-compact {
+            min-height: 210px;
+          }
+
+          .supplement-product-image {
+            padding: 12px;
+          }
+
+          .supplement-promo-banner {
+            margin-inline: 14px;
+            padding: 22px;
+            border-radius: 18px;
+          }
+
+          .supplement-promo-content {
+            min-height: 180px;
+          }
+
+          .supplement-promo-description {
+            line-height: 1.6;
+          }
+        }
+
+        @media (max-width: 380px) {
+          .supplement-slider-header {
+            padding-inline: 11px;
+          }
+
+          .supplement-heading-group,
+          .supplement-title {
+            max-width: 218px;
+          }
+
+          .supplement-slider-scroll {
+            padding-right: 11px;
+            padding-left: 11px;
+            scroll-padding-inline: 11px;
+          }
+
+          .supplement-product-card {
+            width: calc(100vw - 36px);
+            flex-basis: calc(100vw - 36px);
+          }
+
+          .supplement-brand {
+            max-width: 88px;
+          }
+
+          .supplement-promo-banner {
+            margin-inline: 11px;
+            padding: 19px;
+          }
+        }
+
+        @media (hover: none) {
+          .supplement-card:hover,
+          .supplement-card:hover .supplement-product-image,
+          .supplement-add-button:hover,
+          .supplement-see-all:hover,
+          .supplement-promo-banner:hover {
+            transform: none;
           }
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .festival-product-scroll,
-          .festival-product-scroll *,
-          .festival-product-scroll *::before,
-          .festival-product-scroll *::after {
+          .supplement-festival-section *,
+          .supplement-festival-section *::before,
+          .supplement-festival-section *::after {
             scroll-behavior: auto !important;
             animation-duration: 0.01ms !important;
             animation-iteration-count: 1 !important;
@@ -262,67 +1216,32 @@ export default function SupplementAndOTC() {
   );
 }
 
-function ProductSliderSection({
-  config,
-  allProducts,
+function SliderSection({
+  id,
+  title,
+  subtitle,
+  href,
+  products,
   loading,
   cartItems,
   onToggleCart,
-}: {
-  config: ProductSectionConfig;
-  allProducts: Product[];
-  loading: boolean;
-  cartItems: number[];
-  onToggleCart: (productId: number) => void;
-}) {
-  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  compact = false,
+}: SliderSectionProps) {
+  const scrollContainerRef =
+    useRef<HTMLDivElement | null>(null);
 
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
+  const [canScrollLeft, setCanScrollLeft] =
+    useState(false);
 
-  const sectionProducts = useMemo(() => {
-    const availableProducts = allProducts.filter(
-      (product) => product.inStock,
-    );
-
-    const matchedProducts = availableProducts.filter((product) =>
-      matchesKeywords(product, config.keywords),
-    );
-
-    let selectedProducts: Product[];
-
-    if (matchedProducts.length >= PRODUCTS_PER_VIEW) {
-      selectedProducts = matchedProducts.slice(
-        0,
-        config.maxProducts,
-      );
-    } else {
-      selectedProducts = availableProducts.slice(
-        config.fallbackStart,
-        config.fallbackStart + config.maxProducts,
-      );
-
-      if (selectedProducts.length < PRODUCTS_PER_VIEW) {
-        selectedProducts = availableProducts.slice(
-          0,
-          config.maxProducts,
-        );
-      }
-    }
-
-    if (typeof config.fixedDiscount === "number") {
-      return selectedProducts.map((product) =>
-        applyFixedDiscount(product, config.fixedDiscount!),
-      );
-    }
-
-    return selectedProducts;
-  }, [allProducts, config]);
+  const [canScrollRight, setCanScrollRight] =
+    useState(false);
 
   const updateScrollButtons = useCallback(() => {
     const container = scrollContainerRef.current;
 
-    if (!container) return;
+    if (!container) {
+      return;
+    }
 
     const maximumScrollLeft =
       container.scrollWidth - container.clientWidth;
@@ -337,7 +1256,9 @@ function ProductSliderSection({
   useEffect(() => {
     const container = scrollContainerRef.current;
 
-    if (!container) return;
+    if (!container) {
+      return;
+    }
 
     updateScrollButtons();
 
@@ -377,90 +1298,105 @@ function ProductSliderSection({
         updateScrollButtons,
       );
     };
-  }, [sectionProducts.length, updateScrollButtons]);
+  }, [products.length, updateScrollButtons]);
 
   const scrollProducts = (
     direction: "left" | "right",
   ) => {
     const container = scrollContainerRef.current;
 
-    if (!container) return;
+    if (!container) {
+      return;
+    }
 
     const firstCard =
       container.querySelector<HTMLElement>(
-        "[data-festival-product-card]",
+        "[data-supplement-card]",
       );
 
-    if (!firstCard) return;
+    if (!firstCard) {
+      return;
+    }
 
-    const containerStyles =
-      window.getComputedStyle(container);
+    const styles = window.getComputedStyle(container);
 
     const gap =
       Number.parseFloat(
-        containerStyles.columnGap ||
-          containerStyles.gap ||
-          "16",
+        styles.columnGap || styles.gap || "16",
       ) || 16;
 
     const cardWidth =
       firstCard.getBoundingClientRect().width;
 
-    const amount =
-      (cardWidth + gap) * PRODUCTS_PER_VIEW;
+    const visibleCount =
+      window.innerWidth >= 1280
+        ? 6
+        : window.innerWidth >= 1024
+          ? 4
+          : window.innerWidth >= 768
+            ? 3
+            : window.innerWidth >= 640
+              ? 2
+              : 1;
+
+    const scrollAmount =
+      (cardWidth + gap) * visibleCount;
 
     container.scrollBy({
-      left: direction === "right" ? amount : -amount,
+      left:
+        direction === "right"
+          ? scrollAmount
+          : -scrollAmount,
       behavior: "smooth",
     });
   };
 
   return (
-    <section aria-labelledby={`${config.id}-title`}>
-      <div className="mb-5 grid grid-cols-[1fr_auto] items-center gap-4 lg:grid-cols-3">
-        <h2
-          id={`${config.id}-title`}
-          className="text-[20px] font-bold tracking-[-0.025em] text-[#101828] sm:text-[23px]"
-        >
-          {config.title}
-        </h2>
-
-        {config.subtitle && (
-          <p className="hidden text-center text-[15px] font-medium text-[#101828] lg:block">
-            {config.subtitle}
+    <section
+      className="supplement-slider-section"
+      aria-labelledby={`${id}-title`}
+    >
+      <header className="supplement-slider-header">
+        <div className="supplement-heading-group">
+          <p className="supplement-eyebrow">
+            Health and wellness collection
           </p>
-        )}
+
+          <h2
+            id={`${id}-title`}
+            className="supplement-title"
+          >
+            {title}
+          </h2>
+
+          {subtitle && (
+            <p className="supplement-subtitle">
+              {subtitle}
+            </p>
+          )}
+        </div>
 
         <Link
-          href={config.href}
-          className="group inline-flex items-center justify-self-end gap-1.5 text-sm font-semibold text-[#101828] transition-colors hover:text-[#087b75]"
+          href={href}
+          className="supplement-see-all"
         >
-          see all
+          <span>See all</span>
 
-          <ChevronRight
-            size={16}
-            className="transition-transform duration-300 group-hover:translate-x-1"
-          />
+          <ChevronRight size={16} />
         </Link>
-      </div>
+      </header>
 
-      {config.subtitle && (
-        <p className="mb-4 text-sm font-medium text-[#667085] lg:hidden">
-          {config.subtitle}
-        </p>
-      )}
-
-      <div className="relative">
+      <div className="supplement-slider-shell">
         <SliderArrow
           direction="left"
           visible={canScrollLeft}
-          label={`Show previous ${config.title} products`}
           onClick={() => scrollProducts("left")}
+          label={`Show previous ${title} products`}
         />
 
         <div
           ref={scrollContainerRef}
-          className="festival-product-scroll flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3"
+          className="supplement-slider-scroll"
         >
           {loading &&
             Array.from({
@@ -468,34 +1404,33 @@ function ProductSliderSection({
             }).map((_, index) => (
               <ProductSkeleton
                 key={index}
-                showLargeImage={true}
+                compact={compact}
               />
             ))}
 
           {!loading &&
-            sectionProducts.map((product) => (
+            products.map((product) => (
               <ProductCard
-                key={`${config.id}-${product.id}`}
+                key={`${id}-${product.id}`}
                 product={product}
                 added={cartItems.includes(product.id)}
-                showRating={config.showRating}
                 onToggleCart={() =>
                   onToggleCart(product.id)
                 }
+                compact={compact}
               />
             ))}
 
-          {!loading &&
-            sectionProducts.length === 0 && (
-              <EmptyState />
-            )}
+          {!loading && products.length === 0 && (
+            <EmptyState />
+          )}
         </div>
 
         <SliderArrow
           direction="right"
           visible={canScrollRight}
-          label={`Show more ${config.title} products`}
           onClick={() => scrollProducts("right")}
+          label={`Show more ${title} products`}
         />
       </div>
     </section>
@@ -505,56 +1440,79 @@ function ProductSliderSection({
 function ProductCard({
   product,
   added,
-  showRating,
   onToggleCart,
+  compact,
 }: {
   product: Product;
   added: boolean;
-  showRating: boolean;
   onToggleCart: () => void;
+  compact: boolean;
 }) {
-  const roundedRating = Math.round(product.rating ?? 0);
+  const roundedRating = Math.round(
+    product.rating ?? 0,
+  );
 
   return (
     <article
-      data-festival-product-card
-      className="festival-product-card group flex shrink-0 snap-start flex-col overflow-hidden rounded-[10px] border border-[#dfe4e8] bg-white shadow-[0_8px_22px_-18px_rgba(15,23,42,0.4)] transition-all duration-300 hover:-translate-y-1 hover:border-[#b9d8d4] hover:shadow-[0_24px_45px_-28px_rgba(15,23,42,0.4)]"
+      data-supplement-card
+      className="supplement-product-card supplement-card"
     >
-      <Link
-        href={product.href}
-        aria-label={product.title}
-        className="relative block aspect-square overflow-hidden bg-[#fafafa]"
+      {!compact && (
+        <Link
+          href={product.href}
+          aria-label={product.title}
+          className="supplement-image-link"
+        >
+          <img
+            src={product.image}
+            alt={product.title}
+            width={600}
+            height={600}
+            loading="lazy"
+            draggable={false}
+            onError={(event) => {
+              event.currentTarget.src =
+                "/images/product-fallback.png";
+            }}
+            className="supplement-product-image"
+          />
+
+          <div
+            aria-hidden="true"
+            className="supplement-image-overlay"
+          />
+
+          <div
+            aria-hidden="true"
+            className="supplement-image-shine"
+          />
+
+          <DiscountBadge
+            discount={product.discountPercent}
+          />
+
+          <span className="supplement-brand">
+            {product.brand}
+          </span>
+        </Link>
+      )}
+
+      <div
+        className={`supplement-card-content ${
+          compact ? "is-compact" : ""
+        }`}
       >
-        <img
-          src={product.image}
-          alt={product.title}
-          width={600}
-          height={600}
-          loading="lazy"
-          draggable={false}
-          onError={(event) => {
-            event.currentTarget.src =
-              "/images/product-fallback.png";
-          }}
-          className="h-full w-full object-contain p-3 transition-transform duration-500 ease-out group-hover:scale-[1.045]"
-        />
-
-        <DiscountBadge
-          discount={product.discountPercent}
-        />
-      </Link>
-
-      <div className="flex flex-1 flex-col p-3">
         <DeliveryBadge />
 
-        <Link href={product.href} className="mt-3 block">
-          <h3 className="line-clamp-2 min-h-[48px] text-[15px] font-semibold leading-6 text-[#101010] transition-colors duration-200 group-hover:text-[#087b75]">
-            {product.title}
-          </h3>
+        <Link
+          href={product.href}
+          className="supplement-product-title"
+        >
+          {product.title}
         </Link>
 
-        {showRating && (
-          <div className="mt-2 flex min-h-5 items-center gap-0.5">
+        {!compact && (
+          <div className="supplement-rating">
             {Array.from({ length: 5 }).map(
               (_, index) => (
                 <Star
@@ -570,24 +1528,20 @@ function ProductCard({
               ),
             )}
 
-            <span className="ml-1.5 text-[12px] text-[#667085]">
+            <span className="supplement-rating-text">
               ({product.reviewCount})
             </span>
           </div>
         )}
 
-        {!showRating && (
-          <div className="mt-2 h-5" aria-hidden="true" />
-        )}
-
-        <div className="mt-auto flex items-end justify-between gap-3 pt-3">
-          <div className="min-w-0">
-            <p className="truncate text-[13px] text-[#667085] line-through">
+        <div className="supplement-price-row">
+          <div>
+            <p className="supplement-old-price">
               {product.currencySymbol}
               {formatPrice(product.originalPrice)}
             </p>
 
-            <p className="mt-0.5 text-[18px] font-bold text-[#101010]">
+            <p className="supplement-sale-price">
               {product.currencySymbol}
               {formatPrice(product.salePrice)}
             </p>
@@ -602,10 +1556,8 @@ function ProductCard({
                 ? `Remove ${product.title} from cart`
                 : `Add ${product.title} to cart`
             }
-            className={`inline-flex min-h-10 min-w-[48px] shrink-0 items-center justify-center gap-1.5 rounded-[7px] border px-2.5 text-sm font-semibold transition-all duration-200 active:scale-[0.97] disabled:cursor-not-allowed disabled:border-[#d0d5dd] disabled:bg-[#f2f4f7] disabled:text-[#98a2b3] ${
-              added
-                ? "border-[#087b75] bg-[#087b75] text-white"
-                : "border-[#087b75] bg-[#eef9f7] text-[#087b75] hover:bg-[#087b75] hover:text-white"
+            className={`supplement-add-button ${
+              added ? "is-added" : ""
             }`}
           >
             {added ? (
@@ -620,6 +1572,47 @@ function ProductCard({
         </div>
       </div>
     </article>
+  );
+}
+
+function PromoBanner() {
+  return (
+    <Link
+      href="/offers/healthcare"
+      className="supplement-promo-banner"
+    >
+      <div
+        aria-hidden="true"
+        className="supplement-promo-pattern"
+      />
+
+      <div
+        aria-hidden="true"
+        className="supplement-promo-glow"
+      />
+
+      <div className="supplement-promo-content">
+        <div className="supplement-promo-badge">
+          <Pill size={16} />
+          Essential healthcare
+        </div>
+
+        <h3 className="supplement-promo-title">
+          Everyday medicines delivered safely to your doorstep
+        </h3>
+
+        <p className="supplement-promo-description">
+          Browse trusted healthcare products and enjoy convenient delivery
+          across Bangladesh.
+        </p>
+
+        <span className="supplement-promo-action">
+          Explore medicines
+
+          <ChevronRight size={16} />
+        </span>
+      </div>
+    </Link>
   );
 }
 
@@ -645,13 +1638,11 @@ function SliderArrow({
       onClick={onClick}
       disabled={!visible}
       aria-label={label}
-      className={`absolute top-[43%] z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#d6dde1] bg-white text-[#087b75] shadow-[0_8px_22px_-10px_rgba(15,23,42,0.35)] transition-all duration-300 hover:scale-105 hover:border-[#087b75] hover:bg-[#eef9f7] disabled:pointer-events-none ${
+      className={`supplement-slider-arrow ${
         direction === "left"
-          ? "left-0 -translate-x-1/2"
-          : "right-0 translate-x-1/2"
-      } ${
-        visible ? "opacity-100" : "opacity-0"
-      }`}
+          ? "supplement-slider-arrow-left"
+          : "supplement-slider-arrow-right"
+      } ${visible ? "" : "is-hidden"}`}
     >
       <Icon size={20} />
     </button>
@@ -660,8 +1651,8 @@ function SliderArrow({
 
 function DeliveryBadge() {
   return (
-    <div className="inline-flex w-fit items-center gap-2 rounded-[5px] bg-[#f0f1f3] px-2 py-1.5 text-[11px] font-semibold text-[#202939]">
-      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#172033] text-[#ffd63d]">
+    <div className="supplement-delivery">
+      <span className="supplement-delivery-icon">
         <Rocket
           size={13}
           fill="currentColor"
@@ -684,10 +1675,8 @@ function DiscountBadge({
 
   return (
     <span
-      className={`absolute left-2 top-0 rounded-b-[4px] px-1.5 py-1 text-center text-[11px] font-extrabold leading-[11px] text-white shadow-sm ${
-        highlighted
-          ? "bg-[#e73855]"
-          : "bg-[#0969e8]"
+      className={`supplement-discount ${
+        highlighted ? "is-highlighted" : ""
       }`}
     >
       {discount}%
@@ -734,43 +1723,6 @@ function normalizeProduct(
   };
 }
 
-function applyFixedDiscount(
-  product: Product,
-  discountPercent: number,
-): Product {
-  const salePrice = product.salePrice;
-
-  const originalPrice = Number(
-    (
-      salePrice /
-      (1 - discountPercent / 100)
-    ).toFixed(2),
-  );
-
-  return {
-    ...product,
-    discountPercent,
-    originalPrice,
-  };
-}
-
-function matchesKeywords(
-  product: Product,
-  keywords: string[],
-) {
-  const searchableText = [
-    product.brand,
-    product.title,
-    product.category,
-  ]
-    .join(" ")
-    .toLowerCase();
-
-  return keywords.some((keyword) =>
-    searchableText.includes(keyword.toLowerCase()),
-  );
-}
-
 function isValidProduct(
   value: unknown,
 ): value is JsonProduct {
@@ -795,6 +1747,50 @@ function isValidProduct(
       product.rating === null) &&
     typeof product.productUrl === "string"
   );
+}
+
+function matchesAnyText(
+  product: Product,
+  words: string[],
+) {
+  const searchableText = [
+    product.brand,
+    product.title,
+    product.category,
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return words.some((word) =>
+    searchableText.includes(word.toLowerCase()),
+  );
+}
+
+function createLoopedProducts(
+  products: Product[],
+  startIndex: number,
+  count: number,
+) {
+  if (products.length === 0) {
+    return [];
+  }
+
+  const result: Product[] = [];
+  const maximum = Math.min(count, products.length);
+
+  for (
+    let index = 0;
+    index < maximum;
+    index += 1
+  ) {
+    result.push(
+      products[
+        (startIndex + index) % products.length
+      ],
+    );
+  }
+
+  return result;
 }
 
 function createSlug(value: string) {
@@ -829,32 +1825,36 @@ function getCurrencySymbol(currency: string) {
 }
 
 function formatPrice(value: number) {
-  if (Number.isInteger(value)) {
-    return value.toString();
-  }
-
-  return value.toFixed(2);
+  return Number.isInteger(value)
+    ? value.toString()
+    : value.toFixed(2);
 }
 
 function ProductSkeleton({
-  showLargeImage,
+  compact,
 }: {
-  showLargeImage: boolean;
+  compact: boolean;
 }) {
   return (
-    <div className="festival-product-card shrink-0 overflow-hidden rounded-[10px] border border-[#e4e7ec] bg-white">
-      {showLargeImage && (
+    <div className="supplement-product-card supplement-card">
+      {!compact && (
         <div className="aspect-square animate-pulse bg-[#eef0f2]" />
       )}
 
-      <div className="space-y-3 p-3">
+      <div
+        className={`space-y-3 p-4 ${
+          compact ? "min-h-[214px]" : ""
+        }`}
+      >
         <div className="h-9 w-28 animate-pulse rounded bg-[#eef0f2]" />
 
         <div className="h-5 animate-pulse rounded bg-[#eef0f2]" />
 
         <div className="h-5 w-4/5 animate-pulse rounded bg-[#eef0f2]" />
 
-        <div className="h-4 w-24 animate-pulse rounded bg-[#eef0f2]" />
+        {!compact && (
+          <div className="h-4 w-24 animate-pulse rounded bg-[#eef0f2]" />
+        )}
 
         <div className="flex items-end justify-between pt-3">
           <div className="h-10 w-20 animate-pulse rounded bg-[#eef0f2]" />
@@ -872,32 +1872,30 @@ function ErrorState({
   message: string;
 }) {
   return (
-    <section className="w-full bg-white py-14">
-      <div className="mx-auto flex min-h-[280px] w-full max-w-[1440px] items-center justify-center px-4 text-center">
-        <div>
-          <ShoppingCart
-            size={36}
-            className="mx-auto text-[#d92d20]"
-          />
+    <section className="supplement-error">
+      <div>
+        <ShoppingCart
+          size={36}
+          className="mx-auto text-[#d92d20]"
+        />
 
-          <p className="mt-4 font-semibold text-[#b42318]">
-            Product data could not be loaded
-          </p>
+        <p className="supplement-error-title">
+          Product data could not be loaded
+        </p>
 
-          <p className="mt-2 text-sm text-[#667085]">
-            {message}
-          </p>
+        <p className="supplement-state-message">
+          {message}
+        </p>
 
-          <button
-            type="button"
-            onClick={() =>
-              window.location.reload()
-            }
-            className="mt-4 rounded-lg bg-[#087b75] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#066b66]"
-          >
-            Try Again
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() =>
+            window.location.reload()
+          }
+          className="supplement-retry-button"
+        >
+          Try Again
+        </button>
       </div>
     </section>
   );
@@ -905,19 +1903,19 @@ function ErrorState({
 
 function EmptyState() {
   return (
-    <div className="flex min-h-[320px] w-full items-center justify-center rounded-xl border border-[#e0e5e8] bg-white px-6 text-center">
+    <div className="supplement-state">
       <div>
         <ShoppingCart
           size={34}
           className="mx-auto text-[#98a2b3]"
         />
 
-        <p className="mt-3 font-semibold text-[#344054]">
+        <p className="supplement-state-title">
           No products available
         </p>
 
-        <p className="mt-2 text-sm text-[#667085]">
-          Products will appear here when available.
+        <p className="supplement-state-message">
+          Products will appear here when they become available.
         </p>
       </div>
     </div>

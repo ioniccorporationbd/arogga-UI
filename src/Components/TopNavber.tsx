@@ -3,44 +3,26 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
-  Baby,
   Bell,
-  Camera,
   Check,
   ChevronDown,
   ChevronRight,
-  CircleHelp,
   ClipboardList,
-  Clock3,
   FlaskConical,
   Heart,
-  History,
   Home,
-  Inbox,
-  LocateFixed,
   MapPin,
   Menu,
-  Mic,
   PackageCheck,
-  PawPrint,
-  Percent,
-  Pill,
   Search,
-  ShoppingBag,
   ShoppingCart,
-  Sparkles,
   Stethoscope,
   Store,
-  Trash2,
-  TrendingUp,
-  Upload,
   UserRound,
   X,
-  Zap,
 } from "lucide-react";
 import {
   FormEvent,
-  KeyboardEvent as ReactKeyboardEvent,
   ReactNode,
   useEffect,
   useMemo,
@@ -50,39 +32,35 @@ import {
 
 type DropdownName =
   | "delivery"
-  | "search-category"
   | "account"
   | "notifications"
   | "cart"
-  | "more"
   | null;
 
 type NavigationItem = {
   label: string;
   href: string;
-  badge?: string;
+  icon: ReactNode;
+};
+
+type LocationItem = {
+  name: string;
+  description: string;
 };
 
 type SearchSuggestion = {
   id: number;
   title: string;
-  category: string;
+  type: string;
   price?: string;
   href: string;
-};
-
-type LocationItem = {
-  name: string;
-  detail: string;
 };
 
 type NotificationItem = {
   id: number;
   title: string;
   description: string;
-  time: string;
   unread: boolean;
-  icon: "order" | "lab" | "offer";
 };
 
 type CartItem = {
@@ -90,126 +68,77 @@ type CartItem = {
   name: string;
   quantity: number;
   price: number;
-  image: string;
 };
 
 const navigationItems: NavigationItem[] = [
   {
     label: "All",
     href: "/",
+    icon: <Home size={18} />,
   },
   {
-    label: "Medicine",
-    href: "/medicine",
-  },
-  {
-    label: "Healthcare",
-    href: "/healthcare",
-  },
-  {
-    label: "Doctor",
-    href: "/doctor",
+    label: "Store",
+    href: "/store",
+    icon: <Store size={18} />,
   },
   {
     label: "Lab",
     href: "/lab",
+    icon: <FlaskConical size={18} />,
   },
   {
-    label: "Beauty",
-    href: "/beauty",
-  },
-  {
-    label: "Baby Care",
-    href: "/baby-care",
-  },
-  {
-    label: "Pet Care",
-    href: "/pet-care",
-  },
-  {
-    label: "Offers",
-    href: "/offers",
-    badge: "Hot",
-  },
-];
-
-const searchCategories = [
-  "All Categories",
-  "Medicine",
-  "Healthcare",
-  "Beauty",
-  "Baby Care",
-  "Lab Tests",
-  "Medical Devices",
-];
-
-const trendingSearches = [
-  "Paracetamol",
-  "Vitamin D",
-  "Napa",
-  "Diabetes",
-  "Blood Pressure",
-  "Baby Care",
-];
-
-const searchSuggestions: SearchSuggestion[] = [
-  {
-    id: 1,
-    title: "Napa 500mg Tablet",
-    category: "Medicine",
-    price: "৳20",
-    href: "/product/napa-500mg",
-  },
-  {
-    id: 2,
-    title: "Paracetamol 500mg",
-    category: "Medicine",
-    price: "৳18",
-    href: "/product/paracetamol-500mg",
-  },
-  {
-    id: 3,
-    title: "Vitamin D3 Capsule",
-    category: "Supplement",
-    price: "৳320",
-    href: "/product/vitamin-d3",
-  },
-  {
-    id: 4,
-    title: "Digital Blood Pressure Monitor",
-    category: "Medical Device",
-    price: "৳2,450",
-    href: "/product/blood-pressure-monitor",
-  },
-  {
-    id: 5,
-    title: "CBC Blood Test",
-    category: "Lab Test",
-    price: "৳450",
-    href: "/lab/cbc",
+    label: "Doctor",
+    href: "/doctor",
+    icon: <Stethoscope size={18} />,
   },
 ];
 
 const locations: LocationItem[] = [
   {
     name: "Bangladesh",
-    detail: "Nationwide delivery",
+    description: "Nationwide delivery",
   },
   {
     name: "Dhaka",
-    detail: "Fast delivery available",
+    description: "Express delivery available",
   },
   {
     name: "Chattogram",
-    detail: "Standard delivery",
+    description: "Standard delivery",
   },
   {
     name: "Sylhet",
-    detail: "Standard delivery",
+    description: "Standard delivery",
+  },
+];
+
+const searchSuggestions: SearchSuggestion[] = [
+  {
+    id: 1,
+    title: "Napa 500mg Tablet",
+    type: "Medicine",
+    price: "৳20",
+    href: "/product/napa-500mg",
   },
   {
-    name: "Rajshahi",
-    detail: "Standard delivery",
+    id: 2,
+    title: "Vitamin D3 Capsule",
+    type: "Supplement",
+    price: "৳320",
+    href: "/product/vitamin-d3",
+  },
+  {
+    id: 3,
+    title: "CBC Blood Test",
+    type: "Lab Test",
+    price: "৳450",
+    href: "/lab/cbc",
+  },
+  {
+    id: 4,
+    title: "Online Doctor Consultation",
+    type: "Doctor",
+    href: "/doctor",
   },
 ];
 
@@ -217,106 +146,72 @@ const notifications: NotificationItem[] = [
   {
     id: 1,
     title: "Order confirmed",
-    description: "Your medicine order has been confirmed.",
-    time: "5 minutes ago",
+    description: "Your latest order has been confirmed.",
     unread: true,
-    icon: "order",
   },
   {
     id: 2,
     title: "Lab report ready",
-    description: "Your CBC lab report is now available.",
-    time: "1 hour ago",
+    description: "Your lab report is available now.",
     unread: true,
-    icon: "lab",
   },
   {
     id: 3,
-    title: "Special offer",
-    description: "Save up to 25% on selected healthcare products.",
-    time: "Yesterday",
+    title: "Healthcare offer",
+    description: "New discounts are available in the store.",
     unread: false,
-    icon: "offer",
   },
 ];
 
-const cartItems: CartItem[] = [
+const initialCartItems: CartItem[] = [
   {
     id: 1,
     name: "Napa 500mg Tablet",
     quantity: 2,
     price: 20,
-    image: "NP",
   },
   {
     id: 2,
     name: "Vitamin D3 Capsule",
     quantity: 1,
     price: 320,
-    image: "VD",
-  },
-];
-
-const moreMenuItems = [
-  {
-    label: "Medical Devices",
-    href: "/medical-devices",
-    icon: <ShoppingBag size={18} />,
-  },
-  {
-    label: "Supplements",
-    href: "/supplements",
-    icon: <Sparkles size={18} />,
-  },
-  {
-    label: "Prescription Upload",
-    href: "/upload-prescription",
-    icon: <Upload size={18} />,
-  },
-  {
-    label: "Order Tracking",
-    href: "/track-order",
-    icon: <PackageCheck size={18} />,
   },
 ];
 
 export default function TopNavber() {
-  const router = useRouter();
   const pathname = usePathname();
+  const router = useRouter();
 
   const headerRef = useRef<HTMLElement | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
 
   const [searchText, setSearchText] = useState("");
-  const [selectedCategory, setSelectedCategory] =
-    useState("All Categories");
   const [selectedLocation, setSelectedLocation] =
     useState("Bangladesh");
 
   const [openDropdown, setOpenDropdown] =
     useState<DropdownName>(null);
 
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [searchFocused, setSearchFocused] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] =
+    useState(false);
+
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const [countdown, setCountdown] = useState({
-    hours: 2,
-    minutes: 15,
-    seconds: 10,
-  });
+  const [cartItems, setCartItems] =
+    useState<CartItem[]>(initialCartItems);
 
   const filteredSuggestions = useMemo(() => {
     const query = searchText.trim().toLowerCase();
 
     if (!query) {
-      return searchSuggestions.slice(0, 4);
+      return searchSuggestions;
     }
 
     return searchSuggestions.filter((item) => {
       return (
         item.title.toLowerCase().includes(query) ||
-        item.category.toLowerCase().includes(query)
+        item.type.toLowerCase().includes(query)
       );
     });
   }, [searchText]);
@@ -326,22 +221,25 @@ export default function TopNavber() {
       (total, item) => total + item.quantity,
       0,
     );
-  }, []);
+  }, [cartItems]);
 
   const cartSubtotal = useMemo(() => {
     return cartItems.reduce(
-      (total, item) => total + item.price * item.quantity,
+      (total, item) =>
+        total + item.price * item.quantity,
       0,
     );
-  }, []);
+  }, [cartItems]);
 
-  const unreadNotificationCount = useMemo(() => {
-    return notifications.filter((item) => item.unread).length;
+  const unreadNotifications = useMemo(() => {
+    return notifications.filter(
+      (item) => item.unread,
+    ).length;
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 18);
+      setIsScrolled(window.scrollY > 12);
     };
 
     handleScroll();
@@ -351,43 +249,17 @@ export default function TopNavber() {
     });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener(
+        "scroll",
+        handleScroll,
+      );
     };
   }, []);
 
   useEffect(() => {
-    const timer = window.setInterval(() => {
-      setCountdown((current) => {
-        let totalSeconds =
-          current.hours * 3600 +
-          current.minutes * 60 +
-          current.seconds;
-
-        if (totalSeconds <= 0) {
-          return {
-            hours: 2,
-            minutes: 15,
-            seconds: 10,
-          };
-        }
-
-        totalSeconds -= 1;
-
-        return {
-          hours: Math.floor(totalSeconds / 3600),
-          minutes: Math.floor((totalSeconds % 3600) / 60),
-          seconds: totalSeconds % 60,
-        };
-      });
-    }, 1000);
-
-    return () => {
-      window.clearInterval(timer);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handlePointerDown = (event: MouseEvent) => {
+    const handleOutsideClick = (
+      event: MouseEvent,
+    ) => {
       const target = event.target as Node;
 
       if (
@@ -395,27 +267,40 @@ export default function TopNavber() {
         !headerRef.current.contains(target)
       ) {
         setOpenDropdown(null);
-        setSearchFocused(false);
+        setSearchOpen(false);
       }
     };
 
-    const handleEscape = (event: globalThis.KeyboardEvent) => {
+    const handleEscape = (
+      event: KeyboardEvent,
+    ) => {
       if (event.key === "Escape") {
         setOpenDropdown(null);
-        setSearchFocused(false);
+        setSearchOpen(false);
         setMobileMenuOpen(false);
       }
     };
 
-    document.addEventListener("mousedown", handlePointerDown);
-    document.addEventListener("keydown", handleEscape);
+    document.addEventListener(
+      "mousedown",
+      handleOutsideClick,
+    );
+
+    document.addEventListener(
+      "keydown",
+      handleEscape,
+    );
 
     return () => {
       document.removeEventListener(
         "mousedown",
-        handlePointerDown,
+        handleOutsideClick,
       );
-      document.removeEventListener("keydown", handleEscape);
+
+      document.removeEventListener(
+        "keydown",
+        handleEscape,
+      );
     };
   }, []);
 
@@ -429,70 +314,53 @@ export default function TopNavber() {
     };
   }, [mobileMenuOpen]);
 
-  const handleSearch = (event: FormEvent<HTMLFormElement>) => {
+  const isActiveRoute = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+
+    return (
+      pathname === href ||
+      pathname.startsWith(`${href}/`)
+    );
+  };
+
+  const toggleDropdown = (
+    dropdown: DropdownName,
+  ) => {
+    setSearchOpen(false);
+
+    setOpenDropdown((current) =>
+      current === dropdown ? null : dropdown,
+    );
+  };
+
+  const handleSearch = (
+    event: FormEvent<HTMLFormElement>,
+  ) => {
     event.preventDefault();
 
     const query = searchText.trim();
 
     if (!query) {
       searchInputRef.current?.focus();
+      setSearchOpen(true);
       return;
     }
 
-    const params = new URLSearchParams({
-      q: query,
-      category: selectedCategory,
-    });
-
-    router.push(`/search?${params.toString()}`);
-
-    setSearchFocused(false);
-    setOpenDropdown(null);
-  };
-
-  const handleSuggestionClick = (
-    suggestion: SearchSuggestion,
-  ) => {
-    setSearchText(suggestion.title);
-    setSearchFocused(false);
-    setOpenDropdown(null);
-    router.push(suggestion.href);
-  };
-
-  const handleTrendingSearch = (search: string) => {
-    setSearchText(search);
-    router.push(`/search?q=${encodeURIComponent(search)}`);
-    setSearchFocused(false);
-  };
-
-  const handleSearchKeyDown = (
-    event: ReactKeyboardEvent<HTMLInputElement>,
-  ) => {
-    if (
-      event.key === "ArrowDown" &&
-      filteredSuggestions.length > 0
-    ) {
-      event.preventDefault();
-
-      const firstSuggestion = document.querySelector(
-        "[data-search-suggestion]",
-      ) as HTMLButtonElement | null;
-
-      firstSuggestion?.focus();
-    }
-  };
-
-  const toggleDropdown = (name: DropdownName) => {
-    setOpenDropdown((current) =>
-      current === name ? null : name,
+    router.push(
+      `/search?q=${encodeURIComponent(query)}`,
     );
+
+    setSearchOpen(false);
+    setOpenDropdown(null);
   };
 
-  const isActiveRoute = (href: string) => {
-    if (href === "/") return pathname === "/";
-
-    return (
-      pathname === href || pathname.startsWith(`${href}/`)
+  const removeCartItem = (itemId: number) => {
+    setCartItems((currentItems) =>
+      currentItems.filter(
+        (item) => item.id !== itemId,
+      ),
     );
   };
 
@@ -500,107 +368,80 @@ export default function TopNavber() {
     <>
       <header
         ref={headerRef}
-        className={`top-navbar ${
-          isScrolled ? "top-navbar-scrolled" : ""
-        }`}
+        className={[
+          "site-navbar",
+          isScrolled ? "is-scrolled" : "",
+        ].join(" ")}
       >
-        <div className="top-navbar-main">
-          <div className="top-navbar-container">
-            <div className="top-navbar-top-row">
+        <div className="site-navbar-main">
+          <div className="site-navbar-container">
+            <div className="site-navbar-row">
               <button
                 type="button"
-                onClick={() => setMobileMenuOpen(true)}
-                className="top-navbar-mobile-menu-button"
-                aria-label="Open navigation menu"
+                onClick={() =>
+                  setMobileMenuOpen(true)
+                }
+                aria-label="Open menu"
+                className="site-navbar-menu-button"
               >
-                <Menu size={23} />
+                <Menu size={22} />
               </button>
 
               <Link
                 href="/"
                 aria-label="Arogga home"
-                className="top-navbar-logo-link"
+                className="site-navbar-logo-link"
               >
-                <Logo size="small" />
+                <Logo />
               </Link>
 
-              <div className="top-navbar-delivery">
+              <div className="site-navbar-location">
                 <button
                   type="button"
-                  onClick={() => toggleDropdown("delivery")}
-                  className={`top-navbar-delivery-button ${
-                    openDropdown === "delivery"
-                      ? "is-open"
-                      : ""
-                  }`}
+                  onClick={() =>
+                    toggleDropdown("delivery")
+                  }
                   aria-expanded={
                     openDropdown === "delivery"
                   }
-                  aria-haspopup="menu"
+                  className="site-navbar-location-button"
                 >
-                  <span className="top-navbar-delivery-icon">
-                    <MapPin size={22} strokeWidth={1.7} />
+                  <span className="site-navbar-location-icon">
+                    <MapPin size={20} />
                   </span>
 
-                  <span className="top-navbar-delivery-text">
+                  <span className="site-navbar-location-text">
                     <span>Deliver to</span>
-                    <strong>{selectedLocation}</strong>
+                    <strong>
+                      {selectedLocation}
+                    </strong>
                   </span>
 
                   <ChevronDown
                     size={16}
                     className={
                       openDropdown === "delivery"
-                        ? "rotate-icon"
+                        ? "is-rotated"
                         : ""
                     }
                   />
                 </button>
 
                 {openDropdown === "delivery" && (
-                  <div className="top-navbar-dropdown top-navbar-location-dropdown">
-                    <div className="top-navbar-dropdown-heading">
-                      <div>
-                        <span>Delivery location</span>
-                        <strong>Select your area</strong>
-                      </div>
+                  <Dropdown className="site-navbar-location-dropdown">
+                    <DropdownHeader
+                      eyebrow="Delivery location"
+                      title="Select your area"
+                      onClose={() =>
+                        setOpenDropdown(null)
+                      }
+                    />
 
-                      <button
-                        type="button"
-                        onClick={() =>
-                          setOpenDropdown(null)
-                        }
-                        aria-label="Close location menu"
-                      >
-                        <X size={18} />
-                      </button>
-                    </div>
-
-                    <button
-                      type="button"
-                      className="top-navbar-current-location"
-                    >
-                      <span>
-                        <LocateFixed size={18} />
-                      </span>
-
-                      <div>
-                        <strong>
-                          Use current location
-                        </strong>
-                        <small>
-                          Enable location permission
-                        </small>
-                      </div>
-
-                      <ChevronRight size={17} />
-                    </button>
-
-                    <div className="top-navbar-location-list">
+                    <div className="site-navbar-location-list">
                       {locations.map((location) => {
                         const selected =
-                          selectedLocation ===
-                          location.name;
+                          location.name ===
+                          selectedLocation;
 
                         return (
                           <button
@@ -610,6 +451,7 @@ export default function TopNavber() {
                               setSelectedLocation(
                                 location.name,
                               );
+
                               setOpenDropdown(null);
                             }}
                             className={
@@ -618,16 +460,19 @@ export default function TopNavber() {
                                 : ""
                             }
                           >
-                            <span className="top-navbar-location-pin">
-                              <MapPin size={16} />
+                            <span>
+                              <MapPin size={17} />
                             </span>
 
                             <span>
                               <strong>
                                 {location.name}
                               </strong>
+
                               <small>
-                                {location.detail}
+                                {
+                                  location.description
+                                }
                               </small>
                             </span>
 
@@ -638,112 +483,40 @@ export default function TopNavber() {
                         );
                       })}
                     </div>
-
-                    <Link
-                      href="/addresses"
-                      className="top-navbar-manage-address"
-                      onClick={() =>
-                        setOpenDropdown(null)
-                      }
-                    >
-                      Manage saved addresses
-                      <ChevronRight size={16} />
-                    </Link>
-                  </div>
+                  </Dropdown>
                 )}
               </div>
 
               <form
                 onSubmit={handleSearch}
-                className="top-navbar-search-form"
+                className="site-navbar-search"
               >
                 <div
-                  className={`top-navbar-search-wrapper ${
-                    searchFocused ? "is-focused" : ""
-                  }`}
+                  className={[
+                    "site-navbar-search-box",
+                    searchOpen
+                      ? "is-focused"
+                      : "",
+                  ].join(" ")}
                 >
-                  <div className="top-navbar-search-category">
-                    <button
-                      type="button"
-                      onClick={() =>
-                        toggleDropdown(
-                          "search-category",
-                        )
-                      }
-                      aria-expanded={
-                        openDropdown ===
-                        "search-category"
-                      }
-                    >
-                      <span>{selectedCategory}</span>
-
-                      <ChevronDown
-                        size={14}
-                        className={
-                          openDropdown ===
-                          "search-category"
-                            ? "rotate-icon"
-                            : ""
-                        }
-                      />
-                    </button>
-
-                    {openDropdown ===
-                      "search-category" && (
-                      <div className="top-navbar-dropdown top-navbar-category-dropdown">
-                        {searchCategories.map(
-                          (category) => (
-                            <button
-                              key={category}
-                              type="button"
-                              onClick={() => {
-                                setSelectedCategory(
-                                  category,
-                                );
-                                setOpenDropdown(null);
-                                searchInputRef.current?.focus();
-                              }}
-                              className={
-                                selectedCategory ===
-                                category
-                                  ? "is-selected"
-                                  : ""
-                              }
-                            >
-                              <span>{category}</span>
-
-                              {selectedCategory ===
-                                category && (
-                                <Check size={15} />
-                              )}
-                            </button>
-                          ),
-                        )}
-                      </div>
-                    )}
-                  </div>
-
-                  <Search
-                    size={20}
-                    strokeWidth={1.8}
-                    className="top-navbar-search-icon"
-                  />
+                  <Search size={20} />
 
                   <input
                     ref={searchInputRef}
                     type="search"
                     value={searchText}
                     onChange={(event) =>
-                      setSearchText(event.target.value)
+                      setSearchText(
+                        event.target.value,
+                      )
                     }
                     onFocus={() => {
-                      setSearchFocused(true);
+                      setSearchOpen(true);
                       setOpenDropdown(null);
                     }}
-                    onKeyDown={handleSearchKeyDown}
-                    placeholder='Search medicines, products, doctors...'
+                    placeholder="Search medicines, products, lab tests or doctors"
+                    aria-label="Search"
                     autoComplete="off"
-                    aria-label="Search products"
                   />
 
                   {searchText && (
@@ -753,197 +526,125 @@ export default function TopNavber() {
                         setSearchText("");
                         searchInputRef.current?.focus();
                       }}
-                      className="top-navbar-search-clear"
                       aria-label="Clear search"
+                      className="site-navbar-search-clear"
                     >
                       <X size={17} />
                     </button>
                   )}
 
-                  <div className="top-navbar-search-tools">
-                    <button
-                      type="button"
-                      aria-label="Voice search"
-                    >
-                      <Mic size={18} />
-                    </button>
-
-                    <button
-                      type="button"
-                      aria-label="Image search"
-                    >
-                      <Camera size={18} />
-                    </button>
-                  </div>
-
                   <button
                     type="submit"
-                    className="top-navbar-search-submit"
+                    className="site-navbar-search-submit"
                   >
-                    <Search size={18} />
-                    <span>Search</span>
+                    Search
                   </button>
 
-                  {searchFocused && (
-                    <div className="top-navbar-search-panel">
-                      <div className="top-navbar-search-panel-section">
-                        <div className="top-navbar-search-panel-title">
-                          <span>
-                            <TrendingUp size={16} />
-                            Trending searches
-                          </span>
-
-                          <small>Popular now</small>
-                        </div>
-
-                        <div className="top-navbar-trending-list">
-                          {trendingSearches.map(
-                            (search) => (
-                              <button
-                                key={search}
-                                type="button"
-                                onClick={() =>
-                                  handleTrendingSearch(
-                                    search,
-                                  )
-                                }
-                              >
-                                {search}
-                              </button>
-                            ),
-                          )}
-                        </div>
-                      </div>
-
-                      <div className="top-navbar-search-panel-section">
-                        <div className="top-navbar-search-panel-title">
-                          <span>
-                            {searchText ? (
-                              <Search size={16} />
-                            ) : (
-                              <History size={16} />
-                            )}
-
-                            {searchText
-                              ? "Search results"
-                              : "Suggested products"}
-                          </span>
-
-                          <small>
-                            {
-                              filteredSuggestions.length
-                            }{" "}
-                            items
-                          </small>
-                        </div>
-
-                        <div className="top-navbar-suggestion-list">
-                          {filteredSuggestions.length >
-                          0 ? (
-                            filteredSuggestions.map(
-                              (suggestion) => (
-                                <button
-                                  key={suggestion.id}
-                                  type="button"
-                                  data-search-suggestion
-                                  onClick={() =>
-                                    handleSuggestionClick(
-                                      suggestion,
-                                    )
-                                  }
-                                >
-                                  <span className="top-navbar-suggestion-icon">
-                                    {suggestion.category ===
-                                    "Lab Test" ? (
-                                      <FlaskConical
-                                        size={19}
-                                      />
-                                    ) : (
-                                      <Pill size={19} />
-                                    )}
-                                  </span>
-
-                                  <span className="top-navbar-suggestion-content">
-                                    <strong>
-                                      {suggestion.title}
-                                    </strong>
-
-                                    <small>
-                                      {
-                                        suggestion.category
-                                      }
-                                    </small>
-                                  </span>
-
-                                  {suggestion.price && (
-                                    <span className="top-navbar-suggestion-price">
-                                      {suggestion.price}
-                                    </span>
-                                  )}
-
-                                  <ChevronRight size={17} />
-                                </button>
-                              ),
-                            )
-                          ) : (
-                            <div className="top-navbar-no-search-result">
-                              <Search size={28} />
-                              <strong>
-                                No products found
-                              </strong>
-                              <span>
-                                Try another keyword.
-                              </span>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      <Link
-                        href="/upload-prescription"
-                        className="top-navbar-prescription-link"
-                        onClick={() =>
-                          setSearchFocused(false)
-                        }
-                      >
+                  {searchOpen && (
+                    <div className="site-navbar-search-panel">
+                      <div className="site-navbar-search-panel-header">
                         <span>
-                          <Upload size={18} />
+                          Suggested results
                         </span>
 
-                        <div>
-                          <strong>
-                            Upload prescription
-                          </strong>
-                          <small>
-                            Order medicines from a
-                            prescription
-                          </small>
-                        </div>
+                        <small>
+                          {
+                            filteredSuggestions.length
+                          }{" "}
+                          items
+                        </small>
+                      </div>
 
-                        <ChevronRight size={17} />
-                      </Link>
+                      <div className="site-navbar-search-results">
+                        {filteredSuggestions.length >
+                        0 ? (
+                          filteredSuggestions.map(
+                            (item) => (
+                              <button
+                                key={item.id}
+                                type="button"
+                                onClick={() => {
+                                  setSearchText(
+                                    item.title,
+                                  );
+
+                                  setSearchOpen(false);
+                                  router.push(item.href);
+                                }}
+                              >
+                                <span className="site-navbar-result-icon">
+                                  {item.type ===
+                                  "Lab Test" ? (
+                                    <FlaskConical
+                                      size={18}
+                                    />
+                                  ) : item.type ===
+                                    "Doctor" ? (
+                                    <Stethoscope
+                                      size={18}
+                                    />
+                                  ) : (
+                                    <Store
+                                      size={18}
+                                    />
+                                  )}
+                                </span>
+
+                                <span className="site-navbar-result-content">
+                                  <strong>
+                                    {item.title}
+                                  </strong>
+
+                                  <small>
+                                    {item.type}
+                                  </small>
+                                </span>
+
+                                {item.price && (
+                                  <span className="site-navbar-result-price">
+                                    {item.price}
+                                  </span>
+                                )}
+
+                                <ChevronRight
+                                  size={17}
+                                />
+                              </button>
+                            ),
+                          )
+                        ) : (
+                          <div className="site-navbar-empty-search">
+                            <Search size={26} />
+
+                            <strong>
+                              No result found
+                            </strong>
+
+                            <span>
+                              Try another keyword.
+                            </span>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   )}
                 </div>
               </form>
 
-              <div className="top-navbar-actions">
-                <div className="top-navbar-action-wrapper">
+              <div className="site-navbar-actions">
+                <div className="site-navbar-action-wrapper">
                   <button
                     type="button"
                     onClick={() =>
                       toggleDropdown("account")
                     }
-                    className="top-navbar-action-button"
+                    className="site-navbar-account-button"
                     aria-expanded={
                       openDropdown === "account"
                     }
                   >
-                    <span className="top-navbar-action-icon">
-                      <UserRound
-                        size={22}
-                        strokeWidth={1.7}
-                      />
+                    <span>
+                      <UserRound size={20} />
                     </span>
 
                     <span>
@@ -953,29 +654,30 @@ export default function TopNavber() {
                   </button>
 
                   {openDropdown === "account" && (
-                    <div className="top-navbar-dropdown top-navbar-account-dropdown">
-                      <div className="top-navbar-account-header">
+                    <Dropdown className="site-navbar-account-dropdown">
+                      <div className="site-navbar-account-heading">
                         <span>
-                          <UserRound size={23} />
+                          <UserRound size={22} />
                         </span>
 
                         <div>
                           <strong>
                             Welcome to Arogga
                           </strong>
+
                           <small>
-                            Login to manage your account
+                            Manage your account
                           </small>
                         </div>
                       </div>
 
-                      <div className="top-navbar-account-buttons">
+                      <div className="site-navbar-account-buttons">
                         <Link
                           href="/login"
-                          className="primary"
                           onClick={() =>
                             setOpenDropdown(null)
                           }
+                          className="primary"
                         >
                           Login
                         </Link>
@@ -990,127 +692,76 @@ export default function TopNavber() {
                         </Link>
                       </div>
 
-                      <div className="top-navbar-account-links">
-                        <AccountMenuLink
-                          href="/orders"
-                          icon={
-                            <ClipboardList size={17} />
-                          }
-                          label="My orders"
-                        />
+                      <div className="site-navbar-account-links">
+                        <Link href="/orders">
+                          <ClipboardList size={17} />
+                          My Orders
+                        </Link>
 
-                        <AccountMenuLink
-                          href="/wishlist"
-                          icon={<Heart size={17} />}
-                          label="Wishlist"
-                        />
-
-                        <AccountMenuLink
-                          href="/inbox"
-                          icon={<Inbox size={17} />}
-                          label="Messages"
-                        />
-
-                        <AccountMenuLink
-                          href="/help"
-                          icon={
-                            <CircleHelp size={17} />
-                          }
-                          label="Help center"
-                        />
+                        <Link href="/wishlist">
+                          <Heart size={17} />
+                          Wishlist
+                        </Link>
                       </div>
-                    </div>
+                    </Dropdown>
                   )}
                 </div>
 
-                <Link
-                  href="/wishlist"
-                  className="top-navbar-icon-action"
-                  aria-label="Wishlist"
-                >
-                  <Heart size={22} strokeWidth={1.7} />
-                </Link>
-
-                <div className="top-navbar-action-wrapper">
+                <div className="site-navbar-action-wrapper">
                   <button
                     type="button"
                     onClick={() =>
-                      toggleDropdown("notifications")
+                      toggleDropdown(
+                        "notifications",
+                      )
                     }
-                    className="top-navbar-icon-action"
+                    className="site-navbar-icon-button"
                     aria-label="Notifications"
-                    aria-expanded={
-                      openDropdown ===
-                      "notifications"
-                    }
                   >
-                    <Bell size={22} strokeWidth={1.7} />
+                    <Bell size={21} />
 
-                    {unreadNotificationCount > 0 && (
-                      <span className="top-navbar-action-badge">
-                        {unreadNotificationCount}
+                    {unreadNotifications > 0 && (
+                      <span>
+                        {unreadNotifications}
                       </span>
                     )}
                   </button>
 
                   {openDropdown ===
                     "notifications" && (
-                    <div className="top-navbar-dropdown top-navbar-notification-dropdown">
-                      <div className="top-navbar-dropdown-heading">
-                        <div>
-                          <span>Notifications</span>
-                          <strong>
-                            Recent updates
-                          </strong>
-                        </div>
+                    <Dropdown className="site-navbar-notification-dropdown">
+                      <DropdownHeader
+                        eyebrow="Notifications"
+                        title="Recent updates"
+                        onClose={() =>
+                          setOpenDropdown(null)
+                        }
+                      />
 
-                        <button
-                          type="button"
-                          aria-label="Close notifications"
-                          onClick={() =>
-                            setOpenDropdown(null)
-                          }
-                        >
-                          <X size={18} />
-                        </button>
-                      </div>
-
-                      <div className="top-navbar-notification-list">
+                      <div className="site-navbar-notifications">
                         {notifications.map(
                           (notification) => (
                             <Link
                               key={notification.id}
                               href="/notifications"
-                              onClick={() =>
-                                setOpenDropdown(null)
-                              }
                               className={
                                 notification.unread
                                   ? "is-unread"
                                   : ""
                               }
+                              onClick={() =>
+                                setOpenDropdown(null)
+                              }
                             >
-                              <span
-                                className={`top-navbar-notification-icon notification-${notification.icon}`}
-                              >
-                                {notification.icon ===
-                                "order" ? (
-                                  <PackageCheck
-                                    size={18}
-                                  />
-                                ) : notification.icon ===
-                                  "lab" ? (
-                                  <FlaskConical
-                                    size={18}
-                                  />
-                                ) : (
-                                  <Percent size={18} />
-                                )}
+                              <span>
+                                <Bell size={17} />
                               </span>
 
                               <span>
                                 <strong>
-                                  {notification.title}
+                                  {
+                                    notification.title
+                                  }
                                 </strong>
 
                                 <small>
@@ -1118,642 +769,576 @@ export default function TopNavber() {
                                     notification.description
                                   }
                                 </small>
-
-                                <i>
-                                  <Clock3 size={12} />
-                                  {notification.time}
-                                </i>
                               </span>
 
                               {notification.unread && (
-                                <b />
+                                <i />
                               )}
                             </Link>
                           ),
                         )}
                       </div>
-
-                      <Link
-                        href="/notifications"
-                        className="top-navbar-dropdown-footer-link"
-                        onClick={() =>
-                          setOpenDropdown(null)
-                        }
-                      >
-                        View all notifications
-                        <ChevronRight size={16} />
-                      </Link>
-                    </div>
+                    </Dropdown>
                   )}
                 </div>
 
-                <div className="top-navbar-action-wrapper">
+                <div className="site-navbar-action-wrapper">
                   <button
                     type="button"
                     onClick={() =>
                       toggleDropdown("cart")
                     }
-                    className="top-navbar-cart-button"
+                    className="site-navbar-cart-button"
                     aria-expanded={
                       openDropdown === "cart"
                     }
                   >
-                    <span className="top-navbar-cart-icon">
-                      <ShoppingCart
-                        size={23}
-                        strokeWidth={1.7}
-                      />
+                    <span className="site-navbar-cart-icon">
+                      <ShoppingCart size={21} />
 
-                      <span>{cartCount}</span>
+                      <b>{cartCount}</b>
                     </span>
 
                     <span>
                       <small>Cart</small>
-                      <strong>৳{cartSubtotal}</strong>
+                      <strong>
+                        ৳{cartSubtotal}
+                      </strong>
                     </span>
                   </button>
 
                   {openDropdown === "cart" && (
-                    <div className="top-navbar-dropdown top-navbar-cart-dropdown">
-                      <div className="top-navbar-dropdown-heading">
-                        <div>
-                          <span>Shopping cart</span>
-                          <strong>
-                            {cartCount} items
-                          </strong>
-                        </div>
+                    <Dropdown className="site-navbar-cart-dropdown">
+                      <DropdownHeader
+                        eyebrow="Shopping cart"
+                        title={`${cartCount} items`}
+                        onClose={() =>
+                          setOpenDropdown(null)
+                        }
+                      />
 
-                        <button
-                          type="button"
-                          onClick={() =>
-                            setOpenDropdown(null)
-                          }
-                          aria-label="Close shopping cart"
-                        >
-                          <X size={18} />
-                        </button>
-                      </div>
+                      <div className="site-navbar-cart-items">
+                        {cartItems.length > 0 ? (
+                          cartItems.map((item) => (
+                            <div key={item.id}>
+                              <span>
+                                <ShoppingCart
+                                  size={18}
+                                />
+                              </span>
 
-                      <div className="top-navbar-cart-list">
-                        {cartItems.map((item) => (
-                          <div key={item.id}>
-                            <span className="top-navbar-cart-image">
-                              {item.image}
-                            </span>
+                              <span>
+                                <strong>
+                                  {item.name}
+                                </strong>
 
-                            <span className="top-navbar-cart-content">
-                              <strong>
-                                {item.name}
-                              </strong>
+                                <small>
+                                  Quantity:{" "}
+                                  {item.quantity}
+                                </small>
 
-                              <small>
-                                Quantity: {item.quantity}
-                              </small>
+                                <b>
+                                  ৳
+                                  {item.price *
+                                    item.quantity}
+                                </b>
+                              </span>
 
-                              <b>
-                                ৳
-                                {item.price *
-                                  item.quantity}
-                              </b>
-                            </span>
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  removeCartItem(
+                                    item.id,
+                                  )
+                                }
+                                aria-label={`Remove ${item.name}`}
+                              >
+                                <X size={16} />
+                              </button>
+                            </div>
+                          ))
+                        ) : (
+                          <div className="site-navbar-empty-cart">
+                            <ShoppingCart
+                              size={26}
+                            />
 
-                            <button
-                              type="button"
-                              aria-label={`Remove ${item.name}`}
-                            >
-                              <Trash2 size={16} />
-                            </button>
+                            <strong>
+                              Your cart is empty
+                            </strong>
                           </div>
-                        ))}
+                        )}
                       </div>
 
-                      <div className="top-navbar-cart-summary">
-                        <span>
-                          <small>Subtotal</small>
-                          <strong>
-                            ৳{cartSubtotal}
-                          </strong>
-                        </span>
+                      {cartItems.length > 0 && (
+                        <div className="site-navbar-cart-footer">
+                          <span>
+                            <small>Subtotal</small>
 
-                        <p>
-                          Delivery charge calculated at
-                          checkout.
-                        </p>
+                            <strong>
+                              ৳{cartSubtotal}
+                            </strong>
+                          </span>
 
-                        <div>
-                          <Link
-                            href="/cart"
-                            onClick={() =>
-                              setOpenDropdown(null)
-                            }
-                          >
-                            View Cart
-                          </Link>
+                          <div>
+                            <Link
+                              href="/cart"
+                              onClick={() =>
+                                setOpenDropdown(null)
+                              }
+                            >
+                              View Cart
+                            </Link>
 
-                          <Link
-                            href="/checkout"
-                            className="primary"
-                            onClick={() =>
-                              setOpenDropdown(null)
-                            }
-                          >
-                            Checkout
-                          </Link>
+                            <Link
+                              href="/checkout"
+                              className="primary"
+                              onClick={() =>
+                                setOpenDropdown(null)
+                              }
+                            >
+                              Checkout
+                            </Link>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      )}
+                    </Dropdown>
                   )}
                 </div>
               </div>
 
               <Link
                 href="/cart"
-                className="top-navbar-mobile-cart"
                 aria-label="Shopping cart"
+                className="site-navbar-mobile-cart"
               >
-                <ShoppingCart size={23} />
-
+                <ShoppingCart size={21} />
                 <span>{cartCount}</span>
               </Link>
             </div>
 
-            <div className="top-navbar-mobile-search-row">
+            <div className="site-navbar-mobile-search-row">
               <form
                 onSubmit={handleSearch}
-                className="top-navbar-mobile-search"
+                className="site-navbar-mobile-search"
               >
-                <Search size={19} />
+                <Search size={18} />
 
                 <input
                   type="search"
                   value={searchText}
                   onChange={(event) =>
-                    setSearchText(event.target.value)
+                    setSearchText(
+                      event.target.value,
+                    )
                   }
-                  placeholder="Search medicines and products"
-                  aria-label="Search medicines and products"
+                  placeholder="Search products, lab or doctors"
+                  aria-label="Search"
                 />
 
-                <button type="submit">Search</button>
+                <button type="submit">
+                  Search
+                </button>
               </form>
             </div>
           </div>
         </div>
 
-        <div className="top-navbar-navigation">
-          <div className="top-navbar-container">
-            <div className="top-navbar-navigation-row">
-              <Link
-                href="/flash-sale"
-                className="top-navbar-flash-sale"
-              >
-                <span className="top-navbar-flash-icon">
-                  <Zap
-                    size={17}
-                    fill="currentColor"
-                    strokeWidth={0}
-                  />
-                </span>
+        <div className="site-navbar-navigation">
+          <div className="site-navbar-container">
+            <nav
+              aria-label="Primary navigation"
+              className="site-navbar-navigation-list"
+            >
+              {navigationItems.map((item) => {
+                const active = isActiveRoute(
+                  item.href,
+                );
 
-                <span>
-                  <strong>Flash Sale</strong>
-                  <small>Save up to 72%</small>
-                </span>
-
-                <span className="top-navbar-countdown">
-                  {String(countdown.hours).padStart(
-                    2,
-                    "0",
-                  )}
-                  :
-                  {String(countdown.minutes).padStart(
-                    2,
-                    "0",
-                  )}
-                  :
-                  {String(countdown.seconds).padStart(
-                    2,
-                    "0",
-                  )}
-                </span>
-              </Link>
-
-              <nav
-                className="top-navbar-desktop-nav"
-                aria-label="Primary navigation"
-              >
-                {navigationItems.map((item) => {
-                  const active = isActiveRoute(item.href);
-
-                  return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className={
-                        active ? "is-active" : ""
-                      }
-                    >
-                      <span>{item.label}</span>
-
-                      {item.badge && (
-                        <small>{item.badge}</small>
-                      )}
-
-                      <i />
-                    </Link>
-                  );
-                })}
-
-                <div className="top-navbar-more-wrapper">
-                  <button
-                    type="button"
-                    onClick={() =>
-                      toggleDropdown("more")
-                    }
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
                     className={
-                      openDropdown === "more"
-                        ? "is-active"
-                        : ""
+                      active ? "is-active" : ""
                     }
                   >
-                    More
-                    <ChevronDown
-                      size={14}
-                      className={
-                        openDropdown === "more"
-                          ? "rotate-icon"
-                          : ""
-                      }
-                    />
-                  </button>
-
-                  {openDropdown === "more" && (
-                    <div className="top-navbar-dropdown top-navbar-more-dropdown">
-                      {moreMenuItems.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          onClick={() =>
-                            setOpenDropdown(null)
-                          }
-                        >
-                          <span>{item.icon}</span>
-
-                          <strong>{item.label}</strong>
-
-                          <ChevronRight size={16} />
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </nav>
-
-              <Link
-                href="/track-order"
-                className="top-navbar-track-order"
-              >
-                <PackageCheck size={18} />
-                Track Order
-              </Link>
-            </div>
+                    <span>{item.icon}</span>
+                    <strong>{item.label}</strong>
+                    <i />
+                  </Link>
+                );
+              })}
+            </nav>
           </div>
         </div>
       </header>
 
       <div
-        className={`top-navbar-mobile-overlay ${
-          mobileMenuOpen ? "is-open" : ""
-        }`}
-        onClick={() => setMobileMenuOpen(false)}
         aria-hidden={!mobileMenuOpen}
+        onClick={() =>
+          setMobileMenuOpen(false)
+        }
+        className={[
+          "site-navbar-mobile-overlay",
+          mobileMenuOpen ? "is-open" : "",
+        ].join(" ")}
       />
 
       <aside
-        className={`top-navbar-mobile-drawer ${
-          mobileMenuOpen ? "is-open" : ""
-        }`}
         aria-hidden={!mobileMenuOpen}
+        className={[
+          "site-navbar-mobile-drawer",
+          mobileMenuOpen ? "is-open" : "",
+        ].join(" ")}
       >
-        <div className="top-navbar-mobile-drawer-header">
-          <Logo size="small" />
+        <div className="site-navbar-mobile-drawer-header">
+          <Logo />
 
           <button
             type="button"
-            onClick={() => setMobileMenuOpen(false)}
-            aria-label="Close navigation menu"
+            onClick={() =>
+              setMobileMenuOpen(false)
+            }
+            aria-label="Close menu"
           >
-            <X size={22} />
+            <X size={21} />
           </button>
         </div>
 
-        <div className="top-navbar-mobile-account-card">
+        <div className="site-navbar-mobile-account">
           <span>
-            <UserRound size={23} />
+            <UserRound size={21} />
           </span>
 
           <div>
-            <strong>Welcome to Arogga</strong>
-            <small>Login to manage your account</small>
+            <strong>
+              Welcome to Arogga
+            </strong>
+
+            <small>
+              Login to manage your account
+            </small>
           </div>
 
           <Link
             href="/login"
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={() =>
+              setMobileMenuOpen(false)
+            }
           >
             Login
           </Link>
         </div>
 
-        <div className="top-navbar-mobile-delivery-card">
-          <MapPin size={20} />
+        <div className="site-navbar-mobile-location">
+          <MapPin size={19} />
 
           <div>
             <small>Deliver to</small>
-            <strong>{selectedLocation}</strong>
+            <strong>
+              {selectedLocation}
+            </strong>
           </div>
-
-          <ChevronRight size={18} />
         </div>
 
-        <nav className="top-navbar-mobile-drawer-nav">
+        <nav className="site-navbar-mobile-links">
           {navigationItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={() =>
+                setMobileMenuOpen(false)
+              }
               className={
                 isActiveRoute(item.href)
                   ? "is-active"
                   : ""
               }
             >
-              <span>
-                <MobileNavigationIcon
-                  label={item.label}
-                />
-              </span>
-
+              <span>{item.icon}</span>
               <strong>{item.label}</strong>
-
-              {item.badge && <small>{item.badge}</small>}
-
               <ChevronRight size={17} />
             </Link>
           ))}
         </nav>
 
-        <div className="top-navbar-mobile-drawer-links">
-          <Link
-            href="/upload-prescription"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            <Upload size={18} />
-            Upload Prescription
-          </Link>
-
-          <Link
-            href="/track-order"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            <PackageCheck size={18} />
-            Track Order
-          </Link>
-
-          <Link
-            href="/help"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            <CircleHelp size={18} />
-            Help Center
-          </Link>
-        </div>
+        <Link
+          href="/track-order"
+          onClick={() =>
+            setMobileMenuOpen(false)
+          }
+          className="site-navbar-mobile-track"
+        >
+          <PackageCheck size={18} />
+          Track Order
+        </Link>
       </aside>
 
       <nav
-        className="top-navbar-mobile-bottom-nav"
         aria-label="Mobile navigation"
+        className="site-navbar-bottom-nav"
       >
-        <MobileBottomLink
-          href="/"
-          label="Home"
-          icon={<Home size={21} />}
-          active={pathname === "/"}
-        />
-
-        <MobileBottomLink
-          href="/store"
-          label="Store"
-          icon={<Store size={21} />}
-          active={isActiveRoute("/store")}
-        />
-
-        <Link
-          href="/search"
-          className="top-navbar-mobile-bottom-search"
-          aria-label="Search"
-        >
-          <Search size={23} />
-        </Link>
-
-        <MobileBottomLink
-          href="/orders"
-          label="Orders"
-          icon={<ClipboardList size={21} />}
-          active={isActiveRoute("/orders")}
-        />
-
-        <MobileBottomLink
-          href="/account"
-          label="Account"
-          icon={<UserRound size={21} />}
-          active={isActiveRoute("/account")}
-        />
+        {navigationItems.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className={
+              isActiveRoute(item.href)
+                ? "is-active"
+                : ""
+            }
+          >
+            {item.icon}
+            <span>{item.label}</span>
+          </Link>
+        ))}
       </nav>
 
       <style jsx global>{`
-        .top-navbar {
+        .site-navbar {
+          --nav-text-20: 20px;
+          --nav-text-18: 18px;
+          --nav-text-16: 16px;
+          --nav-text-13: 13px;
+
           position: sticky;
           top: 0;
           z-index: 100;
           width: 100%;
-          color: #111827;
+          color: #101828;
+        }
+
+        .site-navbar-main,
+        .site-navbar-navigation {
+          border-bottom: 1px solid
+            rgba(15, 23, 42, 0.08);
+          background: rgba(
+            255,
+            255,
+            255,
+            0.96
+          );
+          backdrop-filter: blur(18px);
           transition:
-            box-shadow 260ms ease,
-            transform 260ms ease;
+            background-color 250ms ease,
+            box-shadow 250ms ease;
         }
 
-        .top-navbar-main {
-          border-bottom: 1px solid rgba(15, 23, 42, 0.075);
-          background: rgba(255, 255, 255, 0.96);
-          backdrop-filter: blur(20px);
-          transition:
-            background-color 260ms ease,
-            box-shadow 260ms ease;
+        .site-navbar.is-scrolled
+          .site-navbar-main {
+          background: rgba(
+            255,
+            255,
+            255,
+            0.92
+          );
+          box-shadow: 0 18px 40px -30px
+            rgba(15, 23, 42, 0.5);
         }
 
-        .top-navbar-scrolled .top-navbar-main {
-          background: rgba(255, 255, 255, 0.92);
-          box-shadow: 0 14px 35px -28px rgba(15, 23, 42, 0.55);
+        .site-navbar-container {
+          width: min(
+            1440px,
+            calc(100% - 48px)
+          );
+          margin-inline: auto;
         }
 
-        .top-navbar-container {
-          width: min(1440px, calc(100% - 32px));
-          margin: 0 auto;
-        }
-
-        .top-navbar-top-row {
-          min-height: 76px;
+        .site-navbar-row {
           display: flex;
+          min-height: 74px;
           align-items: center;
-          gap: 18px;
-          transition: min-height 260ms ease;
+          gap: 16px;
         }
 
-        .top-navbar-scrolled .top-navbar-top-row {
-          min-height: 68px;
-        }
-
-        .top-navbar-logo-link {
+        .site-navbar-logo-link {
           display: inline-flex;
           flex-shrink: 0;
           border-radius: 10px;
           text-decoration: none;
-          transition: transform 250ms ease;
         }
 
-        .top-navbar-logo-link:hover {
-          transform: translateY(-1px) scale(1.02);
+        .site-navbar-logo {
+          display: flex;
+          align-items: center;
+          color: #087b75;
+          font-size: var(--nav-text-20);
+          font-weight: 900;
+          line-height: 1;
+          letter-spacing: -1.4px;
         }
 
-        .top-navbar-delivery {
+        .site-navbar-logo-symbol {
           position: relative;
-          width: 205px;
+          display: inline-flex;
+          width: 31px;
+          height: 31px;
+          align-items: center;
+          justify-content: center;
+          margin-inline: 1px;
+          border: 4px solid #087b75;
+          border-radius: 50%;
+        }
+
+        .site-navbar-logo-heart {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #ef4545;
+        }
+
+        .site-navbar-logo-cross-vertical,
+        .site-navbar-logo-cross-horizontal {
+          position: absolute;
+          z-index: 2;
+          background: #ffffff;
+        }
+
+        .site-navbar-logo-cross-vertical {
+          width: 4px;
+          height: 14px;
+        }
+
+        .site-navbar-logo-cross-horizontal {
+          width: 14px;
+          height: 4px;
+        }
+
+        .site-navbar-location {
+          position: relative;
+          width: 195px;
           flex-shrink: 0;
         }
 
-        .top-navbar-delivery-button {
+        .site-navbar-location-button {
+          display: flex;
           width: 100%;
           min-height: 48px;
-          display: flex;
           align-items: center;
           gap: 10px;
           padding: 6px 9px;
           border: 1px solid transparent;
-          border-radius: 13px;
-          color: #344054;
+          border-radius: 12px;
           background: transparent;
+          color: #344054;
           font-family: inherit;
-          text-align: left;
           cursor: pointer;
           transition:
-            border-color 220ms ease,
-            background-color 220ms ease,
-            box-shadow 220ms ease;
+            border-color 200ms ease,
+            background-color 200ms ease;
         }
 
-        .top-navbar-delivery-button:hover,
-        .top-navbar-delivery-button.is-open {
-          border-color: rgba(8, 123, 117, 0.12);
-          background: #f6faf9;
+        .site-navbar-location-button:hover {
+          border-color: #d6e8e5;
+          background: #f5faf9;
         }
 
-        .top-navbar-delivery-button.is-open {
-          box-shadow: 0 0 0 3px rgba(8, 123, 117, 0.07);
-        }
-
-        .top-navbar-delivery-icon {
-          width: 35px;
-          height: 35px;
-          display: inline-flex;
+        .site-navbar-location-icon {
+          display: flex;
+          width: 36px;
+          height: 36px;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
-          border-radius: 11px;
+          border-radius: 10px;
           color: #087b75;
-          background: #e8f8f5;
+          background: #e9f8f5;
         }
 
-        .top-navbar-delivery-text {
-          min-width: 0;
+        .site-navbar-location-text {
           display: flex;
+          min-width: 0;
           flex: 1;
           flex-direction: column;
-          gap: 1px;
+          align-items: flex-start;
         }
 
-        .top-navbar-delivery-text span {
+        .site-navbar-location-text span,
+        .site-navbar-location-text strong {
+          font-size: var(--nav-text-13);
+        }
+
+        .site-navbar-location-text span {
           color: #667085;
-          font-size: 12px;
-          line-height: 1.3;
         }
 
-        .top-navbar-delivery-text strong {
+        .site-navbar-location-text strong {
+          max-width: 105px;
           overflow: hidden;
           color: #101828;
-          font-size: 13px;
-          line-height: 1.4;
           text-overflow: ellipsis;
           white-space: nowrap;
         }
 
-        .rotate-icon {
+        .is-rotated {
           transform: rotate(180deg);
         }
 
-        .top-navbar-dropdown {
+        .site-navbar-dropdown {
           position: absolute;
-          z-index: 120;
+          z-index: 130;
           overflow: hidden;
-          border: 1px solid rgba(15, 23, 42, 0.09);
-          border-radius: 17px;
-          background: rgba(255, 255, 255, 0.98);
+          border: 1px solid
+            rgba(15, 23, 42, 0.09);
+          border-radius: 16px;
+          background: rgba(
+            255,
+            255,
+            255,
+            0.99
+          );
           box-shadow:
-            0 26px 65px -30px rgba(15, 23, 42, 0.35),
-            0 10px 25px -20px rgba(15, 23, 42, 0.18);
+            0 26px 65px -30px
+              rgba(15, 23, 42, 0.38),
+            0 10px 24px -20px
+              rgba(15, 23, 42, 0.2);
           backdrop-filter: blur(18px);
-          animation: topNavbarDropdownIn 200ms ease both;
+          animation: siteNavbarDropdownIn
+            200ms ease both;
         }
 
-        .top-navbar-location-dropdown {
+        .site-navbar-location-dropdown {
           top: calc(100% + 10px);
           left: 0;
-          width: 330px;
+          width: 320px;
           padding: 12px;
         }
 
-        .top-navbar-dropdown-heading {
+        .site-navbar-dropdown-header {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 12px;
-          padding: 5px 5px 12px;
-          border-bottom: 1px solid rgba(15, 23, 42, 0.07);
+          gap: 14px;
+          padding: 4px 4px 12px;
+          border-bottom: 1px solid
+            rgba(15, 23, 42, 0.08);
         }
 
-        .top-navbar-dropdown-heading > div {
+        .site-navbar-dropdown-header > div {
           display: flex;
           flex-direction: column;
           gap: 2px;
         }
 
-        .top-navbar-dropdown-heading span {
+        .site-navbar-dropdown-header span,
+        .site-navbar-dropdown-header strong {
+          font-size: var(--nav-text-13);
+        }
+
+        .site-navbar-dropdown-header span {
           color: #667085;
-          font-size: 12px;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 0.08em;
         }
 
-        .top-navbar-dropdown-heading strong {
+        .site-navbar-dropdown-header strong {
           color: #101828;
-          font-size: 14px;
         }
 
-        .top-navbar-dropdown-heading button {
-          width: 31px;
-          height: 31px;
-          display: inline-flex;
+        .site-navbar-dropdown-header button {
+          display: flex;
+          width: 32px;
+          height: 32px;
           align-items: center;
           justify-content: center;
           border: 0;
@@ -1763,67 +1348,21 @@ export default function TopNavber() {
           cursor: pointer;
         }
 
-        .top-navbar-dropdown-heading button:hover {
+        .site-navbar-dropdown-header button:hover {
           color: #101828;
           background: #f2f4f7;
         }
 
-        .top-navbar-current-location {
-          width: 100%;
+        .site-navbar-location-list {
           display: flex;
-          align-items: center;
-          gap: 11px;
+          flex-direction: column;
+          gap: 4px;
           margin-top: 10px;
-          padding: 11px;
-          border: 1px solid rgba(8, 123, 117, 0.13);
-          border-radius: 12px;
-          color: #087b75;
-          background: #effaf8;
-          font-family: inherit;
-          text-align: left;
-          cursor: pointer;
         }
 
-        .top-navbar-current-location > span {
-          width: 34px;
-          height: 34px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
-          border-radius: 10px;
-          color: white;
-          background: #087b75;
-        }
-
-        .top-navbar-current-location > div {
-          min-width: 0;
+        .site-navbar-location-list button {
           display: flex;
-          flex: 1;
-          flex-direction: column;
-          gap: 2px;
-        }
-
-        .top-navbar-current-location strong {
-          color: #087b75;
-          font-size: 13px;
-        }
-
-        .top-navbar-current-location small {
-          color: #5f7774;
-          font-size: 12px;
-        }
-
-        .top-navbar-location-list {
-          display: flex;
-          flex-direction: column;
-          gap: 3px;
-          margin-top: 9px;
-        }
-
-        .top-navbar-location-list button {
           width: 100%;
-          display: flex;
           align-items: center;
           gap: 10px;
           padding: 10px;
@@ -1836,69 +1375,57 @@ export default function TopNavber() {
           cursor: pointer;
         }
 
-        .top-navbar-location-list button:hover,
-        .top-navbar-location-list button.is-selected {
-          background: #f4f8f7;
-        }
-
-        .top-navbar-location-list button.is-selected {
+        .site-navbar-location-list
+          button:hover,
+        .site-navbar-location-list
+          button.is-selected {
           color: #087b75;
+          background: #eff9f7;
         }
 
-        .top-navbar-location-pin {
-          width: 31px;
-          height: 31px;
-          display: inline-flex;
+        .site-navbar-location-list
+          button
+          > span:first-child {
+          display: flex;
+          width: 34px;
+          height: 34px;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
-          border-radius: 9px;
-          background: #f0f3f4;
+          border-radius: 10px;
+          background: #f1f4f4;
         }
 
-        .top-navbar-location-list button > span:nth-child(2) {
-          min-width: 0;
+        .site-navbar-location-list
+          button
+          > span:nth-child(2) {
           display: flex;
+          min-width: 0;
           flex: 1;
           flex-direction: column;
-          gap: 2px;
         }
 
-        .top-navbar-location-list strong {
-          font-size: 12px;
+        .site-navbar-location-list strong,
+        .site-navbar-location-list small {
+          font-size: var(--nav-text-13);
         }
 
-        .top-navbar-location-list small {
+        .site-navbar-location-list small {
           color: #8a94a3;
-          font-size: 12px;
         }
 
-        .top-navbar-manage-address {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-top: 8px;
-          padding: 11px 10px 5px;
-          border-top: 1px solid rgba(15, 23, 42, 0.07);
-          color: #087b75;
-          font-size: 12px;
-          font-weight: 700;
-          text-decoration: none;
-        }
-
-        .top-navbar-search-form {
+        .site-navbar-search {
           min-width: 0;
           flex: 1;
         }
 
-        .top-navbar-search-wrapper {
+        .site-navbar-search-box {
           position: relative;
-          height: 49px;
           display: flex;
+          height: 48px;
           align-items: center;
-          overflow: visible;
-          border: 1px solid #d9dee3;
-          border-radius: 15px;
+          border: 1px solid #d8dee3;
+          border-radius: 14px;
           background: #fafcfc;
           transition:
             border-color 220ms ease,
@@ -1906,106 +1433,44 @@ export default function TopNavber() {
             background-color 220ms ease;
         }
 
-        .top-navbar-search-wrapper.is-focused {
+        .site-navbar-search-box.is-focused {
           border-color: #087b75;
-          background: white;
-          box-shadow:
-            0 0 0 4px rgba(8, 123, 117, 0.08),
-            0 16px 35px -30px rgba(8, 123, 117, 0.45);
+          background: #ffffff;
+          box-shadow: 0 0 0 4px
+            rgba(8, 123, 117, 0.08);
         }
 
-        .top-navbar-search-category {
-          position: relative;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          flex-shrink: 0;
-        }
-
-        .top-navbar-search-category > button {
-          width: 133px;
-          height: 32px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 7px;
-          padding: 0 12px;
-          border: 0;
-          border-right: 1px solid #e2e5e9;
-          color: #344054;
-          background: transparent;
-          font-family: inherit;
-          font-size: 12px;
-          font-weight: 650;
-          cursor: pointer;
-        }
-
-        .top-navbar-search-category > button span {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-        }
-
-        .top-navbar-category-dropdown {
-          top: calc(100% + 11px);
-          left: -1px;
-          width: 220px;
-          padding: 8px;
-        }
-
-        .top-navbar-category-dropdown button {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 10px;
-          padding: 10px 11px;
-          border: 0;
-          border-radius: 9px;
-          color: #344054;
-          background: transparent;
-          font-family: inherit;
-          font-size: 12px;
-          text-align: left;
-          cursor: pointer;
-        }
-
-        .top-navbar-category-dropdown button:hover,
-        .top-navbar-category-dropdown button.is-selected {
-          color: #087b75;
-          background: #eff9f7;
-        }
-
-        .top-navbar-search-icon {
-          margin-left: 13px;
+        .site-navbar-search-box > svg {
+          margin-left: 14px;
           flex-shrink: 0;
           color: #667085;
         }
 
-        .top-navbar-search-wrapper > input {
+        .site-navbar-search-box > input {
           min-width: 0;
           height: 100%;
           flex: 1;
-          padding: 0 10px;
+          padding-inline: 11px;
           border: 0;
           outline: none;
           color: #101828;
           background: transparent;
           font-family: inherit;
-          font-size: 13px;
+          font-size: var(--nav-text-13);
         }
 
-        .top-navbar-search-wrapper > input::placeholder {
+        .site-navbar-search-box
+          > input::placeholder {
           color: #98a2b3;
         }
 
-        .top-navbar-search-clear {
-          width: 29px;
-          height: 29px;
-          display: inline-flex;
+        .site-navbar-search-clear {
+          display: flex;
+          width: 30px;
+          height: 30px;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
           border: 0;
           border-radius: 8px;
           color: #98a2b3;
@@ -2013,155 +1478,90 @@ export default function TopNavber() {
           cursor: pointer;
         }
 
-        .top-navbar-search-clear:hover {
-          color: #344054;
+        .site-navbar-search-clear:hover {
           background: #f2f4f7;
+          color: #344054;
         }
 
-        .top-navbar-search-tools {
-          display: flex;
-          align-items: center;
-          gap: 1px;
-          padding-right: 7px;
-        }
-
-        .top-navbar-search-tools button {
-          width: 32px;
-          height: 32px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
+        .site-navbar-search-submit {
+          align-self: stretch;
+          min-width: 94px;
           border: 0;
-          border-radius: 9px;
-          color: #667085;
-          background: transparent;
-          cursor: pointer;
-          transition:
-            color 180ms ease,
-            background-color 180ms ease;
-        }
-
-        .top-navbar-search-tools button:hover {
-          color: #087b75;
-          background: #edf8f6;
-        }
-
-        .top-navbar-search-submit {
-          height: calc(100% + 2px);
-          min-width: 98px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          gap: 7px;
-          margin: -1px -1px -1px 0;
-          padding: 0 17px;
-          border: 0;
-          border-radius: 0 15px 15px 0;
-          color: white;
-          background: linear-gradient(135deg, #0c9187, #087b75);
-          box-shadow: 0 12px 24px -16px rgba(8, 123, 117, 0.85);
+          border-radius: 0 14px 14px 0;
+          color: #ffffff;
+          background: linear-gradient(
+            135deg,
+            #0c9187,
+            #087b75
+          );
           font-family: inherit;
-          font-size: 12px;
+          font-size: var(--nav-text-13);
           font-weight: 750;
           cursor: pointer;
-          transition:
-            transform 200ms ease,
-            background-color 200ms ease;
         }
 
-        .top-navbar-search-submit:hover {
-          background: linear-gradient(135deg, #087b75, #05655f);
+        .site-navbar-search-submit:hover {
+          background: linear-gradient(
+            135deg,
+            #087b75,
+            #06635e
+          );
         }
 
-        .top-navbar-search-submit:active {
-          transform: scale(0.98);
-        }
-
-        .top-navbar-search-panel {
+        .site-navbar-search-panel {
           position: absolute;
-          top: calc(100% + 11px);
+          top: calc(100% + 10px);
           left: 0;
-          z-index: 125;
+          z-index: 140;
           width: 100%;
           overflow: hidden;
-          border: 1px solid rgba(15, 23, 42, 0.09);
-          border-radius: 18px;
-          background: rgba(255, 255, 255, 0.99);
-          box-shadow:
-            0 30px 70px -30px rgba(15, 23, 42, 0.38),
-            0 14px 28px -22px rgba(15, 23, 42, 0.2);
-          backdrop-filter: blur(20px);
-          animation: topNavbarDropdownIn 210ms ease both;
+          border: 1px solid
+            rgba(15, 23, 42, 0.09);
+          border-radius: 16px;
+          background: #ffffff;
+          box-shadow: 0 28px 65px -30px
+            rgba(15, 23, 42, 0.4);
         }
 
-        .top-navbar-search-panel-section {
-          padding: 14px;
-        }
-
-        .top-navbar-search-panel-section + .top-navbar-search-panel-section {
-          border-top: 1px solid rgba(15, 23, 42, 0.07);
-        }
-
-        .top-navbar-search-panel-title {
+        .site-navbar-search-panel-header {
           display: flex;
           align-items: center;
           justify-content: space-between;
           gap: 12px;
-          margin-bottom: 11px;
+          padding: 13px 14px;
+          border-bottom: 1px solid
+            rgba(15, 23, 42, 0.08);
         }
 
-        .top-navbar-search-panel-title > span {
-          display: inline-flex;
-          align-items: center;
-          gap: 7px;
+        .site-navbar-search-panel-header span,
+        .site-navbar-search-panel-header small {
+          font-size: var(--nav-text-13);
+        }
+
+        .site-navbar-search-panel-header span {
           color: #344054;
-          font-size: 12px;
           font-weight: 750;
         }
 
-        .top-navbar-search-panel-title small {
+        .site-navbar-search-panel-header small {
           color: #98a2b3;
-          font-size: 12px;
         }
 
-        .top-navbar-trending-list {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 7px;
-        }
-
-        .top-navbar-trending-list button {
-          padding: 7px 11px;
-          border: 1px solid #e1e6e9;
-          border-radius: 999px;
-          color: #475467;
-          background: #fafcfc;
-          font-family: inherit;
-          font-size: 12px;
-          font-weight: 600;
-          cursor: pointer;
-        }
-
-        .top-navbar-trending-list button:hover {
-          border-color: rgba(8, 123, 117, 0.23);
-          color: #087b75;
-          background: #eff9f7;
-        }
-
-        .top-navbar-suggestion-list {
+        .site-navbar-search-results {
           display: flex;
           flex-direction: column;
           gap: 3px;
+          padding: 8px;
         }
 
-        .top-navbar-suggestion-list > button {
-          width: 100%;
+        .site-navbar-search-results button {
           display: flex;
+          width: 100%;
           align-items: center;
           gap: 10px;
           padding: 9px;
           border: 0;
-          border-radius: 12px;
+          border-radius: 11px;
           color: #344054;
           background: transparent;
           font-family: inherit;
@@ -2169,459 +1569,387 @@ export default function TopNavber() {
           cursor: pointer;
         }
 
-        .top-navbar-suggestion-list > button:hover,
-        .top-navbar-suggestion-list > button:focus {
-          outline: none;
+        .site-navbar-search-results
+          button:hover {
           background: #f5f9f8;
         }
 
-        .top-navbar-suggestion-icon {
+        .site-navbar-result-icon {
+          display: flex;
           width: 36px;
           height: 36px;
-          display: inline-flex;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
           border-radius: 10px;
           color: #087b75;
-          background: #e8f8f5;
+          background: #e9f8f5;
         }
 
-        .top-navbar-suggestion-content {
-          min-width: 0;
+        .site-navbar-result-content {
           display: flex;
+          min-width: 0;
           flex: 1;
           flex-direction: column;
-          gap: 2px;
         }
 
-        .top-navbar-suggestion-content strong {
+        .site-navbar-result-content strong,
+        .site-navbar-result-content small,
+        .site-navbar-result-price {
+          font-size: var(--nav-text-13);
+        }
+
+        .site-navbar-result-content strong {
           overflow: hidden;
           color: #101828;
-          font-size: 12px;
           text-overflow: ellipsis;
           white-space: nowrap;
         }
 
-        .top-navbar-suggestion-content small {
+        .site-navbar-result-content small {
           color: #8a94a3;
-          font-size: 12px;
         }
 
-        .top-navbar-suggestion-price {
-          flex-shrink: 0;
+        .site-navbar-result-price {
           color: #087b75;
-          font-size: 12px;
           font-weight: 800;
         }
 
-        .top-navbar-no-search-result {
+        .site-navbar-empty-search,
+        .site-navbar-empty-cart {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 6px;
-          padding: 24px;
+          gap: 7px;
+          padding: 26px;
           color: #98a2b3;
           text-align: center;
         }
 
-        .top-navbar-no-search-result strong {
+        .site-navbar-empty-search strong,
+        .site-navbar-empty-search span,
+        .site-navbar-empty-cart strong {
+          font-size: var(--nav-text-13);
+        }
+
+        .site-navbar-empty-search strong,
+        .site-navbar-empty-cart strong {
           color: #344054;
-          font-size: 13px;
         }
 
-        .top-navbar-no-search-result span {
-          font-size: 12px;
-        }
-
-        .top-navbar-prescription-link {
+        .site-navbar-actions {
           display: flex;
-          align-items: center;
-          gap: 11px;
-          padding: 12px 14px;
-          border-top: 1px solid rgba(15, 23, 42, 0.07);
-          color: #087b75;
-          background: #f4fbfa;
-          text-decoration: none;
-        }
-
-        .top-navbar-prescription-link > span {
-          width: 35px;
-          height: 35px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
           flex-shrink: 0;
-          border-radius: 10px;
-          color: white;
-          background: #087b75;
-        }
-
-        .top-navbar-prescription-link > div {
-          min-width: 0;
-          display: flex;
-          flex: 1;
-          flex-direction: column;
-          gap: 2px;
-        }
-
-        .top-navbar-prescription-link strong {
-          font-size: 12px;
-        }
-
-        .top-navbar-prescription-link small {
-          color: #66827e;
-          font-size: 12px;
-        }
-
-        .top-navbar-actions {
-          display: flex;
           align-items: center;
-          gap: 3px;
-          flex-shrink: 0;
+          gap: 4px;
         }
 
-        .top-navbar-action-wrapper {
+        .site-navbar-action-wrapper {
           position: relative;
         }
 
-        .top-navbar-action-button,
-        .top-navbar-cart-button {
-          min-height: 45px;
+        .site-navbar-account-button,
+        .site-navbar-cart-button {
           display: flex;
+          min-height: 44px;
           align-items: center;
           gap: 8px;
           padding: 5px 8px;
           border: 0;
-          border-radius: 12px;
-          color: #344054;
+          border-radius: 11px;
           background: transparent;
+          color: #344054;
           font-family: inherit;
           cursor: pointer;
         }
 
-        .top-navbar-action-button:hover,
-        .top-navbar-cart-button:hover {
+        .site-navbar-account-button:hover,
+        .site-navbar-cart-button:hover {
           background: #f4f7f7;
         }
 
-        .top-navbar-action-icon {
-          width: 34px;
-          height: 34px;
-          display: inline-flex;
+        .site-navbar-account-button
+          > span:first-child {
+          display: flex;
+          width: 35px;
+          height: 35px;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
           border-radius: 10px;
-          color: #344054;
-          background: #f2f4f7;
+          background: #f1f4f4;
         }
 
-        .top-navbar-action-button > span:last-child,
-        .top-navbar-cart-button > span:last-child {
+        .site-navbar-account-button
+          > span:last-child,
+        .site-navbar-cart-button
+          > span:last-child {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          gap: 1px;
         }
 
-        .top-navbar-action-button small,
-        .top-navbar-cart-button small {
+        .site-navbar-account-button small,
+        .site-navbar-account-button strong,
+        .site-navbar-cart-button small,
+        .site-navbar-cart-button strong {
+          font-size: var(--nav-text-13);
+        }
+
+        .site-navbar-account-button small,
+        .site-navbar-cart-button small {
           color: #667085;
-          font-size: 12px;
-          line-height: 1.3;
         }
 
-        .top-navbar-action-button strong,
-        .top-navbar-cart-button strong {
+        .site-navbar-account-button strong,
+        .site-navbar-cart-button strong {
           color: #101828;
-          font-size: 12px;
-          line-height: 1.3;
         }
 
-        .top-navbar-icon-action {
+        .site-navbar-icon-button {
           position: relative;
+          display: flex;
           width: 42px;
           height: 42px;
-          display: inline-flex;
           align-items: center;
           justify-content: center;
           border: 0;
-          border-radius: 12px;
+          border-radius: 11px;
           color: #344054;
           background: transparent;
           cursor: pointer;
-          text-decoration: none;
         }
 
-        .top-navbar-icon-action:hover {
+        .site-navbar-icon-button:hover {
           color: #087b75;
           background: #eff8f6;
         }
 
-        .top-navbar-action-badge {
+        .site-navbar-icon-button > span {
           position: absolute;
-          top: 2px;
-          right: 2px;
-          min-width: 17px;
-          height: 17px;
-          display: inline-flex;
+          top: 1px;
+          right: 1px;
+          display: flex;
+          min-width: 18px;
+          height: 18px;
           align-items: center;
           justify-content: center;
-          padding: 0 4px;
-          border: 2px solid white;
+          padding-inline: 4px;
+          border: 2px solid #ffffff;
           border-radius: 999px;
-          color: white;
+          color: #ffffff;
           background: #e5484d;
-          font-size: 12px;
+          font-size: var(--nav-text-13);
           font-weight: 800;
         }
 
-        .top-navbar-cart-icon {
+        .site-navbar-cart-icon {
           position: relative;
-          width: 35px;
-          height: 35px;
-          display: inline-flex;
+          display: flex;
+          width: 36px;
+          height: 36px;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
           border-radius: 10px;
           color: #087b75;
-          background: #e8f8f5;
+          background: #e9f8f5;
         }
 
-        .top-navbar-cart-icon > span {
+        .site-navbar-cart-icon b {
           position: absolute;
           top: -5px;
           right: -5px;
+          display: flex;
           min-width: 18px;
           height: 18px;
-          display: inline-flex;
           align-items: center;
           justify-content: center;
-          padding: 0 4px;
-          border: 2px solid white;
+          padding-inline: 4px;
+          border: 2px solid #ffffff;
           border-radius: 999px;
-          color: white;
+          color: #ffffff;
           background: #087b75;
-          font-size: 12px;
-          font-weight: 800;
+          font-size: var(--nav-text-13);
         }
 
-        .top-navbar-account-dropdown {
-          top: calc(100% + 12px);
+        .site-navbar-account-dropdown {
+          top: calc(100% + 11px);
           right: 0;
-          width: 285px;
+          width: 280px;
           padding: 12px;
         }
 
-        .top-navbar-account-header {
+        .site-navbar-account-heading {
           display: flex;
           align-items: center;
           gap: 10px;
-          padding: 5px 4px 13px;
+          padding: 4px 4px 13px;
         }
 
-        .top-navbar-account-header > span {
-          width: 43px;
-          height: 43px;
-          display: inline-flex;
+        .site-navbar-account-heading > span {
+          display: flex;
+          width: 42px;
+          height: 42px;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
-          border-radius: 13px;
+          border-radius: 12px;
           color: #087b75;
-          background: #e8f8f5;
+          background: #e9f8f5;
         }
 
-        .top-navbar-account-header > div {
+        .site-navbar-account-heading > div {
           display: flex;
           flex-direction: column;
-          gap: 3px;
         }
 
-        .top-navbar-account-header strong {
-          color: #101828;
-          font-size: 13px;
+        .site-navbar-account-heading strong,
+        .site-navbar-account-heading small {
+          font-size: var(--nav-text-13);
         }
 
-        .top-navbar-account-header small {
+        .site-navbar-account-heading small {
           color: #8a94a3;
-          font-size: 12px;
         }
 
-        .top-navbar-account-buttons {
+        .site-navbar-account-buttons {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 8px;
           padding-bottom: 11px;
-          border-bottom: 1px solid rgba(15, 23, 42, 0.07);
+          border-bottom: 1px solid
+            rgba(15, 23, 42, 0.08);
         }
 
-        .top-navbar-account-buttons a {
-          min-height: 38px;
+        .site-navbar-account-buttons a {
           display: flex;
+          min-height: 40px;
           align-items: center;
           justify-content: center;
-          border: 1px solid #d9dee3;
+          border: 1px solid #d8dee3;
           border-radius: 10px;
           color: #344054;
-          background: white;
-          font-size: 12px;
+          font-size: var(--nav-text-13);
           font-weight: 750;
           text-decoration: none;
         }
 
-        .top-navbar-account-buttons a.primary {
+        .site-navbar-account-buttons
+          a.primary {
           border-color: #087b75;
-          color: white;
+          color: #ffffff;
           background: #087b75;
         }
 
-        .top-navbar-account-links {
+        .site-navbar-account-links {
           display: flex;
           flex-direction: column;
           gap: 3px;
           padding-top: 9px;
         }
 
-        .top-navbar-account-links a {
+        .site-navbar-account-links a {
           display: flex;
           align-items: center;
           gap: 10px;
           padding: 10px;
           border-radius: 10px;
           color: #475467;
-          font-size: 12px;
-          font-weight: 600;
+          font-size: var(--nav-text-13);
           text-decoration: none;
         }
 
-        .top-navbar-account-links a:hover {
+        .site-navbar-account-links a:hover {
           color: #087b75;
           background: #eff8f6;
         }
 
-        .top-navbar-notification-dropdown {
-          top: calc(100% + 12px);
-          right: -60px;
-          width: 355px;
+        .site-navbar-notification-dropdown {
+          top: calc(100% + 11px);
+          right: -45px;
+          width: 350px;
           padding: 11px;
         }
 
-        .top-navbar-notification-list {
+        .site-navbar-notifications {
           display: flex;
           flex-direction: column;
-          gap: 3px;
-          padding: 8px 0;
+          gap: 4px;
+          padding-top: 8px;
         }
 
-        .top-navbar-notification-list > a {
+        .site-navbar-notifications a {
           position: relative;
           display: flex;
           align-items: flex-start;
           gap: 10px;
           padding: 10px;
-          border-radius: 12px;
+          border-radius: 11px;
           color: #344054;
           text-decoration: none;
         }
 
-        .top-navbar-notification-list > a:hover,
-        .top-navbar-notification-list > a.is-unread {
+        .site-navbar-notifications
+          a:hover,
+        .site-navbar-notifications
+          a.is-unread {
           background: #f5faf9;
         }
 
-        .top-navbar-notification-icon {
-          width: 38px;
-          height: 38px;
-          display: inline-flex;
+        .site-navbar-notifications
+          a
+          > span:first-child {
+          display: flex;
+          width: 36px;
+          height: 36px;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
-          border-radius: 11px;
-        }
-
-        .notification-order {
+          border-radius: 10px;
           color: #087b75;
-          background: #e5f8f4;
+          background: #e9f8f5;
         }
 
-        .notification-lab {
-          color: #7357bf;
-          background: #f0ebfc;
-        }
-
-        .notification-offer {
-          color: #c76a14;
-          background: #fff2df;
-        }
-
-        .top-navbar-notification-list > a > span:nth-child(2) {
-          min-width: 0;
+        .site-navbar-notifications
+          a
+          > span:nth-child(2) {
           display: flex;
+          min-width: 0;
           flex: 1;
           flex-direction: column;
-          gap: 3px;
         }
 
-        .top-navbar-notification-list strong {
-          color: #101828;
-          font-size: 12px;
+        .site-navbar-notifications strong,
+        .site-navbar-notifications small {
+          font-size: var(--nav-text-13);
         }
 
-        .top-navbar-notification-list small {
+        .site-navbar-notifications small {
           color: #667085;
-          font-size: 12px;
           line-height: 1.5;
         }
 
-        .top-navbar-notification-list i {
-          display: inline-flex;
-          align-items: center;
-          gap: 4px;
-          color: #98a2b3;
-          font-size: 12px;
-          font-style: normal;
-        }
-
-        .top-navbar-notification-list b {
+        .site-navbar-notifications i {
           width: 7px;
           height: 7px;
           margin-top: 7px;
-          flex-shrink: 0;
           border-radius: 50%;
           background: #087b75;
         }
 
-        .top-navbar-dropdown-footer-link {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 5px;
-          padding: 10px;
-          border-top: 1px solid rgba(15, 23, 42, 0.07);
-          color: #087b75;
-          font-size: 12px;
-          font-weight: 750;
-          text-decoration: none;
-        }
-
-        .top-navbar-cart-dropdown {
-          top: calc(100% + 12px);
+        .site-navbar-cart-dropdown {
+          top: calc(100% + 11px);
           right: 0;
-          width: 355px;
+          width: 350px;
           padding: 11px;
         }
 
-        .top-navbar-cart-list {
+        .site-navbar-cart-items {
           display: flex;
           flex-direction: column;
           gap: 6px;
           padding: 10px 0;
         }
 
-        .top-navbar-cart-list > div {
+        .site-navbar-cart-items > div {
           display: flex;
           align-items: flex-start;
           gap: 10px;
@@ -2630,50 +1958,49 @@ export default function TopNavber() {
           background: #f8faf9;
         }
 
-        .top-navbar-cart-image {
-          width: 43px;
-          height: 43px;
-          display: inline-flex;
+        .site-navbar-cart-items
+          > div
+          > span:first-child {
+          display: flex;
+          width: 42px;
+          height: 42px;
+          flex-shrink: 0;
           align-items: center;
           justify-content: center;
-          flex-shrink: 0;
-          border-radius: 11px;
+          border-radius: 10px;
           color: #087b75;
-          background: #e4f6f3;
-          font-size: 12px;
-          font-weight: 800;
+          background: #e9f8f5;
         }
 
-        .top-navbar-cart-content {
-          min-width: 0;
+        .site-navbar-cart-items
+          > div
+          > span:nth-child(2) {
           display: flex;
+          min-width: 0;
           flex: 1;
           flex-direction: column;
-          gap: 2px;
         }
 
-        .top-navbar-cart-content strong {
-          overflow: hidden;
-          color: #101828;
-          font-size: 12px;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+        .site-navbar-cart-items strong,
+        .site-navbar-cart-items small,
+        .site-navbar-cart-items b {
+          font-size: var(--nav-text-13);
         }
 
-        .top-navbar-cart-content small {
+        .site-navbar-cart-items small {
           color: #8a94a3;
-          font-size: 12px;
         }
 
-        .top-navbar-cart-content b {
+        .site-navbar-cart-items b {
           color: #087b75;
-          font-size: 12px;
         }
 
-        .top-navbar-cart-list > div > button {
-          width: 29px;
-          height: 29px;
-          display: inline-flex;
+        .site-navbar-cart-items
+          > div
+          > button {
+          display: flex;
+          width: 30px;
+          height: 30px;
           align-items: center;
           justify-content: center;
           border: 0;
@@ -2683,173 +2010,100 @@ export default function TopNavber() {
           cursor: pointer;
         }
 
-        .top-navbar-cart-list > div > button:hover {
+        .site-navbar-cart-items
+          > div
+          > button:hover {
           color: #d92d20;
           background: #fff0ef;
         }
 
-        .top-navbar-cart-summary {
+        .site-navbar-cart-footer {
           padding-top: 10px;
-          border-top: 1px solid rgba(15, 23, 42, 0.07);
+          border-top: 1px solid
+            rgba(15, 23, 42, 0.08);
         }
 
-        .top-navbar-cart-summary > span {
+        .site-navbar-cart-footer > span {
           display: flex;
           align-items: center;
           justify-content: space-between;
         }
 
-        .top-navbar-cart-summary small {
-          color: #667085;
-          font-size: 12px;
+        .site-navbar-cart-footer small,
+        .site-navbar-cart-footer strong {
+          font-size: var(--nav-text-13);
         }
 
-        .top-navbar-cart-summary strong {
-          color: #101828;
-          font-size: 15px;
-        }
-
-        .top-navbar-cart-summary p {
-          margin: 6px 0 11px;
-          color: #98a2b3;
-          font-size: 12px;
-        }
-
-        .top-navbar-cart-summary > div {
+        .site-navbar-cart-footer > div {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 8px;
+          margin-top: 11px;
         }
 
-        .top-navbar-cart-summary a {
-          min-height: 39px;
+        .site-navbar-cart-footer a {
           display: flex;
+          min-height: 40px;
           align-items: center;
           justify-content: center;
           border: 1px solid #d8dee3;
           border-radius: 10px;
           color: #344054;
-          font-size: 12px;
+          font-size: var(--nav-text-13);
           font-weight: 750;
           text-decoration: none;
         }
 
-        .top-navbar-cart-summary a.primary {
+        .site-navbar-cart-footer
+          a.primary {
           border-color: #087b75;
-          color: white;
+          color: #ffffff;
           background: #087b75;
         }
 
-        .top-navbar-navigation {
-          border-bottom: 1px solid rgba(15, 23, 42, 0.075);
-          background: rgba(255, 255, 255, 0.96);
-          backdrop-filter: blur(18px);
-        }
-
-        .top-navbar-navigation-row {
-          min-height: 46px;
+        .site-navbar-navigation-list {
           display: flex;
-          align-items: center;
-          gap: 20px;
-        }
-
-        .top-navbar-flash-sale {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          flex-shrink: 0;
-          color: #101828;
-          text-decoration: none;
-        }
-
-        .top-navbar-flash-icon {
-          width: 29px;
-          height: 29px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 9px;
-          color: #d97706;
-          background: #fff1d7;
-        }
-
-        .top-navbar-flash-sale > span:nth-child(2) {
-          display: flex;
-          flex-direction: column;
-          gap: 1px;
-        }
-
-        .top-navbar-flash-sale strong {
-          font-size: 12px;
-        }
-
-        .top-navbar-flash-sale small {
-          color: #8a94a3;
-          font-size: 12px;
-        }
-
-        .top-navbar-countdown {
-          padding: 5px 7px;
-          border-radius: 7px;
-          color: #b54708;
-          background: #fff4e5;
-          font-size: 12px;
-          font-weight: 800;
-          letter-spacing: 0.03em;
-        }
-
-        .top-navbar-desktop-nav {
-          display: flex;
+          min-height: 48px;
           align-items: stretch;
           justify-content: center;
-          gap: 4px;
-          flex: 1;
-          align-self: stretch;
+          gap: 14px;
         }
 
-        .top-navbar-desktop-nav > a,
-        .top-navbar-more-wrapper > button {
+        .site-navbar-navigation-list a {
           position: relative;
-          min-width: 58px;
           display: flex;
+          min-width: 110px;
           align-items: center;
           justify-content: center;
-          gap: 5px;
-          padding: 0 9px;
-          border: 0;
+          gap: 8px;
+          padding-inline: 18px;
           color: #344054;
-          background: transparent;
-          font-family: inherit;
-          font-size: 12px;
-          font-weight: 650;
+          font-size: var(--nav-text-13);
           text-decoration: none;
-          cursor: pointer;
+          transition:
+            color 200ms ease,
+            background-color 200ms ease;
         }
 
-        .top-navbar-desktop-nav > a:hover,
-        .top-navbar-desktop-nav > a.is-active,
-        .top-navbar-more-wrapper > button:hover,
-        .top-navbar-more-wrapper > button.is-active {
+        .site-navbar-navigation-list
+          a:hover,
+        .site-navbar-navigation-list
+          a.is-active {
           color: #087b75;
+          background: #f5faf9;
         }
 
-        .top-navbar-desktop-nav > a > small {
-          position: absolute;
-          top: 2px;
-          right: 1px;
-          padding: 2px 4px;
-          border-radius: 999px;
-          color: white;
-          background: #e5484d;
-          font-size: 12px;
-          font-weight: 800;
+        .site-navbar-navigation-list
+          a
+          strong {
+          font-size: var(--nav-text-13);
         }
 
-        .top-navbar-desktop-nav > a > i {
+        .site-navbar-navigation-list a i {
           position: absolute;
-          right: 9px;
+          right: 18px;
           bottom: 0;
-          left: 9px;
+          left: 18px;
           height: 3px;
           border-radius: 999px 999px 0 0;
           background: #087b75;
@@ -2857,171 +2111,33 @@ export default function TopNavber() {
           transform: scaleX(0.3);
           transition:
             opacity 200ms ease,
-            transform 220ms ease;
+            transform 200ms ease;
         }
 
-        .top-navbar-desktop-nav > a:hover > i,
-        .top-navbar-desktop-nav > a.is-active > i {
+        .site-navbar-navigation-list
+          a:hover
+          i,
+        .site-navbar-navigation-list
+          a.is-active
+          i {
           opacity: 1;
           transform: scaleX(1);
         }
 
-        .top-navbar-more-wrapper {
-          position: relative;
-          display: flex;
-          align-items: stretch;
-        }
-
-        .top-navbar-more-dropdown {
-          top: calc(100% + 9px);
-          right: 0;
-          width: 245px;
-          padding: 8px;
-        }
-
-        .top-navbar-more-dropdown a {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          padding: 10px;
-          border-radius: 10px;
-          color: #344054;
-          text-decoration: none;
-        }
-
-        .top-navbar-more-dropdown a:hover {
-          color: #087b75;
-          background: #eff8f6;
-        }
-
-        .top-navbar-more-dropdown a > span {
-          width: 32px;
-          height: 32px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
-          border-radius: 9px;
-          background: #f1f4f4;
-        }
-
-        .top-navbar-more-dropdown a strong {
-          flex: 1;
-          font-size: 12px;
-        }
-
-        .top-navbar-track-order {
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          flex-shrink: 0;
-          padding: 8px 11px;
-          border-radius: 10px;
-          color: #087b75;
-          background: #eef9f7;
-          font-size: 12px;
-          font-weight: 750;
-          text-decoration: none;
-        }
-
-        .top-navbar-mobile-menu-button,
-        .top-navbar-mobile-cart,
-        .top-navbar-mobile-search-row,
-        .top-navbar-mobile-bottom-nav,
-        .top-navbar-mobile-overlay,
-        .top-navbar-mobile-drawer {
+        .site-navbar-menu-button,
+        .site-navbar-mobile-cart,
+        .site-navbar-mobile-search-row,
+        .site-navbar-mobile-overlay,
+        .site-navbar-mobile-drawer,
+        .site-navbar-bottom-nav {
           display: none;
         }
 
-        .top-navbar-logo {
-          display: flex;
-          align-items: center;
-          color: #087b75;
-          font-weight: 900;
-          line-height: 1;
-          white-space: nowrap;
-        }
-
-        .top-navbar-logo-small {
-          font-size: 34px;
-          letter-spacing: -2.7px;
-        }
-
-        .top-navbar-logo-large {
-          font-size: 48px;
-          letter-spacing: -4px;
-        }
-
-        .top-navbar-logo-symbol {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
-          margin: 0 1px;
-          border: solid #087b75;
-          border-radius: 50%;
-        }
-
-        .top-navbar-logo-small .top-navbar-logo-symbol {
-          width: 35px;
-          height: 35px;
-          border-width: 4px;
-        }
-
-        .top-navbar-logo-large .top-navbar-logo-symbol {
-          width: 54px;
-          height: 54px;
-          border-width: 6px;
-        }
-
-        .top-navbar-logo-heart {
-          position: absolute;
-          border-radius: 50%;
-          background: #ef4545;
-        }
-
-        .top-navbar-logo-small .top-navbar-logo-heart {
-          width: 23px;
-          height: 23px;
-        }
-
-        .top-navbar-logo-large .top-navbar-logo-heart {
-          width: 38px;
-          height: 38px;
-        }
-
-        .top-navbar-logo-cross-vertical,
-        .top-navbar-logo-cross-horizontal {
-          position: absolute;
-          z-index: 1;
-          background: white;
-        }
-
-        .top-navbar-logo-small .top-navbar-logo-cross-vertical {
-          width: 5px;
-          height: 16px;
-        }
-
-        .top-navbar-logo-small .top-navbar-logo-cross-horizontal {
-          width: 16px;
-          height: 5px;
-        }
-
-        .top-navbar-logo-large .top-navbar-logo-cross-vertical {
-          width: 7px;
-          height: 26px;
-        }
-
-        .top-navbar-logo-large .top-navbar-logo-cross-horizontal {
-          width: 26px;
-          height: 7px;
-        }
-
-        @keyframes topNavbarDropdownIn {
+        @keyframes siteNavbarDropdownIn {
           from {
             opacity: 0;
-            transform: translateY(-7px) scale(0.985);
+            transform: translateY(-7px)
+              scale(0.985);
           }
 
           to {
@@ -3030,226 +2146,211 @@ export default function TopNavber() {
           }
         }
 
-        @media (max-width: 1279px) {
-          .top-navbar-actions
-            .top-navbar-action-wrapper:first-child,
-          .top-navbar-actions
-            > .top-navbar-icon-action:first-of-type {
-            display: none;
+        @media (max-width: 1180px) {
+          .site-navbar-container {
+            width: min(
+              1120px,
+              calc(100% - 40px)
+            );
           }
 
-          .top-navbar-delivery {
-            width: 185px;
+          .site-navbar-location {
+            width: 175px;
           }
 
-          .top-navbar-search-category > button {
-            width: 115px;
-          }
-
-          .top-navbar-desktop-nav > a {
-            padding: 0 6px;
-          }
-        }
-
-        @media (max-width: 1100px) {
-          .top-navbar-delivery {
-            display: none;
-          }
-
-          .top-navbar-desktop-nav > a:nth-child(7),
-          .top-navbar-desktop-nav > a:nth-child(8) {
-            display: none;
-          }
-
-          .top-navbar-search-tools {
+          .site-navbar-actions
+            .site-navbar-action-wrapper:first-child {
             display: none;
           }
         }
 
-        @media (max-width: 900px) {
-          .top-navbar-container {
-            width: min(100% - 24px, 900px);
+        @media (max-width: 960px) {
+          .site-navbar-location {
+            display: none;
           }
 
-          .top-navbar-top-row {
-            min-height: 62px;
+          .site-navbar-actions {
+            display: none;
+          }
+
+          .site-navbar-navigation-list a {
+            min-width: 100px;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .site-navbar-container {
+            width: calc(100% - 24px);
+          }
+
+          .site-navbar-row {
+            min-height: 60px;
             gap: 10px;
           }
 
-          .top-navbar-mobile-menu-button {
+          .site-navbar-menu-button {
+            display: flex;
             width: 40px;
             height: 40px;
-            display: inline-flex;
+            flex-shrink: 0;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0;
             border: 0;
-            border-radius: 11px;
+            border-radius: 10px;
             color: #344054;
-            background: #f2f5f5;
+            background: #f1f4f4;
             cursor: pointer;
           }
 
-          .top-navbar-logo-small {
-            font-size: 29px;
-            letter-spacing: -2.3px;
-          }
-
-          .top-navbar-logo-small .top-navbar-logo-symbol {
-            width: 30px;
-            height: 30px;
-            border-width: 4px;
-          }
-
-          .top-navbar-logo-small .top-navbar-logo-heart {
-            width: 19px;
-            height: 19px;
-          }
-
-          .top-navbar-logo-small .top-navbar-logo-cross-vertical {
-            width: 4px;
-            height: 14px;
-          }
-
-          .top-navbar-logo-small .top-navbar-logo-cross-horizontal {
-            width: 14px;
-            height: 4px;
-          }
-
-          .top-navbar-search-form,
-          .top-navbar-actions,
-          .top-navbar-navigation {
+          .site-navbar-search,
+          .site-navbar-navigation {
             display: none;
           }
 
-          .top-navbar-mobile-cart {
+          .site-navbar-mobile-cart {
             position: relative;
+            display: flex;
             width: 40px;
             height: 40px;
-            display: inline-flex;
             align-items: center;
             justify-content: center;
             margin-left: auto;
-            border-radius: 11px;
+            border-radius: 10px;
             color: #087b75;
             background: #e9f8f5;
             text-decoration: none;
           }
 
-          .top-navbar-mobile-cart span {
+          .site-navbar-mobile-cart span {
             position: absolute;
             top: -4px;
             right: -4px;
+            display: flex;
             min-width: 18px;
             height: 18px;
-            display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 0 4px;
-            border: 2px solid white;
+            padding-inline: 4px;
+            border: 2px solid #ffffff;
             border-radius: 999px;
-            color: white;
+            color: #ffffff;
             background: #e5484d;
-            font-size: 12px;
+            font-size: var(--nav-text-13);
             font-weight: 800;
           }
 
-          .top-navbar-mobile-search-row {
+          .site-navbar-mobile-search-row {
             display: block;
             padding-bottom: 10px;
           }
 
-          .top-navbar-mobile-search {
-            height: 44px;
+          .site-navbar-mobile-search {
             display: flex;
+            height: 44px;
             align-items: center;
             overflow: hidden;
-            border: 1px solid #dce2e6;
-            border-radius: 13px;
-            background: #f9fbfb;
+            border: 1px solid #d8dee3;
+            border-radius: 12px;
+            background: #fafcfc;
           }
 
-          .top-navbar-mobile-search > svg {
+          .site-navbar-mobile-search > svg {
             margin-left: 13px;
             flex-shrink: 0;
             color: #667085;
           }
 
-          .top-navbar-mobile-search input {
+          .site-navbar-mobile-search input {
             min-width: 0;
             height: 100%;
             flex: 1;
-            padding: 0 10px;
+            padding-inline: 10px;
             border: 0;
             outline: none;
-            color: #101828;
             background: transparent;
             font-family: inherit;
-            font-size: 12px;
+            font-size: var(--nav-text-13);
           }
 
-          .top-navbar-mobile-search button {
+          .site-navbar-mobile-search button {
             align-self: stretch;
-            padding: 0 16px;
+            padding-inline: 15px;
             border: 0;
-            color: white;
+            color: #ffffff;
             background: #087b75;
             font-family: inherit;
-            font-size: 12px;
+            font-size: var(--nav-text-13);
             font-weight: 750;
           }
 
-          .top-navbar-mobile-overlay {
+          .site-navbar-mobile-overlay {
             position: fixed;
             inset: 0;
             z-index: 190;
             display: block;
             pointer-events: none;
             opacity: 0;
-            background: rgba(15, 23, 42, 0.46);
+            background: rgba(
+              15,
+              23,
+              42,
+              0.46
+            );
             backdrop-filter: blur(3px);
             transition: opacity 260ms ease;
           }
 
-          .top-navbar-mobile-overlay.is-open {
+          .site-navbar-mobile-overlay.is-open {
             pointer-events: auto;
             opacity: 1;
           }
 
-          .top-navbar-mobile-drawer {
+          .site-navbar-mobile-drawer {
             position: fixed;
             top: 0;
             bottom: 0;
             left: 0;
             z-index: 200;
-            width: min(345px, calc(100% - 38px));
             display: flex;
+            width: min(
+              340px,
+              calc(100% - 36px)
+            );
             flex-direction: column;
             overflow-y: auto;
             padding: 14px;
-            background: white;
-            box-shadow: 25px 0 60px -35px rgba(15, 23, 42, 0.6);
+            background: #ffffff;
+            box-shadow: 25px 0 60px -35px
+              rgba(15, 23, 42, 0.62);
             transform: translateX(-105%);
-            transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+            transition: transform 320ms
+              cubic-bezier(
+                0.22,
+                1,
+                0.36,
+                1
+              );
           }
 
-          .top-navbar-mobile-drawer.is-open {
+          .site-navbar-mobile-drawer.is-open {
             transform: translateX(0);
           }
 
-          .top-navbar-mobile-drawer-header {
+          .site-navbar-mobile-drawer-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 12px;
             padding-bottom: 14px;
-            border-bottom: 1px solid #eaedef;
+            border-bottom: 1px solid
+              #e7eceb;
           }
 
-          .top-navbar-mobile-drawer-header > button {
-            width: 37px;
-            height: 37px;
-            display: inline-flex;
+          .site-navbar-mobile-drawer-header
+            button {
+            display: flex;
+            width: 38px;
+            height: 38px;
             align-items: center;
             justify-content: center;
             border: 0;
@@ -3258,234 +2359,224 @@ export default function TopNavber() {
             background: #f2f4f7;
           }
 
-          .top-navbar-mobile-account-card {
+          .site-navbar-mobile-account {
             display: flex;
             align-items: center;
             gap: 10px;
             margin-top: 14px;
             padding: 12px;
-            border-radius: 14px;
-            background: linear-gradient(135deg, #effaf8, #f8fffd);
+            border-radius: 13px;
+            background: linear-gradient(
+              135deg,
+              #effaf8,
+              #f8fffd
+            );
           }
 
-          .top-navbar-mobile-account-card > span {
+          .site-navbar-mobile-account
+            > span {
+            display: flex;
             width: 40px;
             height: 40px;
-            display: inline-flex;
+            flex-shrink: 0;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0;
-            border-radius: 12px;
-            color: white;
+            border-radius: 11px;
+            color: #ffffff;
             background: #087b75;
           }
 
-          .top-navbar-mobile-account-card > div {
-            min-width: 0;
+          .site-navbar-mobile-account
+            > div {
             display: flex;
+            min-width: 0;
             flex: 1;
             flex-direction: column;
-            gap: 2px;
           }
 
-          .top-navbar-mobile-account-card strong {
-            color: #101828;
-            font-size: 12px;
+          .site-navbar-mobile-account
+            strong,
+          .site-navbar-mobile-account
+            small,
+          .site-navbar-mobile-account
+            a {
+            font-size: var(--nav-text-13);
           }
 
-          .top-navbar-mobile-account-card small {
+          .site-navbar-mobile-account
+            small {
             color: #667085;
-            font-size: 12px;
           }
 
-          .top-navbar-mobile-account-card > a {
+          .site-navbar-mobile-account
+            > a {
             padding: 7px 10px;
             border-radius: 8px;
-            color: white;
+            color: #ffffff;
             background: #087b75;
-            font-size: 12px;
             font-weight: 750;
             text-decoration: none;
           }
 
-          .top-navbar-mobile-delivery-card {
+          .site-navbar-mobile-location {
             display: flex;
             align-items: center;
             gap: 10px;
             margin-top: 10px;
             padding: 11px 12px;
-            border: 1px solid #e4e9eb;
-            border-radius: 13px;
+            border: 1px solid #e1e8e6;
+            border-radius: 12px;
             color: #087b75;
           }
 
-          .top-navbar-mobile-delivery-card > div {
+          .site-navbar-mobile-location
+            > div {
             display: flex;
-            flex: 1;
             flex-direction: column;
-            gap: 1px;
           }
 
-          .top-navbar-mobile-delivery-card small {
+          .site-navbar-mobile-location
+            small,
+          .site-navbar-mobile-location
+            strong {
+            font-size: var(--nav-text-13);
+          }
+
+          .site-navbar-mobile-location
+            small {
             color: #8a94a3;
-            font-size: 12px;
           }
 
-          .top-navbar-mobile-delivery-card strong {
-            color: #101828;
-            font-size: 12px;
-          }
-
-          .top-navbar-mobile-drawer-nav {
+          .site-navbar-mobile-links {
             display: flex;
             flex-direction: column;
-            gap: 3px;
+            gap: 4px;
             margin-top: 14px;
           }
 
-          .top-navbar-mobile-drawer-nav > a {
+          .site-navbar-mobile-links a {
             display: flex;
             align-items: center;
             gap: 10px;
-            padding: 10px;
+            padding: 11px;
             border-radius: 11px;
             color: #344054;
             text-decoration: none;
           }
 
-          .top-navbar-mobile-drawer-nav > a:hover,
-          .top-navbar-mobile-drawer-nav > a.is-active {
+          .site-navbar-mobile-links
+            a:hover,
+          .site-navbar-mobile-links
+            a.is-active {
             color: #087b75;
             background: #eff8f6;
           }
 
-          .top-navbar-mobile-drawer-nav > a > span {
+          .site-navbar-mobile-links
+            a
+            > span {
+            display: flex;
             width: 34px;
             height: 34px;
-            display: inline-flex;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0;
-            border-radius: 10px;
+            border-radius: 9px;
             background: #f1f4f4;
           }
 
-          .top-navbar-mobile-drawer-nav strong {
+          .site-navbar-mobile-links
+            strong {
             flex: 1;
-            font-size: 12px;
+            font-size: var(--nav-text-13);
           }
 
-          .top-navbar-mobile-drawer-nav small {
-            padding: 3px 6px;
-            border-radius: 999px;
-            color: white;
-            background: #e5484d;
-            font-size: 12px;
-            font-weight: 800;
-          }
-
-          .top-navbar-mobile-drawer-links {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-            margin-top: 13px;
-            padding-top: 12px;
-            border-top: 1px solid #eaedef;
-          }
-
-          .top-navbar-mobile-drawer-links a {
+          .site-navbar-mobile-track {
             display: flex;
             align-items: center;
             gap: 9px;
-            padding: 10px;
-            border-radius: 10px;
-            color: #475467;
-            font-size: 12px;
-            font-weight: 600;
+            margin-top: 14px;
+            padding: 11px;
+            border-top: 1px solid
+              #e7eceb;
+            color: #087b75;
+            font-size: var(--nav-text-13);
+            font-weight: 750;
             text-decoration: none;
           }
 
-          .top-navbar-mobile-drawer-links a:hover {
-            color: #087b75;
-            background: #eff8f6;
-          }
-
-          .top-navbar-mobile-bottom-nav {
+          .site-navbar-bottom-nav {
             position: fixed;
             right: 0;
             bottom: 0;
             left: 0;
             z-index: 150;
-            height: 66px;
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            height: 66px;
+            grid-template-columns: repeat(
+              4,
+              1fr
+            );
             align-items: center;
             padding: 5px 10px 7px;
-            border-top: 1px solid rgba(15, 23, 42, 0.09);
-            background: rgba(255, 255, 255, 0.96);
-            box-shadow: 0 -14px 35px -30px rgba(15, 23, 42, 0.55);
+            border-top: 1px solid
+              rgba(15, 23, 42, 0.09);
+            background: rgba(
+              255,
+              255,
+              255,
+              0.97
+            );
+            box-shadow: 0 -14px 35px -30px
+              rgba(15, 23, 42, 0.55);
             backdrop-filter: blur(18px);
           }
 
-          .top-navbar-mobile-bottom-link {
+          .site-navbar-bottom-nav a {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 3px;
+            gap: 4px;
             color: #667085;
-            font-size: 12px;
-            font-weight: 650;
             text-decoration: none;
           }
 
-          .top-navbar-mobile-bottom-link.is-active {
+          .site-navbar-bottom-nav
+            a.is-active {
             color: #087b75;
           }
 
-          .top-navbar-mobile-bottom-search {
-            width: 48px;
-            height: 48px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            justify-self: center;
-            margin-top: -24px;
-            border: 5px solid white;
-            border-radius: 50%;
-            color: white;
-            background: linear-gradient(135deg, #0c9187, #087b75);
-            box-shadow: 0 13px 25px -12px rgba(8, 123, 117, 0.85);
-            text-decoration: none;
+          .site-navbar-bottom-nav span {
+            font-size: var(--nav-text-13);
+            font-weight: 650;
           }
         }
 
         @media (max-width: 420px) {
-          .top-navbar-container {
+          .site-navbar-container {
             width: calc(100% - 18px);
           }
 
-          .top-navbar-logo-small {
-            font-size: 26px;
-            letter-spacing: -2px;
+          .site-navbar-logo {
+            font-size: var(--nav-text-18);
           }
 
-          .top-navbar-logo-small .top-navbar-logo-symbol {
-            width: 28px;
-            height: 28px;
+          .site-navbar-logo-symbol {
+            width: 29px;
+            height: 29px;
           }
 
-          .top-navbar-mobile-search button {
-            padding: 0 12px;
+          .site-navbar-mobile-search button {
+            padding-inline: 12px;
           }
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .top-navbar *,
-          .top-navbar *::before,
-          .top-navbar *::after,
-          .top-navbar-mobile-drawer,
-          .top-navbar-mobile-overlay {
+          .site-navbar *,
+          .site-navbar *::before,
+          .site-navbar *::after,
+          .site-navbar-mobile-drawer,
+          .site-navbar-mobile-overlay {
             scroll-behavior: auto !important;
             animation-duration: 0.01ms !important;
             animation-iteration-count: 1 !important;
@@ -3497,105 +2588,58 @@ export default function TopNavber() {
   );
 }
 
-function AccountMenuLink({
-  href,
-  icon,
-  label,
+function Dropdown({
+  children,
+  className = "",
 }: {
-  href: string;
-  icon: ReactNode;
-  label: string;
-}) {
-  return (
-    <Link href={href}>
-      {icon}
-      <span>{label}</span>
-      <ChevronRight size={15} className="ml-auto" />
-    </Link>
-  );
-}
-
-function MobileBottomLink({
-  href,
-  label,
-  icon,
-  active,
-}: {
-  href: string;
-  label: string;
-  icon: ReactNode;
-  active: boolean;
-}) {
-  return (
-    <Link
-      href={href}
-      className={`top-navbar-mobile-bottom-link ${
-        active ? "is-active" : ""
-      }`}
-    >
-      {icon}
-      <span>{label}</span>
-    </Link>
-  );
-}
-
-function MobileNavigationIcon({
-  label,
-}: {
-  label: string;
-}) {
-  switch (label) {
-    case "All":
-      return <Home size={18} />;
-
-    case "Medicine":
-      return <Pill size={18} />;
-
-    case "Healthcare":
-      return <Heart size={18} />;
-
-    case "Doctor":
-      return <Stethoscope size={18} />;
-
-    case "Lab":
-      return <FlaskConical size={18} />;
-
-    case "Beauty":
-      return <Sparkles size={18} />;
-
-    case "Baby Care":
-      return <Baby size={18} />;
-
-    case "Pet Care":
-      return <PawPrint size={18} />;
-
-    case "Offers":
-      return <Percent size={18} />;
-
-    default:
-      return <Store size={18} />;
-  }
-}
-
-export function Logo({
-  size = "large",
-}: {
-  size?: "small" | "large";
+  children: ReactNode;
+  className?: string;
 }) {
   return (
     <div
-      className={`top-navbar-logo ${
-        size === "large"
-          ? "top-navbar-logo-large"
-          : "top-navbar-logo-small"
-      }`}
+      className={`site-navbar-dropdown ${className}`}
     >
+      {children}
+    </div>
+  );
+}
+
+function DropdownHeader({
+  eyebrow,
+  title,
+  onClose,
+}: {
+  eyebrow: string;
+  title: string;
+  onClose: () => void;
+}) {
+  return (
+    <div className="site-navbar-dropdown-header">
+      <div>
+        <span>{eyebrow}</span>
+        <strong>{title}</strong>
+      </div>
+
+      <button
+        type="button"
+        onClick={onClose}
+        aria-label="Close"
+      >
+        <X size={18} />
+      </button>
+    </div>
+  );
+}
+
+export function Logo() {
+  return (
+    <div className="site-navbar-logo">
       <span>ar</span>
 
-      <span className="top-navbar-logo-symbol">
-        <span className="top-navbar-logo-heart" />
-        <span className="top-navbar-logo-cross-vertical" />
-        <span className="top-navbar-logo-cross-horizontal" />
+      <span className="site-navbar-logo-symbol">
+        <span className="site-navbar-logo-heart" />
+        <span className="site-navbar-logo-cross-vertical" />
+        <span className="site-navbar-logo-cross-horizontal" />
       </span>
 
       <span>gga</span>

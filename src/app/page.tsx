@@ -1,4 +1,4 @@
-import AboveFooterVideo from "@/Components/HomeComponents/AboveFooterVideo";
+import AboveFooterVideo from "@/Components/AboveFooterVideo";
 import AllYouNeed from "@/Components/HomeComponents/AllYouNeed";
 import BasicSiteBanner from "@/Components/HomeComponents/BasicSiteBanner";
 import BlueDealSections from "@/Components/HomeComponents/BlueDealSections";
@@ -29,7 +29,6 @@ export default function HomePage() {
       <FragrancePerfume />
       <NewAndBestSelling />
       <SeoContentSection />
-      <AboveFooterVideo/>
     </main>
   );
 }

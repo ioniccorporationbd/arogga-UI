@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import CategoryNav from "@/Components/CategoryNav";
 import Footer from "@/Components/Footer";
 import TopNavber from "@/Components/TopNavber";
+import AboveFooterVideo from "@/Components/AboveFooterVideo";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({
         <TopNavber />
         <CategoryNav />
         <main className="site-main">{children}</main>
+        <AboveFooterVideo/> 
         <Footer />
       </body>
     </html>

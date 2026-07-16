@@ -1,5 +1,7 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 type Category = {
   id: number;
@@ -140,130 +142,711 @@ const categories: Category[] = [
 
 export default function AllYouNeed() {
   return (
-    <section className="relative w-full overflow-hidden bg-white py-10 sm:py-12 lg:py-14">
-      <div className="pointer-events-none absolute -left-28 top-10 h-72 w-72 rounded-full bg-[#e9fbf8] blur-3xl" />
-      <div className="pointer-events-none absolute -right-28 bottom-0 h-72 w-72 rounded-full bg-[#fff5d8] blur-3xl" />
+    <>
+      <section
+        className="all-you-need-section"
+        aria-labelledby="all-you-need-title"
+      >
+        <div
+          aria-hidden="true"
+          className="all-you-need-grid-pattern"
+        />
 
-      <div className="relative mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
-        <div className="mb-7 flex flex-col gap-2 sm:mb-9 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#087b75] sm:text-sm">
-              Shop by category
-            </p>
+        <div
+          aria-hidden="true"
+          className="all-you-need-glow all-you-need-glow-left"
+        />
 
-            <h2 className="text-2xl font-bold tracking-[-0.02em] text-[#111827] sm:text-3xl lg:text-[34px]">
-              All You Need
-            </h2>
+        <div
+          aria-hidden="true"
+          className="all-you-need-glow all-you-need-glow-right"
+        />
 
-            <p className="mt-2 max-w-xl text-sm leading-6 text-[#667085] sm:text-base">
-              Discover healthcare, wellness, beauty and everyday essentials in
-              one convenient place.
-            </p>
+        <div className="all-you-need-container">
+          <header className="all-you-need-header">
+            <div className="all-you-need-heading-group">
+              <p className="all-you-need-eyebrow">
+                Shop by category
+              </p>
+
+              <h2
+                id="all-you-need-title"
+                className="all-you-need-title"
+              >
+                All You Need
+              </h2>
+
+              <p className="all-you-need-description">
+                Discover healthcare, wellness, beauty and everyday essentials in
+                one convenient place.
+              </p>
+            </div>
+
+            <Link
+              href="/categories"
+              className="all-you-need-view-all all-you-need-view-all-desktop"
+            >
+              <span>View all categories</span>
+              <ArrowIcon />
+            </Link>
+          </header>
+
+          <div className="all-you-need-grid">
+            {categories.map((category, index) => (
+              <CategoryCard
+                key={category.id}
+                category={category}
+                priority={index < 6}
+              />
+            ))}
           </div>
 
-          <Link
-            href="/categories"
-            className="group hidden items-center gap-2 text-sm font-semibold text-[#087b75] transition-colors hover:text-[#055f5a] sm:flex"
-          >
-            View all categories
-
-            <svg
-              viewBox="0 0 20 20"
-              fill="none"
-              aria-hidden="true"
-              className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+          <div className="all-you-need-mobile-action">
+            <Link
+              href="/categories"
+              className="all-you-need-view-all all-you-need-view-all-mobile"
             >
-              <path
-                d="M4.167 10h11.666M10.833 5l5 5-5 5"
-                stroke="currentColor"
-                strokeWidth="1.7"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </Link>
+              <span>View all categories</span>
+              <ArrowIcon />
+            </Link>
+          </div>
         </div>
+      </section>
 
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-          {categories.map((category) => (
-            <CategoryCard key={category.id} category={category} />
-          ))}
-        </div>
+      <style jsx global>{`
+        .all-you-need-section {
+          --ayn-text-20: 20px;
+          --ayn-text-18: 18px;
+          --ayn-text-16: 16px;
+          --ayn-text-13: 13px;
 
-        <div className="mt-8 flex justify-center sm:hidden">
-          <Link
-            href="/categories"
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-[#cde9e6] bg-white px-6 text-sm font-semibold text-[#087b75] shadow-sm transition hover:border-[#087b75] hover:bg-[#f2fbfa]"
-          >
-            View all categories
+          position: relative;
+          isolation: isolate;
+          width: 100%;
+          overflow: hidden;
+          padding: 72px 0;
+          background:
+            radial-gradient(
+              circle at 5% 20%,
+              rgba(208, 249, 242, 0.66),
+              transparent 26%
+            ),
+            radial-gradient(
+              circle at 95% 86%,
+              rgba(255, 244, 203, 0.75),
+              transparent 27%
+            ),
+            #ffffff;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+        }
 
-            <svg
-              viewBox="0 0 20 20"
-              fill="none"
-              aria-hidden="true"
-              className="h-4 w-4"
-            >
-              <path
-                d="M4.167 10h11.666M10.833 5l5 5-5 5"
-                stroke="currentColor"
-                strokeWidth="1.7"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </Link>
-        </div>
-      </div>
-    </section>
+        .all-you-need-grid-pattern {
+          position: absolute;
+          inset: 0;
+          z-index: -4;
+          pointer-events: none;
+          opacity: 0.28;
+          background-image:
+            linear-gradient(
+              rgba(8, 123, 117, 0.035) 1px,
+              transparent 1px
+            ),
+            linear-gradient(
+              90deg,
+              rgba(8, 123, 117, 0.035) 1px,
+              transparent 1px
+            );
+          background-size: 44px 44px;
+          mask-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.8),
+            transparent 94%
+          );
+        }
+
+        .all-you-need-glow {
+          position: absolute;
+          z-index: -3;
+          width: 340px;
+          height: 340px;
+          border-radius: 50%;
+          pointer-events: none;
+          filter: blur(92px);
+          opacity: 0.62;
+          will-change: transform;
+        }
+
+        .all-you-need-glow-left {
+          top: 40px;
+          left: -180px;
+          background: rgba(159, 235, 222, 0.5);
+          animation: aynGlowLeft 10s ease-in-out infinite;
+        }
+
+        .all-you-need-glow-right {
+          right: -180px;
+          bottom: -80px;
+          background: rgba(255, 220, 132, 0.38);
+          animation: aynGlowRight 12s ease-in-out infinite;
+        }
+
+        .all-you-need-container {
+          position: relative;
+          width: min(1440px, calc(100% - 64px));
+          margin: 0 auto;
+        }
+
+        .all-you-need-header {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          gap: 32px;
+          margin-bottom: 34px;
+        }
+
+        .all-you-need-heading-group {
+          max-width: 700px;
+        }
+
+        .all-you-need-eyebrow {
+          margin: 0 0 9px;
+          color: #087b75;
+          font-size: var(--ayn-text-13);
+          font-weight: 800;
+          line-height: 1.4;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+        }
+
+        .all-you-need-title {
+          margin: 0;
+          color: #111827;
+          font-size: var(--ayn-text-20);
+          font-weight: 850;
+          line-height: 1.3;
+          letter-spacing: -0.025em;
+        }
+
+        .all-you-need-description {
+          max-width: 620px;
+          margin: 11px 0 0;
+          color: #667085;
+          font-size: var(--ayn-text-16);
+          line-height: 1.7;
+        }
+
+        .all-you-need-view-all {
+          display: inline-flex;
+          min-height: 46px;
+          align-items: center;
+          justify-content: center;
+          gap: 9px;
+          border-radius: 999px;
+          color: #087b75;
+          font-size: var(--ayn-text-13);
+          font-weight: 800;
+          line-height: 1;
+          text-decoration: none;
+          transition:
+            transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+            color 300ms ease,
+            border-color 300ms ease,
+            background-color 300ms ease,
+            box-shadow 300ms ease;
+        }
+
+        .all-you-need-view-all-desktop {
+          flex-shrink: 0;
+          padding: 0 4px;
+        }
+
+        .all-you-need-view-all:hover {
+          color: #055f5a;
+          transform: translateY(-2px);
+        }
+
+        .all-you-need-view-all svg {
+          width: 16px;
+          height: 16px;
+          transition: transform 300ms ease;
+        }
+
+        .all-you-need-view-all:hover svg {
+          transform: translateX(4px);
+        }
+
+        .all-you-need-grid {
+          display: grid;
+          grid-template-columns: repeat(6, minmax(0, 1fr));
+          gap: 22px 16px;
+        }
+
+        .all-you-need-link {
+          display: block;
+          min-width: 0;
+          height: 100%;
+          border-radius: 22px;
+          color: inherit;
+          text-decoration: none;
+          outline: none;
+        }
+
+        .all-you-need-link:focus-visible {
+          box-shadow:
+            0 0 0 3px rgba(8, 123, 117, 0.28),
+            0 0 0 7px #ffffff;
+        }
+
+        .all-you-need-card {
+          display: flex;
+          height: 100%;
+          flex-direction: column;
+        }
+
+        .all-you-need-card-frame {
+          position: relative;
+          overflow: hidden;
+          padding: 7px;
+          border: 1px solid #e7eeec;
+          border-radius: 21px;
+          background: rgba(255, 255, 255, 0.94);
+          box-shadow: 0 10px 28px -24px rgba(15, 23, 42, 0.48);
+          transform: translateZ(0);
+          transition:
+            transform 480ms cubic-bezier(0.22, 1, 0.36, 1),
+            border-color 420ms ease,
+            box-shadow 480ms ease;
+          will-change: transform;
+          backface-visibility: hidden;
+        }
+
+        .all-you-need-link:hover .all-you-need-card-frame {
+          border-color: #bfe3df;
+          transform: translate3d(0, -7px, 0);
+          box-shadow:
+            0 27px 55px -30px rgba(8, 123, 117, 0.42),
+            0 12px 30px -24px rgba(15, 23, 42, 0.36);
+        }
+
+        .all-you-need-image-wrap {
+          position: relative;
+          aspect-ratio: 1 / 1.03;
+          overflow: hidden;
+          border-radius: 15px;
+          background: #f2f6f5;
+        }
+
+        .all-you-need-image {
+          object-fit: cover;
+          transform: scale(1.001);
+          transition:
+            transform 750ms cubic-bezier(0.22, 1, 0.36, 1),
+            filter 600ms ease;
+          will-change: transform;
+        }
+
+        .all-you-need-link:hover .all-you-need-image {
+          transform: scale(1.075);
+          filter: saturate(1.03) contrast(1.02);
+        }
+
+        .all-you-need-image-overlay {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          background:
+            linear-gradient(
+              to top,
+              rgba(16, 24, 40, 0.16),
+              transparent 44%
+            ),
+            linear-gradient(
+              145deg,
+              rgba(255, 255, 255, 0.12),
+              transparent 40%
+            );
+          opacity: 0.65;
+          transition: opacity 420ms ease;
+        }
+
+        .all-you-need-link:hover .all-you-need-image-overlay {
+          opacity: 0.38;
+        }
+
+        .all-you-need-image-shine {
+          position: absolute;
+          inset: 0 auto 0 -85%;
+          width: 42%;
+          pointer-events: none;
+          transform: rotate(17deg);
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.42),
+            transparent
+          );
+          transition: left 760ms ease;
+        }
+
+        .all-you-need-link:hover .all-you-need-image-shine {
+          left: 135%;
+        }
+
+        .all-you-need-arrow {
+          position: absolute;
+          right: 12px;
+          bottom: 12px;
+          display: flex;
+          width: 38px;
+          height: 38px;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid rgba(255, 255, 255, 0.86);
+          border-radius: 50%;
+          color: #087b75;
+          background: rgba(255, 255, 255, 0.94);
+          box-shadow: 0 10px 22px -12px rgba(15, 23, 42, 0.5);
+          backdrop-filter: blur(12px);
+          opacity: 0;
+          transform: translate3d(0, 10px, 0) scale(0.92);
+          transition:
+            opacity 350ms ease,
+            transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .all-you-need-link:hover .all-you-need-arrow {
+          opacity: 1;
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+
+        .all-you-need-arrow svg {
+          width: 16px;
+          height: 16px;
+          transition: transform 300ms ease;
+        }
+
+        .all-you-need-link:hover .all-you-need-arrow svg {
+          transform: translateX(2px);
+        }
+
+        .all-you-need-card-title {
+          display: flex;
+          min-height: 48px;
+          align-items: flex-start;
+          justify-content: center;
+          margin: 13px 0 0;
+          padding: 0 6px;
+          color: #1f2937;
+          font-size: var(--ayn-text-13);
+          font-weight: 750;
+          line-height: 1.5;
+          text-align: center;
+          transition:
+            color 300ms ease,
+            transform 350ms ease;
+        }
+
+        .all-you-need-link:hover .all-you-need-card-title {
+          color: #087b75;
+          transform: translateY(-1px);
+        }
+
+        .all-you-need-mobile-action {
+          display: none;
+          justify-content: center;
+          margin-top: 30px;
+        }
+
+        .all-you-need-view-all-mobile {
+          min-width: 210px;
+          padding: 0 22px;
+          border: 1px solid #cde9e6;
+          background: #ffffff;
+          box-shadow: 0 11px 25px -19px rgba(15, 23, 42, 0.5);
+        }
+
+        .all-you-need-view-all-mobile:hover {
+          border-color: #087b75;
+          background: #f2fbfa;
+          box-shadow: 0 15px 30px -20px rgba(8, 123, 117, 0.42);
+        }
+
+        @keyframes aynGlowLeft {
+          0%,
+          100% {
+            transform: translate3d(0, 0, 0) scale(1);
+          }
+
+          50% {
+            transform: translate3d(30px, -18px, 0) scale(1.07);
+          }
+        }
+
+        @keyframes aynGlowRight {
+          0%,
+          100% {
+            transform: translate3d(0, 0, 0) scale(1);
+          }
+
+          50% {
+            transform: translate3d(-26px, -20px, 0) scale(1.08);
+          }
+        }
+
+        @media (min-width: 1280px) and (max-width: 1499px) {
+          .all-you-need-container {
+            width: min(1320px, calc(100% - 48px));
+          }
+
+          .all-you-need-grid {
+            gap: 20px 14px;
+          }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1279px) {
+          .all-you-need-section {
+            padding: 64px 0;
+          }
+
+          .all-you-need-container {
+            width: min(980px, calc(100% - 48px));
+          }
+
+          .all-you-need-grid {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 20px 14px;
+          }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .all-you-need-section {
+            padding: 58px 0;
+          }
+
+          .all-you-need-container {
+            width: min(760px, calc(100% - 40px));
+          }
+
+          .all-you-need-header {
+            align-items: center;
+            margin-bottom: 30px;
+          }
+
+          .all-you-need-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px 14px;
+          }
+
+          .all-you-need-card-frame {
+            border-radius: 18px;
+          }
+        }
+
+        @media (min-width: 640px) and (max-width: 767px) {
+          .all-you-need-section {
+            padding: 52px 0;
+          }
+
+          .all-you-need-container {
+            width: calc(100% - 32px);
+          }
+
+          .all-you-need-header {
+            align-items: center;
+            margin-bottom: 28px;
+          }
+
+          .all-you-need-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px 13px;
+          }
+        }
+
+        @media (max-width: 639px) {
+          .all-you-need-section {
+            padding: 46px 0 50px;
+          }
+
+          .all-you-need-container {
+            width: calc(100% - 28px);
+          }
+
+          .all-you-need-header {
+            display: block;
+            margin-bottom: 24px;
+            text-align: center;
+          }
+
+          .all-you-need-heading-group {
+            max-width: 560px;
+            margin: 0 auto;
+          }
+
+          .all-you-need-description {
+            margin-right: auto;
+            margin-left: auto;
+          }
+
+          .all-you-need-view-all-desktop {
+            display: none;
+          }
+
+          .all-you-need-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 17px 12px;
+          }
+
+          .all-you-need-card-frame {
+            padding: 5px;
+            border-radius: 17px;
+          }
+
+          .all-you-need-image-wrap {
+            border-radius: 12px;
+          }
+
+          .all-you-need-card-title {
+            min-height: 42px;
+            margin-top: 10px;
+            padding: 0 3px;
+          }
+
+          .all-you-need-arrow {
+            display: none;
+          }
+
+          .all-you-need-mobile-action {
+            display: flex;
+          }
+        }
+
+        @media (max-width: 399px) {
+          .all-you-need-container {
+            width: calc(100% - 22px);
+          }
+
+          .all-you-need-grid {
+            gap: 15px 10px;
+          }
+
+          .all-you-need-card-frame {
+            padding: 4px;
+            border-radius: 15px;
+          }
+
+          .all-you-need-image-wrap {
+            border-radius: 11px;
+          }
+
+          .all-you-need-card-title {
+            min-height: 40px;
+            margin-top: 9px;
+          }
+        }
+
+        @media (hover: none) {
+          .all-you-need-link:hover .all-you-need-card-frame,
+          .all-you-need-link:hover .all-you-need-image,
+          .all-you-need-link:hover .all-you-need-card-title {
+            transform: none;
+          }
+
+          .all-you-need-link:hover .all-you-need-arrow {
+            opacity: 0;
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .all-you-need-section *,
+          .all-you-need-section *::before,
+          .all-you-need-section *::after {
+            scroll-behavior: auto !important;
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+          }
+        }
+      `}</style>
+    </>
   );
 }
 
-function CategoryCard({ category }: { category: Category }) {
+function CategoryCard({
+  category,
+  priority,
+}: {
+  category: Category;
+  priority: boolean;
+}) {
   return (
     <Link
       href={category.href}
       aria-label={`Browse ${category.name}`}
-      className="group block min-w-0 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#087b75] focus-visible:ring-offset-4"
+      className="all-you-need-link"
     >
-      <article className="h-full">
-        <div className="relative overflow-hidden rounded-2xl border border-[#e8eeed] bg-white p-1.5 shadow-[0_8px_24px_-22px_rgba(15,23,42,0.4)] transition-all duration-300 ease-out group-hover:-translate-y-1.5 group-hover:border-[#cce8e5] group-hover:shadow-[0_18px_45px_-20px_rgba(8,123,117,0.35)] sm:p-2">
-          <div className="relative aspect-[1/1.03] overflow-hidden rounded-[13px] bg-[#f4f7f6]">
+      <article className="all-you-need-card">
+        <div className="all-you-need-card-frame">
+          <div className="all-you-need-image-wrap">
             <Image
               src={category.image}
               alt={category.name}
               fill
-              sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, (max-width: 1280px) 20vw, 17vw"
-              className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.08]"
+              priority={priority}
+              sizes="
+                (max-width: 639px) 46vw,
+                (max-width: 767px) 31vw,
+                (max-width: 1023px) 23vw,
+                (max-width: 1279px) 18vw,
+                15vw
+              "
+              className="all-you-need-image"
               style={{
                 objectPosition: category.imagePosition ?? "center",
               }}
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-white/5 transition-opacity duration-300 group-hover:opacity-60" />
+            <div
+              aria-hidden="true"
+              className="all-you-need-image-overlay"
+            />
 
-            <div className="absolute bottom-3 right-3 flex h-9 w-9 translate-y-2 items-center justify-center rounded-full bg-white/95 text-[#087b75] opacity-0 shadow-md backdrop-blur-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-              <svg
-                viewBox="0 0 20 20"
-                fill="none"
-                aria-hidden="true"
-                className="h-4 w-4"
-              >
-                <path
-                  d="M4.167 10h11.666M10.833 5l5 5-5 5"
-                  stroke="currentColor"
-                  strokeWidth="1.7"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+            <div
+              aria-hidden="true"
+              className="all-you-need-image-shine"
+            />
+
+            <div
+              aria-hidden="true"
+              className="all-you-need-arrow"
+            >
+              <ArrowIcon />
             </div>
           </div>
         </div>
 
-        <h3 className="mt-3 line-clamp-2 min-h-10 px-1 text-center font-body text-[14px] font-semibold leading-5 sm:text-[15px] text-[#1f2937] transition-colors duration-300 group-hover:text-[#087b75]">
+        <h3 className="all-you-need-card-title">
           {category.name}
         </h3>
       </article>
     </Link>
+  );
+}
+
+function ArrowIcon() {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M4.167 10h11.666M10.833 5l5 5-5 5"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
