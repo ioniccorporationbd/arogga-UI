@@ -34,3 +34,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Product data integration
+
+The store loads every product card from `public/data.json` using the full nested e-commerce structure.
+
+- Store page: `/store`
+- Product detail route: `/products/[slug]`
+- Product image and title open the product detail page.
+- The ADD button saves the product to `localStorage` under `arogga-cart` and opens its detail page.
+- The current `data.json` contains three products with separate online product image URLs.

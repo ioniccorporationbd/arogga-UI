@@ -15,19 +15,33 @@ import SupplementFestival from "@/Components/HomeComponents/SupplementFestival";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="min-h-screen w-full overflow-x-hidden bg-white">
       <BasicSiteBanner />
+
       <EspeciallyForYou />
+
       <AllYouNeed />
+
       <StealTheDeal />
+
       <MultiDealSections />
+
       <BlueDealSections />
+
       <SupplementFestival />
+
       <SupplementAndOTC />
+
       <SunAndSplash />
+
       <CategoryDealSections />
+
       <FragrancePerfume />
+
       <NewAndBestSelling />
+
+      <AboveFooterVideo />
+
       <SeoContentSection />
     </main>
   );

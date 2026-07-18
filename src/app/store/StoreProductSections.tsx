@@ -19,18 +19,31 @@ import {
 } from "react";
 
 type JsonProduct = {
-  id: number;
+  id: string;
+  slug: string;
+  name: string;
+  shortName: string;
+  brand: { name: string };
+  taxonomy: { subCategory: { name: string } | null; category: { name: string } };
+  media: { featuredImage: { url: string; alt: string } };
+  pricing: {
+    currency: string;
+    regularPrice: number;
+    salePrice: number | null;
+    discount: { percentage: number };
+  };
+  inventory: { availableQuantity: number };
+  ratings: { average: number | null; count: number };
+  shipping: { delivery: { estimatedMinimumDays: number; estimatedMaximumDays: number } };
+};
+
+type Product = {
+  id: string;
   brand: string;
   title: string;
   category: string;
   image: string;
-  price: number;
-  currency: string;
   rating: number | null;
-  productUrl: string;
-};
-
-type Product = JsonProduct & {
   slug: string;
   href: string;
   salePrice: number;
@@ -38,6 +51,7 @@ type Product = JsonProduct & {
   discount: number;
   reviewCount: number;
   currencySymbol: string;
+  deliveryText: string;
 };
 
 type ProductSectionConfig = {
@@ -56,55 +70,31 @@ type ProductSectionProps = {
   config: ProductSectionConfig;
   products: Product[];
   loading: boolean;
-  cartItems: number[];
-  onToggleCart: (productId: number) => void;
+  cartItems: string[];
+  onToggleCart: (productId: string) => void;
 };
 
 const sectionConfigs: ProductSectionConfig[] = [
   {
-    id: "supplement-festival",
-    title: "Supplement Festival",
-    subtitle: "Up-To 70% Discount",
-    href: "/supplement",
+    id: "all-products",
+    title: "All Products",
+    subtitle: "Explore every product from data.json",
+    href: "/store",
     startIndex: 0,
-    productCount: 20,
+    productCount: 9999,
     background:
       "linear-gradient(145deg, #ffffff 0%, #fbfefd 48%, #f4fbf9 100%)",
     headingColor: "#087b75",
   },
-  {
-    id: "keep-it-luxe",
-    title: "Keep It Luxe",
-    href: "/beauty",
-    startIndex: 20,
-    productCount: 20,
-    background:
-      "linear-gradient(145deg, #fffdf9 0%, #ffffff 48%, #fff7eb 100%)",
-    headingColor: "#b7791f",
-  },
-  {
-    id: "otc-medicine",
-    title: "OTC Medicine",
-    href: "/medicine",
-    startIndex: 40,
-    productCount: 20,
-    background:
-      "linear-gradient(145deg, #f8fbff 0%, #ffffff 48%, #f2f7ff 100%)",
-    headingColor: "#175ca8",
-    fixedDiscount: 10,
-  },
 ];
 
-const fallbackDiscounts = [
-  55, 45, 38, 20, 40, 40, 14, 33, 9, 25, 18, 12, 30, 22, 15, 27, 36, 16,
-  24, 10,
-];
+
 
 export default function StoreProductSections() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState("");
-  const [cartItems, setCartItems] = useState<number[]>([]);
+  const [cartItems, setCartItems] = useState<string[]>([]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -163,7 +153,7 @@ export default function StoreProductSections() {
     };
   }, []);
 
-  const toggleCart = (productId: number) => {
+  const toggleCart = (productId: string) => {
     setCartItems((currentItems) => {
       if (currentItems.includes(productId)) {
         return currentItems.filter((id) => id !== productId);
@@ -1275,7 +1265,7 @@ function ProductCard({
           className="store-product-shine"
         />
 
-        <DiscountBadge discount={product.discount} />
+        {product.discount > 0 && <DiscountBadge discount={product.discount} />}
 
         <span className="store-product-brand">
           {product.brand || "Product"}
@@ -1283,7 +1273,7 @@ function ProductCard({
       </Link>
 
       <div className="store-product-content">
-        <DeliveryBadge />
+        <DeliveryBadge text={product.deliveryText} />
 
         <Link
           href={product.href}
@@ -1328,7 +1318,16 @@ function ProductCard({
 
           <button
             type="button"
-            onClick={onToggleCart}
+            onClick={() => {
+              onToggleCart();
+              const current = JSON.parse(localStorage.getItem("arogga-cart") || "[]") as Array<{ id: string; quantity: number }>;
+              const exists = current.find((item) => item.id === product.id);
+              const next = exists
+                ? current.map((item) => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item)
+                : [...current, { id: product.id, slug: product.slug, name: product.title, image: product.image, price: product.salePrice, quantity: 1 }];
+              localStorage.setItem("arogga-cart", JSON.stringify(next));
+              window.location.href = product.href;
+            }}
             aria-label={
               added
                 ? `Remove ${product.title} from cart`
@@ -1391,7 +1390,7 @@ function ProductArrow({
   );
 }
 
-function DeliveryBadge() {
+function DeliveryBadge({ text }: { text: string }) {
   return (
     <div className="store-product-delivery">
       <span className="store-product-delivery-icon">
@@ -1402,7 +1401,7 @@ function DeliveryBadge() {
         />
       </span>
 
-      12-24 HOURS
+      {text}
     </div>
   );
 }
@@ -1428,36 +1427,27 @@ function DiscountBadge({
 
 function normalizeProduct(
   product: JsonProduct,
-  index: number,
+  _index: number,
 ): Product {
-  const salePrice = Number(product.price);
-
-  const discount =
-    fallbackDiscounts[index % fallbackDiscounts.length];
-
-  const originalPrice = Number(
-    (
-      salePrice /
-      (1 - discount / 100)
-    ).toFixed(2),
-  );
-
-  const slug = createSlug(product.title);
+  const salePrice = Number(product.pricing.salePrice ?? product.pricing.regularPrice);
+  const discount = Math.max(0, Math.round(product.pricing.discount?.percentage ?? 0));
+  const originalPrice = Number(product.pricing.regularPrice);
 
   return {
-    ...product,
-    slug,
-    href: `/product/${slug}`,
+    id: product.id,
+    brand: product.brand.name,
+    title: product.name,
+    category: product.taxonomy.subCategory?.name ?? product.taxonomy.category.name,
+    image: product.media.featuredImage.url,
+    rating: product.ratings.average,
+    slug: product.slug,
+    href: `/products/${product.slug}`,
     salePrice,
     originalPrice,
     discount,
-    reviewCount:
-      product.rating !== null
-        ? ((product.id * 37) % 180) + 1
-        : 0,
-    currencySymbol: getCurrencySymbol(
-      product.currency,
-    ),
+    reviewCount: product.ratings.count,
+    currencySymbol: getCurrencySymbol(product.pricing.currency),
+    deliveryText: `${product.shipping.delivery.estimatedMinimumDays}-${product.shipping.delivery.estimatedMaximumDays} DAYS`,
   };
 }
 
@@ -1477,29 +1467,18 @@ function applyFixedDiscount(
   };
 }
 
-function isValidProduct(
-  value: unknown,
-): value is JsonProduct {
-  if (
-    typeof value !== "object" ||
-    value === null
-  ) {
-    return false;
-  }
-
+function isValidProduct(value: unknown): value is JsonProduct {
+  if (typeof value !== "object" || value === null) return false;
   const product = value as Partial<JsonProduct>;
-
   return (
-    typeof product.id === "number" &&
-    typeof product.brand === "string" &&
-    typeof product.title === "string" &&
-    typeof product.category === "string" &&
-    typeof product.image === "string" &&
-    typeof product.price === "number" &&
-    typeof product.currency === "string" &&
-    (typeof product.rating === "number" ||
-      product.rating === null) &&
-    typeof product.productUrl === "string"
+    typeof product.id === "string" &&
+    typeof product.slug === "string" &&
+    typeof product.name === "string" &&
+    typeof product.brand?.name === "string" &&
+    typeof product.media?.featuredImage?.url === "string" &&
+    typeof product.pricing?.regularPrice === "number" &&
+    typeof product.pricing?.currency === "string" &&
+    (typeof product.ratings?.average === "number" || product.ratings?.average === null)
   );
 }
 

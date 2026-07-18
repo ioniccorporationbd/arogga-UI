@@ -3,25 +3,25 @@
 import { ProductSectionCollection } from "./ProductSection";
 import type { ProductCardData } from "./product-data";
 
-const keywords = ['sun', 'sunscreen', 'summer', 'hydration'];
+const keywords = ['baby', 'kids', 'child', 'tiny'];
 
 function matchesSection(product: ProductCardData) {
   const searchable = `${product.name} ${product.brand} ${product.category}`.toLowerCase();
   return keywords.some((keyword) => searchable.includes(keyword));
 }
 
-export default function SunAndSplash() {
+export default function TinyTots() {
   return (
     <ProductSectionCollection
       sections={[
         {
-          id: "sun-and-splash",
-          title: "Sun & Splash",
-          subtitle: "Suncare, hydration, and warm-weather essentials.",
-          href: "/offers/sun-splash",
+          id: "tiny-tots",
+          title: "Tiny Tots👣",
+          subtitle: "Gentle baby care and children’s daily essentials.",
+          href: "/category/baby-care",
           minimumCards: 20,
-          background: "#fff9df",
-          headingColor: "#d18a00",
+          background: "#eef7ff",
+          headingColor: "#3578b8",
           filter: matchesSection,
         },
       ]}

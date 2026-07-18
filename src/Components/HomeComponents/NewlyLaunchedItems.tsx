@@ -3,25 +3,25 @@
 import { ProductSectionCollection } from "./ProductSection";
 import type { ProductCardData } from "./product-data";
 
-const keywords = ['sun', 'sunscreen', 'summer', 'hydration'];
+const keywords = ['new', 'latest'];
 
 function matchesSection(product: ProductCardData) {
   const searchable = `${product.name} ${product.brand} ${product.category}`.toLowerCase();
   return keywords.some((keyword) => searchable.includes(keyword));
 }
 
-export default function SunAndSplash() {
+export default function NewlyLaunchedItems() {
   return (
     <ProductSectionCollection
       sections={[
         {
-          id: "sun-and-splash",
-          title: "Sun & Splash",
-          subtitle: "Suncare, hydration, and warm-weather essentials.",
-          href: "/offers/sun-splash",
+          id: "newly-launched-items",
+          title: "Newly Launched Items",
+          subtitle: "Explore the latest products added to the store.",
+          href: "/store?sort=newest",
           minimumCards: 20,
-          background: "#fff9df",
-          headingColor: "#d18a00",
+          background: "#f3fbff",
+          headingColor: "#087b75",
           filter: matchesSection,
         },
       ]}

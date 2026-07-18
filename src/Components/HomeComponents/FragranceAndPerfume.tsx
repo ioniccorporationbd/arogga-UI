@@ -3,25 +3,25 @@
 import { ProductSectionCollection } from "./ProductSection";
 import type { ProductCardData } from "./product-data";
 
-const keywords = ['sun', 'sunscreen', 'summer', 'hydration'];
+const keywords = ['fragrance', 'perfume', 'scent', 'body spray'];
 
 function matchesSection(product: ProductCardData) {
   const searchable = `${product.name} ${product.brand} ${product.category}`.toLowerCase();
   return keywords.some((keyword) => searchable.includes(keyword));
 }
 
-export default function SunAndSplash() {
+export default function FragranceAndPerfume() {
   return (
     <ProductSectionCollection
       sections={[
         {
-          id: "sun-and-splash",
-          title: "Sun & Splash",
-          subtitle: "Suncare, hydration, and warm-weather essentials.",
-          href: "/offers/sun-splash",
+          id: "fragrance-and-perfume",
+          title: "Fragrance & Perfume",
+          subtitle: "Discover perfumes, body sprays, and signature scents.",
+          href: "/category/fragrance-perfume",
           minimumCards: 20,
-          background: "#fff9df",
-          headingColor: "#d18a00",
+          background: "#fff1f8",
+          headingColor: "#c43b87",
           filter: matchesSection,
         },
       ]}

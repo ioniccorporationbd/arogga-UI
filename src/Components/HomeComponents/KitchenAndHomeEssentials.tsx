@@ -3,25 +3,25 @@
 import { ProductSectionCollection } from "./ProductSection";
 import type { ProductCardData } from "./product-data";
 
-const keywords = ['sun', 'sunscreen', 'summer', 'hydration'];
+const keywords = ['kitchen', 'home', 'household', 'cleaning'];
 
 function matchesSection(product: ProductCardData) {
   const searchable = `${product.name} ${product.brand} ${product.category}`.toLowerCase();
   return keywords.some((keyword) => searchable.includes(keyword));
 }
 
-export default function SunAndSplash() {
+export default function KitchenAndHomeEssentials() {
   return (
     <ProductSectionCollection
       sections={[
         {
-          id: "sun-and-splash",
-          title: "Sun & Splash",
-          subtitle: "Suncare, hydration, and warm-weather essentials.",
-          href: "/offers/sun-splash",
+          id: "kitchen-home-essentials",
+          title: "Kitchen & Home Essentials",
+          subtitle: "Useful products for your kitchen and everyday home care.",
+          href: "/category/kitchen-home",
           minimumCards: 20,
-          background: "#fff9df",
-          headingColor: "#d18a00",
+          background: "#fff9ed",
+          headingColor: "#9b6410",
           filter: matchesSection,
         },
       ]}
