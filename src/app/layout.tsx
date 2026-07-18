@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import CategoryNav from "@/Components/CategoryNav";
+
 import Footer from "@/Components/Footer";
 import TopNavber from "@/Components/TopNavber";
 import AboveFooterVideo from "@/Components/AboveFooterVideo";
 import "./globals.css";
+import SectionNavigation from "@/Components/SectionNavigation";
 
 export const metadata: Metadata = {
   title: "Arogga Store",
@@ -17,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="site-wrapper">
         <TopNavber />
-        <CategoryNav />
+        <SectionNavigation/>
         <main className="site-main">{children}</main>
         <AboveFooterVideo/> 
         <Footer />

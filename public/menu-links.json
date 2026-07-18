@@ -1,0 +1,1035 @@
+{
+  "store": [
+    {
+      "label": "Home",
+      "section": "store",
+      "isStatic": true,
+      "groups": []
+    },
+    {
+      "label": "Medicine",
+      "href": "/medicine",
+      "section": "store",
+      "groups": [
+        {
+          "label": "General Conditions",
+          "href": "/medicine/general-conditions",
+          "children": [
+            {
+              "label": "Vitamin, Mineral & Nutritional Deficiency",
+              "href": "/medicine/general-conditions/vitamin-mineral-and-nutritional-deficiency"
+            },
+            {
+              "label": "Gastrointestinal System",
+              "href": "/medicine/general-conditions/gastrointestinal-system"
+            },
+            {
+              "label": "Respiratory System",
+              "href": "/medicine/general-conditions/respiratory-system"
+            },
+            {
+              "label": "Dermatological Preparations",
+              "href": "/medicine/general-conditions/dermatological-preparations"
+            },
+            {
+              "label": "E.N.T Preparations",
+              "href": "/medicine/general-conditions/e-n-t-preparations"
+            },
+            {
+              "label": "Allergy & Immune System",
+              "href": "/medicine/general-conditions/allergy-and-immune-system"
+            },
+            {
+              "label": "Endocrine & Metabolic System",
+              "href": "/medicine/general-conditions/endocrine-and-metabolic-system"
+            },
+            {
+              "label": "Asthma & Prophylaxis",
+              "href": "/medicine/general-conditions/asthma-and-prophylaxis"
+            },
+            {
+              "label": "Anemia & Other Blood Disorders",
+              "href": "/medicine/general-conditions/anemia-and-other-blood-disorders"
+            },
+            {
+              "label": "Cardiovascular System",
+              "href": "/medicine/general-conditions/cardiovascular-system"
+            },
+            {
+              "label": "Nephrology & Urology",
+              "href": "/medicine/general-conditions/nephrology-and-urology"
+            },
+            {
+              "label": "Anesthetics & Neuromuscular Blocking",
+              "href": "/medicine/general-conditions/anesthetics-and-neuromuscular-blocking"
+            },
+            {
+              "label": "Analgesic & Antipyretic",
+              "href": "/medicine/general-conditions/analgesic-and-antipyretic"
+            },
+            {
+              "label": "Central Nervous System",
+              "href": "/medicine/general-conditions/central-nervous-system"
+            },
+            {
+              "label": "Musculoskeletal Systems",
+              "href": "/medicine/general-conditions/musculoskeletal-systems"
+            },
+            {
+              "label": "Eye Preparations",
+              "href": "/medicine/general-conditions/eye-preparations"
+            },
+            {
+              "label": "Bone Formation & Disorders",
+              "href": "/medicine/general-conditions/bone-formation-and-disorders"
+            },
+            {
+              "label": "Genitourinary System",
+              "href": "/medicine/general-conditions/genitourinary-system"
+            },
+            {
+              "label": "Cerebrovascular System & Chemotherapy",
+              "href": "/medicine/general-conditions/cerebrovascular-system-and-chemotherapy"
+            },
+            {
+              "label": "Antimicrobial",
+              "href": "/medicine/general-conditions/antimicrobial"
+            }
+          ]
+        },
+        {
+          "label": "Medicine Collections",
+          "href": "/medicine/medicine-collections",
+          "children": [
+            {
+              "label": "Doctor Guided Medicine",
+              "href": "/medicine/medicine-collections/doctor-guided-medicine"
+            },
+            {
+              "label": "Care for Her",
+              "href": "/medicine/medicine-collections/care-for-her"
+            },
+            {
+              "label": "Heart Health",
+              "href": "/medicine/medicine-collections/heart-health"
+            },
+            {
+              "label": "Bone & Joint",
+              "href": "/medicine/medicine-collections/bone-and-joint"
+            },
+            {
+              "label": "ENT Vital",
+              "href": "/medicine/medicine-collections/ent-vital"
+            },
+            {
+              "label": "OTC Medicine",
+              "href": "/medicine/medicine-collections/otc-medicine"
+            },
+            {
+              "label": "All Products",
+              "href": "/medicine/medicine-collections/all-products"
+            }
+          ]
+        },
+        {
+          "label": "Top Pharmaceutical Brands",
+          "href": "/medicine/top-pharmaceutical-brands",
+          "children": [
+            {
+              "label": "Square Pharmaceuticals PLC",
+              "href": "/medicine/top-pharmaceutical-brands/square-pharmaceuticals-plc"
+            },
+            {
+              "label": "Beximco Pharmaceuticals Ltd",
+              "href": "/medicine/top-pharmaceutical-brands/beximco-pharmaceuticals-ltd"
+            },
+            {
+              "label": "Incepta Pharmaceuticals Ltd",
+              "href": "/medicine/top-pharmaceutical-brands/incepta-pharmaceuticals-ltd"
+            },
+            {
+              "label": "Renata Limited",
+              "href": "/medicine/top-pharmaceutical-brands/renata-limited"
+            },
+            {
+              "label": "The ACME Laboratories Ltd",
+              "href": "/medicine/top-pharmaceutical-brands/the-acme-laboratories-ltd"
+            },
+            {
+              "label": "Opsonin Pharma Limited",
+              "href": "/medicine/top-pharmaceutical-brands/opsonin-pharma-limited"
+            },
+            {
+              "label": "Eskayef Pharmaceuticals Ltd",
+              "href": "/medicine/top-pharmaceutical-brands/eskayef-pharmaceuticals-ltd"
+            },
+            {
+              "label": "Healthcare Pharmaceuticals Ltd",
+              "href": "/medicine/top-pharmaceutical-brands/healthcare-pharmaceuticals-ltd"
+            },
+            {
+              "label": "Radiant Pharmaceuticals Ltd",
+              "href": "/medicine/top-pharmaceutical-brands/radiant-pharmaceuticals-ltd"
+            },
+            {
+              "label": "Popular Pharmaceuticals Ltd",
+              "href": "/medicine/top-pharmaceutical-brands/popular-pharmaceuticals-ltd"
+            },
+            {
+              "label": "The Ibn Sina Pharmaceutical Industry Ltd",
+              "href": "/medicine/top-pharmaceutical-brands/the-ibn-sina-pharmaceutical-industry-ltd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Healthcare",
+      "href": "/healthcare",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Healthcare Categories",
+          "href": "/healthcare/healthcare-categories",
+          "children": [
+            {
+              "label": "Medical Devices",
+              "href": "/healthcare/healthcare-categories/medical-devices"
+            },
+            {
+              "label": "Personal Hygiene",
+              "href": "/healthcare/healthcare-categories/personal-hygiene"
+            },
+            {
+              "label": "Surgical Supplies",
+              "href": "/healthcare/healthcare-categories/surgical-supplies"
+            },
+            {
+              "label": "Blood Pressure Monitors",
+              "href": "/healthcare/healthcare-categories/blood-pressure-monitors"
+            },
+            {
+              "label": "Glucometers",
+              "href": "/healthcare/healthcare-categories/glucometers"
+            },
+            {
+              "label": "Thermometers",
+              "href": "/healthcare/healthcare-categories/thermometers"
+            },
+            {
+              "label": "Nebulizers",
+              "href": "/healthcare/healthcare-categories/nebulizers"
+            },
+            {
+              "label": "First Aid",
+              "href": "/healthcare/healthcare-categories/first-aid"
+            },
+            {
+              "label": "Mobility Aids",
+              "href": "/healthcare/healthcare-categories/mobility-aids"
+            },
+            {
+              "label": "Daily Health Monitoring",
+              "href": "/healthcare/healthcare-categories/daily-health-monitoring"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Beauty",
+      "href": "/beauty",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Skincare",
+          "href": "/beauty/skincare",
+          "children": [
+            {
+              "label": "Skin Care Set",
+              "href": "/beauty/skincare/skin-care-set"
+            },
+            {
+              "label": "Toner & Mist",
+              "href": "/beauty/skincare/toner-and-mist"
+            },
+            {
+              "label": "Exfoliators",
+              "href": "/beauty/skincare/exfoliators"
+            },
+            {
+              "label": "Face Masks",
+              "href": "/beauty/skincare/face-masks"
+            },
+            {
+              "label": "Anti-Aging Products",
+              "href": "/beauty/skincare/anti-aging-products"
+            },
+            {
+              "label": "Acne Treatment",
+              "href": "/beauty/skincare/acne-treatment"
+            },
+            {
+              "label": "Lip Balm & Petroleum Jelly",
+              "href": "/beauty/skincare/lip-balm-and-petroleum-jelly"
+            },
+            {
+              "label": "Sunscreen & UV Protections",
+              "href": "/beauty/skincare/sunscreen-and-uv-protections"
+            },
+            {
+              "label": "Cream & Moisturizer",
+              "href": "/beauty/skincare/cream-and-moisturizer"
+            },
+            {
+              "label": "Serums & Ampoules",
+              "href": "/beauty/skincare/serums-and-ampoules"
+            },
+            {
+              "label": "Cleansers",
+              "href": "/beauty/skincare/cleansers"
+            }
+          ]
+        },
+        {
+          "label": "Haircare",
+          "href": "/beauty/haircare",
+          "children": [
+            {
+              "label": "Shampoo",
+              "href": "/beauty/haircare/shampoo"
+            },
+            {
+              "label": "Conditioner",
+              "href": "/beauty/haircare/conditioner"
+            },
+            {
+              "label": "Hair Oil",
+              "href": "/beauty/haircare/hair-oil"
+            },
+            {
+              "label": "Hair Serum",
+              "href": "/beauty/haircare/hair-serum"
+            },
+            {
+              "label": "Hair Color",
+              "href": "/beauty/haircare/hair-color"
+            },
+            {
+              "label": "Hair Treatment",
+              "href": "/beauty/haircare/hair-treatment"
+            },
+            {
+              "label": "Hair Styling",
+              "href": "/beauty/haircare/hair-styling"
+            }
+          ]
+        },
+        {
+          "label": "Personal Care",
+          "href": "/beauty/personal-care",
+          "children": [
+            {
+              "label": "Feminine Care",
+              "href": "/beauty/personal-care/feminine-care"
+            },
+            {
+              "label": "Oral Care",
+              "href": "/beauty/personal-care/oral-care"
+            },
+            {
+              "label": "Deodorants & Antiperspirants",
+              "href": "/beauty/personal-care/deodorants-and-antiperspirants"
+            },
+            {
+              "label": "Bath & Body",
+              "href": "/beauty/personal-care/bath-and-body"
+            },
+            {
+              "label": "Hand & Foot Care",
+              "href": "/beauty/personal-care/hand-and-foot-care"
+            }
+          ]
+        },
+        {
+          "label": "Men's Grooming",
+          "href": "/beauty/mens-grooming",
+          "children": [
+            {
+              "label": "Men's Face Care",
+              "href": "/beauty/mens-grooming/mens-face-care"
+            },
+            {
+              "label": "Men's Hair Care",
+              "href": "/beauty/mens-grooming/mens-hair-care"
+            },
+            {
+              "label": "Shaving & Beard Care",
+              "href": "/beauty/mens-grooming/shaving-and-beard-care"
+            },
+            {
+              "label": "Men's Body Care",
+              "href": "/beauty/mens-grooming/mens-body-care"
+            }
+          ]
+        },
+        {
+          "label": "Fragrance & Perfume",
+          "href": "/beauty/fragrance-and-perfume",
+          "children": [
+            {
+              "label": "Women's Perfume",
+              "href": "/beauty/fragrance-and-perfume/womens-perfume"
+            },
+            {
+              "label": "Men's Perfume",
+              "href": "/beauty/fragrance-and-perfume/mens-perfume"
+            },
+            {
+              "label": "Body Spray",
+              "href": "/beauty/fragrance-and-perfume/body-spray"
+            },
+            {
+              "label": "Attar",
+              "href": "/beauty/fragrance-and-perfume/attar"
+            }
+          ]
+        },
+        {
+          "label": "Makeup",
+          "href": "/beauty/makeup",
+          "children": [
+            {
+              "label": "Face Makeup",
+              "href": "/beauty/makeup/face-makeup"
+            },
+            {
+              "label": "Eye Makeup",
+              "href": "/beauty/makeup/eye-makeup"
+            },
+            {
+              "label": "Lip Makeup",
+              "href": "/beauty/makeup/lip-makeup"
+            },
+            {
+              "label": "Nail Care",
+              "href": "/beauty/makeup/nail-care"
+            },
+            {
+              "label": "Makeup Tools",
+              "href": "/beauty/makeup/makeup-tools"
+            }
+          ]
+        },
+        {
+          "label": "Organic Beauty",
+          "href": "/beauty/organic-beauty",
+          "children": [
+            {
+              "label": "Organic Skincare",
+              "href": "/beauty/organic-beauty/organic-skincare"
+            },
+            {
+              "label": "Organic Haircare",
+              "href": "/beauty/organic-beauty/organic-haircare"
+            },
+            {
+              "label": "Natural Oils",
+              "href": "/beauty/organic-beauty/natural-oils"
+            }
+          ]
+        },
+        {
+          "label": "Feminine Care",
+          "href": "/beauty/feminine-care",
+          "children": [
+            {
+              "label": "Sanitary Napkins",
+              "href": "/beauty/feminine-care/sanitary-napkins"
+            },
+            {
+              "label": "Panty Liners",
+              "href": "/beauty/feminine-care/panty-liners"
+            },
+            {
+              "label": "Intimate Wash",
+              "href": "/beauty/feminine-care/intimate-wash"
+            },
+            {
+              "label": "Menstrual Care",
+              "href": "/beauty/feminine-care/menstrual-care"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Sexual Wellness",
+      "href": "/sexual-wellness",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Sexual Wellness Categories",
+          "href": "/sexual-wellness/categories",
+          "children": [
+            {
+              "label": "Condoms",
+              "href": "/sexual-wellness/condoms"
+            },
+            {
+              "label": "Lubricants",
+              "href": "/sexual-wellness/lubricants"
+            },
+            {
+              "label": "Family Planning",
+              "href": "/sexual-wellness/family-planning"
+            },
+            {
+              "label": "Intimate Hygiene",
+              "href": "/sexual-wellness/intimate-hygiene"
+            },
+            {
+              "label": "Men's Wellness",
+              "href": "/sexual-wellness/mens-wellness"
+            },
+            {
+              "label": "Women's Wellness",
+              "href": "/sexual-wellness/womens-wellness"
+            },
+            {
+              "label": "Fertility Care",
+              "href": "/sexual-wellness/fertility-care"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Baby & Mom Care",
+      "href": "/baby-mom-care",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Baby & Mom Care Categories",
+          "href": "/baby-mom-care/categories",
+          "children": [
+            {
+              "label": "Baby Food",
+              "href": "/baby-mom-care/baby-food"
+            },
+            {
+              "label": "Diapers & Wipes",
+              "href": "/baby-mom-care/diapers-and-wipes"
+            },
+            {
+              "label": "Baby Skincare",
+              "href": "/baby-mom-care/baby-skincare"
+            },
+            {
+              "label": "Baby Bath",
+              "href": "/baby-mom-care/baby-bath"
+            },
+            {
+              "label": "Feeding Essentials",
+              "href": "/baby-mom-care/feeding-essentials"
+            },
+            {
+              "label": "Mother Care",
+              "href": "/baby-mom-care/mother-care"
+            },
+            {
+              "label": "Pregnancy Care",
+              "href": "/baby-mom-care/pregnancy-care"
+            },
+            {
+              "label": "Baby Accessories",
+              "href": "/baby-mom-care/baby-accessories"
+            },
+            {
+              "label": "Newborn Essentials",
+              "href": "/baby-mom-care/newborn-essentials"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Herbal",
+      "href": "/herbal",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Herbal Categories",
+          "href": "/herbal/categories",
+          "children": [
+            {
+              "label": "Herbal Medicine",
+              "href": "/herbal/herbal-medicine"
+            },
+            {
+              "label": "Ayurvedic Care",
+              "href": "/herbal/ayurvedic-care"
+            },
+            {
+              "label": "Natural Supplements",
+              "href": "/herbal/natural-supplements"
+            },
+            {
+              "label": "Herbal Tea",
+              "href": "/herbal/herbal-tea"
+            },
+            {
+              "label": "Herbal Skincare",
+              "href": "/herbal/herbal-skincare"
+            },
+            {
+              "label": "Herbal Haircare",
+              "href": "/herbal/herbal-haircare"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Homecare",
+      "href": "/homecare",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Homecare Categories",
+          "href": "/homecare/categories",
+          "children": [
+            {
+              "label": "Household Cleaning",
+              "href": "/homecare/household-cleaning"
+            },
+            {
+              "label": "Laundry Care",
+              "href": "/homecare/laundry-care"
+            },
+            {
+              "label": "Dishwashing",
+              "href": "/homecare/dishwashing"
+            },
+            {
+              "label": "Air Fresheners",
+              "href": "/homecare/air-fresheners"
+            },
+            {
+              "label": "Kitchen Care",
+              "href": "/homecare/kitchen-care"
+            },
+            {
+              "label": "Bathroom Care",
+              "href": "/homecare/bathroom-care"
+            },
+            {
+              "label": "Disinfectants",
+              "href": "/homecare/disinfectants"
+            },
+            {
+              "label": "Paper Products",
+              "href": "/homecare/paper-products"
+            },
+            {
+              "label": "Pest Control",
+              "href": "/homecare/pest-control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Supplement",
+      "href": "/supplement",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Supplement Categories",
+          "href": "/supplement/categories",
+          "children": [
+            {
+              "label": "Vitamins",
+              "href": "/supplement/vitamins"
+            },
+            {
+              "label": "Minerals",
+              "href": "/supplement/minerals"
+            },
+            {
+              "label": "Omega & Fish Oil",
+              "href": "/supplement/omega-and-fish-oil"
+            },
+            {
+              "label": "Protein Supplements",
+              "href": "/supplement/protein-supplements"
+            },
+            {
+              "label": "Immunity Support",
+              "href": "/supplement/immunity-support"
+            },
+            {
+              "label": "Bone & Joint Care",
+              "href": "/supplement/bone-and-joint-care"
+            },
+            {
+              "label": "Heart Support",
+              "href": "/supplement/heart-support"
+            },
+            {
+              "label": "Digestive Support",
+              "href": "/supplement/digestive-support"
+            },
+            {
+              "label": "Women's Supplements",
+              "href": "/supplement/womens-supplements"
+            },
+            {
+              "label": "Men's Supplements",
+              "href": "/supplement/mens-supplements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Food & Nutrition",
+      "href": "/food-and-nutrition",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Food & Nutrition Categories",
+          "href": "/food-and-nutrition/categories",
+          "children": [
+            {
+              "label": "Healthy Snacks",
+              "href": "/food-and-nutrition/healthy-snacks"
+            },
+            {
+              "label": "Breakfast Foods",
+              "href": "/food-and-nutrition/breakfast-foods"
+            },
+            {
+              "label": "Drinks & Beverages",
+              "href": "/food-and-nutrition/drinks-and-beverages"
+            },
+            {
+              "label": "Organic Food",
+              "href": "/food-and-nutrition/organic-food"
+            },
+            {
+              "label": "Diet Food",
+              "href": "/food-and-nutrition/diet-food"
+            },
+            {
+              "label": "Diabetic Food",
+              "href": "/food-and-nutrition/diabetic-food"
+            },
+            {
+              "label": "Baby Nutrition",
+              "href": "/food-and-nutrition/baby-nutrition"
+            },
+            {
+              "label": "Protein Food",
+              "href": "/food-and-nutrition/protein-food"
+            },
+            {
+              "label": "Honey & Spreads",
+              "href": "/food-and-nutrition/honey-and-spreads"
+            },
+            {
+              "label": "Cooking Essentials",
+              "href": "/food-and-nutrition/cooking-essentials"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Pet Care",
+      "href": "/pet-care",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Pet Care Categories",
+          "href": "/pet-care/categories",
+          "children": [
+            {
+              "label": "Dog Care",
+              "href": "/pet-care/dog-care"
+            },
+            {
+              "label": "Cat Care",
+              "href": "/pet-care/cat-care"
+            },
+            {
+              "label": "Pet Food",
+              "href": "/pet-care/pet-food"
+            },
+            {
+              "label": "Pet Medicine",
+              "href": "/pet-care/pet-medicine"
+            },
+            {
+              "label": "Pet Grooming",
+              "href": "/pet-care/pet-grooming"
+            },
+            {
+              "label": "Pet Hygiene",
+              "href": "/pet-care/pet-hygiene"
+            },
+            {
+              "label": "Pet Accessories",
+              "href": "/pet-care/pet-accessories"
+            },
+            {
+              "label": "Pet Supplements",
+              "href": "/pet-care/pet-supplements"
+            },
+            {
+              "label": "Bird Care",
+              "href": "/pet-care/bird-care"
+            },
+            {
+              "label": "Aquarium Care",
+              "href": "/pet-care/aquarium-care"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Veterinary",
+      "href": "/veterinary",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Veterinary Categories",
+          "href": "/veterinary/categories",
+          "children": [
+            {
+              "label": "Livestock Medicine",
+              "href": "/veterinary/livestock-medicine"
+            },
+            {
+              "label": "Poultry Medicine",
+              "href": "/veterinary/poultry-medicine"
+            },
+            {
+              "label": "Cattle Care",
+              "href": "/veterinary/cattle-care"
+            },
+            {
+              "label": "Goat & Sheep Care",
+              "href": "/veterinary/goat-and-sheep-care"
+            },
+            {
+              "label": "Farm Supplements",
+              "href": "/veterinary/farm-supplements"
+            },
+            {
+              "label": "Animal Vaccines",
+              "href": "/veterinary/animal-vaccines"
+            },
+            {
+              "label": "Veterinary Devices",
+              "href": "/veterinary/veterinary-devices"
+            },
+            {
+              "label": "Animal Hygiene",
+              "href": "/veterinary/animal-hygiene"
+            },
+            {
+              "label": "Feed Supplements",
+              "href": "/veterinary/feed-supplements"
+            },
+            {
+              "label": "Farm Essentials",
+              "href": "/veterinary/farm-essentials"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Homeopathy",
+      "href": "/homeopathy",
+      "section": "store",
+      "groups": [
+        {
+          "label": "Homeopathy Categories",
+          "href": "/homeopathy/categories",
+          "children": [
+            {
+              "label": "Cold & Flu",
+              "href": "/homeopathy/cold-and-flu"
+            },
+            {
+              "label": "Digestive Care",
+              "href": "/homeopathy/digestive-care"
+            },
+            {
+              "label": "Pain Care",
+              "href": "/homeopathy/pain-care"
+            },
+            {
+              "label": "Skin Care",
+              "href": "/homeopathy/skin-care"
+            },
+            {
+              "label": "Women Care",
+              "href": "/homeopathy/women-care"
+            },
+            {
+              "label": "Child Care",
+              "href": "/homeopathy/child-care"
+            },
+            {
+              "label": "Stress & Sleep",
+              "href": "/homeopathy/stress-and-sleep"
+            },
+            {
+              "label": "Allergy Care",
+              "href": "/homeopathy/allergy-care"
+            },
+            {
+              "label": "Immunity Care",
+              "href": "/homeopathy/immunity-care"
+            },
+            {
+              "label": "General Wellness",
+              "href": "/homeopathy/general-wellness"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lab": [
+    {
+      "label": "Lab Test",
+      "href": "/lab-test",
+      "section": "lab",
+      "groups": [
+        {
+          "label": "Health Checkups",
+          "href": "/lab-test/health-checkups",
+          "children": [
+            {
+              "label": "Vital Organs",
+              "href": "/lab-test/health-checkups/vital-organs"
+            },
+            {
+              "label": "Life Style Packages",
+              "href": "/lab-test/health-checkups/life-style-packages"
+            },
+            {
+              "label": "Checkups for Women",
+              "href": "/lab-test/health-checkups/checkups-for-women"
+            },
+            {
+              "label": "Checkups for Men",
+              "href": "/lab-test/health-checkups/checkups-for-men"
+            },
+            {
+              "label": "Popular Tests",
+              "href": "/lab-test/health-checkups/popular-tests"
+            },
+            {
+              "label": "Home Sample Collection",
+              "href": "/lab-test/health-checkups/home-sample-collection"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "doctor": [
+    {
+      "label": "Doctor Consultation",
+      "href": "/doctor-consultation",
+      "section": "doctor",
+      "groups": []
+    }
+  ],
+  "utility": [
+    {
+      "label": "Flash Sale",
+      "href": "/flash-sale"
+    },
+    {
+      "label": "Upload Prescription",
+      "href": "/upload-prescription"
+    },
+    {
+      "label": "Store",
+      "href": "/store"
+    },
+    {
+      "label": "Lab",
+      "href": "/lab-test"
+    },
+    {
+      "label": "Doctor",
+      "href": "/doctor-consultation"
+    },
+    {
+      "label": "Account",
+      "href": "/account"
+    },
+    {
+      "label": "Orders",
+      "href": "/account/orders"
+    },
+    {
+      "label": "Inbox",
+      "href": "/account/inbox"
+    },
+    {
+      "label": "Cart",
+      "href": "/cart"
+    },
+    {
+      "label": "Checkout",
+      "href": "/checkout"
+    },
+    {
+      "label": "Careers",
+      "href": "/careers"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "label": "Terms and Conditions",
+      "href": "/terms-and-conditions"
+    },
+    {
+      "label": "Return and Refund Policy",
+      "href": "/return-and-refund-policy"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "FAQ",
+      "href": "/faq"
+    },
+    {
+      "label": "Register Your Pharmacy",
+      "href": "/register-your-pharmacy"
+    },
+    {
+      "label": "Special Offers",
+      "href": "/special-offers"
+    }
+  ],
+  "meta": {
+    "sourceNamingReference": "Arogga public website",
+    "urlMode": "local",
+    "externalLinksUsed": false,
+    "generatedFor": "Next.js localhost routes"
+  }
+}
