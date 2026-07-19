@@ -1,20 +1,15 @@
-import React from 'react';
-import HeroBannerSlider from './HeroBannerSlider';
-import HomeLabTestSection from './HomeLabTestSection';
-import TrustedLabPartners from './TrustedLabPartners';
-import HealthPackageExplorer from './HealthPackageExplorer';
-import LabSeoContentSection from './LabSeoContentSection';
+import HeroBannerSlider from "./HeroBannerSlider";
+import LabProductSections from "./LabProductSections";
+import TrustedLabPartners from "./TrustedLabPartners";
+import LabSeoContentSection from "./LabSeoContentSection";
 
-const page = () => {
-    return (
-        <div>
-            <HeroBannerSlider/>
-            <HomeLabTestSection/>
-            <TrustedLabPartners/>
-            <HealthPackageExplorer/>
-            <LabSeoContentSection/>
-        </div>
-    );
-};
-
-export default page;
+export default function LabPage() {
+  return (
+    <div className="min-h-screen overflow-x-hidden bg-white">
+      <HeroBannerSlider />
+      <LabProductSections />
+      <TrustedLabPartners />
+      <LabSeoContentSection />
+    </div>
+  );
+}

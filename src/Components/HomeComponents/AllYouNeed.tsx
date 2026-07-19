@@ -793,13 +793,7 @@ function CategoryCard({
               alt={category.name}
               fill
               priority={priority}
-              sizes="
-                (max-width: 639px) 46vw,
-                (max-width: 767px) 31vw,
-                (max-width: 1023px) 23vw,
-                (max-width: 1279px) 18vw,
-                15vw
-              "
+              sizes="(max-width: 639px) 46vw, (max-width: 767px) 31vw, (max-width: 1023px) 23vw, (max-width: 1279px) 18vw, 15vw"
               className="all-you-need-image"
               style={{
                 objectPosition: category.imagePosition ?? "center",

@@ -305,7 +305,8 @@ export default function SectionNavigation() {
   }, [items, updateScrollButtons]);
 
   useEffect(() => {
-    closeMenu();
+    const frame = window.requestAnimationFrame(closeMenu);
+    return () => window.cancelAnimationFrame(frame);
   }, [pathname, closeMenu]);
 
   useEffect(() => {

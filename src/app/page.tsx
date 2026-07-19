@@ -1,4 +1,3 @@
-import AboveFooterVideo from "@/Components/AboveFooterVideo";
 import AllYouNeed from "@/Components/HomeComponents/AllYouNeed";
 import BasicSiteBanner from "@/Components/HomeComponents/BasicSiteBanner";
 import BlueDealSections from "@/Components/HomeComponents/BlueDealSections";
@@ -15,7 +14,7 @@ import SupplementFestival from "@/Components/HomeComponents/SupplementFestival";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen w-full overflow-x-hidden bg-white">
+    <div className="min-h-screen w-full overflow-x-hidden bg-white">
       <BasicSiteBanner />
 
       <EspeciallyForYou />
@@ -40,9 +39,8 @@ export default function HomePage() {
 
       <NewAndBestSelling />
 
-      <AboveFooterVideo />
 
       <SeoContentSection />
-    </main>
+    </div>
   );
 }

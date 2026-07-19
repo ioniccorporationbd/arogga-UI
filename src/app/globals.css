@@ -1144,3 +1144,48 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Shared stability improvements that preserve the existing visual design. */
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+button,
+a,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:not(:disabled),
+a[href] {
+  touch-action: manipulation;
+}
+
+[data-horizontal-scroll],
+.category-scroll-container,
+.offer-scroll {
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 420px) {
+  .section-shell {
+    padding-inline: 0.875rem;
+  }
+}

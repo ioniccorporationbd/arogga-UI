@@ -163,14 +163,14 @@ export default function VetCareAndBrandsSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/tara.json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load public/data.json. Status: ${response.status}`,
+            `Unable to load public/tara.json. Status: ${response.status}`,
           );
         }
 
@@ -178,7 +178,7 @@ export default function VetCareAndBrandsSection() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/data.json must contain a JSON array of products.",
+            "public/tara.json must contain a JSON array of products.",
           );
         }
 

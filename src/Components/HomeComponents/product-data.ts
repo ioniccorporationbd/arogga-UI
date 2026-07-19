@@ -19,29 +19,11 @@ export type JsonProduct = {
     regularPrice: number;
     salePrice?: number | null;
     compareAtPrice?: number | null;
-    discount?: {
-      isDiscounted?: boolean;
-      percentage?: number | null;
-    } | null;
+    discount?: { isDiscounted?: boolean; percentage?: number | null } | null;
   };
-  inventory: {
-    stockStatus: string;
-    availableQuantity: number;
-  };
-  media: {
-    featuredImage: {
-      url?: string | null;
-      thumbnailUrl?: string | null;
-      alt?: string | null;
-    };
-  };
-  shipping?: {
-    delivery?: {
-      estimatedMinimumDays?: number | null;
-      estimatedMaximumDays?: number | null;
-      sameDayEligible?: boolean;
-    } | null;
-  } | null;
+  inventory: { stockStatus: string; availableQuantity: number };
+  media: { featuredImage: { url?: string | null; thumbnailUrl?: string | null; alt?: string | null } };
+  shipping?: { delivery?: { estimatedMinimumDays?: number | null; estimatedMaximumDays?: number | null; sameDayEligible?: boolean } | null } | null;
   ratings?: { average?: number | null; count?: number | null } | null;
   urls?: { local?: string | null; source?: string | null } | null;
 };
@@ -67,6 +49,7 @@ export type ProductCardData = {
   sourceUrl: string | null;
 };
 
+export const PRODUCT_DATA_URL = "/tara.json";
 export const FALLBACK_IMAGE = "/images/product-fallback.png";
 
 export function isValidProduct(value: unknown): value is JsonProduct {
@@ -87,20 +70,13 @@ export function isValidProduct(value: unknown): value is JsonProduct {
 
 export function normalizeProduct(product: JsonProduct): ProductCardData {
   const regularPrice = Number(product.pricing.regularPrice);
-  const salePrice =
-    typeof product.pricing.salePrice === "number" && product.pricing.salePrice > 0
-      ? product.pricing.salePrice
-      : regularPrice;
-  const calculatedDiscount =
-    regularPrice > salePrice
-      ? Math.round(((regularPrice - salePrice) / regularPrice) * 100)
-      : 0;
+  const salePrice = typeof product.pricing.salePrice === "number" && product.pricing.salePrice > 0 ? product.pricing.salePrice : regularPrice;
+  const calculatedDiscount = regularPrice > salePrice ? Math.round(((regularPrice - salePrice) / regularPrice) * 100) : 0;
   const configuredDiscount = Number(product.pricing.discount?.percentage || 0);
   const delivery = product.shipping?.delivery;
   const deliveryTime = delivery?.sameDayEligible
     ? "SAME DAY"
-    : typeof delivery?.estimatedMinimumDays === "number" &&
-        typeof delivery?.estimatedMaximumDays === "number"
+    : typeof delivery?.estimatedMinimumDays === "number" && typeof delivery?.estimatedMaximumDays === "number"
       ? `${delivery.estimatedMinimumDays}-${delivery.estimatedMaximumDays} DAYS`
       : "2-5 DAYS";
 
@@ -110,32 +86,60 @@ export function normalizeProduct(product: JsonProduct): ProductCardData {
     href: product.urls?.local || `/products/${product.slug}`,
     name: product.name,
     brand: product.brand?.name || "Brand",
-    category:
-      product.taxonomy?.subCategory?.name ||
-      product.taxonomy?.category?.name ||
-      product.taxonomy?.department?.name ||
-      "Product",
-    image:
-      product.media.featuredImage.thumbnailUrl ||
-      product.media.featuredImage.url ||
-      FALLBACK_IMAGE,
+    category: product.taxonomy?.subCategory?.name || product.taxonomy?.category?.name || product.taxonomy?.department?.name || "Product",
+    image: product.media.featuredImage.thumbnailUrl || product.media.featuredImage.url || FALLBACK_IMAGE,
     imageAlt: product.media.featuredImage.alt || product.name,
     currencySymbol: getCurrencySymbol(product.pricing.currency),
     regularPrice,
     salePrice,
     discountPercent: configuredDiscount > 0 ? configuredDiscount : calculatedDiscount,
-    rating:
-      typeof product.ratings?.average === "number"
-        ? product.ratings.average
-        : null,
+    rating: typeof product.ratings?.average === "number" ? product.ratings.average : null,
     reviewCount: Number(product.ratings?.count || 0),
     deliveryTime,
     availableQuantity: product.inventory.availableQuantity,
-    inStock:
-      product.inventory.stockStatus === "in_stock" &&
-      product.inventory.availableQuantity > 0,
+    inStock: product.inventory.stockStatus === "in_stock" && product.inventory.availableQuantity > 0,
     sourceUrl: product.urls?.source || null,
   };
+}
+
+export async function fetchTaraProducts(signal?: AbortSignal): Promise<ProductCardData[]> {
+  const response = await fetch(PRODUCT_DATA_URL, { cache: "force-cache", signal });
+  if (!response.ok) throw new Error(`Product data could not be loaded (${response.status}).`);
+  const payload: unknown = await response.json();
+  const source = Array.isArray(payload) ? payload : [payload];
+  return source
+    .filter(isValidProduct)
+    .filter((product) => (product.status ?? "active") === "active" && (product.visibility ?? "public") === "public")
+    .map(normalizeProduct);
+}
+
+function hashSeed(seed: string) {
+  let hash = 2166136261;
+  for (let i = 0; i < seed.length; i += 1) {
+    hash ^= seed.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function seededRandom(seed: number) {
+  let state = seed || 1;
+  return () => {
+    state = (state * 1664525 + 1013904223) >>> 0;
+    return state / 4294967296;
+  };
+}
+
+export function getRandomProducts(products: ProductCardData[], count = 20, seed = "products") {
+  if (products.length === 0) return [];
+  const random = seededRandom(hashSeed(seed));
+  const shuffled = [...products];
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  const selected = shuffled.slice(0, Math.min(count, shuffled.length));
+  return ensureMinimumProducts(selected, count);
 }
 
 export function getCurrencySymbol(currency: string) {
@@ -149,13 +153,9 @@ export function getCurrencySymbol(currency: string) {
   }
 }
 
-export function ensureMinimumProducts(
-  products: ProductCardData[],
-  minimum = 20,
-): Array<ProductCardData & { renderKey: string }> {
+export function ensureMinimumProducts(products: ProductCardData[], minimum = 20): Array<ProductCardData & { renderKey: string }> {
   if (products.length === 0) return [];
-  const target = Math.max(minimum, products.length);
-  return Array.from({ length: target }, (_, index) => {
+  return Array.from({ length: Math.max(1, minimum) }, (_, index) => {
     const product = products[index % products.length];
     return { ...product, renderKey: `${product.id}-${index}` };
   });

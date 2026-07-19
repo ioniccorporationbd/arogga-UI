@@ -6,9 +6,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   FALLBACK_IMAGE,
   ProductCardData,
-  ensureMinimumProducts,
-  isValidProduct,
-  normalizeProduct,
+  fetchTaraProducts,
+  getRandomProducts,
 } from "./product-data";
 
 export type ProductSectionConfig = {
@@ -34,16 +33,7 @@ export function ProductSectionCollection({ sections }: { sections: ProductSectio
     (async () => {
       try {
         setLoading(true);
-        const response = await fetch("/data.json", { cache: "no-store", signal: controller.signal });
-        if (!response.ok) throw new Error(`Product data could not be loaded (${response.status}).`);
-        const payload: unknown = await response.json();
-        const array = Array.isArray(payload) ? payload : [payload];
-        setProducts(
-          array
-            .filter(isValidProduct)
-            .filter((p) => (p.status ?? "active") === "active" && (p.visibility ?? "public") === "public")
-            .map(normalizeProduct),
-        );
+        setProducts(await fetchTaraProducts(controller.signal));
       } catch (err) {
         if (err instanceof DOMException && err.name === "AbortError") return;
         setError(err instanceof Error ? err.message : "Product data could not be loaded.");
@@ -93,10 +83,8 @@ function ProductRow({ section, products, loading, cartItems, onToggleCart }: {
 
   const cards = useMemo(() => {
     const matched = section.filter ? products.filter(section.filter) : products;
-    const filtered = matched.length > 0 ? matched : products;
-    const start = filtered.length > 0 ? (section.startIndex ?? 0) % filtered.length : 0;
-    const ordered = filtered.length ? [...filtered.slice(start), ...filtered.slice(0, start)] : [];
-    return ensureMinimumProducts(ordered.slice(0, minimum), minimum);
+    const source = matched.length > 0 ? matched : products;
+    return getRandomProducts(source, minimum, `${section.id}-${section.startIndex ?? 0}`);
   }, [minimum, products, section]);
 
   const update = useCallback(() => {

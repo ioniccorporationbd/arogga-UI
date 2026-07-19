@@ -3,16 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Check, RotateCcw, ShieldCheck, ShoppingCart, Star, Truck } from "lucide-react";
-import data from "../../../../public/data.json";
-import { EcommerceProduct, getCurrencySymbol, getProductDiscount, getProductPrice } from "@/lib/products";
+import { getCurrencySymbol, getProductDiscount, getProductPrice } from "@/lib/products";
+import { getServerProductBySlug } from "@/lib/server-products";
 import ProductDetailActions from "./ProductDetailActions";
 import "./product-detail.css";
 
-const products = data as EcommerceProduct[];
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const product = products.find((item) => item.slug === slug);
+  const product = await getServerProductBySlug(slug);
   if (!product) return {};
   return {
     title: product.seo.metaTitle || product.name,
@@ -22,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ProductDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const product = products.find((item) => item.slug === slug);
+  const product = await getServerProductBySlug(slug);
   if (!product) notFound();
 
   const price = getProductPrice(product);
