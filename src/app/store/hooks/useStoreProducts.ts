@@ -20,7 +20,7 @@ export function useStoreProducts() {
         setError("");
 
         const response = await fetch("/tara.json", {
-          cache: "force-cache",
+          cache: "no-store",
           signal: controller.signal,
         });
 
