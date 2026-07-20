@@ -185,14 +185,14 @@ export default function LabSeoContentSection() {
         setLoading(true);
         setDataError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/tara.json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load public/data.json. Status: ${response.status}`,
+            `Unable to load public/tara.json. Status: ${response.status}`,
           );
         }
 
@@ -200,7 +200,7 @@ export default function LabSeoContentSection() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/data.json must contain a JSON array of products.",
+            "public/tara.json must contain a JSON array of products.",
           );
         }
 

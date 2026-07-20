@@ -49,7 +49,7 @@ export type ProductCardData = {
   sourceUrl: string | null;
 };
 
-export const PRODUCT_DATA_URL = "/data.json";
+export const PRODUCT_DATA_URL = "/tara.json";
 export const FALLBACK_IMAGE = "/images/product-fallback.png";
 
 export function isValidProduct(value: unknown): value is JsonProduct {

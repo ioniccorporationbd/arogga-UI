@@ -104,14 +104,14 @@ export default function HomeLabTestSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/tara.json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load /data.json. Status: ${response.status}`,
+            `Unable to load /tara.json. Status: ${response.status}`,
           );
         }
 
@@ -119,7 +119,7 @@ export default function HomeLabTestSection() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/data.json must contain a JSON array.",
+            "public/tara.json must contain a JSON array.",
           );
         }
 
