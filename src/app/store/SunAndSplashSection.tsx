@@ -65,7 +65,7 @@ export default function SunAndSplashSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/tara.json", {
+        const response = await fetch("/data.json", {
           cache: "no-store",
           signal: controller.signal,
         });
@@ -80,7 +80,7 @@ export default function SunAndSplashSection() {
 
         if (!Array.isArray(data)) {
           throw new Error(
-            "public/tara.json must contain a JSON array.",
+            "public/data.json must contain a JSON array.",
           );
         }
 
