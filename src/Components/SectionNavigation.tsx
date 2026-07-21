@@ -10,8 +10,8 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  KeyboardEvent,
-  MouseEvent,
+  type KeyboardEvent,
+  type MouseEvent,
   useCallback,
   useEffect,
   useMemo,
@@ -19,31 +19,83 @@ import {
   useState,
 } from "react";
 
+import styles from "./SectionNavigation.module.css";
+
 type MenuSection = "store" | "lab" | "doctor";
+type NavigationMode = MenuSection;
+
+type RelatedLink = {
+  relation?: string;
+  linkId?: string;
+  linkCode?: string;
+  label?: string;
+  href?: string;
+};
 
 type MegaLeaf = {
-  label: string;
-  href: string;
+  label?: string;
+  href?: string;
+  subLinkName?: string;
+  subLinkHref?: string;
+  subLinkId?: string;
+  subLinkCode?: string;
+  linkId?: string;
+  linkCode?: string;
+  parentDropdownId?: string | null;
+  parentDropdownCode?: string | null;
+  mainDropdownId?: string;
+  mainDropdownCode?: string;
+  relatedLinks?: RelatedLink[];
 };
 
 type MegaGroup = {
-  label: string;
-  href: string;
+  label?: string;
+  href?: string;
+  subDropdownName?: string;
+  subDropdownHref?: string;
+  subDropdownId?: string;
+  subDropdownCode?: string;
+  subDropdownLinkId?: string;
+  subDropdownLinkCode?: string;
+  linkId?: string;
+  linkCode?: string;
+  dropdownId?: string | null;
+  dropdownCode?: string | null;
+  mainDropdownId?: string;
+  mainDropdownCode?: string;
   children?: MegaLeaf[];
+  relatedLinks?: RelatedLink[];
 };
 
 type MegaItem = {
-  label: string;
+  label?: string;
   href?: string;
-  section: MenuSection;
+  section?: MenuSection;
   isStatic?: boolean;
+  mainDropdownName?: string;
+  mainDropdownHref?: string;
+  mainDropdownId?: string;
+  mainDropdownCode?: string;
+  mainLinkId?: string;
+  mainLinkCode?: string;
+  linkId?: string;
+  linkCode?: string;
+  dropdownId?: string | null;
+  dropdownCode?: string | null;
   groups?: MegaGroup[];
+  relatedLinks?: RelatedLink[];
 };
 
 type MenuData = {
   store: MegaItem[];
   lab: MegaItem[];
   doctor: MegaItem[];
+};
+
+type SectionNavigationProps = {
+  mode?: NavigationMode;
+  dataUrl?: string;
+  className?: string;
 };
 
 const EMPTY_MENU: MenuData = {
@@ -54,31 +106,162 @@ const EMPTY_MENU: MenuData = {
 
 const CLOSE_DELAY = 180;
 
-function normalizeHref(href?: string) {
-  if (!href || href === "#") return undefined;
+function cleanText(value?: string) {
+  return typeof value === "string" ? value.trim() : "";
+}
 
-  const value = href.trim();
-  if (!value) return undefined;
+function normalizeHref(href?: string) {
+  const value = cleanText(href);
+
+  if (!value || value === "#") {
+    return undefined;
+  }
+
+  if (
+    value.startsWith("http://") ||
+    value.startsWith("https://")
+  ) {
+    return value;
+  }
 
   return value.startsWith("/") ? value : `/${value}`;
+}
+
+function isExternalHref(href?: string) {
+  return Boolean(
+    href?.startsWith("http://") ||
+      href?.startsWith("https://"),
+  );
+}
+
+function slugify(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function getMainName(item: MegaItem) {
+  return (
+    cleanText(item.mainDropdownName) ||
+    cleanText(item.label) ||
+    "Category"
+  );
+}
+
+function getMainHref(item: MegaItem) {
+  return normalizeHref(
+    item.mainDropdownHref || item.href,
+  );
+}
+
+function getMainDropdownId(item: MegaItem) {
+  return (
+    cleanText(item.mainDropdownId) ||
+    cleanText(item.dropdownId || undefined) ||
+    `main-dropdown-${slugify(getMainName(item))}`
+  );
+}
+
+function getMainLinkId(item: MegaItem) {
+  return (
+    cleanText(item.mainLinkId) ||
+    cleanText(item.linkId) ||
+    `main-link-${slugify(getMainName(item))}`
+  );
+}
+
+function getGroupName(group: MegaGroup) {
+  return (
+    cleanText(group.subDropdownName) ||
+    cleanText(group.label) ||
+    "Subcategory"
+  );
+}
+
+function getGroupHref(group: MegaGroup) {
+  return normalizeHref(
+    group.subDropdownHref || group.href,
+  );
+}
+
+function getGroupDropdownId(group: MegaGroup) {
+  return (
+    cleanText(group.subDropdownId) ||
+    cleanText(group.dropdownId || undefined) ||
+    `sub-dropdown-${slugify(getGroupName(group))}`
+  );
+}
+
+function getGroupLinkId(group: MegaGroup) {
+  return (
+    cleanText(group.subDropdownLinkId) ||
+    cleanText(group.linkId) ||
+    `sub-dropdown-link-${slugify(getGroupName(group))}`
+  );
+}
+
+function getLeafName(leaf: MegaLeaf) {
+  return (
+    cleanText(leaf.subLinkName) ||
+    cleanText(leaf.label) ||
+    "Item"
+  );
+}
+
+function getLeafHref(leaf: MegaLeaf) {
+  return normalizeHref(leaf.subLinkHref || leaf.href);
+}
+
+function getLeafId(leaf: MegaLeaf) {
+  return (
+    cleanText(leaf.subLinkId) ||
+    cleanText(leaf.linkId) ||
+    `sub-link-${slugify(getLeafName(leaf))}`
+  );
 }
 
 function isStaticHome(item: MegaItem) {
   return (
     item.isStatic === true ||
-    item.label.trim().toLowerCase() === "home"
+    getMainName(item).toLowerCase() === "home"
   );
 }
 
-function isRouteActive(pathname: string, href?: string) {
-  const normalizedHref = normalizeHref(href);
+function isRouteActive(
+  pathname: string,
+  href?: string,
+) {
+  const normalized = normalizeHref(href);
 
-  if (!normalizedHref) return false;
+  if (!normalized || isExternalHref(normalized)) {
+    return false;
+  }
+
+  if (normalized === "/") {
+    return pathname === "/";
+  }
 
   return (
-    pathname === normalizedHref ||
-    pathname.startsWith(`${normalizedHref}/`)
+    pathname === normalized ||
+    pathname.startsWith(`${normalized}/`)
   );
+}
+
+function isMenuData(value: unknown): value is Partial<MenuData> {
+  return Boolean(
+    value &&
+      typeof value === "object" &&
+      !Array.isArray(value),
+  );
+}
+
+function getSectionItems(
+  menuData: MenuData,
+  mode: NavigationMode,
+) {
+  return menuData[mode] ?? [];
 }
 
 function findBestGroupIndex(
@@ -86,51 +269,42 @@ function findBestGroupIndex(
   groups: MegaGroup[],
 ) {
   const index = groups.findIndex((group) =>
-    isRouteActive(pathname, group.href),
+    isRouteActive(pathname, getGroupHref(group)),
   );
 
   return index >= 0 ? index : 0;
 }
 
-function getVisibleItems(menuData: MenuData) {
-  /*
-   * Arogga-like main store category bar:
-   * Home + all Store categories.
-   *
-   * Lab and Doctor navigation normally stay in the upper service tabs.
-   * Set this to combine all sections if your design needs that:
-   *
-   * return [
-   *   ...menuData.store,
-   *   ...menuData.lab,
-   *   ...menuData.doctor,
-   * ];
-   */
-  return menuData.store;
+function getNavigationLabel(mode: NavigationMode) {
+  if (mode === "lab") return "Lab test categories";
+  if (mode === "doctor") return "Doctor categories";
+  return "Store categories";
 }
 
-export default function SectionNavigation() {
+export default function SectionNavigation({
+  mode = "store",
+  dataUrl = "/menu-links.json",
+  className = "",
+}: SectionNavigationProps) {
   const pathname = usePathname();
 
   const rootRef = useRef<HTMLElement | null>(null);
-  const tabsRef = useRef<HTMLDivElement | null>(null);
-  const closeTimerRef = useRef<ReturnType<
-    typeof setTimeout
-  > | null>(null);
+  const tabsRef = useRef<HTMLElement | null>(null);
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(
+    null,
+  );
 
   const [menuData, setMenuData] =
     useState<MenuData>(EMPTY_MENU);
   const [loading, setLoading] = useState(true);
-  const [menuError, setMenuError] = useState<string | null>(
-    null,
-  );
-
-  const [openHref, setOpenHref] = useState<string | null>(
-    null,
-  );
-  const [activeGroupIndex, setActiveGroupIndex] =
-    useState(0);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [menuError, setMenuError] =
+    useState<string | null>(null);
+  const [openDropdownId, setOpenDropdownId] =
+    useState<string | null>(null);
+  const [activeGroupId, setActiveGroupId] =
+    useState<string | null>(null);
+  const [canScrollLeft, setCanScrollLeft] =
+    useState(false);
   const [canScrollRight, setCanScrollRight] =
     useState(false);
 
@@ -142,30 +316,53 @@ export default function SectionNavigation() {
         setLoading(true);
         setMenuError(null);
 
-        const response = await fetch("/menu-links.json", {
+        const response = await fetch(dataUrl, {
           cache: "no-store",
           signal: controller.signal,
+          headers: {
+            Accept: "application/json",
+          },
         });
 
         if (!response.ok) {
           throw new Error(
-            `Failed to load menu-links.json: ${response.status}`,
+            `Could not load ${dataUrl}. HTTP ${response.status}`,
           );
         }
 
-        const data = (await response.json()) as Partial<MenuData>;
+        const raw: unknown = await response.json();
 
-        if (controller.signal.aborted) return;
+        if (!isMenuData(raw)) {
+          throw new Error(
+            "The menu JSON root must be an object.",
+          );
+        }
 
-        setMenuData({
-          store: Array.isArray(data.store)
-            ? data.store
+        const nextData: MenuData = {
+          store: Array.isArray(raw.store)
+            ? raw.store
             : [],
-          lab: Array.isArray(data.lab) ? data.lab : [],
-          doctor: Array.isArray(data.doctor)
-            ? data.doctor
+          lab: Array.isArray(raw.lab)
+            ? raw.lab
             : [],
-        });
+          doctor: Array.isArray(raw.doctor)
+            ? raw.doctor
+            : [],
+        };
+
+        if (
+          nextData.store.length === 0 &&
+          nextData.lab.length === 0 &&
+          nextData.doctor.length === 0
+        ) {
+          throw new Error(
+            "The JSON loaded, but store, lab and doctor are empty.",
+          );
+        }
+
+        if (!controller.signal.aborted) {
+          setMenuData(nextData);
+        }
       } catch (error) {
         if (
           error instanceof DOMException &&
@@ -174,9 +371,19 @@ export default function SectionNavigation() {
           return;
         }
 
-        console.error(error);
-        setMenuData(EMPTY_MENU);
-        setMenuError("Menu data could not be loaded.");
+        console.error(
+          "SectionNavigation menu loading error:",
+          error,
+        );
+
+        if (!controller.signal.aborted) {
+          setMenuData(EMPTY_MENU);
+          setMenuError(
+            error instanceof Error
+              ? error.message
+              : "Menu data could not be loaded.",
+          );
+        }
       } finally {
         if (!controller.signal.aborted) {
           setLoading(false);
@@ -184,52 +391,67 @@ export default function SectionNavigation() {
       }
     }
 
-    loadMenu();
+    void loadMenu();
 
     return () => controller.abort();
-  }, []);
+  }, [dataUrl]);
 
   const items = useMemo(
-    () => getVisibleItems(menuData),
-    [menuData],
+    () => getSectionItems(menuData, mode),
+    [menuData, mode],
   );
 
   const openItem = useMemo(() => {
-    if (!openHref) return null;
+    if (!openDropdownId) return null;
 
     return (
       items.find(
         (item) =>
-          !isStaticHome(item) &&
-          normalizeHref(item.href) === openHref,
+          getMainDropdownId(item) === openDropdownId,
       ) ?? null
     );
-  }, [items, openHref]);
+  }, [items, openDropdownId]);
 
-  const groups = openItem?.groups ?? [];
+  const groups = useMemo(
+    () =>
+      (openItem?.groups ?? []).filter(
+        (group) =>
+          Boolean(getGroupName(group)) &&
+          Boolean(getGroupHref(group)),
+      ),
+    [openItem],
+  );
 
-  const activeGroup =
-    groups[activeGroupIndex] ?? groups[0] ?? null;
+  const activeGroup = useMemo(() => {
+    if (groups.length === 0) return null;
+
+    return (
+      groups.find(
+        (group) =>
+          getGroupDropdownId(group) === activeGroupId,
+      ) ?? groups[0]
+    );
+  }, [activeGroupId, groups]);
 
   const clearCloseTimer = useCallback(() => {
-    if (closeTimerRef.current) {
-      clearTimeout(closeTimerRef.current);
-      closeTimerRef.current = null;
-    }
+    if (!closeTimerRef.current) return;
+
+    clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = null;
   }, []);
 
   const closeMenu = useCallback(() => {
     clearCloseTimer();
-    setOpenHref(null);
-    setActiveGroupIndex(0);
+    setOpenDropdownId(null);
+    setActiveGroupId(null);
   }, [clearCloseTimer]);
 
   const scheduleClose = useCallback(() => {
     clearCloseTimer();
 
     closeTimerRef.current = setTimeout(() => {
-      setOpenHref(null);
-      setActiveGroupIndex(0);
+      setOpenDropdownId(null);
+      setActiveGroupId(null);
     }, CLOSE_DELAY);
   }, [clearCloseTimer]);
 
@@ -237,62 +459,76 @@ export default function SectionNavigation() {
     (item: MegaItem) => {
       clearCloseTimer();
 
-      const href = normalizeHref(item.href);
-      const itemGroups = item.groups ?? [];
+      const itemGroups = (item.groups ?? []).filter(
+        (group) => Boolean(getGroupHref(group)),
+      );
 
       if (
         isStaticHome(item) ||
-        !href ||
         itemGroups.length === 0
       ) {
-        setOpenHref(null);
-        setActiveGroupIndex(0);
+        closeMenu();
         return;
       }
 
-      setOpenHref(href);
-      setActiveGroupIndex(
-        findBestGroupIndex(pathname, itemGroups),
+      const bestIndex = findBestGroupIndex(
+        pathname,
+        itemGroups,
+      );
+
+      const selected =
+        itemGroups[bestIndex] ?? itemGroups[0];
+
+      setOpenDropdownId(getMainDropdownId(item));
+      setActiveGroupId(
+        selected
+          ? getGroupDropdownId(selected)
+          : null,
       );
     },
-    [clearCloseTimer, pathname],
+    [
+      clearCloseTimer,
+      closeMenu,
+      pathname,
+    ],
   );
 
   const updateScrollButtons = useCallback(() => {
     const element = tabsRef.current;
-
     if (!element) return;
 
-    const maxScrollLeft =
+    const max =
       element.scrollWidth - element.clientWidth;
 
     setCanScrollLeft(element.scrollLeft > 2);
     setCanScrollRight(
-      element.scrollLeft < maxScrollLeft - 2,
+      element.scrollLeft < max - 2,
     );
   }, []);
 
   useEffect(() => {
     updateScrollButtons();
 
-    const tabs = tabsRef.current;
-    if (!tabs) return;
+    const element = tabsRef.current;
+    if (!element) return;
 
-    tabs.addEventListener("scroll", updateScrollButtons, {
-      passive: true,
-    });
+    element.addEventListener(
+      "scroll",
+      updateScrollButtons,
+      { passive: true },
+    );
     window.addEventListener(
       "resize",
       updateScrollButtons,
     );
 
-    const resizeObserver = new ResizeObserver(
+    const observer = new ResizeObserver(
       updateScrollButtons,
     );
-    resizeObserver.observe(tabs);
+    observer.observe(element);
 
     return () => {
-      tabs.removeEventListener(
+      element.removeEventListener(
         "scroll",
         updateScrollButtons,
       );
@@ -300,49 +536,52 @@ export default function SectionNavigation() {
         "resize",
         updateScrollButtons,
       );
-      resizeObserver.disconnect();
+      observer.disconnect();
     };
   }, [items, updateScrollButtons]);
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(closeMenu);
     return () => window.cancelAnimationFrame(frame);
-  }, [pathname, closeMenu]);
+  }, [pathname, mode, closeMenu]);
 
   useEffect(() => {
-    const onOutsidePointer = (
+    function handleOutsideClick(
       event: globalThis.MouseEvent,
-    ) => {
+    ) {
       if (
         rootRef.current &&
         !rootRef.current.contains(event.target as Node)
       ) {
         closeMenu();
       }
-    };
+    }
 
-    const onEscape = (
+    function handleEscape(
       event: globalThis.KeyboardEvent,
-    ) => {
+    ) {
       if (event.key === "Escape") {
         closeMenu();
       }
-    };
+    }
 
     document.addEventListener(
       "mousedown",
-      onOutsidePointer,
+      handleOutsideClick,
     );
-    document.addEventListener("keydown", onEscape);
+    document.addEventListener(
+      "keydown",
+      handleEscape,
+    );
 
     return () => {
       document.removeEventListener(
         "mousedown",
-        onOutsidePointer,
+        handleOutsideClick,
       );
       document.removeEventListener(
         "keydown",
-        onEscape,
+        handleEscape,
       );
     };
   }, [closeMenu]);
@@ -351,18 +590,19 @@ export default function SectionNavigation() {
     return () => clearCloseTimer();
   }, [clearCloseTimer]);
 
-  const scrollTabs = (direction: "left" | "right") => {
+  function scrollTabs(direction: "left" | "right") {
     tabsRef.current?.scrollBy({
-      left: direction === "left" ? -320 : 320,
+      left: direction === "left" ? -340 : 340,
       behavior: "smooth",
     });
-  };
+  }
 
-  const handleTopClick = (
+  function handleTopClick(
     event: MouseEvent<HTMLAnchorElement>,
     item: MegaItem,
-  ) => {
-    const hasDropdown = (item.groups?.length ?? 0) > 0;
+  ) {
+    const hasDropdown =
+      (item.groups?.length ?? 0) > 0;
 
     if (!hasDropdown) {
       closeMenu();
@@ -373,19 +613,23 @@ export default function SectionNavigation() {
       typeof window !== "undefined" &&
       window.matchMedia("(hover: none)").matches;
 
-    const href = normalizeHref(item.href);
+    const dropdownId = getMainDropdownId(item);
 
-    if (touchDevice && openHref !== href) {
+    if (
+      touchDevice &&
+      openDropdownId !== dropdownId
+    ) {
       event.preventDefault();
       openMenu(item);
     }
-  };
+  }
 
-  const handleTopKeyDown = (
+  function handleTopKeyDown(
     event: KeyboardEvent<HTMLAnchorElement>,
     item: MegaItem,
-  ) => {
-    const hasDropdown = (item.groups?.length ?? 0) > 0;
+  ) {
+    const hasDropdown =
+      (item.groups?.length ?? 0) > 0;
 
     if (!hasDropdown) return;
 
@@ -402,48 +646,63 @@ export default function SectionNavigation() {
       event.preventDefault();
       closeMenu();
     }
-  };
+  }
 
-  const handleGroupKeyDown = (
+  function handleGroupKeyDown(
     event: KeyboardEvent<HTMLAnchorElement>,
-    groupIndex: number,
-  ) => {
-    if (event.key === "ArrowDown") {
-      event.preventDefault();
-      setActiveGroupIndex(
-        Math.min(groupIndex + 1, groups.length - 1),
-      );
-    }
-
-    if (event.key === "ArrowUp") {
-      event.preventDefault();
-      setActiveGroupIndex(Math.max(groupIndex - 1, 0));
+    index: number,
+  ) {
+    if (event.key === "Escape") {
+      closeMenu();
+      return;
     }
 
     if (event.key === "ArrowRight") {
-      const firstChild =
-        document.querySelector<HTMLAnchorElement>(
-          ".arogga-mega-child-grid a",
-        );
-
-      firstChild?.focus();
+      event.preventDefault();
+      rootRef.current
+        ?.querySelector<HTMLAnchorElement>(
+          "[data-mega-child='true']",
+        )
+        ?.focus();
+      return;
     }
 
-    if (event.key === "Escape") {
-      closeMenu();
+    if (
+      event.key !== "ArrowDown" &&
+      event.key !== "ArrowUp"
+    ) {
+      return;
     }
-  };
+
+    event.preventDefault();
+
+    const nextIndex =
+      event.key === "ArrowDown"
+        ? Math.min(index + 1, groups.length - 1)
+        : Math.max(index - 1, 0);
+
+    const nextGroup = groups[nextIndex];
+    if (!nextGroup) return;
+
+    const nextId = getGroupDropdownId(nextGroup);
+    setActiveGroupId(nextId);
+
+    document
+      .getElementById(getGroupLinkId(nextGroup))
+      ?.focus();
+  }
 
   if (loading) {
     return (
-      <section className="arogga-section-navigation">
-        <div className="arogga-section-shell">
-          <div className="arogga-menu-status">
+      <section
+        className={`${styles.navigation} ${className}`}
+        aria-label={getNavigationLabel(mode)}
+      >
+        <div className={styles.shell}>
+          <div className={styles.status}>
             Loading menu...
           </div>
         </div>
-
-        <NavigationStyles />
       </section>
     );
   }
@@ -451,90 +710,127 @@ export default function SectionNavigation() {
   return (
     <section
       ref={rootRef}
-      className="arogga-section-navigation"
-      aria-label="Product category navigation"
+      className={`${styles.navigation} ${className}`}
+      aria-label={getNavigationLabel(mode)}
       onMouseEnter={clearCloseTimer}
       onMouseLeave={scheduleClose}
     >
-      <div className="arogga-section-shell">
-        {menuError && (
-          <div
-            className="arogga-menu-error"
-            role="status"
-          >
-            {menuError}
+      <div className={styles.shell}>
+        {menuError ? (
+          <div className={styles.error} role="alert">
+            <strong>Menu error:</strong> {menuError}
+            <span>
+              Put the JSON file at{" "}
+              <code>public/menu-links.json</code>.
+            </span>
           </div>
-        )}
+        ) : null}
 
-        <div className="arogga-tabs-container">
-          {canScrollLeft && (
+        <div className={styles.tabsContainer}>
+          {canScrollLeft ? (
             <button
               type="button"
-              className="arogga-tab-scroll is-left"
+              className={`${styles.scrollButton} ${styles.scrollLeft}`}
               aria-label="Scroll categories left"
               onClick={() => scrollTabs("left")}
             >
               <ChevronLeft size={18} />
             </button>
-          )}
+          ) : null}
 
           <nav
             ref={tabsRef}
-            className="arogga-category-tabs"
-            aria-label="Store categories"
+            className={styles.tabs}
+            aria-label={getNavigationLabel(mode)}
           >
             {items.map((item, index) => {
-              const staticHome = isStaticHome(item);
+              const mainName = getMainName(item);
+              const mainHref = getMainHref(item);
+              const mainLinkId = getMainLinkId(item);
+              const dropdownId =
+                getMainDropdownId(item);
 
-              if (staticHome) {
+              if (isStaticHome(item)) {
                 return (
                   <span
-                    key={`home-${index}`}
-                    className={[
-                      "arogga-category-tab",
-                      "arogga-static-home",
-                      pathname === "/" ? "is-active" : "",
-                    ].join(" ")}
+                    key={mainLinkId || `home-${index}`}
+                    id={mainLinkId}
+                    className={`${styles.tab} ${styles.homeTab} ${
+                      pathname === "/" ? styles.active : ""
+                    }`}
                     aria-current={
                       pathname === "/" ? "page" : undefined
                     }
-                    aria-disabled="true"
                   >
-                    <Home size={14} aria-hidden="true" />
-                    <span>{item.label}</span>
+                    <Home size={14} />
+                    <span>{mainName}</span>
                     <i aria-hidden="true" />
                   </span>
                 );
               }
 
-              const href = normalizeHref(item.href);
-              if (!href) return null;
+              if (!mainHref) return null;
 
               const hasDropdown =
                 (item.groups?.length ?? 0) > 0;
-              const active = isRouteActive(
+              const routeActive = isRouteActive(
                 pathname,
-                href,
+                mainHref,
               );
-              const open = openHref === href;
+              const open =
+                openDropdownId === dropdownId;
 
               return (
                 <Link
-                  key={`${item.section}-${href}-${index}`}
-                  href={href}
+                  key={mainLinkId}
+                  id={mainLinkId}
+                  href={mainHref}
+                  target={
+                    isExternalHref(mainHref)
+                      ? "_blank"
+                      : undefined
+                  }
+                  rel={
+                    isExternalHref(mainHref)
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
                   className={[
-                    "arogga-category-tab",
-                    active ? "is-active" : "",
-                    open ? "is-open" : "",
+                    styles.tab,
+                    routeActive ? styles.active : "",
+                    open ? styles.open : "",
                   ].join(" ")}
+                  data-main-link-id={mainLinkId}
+                  data-main-link-code={
+                    item.mainLinkCode ||
+                    item.linkCode ||
+                    undefined
+                  }
+                  data-main-dropdown-id={
+                    hasDropdown
+                      ? dropdownId
+                      : undefined
+                  }
+                  data-main-dropdown-code={
+                    hasDropdown
+                      ? item.mainDropdownCode ||
+                        item.dropdownCode ||
+                        undefined
+                      : undefined
+                  }
                   aria-current={
-                    active ? "page" : undefined
+                    routeActive ? "page" : undefined
                   }
                   aria-haspopup={
                     hasDropdown ? "menu" : undefined
                   }
                   aria-expanded={
                     hasDropdown ? open : undefined
+                  }
+                  aria-controls={
+                    hasDropdown
+                      ? `${dropdownId}-panel`
+                      : undefined
                   }
                   onMouseEnter={() => openMenu(item)}
                   onFocus={() => openMenu(item)}
@@ -545,15 +841,15 @@ export default function SectionNavigation() {
                     handleTopKeyDown(event, item)
                   }
                 >
-                  <span>{item.label}</span>
+                  <span>{mainName}</span>
 
-                  {hasDropdown && (
+                  {hasDropdown ? (
                     <ChevronDown
                       size={13}
+                      className={styles.chevron}
                       aria-hidden="true"
-                      className="arogga-tab-chevron"
                     />
-                  )}
+                  ) : null}
 
                   <i aria-hidden="true" />
                 </Link>
@@ -561,96 +857,118 @@ export default function SectionNavigation() {
             })}
           </nav>
 
-          {canScrollRight && (
+          {canScrollRight ? (
             <button
               type="button"
-              className="arogga-tab-scroll is-right"
+              className={`${styles.scrollButton} ${styles.scrollRight}`}
               aria-label="Scroll categories right"
               onClick={() => scrollTabs("right")}
             >
               <ChevronRight size={18} />
             </button>
-          )}
+          ) : null}
         </div>
       </div>
 
-      {openItem && groups.length > 0 && (
+      {openItem && groups.length > 0 ? (
         <div
-          className="arogga-mega-overlay"
+          className={styles.overlay}
           onMouseEnter={clearCloseTimer}
           onMouseLeave={scheduleClose}
         >
           <div
-            className="arogga-mega-menu"
+            id={`${getMainDropdownId(openItem)}-panel`}
+            className={styles.megaMenu}
             role="menu"
-            aria-label={`${openItem.label} categories`}
+            aria-label={`${getMainName(openItem)} categories`}
           >
             <button
               type="button"
-              className="arogga-mega-close"
+              className={styles.closeButton}
               aria-label="Close category menu"
               onClick={closeMenu}
             >
               <X size={18} />
             </button>
 
-            <aside
-              className="arogga-mega-groups"
-              aria-label={`${openItem.label} category groups`}
-            >
+            <aside className={styles.groups}>
               <Link
-                href={normalizeHref(openItem.href) ?? "/"}
-                className="arogga-all-link"
+                href={getMainHref(openItem) || "/"}
+                className={styles.allLink}
                 onClick={closeMenu}
               >
-                <span className="arogga-menu-icon">
-                  🖼️
+                <span className={styles.icon}>
+                  {getGroupEmoji(getMainName(openItem))}
                 </span>
-                <span>All {openItem.label}</span>
+                <span>
+                  All {getMainName(openItem)}
+                </span>
               </Link>
 
-              {groups.map((group, groupIndex) => {
-                const groupActive =
-                  activeGroupIndex === groupIndex;
+              {groups.map((group, index) => {
+                const groupName =
+                  getGroupName(group);
+                const groupHref =
+                  getGroupHref(group);
+                const dropdownId =
+                  getGroupDropdownId(group);
+                const groupLinkId =
+                  getGroupLinkId(group);
+                const selected =
+                  activeGroupId === dropdownId;
                 const routeActive = isRouteActive(
                   pathname,
-                  group.href,
+                  groupHref,
                 );
+
+                if (!groupHref) return null;
 
                 return (
                   <Link
-                    key={`${group.href}-${groupIndex}`}
-                    href={normalizeHref(group.href) ?? "/"}
+                    key={dropdownId}
+                    id={groupLinkId}
+                    href={groupHref}
                     role="menuitem"
+                    className={[
+                      styles.groupLink,
+                      selected ? styles.selected : "",
+                      routeActive
+                        ? styles.routeActive
+                        : "",
+                    ].join(" ")}
+                    data-sub-dropdown-id={dropdownId}
+                    data-sub-dropdown-code={
+                      group.subDropdownCode ||
+                      group.dropdownCode ||
+                      undefined
+                    }
+                    data-sub-dropdown-link-id={
+                      groupLinkId
+                    }
+                    data-sub-dropdown-link-code={
+                      group.subDropdownLinkCode ||
+                      group.linkCode ||
+                      undefined
+                    }
                     aria-current={
                       routeActive ? "page" : undefined
                     }
-                    className={[
-                      "arogga-group-link",
-                      groupActive ? "is-active" : "",
-                      routeActive
-                        ? "is-route-active"
-                        : "",
-                    ].join(" ")}
                     onMouseEnter={() => {
                       clearCloseTimer();
-                      setActiveGroupIndex(groupIndex);
+                      setActiveGroupId(dropdownId);
                     }}
                     onFocus={() =>
-                      setActiveGroupIndex(groupIndex)
+                      setActiveGroupId(dropdownId)
                     }
                     onClick={closeMenu}
                     onKeyDown={(event) =>
-                      handleGroupKeyDown(
-                        event,
-                        groupIndex,
-                      )
+                      handleGroupKeyDown(event, index)
                     }
                   >
-                    <span className="arogga-menu-icon">
-                      {getGroupEmoji(group.label)}
+                    <span className={styles.icon}>
+                      {getGroupEmoji(groupName)}
                     </span>
-                    <span>{group.label}</span>
+                    <span>{groupName}</span>
                     <ChevronRight
                       size={16}
                       aria-hidden="true"
@@ -660,84 +978,95 @@ export default function SectionNavigation() {
               })}
             </aside>
 
-            <section className="arogga-mega-children">
-              <header className="arogga-child-header">
+            <section className={styles.children}>
+              <header className={styles.childHeader}>
                 <div>
                   <span>Explore</span>
-                  <h3>{activeGroup?.label}</h3>
+                  <h3>
+                    {activeGroup
+                      ? getGroupName(activeGroup)
+                      : getMainName(openItem)}
+                  </h3>
                 </div>
 
-                {activeGroup && (
+                {activeGroup &&
+                getGroupHref(activeGroup) ? (
                   <Link
                     href={
-                      normalizeHref(activeGroup.href) ??
-                      "/"
+                      getGroupHref(activeGroup) || "/"
                     }
                     onClick={closeMenu}
                   >
                     View all
                     <ChevronRight size={14} />
                   </Link>
-                )}
+                ) : null}
               </header>
 
               {activeGroup?.children?.length ? (
-                <div className="arogga-mega-child-grid">
-                  {activeGroup.children.map(
-                    (child, childIndex) => {
-                      const childHref = normalizeHref(
-                        child.href,
-                      );
+                <div className={styles.childGrid}>
+                  {activeGroup.children.map((leaf) => {
+                    const leafName =
+                      getLeafName(leaf);
+                    const leafHref =
+                      getLeafHref(leaf);
+                    const leafId = getLeafId(leaf);
 
-                      if (!childHref) return null;
+                    if (!leafHref) return null;
 
-                      const active = isRouteActive(
-                        pathname,
-                        childHref,
-                      );
+                    const active = isRouteActive(
+                      pathname,
+                      leafHref,
+                    );
 
-                      return (
-                        <Link
-                          key={`${childHref}-${childIndex}`}
-                          href={childHref}
-                          role="menuitem"
-                          className={
-                            active ? "is-active" : ""
+                    return (
+                      <Link
+                        key={leafId}
+                        id={leafId}
+                        href={leafHref}
+                        data-mega-child="true"
+                        data-sub-link-id={leafId}
+                        data-sub-link-code={
+                          leaf.subLinkCode ||
+                          leaf.linkCode ||
+                          undefined
+                        }
+                        data-parent-sub-dropdown-id={
+                          getGroupDropdownId(activeGroup)
+                        }
+                        role="menuitem"
+                        className={
+                          active ? styles.activeChild : ""
+                        }
+                        aria-current={
+                          active ? "page" : undefined
+                        }
+                        onClick={closeMenu}
+                        onKeyDown={(event) => {
+                          if (
+                            event.key === "Escape"
+                          ) {
+                            closeMenu();
                           }
-                          aria-current={
-                            active ? "page" : undefined
-                          }
-                          onClick={closeMenu}
-                          onKeyDown={(event) => {
-                            if (
-                              event.key === "Escape"
-                            ) {
-                              closeMenu();
-                            }
-                          }}
-                        >
-                          <span className="arogga-child-icon">
-                            {getChildEmoji(
-                              child.label,
-                            )}
-                          </span>
-                          <span>{child.label}</span>
-                        </Link>
-                      );
-                    },
-                  )}
+                        }}
+                      >
+                        <span className={styles.childIcon}>
+                          {getChildEmoji(leafName)}
+                        </span>
+                        <span>{leafName}</span>
+                      </Link>
+                    );
+                  })}
                 </div>
               ) : (
-                <div className="arogga-empty-children">
-                  No subcategories available.
+                <div className={styles.empty}>
+                  No subcategory links are available.
                 </div>
               )}
             </section>
           </div>
         </div>
-      )}
-
-      <NavigationStyles />
+      ) : null}
     </section>
   );
 }
@@ -745,41 +1074,22 @@ export default function SectionNavigation() {
 function getGroupEmoji(label: string) {
   const value = label.toLowerCase();
 
+  if (value.includes("medicine")) return "💊";
+  if (value.includes("health")) return "🩺";
   if (value.includes("skin")) return "🧴";
   if (value.includes("hair")) return "💇";
-  if (value.includes("personal")) return "🧼";
-  if (
-    value.includes("fragrance") ||
-    value.includes("perfume")
-  ) {
-    return "🌸";
-  }
-  if (value.includes("makeup")) return "💄";
-  if (
-    value.includes("men") ||
-    value.includes("groom")
-  ) {
-    return "🪒";
-  }
-  if (
-    value.includes("baby") ||
-    value.includes("mother")
-  ) {
-    return "👶";
-  }
-  if (
-    value.includes("medicine") ||
-    value.includes("pain")
-  ) {
-    return "💊";
-  }
-  if (value.includes("heart")) return "❤️";
+  if (value.includes("beauty")) return "💄";
+  if (value.includes("baby")) return "👶";
+  if (value.includes("herbal")) return "🌿";
+  if (value.includes("home")) return "🏠";
+  if (value.includes("supplement")) return "⚕️";
+  if (value.includes("food")) return "🥗";
+  if (value.includes("pet")) return "🐾";
+  if (value.includes("veterinary")) return "🐾";
   if (value.includes("lab")) return "🧪";
   if (value.includes("doctor")) return "🩺";
-  if (value.includes("pet")) return "🐾";
-  if (value.includes("food")) return "🥗";
-  if (value.includes("home")) return "🏠";
-  if (value.includes("tool")) return "🧰";
+  if (value.includes("women")) return "🌷";
+  if (value.includes("men")) return "🧔";
 
   return "🛍️";
 }
@@ -787,16 +1097,6 @@ function getGroupEmoji(label: string) {
 function getChildEmoji(label: string) {
   const value = label.toLowerCase();
 
-  if (value.includes("oral")) return "🪥";
-  if (value.includes("deodor")) return "🧴";
-  if (
-    value.includes("bath") ||
-    value.includes("body")
-  ) {
-    return "🧼";
-  }
-  if (value.includes("feminine")) return "🌷";
-  if (value.includes("cream")) return "🧴";
   if (value.includes("tablet")) return "💊";
   if (value.includes("capsule")) return "💊";
   if (value.includes("syrup")) return "🥄";
@@ -805,486 +1105,14 @@ function getChildEmoji(label: string) {
   if (value.includes("inhaler")) return "🫁";
   if (value.includes("injection")) return "💉";
   if (value.includes("test")) return "🧪";
+  if (value.includes("heart")) return "❤️";
+  if (value.includes("skin")) return "🧴";
+  if (value.includes("hair")) return "💇";
+  if (value.includes("baby")) return "👶";
+  if (value.includes("food")) return "🥗";
+  if (value.includes("pet")) return "🐾";
   if (value.includes("package")) return "📦";
-  if (value.includes("collection")) return "🧺";
   if (value.includes("offer")) return "🏷️";
 
   return "🛍️";
-}
-
-function NavigationStyles() {
-  return (
-    <style>{`
-      .arogga-section-navigation {
-        position: relative;
-        z-index: 95;
-        width: 100%;
-        border-bottom: 1px solid #e5e7eb;
-        background: #ffffff;
-        font-family: inherit;
-      }
-
-      .arogga-section-shell {
-        width: min(1440px, calc(100% - 48px));
-        margin-inline: auto;
-      }
-
-      .arogga-menu-status,
-      .arogga-menu-error {
-        display: flex;
-        min-height: 50px;
-        align-items: center;
-        color: #667085;
-        font-size: 13px;
-      }
-
-      .arogga-menu-error {
-        min-height: 34px;
-        color: #b42318;
-      }
-
-      .arogga-tabs-container {
-        position: relative;
-      }
-
-      .arogga-category-tabs {
-        display: flex;
-        min-height: 50px;
-        align-items: stretch;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .arogga-category-tabs::-webkit-scrollbar {
-        display: none;
-      }
-
-      .arogga-category-tab {
-        position: relative;
-        display: inline-flex;
-        min-height: 50px;
-        flex: 0 0 auto;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        padding: 0 14px;
-        border: 0;
-        color: #172033;
-        background: transparent;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 1;
-        text-decoration: none;
-        white-space: nowrap;
-        transition:
-          color 150ms ease,
-          background-color 150ms ease;
-      }
-
-      .arogga-category-tab:not(
-          .arogga-static-home
-        ):hover,
-      .arogga-category-tab.is-open,
-      .arogga-category-tab.is-active {
-        color: #087b75;
-        background: #f4fbfa;
-      }
-
-      .arogga-static-home {
-        color: #087b75;
-        cursor: default;
-        user-select: none;
-      }
-
-      .arogga-tab-chevron {
-        transition: transform 160ms ease;
-      }
-
-      .arogga-category-tab.is-open
-        .arogga-tab-chevron {
-        transform: rotate(180deg);
-      }
-
-      .arogga-category-tab > i {
-        position: absolute;
-        right: 12px;
-        bottom: 0;
-        left: 12px;
-        height: 2px;
-        border-radius: 999px 999px 0 0;
-        background: #087b75;
-        opacity: 0;
-        transform: scaleX(0.35);
-        transition:
-          opacity 150ms ease,
-          transform 150ms ease;
-      }
-
-      .arogga-category-tab.is-active > i,
-      .arogga-category-tab.is-open > i,
-      .arogga-category-tab:not(
-          .arogga-static-home
-        ):hover
-        > i {
-        opacity: 1;
-        transform: scaleX(1);
-      }
-
-      .arogga-tab-scroll {
-        position: absolute;
-        top: 50%;
-        z-index: 8;
-        display: flex;
-        width: 34px;
-        height: 34px;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #d0d5dd;
-        border-radius: 9px;
-        color: #475467;
-        background: rgba(255, 255, 255, 0.96);
-        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);
-        cursor: pointer;
-        transform: translateY(-50%);
-      }
-
-      .arogga-tab-scroll.is-left {
-        left: -12px;
-      }
-
-      .arogga-tab-scroll.is-right {
-        right: -12px;
-      }
-
-      .arogga-mega-overlay {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        z-index: 150;
-        padding: 0 24px 24px;
-        pointer-events: none;
-      }
-
-      .arogga-mega-menu {
-        position: relative;
-        display: grid;
-        width: min(760px, calc(100vw - 48px));
-        max-height: min(520px, calc(100vh - 150px));
-        grid-template-columns: 280px minmax(330px, 1fr);
-        overflow: hidden;
-        margin-left: max(
-          24px,
-          calc((100vw - min(1440px, 100vw - 48px)) / 2 + 190px)
-        );
-        border: 1px solid #e4e7ec;
-        border-top: 0;
-        border-radius: 0 0 12px 12px;
-        background: #ffffff;
-        box-shadow:
-          0 22px 45px -18px rgba(15, 23, 42, 0.28),
-          0 10px 22px -14px rgba(15, 23, 42, 0.18);
-        pointer-events: auto;
-        animation: aroggaMegaIn 150ms ease both;
-      }
-
-      .arogga-mega-close {
-        position: absolute;
-        top: 12px;
-        right: 12px;
-        z-index: 10;
-        display: none;
-        width: 36px;
-        height: 36px;
-        align-items: center;
-        justify-content: center;
-        border: 0;
-        border-radius: 9px;
-        color: #475467;
-        background: #f2f4f7;
-        cursor: pointer;
-      }
-
-      .arogga-mega-groups {
-        min-width: 0;
-        overflow-y: auto;
-        padding: 10px;
-        border-right: 1px solid #eaecf0;
-        background: #ffffff;
-      }
-
-      .arogga-all-link,
-      .arogga-group-link {
-        display: grid;
-        min-height: 44px;
-        grid-template-columns: 28px minmax(0, 1fr) auto;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 10px;
-        border: 1px solid transparent;
-        border-radius: 7px;
-        color: #344054;
-        background: #ffffff;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 1.25;
-        text-decoration: none;
-        transition:
-          color 140ms ease,
-          background-color 140ms ease,
-          border-color 140ms ease,
-          transform 140ms ease;
-      }
-
-      .arogga-all-link {
-        margin-bottom: 4px;
-      }
-
-      .arogga-all-link:hover,
-      .arogga-group-link:hover,
-      .arogga-group-link.is-active,
-      .arogga-group-link.is-route-active {
-        color: #087b75;
-        border-color: #d5eeeb;
-        background: #edf9f7;
-      }
-
-      .arogga-group-link:hover,
-      .arogga-group-link.is-active {
-        transform: translateX(2px);
-      }
-
-      .arogga-menu-icon {
-        display: flex;
-        width: 25px;
-        height: 25px;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #eaecf0;
-        border-radius: 5px;
-        background: #ffffff;
-        font-size: 14px;
-      }
-
-      .arogga-mega-children {
-        min-width: 0;
-        overflow-y: auto;
-        padding: 18px 18px 22px;
-        background: #ffffff;
-      }
-
-      .arogga-child-header {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 0 2px 14px;
-        border-bottom: 1px solid #eaecf0;
-      }
-
-      .arogga-child-header span {
-        display: block;
-        color: #98a2b3;
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-      }
-
-      .arogga-child-header h3 {
-        margin: 4px 0 0;
-        color: #101828;
-        font-size: 17px;
-        line-height: 1.25;
-      }
-
-      .arogga-child-header > a {
-        display: inline-flex;
-        align-items: center;
-        gap: 2px;
-        color: #087b75;
-        font-size: 12px;
-        font-weight: 700;
-        text-decoration: none;
-        white-space: nowrap;
-      }
-
-      .arogga-mega-child-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 8px;
-        padding-top: 14px;
-      }
-
-      .arogga-mega-child-grid > a {
-        display: grid;
-        min-height: 44px;
-        grid-template-columns: 30px minmax(0, 1fr);
-        align-items: center;
-        gap: 9px;
-        padding: 8px 10px;
-        border: 1px solid #e4e7ec;
-        border-radius: 7px;
-        color: #475467;
-        background: #ffffff;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 1.3;
-        text-decoration: none;
-        transition:
-          color 140ms ease,
-          background-color 140ms ease,
-          border-color 140ms ease,
-          transform 140ms ease;
-      }
-
-      .arogga-mega-child-grid > a:hover,
-      .arogga-mega-child-grid > a.is-active {
-        color: #087b75;
-        border-color: #bfe3df;
-        background: #edf9f7;
-        transform: translateX(2px);
-      }
-
-      .arogga-child-icon {
-        display: flex;
-        width: 28px;
-        height: 28px;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #eaecf0;
-        border-radius: 6px;
-        background: #ffffff;
-        font-size: 14px;
-      }
-
-      .arogga-empty-children {
-        padding: 28px 4px;
-        color: #667085;
-        font-size: 13px;
-      }
-
-      @keyframes aroggaMegaIn {
-        from {
-          opacity: 0;
-          transform: translateY(-5px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @media (max-width: 1100px) {
-        .arogga-section-shell {
-          width: calc(100% - 24px);
-        }
-
-        .arogga-mega-menu {
-          margin-left: 12px;
-        }
-      }
-
-      @media (max-width: 767px) {
-        .arogga-section-shell {
-          width: 100%;
-        }
-
-        .arogga-category-tabs {
-          min-height: 48px;
-          padding-inline: 8px;
-        }
-
-        .arogga-category-tab {
-          min-height: 48px;
-          padding-inline: 12px;
-          font-size: 12px;
-        }
-
-        .arogga-tab-scroll {
-          display: none;
-        }
-
-        .arogga-mega-overlay {
-          position: fixed;
-          inset: 0;
-          z-index: 250;
-          display: flex;
-          align-items: flex-end;
-          padding: 0;
-          background: rgba(15, 23, 42, 0.44);
-          backdrop-filter: blur(3px);
-          pointer-events: auto;
-        }
-
-        .arogga-mega-menu {
-          width: 100%;
-          max-height: 86vh;
-          grid-template-columns: 1fr;
-          overflow-y: auto;
-          margin: 0;
-          border: 0;
-          border-radius: 18px 18px 0 0;
-        }
-
-        .arogga-mega-close {
-          display: flex;
-        }
-
-        .arogga-mega-groups {
-          display: grid;
-          grid-template-columns: repeat(
-            2,
-            minmax(0, 1fr)
-          );
-          gap: 5px;
-          overflow: visible;
-          padding: 54px 12px 12px;
-          border-right: 0;
-          border-bottom: 1px solid #eaecf0;
-          background: #f9fafb;
-        }
-
-        .arogga-all-link,
-        .arogga-group-link {
-          min-height: 43px;
-          padding: 7px 8px;
-          font-size: 12px;
-        }
-
-        .arogga-mega-children {
-          overflow: visible;
-          padding: 16px 14px 24px;
-        }
-
-        .arogga-mega-child-grid {
-          grid-template-columns: repeat(
-            2,
-            minmax(0, 1fr)
-          );
-        }
-      }
-
-      @media (max-width: 480px) {
-        .arogga-mega-groups,
-        .arogga-mega-child-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .arogga-section-navigation *,
-        .arogga-section-navigation *::before,
-        .arogga-section-navigation *::after {
-          animation-duration: 0.01ms !important;
-          transition-duration: 0.01ms !important;
-          scroll-behavior: auto !important;
-        }
-      }
-    `}</style>
-  );
 }
