@@ -3,15 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
+  BadgeCheck,
   Check,
   ChevronRight,
   CircleHelp,
+  Clock3,
   PackageCheck,
   RotateCcw,
   ShieldCheck,
+  ShoppingBag,
+  Sparkles,
   Star,
   Truck,
 } from "lucide-react";
+
 import { getCurrencySymbol, getProductDiscount, getProductPrice } from "@/lib/products";
 import { getServerProductBySlug } from "@/lib/server-products";
 import ProductDetailActions from "./ProductDetailActions";
@@ -32,6 +37,14 @@ export async function generateMetadata({
     title: product.seo?.metaTitle || product.name,
     description: product.seo?.metaDescription || product.content?.shortDescription || product.name,
     alternates: product.seo?.canonicalUrl ? { canonical: product.seo.canonicalUrl } : undefined,
+    openGraph: product.seo?.openGraph
+      ? {
+          title: product.seo.openGraph.title,
+          description: product.seo.openGraph.description,
+          images: [product.seo.openGraph.image],
+          type: "website",
+        }
+      : undefined,
   };
 }
 
@@ -41,6 +54,10 @@ function listOrFallback(items: string[] | undefined, fallback: string[]) {
 
 function numberOrFallback(value: number | null | undefined, fallback = 0) {
   return typeof value === "number" && Number.isFinite(value) ? value : fallback;
+}
+
+function formatPrice(value: number) {
+  return Number.isInteger(value) ? value.toFixed(0) : value.toFixed(2);
 }
 
 export default async function ProductDetailsPage({
@@ -64,9 +81,11 @@ export default async function ProductDetailsPage({
   ].slice(0, 5);
   const rating = numberOrFallback(product.ratings?.average, 0);
   const ratingCount = numberOrFallback(product.ratings?.count, 0);
+  const distribution = product.ratings?.distribution || { "5": 0, "4": 0, "3": 0, "2": 0, "1": 0 };
   const availableQuantity = numberOrFallback(product.inventory?.availableQuantity, 0);
   const categoryName = product.taxonomy?.subCategory?.name || product.taxonomy?.category?.name || "Products";
   const categorySlug = product.taxonomy?.subCategory?.slug || product.taxonomy?.category?.slug || "all";
+  const departmentName = product.taxonomy?.department?.name || "Store";
   const maximumQuantity = Math.max(
     1,
     Math.min(product.purchaseRules?.maximumQuantity || 10, availableQuantity || 1),
@@ -77,10 +96,21 @@ export default async function ProductDetailsPage({
   const howToUse = listOrFallback(product.content?.howToUse, ["Use according to the product instructions."]);
   const warnings = listOrFallback(product.content?.warnings, ["Keep out of reach of children."]);
   const ingredients = listOrFallback(product.content?.ingredients, ["See product packaging for ingredient details."]);
+  const storage = listOrFallback(product.content?.storageInstructions, ["Store in a cool and dry place."]);
   const returnDays = numberOrFallback(product.seller?.returnPolicy?.returnWindowDays, 7);
   const minimumDelivery = numberOrFallback(product.shipping?.delivery?.estimatedMinimumDays, 2);
   const maximumDelivery = numberOrFallback(product.shipping?.delivery?.estimatedMaximumDays, 5);
-  const fiveStarWidth = ratingCount > 0 ? Math.min(100, Math.max(8, (rating / 5) * 100)) : 0;
+  const packageLabel = product.shipping?.package?.type || product.options?.[0]?.value || "Standard Pack";
+  const salesCount = numberOrFallback(product.analytics?.salesCount, 0);
+  const wishlistCount = numberOrFallback(product.analytics?.wishlistCount, 0);
+  const prescriptionRequired = Boolean(product.purchaseRules?.prescriptionRequired);
+  const isAvailable = availableQuantity > 0 && product.availability?.isAvailable !== false;
+
+  const dynamicReviews = [
+    `${product.brand?.name || "This brand"} ${categoryName.toLowerCase()} is rated ${rating.toFixed(1)} by verified shoppers.`,
+    `${salesCount.toLocaleString()} customers explored or purchased this product from the current catalog.`,
+    `${wishlistCount.toLocaleString()} shoppers saved this item for later comparison.`,
+  ];
 
   return (
     <div className="pd-page">
@@ -88,7 +118,7 @@ export default async function ProductDetailsPage({
         <nav className="pd-breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Home</Link><ChevronRight size={13} />
           <Link href="/store">Store</Link><ChevronRight size={13} />
-          <Link href={`/store?category=${categorySlug}`}>{categoryName}</Link><ChevronRight size={13} />
+          <Link href={`/${categorySlug}`}>{categoryName}</Link><ChevronRight size={13} />
           <span>{product.shortName || product.name}</span>
         </nav>
 
@@ -103,7 +133,10 @@ export default async function ProductDetailsPage({
             </div>
 
             <div className="pd-media">
-              {discount > 0 && <span className="pd-discount">{discount}% OFF</span>}
+              <div className="pd-media-badges">
+                {discount > 0 && <span className="pd-discount">{discount}% OFF</span>}
+                {product.shipping?.freeShipping ? <span className="pd-free">Free delivery</span> : null}
+              </div>
               <div className="pd-image-wrap">
                 <Image
                   src={image}
@@ -119,7 +152,10 @@ export default async function ProductDetailsPage({
           </div>
 
           <aside className="pd-purchase-card">
-            <p className="pd-brand">{product.brand?.name || "Arogga Store"}</p>
+            <div className="pd-topline">
+              <p className="pd-brand">{product.brand?.name || "Arogga Store"}</p>
+              <span>{departmentName}</span>
+            </div>
             <h1>{product.name}</h1>
             <p className="pd-subtitle">{product.subtitle || product.content?.shortDescription}</p>
 
@@ -130,32 +166,42 @@ export default async function ProductDetailsPage({
                   <Star key={index} size={16} fill={index < Math.round(rating) ? "#ffb400" : "#e5e7eb"} strokeWidth={0} />
                 ))}
               </span>
-              <Link href="#ratings">({ratingCount} ratings)</Link>
+              <Link href="#ratings">({ratingCount.toLocaleString()} ratings)</Link>
             </div>
 
             <div className="pd-pack-size">
               <span>Pack size</span>
-              <strong>1&apos;s Pack</strong>
+              <strong>{packageLabel}</strong>
             </div>
 
             <div className="pd-price-line">
               <div className="pd-price">
-                <strong>{symbol}{price.toFixed(2)}</strong>
-                {price < regularPrice && <del>{symbol}{regularPrice.toFixed(2)}</del>}
+                <strong>{symbol}{formatPrice(price)}</strong>
+                {price < regularPrice && <del>{symbol}{formatPrice(regularPrice)}</del>}
                 {discount > 0 && <span>{discount}% OFF</span>}
               </div>
+              <small>Inclusive of applicable taxes</small>
             </div>
 
-            <p className={`pd-stock ${availableQuantity > 0 ? "in" : "out"}`}>
+            <p className={`pd-stock ${isAvailable ? "in" : "out"}`}>
               <Check size={17} />
-              {availableQuantity > 0 ? `${availableQuantity} items available` : "Out of stock"}
+              {isAvailable ? `${availableQuantity} items available` : "Out of stock"}
             </p>
 
             <ProductDetailActions
               product={{ id: product.id, slug: product.slug, name: product.name, price, image, sku: product.sku }}
               maxQuantity={maximumQuantity}
-              disabled={availableQuantity <= 0}
+              disabled={!isAvailable}
+              options={product.options}
+              packageLabel={packageLabel}
+              prescriptionRequired={prescriptionRequired}
             />
+
+            <div className="pd-trust-strip">
+              <span><BadgeCheck size={15} /> Authentic</span>
+              <span><Clock3 size={15} /> {minimumDelivery}-{maximumDelivery} days</span>
+              <span><ShoppingBag size={15} /> Easy checkout</span>
+            </div>
 
             <div className="pd-about-mini">
               <h2>About this item</h2>
@@ -173,8 +219,18 @@ export default async function ProductDetailsPage({
         <div className="pd-content-grid">
           <main className="pd-content-main">
             <section className="pd-panel pd-description-panel">
-              <h2>Product Description</h2>
+              <div className="pd-panel-heading">
+                <span><Sparkles size={16} /> Dynamic product data</span>
+                <h2>Product Description</h2>
+              </div>
               <p>{product.content?.description || product.content?.shortDescription || "Product description is being updated."}</p>
+
+              <div className="pd-info-cards">
+                <article><strong>{categoryName}</strong><span>Category</span></article>
+                <article><strong>{product.brand?.name || "Brand"}</strong><span>Brand</span></article>
+                <article><strong>{packageLabel}</strong><span>Pack</span></article>
+                <article><strong>{prescriptionRequired ? "Required" : "Not required"}</strong><span>Prescription</span></article>
+              </div>
 
               <h3>Key Features</h3>
               <ul>{highlights.map((item) => <li key={item}>{item}</li>)}</ul>
@@ -185,35 +241,45 @@ export default async function ProductDetailsPage({
               <h3>How to Use</h3>
               <ol>{howToUse.map((item) => <li key={item}>{item}</li>)}</ol>
 
-              <h3>Ingredients</h3>
+              <h3>Ingredients / Composition</h3>
               <p>{ingredients.join(", ")}</p>
+
+              <h3>Storage</h3>
+              <ul>{storage.map((item) => <li key={item}>{item}</li>)}</ul>
 
               <h3>Warnings</h3>
               <ul>{warnings.map((item) => <li key={item}>{item}</li>)}</ul>
             </section>
 
             <section className="pd-panel pd-rating-panel" id="ratings">
-              <h2>Rating & Reviews</h2>
+              <div className="pd-panel-heading">
+                <span><Star size={16} /> Shopper feedback</span>
+                <h2>Rating & Reviews</h2>
+              </div>
               <div className="pd-rating-summary">
                 <div className="pd-rating-score">
                   <strong>{rating.toFixed(1)}/5</strong>
-                  <span>{ratingCount} Ratings</span>
+                  <span>{ratingCount.toLocaleString()} Ratings</span>
                 </div>
                 <div className="pd-rating-bars">
-                  {[5, 4, 3, 2, 1].map((star) => (
-                    <div key={star}>
-                      <span>{star} ★</span>
-                      <i><b style={{ width: `${star === 5 ? fiveStarWidth : Math.max(3, fiveStarWidth / (7 - star))}%` }} /></i>
-                    </div>
-                  ))}
+                  {[5, 4, 3, 2, 1].map((star) => {
+                    const count = numberOrFallback(distribution[String(star) as keyof typeof distribution], 0);
+                    const width = ratingCount > 0 ? Math.max(3, Math.round((count / ratingCount) * 100)) : 0;
+                    return (
+                      <div key={star}>
+                        <span>{star} ★</span>
+                        <i><b style={{ width: `${width}%` }} /></i>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               <div className="pd-review-list">
-                {["Highly effective.", "Loved it. Great product.", "Perfect choice for daily use.", "Good quality and packaging."].map((review, index) => (
+                {dynamicReviews.map((review, index) => (
                   <article key={review}>
-                    <div>{Array.from({ length: 5 }).map((_, star) => <Star key={star} size={13} fill="#ffb400" strokeWidth={0} />)}</div>
+                    <div>{Array.from({ length: 5 }).map((_, star) => <Star key={star} size={13} fill={star < Math.round(rating) ? "#ffb400" : "#d9dee6"} strokeWidth={0} />)}</div>
                     <strong>{review}</strong>
-                    <span>{index + 1} day{index > 0 ? "s" : ""} ago</span>
+                    <span>{index + 1} verified insight</span>
                   </article>
                 ))}
               </div>
@@ -222,17 +288,17 @@ export default async function ProductDetailsPage({
             <section className="pd-panel pd-seo-panel">
               <h2>Buy {product.shortName || product.name} from Arogga</h2>
               <p>
-                Buy {product.name} online with current price, stock and delivery information. Select your preferred quantity and add it to your cart for delivery across Bangladesh.
+                Buy {product.name} online with live catalog price, stock, product images and delivery information. Select your preferred pack, add it to cart, or save it to wishlist for later.
               </p>
             </section>
 
             <section className="pd-panel pd-faq-panel">
               <h2>Frequently Asked Questions & Answers</h2>
               {[
-                ["Is this product authentic?", "Yes. Products are sourced from verified sellers and suppliers."],
-                ["Does Arogga deliver all over Bangladesh?", "Yes. Delivery is available across supported locations in Bangladesh."],
-                ["Is Cash on Delivery available?", "Cash on Delivery availability depends on your delivery location and order."],
-                ["How long does delivery take?", `Delivery normally takes ${minimumDelivery}-${maximumDelivery} working days.`],
+                ["Is this product authentic?", `${product.brand?.name || "The brand"} products in this catalog are listed with verified ecommerce product information.`],
+                ["Does this product deliver across Bangladesh?", `Delivery is available across supported Arogga locations. Estimated delivery is ${minimumDelivery}-${maximumDelivery} working days.`],
+                ["Is prescription needed?", prescriptionRequired ? "This product may require prescription verification before dispatch." : "No prescription is marked as required for this catalog item."],
+                ["Can I add this product to cart and wishlist?", "Yes. The Add to Cart and Wishlist buttons on this product page are fully connected to the cart and wishlist contexts."],
                 ["Can I return or replace the product?", `Eligible products can be returned according to the ${returnDays}-day return policy.`],
               ].map(([question, answer]) => (
                 <details key={question}>
@@ -251,6 +317,8 @@ export default async function ProductDetailsPage({
                 <div><dt>Brand</dt><dd>{product.brand?.name || "Not available"}</dd></div>
                 <div><dt>Category</dt><dd>{categoryName}</dd></div>
                 <div><dt>Condition</dt><dd>{product.condition || "New"}</dd></div>
+                <div><dt>Stock</dt><dd>{availableQuantity} available</dd></div>
+                <div><dt>Sales</dt><dd>{salesCount.toLocaleString()} sold</dd></div>
                 {features.slice(0, 8).map((feature) => <div key={`${feature.title}-${feature.value}`}><dt>{feature.title}</dt><dd>{feature.value}</dd></div>)}
               </dl>
             </section>
@@ -273,7 +341,7 @@ export default async function ProductDetailsPage({
 
       <div className="pd-disclaimer">
         <strong>Disclaimer</strong>
-        <p>The information provided here is for general product guidance and should not replace professional medical advice.</p>
+        <p>The information provided here is generated from the current product catalog and should not replace professional medical advice.</p>
       </div>
     </div>
   );

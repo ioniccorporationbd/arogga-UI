@@ -41,15 +41,39 @@ export type EcommerceProduct = {
   inventory: { stockStatus: string; availableQuantity: number; lowStockThreshold: number };
   media: {
     featuredImage: { url: string; thumbnailUrl: string; alt: string; title: string; width: number | null; height: number | null; mimeType: string | null };
-    gallery: { url: string; alt?: string }[];
+    gallery: { url: string; thumbnailUrl?: string; alt?: string; title?: string; width?: number | null; height?: number | null; mimeType?: string | null }[];
   };
+  options?: { name?: string; slug?: string; value?: string; colorHex?: string | null }[];
   attributes: { id: string; name: string; slug: string; value: string; visible: boolean; filterable: boolean; comparable: boolean }[];
-  shipping: { freeShipping: boolean; delivery: { estimatedMinimumDays: number; estimatedMaximumDays: number; sameDayEligible: boolean } };
-  purchaseRules: { minimumQuantity: number; maximumQuantity: number | null };
-  ratings: { average: number | null; count: number };
+  shipping: {
+    freeShipping: boolean;
+    package?: { type?: string; quantityPerPackage?: number };
+    delivery: { estimatedMinimumDays: number; estimatedMaximumDays: number; sameDayEligible: boolean };
+  };
+  purchaseRules: {
+    minimumQuantity: number;
+    maximumQuantity: number | null;
+    maximumPerOrder?: number | null;
+    prescriptionRequired?: boolean;
+  };
+  ratings: {
+    average: number | null;
+    count: number;
+    verifiedPurchaseCount?: number;
+    distribution?: { "5": number; "4": number; "3": number; "2": number; "1": number };
+  };
+  reviews?: { enabled: boolean; requiresPurchase: boolean; requiresApproval: boolean };
   seller: { name: string; fulfilledBy: string; returnPolicy: { returnable: boolean; returnWindowDays: number; conditions: string[] } };
-  seo: { metaTitle: string; metaDescription: string; canonicalUrl: string };
+  compliance?: { isHazardous: boolean; isFragile: boolean; requiresColdStorage: boolean; regulatedProduct: boolean; licenseRequired: boolean };
+  seo: {
+    metaTitle: string;
+    metaDescription: string;
+    canonicalUrl: string;
+    openGraph?: { title: string; description: string; image: string; type: string };
+  };
   urls: { local: string; api: string; source: string };
+  availability?: { isAvailable: boolean; availableFrom: string | null; availableUntil: string | null; salesChannels: string[]; regions: string[] };
+  analytics?: { viewCount: number; salesCount: number; wishlistCount: number; cartAdditionCount: number; conversionRate: number };
 };
 
 export function getCurrencySymbol(currency: string) {
