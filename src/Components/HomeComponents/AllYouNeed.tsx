@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 
 type Category = {
   id: number;
@@ -197,6 +198,7 @@ export default function AllYouNeed() {
                 key={category.id}
                 category={category}
                 priority={index < 6}
+                index={index}
               />
             ))}
           </div>
@@ -757,6 +759,104 @@ export default function AllYouNeed() {
           }
         }
 
+
+        /* Independent category-grid refresh */
+        .all-you-need-grid {
+          align-items: stretch;
+        }
+
+        .all-you-need-link {
+          animation: aynCardEntrance 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+          animation-delay: calc(var(--card-index) * 42ms);
+        }
+
+        .all-you-need-card-frame {
+          padding: 6px;
+          border-radius: 22px;
+          background:
+            linear-gradient(#ffffff, #ffffff) padding-box,
+            linear-gradient(145deg, rgba(8, 123, 117, 0.18), rgba(255, 184, 108, 0.22), rgba(124, 58, 237, 0.14)) border-box;
+          border: 1px solid transparent;
+          box-shadow:
+            0 18px 42px -34px rgba(15, 23, 42, 0.52),
+            inset 0 1px rgba(255, 255, 255, 0.8);
+        }
+
+        .all-you-need-link:hover .all-you-need-card-frame {
+          transform: translate3d(0, -8px, 0) scale(1.01);
+          box-shadow:
+            0 30px 58px -34px rgba(8, 123, 117, 0.38),
+            0 12px 32px -26px rgba(15, 23, 42, 0.38);
+        }
+
+        .all-you-need-image-wrap {
+          aspect-ratio: 1 / 0.92;
+          border-radius: 16px;
+        }
+
+        .all-you-need-image-overlay {
+          background:
+            linear-gradient(to top, rgba(15, 23, 42, 0.48), transparent 56%),
+            radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.28), transparent 28%);
+          opacity: 0.76;
+        }
+
+        .all-you-need-card-badge {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 3;
+          display: inline-flex;
+          min-height: 24px;
+          align-items: center;
+          padding: 0 9px;
+          border: 1px solid rgba(255, 255, 255, 0.38);
+          border-radius: 999px;
+          color: #fff;
+          background: rgba(8, 123, 117, 0.78);
+          box-shadow: 0 10px 22px -16px rgba(15, 23, 42, 0.65);
+          backdrop-filter: blur(12px);
+          font-size: 10px;
+          font-weight: 850;
+          letter-spacing: 0.03em;
+        }
+
+        .all-you-need-card-copy {
+          display: grid;
+          gap: 3px;
+          padding: 12px 6px 2px;
+          text-align: center;
+        }
+
+        .all-you-need-card-title {
+          min-height: auto;
+          margin: 0;
+          padding: 0;
+          font-size: 13px;
+          line-height: 1.35;
+        }
+
+        .all-you-need-card-copy > span {
+          color: #087b75;
+          font-size: 10px;
+          font-weight: 850;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          opacity: 0;
+          transform: translateY(4px);
+          transition: opacity 260ms ease, transform 260ms ease;
+        }
+
+        .all-you-need-link:hover .all-you-need-card-copy > span {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        @keyframes aynCardEntrance {
+          from { opacity: 0; transform: translateY(18px) scale(0.985); }
+          to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
         @media (prefers-reduced-motion: reduce) {
           .all-you-need-section *,
           .all-you-need-section *::before,
@@ -775,15 +875,19 @@ export default function AllYouNeed() {
 function CategoryCard({
   category,
   priority,
+  index,
 }: {
   category: Category;
   priority: boolean;
+  index: number;
 }) {
+  const badge = index % 3 === 0 ? "Popular" : index % 3 === 1 ? "Essentials" : "Deals";
   return (
     <Link
       href={category.href}
       aria-label={`Browse ${category.name}`}
       className="all-you-need-link"
+      style={{ "--card-index": index } as CSSProperties}
     >
       <article className="all-you-need-card">
         <div className="all-you-need-card-frame">
@@ -810,6 +914,8 @@ function CategoryCard({
               className="all-you-need-image-shine"
             />
 
+            <span className="all-you-need-card-badge">{badge}</span>
+
             <div
               aria-hidden="true"
               className="all-you-need-arrow"
@@ -819,9 +925,12 @@ function CategoryCard({
           </div>
         </div>
 
-        <h3 className="all-you-need-card-title">
-          {category.name}
-        </h3>
+        <div className="all-you-need-card-copy">
+          <h3 className="all-you-need-card-title">
+            {category.name}
+          </h3>
+          <span>Shop now</span>
+        </div>
       </article>
     </Link>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 type OfferCard = {
   id: number;
@@ -119,7 +119,7 @@ const cards: OfferCard[] = [
 
 export default function EspeciallyForYou() {
   const sectionRef = useRef<HTMLElement | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -226,7 +226,7 @@ export default function EspeciallyForYou() {
                       : "0ms",
                   }}
                 >
-                  <OfferCardItem card={card} />
+                  <OfferCardItem card={card} index={index} />
                 </div>
               ))}
             </div>
@@ -1115,6 +1115,100 @@ export default function EspeciallyForYou() {
           }
         }
 
+
+        /* Independent premium service-card refresh */
+        .especially-card-list {
+          perspective: 1200px;
+        }
+
+        .especially-card-wrapper:nth-child(odd) .especially-card {
+          transform-origin: 20% 100%;
+        }
+
+        .especially-card-wrapper:nth-child(even) .especially-card {
+          transform-origin: 80% 100%;
+        }
+
+        .especially-card {
+          height: 286px;
+          padding: 16px;
+          border-radius: 24px;
+          box-shadow:
+            0 20px 44px -30px rgba(15, 23, 42, 0.55),
+            inset 0 1px rgba(255, 255, 255, 0.65);
+          animation: especiallySoftFloat 7s ease-in-out infinite;
+          animation-delay: calc(var(--service-index) * -650ms);
+        }
+
+        .especially-card::before {
+          position: absolute;
+          inset: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.46);
+          border-radius: 19px;
+          pointer-events: none;
+          content: "";
+        }
+
+        .especially-card-shell:hover .especially-card {
+          transform: translate3d(0, -8px, 0) rotateX(3deg) rotateY(-3deg) scale(1.018);
+          box-shadow:
+            0 30px 64px -34px rgba(15, 23, 42, 0.58),
+            inset 0 1px rgba(255, 255, 255, 0.78);
+        }
+
+        .especially-card-number {
+          position: absolute;
+          right: 16px;
+          bottom: 74px;
+          z-index: 4;
+          color: rgba(255, 255, 255, 0.56);
+          font-size: 42px;
+          font-weight: 950;
+          line-height: 1;
+          letter-spacing: -0.08em;
+          pointer-events: none;
+        }
+
+        .especially-card-eyebrow {
+          min-height: 26px;
+          padding: 5px 9px;
+          font-size: 10px;
+          letter-spacing: 0.075em;
+        }
+
+        .especially-icon-box {
+          width: 52px;
+          height: 52px;
+          border-radius: 17px;
+        }
+
+        .especially-card-icon {
+          width: 29px;
+          height: 29px;
+        }
+
+        .especially-card-title {
+          max-width: 160px;
+          font-size: 18px;
+          letter-spacing: -0.035em;
+        }
+
+        .especially-card-subtitle,
+        .especially-phone-number {
+          font-size: 14px;
+        }
+
+        .especially-card-button {
+          min-height: 42px;
+          border-radius: 12px;
+          font-size: 12px;
+        }
+
+        @keyframes especiallySoftFloat {
+          0%, 100% { translate: 0 0; }
+          50% { translate: 0 -5px; }
+        }
+
         @media (prefers-reduced-motion: reduce) {
           .especially-section *,
           .especially-section *::before,
@@ -1137,7 +1231,7 @@ export default function EspeciallyForYou() {
   );
 }
 
-function OfferCardItem({ card }: { card: OfferCard }) {
+function OfferCardItem({ card, index }: { card: OfferCard; index: number }) {
   const cardContent = (
     <div className="especially-card-shell">
       <div
@@ -1152,7 +1246,8 @@ function OfferCardItem({ card }: { card: OfferCard }) {
         className="especially-card"
         style={{
           background: card.background,
-        }}
+          "--service-index": index,
+        } as CSSProperties}
       >
         <div
           aria-hidden="true"
@@ -1173,6 +1268,8 @@ function OfferCardItem({ card }: { card: OfferCard }) {
           aria-hidden="true"
           className="especially-card-shine"
         />
+
+        <span className="especially-card-number">0{index + 1}</span>
 
         <div className="especially-card-top">
           <span className="especially-card-eyebrow">
