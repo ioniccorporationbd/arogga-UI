@@ -49,7 +49,7 @@ export type ProductCardData = {
   sourceUrl: string | null;
 };
 
-export const PRODUCT_DATA_URL = "/tara.json";
+export const PRODUCT_DATA_URL = "/products.json";
 export const FALLBACK_IMAGE = "/images/product-fallback.png";
 
 export function isValidProduct(value: unknown): value is JsonProduct {
@@ -102,15 +102,29 @@ export function normalizeProduct(product: JsonProduct): ProductCardData {
   };
 }
 
-export async function fetchTaraProducts(signal?: AbortSignal): Promise<ProductCardData[]> {
-  const response = await fetch(PRODUCT_DATA_URL, { cache: "force-cache", signal });
-  if (!response.ok) throw new Error(`Product data could not be loaded (${response.status}).`);
-  const payload: unknown = await response.json();
-  const source = Array.isArray(payload) ? payload : [payload];
-  return source
-    .filter(isValidProduct)
-    .filter((product) => (product.status ?? "active") === "active" && (product.visibility ?? "public") === "public")
-    .map(normalizeProduct);
+let productDataPromise: Promise<ProductCardData[]> | null = null;
+
+export async function fetchTaraProducts(_signal?: AbortSignal): Promise<ProductCardData[]> {
+  void _signal;
+
+  productDataPromise ??= fetch(PRODUCT_DATA_URL, { cache: "force-cache" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`Product data could not be loaded (${response.status}).`);
+      return response.json() as Promise<unknown>;
+    })
+    .then((payload) => {
+      const source = Array.isArray(payload) ? payload : [payload];
+      return source
+        .filter(isValidProduct)
+        .filter((product) => (product.status ?? "active") === "active" && (product.visibility ?? "public") === "public")
+        .map(normalizeProduct);
+    })
+    .catch((error) => {
+      productDataPromise = null;
+      throw error;
+    });
+
+  return productDataPromise;
 }
 
 function hashSeed(seed: string) {

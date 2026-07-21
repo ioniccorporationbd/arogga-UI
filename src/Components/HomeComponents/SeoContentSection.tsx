@@ -59,7 +59,7 @@ export default function SeoContentSection() {
   return (
     <section
       aria-labelledby="seo-content-title"
-      className="relative isolate w-full overflow-hidden bg-[#f8fbfa] py-10 sm:py-12 lg:py-14 xl:py-16"
+      className="relative isolate w-full overflow-hidden bg-[radial-gradient(circle_at_10%_10%,#e1faf5_0,transparent_28%),linear-gradient(180deg,#f8fbfa,#ffffff)] py-10 sm:py-12 lg:py-16"
     >
       <div
         aria-hidden="true"
@@ -72,8 +72,8 @@ export default function SeoContentSection() {
       />
 
       <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
-        <article className="overflow-hidden rounded-[18px] border border-[#dfe8e6] bg-white shadow-[0_24px_70px_-45px_rgba(15,23,42,0.38)]">
-          <header className="relative overflow-hidden border-b border-[#e7eeec] bg-gradient-to-br from-[#f4fcfa] via-white to-[#fffaf2] px-5 py-7 sm:px-7 sm:py-8 md:px-8 lg:px-10 lg:py-10">
+        <article className="overflow-hidden rounded-[24px] border border-[#dfe8e6] bg-white/95 shadow-[0_32px_86px_-54px_rgba(15,23,42,0.48)] backdrop-blur">
+          <header className="relative overflow-hidden border-b border-[#e7eeec] bg-[linear-gradient(135deg,#eefaf8_0%,#ffffff_50%,#fff6e8_100%)] px-5 py-7 sm:px-7 sm:py-8 md:px-8 lg:px-10 lg:py-10">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full border-[28px] border-white/70"
@@ -206,7 +206,7 @@ export default function SeoContentSection() {
 
             <section
               aria-labelledby="medicine-order-steps"
-              className="mt-10 rounded-[16px] border border-[#dce9e6] bg-[#f8fcfb] p-5 sm:p-6 lg:p-7"
+              className="mt-10 rounded-[20px] border border-[#dce9e6] bg-[linear-gradient(135deg,#f8fcfb,#ffffff)] p-5 shadow-[0_18px_46px_-38px_rgba(15,23,42,0.44)] sm:p-6 lg:p-7"
             >
               <div className="max-w-[820px]">
                 <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-[#087b75]">
@@ -231,7 +231,7 @@ export default function SeoContentSection() {
                 {orderSteps.map((step) => (
                   <article
                     key={step.number}
-                    className="group rounded-[14px] border border-[#dfe8e6] bg-white p-5 shadow-[0_14px_35px_-28px_rgba(15,23,42,0.42)] transition duration-300 hover:-translate-y-1 hover:border-[#afd8d2] hover:shadow-[0_20px_45px_-26px_rgba(8,123,117,0.32)]"
+                    className="group rounded-[16px] border border-[#dfe8e6] bg-white p-5 shadow-[0_18px_42px_-32px_rgba(15,23,42,0.46)] transition duration-300 hover:-translate-y-1.5 hover:border-[#afd8d2] hover:shadow-[0_26px_54px_-30px_rgba(8,123,117,0.34)]"
                   >
                     <div className="flex items-center justify-between gap-4">
                       <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#087b75] text-[13px] font-extrabold text-white shadow-md">
@@ -329,7 +329,7 @@ export default function SeoContentSection() {
 
             <section
               aria-labelledby="medicine-order-faq"
-              className="mt-10 rounded-[16px] border border-[#e2e8e6] bg-[#fcfdfd] p-5 sm:p-6 lg:p-7"
+              className="mt-10 rounded-[20px] border border-[#e2e8e6] bg-[linear-gradient(135deg,#fcfdfd,#ffffff)] p-5 shadow-[0_18px_46px_-38px_rgba(15,23,42,0.44)] sm:p-6 lg:p-7"
             >
               <div className="max-w-[850px]">
                 <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-[#087b75]">
@@ -403,7 +403,7 @@ function ContentBlock({
   children,
 }: ContentBlockProps) {
   return (
-    <article className="group relative overflow-hidden rounded-[14px] border border-[#e0e7e5] bg-white p-5 shadow-[0_12px_32px_-27px_rgba(15,23,42,0.38)] transition duration-300 hover:-translate-y-1 hover:border-[#b8dcd7] hover:shadow-[0_22px_46px_-28px_rgba(8,123,117,0.28)] sm:p-6">
+    <article className="group relative overflow-hidden rounded-[18px] border border-[#e0e7e5] bg-white p-5 shadow-[0_16px_40px_-30px_rgba(15,23,42,0.42)] transition duration-300 hover:-translate-y-1.5 hover:border-[#b8dcd7] hover:shadow-[0_28px_56px_-32px_rgba(8,123,117,0.3)] sm:p-6">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-10 -top-12 h-28 w-28 rounded-full bg-[#eaf8f5] transition-transform duration-500 group-hover:scale-125"
@@ -431,7 +431,7 @@ function FaqItem({
   children,
 }: FaqItemProps) {
   return (
-    <details className="group overflow-hidden rounded-[12px] border border-[#e0e7e5] bg-white transition duration-300 open:border-[#b9ddd8] open:shadow-[0_16px_36px_-28px_rgba(8,123,117,0.38)]">
+    <details className="group overflow-hidden rounded-[15px] border border-[#e0e7e5] bg-white transition duration-300 hover:border-[#c6e5e1] open:border-[#b9ddd8] open:shadow-[0_18px_40px_-28px_rgba(8,123,117,0.38)]">
       <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-4 py-4 text-[16px] font-bold leading-6 text-[#26364d] outline-none transition hover:bg-[#f5fbfa] focus-visible:bg-[#f5fbfa] sm:px-5">
         <span>{question}</span>
 
