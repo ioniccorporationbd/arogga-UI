@@ -1,0 +1,1 @@
+import {Inbox} from "lucide-react";import "./inbox.css";export default function Page(){return <main className="inbox-page"><h1>Inbox</h1><section><Inbox/><h2>Your inbox is empty</h2><p>Order updates, offers and support messages will appear here.</p></section></main>}

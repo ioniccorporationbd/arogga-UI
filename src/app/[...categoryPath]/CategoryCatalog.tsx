@@ -10,7 +10,6 @@ import {
   Heart,
   ListFilter,
   Search,
-  ShoppingCart,
   Star,
 } from "lucide-react";
 import { useMemo, useState } from "react";
@@ -22,6 +21,7 @@ import {
 } from "@/lib/products";
 import type { CategoryRoute } from "./category-data";
 import styles from "./category-page.module.css";
+import AddToCartButton from "@/Components/cart/AddToCartButton";
 
 type Props = {
   category: CategoryRoute;
@@ -30,35 +30,6 @@ type Props = {
 
 const PAGE_SIZE = 30;
 
-function addToCart(product: EcommerceProduct) {
-  try {
-    const key = "arogga-cart";
-    const current = JSON.parse(window.localStorage.getItem(key) || "[]") as Array<{
-      id: string;
-      slug: string;
-      name: string;
-      price: number;
-      image: string;
-      quantity: number;
-    }>;
-    const index = current.findIndex((item) => item.id === product.id);
-    if (index >= 0) current[index].quantity += 1;
-    else {
-      current.push({
-        id: product.id,
-        slug: product.slug,
-        name: product.name,
-        price: getProductPrice(product),
-        image: product.media?.featuredImage?.url || "",
-        quantity: 1,
-      });
-    }
-    window.localStorage.setItem(key, JSON.stringify(current));
-    window.dispatchEvent(new Event("storage"));
-  } catch (error) {
-    console.error("Unable to update cart", error);
-  }
-}
 
 export default function CategoryCatalog({ category, products }: Props) {
   const [query, setQuery] = useState("");
@@ -218,7 +189,7 @@ export default function CategoryCatalog({ category, products }: Props) {
                         <div className={styles.price}><strong>{symbol}{price.toFixed(0)}</strong>{regular > price && <del>{symbol}{regular.toFixed(0)}</del>}</div>
                         <div className={styles.cardBottom}>
                           <small>{(product.inventory?.availableQuantity ?? 0) > 0 ? "In stock" : "Out of stock"}</small>
-                          <button type="button" disabled={(product.inventory?.availableQuantity ?? 0) <= 0} onClick={() => addToCart(product)} aria-label={`Add ${product.name} to cart`}><ShoppingCart size={15} /> ADD</button>
+                          <AddToCartButton product={{id:product.id,slug:product.slug,name:product.name,price:getProductPrice(product),image:product.media?.featuredImage?.url||"",sku:product.sku,maxQuantity:product.inventory?.availableQuantity??1}} disabled={(product.inventory?.availableQuantity??0)<=0} className={styles.addButton} label="ADD" addedLabel="ADDED" />
                         </div>
                       </div>
                     </article>

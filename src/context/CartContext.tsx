@@ -1,0 +1,27 @@
+"use client";
+/* eslint-disable react-hooks/set-state-in-effect */
+
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+
+export type CartItem = { id: string; slug: string; name: string; price: number; image: string; quantity: number; sku?: string; maxQuantity?: number };
+type CartContextValue = { items: CartItem[]; count: number; subtotal: number; addItem: (item: Omit<CartItem,"quantity">, quantity?: number) => void; removeItem: (id:string)=>void; updateQuantity:(id:string,quantity:number)=>void; clearCart:()=>void };
+const CartContext = createContext<CartContextValue | null>(null);
+const KEY = "arogga-cart";
+
+function safeRead(): CartItem[] {
+  try { const raw=localStorage.getItem(KEY); if(!raw) return []; const parsed:unknown=JSON.parse(raw); return Array.isArray(parsed)?parsed.filter((x):x is CartItem=>Boolean(x&&typeof x==="object"&&typeof (x as CartItem).id==="string"&&typeof (x as CartItem).quantity==="number")):[]; }
+  catch { localStorage.removeItem(KEY); return []; }
+}
+
+export function CartProvider({children}:{children:ReactNode}){
+  const [items,setItems]=useState<CartItem[]>([]);
+  useEffect(()=>{  setItems(safeRead()); const sync=()=>setItems(safeRead()); window.addEventListener("storage",sync); window.addEventListener("arogga-cart-updated",sync); return()=>{window.removeEventListener("storage",sync);window.removeEventListener("arogga-cart-updated",sync)}},[]);
+  const persist=useCallback((next:CartItem[])=>{setItems(next);localStorage.setItem(KEY,JSON.stringify(next));window.dispatchEvent(new Event("arogga-cart-updated"));},[]);
+  const addItem=useCallback((item:Omit<CartItem,"quantity">,quantity=1)=>{const current=safeRead();const found=current.find(x=>x.id===item.id);const max=Math.max(1,item.maxQuantity??999);const next=found?current.map(x=>x.id===item.id?{...x,...item,quantity:Math.min(max,x.quantity+quantity)}:x):[...current,{...item,quantity:Math.min(max,Math.max(1,quantity))}];persist(next)},[persist]);
+  const removeItem=useCallback((id:string)=>persist(safeRead().filter(x=>x.id!==id)),[persist]);
+  const updateQuantity=useCallback((id:string,quantity:number)=>persist(safeRead().map(x=>x.id===id?{...x,quantity:Math.max(1,Math.min(x.maxQuantity??999,quantity))}:x)),[persist]);
+  const clearCart=useCallback(()=>persist([]),[persist]);
+  const value=useMemo(()=>({items,count:items.reduce((s,x)=>s+x.quantity,0),subtotal:items.reduce((s,x)=>s+x.price*x.quantity,0),addItem,removeItem,updateQuantity,clearCart}),[items,addItem,removeItem,updateQuantity,clearCart]);
+  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+}
+export function useCart(){const value=useContext(CartContext);if(!value)throw new Error("useCart must be used inside CartProvider");return value}

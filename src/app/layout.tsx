@@ -5,6 +5,7 @@ import TopNavber from "@/Components/TopNavber";
 import AboveFooterVideo from "@/Components/AboveFooterVideo";
 import "./globals.css";
 import SectionNavigation from "@/Components/SectionNavigation";
+import AppProviders from "@/context/AppProviders";
 
 export const metadata: Metadata = {
   title: "Arogga Store",
@@ -17,11 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="site-wrapper" suppressHydrationWarning>
+        <AppProviders>
         <TopNavber />
         <SectionNavigation />
         <main className="site-main">{children}</main>
         <AboveFooterVideo /> 
         <Footer />
+        </AppProviders>
       </body>
     </html>
   );

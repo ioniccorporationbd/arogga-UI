@@ -1,0 +1,2 @@
+"use client";import {Heart} from "lucide-react";import {useWishlist,type WishlistItem} from "@/context/WishlistContext";
+export default function WishlistButton({product,className=""}:{product:WishlistItem;className?:string}){const{has,toggle}=useWishlist();const active=has(product.id);return <button type="button" className={className} onClick={()=>toggle(product)} aria-label={active?"Remove from wishlist":"Add to wishlist"}><Heart fill={active?"currentColor":"none"}/></button>}

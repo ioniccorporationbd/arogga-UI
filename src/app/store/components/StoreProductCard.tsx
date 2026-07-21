@@ -60,6 +60,7 @@ export default function StoreProductCard({
         ];
 
     localStorage.setItem("arogga-cart", JSON.stringify(next));
+    window.dispatchEvent(new Event("arogga-cart-updated"));
     router.push(product.href);
   };
 

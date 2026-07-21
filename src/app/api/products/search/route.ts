@@ -1,0 +1,7 @@
+import { NextRequest, NextResponse } from "next/server";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+type ProductIndex={id:string;slug:string;name:string;shortName:string;brand:string;department:string;category:string;subCategory:string;price:number;currency:string;image:string;href:string};
+let cache:ProductIndex[]|null=null;
+async function getIndex(){if(cache)return cache;const file=await readFile(path.join(process.cwd(),"public","products-index.json"),"utf8");const parsed:unknown=JSON.parse(file);cache=Array.isArray(parsed)?parsed as ProductIndex[]:[];return cache}
+export async function GET(request:NextRequest){const q=(request.nextUrl.searchParams.get("q")||"").trim().toLowerCase();const limit=Math.min(20,Math.max(1,Number(request.nextUrl.searchParams.get("limit"))||8));if(q.length<2)return NextResponse.json({results:[]},{headers:{"Cache-Control":"public, max-age=300"}});const terms=q.split(/\s+/).filter(Boolean);const products=await getIndex();const scored=products.map(product=>{const haystack=[product.name,product.shortName,product.brand,product.department,product.category,product.subCategory].join(" ").toLowerCase();const score=terms.reduce((sum,t)=>sum+(product.name.toLowerCase().startsWith(t)?5:haystack.includes(t)?1:0),0);return{product,score}}).filter(x=>x.score>=terms.length).sort((a,b)=>b.score-a.score||a.product.name.localeCompare(b.product.name)).slice(0,limit).map(x=>x.product);return NextResponse.json({results:scored},{headers:{"Cache-Control":"public, max-age=300, stale-while-revalidate=3600"}})}
