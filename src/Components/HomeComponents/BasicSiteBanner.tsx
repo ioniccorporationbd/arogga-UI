@@ -4,7 +4,7 @@ import Link from "next/link";
 import {
   A11y,
   Autoplay,
-  EffectFade,
+  EffectCreative,
   Keyboard,
   Navigation,
   Pagination,
@@ -12,7 +12,7 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/effect-fade";
+import "swiper/css/effect-creative";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
@@ -21,7 +21,13 @@ type BannerSlide = {
   desktopImage: string;
   mobileImage: string;
   href: string;
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  offer: string;
+  cta: string;
   alt: string;
+  tone: "teal" | "rose" | "blue" | "amber" | "violet" | "green" | "slate";
   desktopPosition?: string;
   mobilePosition?: string;
 };
@@ -30,796 +36,563 @@ const bannerSlides: BannerSlide[] = [
   {
     id: 1,
     desktopImage:
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1800&h=520&q=90",
+      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=1800&h=620&q=92",
     mobileImage:
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&h=1000&q=88",
-    href: "/beauty",
-    alt: "Beauty and cosmetics promotional collection",
-    desktopPosition: "center",
+      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&h=1100&q=90",
+    href: "/skincare",
+    eyebrow: "Beauty essentials",
+    title: "Glow care for everyday routines",
+    subtitle: "Shop trusted skincare, cleanser, serum and moisturizer picks.",
+    offer: "Up to 50% off",
+    cta: "Shop skincare",
+    alt: "Premium skincare products arranged for an ecommerce beauty banner",
+    tone: "rose",
+    desktopPosition: "center right",
     mobilePosition: "center",
   },
   {
     id: 2,
     desktopImage:
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1800&h=520&q=90",
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1800&h=620&q=92",
     mobileImage:
-      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&h=1000&q=88",
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&h=1100&q=90",
     href: "/medicine",
-    alt: "Medicine and pharmacy products promotional collection",
-    desktopPosition: "center",
-    mobilePosition: "center",
+    eyebrow: "Pharmacy deals",
+    title: "Authentic medicines delivered fast",
+    subtitle: "Order pharmacy items and daily health needs from home.",
+    offer: "Save on essentials",
+    cta: "Order medicine",
+    alt: "Medicine bottles and pharmacy products for an ecommerce banner",
+    tone: "teal",
+    desktopPosition: "center right",
   },
   {
     id: 3,
     desktopImage:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&h=520&q=90",
+      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1800&h=620&q=92",
     mobileImage:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&h=1000&q=88",
+      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=900&h=1100&q=90",
     href: "/healthcare",
-    alt: "Healthcare and medical service promotional collection",
+    eyebrow: "Healthcare store",
+    title: "Care products for family wellness",
+    subtitle: "Find devices, first-aid, hygiene and healthcare products.",
+    offer: "Trusted brands",
+    cta: "Explore healthcare",
+    alt: "Healthcare products displayed on a clean ecommerce banner",
+    tone: "blue",
     desktopPosition: "center",
-    mobilePosition: "center",
   },
   {
     id: 4,
     desktopImage:
-      "https://images.unsplash.com/photo-1584839404042-8bc21d240e91?auto=format&fit=crop&w=1800&h=520&q=90",
+      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1800&h=620&q=92",
     mobileImage:
-      "https://images.unsplash.com/photo-1584839404042-8bc21d240e91?auto=format&fit=crop&w=900&h=1000&q=88",
+      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=900&h=1100&q=90",
     href: "/baby-mom-care",
-    alt: "Baby and mother care promotional collection",
-    desktopPosition: "center",
-    mobilePosition: "center",
+    eyebrow: "Baby & mom",
+    title: "Gentle care for little moments",
+    subtitle: "Diapers, wipes, feeding care and mother care essentials.",
+    offer: "Baby picks live",
+    cta: "Shop baby care",
+    alt: "Baby care products for an ecommerce promotional banner",
+    tone: "amber",
+    desktopPosition: "center right",
   },
   {
     id: 5,
     desktopImage:
-      "https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=1800&h=520&q=90",
+      "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?auto=format&fit=crop&w=1800&h=620&q=92",
     mobileImage:
-      "https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=900&h=1000&q=88",
+      "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?auto=format&fit=crop&w=900&h=1100&q=90",
     href: "/supplement",
-    alt: "Vitamins and supplements promotional collection",
+    eyebrow: "Nutrition zone",
+    title: "Supplements for active days",
+    subtitle: "Vitamins, minerals and wellness support in one place.",
+    offer: "Top wellness picks",
+    cta: "View supplements",
+    alt: "Vitamins and supplements product banner for ecommerce",
+    tone: "green",
     desktopPosition: "center",
-    mobilePosition: "center",
   },
   {
     id: 6,
     desktopImage:
-      "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=1800&h=520&q=90",
+      "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=1800&h=620&q=92",
     mobileImage:
-      "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=900&h=1000&q=88",
+      "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=900&h=1100&q=90",
     href: "/home-care",
-    alt: "Home care and cleaning products promotional collection",
-    desktopPosition: "center",
-    mobilePosition: "center",
+    eyebrow: "Home care sale",
+    title: "Clean home, smart savings",
+    subtitle: "Daily cleaning, hygiene and household essentials delivered.",
+    offer: "Bundle offers",
+    cta: "Shop home care",
+    alt: "Cleaning and home care ecommerce promotional banner",
+    tone: "slate",
+    desktopPosition: "center right",
   },
   {
     id: 7,
     desktopImage:
-      "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1800&h=520&q=90",
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1800&h=620&q=92",
     mobileImage:
-      "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&h=1000&q=88",
-    href: "/skincare",
-    alt: "Skincare and wellness promotional collection",
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&h=1100&q=90",
+    href: "/beauty",
+    eyebrow: "Makeup collection",
+    title: "Fresh beauty drops are here",
+    subtitle: "Lip, face, eye and grooming favorites from loved brands.",
+    offer: "New arrivals",
+    cta: "Explore beauty",
+    alt: "Cosmetics and makeup products for a real ecommerce banner",
+    tone: "violet",
     desktopPosition: "center",
-    mobilePosition: "center",
   },
 ];
 
-export default function HeroBannerSlider() {
+export default function BasicSiteBanner() {
   return (
     <>
-      <section
-        aria-label="Anukov promotional banners"
-        className="anukov-hero-section"
-      >
-        <div className="anukov-hero-container">
-          <div className="anukov-hero-shell">
-            <Swiper
-              modules={[
-                Navigation,
-                Pagination,
-                Autoplay,
-                Keyboard,
-                A11y,
-                EffectFade,
-              ]}
-              effect="fade"
-              fadeEffect={{
-                crossFade: true,
-              }}
-              slidesPerView={1}
-              spaceBetween={0}
-              loop
-              speed={1100}
-              grabCursor
-              watchSlidesProgress
-              resistance
-              resistanceRatio={0.7}
-              threshold={8}
-              touchRatio={1}
-              followFinger
-              longSwipes
-              shortSwipes
-              keyboard={{
-                enabled: true,
-                onlyInViewport: true,
-              }}
-              autoplay={{
-                delay: 5200,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-                waitForTransition: true,
-              }}
-              navigation={{
-                prevEl: ".anukov-hero-prev",
-                nextEl: ".anukov-hero-next",
-              }}
-              pagination={{
-                el: ".anukov-hero-pagination",
-                clickable: true,
-                renderBullet: (index, className) =>
-                  `<button type="button" class="${className}" aria-label="Go to banner ${
-                    index + 1
-                  }"><span></span></button>`,
-              }}
-              a11y={{
-                enabled: true,
-                prevSlideMessage: "Previous promotional banner",
-                nextSlideMessage: "Next promotional banner",
-                firstSlideMessage: "First promotional banner",
-                lastSlideMessage: "Last promotional banner",
-                paginationBulletMessage: "Go to promotional banner {{index}}",
-              }}
-              className="anukov-hero-swiper"
-            >
-              {bannerSlides.map((slide, index) => (
-                <SwiperSlide key={slide.id}>
-                  {({ isActive }) => (
-                    <article
-                      className={[
-                        "anukov-hero-slide",
-                        isActive ? "is-active" : "",
-                      ].join(" ")}
-                    >
-                      <Link
-                        href={slide.href}
-                        aria-label={slide.alt}
-                        className="anukov-hero-link"
-                      >
-                        <picture>
-                          <source
-                            media="(max-width: 639px)"
-                            srcSet={slide.mobileImage}
-                          />
-
-                          <img
-                            src={slide.desktopImage}
-                            alt={slide.alt}
-                            width={1800}
-                            height={520}
-                            draggable={false}
-                            loading={index === 0 ? "eager" : "lazy"}
-                            fetchPriority={index === 0 ? "high" : "auto"}
-                            className="anukov-hero-image"
-                            style={{
-                              objectPosition:
-                                slide.desktopPosition ?? "center",
-                            }}
-                          />
-                        </picture>
-
-                        <span
-                          aria-hidden="true"
-                          className="anukov-hero-overlay"
+      <section aria-label="Arogga ecommerce promotional banners" className="basic-banner-section">
+        <div className="basic-banner-container">
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay, Keyboard, A11y, EffectCreative]}
+            effect="creative"
+            creativeEffect={{
+              prev: { translate: ["-8%", 0, -120], opacity: 0.55 },
+              next: { translate: ["8%", 0, -120], opacity: 0.55 },
+            }}
+            slidesPerView={1}
+            loop
+            speed={850}
+            grabCursor
+            keyboard={{ enabled: true, onlyInViewport: true }}
+            autoplay={{ delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: true }}
+            navigation={{ prevEl: ".basic-banner-prev", nextEl: ".basic-banner-next" }}
+            pagination={{
+              el: ".basic-banner-pagination",
+              clickable: true,
+              renderBullet: (index, className) =>
+                `<button type="button" class="${className}" aria-label="Go to banner ${index + 1}"><span></span></button>`,
+            }}
+            a11y={{
+              enabled: true,
+              prevSlideMessage: "Previous banner",
+              nextSlideMessage: "Next banner",
+              paginationBulletMessage: "Go to banner {{index}}",
+            }}
+            className="basic-banner-swiper"
+          >
+            {bannerSlides.map((slide, index) => (
+              <SwiperSlide key={slide.id}>
+                {({ isActive }) => (
+                  <article className={`basic-banner-slide is-${slide.tone} ${isActive ? "is-active" : ""}`}>
+                    <Link href={slide.href} className="basic-banner-link" aria-label={slide.alt}>
+                      <picture>
+                        <source media="(max-width: 639px)" srcSet={slide.mobileImage} />
+                        <img
+                          src={slide.desktopImage}
+                          alt={slide.alt}
+                          width={1800}
+                          height={620}
+                          draggable={false}
+                          loading={index === 0 ? "eager" : "lazy"}
+                          fetchPriority={index === 0 ? "high" : "auto"}
+                          className="basic-banner-image"
+                          style={{ objectPosition: slide.desktopPosition ?? "center" }}
                         />
+                      </picture>
 
-                        <span
-                          aria-hidden="true"
-                          className="anukov-hero-shine"
-                        />
-                      </Link>
-                    </article>
-                  )}
-                </SwiperSlide>
-              ))}
+                      <span className="basic-banner-dim" aria-hidden="true" />
+                      <span className="basic-banner-product-card" aria-hidden="true">
+                        <span />
+                        <span />
+                        <span />
+                      </span>
 
-              <button
-                type="button"
-                aria-label="Previous banner"
-                className="anukov-hero-arrow anukov-hero-prev"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M14.5 5 7.5 12l7 7"
-                    stroke="currentColor"
-                    strokeWidth="1.9"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
+                      <span className="basic-banner-copy">
+                        <span className="basic-banner-eyebrow">{slide.eyebrow}</span>
+                        <strong>{slide.title}</strong>
+                        <small>{slide.subtitle}</small>
+                        <span className="basic-banner-actions">
+                          <em>{slide.cta}</em>
+                          <b>{slide.offer}</b>
+                        </span>
+                      </span>
+                    </Link>
+                  </article>
+                )}
+              </SwiperSlide>
+            ))}
 
-              <button
-                type="button"
-                aria-label="Next banner"
-                className="anukov-hero-arrow anukov-hero-next"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="m9.5 5 7 7-7 7"
-                    stroke="currentColor"
-                    strokeWidth="1.9"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
+            <button type="button" aria-label="Previous banner" className="basic-banner-arrow basic-banner-prev">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M14.5 5 7.5 12l7 7" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
 
-              <div
-                className="anukov-hero-pagination"
-                aria-label="Banner pagination"
-              />
-            </Swiper>
-          </div>
+            <button type="button" aria-label="Next banner" className="basic-banner-arrow basic-banner-next">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m9.5 5 7 7-7 7" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            <div className="basic-banner-pagination" aria-label="Banner pagination" />
+          </Swiper>
         </div>
       </section>
 
       <style>{`
-        .anukov-hero-section {
-          position: relative;
+        .basic-banner-section {
           width: 100%;
+          padding: 18px 0 12px;
           overflow: hidden;
-          padding: 22px 0 14px;
           background:
-            radial-gradient(
-              circle at 5% 10%,
-              rgba(222, 246, 241, 0.48),
-              transparent 26%
-            ),
-            radial-gradient(
-              circle at 95% 90%,
-              rgba(238, 232, 255, 0.44),
-              transparent 27%
-            ),
+            radial-gradient(circle at 8% 5%, rgba(8, 123, 117, 0.08), transparent 24%),
+            radial-gradient(circle at 92% 92%, rgba(255, 145, 77, 0.1), transparent 26%),
             #ffffff;
         }
 
-        .anukov-hero-container {
+        .basic-banner-container {
           width: min(1440px, calc(100% - 48px));
           margin-inline: auto;
         }
 
-        .anukov-hero-shell {
-          position: relative;
-          padding: 5px;
-          border-radius: 22px;
-          background:
-            linear-gradient(
-              135deg,
-              rgba(255, 255, 255, 0.98),
-              rgba(224, 243, 239, 0.7),
-              rgba(255, 255, 255, 0.98)
-            );
-          box-shadow:
-            0 30px 75px -50px rgba(15, 23, 42, 0.5),
-            inset 0 1px rgba(255, 255, 255, 0.9);
-        }
-
-        .anukov-hero-swiper {
+        .basic-banner-swiper {
           position: relative;
           overflow: hidden;
-          border: 1px solid rgba(15, 23, 42, 0.07);
-          border-radius: 17px;
+          border: 1px solid rgba(15, 23, 42, 0.06);
+          border-radius: 22px;
           background: #eef2f3;
-          box-shadow:
-            0 20px 45px -36px rgba(15, 23, 42, 0.48),
-            0 6px 18px -15px rgba(15, 23, 42, 0.22);
-          transform: translateZ(0);
+          box-shadow: 0 28px 70px -52px rgba(15, 23, 42, 0.72);
           isolation: isolate;
         }
 
-        .anukov-hero-swiper .swiper-wrapper {
-          align-items: stretch;
-        }
-
-        .anukov-hero-swiper .swiper-slide {
-          height: auto;
-          overflow: hidden;
-          background: #edf2f3;
-        }
-
-        .anukov-hero-slide,
-        .anukov-hero-link,
-        .anukov-hero-link picture {
+        .basic-banner-link,
+        .basic-banner-link picture {
           position: relative;
           display: block;
           width: 100%;
-          height: 100%;
+          min-height: clamp(245px, 26vw, 372px);
           overflow: hidden;
-        }
-
-        .anukov-hero-link {
+          color: inherit;
           text-decoration: none;
-          background: #edf2f3;
-          transform: translateZ(0);
         }
 
-        .anukov-hero-image {
-          display: block;
+        .basic-banner-image {
+          position: absolute;
+          inset: 0;
           width: 100%;
-          height: clamp(210px, 23vw, 350px);
+          height: 100%;
           object-fit: cover;
-          background: #edf2f3;
-          transform: scale(1.055);
-          filter: saturate(0.96) contrast(0.99);
-          transition:
-            transform 6200ms cubic-bezier(0.16, 1, 0.3, 1),
-            filter 900ms ease,
-            opacity 650ms ease;
-          will-change: transform;
-          backface-visibility: hidden;
+          transform: scale(1.045);
+          filter: saturate(1.04) contrast(1.03);
+          transition: transform 5200ms cubic-bezier(0.16, 1, 0.3, 1), filter 700ms ease;
         }
 
-        .anukov-hero-slide.is-active .anukov-hero-image {
-          transform: scale(1.001);
-          filter: saturate(1.035) contrast(1.015);
+        .basic-banner-slide.is-active .basic-banner-image {
+          transform: scale(1.005);
+          filter: saturate(1.1) contrast(1.04);
         }
 
-        .anukov-hero-overlay {
+        .basic-banner-dim {
           position: absolute;
           inset: 0;
           pointer-events: none;
           background:
-            linear-gradient(
-              90deg,
-              rgba(7, 16, 38, 0.06),
-              transparent 20%,
-              transparent 80%,
-              rgba(7, 16, 38, 0.06)
-            ),
-            linear-gradient(
-              180deg,
-              rgba(255, 255, 255, 0.015),
-              transparent 58%,
-              rgba(6, 20, 35, 0.1)
-            );
-          opacity: 0.72;
+            linear-gradient(90deg, rgba(7, 16, 38, 0.72) 0%, rgba(7, 16, 38, 0.48) 35%, rgba(7, 16, 38, 0.08) 68%, rgba(7, 16, 38, 0.2) 100%),
+            linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(7, 16, 38, 0.18));
         }
 
-        .anukov-hero-shine {
-          position: absolute;
-          inset: 0 auto 0 -28%;
-          width: 14%;
-          pointer-events: none;
-          transform: skewX(-18deg);
-          background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(255, 255, 255, 0.16),
-            transparent
-          );
-          opacity: 0;
-        }
-
-        .anukov-hero-slide.is-active .anukov-hero-shine {
-          animation: anukovHeroShine 5.4s ease-in-out 800ms both;
-        }
-
-        .anukov-hero-arrow {
+        .basic-banner-copy {
           position: absolute;
           top: 50%;
-          z-index: 30;
+          left: clamp(24px, 5vw, 72px);
+          z-index: 2;
           display: flex;
-          width: 44px;
-          height: 44px;
-          align-items: center;
-          justify-content: center;
-          padding: 0;
-          border: 1px solid rgba(255, 255, 255, 0.7);
-          border-radius: 13px;
-          color: #087b75;
-          background: rgba(255, 255, 255, 0.92);
-          box-shadow:
-            0 16px 36px -20px rgba(15, 23, 42, 0.58),
-            inset 0 1px rgba(255, 255, 255, 0.95);
-          backdrop-filter: blur(14px);
-          cursor: pointer;
+          width: min(520px, 52%);
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+          color: #fff;
           transform: translateY(-50%);
-          opacity: 0;
-          transition:
-            opacity 300ms ease,
-            transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
-            color 250ms ease,
-            background-color 250ms ease,
-            border-color 250ms ease,
-            box-shadow 300ms ease;
         }
 
-        .anukov-hero-arrow svg {
+        .basic-banner-eyebrow {
+          display: inline-flex;
+          min-height: 28px;
+          align-items: center;
+          padding: 0 12px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.16);
+          backdrop-filter: blur(12px);
+          font-size: 11px;
+          font-weight: 850;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+        }
+
+        .basic-banner-copy strong {
+          max-width: 12ch;
+          font-size: clamp(30px, 4.1vw, 58px);
+          font-weight: 950;
+          line-height: 0.94;
+          letter-spacing: -0.06em;
+          text-wrap: balance;
+        }
+
+        .basic-banner-copy small {
+          max-width: 430px;
+          color: rgba(255, 255, 255, 0.86);
+          font-size: clamp(13px, 1.2vw, 16px);
+          font-weight: 550;
+          line-height: 1.5;
+        }
+
+        .basic-banner-actions {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 10px;
+          padding-top: 4px;
+        }
+
+        .basic-banner-actions em,
+        .basic-banner-actions b {
+          display: inline-flex;
+          min-height: 40px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 999px;
+          font-style: normal;
+          font-size: 13px;
+          font-weight: 900;
+        }
+
+        .basic-banner-actions em {
+          padding: 0 18px;
+          color: #0b817a;
+          background: #fff;
+          box-shadow: 0 16px 32px -22px rgba(15, 23, 42, 0.8);
+        }
+
+        .basic-banner-actions b {
+          padding: 0 14px;
+          color: #fff;
+          background: rgba(255, 255, 255, 0.16);
+          border: 1px solid rgba(255, 255, 255, 0.26);
+          backdrop-filter: blur(12px);
+        }
+
+        .basic-banner-product-card {
+          position: absolute;
+          right: clamp(18px, 4.2vw, 62px);
+          bottom: clamp(20px, 3.4vw, 48px);
+          z-index: 2;
+          display: grid;
+          width: clamp(140px, 15vw, 218px);
+          gap: 8px;
+          padding: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.36);
+          border-radius: 18px;
+          background: rgba(255, 255, 255, 0.18);
+          box-shadow: 0 22px 52px -32px rgba(15, 23, 42, 0.88);
+          backdrop-filter: blur(18px);
+        }
+
+        .basic-banner-product-card span {
+          display: block;
+          height: 9px;
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.82);
+        }
+
+        .basic-banner-product-card span:first-child {
+          width: 62%;
+          height: 34px;
+          border-radius: 12px;
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.45));
+        }
+
+        .basic-banner-product-card span:nth-child(2) {
+          width: 82%;
+        }
+
+        .basic-banner-product-card span:nth-child(3) {
+          width: 48%;
+          background: rgba(255, 255, 255, 0.58);
+        }
+
+        .is-teal { --banner-accent: #087b75; }
+        .is-rose { --banner-accent: #e04f7f; }
+        .is-blue { --banner-accent: #2563eb; }
+        .is-amber { --banner-accent: #d97706; }
+        .is-violet { --banner-accent: #7c3aed; }
+        .is-green { --banner-accent: #16a34a; }
+        .is-slate { --banner-accent: #334155; }
+
+        .basic-banner-slide .basic-banner-actions em {
+          color: var(--banner-accent);
+        }
+
+        .basic-banner-slide::after {
+          position: absolute;
+          top: -28%;
+          right: -10%;
+          width: 42%;
+          height: 76%;
+          border-radius: 999px;
+          background: color-mix(in srgb, var(--banner-accent) 46%, transparent);
+          filter: blur(58px);
+          opacity: 0.62;
+          pointer-events: none;
+          content: "";
+        }
+
+        .basic-banner-arrow {
+          position: absolute;
+          top: 50%;
+          z-index: 20;
+          display: grid;
+          width: 42px;
+          height: 42px;
+          place-items: center;
+          border: 1px solid rgba(255, 255, 255, 0.55);
+          border-radius: 14px;
+          color: #087b75;
+          background: rgba(255, 255, 255, 0.86);
+          box-shadow: 0 18px 34px -24px rgba(15, 23, 42, 0.72);
+          backdrop-filter: blur(14px);
+          cursor: pointer;
+          opacity: 0;
+          transform: translateY(-50%);
+          transition: opacity 220ms ease, transform 220ms ease, background 220ms ease, color 220ms ease;
+        }
+
+        .basic-banner-swiper:hover .basic-banner-arrow,
+        .basic-banner-swiper:focus-within .basic-banner-arrow {
+          opacity: 1;
+        }
+
+        .basic-banner-prev { left: 16px; transform: translate(-8px, -50%); }
+        .basic-banner-next { right: 16px; transform: translate(8px, -50%); }
+        .basic-banner-swiper:hover .basic-banner-prev,
+        .basic-banner-swiper:focus-within .basic-banner-prev,
+        .basic-banner-swiper:hover .basic-banner-next,
+        .basic-banner-swiper:focus-within .basic-banner-next { transform: translate(0, -50%); }
+
+        .basic-banner-arrow:hover {
+          color: #fff;
+          background: #087b75;
+        }
+
+        .basic-banner-arrow svg {
           width: 20px;
           height: 20px;
-          transition: transform 250ms ease;
         }
 
-        .anukov-hero-prev {
-          left: 18px;
-          transform: translate(-8px, -50%);
-        }
-
-        .anukov-hero-next {
-          right: 18px;
-          transform: translate(8px, -50%);
-        }
-
-        .anukov-hero-swiper:hover .anukov-hero-arrow,
-        .anukov-hero-swiper:focus-within .anukov-hero-arrow {
-          opacity: 1;
-        }
-
-        .anukov-hero-swiper:hover .anukov-hero-prev,
-        .anukov-hero-swiper:focus-within .anukov-hero-prev {
-          transform: translate(0, -50%);
-        }
-
-        .anukov-hero-swiper:hover .anukov-hero-next,
-        .anukov-hero-swiper:focus-within .anukov-hero-next {
-          transform: translate(0, -50%);
-        }
-
-        .anukov-hero-arrow:hover {
-          border-color: rgba(8, 123, 117, 0.28);
-          color: #ffffff;
-          background: rgba(8, 123, 117, 0.94);
-          box-shadow:
-            0 20px 42px -20px rgba(8, 123, 117, 0.68),
-            inset 0 1px rgba(255, 255, 255, 0.22);
-        }
-
-        .anukov-hero-prev:hover svg {
-          transform: translateX(-2px);
-        }
-
-        .anukov-hero-next:hover svg {
-          transform: translateX(2px);
-        }
-
-        .anukov-hero-arrow:active {
-          scale: 0.94;
-        }
-
-        .anukov-hero-arrow:focus-visible {
-          outline: 3px solid rgba(8, 123, 117, 0.2);
-          outline-offset: 3px;
-        }
-
-        .anukov-hero-pagination {
+        .basic-banner-pagination {
           position: absolute;
-          bottom: 14px;
-          left: 50%;
-          z-index: 35;
+          right: 24px;
+          bottom: 18px;
+          left: auto !important;
+          z-index: 25;
           display: flex;
           width: auto !important;
-          min-height: 34px;
-          align-items: center;
-          justify-content: center;
           gap: 6px;
           padding: 7px 10px;
-          border: 1px solid rgba(255, 255, 255, 0.5);
+          border: 1px solid rgba(255, 255, 255, 0.34);
           border-radius: 999px;
-          background: rgba(255, 255, 255, 0.74);
-          box-shadow:
-            0 14px 32px -20px rgba(15, 23, 42, 0.5),
-            inset 0 1px rgba(255, 255, 255, 0.9);
+          background: rgba(255, 255, 255, 0.2);
           backdrop-filter: blur(14px);
-          transform: translateX(-50%);
         }
 
-        .anukov-hero-pagination .swiper-pagination-bullet {
+        .basic-banner-pagination .swiper-pagination-bullet {
           position: relative;
-          display: flex;
-          width: 24px;
-          height: 8px;
-          align-items: center;
-          justify-content: center;
+          display: block;
+          width: 22px;
+          height: 7px;
           margin: 0 !important;
           padding: 0;
+          overflow: hidden;
           border: 0;
           border-radius: 999px;
-          background: rgba(8, 123, 117, 0.16);
+          background: rgba(255, 255, 255, 0.44);
           opacity: 1;
-          overflow: hidden;
           cursor: pointer;
-          transition:
-            width 350ms cubic-bezier(0.22, 1, 0.36, 1),
-            background-color 300ms ease,
-            transform 250ms ease;
+          transition: width 240ms ease, background 240ms ease;
         }
 
-        .anukov-hero-pagination .swiper-pagination-bullet span {
+        .basic-banner-pagination .swiper-pagination-bullet-active {
+          width: 46px;
+          background: rgba(255, 255, 255, 0.34);
+        }
+
+        .basic-banner-pagination .swiper-pagination-bullet span {
           display: block;
           width: 100%;
           height: 100%;
           border-radius: inherit;
-          background: transparent;
         }
 
-        .anukov-hero-pagination
-          .swiper-pagination-bullet:hover {
-          transform: scaleY(1.2);
-          background: rgba(8, 123, 117, 0.28);
-        }
-
-        .anukov-hero-pagination
-          .swiper-pagination-bullet-active {
-          width: 48px;
-          background: rgba(8, 123, 117, 0.14);
-        }
-
-        .anukov-hero-pagination
-          .swiper-pagination-bullet-active
-          span {
+        .basic-banner-pagination .swiper-pagination-bullet-active span {
           transform-origin: left center;
-          background: #087b75;
-          animation: anukovHeroProgress 5.2s linear both;
+          background: #ffffff;
+          animation: basicBannerProgress 4.5s linear both;
         }
 
-        .anukov-hero-pagination
-          .swiper-pagination-bullet:focus-visible {
-          outline: 3px solid rgba(8, 123, 117, 0.22);
-          outline-offset: 3px;
+        @keyframes basicBannerProgress {
+          from { transform: scaleX(0); }
+          to { transform: scaleX(1); }
         }
 
-        .anukov-hero-swiper .swiper-notification {
-          font-size: 13px;
-        }
-
-        @keyframes anukovHeroShine {
-          0%,
-          20% {
-            left: -28%;
-            opacity: 0;
-          }
-
-          35% {
-            opacity: 1;
-          }
-
-          70%,
-          100% {
-            left: 118%;
-            opacity: 0;
-          }
-        }
-
-        @keyframes anukovHeroProgress {
-          from {
-            transform: scaleX(0);
-          }
-
-          to {
-            transform: scaleX(1);
-          }
-        }
-
-        @media (min-width: 1024px) and (max-width: 1279px) {
-          .anukov-hero-section {
-            padding: 20px 0 12px;
-          }
-
-          .anukov-hero-container {
-            width: min(1180px, calc(100% - 40px));
-          }
-
-          .anukov-hero-image {
-            height: clamp(220px, 24vw, 310px);
-          }
-        }
-
-        @media (min-width: 768px) and (max-width: 1023px) {
-          .anukov-hero-section {
-            padding: 17px 0 10px;
-          }
-
-          .anukov-hero-container {
-            width: calc(100% - 32px);
-          }
-
-          .anukov-hero-shell {
-            border-radius: 18px;
-          }
-
-          .anukov-hero-swiper {
-            border-radius: 14px;
-          }
-
-          .anukov-hero-image {
-            height: clamp(220px, 31vw, 285px);
-          }
-
-          .anukov-hero-arrow {
-            width: 40px;
-            height: 40px;
-            border-radius: 12px;
-            opacity: 1;
-          }
-
-          .anukov-hero-prev {
-            left: 14px;
-            transform: translate(0, -50%);
-          }
-
-          .anukov-hero-next {
-            right: 14px;
-            transform: translate(0, -50%);
-          }
-        }
-
-        @media (min-width: 640px) and (max-width: 767px) {
-          .anukov-hero-section {
-            padding: 14px 0 8px;
-          }
-
-          .anukov-hero-container {
-            width: calc(100% - 24px);
-          }
-
-          .anukov-hero-shell {
-            padding: 4px;
-            border-radius: 17px;
-          }
-
-          .anukov-hero-swiper {
-            border-radius: 13px;
-          }
-
-          .anukov-hero-image {
-            height: 235px;
-          }
-
-          .anukov-hero-arrow {
-            width: 38px;
-            height: 38px;
-            border-radius: 11px;
-            opacity: 1;
-          }
-
-          .anukov-hero-prev {
-            left: 12px;
-            transform: translate(0, -50%);
-          }
-
-          .anukov-hero-next {
-            right: 12px;
-            transform: translate(0, -50%);
-          }
+        @media (max-width: 900px) {
+          .basic-banner-container { width: calc(100% - 28px); }
+          .basic-banner-copy { width: min(500px, 64%); }
+          .basic-banner-product-card { display: none; }
         }
 
         @media (max-width: 639px) {
-          .anukov-hero-section {
-            padding: 10px 0 7px;
+          .basic-banner-section { padding: 10px 0 8px; }
+          .basic-banner-container { width: 100%; }
+          .basic-banner-swiper { border-right: 0; border-left: 0; border-radius: 0; }
+          .basic-banner-link,
+          .basic-banner-link picture { min-height: clamp(310px, 82vw, 430px); }
+          .basic-banner-image { object-position: center !important; }
+          .basic-banner-dim {
+            background: linear-gradient(180deg, rgba(7, 16, 38, 0.3), rgba(7, 16, 38, 0.76));
           }
-
-          .anukov-hero-container {
-            width: 100%;
+          .basic-banner-copy {
+            top: auto;
+            bottom: 56px;
+            left: 18px;
+            width: calc(100% - 36px);
+            gap: 9px;
+            transform: none;
           }
-
-          .anukov-hero-shell {
-            padding: 0;
-            border-radius: 0;
-            background: transparent;
-            box-shadow: none;
-          }
-
-          .anukov-hero-swiper {
-            border-right: 0;
-            border-left: 0;
-            border-radius: 0;
-            box-shadow: 0 18px 38px -32px rgba(15, 23, 42, 0.55);
-          }
-
-          .anukov-hero-image {
-            height: clamp(220px, 68vw, 300px);
-          }
-
-          .anukov-hero-arrow {
-            width: 36px;
-            height: 36px;
-            border-radius: 11px;
-            opacity: 1;
-          }
-
-          .anukov-hero-arrow svg {
-            width: 18px;
-            height: 18px;
-          }
-
-          .anukov-hero-prev {
-            left: 10px;
-            transform: translate(0, -50%);
-          }
-
-          .anukov-hero-next {
-            right: 10px;
-            transform: translate(0, -50%);
-          }
-
-          .anukov-hero-pagination {
-            bottom: 10px;
-            min-height: 30px;
-            gap: 5px;
-            padding: 6px 8px;
-          }
-
-          .anukov-hero-pagination .swiper-pagination-bullet {
-            width: 18px;
-            height: 7px;
-          }
-
-          .anukov-hero-pagination
-            .swiper-pagination-bullet-active {
-            width: 38px;
-          }
-        }
-
-        @media (max-width: 380px) {
-          .anukov-hero-image {
-            height: 225px;
-          }
-
-          .anukov-hero-arrow {
-            width: 34px;
-            height: 34px;
-          }
-
-          .anukov-hero-prev {
-            left: 7px;
-          }
-
-          .anukov-hero-next {
-            right: 7px;
-          }
+          .basic-banner-copy strong { max-width: 12ch; }
+          .basic-banner-copy small { max-width: 92%; font-size: 13px; }
+          .basic-banner-actions em,
+          .basic-banner-actions b { min-height: 36px; font-size: 12px; }
+          .basic-banner-arrow { width: 36px; height: 36px; border-radius: 12px; opacity: 1; }
+          .basic-banner-prev { left: 10px; transform: translate(0, -50%); }
+          .basic-banner-next { right: 10px; transform: translate(0, -50%); }
+          .basic-banner-pagination { right: 50%; bottom: 14px; transform: translateX(50%); }
         }
 
         @media (hover: none) {
-          .anukov-hero-arrow {
-            opacity: 1;
-          }
-
-          .anukov-hero-prev,
-          .anukov-hero-next {
-            transform: translate(0, -50%);
-          }
-
-          .anukov-hero-arrow:hover {
-            color: #087b75;
-            background: rgba(255, 255, 255, 0.92);
-            scale: 1;
-          }
+          .basic-banner-arrow { opacity: 1; }
+          .basic-banner-prev,
+          .basic-banner-next { transform: translate(0, -50%); }
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .anukov-hero-section *,
-          .anukov-hero-section *::before,
-          .anukov-hero-section *::after {
-            scroll-behavior: auto !important;
+          .basic-banner-section *,
+          .basic-banner-section *::before,
+          .basic-banner-section *::after {
             animation-duration: 0.01ms !important;
             animation-iteration-count: 1 !important;
+            scroll-behavior: auto !important;
             transition-duration: 0.01ms !important;
-          }
-
-          .anukov-hero-pagination
-            .swiper-pagination-bullet-active
-            span {
-            transform: scaleX(1);
           }
         }
       `}</style>
