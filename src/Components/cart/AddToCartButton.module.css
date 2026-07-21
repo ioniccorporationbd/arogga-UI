@@ -1,0 +1,121 @@
+.button {
+  --cart-accent: #087b75;
+  --cart-accent-dark: #066761;
+  position: relative;
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  overflow: hidden;
+  padding: 0 12px;
+  border: 1px solid rgba(8, 123, 117, 0.26);
+  border-radius: 999px;
+  color: var(--cart-accent);
+  background: linear-gradient(180deg, #ffffff 0%, #f6fbfa 100%);
+  box-shadow: 0 8px 18px -16px rgba(8, 123, 117, 0.75);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.button::before {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.32), transparent 42%);
+  opacity: 0;
+  content: "";
+  transition: opacity 160ms ease;
+}
+
+.button:hover:not(:disabled) {
+  border-color: transparent;
+  color: #fff;
+  background: linear-gradient(135deg, #0d9488, var(--cart-accent-dark));
+  box-shadow: 0 14px 24px -18px rgba(8, 123, 117, 0.95);
+  transform: translateY(-1px);
+}
+
+.button:hover:not(:disabled)::before {
+  opacity: 1;
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0) scale(0.98);
+}
+
+.button:focus-visible {
+  outline: 3px solid rgba(8, 123, 117, 0.16);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  filter: grayscale(0.18);
+}
+
+.icon {
+  position: relative;
+  display: inline-grid;
+  width: 16px;
+  height: 16px;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.icon svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2.4;
+}
+
+.label {
+  position: relative;
+  white-space: nowrap;
+}
+
+.added {
+  border-color: rgba(12, 151, 100, 0.28);
+  color: #087443;
+  background: linear-gradient(180deg, #f3fff8 0%, #eafbf1 100%);
+}
+
+.added:hover:not(:disabled) {
+  background: linear-gradient(135deg, #12a66a, #087443);
+}
+
+.pulse {
+  animation: addPulse 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes addPulse {
+  0% {
+    transform: scale(0.96);
+  }
+  55% {
+    transform: scale(1.035);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .button::before,
+  .pulse {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

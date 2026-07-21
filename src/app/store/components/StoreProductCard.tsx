@@ -4,10 +4,10 @@ import {
   Check,
   ImageOff,
   Rocket,
+  ShoppingCart,
   Star,
 } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { StoreProduct } from "./store-product-types";
 
@@ -31,7 +31,6 @@ export default function StoreProductCard({
   added,
   onToggleCart,
 }: StoreProductCardProps) {
-  const router = useRouter();
   const [imageError, setImageError] = useState(false);
   const roundedRating = Math.round(product.rating ?? 0);
 
@@ -61,7 +60,6 @@ export default function StoreProductCard({
 
     localStorage.setItem("arogga-cart", JSON.stringify(next));
     window.dispatchEvent(new Event("arogga-cart-updated"));
-    router.push(product.href);
   };
 
   return (
@@ -154,11 +152,14 @@ export default function StoreProductCard({
           >
             {added ? (
               <>
-                <Check size={15} />
+                <Check size={13} />
                 Added
               </>
             ) : (
-              "ADD"
+              <>
+                <ShoppingCart size={13} />
+                Add
+              </>
             )}
           </button>
         </div>

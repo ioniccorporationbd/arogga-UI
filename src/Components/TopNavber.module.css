@@ -12,16 +12,16 @@
 .top {
   display: flex;
   width: min(1780px, calc(100% - 64px));
-  min-height: 92px;
+  min-height: 78px;
   align-items: center;
-  gap: 22px;
+  gap: 16px;
   margin: auto;
 }
 
 .logo {
   flex: none;
   color: #0a7e78;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 950;
   letter-spacing: -4px;
   text-decoration: none;
@@ -35,15 +35,15 @@
 
 .logo span {
   display: inline-grid;
-  width: 33px;
-  height: 33px;
+  width: 29px;
+  height: 29px;
   place-items: center;
   margin: 0 1px;
   border-radius: 50%;
   color: #fff;
   background: linear-gradient(135deg, #ff5a60, #d92d20);
   box-shadow: 0 9px 18px -10px rgba(217, 45, 32, 0.95);
-  font-size: 27px;
+  font-size: 23px;
   letter-spacing: 0;
 }
 
@@ -182,7 +182,7 @@
 
 .search {
   display: flex;
-  height: 58px;
+  height: 50px;
   min-width: 250px;
   flex: 1;
   align-items: center;
@@ -218,11 +218,11 @@
 
 .search button {
   align-self: stretch;
-  min-width: 110px;
+  min-width: 96px;
   border: 0;
   color: #fff;
   background: linear-gradient(135deg, #0d9488, #087b75);
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 850;
   cursor: pointer;
   transition: filter 160ms ease;
@@ -235,7 +235,7 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .actions > a,
@@ -244,7 +244,7 @@
   display: flex;
   align-items: center;
   gap: 9px;
-  padding: 9px 10px;
+  padding: 7px 8px;
   border: 1px solid transparent;
   border-radius: 15px;
   color: #111827;
@@ -263,20 +263,20 @@
 }
 
 .actions svg {
-  width: 28px;
-  height: 28px;
+  width: 23px;
+  height: 23px;
 }
 
 .actions span {
   display: flex;
   flex-direction: column;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .actions strong {
   max-width: 92px;
   overflow: hidden;
-  font-size: 15px;
+  font-size: 13px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }

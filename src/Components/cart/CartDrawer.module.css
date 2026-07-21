@@ -22,7 +22,7 @@
   bottom: 0;
   z-index: 400;
   display: flex;
-  width: min(500px, 100%);
+  width: min(460px, 100%);
   flex-direction: column;
   background: linear-gradient(180deg, #ffffff 0%, #f8fbfb 100%);
   box-shadow: -28px 0 80px -42px rgba(15, 23, 42, 0.78);
@@ -36,7 +36,7 @@
 
 .drawer > header {
   display: flex;
-  min-height: 66px;
+  min-height: 58px;
   align-items: center;
   justify-content: space-between;
   padding: 0 22px;
@@ -46,7 +46,7 @@
 }
 
 .drawer h2 {
-  font-size: 19px;
+  font-size: 17px;
   letter-spacing: -0.3px;
 }
 
@@ -130,7 +130,7 @@
 .list article {
   position: relative;
   display: grid;
-  grid-template-columns: 86px 1fr 38px;
+  grid-template-columns: 78px 1fr 34px;
   gap: 13px;
   margin-bottom: 13px;
   padding: 12px;
