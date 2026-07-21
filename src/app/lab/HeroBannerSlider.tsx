@@ -273,7 +273,7 @@ export default function HeroBannerSlider() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .anukov-hero-section {
           position: relative;
           width: 100%;

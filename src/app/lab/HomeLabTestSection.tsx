@@ -399,7 +399,7 @@ export default function HomeLabTestSection() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .home-lab-section {
           --lab-text-20: 20px;
           --lab-text-18: 18px;

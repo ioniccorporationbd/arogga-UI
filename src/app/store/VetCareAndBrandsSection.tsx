@@ -517,7 +517,7 @@ export default function VetCareAndBrandsSection() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .vet-brand-section {
           --vet-text-20: 20px;
           --vet-text-18: 18px;

@@ -676,7 +676,7 @@ export default function LabSeoContentSection() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .lab-seo-section {
           --lab-seo-text-20: 20px;
           --lab-seo-text-18: 18px;

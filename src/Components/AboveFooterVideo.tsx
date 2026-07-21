@@ -335,7 +335,7 @@ export default function TrustStatsVideo() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .trust-video-section {
           --trust-text-20: 20px;
           --trust-text-18: 18px;

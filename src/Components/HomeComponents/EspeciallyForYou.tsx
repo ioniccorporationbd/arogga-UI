@@ -251,7 +251,7 @@ export default function EspeciallyForYou() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .especially-section {
           --especially-text-20: 20px;
           --especially-text-18: 18px;

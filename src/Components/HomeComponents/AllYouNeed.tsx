@@ -213,7 +213,7 @@ export default function AllYouNeed() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .all-you-need-section {
           --ayn-text-20: 20px;
           --ayn-text-18: 18px;

@@ -1095,7 +1095,7 @@ export default function TopNavber() {
         ))}
       </nav>
 
-      <style jsx global>{`
+      <style>{`
         .site-navbar {
           --nav-text-20: 20px;
           --nav-text-18: 18px;

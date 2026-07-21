@@ -196,7 +196,7 @@ export default function AllYourNeeds() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .all-needs-section {
           --all-needs-text-20: 20px;
           --all-needs-text-18: 18px;

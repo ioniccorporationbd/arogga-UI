@@ -350,7 +350,7 @@ export default function CraveCartSection() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .crave-cart-section {
           --crave-text-20: 20px;
           --crave-text-18: 18px;

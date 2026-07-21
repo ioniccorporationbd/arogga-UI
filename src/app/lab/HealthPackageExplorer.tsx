@@ -599,7 +599,7 @@ export default function HealthPackageExplorer() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .health-explorer-section {
           --health-text-20: 20px;
           --health-text-18: 18px;

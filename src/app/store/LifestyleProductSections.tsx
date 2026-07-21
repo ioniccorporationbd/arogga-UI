@@ -209,7 +209,7 @@ export default function LifestyleProductSections() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .lifestyle-sections {
           --lifestyle-text-20: 20px;
           --lifestyle-text-18: 18px;

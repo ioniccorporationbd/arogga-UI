@@ -375,7 +375,7 @@ export default function TrustedLabPartners() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .trusted-lab-section {
           --trusted-text-20: 20px;
           --trusted-text-18: 18px;

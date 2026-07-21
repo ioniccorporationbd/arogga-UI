@@ -430,7 +430,7 @@ export default function BabyCareHubSection() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .baby-care-section {
           --baby-text-20: 20px;
           --baby-text-18: 18px;

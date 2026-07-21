@@ -346,7 +346,7 @@ export default function SunAndSplashSection() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style>{`
         .sun-splash-section {
           --sun-text-20: 20px;
           --sun-text-18: 18px;

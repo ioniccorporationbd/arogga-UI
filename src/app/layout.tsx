@@ -15,12 +15,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className="site-wrapper">
+    <html lang="en" suppressHydrationWarning>
+      <body className="site-wrapper" suppressHydrationWarning>
         <TopNavber />
-        <SectionNavigation/>
+        <SectionNavigation />
         <main className="site-main">{children}</main>
-        <AboveFooterVideo/> 
+        <AboveFooterVideo /> 
         <Footer />
       </body>
     </html>
