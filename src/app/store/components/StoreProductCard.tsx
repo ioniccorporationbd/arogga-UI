@@ -1,24 +1,11 @@
 "use client";
 
-import {
-  Check,
-  ImageOff,
-  Rocket,
-  ShoppingCart,
-  Star,
-} from "lucide-react";
+import { ImageOff, Rocket, Star } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import type { StoreProduct } from "./store-product-types";
 
-type StoredCartItem = {
-  id: string;
-  slug?: string;
-  name?: string;
-  image?: string;
-  price?: number;
-  quantity: number;
-};
+import AddToCartButton from "@/Components/cart/AddToCartButton";
+import type { StoreProduct } from "./store-product-types";
 
 type StoreProductCardProps = {
   product: StoreProduct;
@@ -28,39 +15,10 @@ type StoreProductCardProps = {
 
 export default function StoreProductCard({
   product,
-  added,
   onToggleCart,
 }: StoreProductCardProps) {
   const [imageError, setImageError] = useState(false);
   const roundedRating = Math.round(product.rating ?? 0);
-
-  const handleAddToCart = () => {
-    onToggleCart();
-
-    const current = readStoredCart();
-    const existing = current.find((item) => item.id === product.id);
-
-    const next = existing
-      ? current.map((item) =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item,
-        )
-      : [
-          ...current,
-          {
-            id: product.id,
-            slug: product.slug,
-            name: product.title,
-            image: product.image,
-            price: product.salePrice,
-            quantity: 1,
-          },
-        ];
-
-    localStorage.setItem("arogga-cart", JSON.stringify(next));
-    window.dispatchEvent(new Event("arogga-cart-updated"));
-  };
 
   return (
     <article
@@ -69,7 +27,7 @@ export default function StoreProductCard({
     >
       <Link
         href={product.href}
-        aria-label={product.title}
+        aria-label={`View details for ${product.title}`}
         className="store-product-image-link"
       >
         {!imageError ? (
@@ -105,7 +63,7 @@ export default function StoreProductCard({
       <div className="store-product-content">
         <DeliveryBadge text={product.deliveryText} />
 
-        <Link href={product.href} className="store-product-name">
+        <Link href={product.href} className="store-product-name" aria-label={`View details for ${product.title}`}>
           {product.title}
         </Link>
 
@@ -137,31 +95,21 @@ export default function StoreProductCard({
             </p>
           </div>
 
-          <button
-            type="button"
-            onClick={handleAddToCart}
-            aria-label={
-              added
-                ? `${product.title} is in cart`
-                : `Add ${product.title} to cart`
-            }
-            className={[
-              "store-product-add-button",
-              added ? "is-added" : "",
-            ].join(" ")}
-          >
-            {added ? (
-              <>
-                <Check size={13} />
-                Added
-              </>
-            ) : (
-              <>
-                <ShoppingCart size={13} />
-                Add
-              </>
-            )}
-          </button>
+          <AddToCartButton
+            product={{
+              id: product.id,
+              slug: product.slug,
+              name: product.title,
+              price: product.salePrice,
+              image: product.image,
+              sku: product.brand,
+            }}
+            className="store-product-add-button"
+            label="Add"
+            addedLabel="Done"
+            showIcon={false}
+            onAdded={onToggleCart}
+          />
         </div>
       </div>
     </article>
@@ -192,27 +140,6 @@ function DiscountBadge({ discount }: { discount: number }) {
       OFF
     </span>
   );
-}
-
-function readStoredCart(): StoredCartItem[] {
-  try {
-    const value = localStorage.getItem("arogga-cart");
-    if (!value) return [];
-
-    const parsed: unknown = JSON.parse(value);
-    if (!Array.isArray(parsed)) return [];
-
-    return parsed.filter(
-      (item): item is StoredCartItem =>
-        typeof item === "object" &&
-        item !== null &&
-        typeof (item as StoredCartItem).id === "string" &&
-        typeof (item as StoredCartItem).quantity === "number",
-    );
-  } catch {
-    localStorage.removeItem("arogga-cart");
-    return [];
-  }
 }
 
 function formatPrice(value: number) {

@@ -32,7 +32,7 @@ export default function AddToCartButton({
   className = "",
   label = "Add to cart",
   addedLabel = "Added",
-  showIcon = true,
+  showIcon = false,
   onAdded,
 }: Props) {
   const { addItem } = useCart();

@@ -1,119 +1,110 @@
 .button {
   --cart-accent: #087b75;
-  --cart-accent-dark: #066761;
+  --cart-muted: #d8e7e5;
   position: relative;
   display: inline-flex;
-  min-height: 30px;
+  min-height: 26px;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  overflow: hidden;
-  padding: 0 12px;
-  border: 1px solid rgba(8, 123, 117, 0.26);
-  border-radius: 999px;
-  color: var(--cart-accent);
-  background: linear-gradient(180deg, #ffffff 0%, #f6fbfa 100%);
-  box-shadow: 0 8px 18px -16px rgba(8, 123, 117, 0.75);
+  gap: 4px;
+  padding: 0 10px;
+  border: 1px solid var(--cart-muted);
+  border-radius: 8px;
+  color: #075f5a;
+  background: #ffffff;
+  box-shadow: none;
   font: inherit;
-  font-size: 11px;
-  font-weight: 850;
+  font-size: 10px;
+  font-weight: 750;
   line-height: 1;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.035em;
   text-transform: uppercase;
+  white-space: nowrap;
   cursor: pointer;
   transition:
-    border-color 160ms ease,
-    background 160ms ease,
-    box-shadow 160ms ease,
-    color 160ms ease,
-    transform 160ms ease;
+    border-color 140ms ease,
+    background-color 140ms ease,
+    color 140ms ease,
+    transform 140ms ease;
 }
 
-.button::before {
+.button::after {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.32), transparent 42%);
+  inset: auto 9px 4px;
+  height: 1px;
+  border-radius: 99px;
+  background: currentColor;
   opacity: 0;
+  transform: scaleX(0.4);
   content: "";
-  transition: opacity 160ms ease;
+  transition: opacity 140ms ease, transform 140ms ease;
 }
 
 .button:hover:not(:disabled) {
-  border-color: transparent;
-  color: #fff;
-  background: linear-gradient(135deg, #0d9488, var(--cart-accent-dark));
-  box-shadow: 0 14px 24px -18px rgba(8, 123, 117, 0.95);
+  border-color: #087b75;
+  color: #064e49;
+  background: #f5fbfa;
   transform: translateY(-1px);
 }
 
-.button:hover:not(:disabled)::before {
-  opacity: 1;
+.button:hover:not(:disabled)::after {
+  opacity: 0.55;
+  transform: scaleX(1);
 }
 
 .button:active:not(:disabled) {
-  transform: translateY(0) scale(0.98);
+  transform: translateY(0);
 }
 
 .button:focus-visible {
-  outline: 3px solid rgba(8, 123, 117, 0.16);
+  outline: 2px solid rgba(8, 123, 117, 0.16);
   outline-offset: 2px;
 }
 
 .button:disabled {
+  color: #98a2b3;
+  background: #f8fafc;
   cursor: not-allowed;
-  opacity: 0.55;
-  filter: grayscale(0.18);
+  opacity: 0.72;
 }
 
 .icon {
-  position: relative;
   display: inline-grid;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   place-items: center;
   flex: 0 0 auto;
 }
 
 .icon svg {
-  width: 14px;
-  height: 14px;
-  stroke-width: 2.4;
+  width: 12px;
+  height: 12px;
+  stroke-width: 2.2;
 }
 
 .label {
-  position: relative;
-  white-space: nowrap;
+  line-height: 1;
 }
 
 .added {
-  border-color: rgba(12, 151, 100, 0.28);
-  color: #087443;
-  background: linear-gradient(180deg, #f3fff8 0%, #eafbf1 100%);
-}
-
-.added:hover:not(:disabled) {
-  background: linear-gradient(135deg, #12a66a, #087443);
+  border-color: #a8decf;
+  color: #067647;
+  background: #f1fbf6;
 }
 
 .pulse {
-  animation: addPulse 360ms cubic-bezier(0.22, 1, 0.36, 1);
+  animation: addPulse 260ms ease-out;
 }
 
 @keyframes addPulse {
-  0% {
-    transform: scale(0.96);
-  }
-  55% {
-    transform: scale(1.035);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(0.98); }
+  55% { transform: scale(1.02); }
+  100% { transform: scale(1); }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .button,
-  .button::before,
+  .button::after,
   .pulse {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
