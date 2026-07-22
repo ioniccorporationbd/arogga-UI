@@ -46,6 +46,7 @@ export default function AccountShell({ children }: { children: ReactNode }) {
   const path = usePathname();
   const router = useRouter();
   const { user, ready, logout } = useAuth();
+  const isOrdersPage = path === "/account/orders";
 
   if (ready && !user) {
     return (
@@ -62,8 +63,8 @@ export default function AccountShell({ children }: { children: ReactNode }) {
       <div className={styles.crumb}>
         <Link href="/"><Home />Home</Link><span>/</span><span>Account</span>
       </div>
-      <div className={styles.grid}>
-        <aside>
+      <div className={`${styles.grid} ${isOrdersPage ? styles.ordersOnly : ""}`}>
+        {!isOrdersPage ? <aside>
           <section className={styles.user}>
             <UserRound />
             <div><strong>{user?.phone || "Guest user"}</strong><small>Bangladesh</small></div>
@@ -82,7 +83,7 @@ export default function AccountShell({ children }: { children: ReactNode }) {
           <button onClick={() => { logout(); router.push("/"); }}>
             <LogOut />Logout
           </button>
-        </aside>
+        </aside> : null}
         <section className={styles.content}>{children}</section>
       </div>
     </main>
