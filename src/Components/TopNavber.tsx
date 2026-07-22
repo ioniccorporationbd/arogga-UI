@@ -182,13 +182,13 @@ export default function TopNavber() {
                     <small>Manage your Arogga account</small>
                   </div>
                 </div>
-                <Link href="/account/profile" onClick={() => setDropdown(null)}>
+                <Link href="/profile" onClick={() => setDropdown(null)}>
                   <UserRound /> Profile
                 </Link>
                 <Link href="/wishlist" onClick={() => setDropdown(null)}>
                   <Heart /> Wishlist
                 </Link>
-                <Link href="/account/orders" onClick={() => setDropdown(null)}>
+                <Link href="/profile/orders" onClick={() => setDropdown(null)}>
                   <Package /> Orders
                 </Link>
                 {user ? (
@@ -205,10 +205,10 @@ export default function TopNavber() {
               </div>
             </div>
 
-            <Link href="/account/orders" onClick={(event) => {
+            <Link href="/profile/orders" onClick={(event) => {
               if (user) return;
               event.preventDefault();
-              openProtectedRoute("/account/orders", "Login to see your orders.");
+              openProtectedRoute("/profile/orders", "Login to see your orders.");
             }}>
               <Package />
               <span>
@@ -294,7 +294,7 @@ export default function TopNavber() {
           type="button"
           className={styles.drawerAccount}
           onClick={() => {
-            if (user) closeDrawerAndGo("/account/profile");
+            if (user) closeDrawerAndGo("/profile");
             else {
               setDrawerOpen(false);
               openLoginModal("Login to manage your Arogga account.");
@@ -314,7 +314,7 @@ export default function TopNavber() {
         ))}
         <button type="button" onClick={() => {
           setDrawerOpen(false);
-          openProtectedRoute("/account/orders", "Login to see your orders.");
+          openProtectedRoute("/profile/orders", "Login to see your orders.");
         }}>
           <Package /> Orders
         </button>

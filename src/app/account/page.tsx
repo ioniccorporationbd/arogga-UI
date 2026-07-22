@@ -1,1 +1,5 @@
-import {redirect} from "next/navigation";export default function Page(){redirect('/account/profile')}
+import { redirect } from "next/navigation";
+
+export default function Page() {
+  redirect("/profile");
+}
