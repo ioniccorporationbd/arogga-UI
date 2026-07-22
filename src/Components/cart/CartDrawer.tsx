@@ -11,9 +11,13 @@ import {
   ChevronDown,
   CreditCard,
   FlaskConical,
+  Globe2,
   Home,
   Landmark,
+  Mailbox,
   MapPin,
+  MessageSquareText,
+  Navigation,
   Phone,
   ShieldCheck,
   ShoppingBag,
@@ -35,7 +39,12 @@ type PaymentMethod = "bank" | "card" | "online";
 
 type AddressDetails = {
   mobile: string;
+  country: string;
+  city: string;
+  postOffice: string;
+  landmark: string;
   address: string;
+  deliveryNote: string;
   type: AddressType;
 };
 
@@ -48,7 +57,12 @@ type PaymentDetails = {
 
 const initialAddress: AddressDetails = {
   mobile: "",
+  country: "Bangladesh",
+  city: "",
+  postOffice: "",
+  landmark: "",
   address: "",
+  deliveryNote: "",
   type: "Home",
 };
 
@@ -60,9 +74,46 @@ const initialPayment: PaymentDetails = {
 };
 
 const paymentOptions: Record<PaymentMethod, string[]> = {
-  bank: ["DBBL Bank", "BRAC Bank", "City Bank", "Eastern Bank"],
-  card: ["Visa Card", "Mastercard", "American Express"],
-  online: ["bKash", "Rocket", "Nagad"],
+  bank: [
+    "Dutch-Bangla Bank",
+    "BRAC Bank",
+    "City Bank",
+    "Eastern Bank",
+    "Islami Bank Bangladesh",
+    "Sonali Bank",
+    "Prime Bank",
+    "Mutual Trust Bank",
+    "Standard Chartered",
+    "HSBC Bangladesh",
+    "Bank Asia",
+    "United Commercial Bank",
+  ],
+  card: [
+    "Visa",
+    "Mastercard",
+    "American Express",
+    "UnionPay",
+    "DBBL Nexus",
+    "VISA Debit",
+    "Mastercard Debit",
+    "Prepaid Card",
+  ],
+  online: [
+    "bKash",
+    "Rocket",
+    "Nagad",
+    "Upay",
+    "Tap",
+    "OK Wallet",
+    "iPay",
+    "mCash",
+  ],
+};
+
+const methodCopy: Record<PaymentMethod, string> = {
+  bank: "Select a Bangladesh bank and enter your account/mobile reference.",
+  card: "Use a supported local/international card network securely.",
+  online: "Choose mobile wallet payment such as bKash, Rocket, Nagad or Upay.",
 };
 
 function getQuantityOptions(item: CartItem) {
@@ -104,6 +155,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
 
   const activeItem = items.find((item) => item.id === quantityPicker) ?? null;
   const total = useMemo(() => subtotal, [subtotal]);
+  const selectedPaymentOptions = paymentOptions[payment.method];
 
   function closeDrawer() {
     setQuantityPicker(null);
@@ -120,7 +172,12 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
     const nextAddress = {
       ...address,
       mobile: address.mobile.replace(/\D/g, "").slice(0, 11),
+      country: address.country.trim() || "Bangladesh",
+      city: address.city.trim(),
+      postOffice: address.postOffice.trim(),
+      landmark: address.landmark.trim(),
       address: address.address.trim(),
+      deliveryNote: address.deliveryNote.trim(),
     };
     setSavedAddress(nextAddress);
     setAddress(nextAddress);
@@ -239,9 +296,10 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                 <h3>Shipping Address</h3>
                 {savedAddress ? (
                   <div className={styles.savedAddress}>
-                    <strong><MapPin /> {savedAddress.type}</strong>
+                    <strong><MapPin /> {savedAddress.type} • {savedAddress.city || savedAddress.country}</strong>
                     <span>{savedAddress.mobile}</span>
                     <p>{savedAddress.address}</p>
+                    {savedAddress.landmark ? <small>Landmark: {savedAddress.landmark}</small> : null}
                   </div>
                 ) : (
                   <p>You haven&apos;t added any address yet.</p>
@@ -300,29 +358,65 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
 
       {addressOpen ? (
         <div className={styles.modalBackdrop} role="presentation">
-          <section className={styles.flowModal} role="dialog" aria-modal="true" aria-labelledby="address-modal-title">
+          <section className={`${styles.flowModal} ${styles.addressFlowModal}`} role="dialog" aria-modal="true" aria-labelledby="address-modal-title">
             <header>
               <div>
-                <span>STEP 1</span>
+                <span>STEP 1 • DELIVERY DETAILS</span>
                 <h2 id="address-modal-title">Add delivery address</h2>
-                <p>Fill mobile number and full delivery address before payment.</p>
+                <p>Complete the required mobile and address fields. Country, city, post office, landmark and delivery note are optional helpers.</p>
               </div>
               <button type="button" onClick={() => setAddressOpen(false)} aria-label="Close address modal"><X /></button>
             </header>
 
             <form onSubmit={submitAddress} className={styles.modalForm}>
-              <label>
-                <span><Phone /> Mobile number</span>
+              <div className={styles.formGrid}>
+                <label>
+                  <span><Phone /> Mobile number</span>
+                  <input
+                    required
+                    inputMode="numeric"
+                    pattern="01[3-9][0-9]{8}"
+                    placeholder="01XXXXXXXXX"
+                    value={address.mobile}
+                    onChange={(event) => setAddress((current) => ({ ...current, mobile: event.target.value.replace(/\D/g, "").slice(0, 11) }))}
+                  />
+                </label>
+                <label>
+                  <span><Globe2 /> Country <small>Optional</small></span>
+                  <input
+                    placeholder="Bangladesh"
+                    value={address.country}
+                    onChange={(event) => setAddress((current) => ({ ...current, country: event.target.value }))}
+                  />
+                </label>
+                <label>
+                  <span><Building2 /> City <small>Optional</small></span>
+                  <input
+                    placeholder="Dhaka"
+                    value={address.city}
+                    onChange={(event) => setAddress((current) => ({ ...current, city: event.target.value }))}
+                  />
+                </label>
+                <label>
+                  <span><Mailbox /> Post office <small>Optional</small></span>
+                  <input
+                    placeholder="Dhanmondi Post Office"
+                    value={address.postOffice}
+                    onChange={(event) => setAddress((current) => ({ ...current, postOffice: event.target.value }))}
+                  />
+                </label>
+              </div>
+
+              <label className={styles.wideField}>
+                <span><Navigation /> Landmark <small>Optional</small></span>
                 <input
-                  required
-                  inputMode="numeric"
-                  pattern="01[3-9][0-9]{8}"
-                  placeholder="01XXXXXXXXX"
-                  value={address.mobile}
-                  onChange={(event) => setAddress((current) => ({ ...current, mobile: event.target.value.replace(/\D/g, "").slice(0, 11) }))}
+                  placeholder="Near hospital, mosque, school or market"
+                  value={address.landmark}
+                  onChange={(event) => setAddress((current) => ({ ...current, landmark: event.target.value }))}
                 />
               </label>
-              <label>
+
+              <label className={styles.wideField}>
                 <span><MapPin /> Full address</span>
                 <textarea
                   required
@@ -331,6 +425,16 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                   placeholder="House, road, area, city"
                   value={address.address}
                   onChange={(event) => setAddress((current) => ({ ...current, address: event.target.value }))}
+                />
+              </label>
+
+              <label className={styles.wideField}>
+                <span><MessageSquareText /> Special message for delivery man <small>Optional</small></span>
+                <textarea
+                  rows={3}
+                  placeholder="Example: Call before delivery, leave with guard, evening delivery preferred"
+                  value={address.deliveryNote}
+                  onChange={(event) => setAddress((current) => ({ ...current, deliveryNote: event.target.value }))}
                 />
               </label>
 
@@ -343,7 +447,8 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                     onClick={() => setAddress((current) => ({ ...current, type }))}
                   >
                     {type === "Home" ? <Home /> : type === "Office" ? <Building2 /> : <MapPin />}
-                    {type}
+                    <span>{type}</span>
+                    <small>{type === "Home" ? "Personal delivery" : type === "Office" ? "Workplace delivery" : "Custom location"}</small>
                   </button>
                 ))}
               </div>
@@ -356,12 +461,12 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
 
       {paymentOpen ? (
         <div className={styles.modalBackdrop} role="presentation">
-          <section className={styles.flowModal} role="dialog" aria-modal="true" aria-labelledby="payment-modal-title">
+          <section className={`${styles.flowModal} ${styles.paymentFlowModal}`} role="dialog" aria-modal="true" aria-labelledby="payment-modal-title">
             <header>
               <div>
-                <span>STEP 2</span>
+                <span>STEP 2 • SECURE PAYMENT</span>
                 <h2 id="payment-modal-title">Select payment option</h2>
-                <p>Choose bank, card, or online payment. You can reselect anytime.</p>
+                <p>Choose a real payment method. You can switch Bank, Card or Mobile Payment and reselect any option.</p>
               </div>
               <button type="button" onClick={() => setPaymentOpen(false)} aria-label="Close payment modal"><X /></button>
             </header>
@@ -369,18 +474,29 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
             <form onSubmit={submitPayment} className={styles.modalForm}>
               <div className={styles.paymentMethods}>
                 <button type="button" className={payment.method === "bank" ? styles.selectedOption : ""} onClick={() => selectPaymentMethod("bank")}>
-                  <Landmark /> Bank
+                  <Landmark />
+                  <span>Bank</span>
+                  <small>12 banks</small>
                 </button>
                 <button type="button" className={payment.method === "card" ? styles.selectedOption : ""} onClick={() => selectPaymentMethod("card")}>
-                  <CreditCard /> Card
+                  <CreditCard />
+                  <span>Card</span>
+                  <small>8 networks</small>
                 </button>
                 <button type="button" className={payment.method === "online" ? styles.selectedOption : ""} onClick={() => selectPaymentMethod("online")}>
-                  <Smartphone /> Online
+                  <Smartphone />
+                  <span>Mobile Pay</span>
+                  <small>8 wallets</small>
                 </button>
               </div>
 
+              <div className={styles.methodHelp}>
+                <ShieldCheck />
+                <span>{methodCopy[payment.method]}</span>
+              </div>
+
               <div className={styles.paymentOptionGrid}>
-                {paymentOptions[payment.method].map((option) => (
+                {selectedPaymentOptions.map((option) => (
                   <button
                     type="button"
                     key={option}
@@ -388,7 +504,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                     onClick={() => setPayment((current) => ({ ...current, option }))}
                   >
                     <WalletCards />
-                    {option}
+                    <span>{option}</span>
                   </button>
                 ))}
               </div>
@@ -407,7 +523,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                 </label>
               ) : (
                 <label>
-                  <span><Phone /> Payment phone number</span>
+                  <span><Phone /> {payment.method === "bank" ? "Account or mobile reference" : "Payment phone number"}</span>
                   <input
                     required
                     inputMode="numeric"
@@ -422,7 +538,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
               <section className={styles.paymentSummary}>
                 <span>Total payable</span>
                 <strong>৳{total.toFixed(0)}</strong>
-                <small>{savedAddress?.type ?? address.type} delivery • expected after 3 days</small>
+                <small>{savedAddress?.type ?? address.type} delivery • {payment.option} • expected after 3 days</small>
               </section>
 
               <button type="submit" className={styles.primaryAction}>Pay successfully</button>
@@ -442,7 +558,15 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
               <article><span>Payment</span><strong>{payment.option}</strong></article>
               <article><span>Delivery date</span><strong>{deliveryDate}</strong></article>
             </div>
-            <p className={styles.successNote}>Your order will be delivered after 3 days to your selected {savedAddress?.type ?? address.type} address.</p>
+            <div className={styles.successDeliveryBox}>
+              <CalendarDays />
+              <div>
+                <strong>Delivery after 3 days</strong>
+                <span>{savedAddress?.city ? `${savedAddress.city}, ` : ""}{savedAddress?.country || "Bangladesh"} • {savedAddress?.type ?? address.type}</span>
+                {savedAddress?.deliveryNote ? <small>Note: {savedAddress.deliveryNote}</small> : null}
+              </div>
+            </div>
+            <p className={styles.successNote}>Your order will be delivered on {deliveryDate} to your selected {savedAddress?.type ?? address.type} address.</p>
             <button type="button" className={styles.primaryAction} onClick={resetFlowAndCloseSuccess}>Done</button>
           </section>
         </div>

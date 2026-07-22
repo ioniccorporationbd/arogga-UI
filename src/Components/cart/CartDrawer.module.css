@@ -333,11 +333,17 @@
 }
 
 .savedAddress span,
-.savedAddress p {
+.savedAddress p,
+.savedAddress small {
   margin: 0;
   color: #475467;
   font-size: 12px;
   line-height: 1.5;
+}
+
+.savedAddress small {
+  color: #087b75;
+  font-weight: 800;
 }
 
 .coupon {
@@ -913,6 +919,113 @@
   text-decoration: none;
 }
 
+.addressFlowModal,
+.paymentFlowModal {
+  width: min(680px, 100%);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.wideField {
+  grid-column: 1 / -1;
+}
+
+.modalForm label > span small {
+  display: inline-flex;
+  min-height: 18px;
+  align-items: center;
+  border-radius: 999px;
+  color: #087b75;
+  background: #eefbf9;
+  padding: 0 7px;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.addressTypes button span,
+.paymentMethods button span,
+.paymentOptionGrid button span {
+  color: inherit;
+  font-weight: 900;
+}
+
+.addressTypes button small,
+.paymentMethods button small {
+  color: #667085;
+  font-size: 10.5px;
+  font-weight: 750;
+}
+
+.selectedOption small {
+  color: #087b75 !important;
+}
+
+.paymentOptionGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.methodHelp {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 13px;
+  border: 1px solid #bee6e1;
+  border-radius: 14px;
+  color: #087b75;
+  background: #effbf9;
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.methodHelp svg {
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+}
+
+.successDeliveryBox {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px;
+  border: 1px solid #bee6e1;
+  border-radius: 16px;
+  color: #087b75;
+  background: linear-gradient(135deg, #effbf9, #ffffff);
+  text-align: left;
+}
+
+.successDeliveryBox > svg {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+}
+
+.successDeliveryBox div {
+  display: grid;
+  gap: 3px;
+}
+
+.successDeliveryBox strong {
+  color: #087b75;
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.successDeliveryBox span,
+.successDeliveryBox small {
+  color: #475467;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 @keyframes popIn {
   from { opacity: 0; transform: translateY(8px) scale(0.98); }
   to { opacity: 1; transform: translateY(0) scale(1); }
@@ -961,7 +1074,8 @@
   .addressTypes,
   .paymentMethods,
   .paymentOptionGrid,
-  .successCards {
+  .successCards,
+  .formGrid {
     grid-template-columns: 1fr;
   }
 
