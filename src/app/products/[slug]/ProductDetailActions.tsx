@@ -14,6 +14,10 @@ type CartProduct = {
   price: number;
   image: string;
   sku: string;
+  brand?: string;
+  category?: string;
+  rating?: number;
+  stock?: number;
 };
 
 type ProductOption = {
@@ -82,6 +86,11 @@ export default function ProductDetailActions({
       name: product.name,
       price: product.price,
       image: product.image,
+      sku: product.sku,
+      brand: product.brand,
+      category: product.category,
+      rating: product.rating,
+      stock: product.stock,
     });
   }
 

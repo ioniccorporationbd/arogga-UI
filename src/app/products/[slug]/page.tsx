@@ -178,7 +178,18 @@ export default async function ProductDetailsPage({
             </p>
 
             <ProductDetailActions
-              product={{ id: product.id, slug: product.slug, name: product.name, price, image, sku: product.sku }}
+              product={{
+                id: product.id,
+                slug: product.slug,
+                name: product.name,
+                price,
+                image,
+                sku: product.sku,
+                brand: product.brand?.name,
+                category: categoryName,
+                rating,
+                stock: availableQuantity,
+              }}
               maxQuantity={maximumQuantity}
               disabled={!isAvailable}
               options={product.options}
