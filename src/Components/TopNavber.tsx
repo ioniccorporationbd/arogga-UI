@@ -26,7 +26,6 @@ import { FormEvent, useEffect, useState } from "react";
 
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
-import MobileLoginModal from "./auth/MobileLoginModal";
 import CartDrawer from "./cart/CartDrawer";
 import styles from "./TopNavber.module.css";
 
@@ -45,11 +44,10 @@ type DropdownName = "location" | "account" | "order" | null;
 export default function TopNavber() {
   const path = usePathname();
   const router = useRouter();
-  const { user, logout } = useAuth();
+  const { user, logout, requireAuth, openLoginModal } = useAuth();
   const { count } = useCart();
 
   const [query, setQuery] = useState("");
-  const [loginOpen, setLoginOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [dropdown, setDropdown] = useState<DropdownName>(null);
@@ -84,12 +82,23 @@ export default function TopNavber() {
     }
 
     setDropdown(null);
-    setLoginOpen(true);
+    openLoginModal("Login to manage your Arogga account.");
   }
 
   function closeDrawerAndGo(href: string) {
     setDrawerOpen(false);
     router.push(href);
+  }
+
+  function openProtectedRoute(href: string, reason: string) {
+    setDropdown(null);
+    if (!requireAuth({ reason })) return;
+    router.push(href);
+  }
+
+  function openProtectedCart() {
+    if (!requireAuth({ reason: "Login to view cart and add products." })) return;
+    setCartOpen(true);
   }
 
   return (
@@ -196,19 +205,27 @@ export default function TopNavber() {
               </div>
             </div>
 
-            <Link href="/orders">
+            <Link href="/orders" onClick={(event) => {
+              if (user) return;
+              event.preventDefault();
+              openProtectedRoute("/orders", "Login to see your orders.");
+            }}>
               <Package />
               <span>
                 Orders<strong>0</strong>
               </span>
             </Link>
-            <Link href="/inbox">
+            <Link href="/inbox" onClick={(event) => {
+              if (user) return;
+              event.preventDefault();
+              openProtectedRoute("/inbox", "Login to read your inbox messages.");
+            }}>
               <Inbox />
               <span>
                 Inbox<strong>0</strong>
               </span>
             </Link>
-            <button type="button" onClick={() => setCartOpen(true)} className={styles.cart}>
+            <button type="button" onClick={openProtectedCart} className={styles.cart}>
               <ShoppingCart />
               <b>{count}</b>
               <span>Cart</span>
@@ -243,7 +260,10 @@ export default function TopNavber() {
             </button>
             <div className={`${styles.dropdownPanel} ${styles.orderPanel} ${dropdown === "order" ? styles.showDropdown : ""}`}>
               {orderOptions.map((option) => (
-                <button type="button" key={option} onClick={() => setDropdown(null)}>
+                <button type="button" key={option} onClick={() => {
+                  setDropdown(null);
+                  if (!requireAuth({ reason: `Login to continue with ${option}.` })) return;
+                }}>
                   <Clock3 /> {option}
                 </button>
               ))}
@@ -277,7 +297,7 @@ export default function TopNavber() {
             if (user) closeDrawerAndGo("/account/profile");
             else {
               setDrawerOpen(false);
-              setLoginOpen(true);
+              openLoginModal("Login to manage your Arogga account.");
             }
           }}
         >
@@ -292,12 +312,18 @@ export default function TopNavber() {
             {item.label}
           </Link>
         ))}
-        <Link href="/orders" onClick={() => setDrawerOpen(false)}>
+        <button type="button" onClick={() => {
+          setDrawerOpen(false);
+          openProtectedRoute("/orders", "Login to see your orders.");
+        }}>
           <Package /> Orders
-        </Link>
-        <Link href="/inbox" onClick={() => setDrawerOpen(false)}>
+        </button>
+        <button type="button" onClick={() => {
+          setDrawerOpen(false);
+          openProtectedRoute("/inbox", "Login to read your inbox messages.");
+        }}>
           <Inbox /> Inbox
-        </Link>
+        </button>
         {user ? (
           <button type="button" onClick={logout}>
             <LogOut /> Logout
@@ -305,7 +331,6 @@ export default function TopNavber() {
         ) : null}
       </aside>
 
-      <MobileLoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
       <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
     </>
   );

@@ -1,3 +1,90 @@
-"use client";import Link from "next/link";import {usePathname,useRouter} from "next/navigation";import {BadgePercent,Banknote,BookOpen,ChevronRight,FileText,Heart,HelpCircle,Home,LogOut,MapPin,MessageSquare,Package,ShieldCheck,Star,UserRound,Users} from "lucide-react";import {useAuth} from "@/context/AuthContext";import type {ReactNode} from "react";import styles from "./AccountShell.module.css";
-const links=[['profile','Profile',UserRound],['balance','Balance',Banknote],['offers','Offers',BadgePercent],['orders','My Orders',Package],['wishlist','Wishlists',Heart],['prescriptions','Prescriptions',FileText],['addresses','Delivery Address',MapPin],['patients','Patients',Users],['reviews','Product Review',Star],['support','Report',MessageSquare],['blog','Blog',BookOpen],['faq','FAQ',HelpCircle],['privacy','Privacy Policy',ShieldCheck]] as const;
-export default function AccountShell({children}:{children:ReactNode}){const path=usePathname();const router=useRouter();const{user,logout}=useAuth();return <main className={styles.page}><div className={styles.crumb}><Link href="/"><Home/>Home</Link><span>/</span><span>Account</span></div><div className={styles.grid}><aside><section className={styles.user}><UserRound/><div><strong>{user?.phone||"Guest user"}</strong><small>Bangladesh</small></div></section><nav>{links.map(([slug,label,Icon])=><Link key={slug} href={slug==='orders'?'/orders':slug==='wishlist'?'/wishlist':`/account/${slug}`} className={path.endsWith('/'+slug)?styles.active:""}><Icon/><span>{label}</span><ChevronRight/></Link>)}</nav><button onClick={()=>{logout();router.push('/')}}><LogOut/>Logout</button></aside><section className={styles.content}>{children}</section></div></main>}
+"use client";
+
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import type { ReactNode } from "react";
+import {
+  BadgePercent,
+  Banknote,
+  BookOpen,
+  ChevronRight,
+  FileText,
+  Heart,
+  HelpCircle,
+  Home,
+  LogOut,
+  MapPin,
+  MessageSquare,
+  Package,
+  ShieldCheck,
+  Star,
+  UserRound,
+  Users,
+} from "lucide-react";
+
+import ProtectedActionPrompt from "@/Components/auth/ProtectedActionPrompt";
+import { useAuth } from "@/context/AuthContext";
+import styles from "./AccountShell.module.css";
+
+const links = [
+  ["profile", "Profile", UserRound],
+  ["balance", "Balance", Banknote],
+  ["offers", "Offers", BadgePercent],
+  ["orders", "My Orders", Package],
+  ["wishlist", "Wishlists", Heart],
+  ["prescriptions", "Prescriptions", FileText],
+  ["addresses", "Delivery Address", MapPin],
+  ["patients", "Patients", Users],
+  ["reviews", "Product Review", Star],
+  ["support", "Report", MessageSquare],
+  ["blog", "Blog", BookOpen],
+  ["faq", "FAQ", HelpCircle],
+  ["privacy", "Privacy Policy", ShieldCheck],
+] as const;
+
+export default function AccountShell({ children }: { children: ReactNode }) {
+  const path = usePathname();
+  const router = useRouter();
+  const { user, ready, logout } = useAuth();
+
+  if (ready && !user) {
+    return (
+      <ProtectedActionPrompt
+        title="Login to access account"
+        message="Account pages are protected. Login to manage profile, addresses, wishlist, orders and support."
+        reason="Login to access your account."
+      />
+    );
+  }
+
+  return (
+    <main className={styles.page}>
+      <div className={styles.crumb}>
+        <Link href="/"><Home />Home</Link><span>/</span><span>Account</span>
+      </div>
+      <div className={styles.grid}>
+        <aside>
+          <section className={styles.user}>
+            <UserRound />
+            <div><strong>{user?.phone || "Guest user"}</strong><small>Bangladesh</small></div>
+          </section>
+          <nav>
+            {links.map(([slug, label, Icon]) => (
+              <Link
+                key={slug}
+                href={slug === "orders" ? "/orders" : slug === "wishlist" ? "/wishlist" : `/account/${slug}`}
+                className={path.endsWith(`/${slug}`) ? styles.active : ""}
+              >
+                <Icon /><span>{label}</span><ChevronRight />
+              </Link>
+            ))}
+          </nav>
+          <button onClick={() => { logout(); router.push("/"); }}>
+            <LogOut />Logout
+          </button>
+        </aside>
+        <section className={styles.content}>{children}</section>
+      </div>
+    </main>
+  );
+}

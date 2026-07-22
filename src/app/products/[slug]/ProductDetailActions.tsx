@@ -4,6 +4,7 @@ import { Check, Heart, Minus, Plus, ShoppingBag, ShoppingCart } from "lucide-rea
 import { useMemo, useState } from "react";
 
 import { useCart } from "@/context/CartContext";
+import { useAuth } from "@/context/AuthContext";
 import { useWishlist } from "@/context/WishlistContext";
 
 type CartProduct = {
@@ -39,6 +40,7 @@ export default function ProductDetailActions({
   prescriptionRequired = false,
 }: Props) {
   const { addItem } = useCart();
+  const { requireAuth } = useAuth();
   const wishlist = useWishlist();
   const safeMaximum = Math.max(1, maxQuantity);
   const [quantity, setQuantity] = useState(1);
@@ -66,12 +68,14 @@ export default function ProductDetailActions({
 
   function handleAddToCart() {
     if (disabled) return;
+    if (!requireAuth({ reason: "Login to add this product to cart." })) return;
     addItem(cartProduct, quantity);
     setAdded(true);
     window.setTimeout(() => setAdded(false), 1400);
   }
 
   function handleWishlist() {
+    if (!requireAuth({ reason: "Login to save products to wishlist." })) return;
     wishlist.toggle({
       id: product.id,
       slug: product.slug,

@@ -4,6 +4,7 @@ import { Check, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 
 import { useCart } from "@/context/CartContext";
+import { useAuth } from "@/context/AuthContext";
 import styles from "./AddToCartButton.module.css";
 
 type Props = {
@@ -36,10 +37,12 @@ export default function AddToCartButton({
   onAdded,
 }: Props) {
   const { addItem } = useCart();
+  const { requireAuth } = useAuth();
   const [added, setAdded] = useState(false);
 
   function handleAddToCart() {
     if (disabled) return;
+    if (!requireAuth({ reason: "Login to add products to your cart." })) return;
 
     addItem(product, quantity);
     setAdded(true);

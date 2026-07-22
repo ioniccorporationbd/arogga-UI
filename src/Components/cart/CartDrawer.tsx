@@ -16,6 +16,7 @@ import {
 import { useState } from "react";
 
 import { useCart, type CartItem } from "@/context/CartContext";
+import { useAuth } from "@/context/AuthContext";
 import styles from "./CartDrawer.module.css";
 
 function getQuantityOptions(item: CartItem) {
@@ -30,6 +31,7 @@ function getPackLabel(item: CartItem) {
 
 export default function CartDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { items, count, subtotal, removeItem, updateQuantity } = useCart();
+  const { requireAuth } = useAuth();
   const [quantityPicker, setQuantityPicker] = useState<string | null>(null);
 
   const activeItem = items.find((item) => item.id === quantityPicker) ?? null;
@@ -124,7 +126,13 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
               <section className={styles.address}>
                 <h3>Shipping Address</h3>
                 <p>You haven&apos;t added any address yet.</p>
-                <Link href="/account/addresses" onClick={closeDrawer}>Add New Address</Link>
+                <Link href="/account/addresses" onClick={(event) => {
+                  if (requireAuth({ reason: "Login to add a delivery address." })) {
+                    closeDrawer();
+                    return;
+                  }
+                  event.preventDefault();
+                }}>Add New Address</Link>
               </section>
 
               <section className={styles.coupon}>
@@ -144,7 +152,13 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                 <span><ShoppingBag /></span>
                 <p><small>{count} Item{count === 1 ? "" : "s"}</small><strong>৳{subtotal.toFixed(0)}</strong></p>
               </div>
-              <Link href="/checkout" onClick={closeDrawer}>Select Address</Link>
+              <Link href="/checkout" onClick={(event) => {
+                if (requireAuth({ reason: "Login to continue checkout." })) {
+                  closeDrawer();
+                  return;
+                }
+                event.preventDefault();
+              }}>Select Address</Link>
             </footer>
           </>
         )}
