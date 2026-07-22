@@ -337,14 +337,14 @@ export default function HealthPackageExplorer() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/tara.json", {
+        const response = await fetch("/data.json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load /tara.json. Status: ${response.status}`,
+            `Unable to load /data.json. Status: ${response.status}`,
           );
         }
 
@@ -352,7 +352,7 @@ export default function HealthPackageExplorer() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/tara.json must contain a JSON array.",
+            "public/data.json must contain a JSON array.",
           );
         }
 

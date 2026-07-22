@@ -19,7 +19,7 @@ export function useStoreProducts() {
         setLoading(true);
         setError("");
 
-        const response = await fetch("/tara.json", {
+        const response = await fetch("/data.json", {
           cache: "no-store",
           signal: controller.signal,
         });
@@ -86,7 +86,7 @@ function normalizeProduct(product: JsonProduct): StoreProduct {
     image: product.media.featuredImage.url,
     rating: product.ratings.average,
     slug: product.slug,
-    href: `/products/${product.slug}`,
+    href: `/products/${product.id}`,
     salePrice,
     originalPrice,
     discount,

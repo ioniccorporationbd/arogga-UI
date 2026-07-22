@@ -11,7 +11,7 @@
     "price": 1124,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
-    "href": "/products/essence-mascara-lash-princess-100001"
+    "href": "/products/100001"
   },
   {
     "id": "100002",
@@ -25,7 +25,7 @@
     "price": 2049,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
-    "href": "/products/glamour-beauty-eyeshadow-palette-with-mirror-100002"
+    "href": "/products/100002"
   },
   {
     "id": "100003",
@@ -39,7 +39,7 @@
     "price": 1686,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
-    "href": "/products/velvet-touch-powder-canister-100003"
+    "href": "/products/100003"
   },
   {
     "id": "100004",
@@ -53,7 +53,7 @@
     "price": 1429,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
-    "href": "/products/chic-cosmetics-red-lipstick-100004"
+    "href": "/products/100004"
   },
   {
     "id": "100005",
@@ -67,7 +67,7 @@
     "price": 1000,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp",
-    "href": "/products/nail-couture-red-nail-polish-100005"
+    "href": "/products/100005"
   },
   {
     "id": "100006",
@@ -81,7 +81,7 @@
     "price": 6124,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
-    "href": "/products/calvin-klein-ck-one-100006"
+    "href": "/products/100006"
   },
   {
     "id": "100007",
@@ -95,7 +95,7 @@
     "price": 13486,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
-    "href": "/products/chanel-coco-noir-eau-de-100007"
+    "href": "/products/100007"
   },
   {
     "id": "100008",
@@ -109,7 +109,7 @@
     "price": 9561,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
-    "href": "/products/dior-j-adore-100008"
+    "href": "/products/100008"
   },
   {
     "id": "100009",
@@ -123,7 +123,7 @@
     "price": 8661,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
-    "href": "/products/dolce-gabbana-dolce-shine-eau-de-100009"
+    "href": "/products/100009"
   },
   {
     "id": "100010",
@@ -137,7 +137,7 @@
     "price": 8599,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
-    "href": "/products/gucci-bloom-eau-de-100010"
+    "href": "/products/100010"
   },
   {
     "id": "100011",
@@ -151,7 +151,7 @@
     "price": 216124,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
-    "href": "/products/annibale-colombo-bed-100011"
+    "href": "/products/100011"
   },
   {
     "id": "100012",
@@ -165,7 +165,7 @@
     "price": 268749,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
-    "href": "/products/annibale-colombo-sofa-100012"
+    "href": "/products/100012"
   },
   {
     "id": "100013",
@@ -179,7 +179,7 @@
     "price": 30374,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
-    "href": "/products/furniture-co-bedside-table-african-cherry-100013"
+    "href": "/products/100013"
   },
   {
     "id": "100014",
@@ -193,7 +193,7 @@
     "price": 61249,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
-    "href": "/products/knoll-saarinen-executive-conference-chair-100014"
+    "href": "/products/100014"
   },
   {
     "id": "100015",
@@ -207,7 +207,7 @@
     "price": 90999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
-    "href": "/products/bath-trends-wooden-bathroom-sink-with-mirror-100015"
+    "href": "/products/100015"
   },
   {
     "id": "100016",
@@ -221,7 +221,7 @@
     "price": 216,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp",
-    "href": "/products/groceries-apple-100016"
+    "href": "/products/100016"
   },
   {
     "id": "100017",
@@ -235,7 +235,7 @@
     "price": 1461,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp",
-    "href": "/products/groceries-beef-steak-100017"
+    "href": "/products/100017"
   },
   {
     "id": "100018",
@@ -249,7 +249,7 @@
     "price": 1011,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp",
-    "href": "/products/groceries-cat-food-100018"
+    "href": "/products/100018"
   },
   {
     "id": "100019",
@@ -263,7 +263,7 @@
     "price": 1074,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp",
-    "href": "/products/groceries-chicken-meat-100019"
+    "href": "/products/100019"
   },
   {
     "id": "100020",
@@ -277,7 +277,7 @@
     "price": 568,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp",
-    "href": "/products/groceries-cooking-oil-100020"
+    "href": "/products/100020"
   },
   {
     "id": "100021",
@@ -291,7 +291,7 @@
     "price": 158,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp",
-    "href": "/products/groceries-cucumber-100021"
+    "href": "/products/100021"
   },
   {
     "id": "100022",
@@ -305,7 +305,7 @@
     "price": 1236,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp",
-    "href": "/products/groceries-dog-food-100022"
+    "href": "/products/100022"
   },
   {
     "id": "100023",
@@ -319,7 +319,7 @@
     "price": 333,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp",
-    "href": "/products/groceries-eggs-100023"
+    "href": "/products/100023"
   },
   {
     "id": "100024",
@@ -333,7 +333,7 @@
     "price": 1799,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp",
-    "href": "/products/groceries-fish-steak-100024"
+    "href": "/products/100024"
   },
   {
     "id": "100025",
@@ -347,7 +347,7 @@
     "price": 137,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp",
-    "href": "/products/groceries-green-bell-pepper-100025"
+    "href": "/products/100025"
   },
   {
     "id": "100026",
@@ -361,7 +361,7 @@
     "price": 123,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp",
-    "href": "/products/groceries-green-chili-pepper-100026"
+    "href": "/products/100026"
   },
   {
     "id": "100027",
@@ -375,7 +375,7 @@
     "price": 751,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp",
-    "href": "/products/groceries-honey-jar-100027"
+    "href": "/products/100027"
   },
   {
     "id": "100028",
@@ -389,7 +389,7 @@
     "price": 624,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
-    "href": "/products/groceries-ice-cream-100028"
+    "href": "/products/100028"
   },
   {
     "id": "100029",
@@ -403,7 +403,7 @@
     "price": 439,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp",
-    "href": "/products/groceries-juice-100029"
+    "href": "/products/100029"
   },
   {
     "id": "100030",
@@ -417,7 +417,7 @@
     "price": 265,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp",
-    "href": "/products/groceries-kiwi-100030"
+    "href": "/products/100030"
   },
   {
     "id": "100031",
@@ -431,7 +431,7 @@
     "price": 89,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/lemon/thumbnail.webp",
-    "href": "/products/groceries-lemon-100031"
+    "href": "/products/100031"
   },
   {
     "id": "100032",
@@ -445,7 +445,7 @@
     "price": 375,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/milk/thumbnail.webp",
-    "href": "/products/groceries-milk-100032"
+    "href": "/products/100032"
   },
   {
     "id": "100033",
@@ -459,7 +459,7 @@
     "price": 543,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/mulberry/thumbnail.webp",
-    "href": "/products/groceries-mulberry-100033"
+    "href": "/products/100033"
   },
   {
     "id": "100034",
@@ -473,7 +473,7 @@
     "price": 979,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/thumbnail.webp",
-    "href": "/products/groceries-nescafe-coffee-100034"
+    "href": "/products/100034"
   },
   {
     "id": "100035",
@@ -487,7 +487,7 @@
     "price": 272,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/potatoes/thumbnail.webp",
-    "href": "/products/groceries-potatoes-100035"
+    "href": "/products/100035"
   },
   {
     "id": "100036",
@@ -501,7 +501,7 @@
     "price": 2299,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/protein-powder/thumbnail.webp",
-    "href": "/products/groceries-protein-powder-100036"
+    "href": "/products/100036"
   },
   {
     "id": "100037",
@@ -515,7 +515,7 @@
     "price": 224,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/red-onions/thumbnail.webp",
-    "href": "/products/groceries-red-onions-100037"
+    "href": "/products/100037"
   },
   {
     "id": "100038",
@@ -529,7 +529,7 @@
     "price": 681,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/rice/thumbnail.webp",
-    "href": "/products/groceries-rice-100038"
+    "href": "/products/100038"
   },
   {
     "id": "100039",
@@ -543,7 +543,7 @@
     "price": 206,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/soft-drinks/thumbnail.webp",
-    "href": "/products/groceries-soft-drinks-100039"
+    "href": "/products/100039"
   },
   {
     "id": "100040",
@@ -557,7 +557,7 @@
     "price": 494,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/strawberry/thumbnail.webp",
-    "href": "/products/groceries-strawberry-100040"
+    "href": "/products/100040"
   },
   {
     "id": "100041",
@@ -571,7 +571,7 @@
     "price": 271,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/thumbnail.webp",
-    "href": "/products/groceries-tissue-paper-box-100041"
+    "href": "/products/100041"
   },
   {
     "id": "100042",
@@ -585,7 +585,7 @@
     "price": 105,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
-    "href": "/products/groceries-water-100042"
+    "href": "/products/100042"
   },
   {
     "id": "100043",
@@ -599,7 +599,7 @@
     "price": 6749,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
-    "href": "/products/home-decoration-decoration-swing-100043"
+    "href": "/products/100043"
   },
   {
     "id": "100044",
@@ -613,7 +613,7 @@
     "price": 3186,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
-    "href": "/products/home-decoration-family-tree-photo-frame-100044"
+    "href": "/products/100044"
   },
   {
     "id": "100045",
@@ -627,7 +627,7 @@
     "price": 4649,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
-    "href": "/products/home-decoration-house-showpiece-plant-100045"
+    "href": "/products/100045"
   },
   {
     "id": "100046",
@@ -641,7 +641,7 @@
     "price": 1743,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
-    "href": "/products/home-decoration-plant-pot-100046"
+    "href": "/products/100046"
   },
   {
     "id": "100047",
@@ -655,7 +655,7 @@
     "price": 5811,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
-    "href": "/products/home-decoration-table-lamp-100047"
+    "href": "/products/100047"
   },
   {
     "id": "100048",
@@ -669,7 +669,7 @@
     "price": 969,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/thumbnail.webp",
-    "href": "/products/kitchen-accessories-bamboo-spatula-100048"
+    "href": "/products/100048"
   },
   {
     "id": "100049",
@@ -683,7 +683,7 @@
     "price": 629,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/thumbnail.webp",
-    "href": "/products/kitchen-accessories-black-aluminium-cup-100049"
+    "href": "/products/100049"
   },
   {
     "id": "100050",
@@ -697,7 +697,7 @@
     "price": 1124,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/thumbnail.webp",
-    "href": "/products/kitchen-accessories-black-whisk-100050"
+    "href": "/products/100050"
   },
   {
     "id": "100051",
@@ -711,7 +711,7 @@
     "price": 4649,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/thumbnail.webp",
-    "href": "/products/kitchen-accessories-boxed-blender-100051"
+    "href": "/products/100051"
   },
   {
     "id": "100052",
@@ -725,7 +725,7 @@
     "price": 3486,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/carbon-steel-wok/thumbnail.webp",
-    "href": "/products/kitchen-accessories-carbon-steel-wok-100052"
+    "href": "/products/100052"
   },
   {
     "id": "100053",
@@ -739,7 +739,7 @@
     "price": 1494,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/thumbnail.webp",
-    "href": "/products/kitchen-accessories-chopping-board-100053"
+    "href": "/products/100053"
   },
   {
     "id": "100054",
@@ -753,7 +753,7 @@
     "price": 989,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
-    "href": "/products/kitchen-accessories-citrus-squeezer-yellow-100054"
+    "href": "/products/100054"
   },
   {
     "id": "100055",
@@ -767,7 +767,7 @@
     "price": 743,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
-    "href": "/products/kitchen-accessories-egg-slicer-100055"
+    "href": "/products/100055"
   },
   {
     "id": "100056",
@@ -781,7 +781,7 @@
     "price": 5374,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/thumbnail.webp",
-    "href": "/products/kitchen-accessories-electric-stove-100056"
+    "href": "/products/100056"
   },
   {
     "id": "100057",
@@ -795,7 +795,7 @@
     "price": 1199,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/thumbnail.webp",
-    "href": "/products/kitchen-accessories-fine-mesh-strainer-100057"
+    "href": "/products/100057"
   },
   {
     "id": "100058",
@@ -809,7 +809,7 @@
     "price": 459,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fork/thumbnail.webp",
-    "href": "/products/kitchen-accessories-fork-100058"
+    "href": "/products/100058"
   },
   {
     "id": "100059",
@@ -823,7 +823,7 @@
     "price": 574,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/glass/thumbnail.webp",
-    "href": "/products/kitchen-accessories-glass-100059"
+    "href": "/products/100059"
   },
   {
     "id": "100060",
@@ -837,7 +837,7 @@
     "price": 1319,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/grater-black/thumbnail.webp",
-    "href": "/products/kitchen-accessories-grater-black-100060"
+    "href": "/products/100060"
   },
   {
     "id": "100061",
@@ -851,7 +851,7 @@
     "price": 3630,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/hand-blender/thumbnail.webp",
-    "href": "/products/kitchen-accessories-hand-blender-100061"
+    "href": "/products/100061"
   },
   {
     "id": "100062",
@@ -865,7 +865,7 @@
     "price": 741,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/ice-cube-tray/thumbnail.webp",
-    "href": "/products/kitchen-accessories-ice-cube-tray-100062"
+    "href": "/products/100062"
   },
   {
     "id": "100063",
@@ -879,7 +879,7 @@
     "price": 809,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp",
-    "href": "/products/kitchen-accessories-kitchen-sieve-100063"
+    "href": "/products/100063"
   },
   {
     "id": "100064",
@@ -893,7 +893,7 @@
     "price": 1518,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/knife/thumbnail.webp",
-    "href": "/products/kitchen-accessories-knife-100064"
+    "href": "/products/100064"
   },
   {
     "id": "100065",
@@ -907,7 +907,7 @@
     "price": 1461,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/lunch-box/thumbnail.webp",
-    "href": "/products/kitchen-accessories-lunch-box-100065"
+    "href": "/products/100065"
   },
   {
     "id": "100066",
@@ -921,7 +921,7 @@
     "price": 9899,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/thumbnail.webp",
-    "href": "/products/kitchen-accessories-microwave-oven-100066"
+    "href": "/products/100066"
   },
   {
     "id": "100067",
@@ -935,7 +935,7 @@
     "price": 1819,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/mug-tree-stand/thumbnail.webp",
-    "href": "/products/kitchen-accessories-mug-tree-stand-100067"
+    "href": "/products/100067"
   },
   {
     "id": "100068",
@@ -949,7 +949,7 @@
     "price": 3030,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/pan/thumbnail.webp",
-    "href": "/products/kitchen-accessories-pan-100068"
+    "href": "/products/100068"
   },
   {
     "id": "100069",
@@ -963,7 +963,7 @@
     "price": 464,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/plate/thumbnail.webp",
-    "href": "/products/kitchen-accessories-plate-100069"
+    "href": "/products/100069"
   },
   {
     "id": "100070",
@@ -977,7 +977,7 @@
     "price": 743,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/red-tongs/thumbnail.webp",
-    "href": "/products/kitchen-accessories-red-tongs-100070"
+    "href": "/products/100070"
   },
   {
     "id": "100071",
@@ -991,7 +991,7 @@
     "price": 4699,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/silver-pot-with-glass-cap/thumbnail.webp",
-    "href": "/products/kitchen-accessories-silver-pot-with-glass-cap-100071"
+    "href": "/products/100071"
   },
   {
     "id": "100072",
@@ -1005,7 +1005,7 @@
     "price": 978,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/slotted-turner/thumbnail.webp",
-    "href": "/products/kitchen-accessories-slotted-turner-100072"
+    "href": "/products/100072"
   },
   {
     "id": "100073",
@@ -1019,7 +1019,7 @@
     "price": 2199,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/spice-rack/thumbnail.webp",
-    "href": "/products/kitchen-accessories-spice-rack-100073"
+    "href": "/products/100073"
   },
   {
     "id": "100074",
@@ -1033,7 +1033,7 @@
     "price": 611,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/spoon/thumbnail.webp",
-    "href": "/products/kitchen-accessories-spoon-100074"
+    "href": "/products/100074"
   },
   {
     "id": "100075",
@@ -1047,7 +1047,7 @@
     "price": 1975,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/tray/thumbnail.webp",
-    "href": "/products/kitchen-accessories-tray-100075"
+    "href": "/products/100075"
   },
   {
     "id": "100076",
@@ -1061,7 +1061,7 @@
     "price": 1349,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/wooden-rolling-pin/thumbnail.webp",
-    "href": "/products/kitchen-accessories-wooden-rolling-pin-100076"
+    "href": "/products/100076"
   },
   {
     "id": "100077",
@@ -1075,7 +1075,7 @@
     "price": 659,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/yellow-peeler/thumbnail.webp",
-    "href": "/products/kitchen-accessories-yellow-peeler-100077"
+    "href": "/products/100077"
   },
   {
     "id": "100078",
@@ -1089,7 +1089,7 @@
     "price": 237499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/thumbnail.webp",
-    "href": "/products/apple-macbook-pro-14-inch-space-grey-100078"
+    "href": "/products/100078"
   },
   {
     "id": "100079",
@@ -1103,7 +1103,7 @@
     "price": 200249,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/thumbnail.webp",
-    "href": "/products/asus-zenbook-pro-dual-screen-laptop-100079"
+    "href": "/products/100079"
   },
   {
     "id": "100080",
@@ -1117,7 +1117,7 @@
     "price": 159249,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/thumbnail.webp",
-    "href": "/products/huawei-matebook-x-pro-100080"
+    "href": "/products/100080"
   },
   {
     "id": "100081",
@@ -1131,7 +1131,7 @@
     "price": 127874,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
-    "href": "/products/lenovo-yoga-920-100081"
+    "href": "/products/100081"
   },
   {
     "id": "100082",
@@ -1145,7 +1145,7 @@
     "price": 164999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/thumbnail.webp",
-    "href": "/products/new-dell-xps-13-9300-laptop-100082"
+    "href": "/products/100082"
   },
   {
     "id": "100083",
@@ -1159,7 +1159,7 @@
     "price": 3186,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/thumbnail.webp",
-    "href": "/products/fashion-trends-blue-black-check-shirt-100083"
+    "href": "/products/100083"
   },
   {
     "id": "100084",
@@ -1173,7 +1173,7 @@
     "price": 3093,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp",
-    "href": "/products/gigabyte-aorus-men-tshirt-100084"
+    "href": "/products/100084"
   },
   {
     "id": "100085",
@@ -1187,7 +1187,7 @@
     "price": 3499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/thumbnail.webp",
-    "href": "/products/classic-wear-man-plaid-shirt-100085"
+    "href": "/products/100085"
   },
   {
     "id": "100086",
@@ -1201,7 +1201,7 @@
     "price": 2324,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/thumbnail.webp",
-    "href": "/products/casual-comfort-man-short-sleeve-shirt-100086"
+    "href": "/products/100086"
   },
   {
     "id": "100087",
@@ -1215,7 +1215,7 @@
     "price": 3114,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/thumbnail.webp",
-    "href": "/products/urban-chic-men-check-shirt-100087"
+    "href": "/products/100087"
   },
   {
     "id": "100088",
@@ -1229,7 +1229,7 @@
     "price": 17999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/thumbnail.webp",
-    "href": "/products/nike-air-jordan-1-red-and-black-100088"
+    "href": "/products/100088"
   },
   {
     "id": "100089",
@@ -1243,7 +1243,7 @@
     "price": 8199,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/thumbnail.webp",
-    "href": "/products/nike-baseball-cleats-100089"
+    "href": "/products/100089"
   },
   {
     "id": "100090",
@@ -1257,7 +1257,7 @@
     "price": 10799,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/thumbnail.webp",
-    "href": "/products/puma-future-rider-trainers-100090"
+    "href": "/products/100090"
   },
   {
     "id": "100091",
@@ -1271,7 +1271,7 @@
     "price": 14249,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/thumbnail.webp",
-    "href": "/products/sports-sneakers-off-white-red-100091"
+    "href": "/products/100091"
   },
   {
     "id": "100092",
@@ -1285,7 +1285,7 @@
     "price": 11686,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/thumbnail.webp",
-    "href": "/products/sports-sneakers-off-white-red-100092"
+    "href": "/products/100092"
   },
   {
     "id": "100093",
@@ -1299,7 +1299,7 @@
     "price": 10574,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
-    "href": "/products/fashion-timepieces-brown-leather-belt-watch-100093"
+    "href": "/products/100093"
   },
   {
     "id": "100094",
@@ -1313,7 +1313,7 @@
     "price": 155624,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
-    "href": "/products/longines-master-collection-100094"
+    "href": "/products/100094"
   },
   {
     "id": "100095",
@@ -1327,7 +1327,7 @@
     "price": 1023749,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-date-black-dial/thumbnail.webp",
-    "href": "/products/rolex-cellini-date-black-dial-100095"
+    "href": "/products/100095"
   },
   {
     "id": "100096",
@@ -1341,7 +1341,7 @@
     "price": 1332499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-cellini-moonphase/thumbnail.webp",
-    "href": "/products/rolex-cellini-moonphase-100096"
+    "href": "/products/100096"
   },
   {
     "id": "100097",
@@ -1355,7 +1355,7 @@
     "price": 1319999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp",
-    "href": "/products/rolex-datejust-100097"
+    "href": "/products/100097"
   },
   {
     "id": "100098",
@@ -1369,7 +1369,7 @@
     "price": 1662499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-submariner-watch/thumbnail.webp",
-    "href": "/products/rolex-submariner-watch-100098"
+    "href": "/products/100098"
   },
   {
     "id": "100099",
@@ -1383,7 +1383,7 @@
     "price": 10999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
-    "href": "/products/amazon-echo-plus-100099"
+    "href": "/products/100099"
   },
   {
     "id": "100100",
@@ -1397,7 +1397,7 @@
     "price": 13649,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/thumbnail.webp",
-    "href": "/products/apple-airpods-100100"
+    "href": "/products/100100"
   },
   {
     "id": "100101",
@@ -1411,7 +1411,7 @@
     "price": 59124,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/thumbnail.webp",
-    "href": "/products/apple-airpods-max-silver-100101"
+    "href": "/products/100101"
   },
   {
     "id": "100102",
@@ -1425,7 +1425,7 @@
     "price": 9599,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpower-wireless-charger/thumbnail.webp",
-    "href": "/products/apple-airpower-wireless-charger-100102"
+    "href": "/products/100102"
   },
   {
     "id": "100103",
@@ -1439,7 +1439,7 @@
     "price": 10249,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/thumbnail.webp",
-    "href": "/products/apple-homepod-mini-cosmic-grey-100103"
+    "href": "/products/100103"
   },
   {
     "id": "100104",
@@ -1453,7 +1453,7 @@
     "price": 2024,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/thumbnail.webp",
-    "href": "/products/apple-iphone-charger-100104"
+    "href": "/products/100104"
   },
   {
     "id": "100105",
@@ -1467,7 +1467,7 @@
     "price": 10374,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/thumbnail.webp",
-    "href": "/products/apple-magsafe-battery-pack-100105"
+    "href": "/products/100105"
   },
   {
     "id": "100106",
@@ -1481,7 +1481,7 @@
     "price": 38499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-watch-series-4-gold/thumbnail.webp",
-    "href": "/products/apple-watch-series-4-gold-100106"
+    "href": "/products/100106"
   },
   {
     "id": "100107",
@@ -1495,7 +1495,7 @@
     "price": 5874,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/beats-flex-wireless-earphones/thumbnail.webp",
-    "href": "/products/beats-flex-wireless-earphones-100107"
+    "href": "/products/100107"
   },
   {
     "id": "100108",
@@ -1509,7 +1509,7 @@
     "price": 3224,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/thumbnail.webp",
-    "href": "/products/apple-iphone-12-silicone-case-with-magsafe-plum-100108"
+    "href": "/products/100108"
   },
   {
     "id": "100109",
@@ -1523,7 +1523,7 @@
     "price": 2274,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/monopod/thumbnail.webp",
-    "href": "/products/techgear-monopod-100109"
+    "href": "/products/100109"
   },
   {
     "id": "100110",
@@ -1537,7 +1537,7 @@
     "price": 1518,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-lamp-with-iphone/thumbnail.webp",
-    "href": "/products/gadgetmaster-selfie-lamp-with-iphone-100110"
+    "href": "/products/100110"
   },
   {
     "id": "100111",
@@ -1551,7 +1551,7 @@
     "price": 1315,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-stick-monopod/thumbnail.webp",
-    "href": "/products/snaptech-selfie-stick-monopod-100111"
+    "href": "/products/100111"
   },
   {
     "id": "100112",
@@ -1565,7 +1565,7 @@
     "price": 57499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/tv-studio-camera-pedestal/thumbnail.webp",
-    "href": "/products/provision-tv-studio-camera-pedestal-100112"
+    "href": "/products/100112"
   },
   {
     "id": "100113",
@@ -1579,7 +1579,7 @@
     "price": 439999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp",
-    "href": "/products/generic-motors-generic-motorcycle-100113"
+    "href": "/products/100113"
   },
   {
     "id": "100114",
@@ -1593,7 +1593,7 @@
     "price": 1012499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/thumbnail.webp",
-    "href": "/products/kawasaki-z800-100114"
+    "href": "/products/100114"
   },
   {
     "id": "100115",
@@ -1607,7 +1607,7 @@
     "price": 1743749,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/thumbnail.webp",
-    "href": "/products/motogp-ci-h1-100115"
+    "href": "/products/100115"
   },
   {
     "id": "100116",
@@ -1621,7 +1621,7 @@
     "price": 352499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/thumbnail.webp",
-    "href": "/products/scootmaster-scooter-motorcycle-100116"
+    "href": "/products/100116"
   },
   {
     "id": "100117",
@@ -1635,7 +1635,7 @@
     "price": 824999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/thumbnail.webp",
-    "href": "/products/speedmaster-sportbike-motorcycle-100117"
+    "href": "/products/100117"
   },
   {
     "id": "100118",
@@ -1649,7 +1649,7 @@
     "price": 921,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/thumbnail.webp",
-    "href": "/products/attitude-super-leaves-hand-soap-100118"
+    "href": "/products/100118"
   },
   {
     "id": "100119",
@@ -1663,7 +1663,7 @@
     "price": 1364,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/thumbnail.webp",
-    "href": "/products/olay-ultra-moisture-shea-butter-body-wash-100119"
+    "href": "/products/100119"
   },
   {
     "id": "100120",
@@ -1677,7 +1677,7 @@
     "price": 1086,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/thumbnail.webp",
-    "href": "/products/vaseline-men-body-and-face-lotion-100120"
+    "href": "/products/100120"
   },
   {
     "id": "100121",
@@ -1691,7 +1691,7 @@
     "price": 21749,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/thumbnail.webp",
-    "href": "/products/apple-iphone-5s-100121"
+    "href": "/products/100121"
   },
   {
     "id": "100122",
@@ -1705,7 +1705,7 @@
     "price": 34874,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/thumbnail.webp",
-    "href": "/products/apple-iphone-6-100122"
+    "href": "/products/100122"
   },
   {
     "id": "100123",
@@ -1719,7 +1719,7 @@
     "price": 125124,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/thumbnail.webp",
-    "href": "/products/apple-iphone-13-pro-100123"
+    "href": "/products/100123"
   },
   {
     "id": "100124",
@@ -1733,7 +1733,7 @@
     "price": 89999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/thumbnail.webp",
-    "href": "/products/apple-iphone-x-100124"
+    "href": "/products/100124"
   },
   {
     "id": "100125",
@@ -1747,7 +1747,7 @@
     "price": 30624,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/thumbnail.webp",
-    "href": "/products/oppo-a57-100125"
+    "href": "/products/100125"
   },
   {
     "id": "100126",
@@ -1761,7 +1761,7 @@
     "price": 40499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/thumbnail.webp",
-    "href": "/products/oppo-f19-pro-plus-100126"
+    "href": "/products/100126"
   },
   {
     "id": "100127",
@@ -1775,7 +1775,7 @@
     "price": 30749,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/thumbnail.webp",
-    "href": "/products/oppo-k1-100127"
+    "href": "/products/100127"
   },
   {
     "id": "100128",
@@ -1789,7 +1789,7 @@
     "price": 15936,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/thumbnail.webp",
-    "href": "/products/realme-c35-100128"
+    "href": "/products/100128"
   },
   {
     "id": "100129",
@@ -1803,7 +1803,7 @@
     "price": 34874,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
-    "href": "/products/realme-x-100129"
+    "href": "/products/100129"
   },
   {
     "id": "100130",
@@ -1817,7 +1817,7 @@
     "price": 38499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-xt/thumbnail.webp",
-    "href": "/products/realme-xt-100130"
+    "href": "/products/100130"
   },
   {
     "id": "100131",
@@ -1831,7 +1831,7 @@
     "price": 29999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/thumbnail.webp",
-    "href": "/products/samsung-galaxy-s7-100131"
+    "href": "/products/100131"
   },
   {
     "id": "100132",
@@ -1845,7 +1845,7 @@
     "price": 50624,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/thumbnail.webp",
-    "href": "/products/samsung-galaxy-s8-100132"
+    "href": "/products/100132"
   },
   {
     "id": "100133",
@@ -1859,7 +1859,7 @@
     "price": 82249,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
-    "href": "/products/samsung-galaxy-s10-100133"
+    "href": "/products/100133"
   },
   {
     "id": "100134",
@@ -1873,7 +1873,7 @@
     "price": 28124,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/thumbnail.webp",
-    "href": "/products/vivo-s1-100134"
+    "href": "/products/100134"
   },
   {
     "id": "100135",
@@ -1887,7 +1887,7 @@
     "price": 30749,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/vivo-v9/thumbnail.webp",
-    "href": "/products/vivo-v9-100135"
+    "href": "/products/100135"
   },
   {
     "id": "100136",
@@ -1901,7 +1901,7 @@
     "price": 51874,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/smartphones/vivo-x21/thumbnail.webp",
-    "href": "/products/vivo-x21-100136"
+    "href": "/products/100136"
   },
   {
     "id": "100137",
@@ -1915,7 +1915,7 @@
     "price": 2374,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/thumbnail.webp",
-    "href": "/products/sports-accessories-american-football-100137"
+    "href": "/products/100137"
   },
   {
     "id": "100138",
@@ -1929,7 +1929,7 @@
     "price": 1101,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-ball/thumbnail.webp",
-    "href": "/products/sports-accessories-baseball-ball-100138"
+    "href": "/products/100138"
   },
   {
     "id": "100139",
@@ -1943,7 +1943,7 @@
     "price": 3030,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/thumbnail.webp",
-    "href": "/products/sports-accessories-baseball-glove-100139"
+    "href": "/products/100139"
   },
   {
     "id": "100140",
@@ -1957,7 +1957,7 @@
     "price": 1743,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/thumbnail.webp",
-    "href": "/products/sports-accessories-basketball-100140"
+    "href": "/products/100140"
   },
   {
     "id": "100141",
@@ -1971,7 +1971,7 @@
     "price": 4599,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/basketball-rim/thumbnail.webp",
-    "href": "/products/sports-accessories-basketball-rim-100141"
+    "href": "/products/100141"
   },
   {
     "id": "100142",
@@ -1985,7 +1985,7 @@
     "price": 1478,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-ball/thumbnail.webp",
-    "href": "/products/sports-accessories-cricket-ball-100142"
+    "href": "/products/100142"
   },
   {
     "id": "100143",
@@ -1999,7 +1999,7 @@
     "price": 3636,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp",
-    "href": "/products/sports-accessories-cricket-bat-100143"
+    "href": "/products/100143"
   },
   {
     "id": "100144",
@@ -2013,7 +2013,7 @@
     "price": 5061,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-helmet/thumbnail.webp",
-    "href": "/products/sports-accessories-cricket-helmet-100144"
+    "href": "/products/100144"
   },
   {
     "id": "100145",
@@ -2027,7 +2027,7 @@
     "price": 3111,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-wicket/thumbnail.webp",
-    "href": "/products/sports-accessories-cricket-wicket-100145"
+    "href": "/products/100145"
   },
   {
     "id": "100146",
@@ -2041,7 +2041,7 @@
     "price": 726,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/feather-shuttlecock/thumbnail.webp",
-    "href": "/products/sports-accessories-feather-shuttlecock-100146"
+    "href": "/products/100146"
   },
   {
     "id": "100147",
@@ -2055,7 +2055,7 @@
     "price": 2136,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/football/thumbnail.webp",
-    "href": "/products/sports-accessories-football-100147"
+    "href": "/products/100147"
   },
   {
     "id": "100148",
@@ -2069,7 +2069,7 @@
     "price": 1036,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/golf-ball/thumbnail.webp",
-    "href": "/products/sports-accessories-golf-ball-100148"
+    "href": "/products/100148"
   },
   {
     "id": "100149",
@@ -2083,7 +2083,7 @@
     "price": 5811,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/thumbnail.webp",
-    "href": "/products/sports-accessories-iron-golf-100149"
+    "href": "/products/100149"
   },
   {
     "id": "100150",
@@ -2097,7 +2097,7 @@
     "price": 2999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp",
-    "href": "/products/sports-accessories-metal-baseball-bat-100150"
+    "href": "/products/100150"
   },
   {
     "id": "100151",
@@ -2111,7 +2111,7 @@
     "price": 769,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-ball/thumbnail.webp",
-    "href": "/products/sports-accessories-tennis-ball-100151"
+    "href": "/products/100151"
   },
   {
     "id": "100152",
@@ -2125,7 +2125,7 @@
     "price": 4999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/thumbnail.webp",
-    "href": "/products/sports-accessories-tennis-racket-100152"
+    "href": "/products/100152"
   },
   {
     "id": "100153",
@@ -2139,7 +2139,7 @@
     "price": 1319,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sports-accessories/volleyball/thumbnail.webp",
-    "href": "/products/sports-accessories-volleyball-100153"
+    "href": "/products/100153"
   },
   {
     "id": "100154",
@@ -2153,7 +2153,7 @@
     "price": 3561,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp",
-    "href": "/products/fashion-shades-black-sun-glasses-100154"
+    "href": "/products/100154"
   },
   {
     "id": "100155",
@@ -2167,7 +2167,7 @@
     "price": 2968,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp",
-    "href": "/products/fashion-shades-classic-sun-glasses-100155"
+    "href": "/products/100155"
   },
   {
     "id": "100156",
@@ -2181,7 +2181,7 @@
     "price": 4330,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp",
-    "href": "/products/fashion-shades-green-and-black-glasses-100156"
+    "href": "/products/100156"
   },
   {
     "id": "100157",
@@ -2195,7 +2195,7 @@
     "price": 2224,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sunglasses/party-glasses/thumbnail.webp",
-    "href": "/products/fashion-fun-party-glasses-100157"
+    "href": "/products/100157"
   },
   {
     "id": "100158",
@@ -2209,7 +2209,7 @@
     "price": 2816,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp",
-    "href": "/products/fashion-shades-sunglasses-100158"
+    "href": "/products/100158"
   },
   {
     "id": "100159",
@@ -2223,7 +2223,7 @@
     "price": 59999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/thumbnail.webp",
-    "href": "/products/apple-ipad-mini-2021-starlight-100159"
+    "href": "/products/100159"
   },
   {
     "id": "100160",
@@ -2237,7 +2237,7 @@
     "price": 65249,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/thumbnail.webp",
-    "href": "/products/samsung-galaxy-tab-s8-plus-grey-100160"
+    "href": "/products/100160"
   },
   {
     "id": "100161",
@@ -2251,7 +2251,7 @@
     "price": 35874,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-white/thumbnail.webp",
-    "href": "/products/samsung-galaxy-tab-white-100161"
+    "href": "/products/100161"
   },
   {
     "id": "100162",
@@ -2265,7 +2265,7 @@
     "price": 3299,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
-    "href": "/products/tops-blue-frock-100162"
+    "href": "/products/100162"
   },
   {
     "id": "100163",
@@ -2279,7 +2279,7 @@
     "price": 2024,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
-    "href": "/products/tops-girl-summer-dress-100163"
+    "href": "/products/100163"
   },
   {
     "id": "100164",
@@ -2293,7 +2293,7 @@
     "price": 3761,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
-    "href": "/products/tops-gray-dress-100164"
+    "href": "/products/100164"
   },
   {
     "id": "100165",
@@ -2307,7 +2307,7 @@
     "price": 2718,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
-    "href": "/products/tops-short-frock-100165"
+    "href": "/products/100165"
   },
   {
     "id": "100166",
@@ -2321,7 +2321,7 @@
     "price": 4349,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
-    "href": "/products/tops-tartan-dress-100166"
+    "href": "/products/100166"
   },
   {
     "id": "100167",
@@ -2335,7 +2335,7 @@
     "price": 3479999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/thumbnail.webp",
-    "href": "/products/chrysler-300-touring-100167"
+    "href": "/products/100167"
   },
   {
     "id": "100168",
@@ -2349,7 +2349,7 @@
     "price": 3794999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp",
-    "href": "/products/dodge-charger-sxt-rwd-100168"
+    "href": "/products/100168"
   },
   {
     "id": "100169",
@@ -2363,7 +2363,7 @@
     "price": 3031249,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
-    "href": "/products/dodge-hornet-gt-plus-100169"
+    "href": "/products/100169"
   },
   {
     "id": "100170",
@@ -2377,7 +2377,7 @@
     "price": 3884999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/thumbnail.webp",
-    "href": "/products/dodge-durango-sxt-rwd-100170"
+    "href": "/products/100170"
   },
   {
     "id": "100171",
@@ -2391,7 +2391,7 @@
     "price": 3399999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
-    "href": "/products/chrysler-pacifica-touring-100171"
+    "href": "/products/100171"
   },
   {
     "id": "100172",
@@ -2405,7 +2405,7 @@
     "price": 5124,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/thumbnail.webp",
-    "href": "/products/fashionista-blue-women-s-handbag-100172"
+    "href": "/products/100172"
   },
   {
     "id": "100173",
@@ -2419,7 +2419,7 @@
     "price": 15599,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/thumbnail.webp",
-    "href": "/products/heshe-women-s-leather-bag-100173"
+    "href": "/products/100173"
   },
   {
     "id": "100174",
@@ -2433,7 +2433,7 @@
     "price": 64499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
-    "href": "/products/prada-women-bag-100174"
+    "href": "/products/100174"
   },
   {
     "id": "100175",
@@ -2447,7 +2447,7 @@
     "price": 4249,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/thumbnail.webp",
-    "href": "/products/urban-chic-white-faux-leather-backpack-100175"
+    "href": "/products/100175"
   },
   {
     "id": "100176",
@@ -2461,7 +2461,7 @@
     "price": 6599,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp",
-    "href": "/products/elegance-collection-women-handbag-black-100176"
+    "href": "/products/100176"
   },
   {
     "id": "100177",
@@ -2475,7 +2475,7 @@
     "price": 14624,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/thumbnail.webp",
-    "href": "/products/womens-dresses-black-women-s-gown-100177"
+    "href": "/products/100177"
   },
   {
     "id": "100178",
@@ -2489,7 +2489,7 @@
     "price": 9449,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/thumbnail.webp",
-    "href": "/products/womens-dresses-corset-leather-with-skirt-100178"
+    "href": "/products/100178"
   },
   {
     "id": "100179",
@@ -2503,7 +2503,7 @@
     "price": 8499,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/thumbnail.webp",
-    "href": "/products/womens-dresses-corset-with-black-skirt-100179"
+    "href": "/products/100179"
   },
   {
     "id": "100180",
@@ -2517,7 +2517,7 @@
     "price": 5124,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/thumbnail.webp",
-    "href": "/products/womens-dresses-dress-pea-100180"
+    "href": "/products/100180"
   },
   {
     "id": "100181",
@@ -2531,7 +2531,7 @@
     "price": 18224,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/thumbnail.webp",
-    "href": "/products/womens-dresses-marni-red-black-suit-100181"
+    "href": "/products/100181"
   },
   {
     "id": "100182",
@@ -2545,7 +2545,7 @@
     "price": 3186,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-crystal-earring/thumbnail.webp",
-    "href": "/products/womens-jewellery-green-crystal-earring-100182"
+    "href": "/products/100182"
   },
   {
     "id": "100183",
@@ -2559,7 +2559,7 @@
     "price": 2655,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp",
-    "href": "/products/womens-jewellery-green-oval-earring-100183"
+    "href": "/products/100183"
   },
   {
     "id": "100184",
@@ -2573,7 +2573,7 @@
     "price": 2474,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-jewellery/tropical-earring/thumbnail.webp",
-    "href": "/products/womens-jewellery-tropical-earring-100184"
+    "href": "/products/100184"
   },
   {
     "id": "100185",
@@ -2587,7 +2587,7 @@
     "price": 2424,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/thumbnail.webp",
-    "href": "/products/comfort-trends-black-brown-slipper-100185"
+    "href": "/products/100185"
   },
   {
     "id": "100186",
@@ -2601,7 +2601,7 @@
     "price": 9699,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
-    "href": "/products/calvin-klein-heel-shoes-100186"
+    "href": "/products/100186"
   },
   {
     "id": "100187",
@@ -2615,7 +2615,7 @@
     "price": 5374,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/thumbnail.webp",
-    "href": "/products/fashion-diva-golden-shoes-woman-100187"
+    "href": "/products/100187"
   },
   {
     "id": "100188",
@@ -2629,7 +2629,7 @@
     "price": 3224,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/thumbnail.webp",
-    "href": "/products/pampi-shoes-100188"
+    "href": "/products/100188"
   },
   {
     "id": "100189",
@@ -2643,7 +2643,7 @@
     "price": 3586,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/thumbnail.webp",
-    "href": "/products/fashion-express-red-shoes-100189"
+    "href": "/products/100189"
   },
   {
     "id": "100190",
@@ -2657,7 +2657,7 @@
     "price": 568749,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-watches/iwc-ingenieur-automatic-steel/thumbnail.webp",
-    "href": "/products/iwc-ingenieur-automatic-steel-100190"
+    "href": "/products/100190"
   },
   {
     "id": "100191",
@@ -2671,7 +2671,7 @@
     "price": 1919999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-watches/rolex-cellini-moonphase/thumbnail.webp",
-    "href": "/products/rolex-cellini-moonphase-100191"
+    "href": "/products/100191"
   },
   {
     "id": "100192",
@@ -2685,7 +2685,7 @@
     "price": 1154999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-watches/rolex-datejust-women/thumbnail.webp",
-    "href": "/products/rolex-datejust-women-100192"
+    "href": "/products/100192"
   },
   {
     "id": "100193",
@@ -2699,7 +2699,7 @@
     "price": 81999,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-watches/watch-gold-for-women/thumbnail.webp",
-    "href": "/products/fashion-gold-watch-gold-for-women-100193"
+    "href": "/products/100193"
   },
   {
     "id": "100194",
@@ -2713,6 +2713,6 @@
     "price": 14136,
     "currency": "BDT",
     "image": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
-    "href": "/products/fashion-co-women-s-wrist-watch-100194"
+    "href": "/products/100194"
   }
 ]

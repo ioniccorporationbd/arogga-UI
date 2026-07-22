@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 import { getCurrencySymbol, getProductDiscount, getProductPrice } from "@/lib/products";
-import { getServerProductBySlug } from "@/lib/server-products";
+import { getServerProductByIdentifier } from "@/lib/server-products";
 import ProductDetailActions from "./ProductDetailActions";
 import ProductRecommendations from "./ProductRecommendations";
 import "./product-detail.css";
@@ -29,7 +29,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const product = await getServerProductBySlug(slug);
+  const product = await getServerProductByIdentifier(slug);
 
   if (!product) return {};
 
@@ -66,7 +66,7 @@ export default async function ProductDetailsPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const product = await getServerProductBySlug(slug);
+  const product = await getServerProductByIdentifier(slug);
   if (!product) notFound();
 
   const price = getProductPrice(product);

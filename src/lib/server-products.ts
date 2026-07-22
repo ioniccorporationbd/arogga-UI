@@ -17,7 +17,7 @@ export async function getServerProducts(): Promise<EcommerceProduct[]> {
   return productCache;
 }
 
-export async function getServerProductBySlug(slug: string) {
+export async function getServerProductByIdentifier(identifier: string) {
   const products = await getServerProducts();
-  return products.find((product) => product.slug === slug);
+  return products.find((product) => String(product.id) === identifier || product.slug === identifier);
 }

@@ -163,14 +163,14 @@ export default function VetCareAndBrandsSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/tara.json", {
+        const response = await fetch("/data.json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load public/tara.json. Status: ${response.status}`,
+            `Unable to load public/data.json. Status: ${response.status}`,
           );
         }
 
@@ -178,7 +178,7 @@ export default function VetCareAndBrandsSection() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/tara.json must contain a JSON array of products.",
+            "public/data.json must contain a JSON array of products.",
           );
         }
 
@@ -1721,7 +1721,7 @@ function normalizeProduct(
   return {
     ...product,
     uniqueId: `product-${product.id}-${index}`,
-    href: `/product/${createSlug(product.title)}`,
+    href: `/products/${product.id}`,
     salePrice,
     originalPrice:
       salePrice / (1 - discount / 100),

@@ -324,7 +324,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/essence-mascara-lash-princess-100001",
+      "canonicalUrl": "https://www.arogga.com/products/100001",
       "openGraph": {
         "title": "Buy Essence Mascara Lash Princess Online in Bangladesh | Arogga",
         "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
@@ -335,7 +335,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/essence-mascara-lash-princess-100001",
+      "local": "/products/100001",
       "api": "/api/products/100001",
       "source": "https://dummyjson.com/products/1"
     },
@@ -715,7 +715,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/glamour-beauty-eyeshadow-palette-with-mirror-100002",
+      "canonicalUrl": "https://www.arogga.com/products/100002",
       "openGraph": {
         "title": "Buy Glamour Beauty Eyeshadow Palette with Mirror Online in Bangladesh | Arogga",
         "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
@@ -726,7 +726,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/glamour-beauty-eyeshadow-palette-with-mirror-100002",
+      "local": "/products/100002",
       "api": "/api/products/100002",
       "source": "https://dummyjson.com/products/2"
     },
@@ -1106,7 +1106,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/velvet-touch-powder-canister-100003",
+      "canonicalUrl": "https://www.arogga.com/products/100003",
       "openGraph": {
         "title": "Buy Velvet Touch Powder Canister Online in Bangladesh | Arogga",
         "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
@@ -1117,7 +1117,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/velvet-touch-powder-canister-100003",
+      "local": "/products/100003",
       "api": "/api/products/100003",
       "source": "https://dummyjson.com/products/3"
     },
@@ -1497,7 +1497,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/chic-cosmetics-red-lipstick-100004",
+      "canonicalUrl": "https://www.arogga.com/products/100004",
       "openGraph": {
         "title": "Buy Chic Cosmetics Red Lipstick Online in Bangladesh | Arogga",
         "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
@@ -1508,7 +1508,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/chic-cosmetics-red-lipstick-100004",
+      "local": "/products/100004",
       "api": "/api/products/100004",
       "source": "https://dummyjson.com/products/4"
     },
@@ -1888,7 +1888,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/nail-couture-red-nail-polish-100005",
+      "canonicalUrl": "https://www.arogga.com/products/100005",
       "openGraph": {
         "title": "Buy Nail Couture Red Nail Polish Online in Bangladesh | Arogga",
         "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
@@ -1899,7 +1899,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/nail-couture-red-nail-polish-100005",
+      "local": "/products/100005",
       "api": "/api/products/100005",
       "source": "https://dummyjson.com/products/5"
     },
@@ -2299,7 +2299,7 @@
         "Fragrance",
         "online shopping"
       ],
-      "canonicalUrl": "/products/calvin-klein-ck-one-100006",
+      "canonicalUrl": "https://www.arogga.com/products/100006",
       "openGraph": {
         "title": "Buy Calvin Klein CK One Online in Bangladesh | Arogga",
         "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
@@ -2310,7 +2310,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/calvin-klein-ck-one-100006",
+      "local": "/products/100006",
       "api": "/api/products/100006",
       "source": "https://dummyjson.com/products/6"
     },
@@ -2710,7 +2710,7 @@
         "Fragrance",
         "online shopping"
       ],
-      "canonicalUrl": "/products/chanel-coco-noir-eau-de-100007",
+      "canonicalUrl": "https://www.arogga.com/products/100007",
       "openGraph": {
         "title": "Buy Chanel Coco Noir Eau De Online in Bangladesh | Arogga",
         "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
@@ -2721,7 +2721,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/chanel-coco-noir-eau-de-100007",
+      "local": "/products/100007",
       "api": "/api/products/100007",
       "source": "https://dummyjson.com/products/7"
     },
@@ -3121,7 +3121,7 @@
         "Fragrance",
         "online shopping"
       ],
-      "canonicalUrl": "/products/dior-j-adore-100008",
+      "canonicalUrl": "https://www.arogga.com/products/100008",
       "openGraph": {
         "title": "Buy Dior J'adore Online in Bangladesh | Arogga",
         "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
@@ -3132,7 +3132,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/dior-j-adore-100008",
+      "local": "/products/100008",
       "api": "/api/products/100008",
       "source": "https://dummyjson.com/products/8"
     },
@@ -3532,7 +3532,7 @@
         "Fragrance",
         "online shopping"
       ],
-      "canonicalUrl": "/products/dolce-gabbana-dolce-shine-eau-de-100009",
+      "canonicalUrl": "https://www.arogga.com/products/100009",
       "openGraph": {
         "title": "Buy Dolce & Gabbana Dolce Shine Eau de Online in Bangladesh | Arogga",
         "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
@@ -3543,7 +3543,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/dolce-gabbana-dolce-shine-eau-de-100009",
+      "local": "/products/100009",
       "api": "/api/products/100009",
       "source": "https://dummyjson.com/products/9"
     },
@@ -3943,7 +3943,7 @@
         "Fragrance",
         "online shopping"
       ],
-      "canonicalUrl": "/products/gucci-bloom-eau-de-100010",
+      "canonicalUrl": "https://www.arogga.com/products/100010",
       "openGraph": {
         "title": "Buy Gucci Bloom Eau de Online in Bangladesh | Arogga",
         "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
@@ -3954,7 +3954,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/gucci-bloom-eau-de-100010",
+      "local": "/products/100010",
       "api": "/api/products/100010",
       "source": "https://dummyjson.com/products/10"
     },
@@ -4354,7 +4354,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/annibale-colombo-bed-100011",
+      "canonicalUrl": "https://www.arogga.com/products/100011",
       "openGraph": {
         "title": "Buy Annibale Colombo Bed Online in Bangladesh | Arogga",
         "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
@@ -4365,7 +4365,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/annibale-colombo-bed-100011",
+      "local": "/products/100011",
       "api": "/api/products/100011",
       "source": "https://dummyjson.com/products/11"
     },
@@ -4765,7 +4765,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/annibale-colombo-sofa-100012",
+      "canonicalUrl": "https://www.arogga.com/products/100012",
       "openGraph": {
         "title": "Buy Annibale Colombo Sofa Online in Bangladesh | Arogga",
         "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
@@ -4776,7 +4776,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/annibale-colombo-sofa-100012",
+      "local": "/products/100012",
       "api": "/api/products/100012",
       "source": "https://dummyjson.com/products/12"
     },
@@ -5176,7 +5176,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/furniture-co-bedside-table-african-cherry-100013",
+      "canonicalUrl": "https://www.arogga.com/products/100013",
       "openGraph": {
         "title": "Buy Furniture Co. Bedside Table African Cherry Online in Bangladesh | Arogga",
         "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
@@ -5187,7 +5187,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/furniture-co-bedside-table-african-cherry-100013",
+      "local": "/products/100013",
       "api": "/api/products/100013",
       "source": "https://dummyjson.com/products/13"
     },
@@ -5587,7 +5587,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/knoll-saarinen-executive-conference-chair-100014",
+      "canonicalUrl": "https://www.arogga.com/products/100014",
       "openGraph": {
         "title": "Buy Knoll Saarinen Executive Conference Chair Online in Bangladesh | Arogga",
         "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
@@ -5598,7 +5598,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/knoll-saarinen-executive-conference-chair-100014",
+      "local": "/products/100014",
       "api": "/api/products/100014",
       "source": "https://dummyjson.com/products/14"
     },
@@ -5998,7 +5998,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/bath-trends-wooden-bathroom-sink-with-mirror-100015",
+      "canonicalUrl": "https://www.arogga.com/products/100015",
       "openGraph": {
         "title": "Buy Bath Trends Wooden Bathroom Sink With Mirror Online in Bangladesh | Arogga",
         "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
@@ -6009,7 +6009,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/bath-trends-wooden-bathroom-sink-with-mirror-100015",
+      "local": "/products/100015",
       "api": "/api/products/100015",
       "source": "https://dummyjson.com/products/15"
     },
@@ -6389,7 +6389,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-apple-100016",
+      "canonicalUrl": "https://www.arogga.com/products/100016",
       "openGraph": {
         "title": "Buy Groceries Apple Online in Bangladesh | Arogga",
         "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
@@ -6400,7 +6400,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-apple-100016",
+      "local": "/products/100016",
       "api": "/api/products/100016",
       "source": "https://dummyjson.com/products/16"
     },
@@ -6780,7 +6780,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-beef-steak-100017",
+      "canonicalUrl": "https://www.arogga.com/products/100017",
       "openGraph": {
         "title": "Buy Groceries Beef Steak Online in Bangladesh | Arogga",
         "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
@@ -6791,7 +6791,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-beef-steak-100017",
+      "local": "/products/100017",
       "api": "/api/products/100017",
       "source": "https://dummyjson.com/products/17"
     },
@@ -7171,7 +7171,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-cat-food-100018",
+      "canonicalUrl": "https://www.arogga.com/products/100018",
       "openGraph": {
         "title": "Buy Groceries Cat Food Online in Bangladesh | Arogga",
         "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
@@ -7182,7 +7182,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-cat-food-100018",
+      "local": "/products/100018",
       "api": "/api/products/100018",
       "source": "https://dummyjson.com/products/18"
     },
@@ -7572,7 +7572,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-chicken-meat-100019",
+      "canonicalUrl": "https://www.arogga.com/products/100019",
       "openGraph": {
         "title": "Buy Groceries Chicken Meat Online in Bangladesh | Arogga",
         "description": "Fresh and tender chicken meat, suitable for various culinary preparations.",
@@ -7583,7 +7583,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-chicken-meat-100019",
+      "local": "/products/100019",
       "api": "/api/products/100019",
       "source": "https://dummyjson.com/products/19"
     },
@@ -7963,7 +7963,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-cooking-oil-100020",
+      "canonicalUrl": "https://www.arogga.com/products/100020",
       "openGraph": {
         "title": "Buy Groceries Cooking Oil Online in Bangladesh | Arogga",
         "description": "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
@@ -7974,7 +7974,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-cooking-oil-100020",
+      "local": "/products/100020",
       "api": "/api/products/100020",
       "source": "https://dummyjson.com/products/20"
     },
@@ -8354,7 +8354,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-cucumber-100021",
+      "canonicalUrl": "https://www.arogga.com/products/100021",
       "openGraph": {
         "title": "Buy Groceries Cucumber Online in Bangladesh | Arogga",
         "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
@@ -8365,7 +8365,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-cucumber-100021",
+      "local": "/products/100021",
       "api": "/api/products/100021",
       "source": "https://dummyjson.com/products/21"
     },
@@ -8745,7 +8745,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-dog-food-100022",
+      "canonicalUrl": "https://www.arogga.com/products/100022",
       "openGraph": {
         "title": "Buy Groceries Dog Food Online in Bangladesh | Arogga",
         "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
@@ -8756,7 +8756,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-dog-food-100022",
+      "local": "/products/100022",
       "api": "/api/products/100022",
       "source": "https://dummyjson.com/products/22"
     },
@@ -9136,7 +9136,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-eggs-100023",
+      "canonicalUrl": "https://www.arogga.com/products/100023",
       "openGraph": {
         "title": "Buy Groceries Eggs Online in Bangladesh | Arogga",
         "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
@@ -9147,7 +9147,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-eggs-100023",
+      "local": "/products/100023",
       "api": "/api/products/100023",
       "source": "https://dummyjson.com/products/23"
     },
@@ -9527,7 +9527,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-fish-steak-100024",
+      "canonicalUrl": "https://www.arogga.com/products/100024",
       "openGraph": {
         "title": "Buy Groceries Fish Steak Online in Bangladesh | Arogga",
         "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
@@ -9538,7 +9538,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-fish-steak-100024",
+      "local": "/products/100024",
       "api": "/api/products/100024",
       "source": "https://dummyjson.com/products/24"
     },
@@ -9918,7 +9918,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-green-bell-pepper-100025",
+      "canonicalUrl": "https://www.arogga.com/products/100025",
       "openGraph": {
         "title": "Buy Groceries Green Bell Pepper Online in Bangladesh | Arogga",
         "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
@@ -9929,7 +9929,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-green-bell-pepper-100025",
+      "local": "/products/100025",
       "api": "/api/products/100025",
       "source": "https://dummyjson.com/products/25"
     },
@@ -10309,7 +10309,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-green-chili-pepper-100026",
+      "canonicalUrl": "https://www.arogga.com/products/100026",
       "openGraph": {
         "title": "Buy Groceries Green Chili Pepper Online in Bangladesh | Arogga",
         "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
@@ -10320,7 +10320,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-green-chili-pepper-100026",
+      "local": "/products/100026",
       "api": "/api/products/100026",
       "source": "https://dummyjson.com/products/26"
     },
@@ -10700,7 +10700,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-honey-jar-100027",
+      "canonicalUrl": "https://www.arogga.com/products/100027",
       "openGraph": {
         "title": "Buy Groceries Honey Jar Online in Bangladesh | Arogga",
         "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
@@ -10711,7 +10711,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-honey-jar-100027",
+      "local": "/products/100027",
       "api": "/api/products/100027",
       "source": "https://dummyjson.com/products/27"
     },
@@ -11121,7 +11121,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-ice-cream-100028",
+      "canonicalUrl": "https://www.arogga.com/products/100028",
       "openGraph": {
         "title": "Buy Groceries Ice Cream Online in Bangladesh | Arogga",
         "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
@@ -11132,7 +11132,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-ice-cream-100028",
+      "local": "/products/100028",
       "api": "/api/products/100028",
       "source": "https://dummyjson.com/products/28"
     },
@@ -11512,7 +11512,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-juice-100029",
+      "canonicalUrl": "https://www.arogga.com/products/100029",
       "openGraph": {
         "title": "Buy Groceries Juice Online in Bangladesh | Arogga",
         "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
@@ -11523,7 +11523,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-juice-100029",
+      "local": "/products/100029",
       "api": "/api/products/100029",
       "source": "https://dummyjson.com/products/29"
     },
@@ -11903,7 +11903,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-kiwi-100030",
+      "canonicalUrl": "https://www.arogga.com/products/100030",
       "openGraph": {
         "title": "Buy Groceries Kiwi Online in Bangladesh | Arogga",
         "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
@@ -11914,7 +11914,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-kiwi-100030",
+      "local": "/products/100030",
       "api": "/api/products/100030",
       "source": "https://dummyjson.com/products/30"
     },
@@ -12294,7 +12294,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-lemon-100031",
+      "canonicalUrl": "https://www.arogga.com/products/100031",
       "openGraph": {
         "title": "Buy Groceries Lemon Online in Bangladesh | Arogga",
         "description": "Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.",
@@ -12305,7 +12305,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-lemon-100031",
+      "local": "/products/100031",
       "api": "/api/products/100031",
       "source": "https://dummyjson.com/products/31"
     },
@@ -12685,7 +12685,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-milk-100032",
+      "canonicalUrl": "https://www.arogga.com/products/100032",
       "openGraph": {
         "title": "Buy Groceries Milk Online in Bangladesh | Arogga",
         "description": "Fresh and nutritious milk, a staple for various recipes and daily consumption.",
@@ -12696,7 +12696,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-milk-100032",
+      "local": "/products/100032",
       "api": "/api/products/100032",
       "source": "https://dummyjson.com/products/32"
     },
@@ -13076,7 +13076,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-mulberry-100033",
+      "canonicalUrl": "https://www.arogga.com/products/100033",
       "openGraph": {
         "title": "Buy Groceries Mulberry Online in Bangladesh | Arogga",
         "description": "Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.",
@@ -13087,7 +13087,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-mulberry-100033",
+      "local": "/products/100033",
       "api": "/api/products/100033",
       "source": "https://dummyjson.com/products/33"
     },
@@ -13467,7 +13467,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-nescafe-coffee-100034",
+      "canonicalUrl": "https://www.arogga.com/products/100034",
       "openGraph": {
         "title": "Buy Groceries Nescafe Coffee Online in Bangladesh | Arogga",
         "description": "Quality coffee from Nescafe, available in various blends for a rich and satisfying cup.",
@@ -13478,7 +13478,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-nescafe-coffee-100034",
+      "local": "/products/100034",
       "api": "/api/products/100034",
       "source": "https://dummyjson.com/products/34"
     },
@@ -13858,7 +13858,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-potatoes-100035",
+      "canonicalUrl": "https://www.arogga.com/products/100035",
       "openGraph": {
         "title": "Buy Groceries Potatoes Online in Bangladesh | Arogga",
         "description": "Versatile and starchy potatoes, great for roasting, mashing, or as a side dish.",
@@ -13869,7 +13869,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-potatoes-100035",
+      "local": "/products/100035",
       "api": "/api/products/100035",
       "source": "https://dummyjson.com/products/35"
     },
@@ -14249,7 +14249,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-protein-powder-100036",
+      "canonicalUrl": "https://www.arogga.com/products/100036",
       "openGraph": {
         "title": "Buy Groceries Protein Powder Online in Bangladesh | Arogga",
         "description": "Nutrient-packed protein powder, ideal for supplementing your diet with essential proteins.",
@@ -14260,7 +14260,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-protein-powder-100036",
+      "local": "/products/100036",
       "api": "/api/products/100036",
       "source": "https://dummyjson.com/products/36"
     },
@@ -14640,7 +14640,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-red-onions-100037",
+      "canonicalUrl": "https://www.arogga.com/products/100037",
       "openGraph": {
         "title": "Buy Groceries Red Onions Online in Bangladesh | Arogga",
         "description": "Flavorful and aromatic red onions, perfect for adding depth to your savory dishes.",
@@ -14651,7 +14651,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-red-onions-100037",
+      "local": "/products/100037",
       "api": "/api/products/100037",
       "source": "https://dummyjson.com/products/37"
     },
@@ -15031,7 +15031,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-rice-100038",
+      "canonicalUrl": "https://www.arogga.com/products/100038",
       "openGraph": {
         "title": "Buy Groceries Rice Online in Bangladesh | Arogga",
         "description": "High-quality rice, a staple for various cuisines and a versatile base for many dishes.",
@@ -15042,7 +15042,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-rice-100038",
+      "local": "/products/100038",
       "api": "/api/products/100038",
       "source": "https://dummyjson.com/products/38"
     },
@@ -15422,7 +15422,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-soft-drinks-100039",
+      "canonicalUrl": "https://www.arogga.com/products/100039",
       "openGraph": {
         "title": "Buy Groceries Soft Drinks Online in Bangladesh | Arogga",
         "description": "Assorted soft drinks in various flavors, perfect for refreshing beverages.",
@@ -15433,7 +15433,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-soft-drinks-100039",
+      "local": "/products/100039",
       "api": "/api/products/100039",
       "source": "https://dummyjson.com/products/39"
     },
@@ -15813,7 +15813,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-strawberry-100040",
+      "canonicalUrl": "https://www.arogga.com/products/100040",
       "openGraph": {
         "title": "Buy Groceries Strawberry Online in Bangladesh | Arogga",
         "description": "Sweet and succulent strawberries, great for snacking, desserts, or blending into smoothies.",
@@ -15824,7 +15824,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-strawberry-100040",
+      "local": "/products/100040",
       "api": "/api/products/100040",
       "source": "https://dummyjson.com/products/40"
     },
@@ -16214,7 +16214,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-tissue-paper-box-100041",
+      "canonicalUrl": "https://www.arogga.com/products/100041",
       "openGraph": {
         "title": "Buy Groceries Tissue Paper Box Online in Bangladesh | Arogga",
         "description": "Convenient tissue paper box for everyday use, providing soft and absorbent tissues.",
@@ -16225,7 +16225,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-tissue-paper-box-100041",
+      "local": "/products/100041",
       "api": "/api/products/100041",
       "source": "https://dummyjson.com/products/41"
     },
@@ -16605,7 +16605,7 @@
         "Food & Nutrition",
         "online shopping"
       ],
-      "canonicalUrl": "/products/groceries-water-100042",
+      "canonicalUrl": "https://www.arogga.com/products/100042",
       "openGraph": {
         "title": "Buy Groceries Water Online in Bangladesh | Arogga",
         "description": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
@@ -16616,7 +16616,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/groceries-water-100042",
+      "local": "/products/100042",
       "api": "/api/products/100042",
       "source": "https://dummyjson.com/products/42"
     },
@@ -17016,7 +17016,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/home-decoration-decoration-swing-100043",
+      "canonicalUrl": "https://www.arogga.com/products/100043",
       "openGraph": {
         "title": "Buy Home Decoration Decoration Swing Online in Bangladesh | Arogga",
         "description": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
@@ -17027,7 +17027,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/home-decoration-decoration-swing-100043",
+      "local": "/products/100043",
       "api": "/api/products/100043",
       "source": "https://dummyjson.com/products/43"
     },
@@ -17407,7 +17407,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/home-decoration-family-tree-photo-frame-100044",
+      "canonicalUrl": "https://www.arogga.com/products/100044",
       "openGraph": {
         "title": "Buy Home Decoration Family Tree Photo Frame Online in Bangladesh | Arogga",
         "description": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
@@ -17418,7 +17418,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/home-decoration-family-tree-photo-frame-100044",
+      "local": "/products/100044",
       "api": "/api/products/100044",
       "source": "https://dummyjson.com/products/44"
     },
@@ -17818,7 +17818,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/home-decoration-house-showpiece-plant-100045",
+      "canonicalUrl": "https://www.arogga.com/products/100045",
       "openGraph": {
         "title": "Buy Home Decoration House Showpiece Plant Online in Bangladesh | Arogga",
         "description": "The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
@@ -17829,7 +17829,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/home-decoration-house-showpiece-plant-100045",
+      "local": "/products/100045",
       "api": "/api/products/100045",
       "source": "https://dummyjson.com/products/45"
     },
@@ -18239,7 +18239,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/home-decoration-plant-pot-100046",
+      "canonicalUrl": "https://www.arogga.com/products/100046",
       "openGraph": {
         "title": "Buy Home Decoration Plant Pot Online in Bangladesh | Arogga",
         "description": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
@@ -18250,7 +18250,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/home-decoration-plant-pot-100046",
+      "local": "/products/100046",
       "api": "/api/products/100046",
       "source": "https://dummyjson.com/products/46"
     },
@@ -18630,7 +18630,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/home-decoration-table-lamp-100047",
+      "canonicalUrl": "https://www.arogga.com/products/100047",
       "openGraph": {
         "title": "Buy Home Decoration Table Lamp Online in Bangladesh | Arogga",
         "description": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
@@ -18641,7 +18641,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/home-decoration-table-lamp-100047",
+      "local": "/products/100047",
       "api": "/api/products/100047",
       "source": "https://dummyjson.com/products/47"
     },
@@ -19021,7 +19021,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-bamboo-spatula-100048",
+      "canonicalUrl": "https://www.arogga.com/products/100048",
       "openGraph": {
         "title": "Buy Kitchen Accessories Bamboo Spatula Online in Bangladesh | Arogga",
         "description": "The Bamboo Spatula is a versatile kitchen tool made from eco-friendly bamboo. Ideal for flipping, stirring, and serving various dishes.",
@@ -19032,7 +19032,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-bamboo-spatula-100048",
+      "local": "/products/100048",
       "api": "/api/products/100048",
       "source": "https://dummyjson.com/products/48"
     },
@@ -19422,7 +19422,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-black-aluminium-cup-100049",
+      "canonicalUrl": "https://www.arogga.com/products/100049",
       "openGraph": {
         "title": "Buy Kitchen Accessories Black Aluminium Cup Online in Bangladesh | Arogga",
         "description": "The Black Aluminium Cup is a stylish and durable cup suitable for both hot and cold beverages. Its sleek black design adds a modern touch to your drinkware collection.",
@@ -19433,7 +19433,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-black-aluminium-cup-100049",
+      "local": "/products/100049",
       "api": "/api/products/100049",
       "source": "https://dummyjson.com/products/49"
     },
@@ -19813,7 +19813,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-black-whisk-100050",
+      "canonicalUrl": "https://www.arogga.com/products/100050",
       "openGraph": {
         "title": "Buy Kitchen Accessories Black Whisk Online in Bangladesh | Arogga",
         "description": "The Black Whisk is a kitchen essential for whisking and beating ingredients. Its ergonomic handle and sleek design make it a practical and stylish tool.",
@@ -19824,7 +19824,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-black-whisk-100050",
+      "local": "/products/100050",
       "api": "/api/products/100050",
       "source": "https://dummyjson.com/products/50"
     },
@@ -20234,7 +20234,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-boxed-blender-100051",
+      "canonicalUrl": "https://www.arogga.com/products/100051",
       "openGraph": {
         "title": "Buy Kitchen Accessories Boxed Blender Online in Bangladesh | Arogga",
         "description": "The Boxed Blender is a powerful and compact blender perfect for smoothies, shakes, and more. Its convenient design and multiple functions make it a versatile kitchen appliance.",
@@ -20245,7 +20245,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-boxed-blender-100051",
+      "local": "/products/100051",
       "api": "/api/products/100051",
       "source": "https://dummyjson.com/products/51"
     },
@@ -20625,7 +20625,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-carbon-steel-wok-100052",
+      "canonicalUrl": "https://www.arogga.com/products/100052",
       "openGraph": {
         "title": "Buy Kitchen Accessories Carbon Steel Wok Online in Bangladesh | Arogga",
         "description": "The Carbon Steel Wok is a versatile cooking pan suitable for stir-frying, sautéing, and deep frying. Its sturdy construction ensures even heat distribution for delicious meals.",
@@ -20636,7 +20636,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-carbon-steel-wok-100052",
+      "local": "/products/100052",
       "api": "/api/products/100052",
       "source": "https://dummyjson.com/products/52"
     },
@@ -21016,7 +21016,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-chopping-board-100053",
+      "canonicalUrl": "https://www.arogga.com/products/100053",
       "openGraph": {
         "title": "Buy Kitchen Accessories Chopping Board Online in Bangladesh | Arogga",
         "description": "The Chopping Board is an essential kitchen accessory for food preparation. Made from durable material, it provides a safe and hygienic surface for cutting and chopping.",
@@ -21027,7 +21027,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-chopping-board-100053",
+      "local": "/products/100053",
       "api": "/api/products/100053",
       "source": "https://dummyjson.com/products/53"
     },
@@ -21407,7 +21407,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-citrus-squeezer-yellow-100054",
+      "canonicalUrl": "https://www.arogga.com/products/100054",
       "openGraph": {
         "title": "Buy Kitchen Accessories Citrus Squeezer Yellow Online in Bangladesh | Arogga",
         "description": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
@@ -21418,7 +21418,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-citrus-squeezer-yellow-100054",
+      "local": "/products/100054",
       "api": "/api/products/100054",
       "source": "https://dummyjson.com/products/54"
     },
@@ -21798,7 +21798,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-egg-slicer-100055",
+      "canonicalUrl": "https://www.arogga.com/products/100055",
       "openGraph": {
         "title": "Buy Kitchen Accessories Egg Slicer Online in Bangladesh | Arogga",
         "description": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
@@ -21809,7 +21809,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-egg-slicer-100055",
+      "local": "/products/100055",
       "api": "/api/products/100055",
       "source": "https://dummyjson.com/products/55"
     },
@@ -22219,7 +22219,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-electric-stove-100056",
+      "canonicalUrl": "https://www.arogga.com/products/100056",
       "openGraph": {
         "title": "Buy Kitchen Accessories Electric Stove Online in Bangladesh | Arogga",
         "description": "The Electric Stove provides a portable and efficient cooking solution. Ideal for small kitchens or as an additional cooking surface for various culinary needs.",
@@ -22230,7 +22230,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-electric-stove-100056",
+      "local": "/products/100056",
       "api": "/api/products/100056",
       "source": "https://dummyjson.com/products/56"
     },
@@ -22610,7 +22610,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-fine-mesh-strainer-100057",
+      "canonicalUrl": "https://www.arogga.com/products/100057",
       "openGraph": {
         "title": "Buy Kitchen Accessories Fine Mesh Strainer Online in Bangladesh | Arogga",
         "description": "The Fine Mesh Strainer is a versatile tool for straining liquids and sifting dry ingredients. Its fine mesh ensures efficient filtering for smooth cooking and baking.",
@@ -22621,7 +22621,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-fine-mesh-strainer-100057",
+      "local": "/products/100057",
       "api": "/api/products/100057",
       "source": "https://dummyjson.com/products/57"
     },
@@ -23001,7 +23001,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-fork-100058",
+      "canonicalUrl": "https://www.arogga.com/products/100058",
       "openGraph": {
         "title": "Buy Kitchen Accessories Fork Online in Bangladesh | Arogga",
         "description": "The Fork is a classic utensil for various dining and serving purposes. Its durable and ergonomic design makes it a reliable choice for everyday use.",
@@ -23012,7 +23012,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-fork-100058",
+      "local": "/products/100058",
       "api": "/api/products/100058",
       "source": "https://dummyjson.com/products/58"
     },
@@ -23392,7 +23392,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-glass-100059",
+      "canonicalUrl": "https://www.arogga.com/products/100059",
       "openGraph": {
         "title": "Buy Kitchen Accessories Glass Online in Bangladesh | Arogga",
         "description": "The Glass is a versatile and elegant drinking vessel suitable for a variety of beverages. Its clear design allows you to enjoy the colors and textures of your drinks.",
@@ -23403,7 +23403,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-glass-100059",
+      "local": "/products/100059",
       "api": "/api/products/100059",
       "source": "https://dummyjson.com/products/59"
     },
@@ -23783,7 +23783,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-grater-black-100060",
+      "canonicalUrl": "https://www.arogga.com/products/100060",
       "openGraph": {
         "title": "Buy Kitchen Accessories Grater Black Online in Bangladesh | Arogga",
         "description": "The Grater in Black is a handy kitchen tool for grating cheese, vegetables, and more. Its sleek design and sharp blades make food preparation efficient and easy.",
@@ -23794,7 +23794,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-grater-black-100060",
+      "local": "/products/100060",
       "api": "/api/products/100060",
       "source": "https://dummyjson.com/products/60"
     },
@@ -24174,7 +24174,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-hand-blender-100061",
+      "canonicalUrl": "https://www.arogga.com/products/100061",
       "openGraph": {
         "title": "Buy Kitchen Accessories Hand Blender Online in Bangladesh | Arogga",
         "description": "The Hand Blender is a versatile kitchen appliance for blending, pureeing, and mixing. Its compact design and powerful motor make it a convenient tool for various recipes.",
@@ -24185,7 +24185,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-hand-blender-100061",
+      "local": "/products/100061",
       "api": "/api/products/100061",
       "source": "https://dummyjson.com/products/61"
     },
@@ -24565,7 +24565,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-ice-cube-tray-100062",
+      "canonicalUrl": "https://www.arogga.com/products/100062",
       "openGraph": {
         "title": "Buy Kitchen Accessories Ice Cube Tray Online in Bangladesh | Arogga",
         "description": "The Ice Cube Tray is a practical accessory for making ice cubes in various shapes. Perfect for keeping your drinks cool and adding a fun element to your beverages.",
@@ -24576,7 +24576,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-ice-cube-tray-100062",
+      "local": "/products/100062",
       "api": "/api/products/100062",
       "source": "https://dummyjson.com/products/62"
     },
@@ -24956,7 +24956,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-kitchen-sieve-100063",
+      "canonicalUrl": "https://www.arogga.com/products/100063",
       "openGraph": {
         "title": "Buy Kitchen Accessories Kitchen Sieve Online in Bangladesh | Arogga",
         "description": "The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures smooth results in your cooking and baking.",
@@ -24967,7 +24967,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-kitchen-sieve-100063",
+      "local": "/products/100063",
       "api": "/api/products/100063",
       "source": "https://dummyjson.com/products/63"
     },
@@ -25347,7 +25347,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-knife-100064",
+      "canonicalUrl": "https://www.arogga.com/products/100064",
       "openGraph": {
         "title": "Buy Kitchen Accessories Knife Online in Bangladesh | Arogga",
         "description": "The Knife is an essential kitchen tool for chopping, slicing, and dicing. Its sharp blade and ergonomic handle make it a reliable choice for food preparation.",
@@ -25358,7 +25358,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-knife-100064",
+      "local": "/products/100064",
       "api": "/api/products/100064",
       "source": "https://dummyjson.com/products/64"
     },
@@ -25738,7 +25738,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-lunch-box-100065",
+      "canonicalUrl": "https://www.arogga.com/products/100065",
       "openGraph": {
         "title": "Buy Kitchen Accessories Lunch Box Online in Bangladesh | Arogga",
         "description": "The Lunch Box is a convenient and portable container for packing and carrying your meals. With compartments for different foods, it's perfect for on-the-go dining.",
@@ -25749,7 +25749,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-lunch-box-100065",
+      "local": "/products/100065",
       "api": "/api/products/100065",
       "source": "https://dummyjson.com/products/65"
     },
@@ -26159,7 +26159,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-microwave-oven-100066",
+      "canonicalUrl": "https://www.arogga.com/products/100066",
       "openGraph": {
         "title": "Buy Kitchen Accessories Microwave Oven Online in Bangladesh | Arogga",
         "description": "The Microwave Oven is a versatile kitchen appliance for quick and efficient cooking, reheating, and defrosting. Its compact size makes it suitable for various kitchen setups.",
@@ -26170,7 +26170,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-microwave-oven-100066",
+      "local": "/products/100066",
       "api": "/api/products/100066",
       "source": "https://dummyjson.com/products/66"
     },
@@ -26560,7 +26560,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-mug-tree-stand-100067",
+      "canonicalUrl": "https://www.arogga.com/products/100067",
       "openGraph": {
         "title": "Buy Kitchen Accessories Mug Tree Stand Online in Bangladesh | Arogga",
         "description": "The Mug Tree Stand is a stylish and space-saving solution for organizing your mugs. Keep your favorite mugs easily accessible and neatly displayed in your kitchen.",
@@ -26571,7 +26571,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-mug-tree-stand-100067",
+      "local": "/products/100067",
       "api": "/api/products/100067",
       "source": "https://dummyjson.com/products/67"
     },
@@ -26951,7 +26951,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-pan-100068",
+      "canonicalUrl": "https://www.arogga.com/products/100068",
       "openGraph": {
         "title": "Buy Kitchen Accessories Pan Online in Bangladesh | Arogga",
         "description": "The Pan is a versatile and essential cookware item for frying, sautéing, and cooking various dishes. Its non-stick coating ensures easy food release and cleanup.",
@@ -26962,7 +26962,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-pan-100068",
+      "local": "/products/100068",
       "api": "/api/products/100068",
       "source": "https://dummyjson.com/products/68"
     },
@@ -27342,7 +27342,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-plate-100069",
+      "canonicalUrl": "https://www.arogga.com/products/100069",
       "openGraph": {
         "title": "Buy Kitchen Accessories Plate Online in Bangladesh | Arogga",
         "description": "The Plate is a classic and essential dishware item for serving meals. Its durable and stylish design makes it suitable for everyday use or special occasions.",
@@ -27353,7 +27353,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-plate-100069",
+      "local": "/products/100069",
       "api": "/api/products/100069",
       "source": "https://dummyjson.com/products/69"
     },
@@ -27733,7 +27733,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-red-tongs-100070",
+      "canonicalUrl": "https://www.arogga.com/products/100070",
       "openGraph": {
         "title": "Buy Kitchen Accessories Red Tongs Online in Bangladesh | Arogga",
         "description": "The Red Tongs are versatile kitchen tongs suitable for various cooking and serving tasks. Their vibrant color adds a pop of excitement to your kitchen utensils.",
@@ -27744,7 +27744,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-red-tongs-100070",
+      "local": "/products/100070",
       "api": "/api/products/100070",
       "source": "https://dummyjson.com/products/70"
     },
@@ -28124,7 +28124,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-silver-pot-with-glass-cap-100071",
+      "canonicalUrl": "https://www.arogga.com/products/100071",
       "openGraph": {
         "title": "Buy Kitchen Accessories Silver Pot With Glass Cap Online in Bangladesh | Arogga",
         "description": "The Silver Pot with Glass Cap is a stylish and functional cookware item for boiling, simmering, and preparing delicious meals. Its glass cap allows you to monitor cooking progress.",
@@ -28135,7 +28135,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-silver-pot-with-glass-cap-100071",
+      "local": "/products/100071",
       "api": "/api/products/100071",
       "source": "https://dummyjson.com/products/71"
     },
@@ -28515,7 +28515,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-slotted-turner-100072",
+      "canonicalUrl": "https://www.arogga.com/products/100072",
       "openGraph": {
         "title": "Buy Kitchen Accessories Slotted Turner Online in Bangladesh | Arogga",
         "description": "The Slotted Turner is a kitchen utensil designed for flipping and turning food items. Its slotted design allows excess liquid to drain, making it ideal for frying and sautéing.",
@@ -28526,7 +28526,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-slotted-turner-100072",
+      "local": "/products/100072",
       "api": "/api/products/100072",
       "source": "https://dummyjson.com/products/72"
     },
@@ -28906,7 +28906,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-spice-rack-100073",
+      "canonicalUrl": "https://www.arogga.com/products/100073",
       "openGraph": {
         "title": "Buy Kitchen Accessories Spice Rack Online in Bangladesh | Arogga",
         "description": "The Spice Rack is a convenient organizer for your spices and seasonings. Keep your kitchen essentials within reach and neatly arranged with this stylish spice rack.",
@@ -28917,7 +28917,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-spice-rack-100073",
+      "local": "/products/100073",
       "api": "/api/products/100073",
       "source": "https://dummyjson.com/products/73"
     },
@@ -29297,7 +29297,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-spoon-100074",
+      "canonicalUrl": "https://www.arogga.com/products/100074",
       "openGraph": {
         "title": "Buy Kitchen Accessories Spoon Online in Bangladesh | Arogga",
         "description": "The Spoon is a versatile kitchen utensil for stirring, serving, and tasting. Its ergonomic design and durable construction make it an essential tool for every kitchen.",
@@ -29308,7 +29308,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-spoon-100074",
+      "local": "/products/100074",
       "api": "/api/products/100074",
       "source": "https://dummyjson.com/products/74"
     },
@@ -29688,7 +29688,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-tray-100075",
+      "canonicalUrl": "https://www.arogga.com/products/100075",
       "openGraph": {
         "title": "Buy Kitchen Accessories Tray Online in Bangladesh | Arogga",
         "description": "The Tray is a functional and decorative item for serving snacks, appetizers, or drinks. Its stylish design makes it a versatile accessory for entertaining guests.",
@@ -29699,7 +29699,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-tray-100075",
+      "local": "/products/100075",
       "api": "/api/products/100075",
       "source": "https://dummyjson.com/products/75"
     },
@@ -30079,7 +30079,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-wooden-rolling-pin-100076",
+      "canonicalUrl": "https://www.arogga.com/products/100076",
       "openGraph": {
         "title": "Buy Kitchen Accessories Wooden Rolling Pin Online in Bangladesh | Arogga",
         "description": "The Wooden Rolling Pin is a classic kitchen tool for rolling out dough for baking. Its smooth surface and sturdy handles make it easy to achieve uniform thickness.",
@@ -30090,7 +30090,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-wooden-rolling-pin-100076",
+      "local": "/products/100076",
       "api": "/api/products/100076",
       "source": "https://dummyjson.com/products/76"
     },
@@ -30470,7 +30470,7 @@
         "Homecare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kitchen-accessories-yellow-peeler-100077",
+      "canonicalUrl": "https://www.arogga.com/products/100077",
       "openGraph": {
         "title": "Buy Kitchen Accessories Yellow Peeler Online in Bangladesh | Arogga",
         "description": "The Yellow Peeler is a handy tool for peeling fruits and vegetables with ease. Its bright yellow color adds a cheerful touch to your kitchen gadgets.",
@@ -30481,7 +30481,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kitchen-accessories-yellow-peeler-100077",
+      "local": "/products/100077",
       "api": "/api/products/100077",
       "source": "https://dummyjson.com/products/77"
     },
@@ -30881,7 +30881,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-macbook-pro-14-inch-space-grey-100078",
+      "canonicalUrl": "https://www.arogga.com/products/100078",
       "openGraph": {
         "title": "Buy Apple MacBook Pro 14 Inch Space Grey Online in Bangladesh | Arogga",
         "description": "The MacBook Pro 14 Inch in Space Grey is a powerful and sleek laptop, featuring Apple's M1 Pro chip for exceptional performance and a stunning Retina display.",
@@ -30892,7 +30892,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-macbook-pro-14-inch-space-grey-100078",
+      "local": "/products/100078",
       "api": "/api/products/100078",
       "source": "https://dummyjson.com/products/78"
     },
@@ -31292,7 +31292,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/asus-zenbook-pro-dual-screen-laptop-100079",
+      "canonicalUrl": "https://www.arogga.com/products/100079",
       "openGraph": {
         "title": "Buy Asus Zenbook Pro Dual Screen Laptop Online in Bangladesh | Arogga",
         "description": "The Asus Zenbook Pro Dual Screen Laptop is a high-performance device with dual screens, providing productivity and versatility for creative professionals.",
@@ -31303,7 +31303,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/asus-zenbook-pro-dual-screen-laptop-100079",
+      "local": "/products/100079",
       "api": "/api/products/100079",
       "source": "https://dummyjson.com/products/79"
     },
@@ -31703,7 +31703,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/huawei-matebook-x-pro-100080",
+      "canonicalUrl": "https://www.arogga.com/products/100080",
       "openGraph": {
         "title": "Buy Huawei Matebook X Pro Online in Bangladesh | Arogga",
         "description": "The Huawei Matebook X Pro is a slim and stylish laptop with a high-resolution touchscreen display, offering a premium experience for users on the go.",
@@ -31714,7 +31714,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/huawei-matebook-x-pro-100080",
+      "local": "/products/100080",
       "api": "/api/products/100080",
       "source": "https://dummyjson.com/products/80"
     },
@@ -32114,7 +32114,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/lenovo-yoga-920-100081",
+      "canonicalUrl": "https://www.arogga.com/products/100081",
       "openGraph": {
         "title": "Buy Lenovo Yoga 920 Online in Bangladesh | Arogga",
         "description": "The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
@@ -32125,7 +32125,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/lenovo-yoga-920-100081",
+      "local": "/products/100081",
       "api": "/api/products/100081",
       "source": "https://dummyjson.com/products/81"
     },
@@ -32525,7 +32525,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/new-dell-xps-13-9300-laptop-100082",
+      "canonicalUrl": "https://www.arogga.com/products/100082",
       "openGraph": {
         "title": "Buy New DELL XPS 13 9300 Laptop Online in Bangladesh | Arogga",
         "description": "The New DELL XPS 13 9300 Laptop is a compact and powerful device, featuring a virtually borderless InfinityEdge display and high-end performance for various tasks.",
@@ -32536,7 +32536,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/new-dell-xps-13-9300-laptop-100082",
+      "local": "/products/100082",
       "api": "/api/products/100082",
       "source": "https://dummyjson.com/products/82"
     },
@@ -32946,7 +32946,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-trends-blue-black-check-shirt-100083",
+      "canonicalUrl": "https://www.arogga.com/products/100083",
       "openGraph": {
         "title": "Buy Fashion Trends Blue & Black Check Shirt Online in Bangladesh | Arogga",
         "description": "The Blue & Black Check Shirt is a stylish and comfortable men's shirt featuring a classic check pattern. Made from high-quality fabric, it's suitable for both casual and semi-formal occasions.",
@@ -32957,7 +32957,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-trends-blue-black-check-shirt-100083",
+      "local": "/products/100083",
       "api": "/api/products/100083",
       "source": "https://dummyjson.com/products/83"
     },
@@ -33367,7 +33367,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/gigabyte-aorus-men-tshirt-100084",
+      "canonicalUrl": "https://www.arogga.com/products/100084",
       "openGraph": {
         "title": "Buy Gigabyte Aorus Men Tshirt Online in Bangladesh | Arogga",
         "description": "The Gigabyte Aorus Men Tshirt is a cool and casual shirt for gaming enthusiasts. With the Aorus logo and sleek design, it's perfect for expressing your gaming style.",
@@ -33378,7 +33378,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/gigabyte-aorus-men-tshirt-100084",
+      "local": "/products/100084",
       "api": "/api/products/100084",
       "source": "https://dummyjson.com/products/84"
     },
@@ -33788,7 +33788,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/classic-wear-man-plaid-shirt-100085",
+      "canonicalUrl": "https://www.arogga.com/products/100085",
       "openGraph": {
         "title": "Buy Classic Wear Man Plaid Shirt Online in Bangladesh | Arogga",
         "description": "The Man Plaid Shirt is a timeless and versatile men's shirt with a classic plaid pattern. Its comfortable fit and casual style make it a wardrobe essential for various occasions.",
@@ -33799,7 +33799,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/classic-wear-man-plaid-shirt-100085",
+      "local": "/products/100085",
       "api": "/api/products/100085",
       "source": "https://dummyjson.com/products/85"
     },
@@ -34209,7 +34209,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/casual-comfort-man-short-sleeve-shirt-100086",
+      "canonicalUrl": "https://www.arogga.com/products/100086",
       "openGraph": {
         "title": "Buy Casual Comfort Man Short Sleeve Shirt Online in Bangladesh | Arogga",
         "description": "The Man Short Sleeve Shirt is a breezy and stylish option for warm days. With a comfortable fit and short sleeves, it's perfect for a laid-back yet polished look.",
@@ -34220,7 +34220,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/casual-comfort-man-short-sleeve-shirt-100086",
+      "local": "/products/100086",
       "api": "/api/products/100086",
       "source": "https://dummyjson.com/products/86"
     },
@@ -34630,7 +34630,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/urban-chic-men-check-shirt-100087",
+      "canonicalUrl": "https://www.arogga.com/products/100087",
       "openGraph": {
         "title": "Buy Urban Chic Men Check Shirt Online in Bangladesh | Arogga",
         "description": "The Men Check Shirt is a classic and versatile shirt featuring a stylish check pattern. Suitable for various occasions, it adds a smart and polished touch to your wardrobe.",
@@ -34641,7 +34641,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/urban-chic-men-check-shirt-100087",
+      "local": "/products/100087",
       "api": "/api/products/100087",
       "source": "https://dummyjson.com/products/87"
     },
@@ -35051,7 +35051,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/nike-air-jordan-1-red-and-black-100088",
+      "canonicalUrl": "https://www.arogga.com/products/100088",
       "openGraph": {
         "title": "Buy Nike Air Jordan 1 Red And Black Online in Bangladesh | Arogga",
         "description": "The Nike Air Jordan 1 in Red and Black is an iconic basketball sneaker known for its stylish design and high-performance features, making it a favorite among sneaker enthusiasts and athletes.",
@@ -35062,7 +35062,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/nike-air-jordan-1-red-and-black-100088",
+      "local": "/products/100088",
       "api": "/api/products/100088",
       "source": "https://dummyjson.com/products/88"
     },
@@ -35472,7 +35472,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/nike-baseball-cleats-100089",
+      "canonicalUrl": "https://www.arogga.com/products/100089",
       "openGraph": {
         "title": "Buy Nike Baseball Cleats Online in Bangladesh | Arogga",
         "description": "Nike Baseball Cleats are designed for maximum traction and performance on the baseball field. They provide stability and support for players during games and practices.",
@@ -35483,7 +35483,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/nike-baseball-cleats-100089",
+      "local": "/products/100089",
       "api": "/api/products/100089",
       "source": "https://dummyjson.com/products/89"
     },
@@ -35893,7 +35893,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/puma-future-rider-trainers-100090",
+      "canonicalUrl": "https://www.arogga.com/products/100090",
       "openGraph": {
         "title": "Buy Puma Future Rider Trainers Online in Bangladesh | Arogga",
         "description": "The Puma Future Rider Trainers offer a blend of retro style and modern comfort. Perfect for casual wear, these trainers provide a fashionable and comfortable option for everyday use.",
@@ -35904,7 +35904,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/puma-future-rider-trainers-100090",
+      "local": "/products/100090",
       "api": "/api/products/100090",
       "source": "https://dummyjson.com/products/90"
     },
@@ -36314,7 +36314,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-sneakers-off-white-red-100091",
+      "canonicalUrl": "https://www.arogga.com/products/100091",
       "openGraph": {
         "title": "Buy Sports Sneakers Off White & Red Online in Bangladesh | Arogga",
         "description": "The Sports Sneakers in Off White and Red combine style and functionality, making them a fashionable choice for sports enthusiasts. The red and off-white color combination adds a bold and energetic touch.",
@@ -36325,7 +36325,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-sneakers-off-white-red-100091",
+      "local": "/products/100091",
       "api": "/api/products/100091",
       "source": "https://dummyjson.com/products/91"
     },
@@ -36735,7 +36735,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-sneakers-off-white-red-100092",
+      "canonicalUrl": "https://www.arogga.com/products/100092",
       "openGraph": {
         "title": "Buy Sports Sneakers Off White Red Online in Bangladesh | Arogga",
         "description": "Another variant of the Sports Sneakers in Off White Red, featuring a unique design. These sneakers offer style and comfort for casual occasions.",
@@ -36746,7 +36746,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-sneakers-off-white-red-100092",
+      "local": "/products/100092",
       "api": "/api/products/100092",
       "source": "https://dummyjson.com/products/92"
     },
@@ -37146,7 +37146,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-timepieces-brown-leather-belt-watch-100093",
+      "canonicalUrl": "https://www.arogga.com/products/100093",
       "openGraph": {
         "title": "Buy Fashion Timepieces Brown Leather Belt Watch Online in Bangladesh | Arogga",
         "description": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
@@ -37157,7 +37157,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-timepieces-brown-leather-belt-watch-100093",
+      "local": "/products/100093",
       "api": "/api/products/100093",
       "source": "https://dummyjson.com/products/93"
     },
@@ -37557,7 +37557,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/longines-master-collection-100094",
+      "canonicalUrl": "https://www.arogga.com/products/100094",
       "openGraph": {
         "title": "Buy Longines Master Collection Online in Bangladesh | Arogga",
         "description": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
@@ -37568,7 +37568,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/longines-master-collection-100094",
+      "local": "/products/100094",
       "api": "/api/products/100094",
       "source": "https://dummyjson.com/products/94"
     },
@@ -37968,7 +37968,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/rolex-cellini-date-black-dial-100095",
+      "canonicalUrl": "https://www.arogga.com/products/100095",
       "openGraph": {
         "title": "Buy Rolex Cellini Date Black Dial Online in Bangladesh | Arogga",
         "description": "The Rolex Cellini Date with Black Dial is a classic and prestigious watch. With a black dial and date complication, it exudes sophistication and is a symbol of Rolex's heritage.",
@@ -37979,7 +37979,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/rolex-cellini-date-black-dial-100095",
+      "local": "/products/100095",
       "api": "/api/products/100095",
       "source": "https://dummyjson.com/products/95"
     },
@@ -38379,7 +38379,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/rolex-cellini-moonphase-100096",
+      "canonicalUrl": "https://www.arogga.com/products/100096",
       "openGraph": {
         "title": "Buy Rolex Cellini Moonphase Online in Bangladesh | Arogga",
         "description": "The Rolex Cellini Moonphase is a masterpiece of horology, featuring a moon phase complication and exquisite design. It reflects Rolex's commitment to precision and elegance.",
@@ -38390,7 +38390,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/rolex-cellini-moonphase-100096",
+      "local": "/products/100096",
       "api": "/api/products/100096",
       "source": "https://dummyjson.com/products/96"
     },
@@ -38790,7 +38790,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/rolex-datejust-100097",
+      "canonicalUrl": "https://www.arogga.com/products/100097",
       "openGraph": {
         "title": "Buy Rolex Datejust Online in Bangladesh | Arogga",
         "description": "The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
@@ -38801,7 +38801,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/rolex-datejust-100097",
+      "local": "/products/100097",
       "api": "/api/products/100097",
       "source": "https://dummyjson.com/products/97"
     },
@@ -39201,7 +39201,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/rolex-submariner-watch-100098",
+      "canonicalUrl": "https://www.arogga.com/products/100098",
       "openGraph": {
         "title": "Buy Rolex Submariner Watch Online in Bangladesh | Arogga",
         "description": "The Rolex Submariner is a legendary dive watch with a rich history. Known for its durability and water resistance, it's a symbol of adventure and exploration.",
@@ -39212,7 +39212,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/rolex-submariner-watch-100098",
+      "local": "/products/100098",
       "api": "/api/products/100098",
       "source": "https://dummyjson.com/products/98"
     },
@@ -39602,7 +39602,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/amazon-echo-plus-100099",
+      "canonicalUrl": "https://www.arogga.com/products/100099",
       "openGraph": {
         "title": "Buy Amazon Echo Plus Online in Bangladesh | Arogga",
         "description": "The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves as a hub for controlling smart home devices.",
@@ -39613,7 +39613,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/amazon-echo-plus-100099",
+      "local": "/products/100099",
       "api": "/api/products/100099",
       "source": "https://dummyjson.com/products/99"
     },
@@ -40013,7 +40013,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-airpods-100100",
+      "canonicalUrl": "https://www.arogga.com/products/100100",
       "openGraph": {
         "title": "Buy Apple Airpods Online in Bangladesh | Arogga",
         "description": "The Apple Airpods offer a seamless wireless audio experience. With easy pairing, high-quality sound, and Siri integration, they are perfect for on-the-go listening.",
@@ -40024,7 +40024,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-airpods-100100",
+      "local": "/products/100100",
       "api": "/api/products/100100",
       "source": "https://dummyjson.com/products/100"
     },
@@ -40404,7 +40404,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-airpods-max-silver-100101",
+      "canonicalUrl": "https://www.arogga.com/products/100101",
       "openGraph": {
         "title": "Buy Apple AirPods Max Silver Online in Bangladesh | Arogga",
         "description": "The Apple AirPods Max in Silver are premium over-ear headphones with high-fidelity audio, adaptive EQ, and active noise cancellation. Experience immersive sound in style.",
@@ -40415,7 +40415,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-airpods-max-silver-100101",
+      "local": "/products/100101",
       "api": "/api/products/100101",
       "source": "https://dummyjson.com/products/101"
     },
@@ -40795,7 +40795,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-airpower-wireless-charger-100102",
+      "canonicalUrl": "https://www.arogga.com/products/100102",
       "openGraph": {
         "title": "Buy Apple Airpower Wireless Charger Online in Bangladesh | Arogga",
         "description": "The Apple AirPower Wireless Charger provides a convenient way to charge your compatible Apple devices wirelessly. Simply place your devices on the charging mat for effortless charging.",
@@ -40806,7 +40806,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-airpower-wireless-charger-100102",
+      "local": "/products/100102",
       "api": "/api/products/100102",
       "source": "https://dummyjson.com/products/102"
     },
@@ -41186,7 +41186,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-homepod-mini-cosmic-grey-100103",
+      "canonicalUrl": "https://www.arogga.com/products/100103",
       "openGraph": {
         "title": "Buy Apple HomePod Mini Cosmic Grey Online in Bangladesh | Arogga",
         "description": "The Apple HomePod Mini in Cosmic Grey is a compact smart speaker that delivers impressive audio and integrates seamlessly with the Apple ecosystem for a smart home experience.",
@@ -41197,7 +41197,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-homepod-mini-cosmic-grey-100103",
+      "local": "/products/100103",
       "api": "/api/products/100103",
       "source": "https://dummyjson.com/products/103"
     },
@@ -41587,7 +41587,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-iphone-charger-100104",
+      "canonicalUrl": "https://www.arogga.com/products/100104",
       "openGraph": {
         "title": "Buy Apple iPhone Charger Online in Bangladesh | Arogga",
         "description": "The Apple iPhone Charger is a high-quality charger designed for fast and efficient charging of your iPhone. Ensure your device stays powered up and ready to go.",
@@ -41598,7 +41598,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-iphone-charger-100104",
+      "local": "/products/100104",
       "api": "/api/products/100104",
       "source": "https://dummyjson.com/products/104"
     },
@@ -41988,7 +41988,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-magsafe-battery-pack-100105",
+      "canonicalUrl": "https://www.arogga.com/products/100105",
       "openGraph": {
         "title": "Buy Apple MagSafe Battery Pack Online in Bangladesh | Arogga",
         "description": "The Apple MagSafe Battery Pack is a portable and convenient way to add extra battery life to your MagSafe-compatible iPhone. Attach it magnetically for a secure connection.",
@@ -41999,7 +41999,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-magsafe-battery-pack-100105",
+      "local": "/products/100105",
       "api": "/api/products/100105",
       "source": "https://dummyjson.com/products/105"
     },
@@ -42399,7 +42399,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-watch-series-4-gold-100106",
+      "canonicalUrl": "https://www.arogga.com/products/100106",
       "openGraph": {
         "title": "Buy Apple Watch Series 4 Gold Online in Bangladesh | Arogga",
         "description": "The Apple Watch Series 4 in Gold is a stylish and advanced smartwatch with features like heart rate monitoring, fitness tracking, and a beautiful Retina display.",
@@ -42410,7 +42410,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-watch-series-4-gold-100106",
+      "local": "/products/100106",
       "api": "/api/products/100106",
       "source": "https://dummyjson.com/products/106"
     },
@@ -42790,7 +42790,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/beats-flex-wireless-earphones-100107",
+      "canonicalUrl": "https://www.arogga.com/products/100107",
       "openGraph": {
         "title": "Buy Beats Flex Wireless Earphones Online in Bangladesh | Arogga",
         "description": "The Beats Flex Wireless Earphones offer a comfortable and versatile audio experience. With magnetic earbuds and up to 12 hours of battery life, they are ideal for everyday use.",
@@ -42801,7 +42801,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/beats-flex-wireless-earphones-100107",
+      "local": "/products/100107",
       "api": "/api/products/100107",
       "source": "https://dummyjson.com/products/107"
     },
@@ -43211,7 +43211,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-iphone-12-silicone-case-with-magsafe-plum-100108",
+      "canonicalUrl": "https://www.arogga.com/products/100108",
       "openGraph": {
         "title": "Buy Apple iPhone 12 Silicone Case with MagSafe Plum Online in Bangladesh | Arogga",
         "description": "The iPhone 12 Silicone Case with MagSafe in Plum is a stylish and protective case designed for the iPhone 12. It features MagSafe technology for easy attachment of accessories.",
@@ -43222,7 +43222,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-iphone-12-silicone-case-with-magsafe-plum-100108",
+      "local": "/products/100108",
       "api": "/api/products/100108",
       "source": "https://dummyjson.com/products/108"
     },
@@ -43612,7 +43612,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/techgear-monopod-100109",
+      "canonicalUrl": "https://www.arogga.com/products/100109",
       "openGraph": {
         "title": "Buy TechGear Monopod Online in Bangladesh | Arogga",
         "description": "The Monopod is a versatile camera accessory for stable and adjustable shooting. Perfect for capturing selfies, group photos, and videos with ease.",
@@ -43623,7 +43623,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/techgear-monopod-100109",
+      "local": "/products/100109",
       "api": "/api/products/100109",
       "source": "https://dummyjson.com/products/109"
     },
@@ -44003,7 +44003,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/gadgetmaster-selfie-lamp-with-iphone-100110",
+      "canonicalUrl": "https://www.arogga.com/products/100110",
       "openGraph": {
         "title": "Buy GadgetMaster Selfie Lamp with iPhone Online in Bangladesh | Arogga",
         "description": "The Selfie Lamp with iPhone is a portable and adjustable LED light designed to enhance your selfies and video calls. Attach it to your iPhone for well-lit photos.",
@@ -44014,7 +44014,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/gadgetmaster-selfie-lamp-with-iphone-100110",
+      "local": "/products/100110",
       "api": "/api/products/100110",
       "source": "https://dummyjson.com/products/110"
     },
@@ -44394,7 +44394,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/snaptech-selfie-stick-monopod-100111",
+      "canonicalUrl": "https://www.arogga.com/products/100111",
       "openGraph": {
         "title": "Buy SnapTech Selfie Stick Monopod Online in Bangladesh | Arogga",
         "description": "The Selfie Stick Monopod is a extendable and foldable device for capturing the perfect selfie or group photo. Compatible with smartphones and cameras.",
@@ -44405,7 +44405,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/snaptech-selfie-stick-monopod-100111",
+      "local": "/products/100111",
       "api": "/api/products/100111",
       "source": "https://dummyjson.com/products/111"
     },
@@ -44785,7 +44785,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/provision-tv-studio-camera-pedestal-100112",
+      "canonicalUrl": "https://www.arogga.com/products/100112",
       "openGraph": {
         "title": "Buy ProVision TV Studio Camera Pedestal Online in Bangladesh | Arogga",
         "description": "The TV Studio Camera Pedestal is a professional-grade camera support system for smooth and precise camera movements in a studio setting. Ideal for broadcast and production.",
@@ -44796,7 +44796,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/provision-tv-studio-camera-pedestal-100112",
+      "local": "/products/100112",
       "api": "/api/products/100112",
       "source": "https://dummyjson.com/products/112"
     },
@@ -45206,7 +45206,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/generic-motors-generic-motorcycle-100113",
+      "canonicalUrl": "https://www.arogga.com/products/100113",
       "openGraph": {
         "title": "Buy Generic Motors Generic Motorcycle Online in Bangladesh | Arogga",
         "description": "The Generic Motorcycle is a versatile and reliable bike suitable for various riding preferences. With a balanced design, it provides a comfortable and efficient riding experience.",
@@ -45217,7 +45217,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/generic-motors-generic-motorcycle-100113",
+      "local": "/products/100113",
       "api": "/api/products/100113",
       "source": "https://dummyjson.com/products/113"
     },
@@ -45627,7 +45627,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/kawasaki-z800-100114",
+      "canonicalUrl": "https://www.arogga.com/products/100114",
       "openGraph": {
         "title": "Buy Kawasaki Z800 Online in Bangladesh | Arogga",
         "description": "The Kawasaki Z800 is a powerful and agile sportbike known for its striking design and performance. It's equipped with advanced features, making it a favorite among motorcycle enthusiasts.",
@@ -45638,7 +45638,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/kawasaki-z800-100114",
+      "local": "/products/100114",
       "api": "/api/products/100114",
       "source": "https://dummyjson.com/products/114"
     },
@@ -46048,7 +46048,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/motogp-ci-h1-100115",
+      "canonicalUrl": "https://www.arogga.com/products/100115",
       "openGraph": {
         "title": "Buy MotoGP CI.H1 Online in Bangladesh | Arogga",
         "description": "The MotoGP CI.H1 is a high-performance motorcycle inspired by MotoGP racing technology. It offers cutting-edge features and precision engineering for an exhilarating riding experience.",
@@ -46059,7 +46059,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/motogp-ci-h1-100115",
+      "local": "/products/100115",
       "api": "/api/products/100115",
       "source": "https://dummyjson.com/products/115"
     },
@@ -46469,7 +46469,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/scootmaster-scooter-motorcycle-100116",
+      "canonicalUrl": "https://www.arogga.com/products/100116",
       "openGraph": {
         "title": "Buy ScootMaster Scooter Motorcycle Online in Bangladesh | Arogga",
         "description": "The Scooter Motorcycle is a practical and fuel-efficient bike ideal for urban commuting. It features a step-through design and user-friendly controls for easy maneuverability.",
@@ -46480,7 +46480,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/scootmaster-scooter-motorcycle-100116",
+      "local": "/products/100116",
       "api": "/api/products/100116",
       "source": "https://dummyjson.com/products/116"
     },
@@ -46890,7 +46890,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/speedmaster-sportbike-motorcycle-100117",
+      "canonicalUrl": "https://www.arogga.com/products/100117",
       "openGraph": {
         "title": "Buy SpeedMaster Sportbike Motorcycle Online in Bangladesh | Arogga",
         "description": "The Sportbike Motorcycle is designed for speed and agility, with a sleek and aerodynamic profile. It's suitable for riders looking for a dynamic and thrilling riding experience.",
@@ -46901,7 +46901,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/speedmaster-sportbike-motorcycle-100117",
+      "local": "/products/100117",
       "api": "/api/products/100117",
       "source": "https://dummyjson.com/products/117"
     },
@@ -47301,7 +47301,7 @@
         "Skincare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/attitude-super-leaves-hand-soap-100118",
+      "canonicalUrl": "https://www.arogga.com/products/100118",
       "openGraph": {
         "title": "Buy Attitude Super Leaves Hand Soap Online in Bangladesh | Arogga",
         "description": "Attitude Super Leaves Hand Soap is a natural and nourishing hand soap enriched with the goodness of super leaves. It cleanses and moisturizes your hands, leaving them feeling fresh and soft.",
@@ -47312,7 +47312,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/attitude-super-leaves-hand-soap-100118",
+      "local": "/products/100118",
       "api": "/api/products/100118",
       "source": "https://dummyjson.com/products/118"
     },
@@ -47712,7 +47712,7 @@
         "Skincare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/olay-ultra-moisture-shea-butter-body-wash-100119",
+      "canonicalUrl": "https://www.arogga.com/products/100119",
       "openGraph": {
         "title": "Buy Olay Ultra Moisture Shea Butter Body Wash Online in Bangladesh | Arogga",
         "description": "Olay Ultra Moisture Shea Butter Body Wash is a luxurious body wash that hydrates and nourishes your skin with the moisturizing power of shea butter. Enjoy a rich lather and silky-smooth skin.",
@@ -47723,7 +47723,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/olay-ultra-moisture-shea-butter-body-wash-100119",
+      "local": "/products/100119",
       "api": "/api/products/100119",
       "source": "https://dummyjson.com/products/119"
     },
@@ -48123,7 +48123,7 @@
         "Skincare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/vaseline-men-body-and-face-lotion-100120",
+      "canonicalUrl": "https://www.arogga.com/products/100120",
       "openGraph": {
         "title": "Buy Vaseline Men Body and Face Lotion Online in Bangladesh | Arogga",
         "description": "Vaseline Men Body and Face Lotion is a specially formulated lotion designed to provide long-lasting moisture to men's skin. It absorbs quickly and helps keep the skin hydrated and healthy.",
@@ -48134,7 +48134,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/vaseline-men-body-and-face-lotion-100120",
+      "local": "/products/100120",
       "api": "/api/products/100120",
       "source": "https://dummyjson.com/products/120"
     },
@@ -48534,7 +48534,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-iphone-5s-100121",
+      "canonicalUrl": "https://www.arogga.com/products/100121",
       "openGraph": {
         "title": "Buy Apple iPhone 5s Online in Bangladesh | Arogga",
         "description": "The iPhone 5s is a classic smartphone known for its compact design and advanced features during its release. While it's an older model, it still provides a reliable user experience.",
@@ -48545,7 +48545,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-iphone-5s-100121",
+      "local": "/products/100121",
       "api": "/api/products/100121",
       "source": "https://dummyjson.com/products/121"
     },
@@ -48945,7 +48945,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-iphone-6-100122",
+      "canonicalUrl": "https://www.arogga.com/products/100122",
       "openGraph": {
         "title": "Buy Apple iPhone 6 Online in Bangladesh | Arogga",
         "description": "The iPhone 6 is a stylish and capable smartphone with a larger display and improved performance. It introduced new features and design elements, making it a popular choice in its time.",
@@ -48956,7 +48956,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-iphone-6-100122",
+      "local": "/products/100122",
       "api": "/api/products/100122",
       "source": "https://dummyjson.com/products/122"
     },
@@ -49356,7 +49356,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-iphone-13-pro-100123",
+      "canonicalUrl": "https://www.arogga.com/products/100123",
       "openGraph": {
         "title": "Buy Apple iPhone 13 Pro Online in Bangladesh | Arogga",
         "description": "The iPhone 13 Pro is a cutting-edge smartphone with a powerful camera system, high-performance chip, and stunning display. It offers advanced features for users who demand top-notch technology.",
@@ -49367,7 +49367,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-iphone-13-pro-100123",
+      "local": "/products/100123",
       "api": "/api/products/100123",
       "source": "https://dummyjson.com/products/123"
     },
@@ -49767,7 +49767,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-iphone-x-100124",
+      "canonicalUrl": "https://www.arogga.com/products/100124",
       "openGraph": {
         "title": "Buy Apple iPhone X Online in Bangladesh | Arogga",
         "description": "The iPhone X is a flagship smartphone featuring a bezel-less OLED display, facial recognition technology (Face ID), and impressive performance. It represents a milestone in iPhone design and innovation.",
@@ -49778,7 +49778,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-iphone-x-100124",
+      "local": "/products/100124",
       "api": "/api/products/100124",
       "source": "https://dummyjson.com/products/124"
     },
@@ -50178,7 +50178,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/oppo-a57-100125",
+      "canonicalUrl": "https://www.arogga.com/products/100125",
       "openGraph": {
         "title": "Buy Oppo A57 Online in Bangladesh | Arogga",
         "description": "The Oppo A57 is a mid-range smartphone known for its sleek design and capable features. It offers a balance of performance and affordability, making it a popular choice.",
@@ -50189,7 +50189,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/oppo-a57-100125",
+      "local": "/products/100125",
       "api": "/api/products/100125",
       "source": "https://dummyjson.com/products/125"
     },
@@ -50589,7 +50589,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/oppo-f19-pro-plus-100126",
+      "canonicalUrl": "https://www.arogga.com/products/100126",
       "openGraph": {
         "title": "Buy Oppo F19 Pro Plus Online in Bangladesh | Arogga",
         "description": "The Oppo F19 Pro Plus is a feature-rich smartphone with a focus on camera capabilities. It boasts advanced photography features and a powerful performance for a premium user experience.",
@@ -50600,7 +50600,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/oppo-f19-pro-plus-100126",
+      "local": "/products/100126",
       "api": "/api/products/100126",
       "source": "https://dummyjson.com/products/126"
     },
@@ -51010,7 +51010,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/oppo-k1-100127",
+      "canonicalUrl": "https://www.arogga.com/products/100127",
       "openGraph": {
         "title": "Buy Oppo K1 Online in Bangladesh | Arogga",
         "description": "The Oppo K1 series offers a range of smartphones with various features and specifications. Known for their stylish design and reliable performance, the Oppo K1 series caters to diverse user preferences.",
@@ -51021,7 +51021,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/oppo-k1-100127",
+      "local": "/products/100127",
       "api": "/api/products/100127",
       "source": "https://dummyjson.com/products/127"
     },
@@ -51421,7 +51421,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/realme-c35-100128",
+      "canonicalUrl": "https://www.arogga.com/products/100128",
       "openGraph": {
         "title": "Buy Realme C35 Online in Bangladesh | Arogga",
         "description": "The Realme C35 is a budget-friendly smartphone with a focus on providing essential features for everyday use. It offers a reliable performance and user-friendly experience.",
@@ -51432,7 +51432,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/realme-c35-100128",
+      "local": "/products/100128",
       "api": "/api/products/100128",
       "source": "https://dummyjson.com/products/128"
     },
@@ -51832,7 +51832,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/realme-x-100129",
+      "canonicalUrl": "https://www.arogga.com/products/100129",
       "openGraph": {
         "title": "Buy Realme X Online in Bangladesh | Arogga",
         "description": "The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
@@ -51843,7 +51843,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/realme-x-100129",
+      "local": "/products/100129",
       "api": "/api/products/100129",
       "source": "https://dummyjson.com/products/129"
     },
@@ -52243,7 +52243,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/realme-xt-100130",
+      "canonicalUrl": "https://www.arogga.com/products/100130",
       "openGraph": {
         "title": "Buy Realme XT Online in Bangladesh | Arogga",
         "description": "The Realme XT is a feature-rich smartphone with a focus on camera technology. It comes equipped with advanced camera sensors, delivering high-quality photos and videos for photography enthusiasts.",
@@ -52254,7 +52254,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/realme-xt-100130",
+      "local": "/products/100130",
       "api": "/api/products/100130",
       "source": "https://dummyjson.com/products/130"
     },
@@ -52654,7 +52654,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/samsung-galaxy-s7-100131",
+      "canonicalUrl": "https://www.arogga.com/products/100131",
       "openGraph": {
         "title": "Buy Samsung Galaxy S7 Online in Bangladesh | Arogga",
         "description": "The Samsung Galaxy S7 is a flagship smartphone known for its sleek design and advanced features. It features a high-resolution display, powerful camera, and robust performance.",
@@ -52665,7 +52665,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/samsung-galaxy-s7-100131",
+      "local": "/products/100131",
       "api": "/api/products/100131",
       "source": "https://dummyjson.com/products/131"
     },
@@ -53065,7 +53065,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/samsung-galaxy-s8-100132",
+      "canonicalUrl": "https://www.arogga.com/products/100132",
       "openGraph": {
         "title": "Buy Samsung Galaxy S8 Online in Bangladesh | Arogga",
         "description": "The Samsung Galaxy S8 is a premium smartphone with an Infinity Display, offering a stunning visual experience. It boasts advanced camera capabilities and cutting-edge technology.",
@@ -53076,7 +53076,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/samsung-galaxy-s8-100132",
+      "local": "/products/100132",
       "api": "/api/products/100132",
       "source": "https://dummyjson.com/products/132"
     },
@@ -53476,7 +53476,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/samsung-galaxy-s10-100133",
+      "canonicalUrl": "https://www.arogga.com/products/100133",
       "openGraph": {
         "title": "Buy Samsung Galaxy S10 Online in Bangladesh | Arogga",
         "description": "The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful performance. It represents innovation and excellence in smartphone technology.",
@@ -53487,7 +53487,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/samsung-galaxy-s10-100133",
+      "local": "/products/100133",
       "api": "/api/products/100133",
       "source": "https://dummyjson.com/products/133"
     },
@@ -53887,7 +53887,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/vivo-s1-100134",
+      "canonicalUrl": "https://www.arogga.com/products/100134",
       "openGraph": {
         "title": "Buy Vivo S1 Online in Bangladesh | Arogga",
         "description": "The Vivo S1 is a stylish and mid-range smartphone offering a blend of design and performance. It features a vibrant display, capable camera system, and reliable functionality.",
@@ -53898,7 +53898,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/vivo-s1-100134",
+      "local": "/products/100134",
       "api": "/api/products/100134",
       "source": "https://dummyjson.com/products/134"
     },
@@ -54298,7 +54298,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/vivo-v9-100135",
+      "canonicalUrl": "https://www.arogga.com/products/100135",
       "openGraph": {
         "title": "Buy Vivo V9 Online in Bangladesh | Arogga",
         "description": "The Vivo V9 is a smartphone known for its sleek design and emphasis on capturing high-quality selfies. It features a notch display, dual-camera setup, and a modern design.",
@@ -54309,7 +54309,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/vivo-v9-100135",
+      "local": "/products/100135",
       "api": "/api/products/100135",
       "source": "https://dummyjson.com/products/135"
     },
@@ -54709,7 +54709,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/vivo-x21-100136",
+      "canonicalUrl": "https://www.arogga.com/products/100136",
       "openGraph": {
         "title": "Buy Vivo X21 Online in Bangladesh | Arogga",
         "description": "The Vivo X21 is a premium smartphone with a focus on cutting-edge technology. It features an in-display fingerprint sensor, a high-resolution display, and advanced camera capabilities.",
@@ -54720,7 +54720,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/vivo-x21-100136",
+      "local": "/products/100136",
       "api": "/api/products/100136",
       "source": "https://dummyjson.com/products/136"
     },
@@ -55100,7 +55100,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-american-football-100137",
+      "canonicalUrl": "https://www.arogga.com/products/100137",
       "openGraph": {
         "title": "Buy Sports Accessories American Football Online in Bangladesh | Arogga",
         "description": "The American Football is a classic ball used in American football games. It is designed for throwing and catching, making it an essential piece of equipment for the sport.",
@@ -55111,7 +55111,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-american-football-100137",
+      "local": "/products/100137",
       "api": "/api/products/100137",
       "source": "https://dummyjson.com/products/137"
     },
@@ -55491,7 +55491,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-baseball-ball-100138",
+      "canonicalUrl": "https://www.arogga.com/products/100138",
       "openGraph": {
         "title": "Buy Sports Accessories Baseball Ball Online in Bangladesh | Arogga",
         "description": "The Baseball Ball is a standard baseball used in baseball games. It features a durable leather cover and is designed for pitching, hitting, and fielding in the game of baseball.",
@@ -55502,7 +55502,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-baseball-ball-100138",
+      "local": "/products/100138",
       "api": "/api/products/100138",
       "source": "https://dummyjson.com/products/138"
     },
@@ -55902,7 +55902,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-baseball-glove-100139",
+      "canonicalUrl": "https://www.arogga.com/products/100139",
       "openGraph": {
         "title": "Buy Sports Accessories Baseball Glove Online in Bangladesh | Arogga",
         "description": "The Baseball Glove is a protective glove worn by baseball players. It is designed to catch and field the baseball, providing players with comfort and control during the game.",
@@ -55913,7 +55913,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-baseball-glove-100139",
+      "local": "/products/100139",
       "api": "/api/products/100139",
       "source": "https://dummyjson.com/products/139"
     },
@@ -56293,7 +56293,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-basketball-100140",
+      "canonicalUrl": "https://www.arogga.com/products/100140",
       "openGraph": {
         "title": "Buy Sports Accessories Basketball Online in Bangladesh | Arogga",
         "description": "The Basketball is a standard ball used in basketball games. It is designed for dribbling, shooting, and passing in the game of basketball, suitable for both indoor and outdoor play.",
@@ -56304,7 +56304,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-basketball-100140",
+      "local": "/products/100140",
       "api": "/api/products/100140",
       "source": "https://dummyjson.com/products/140"
     },
@@ -56684,7 +56684,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-basketball-rim-100141",
+      "canonicalUrl": "https://www.arogga.com/products/100141",
       "openGraph": {
         "title": "Buy Sports Accessories Basketball Rim Online in Bangladesh | Arogga",
         "description": "The Basketball Rim is a sturdy hoop and net assembly mounted on a basketball backboard. It provides a target for shooting and scoring in the game of basketball.",
@@ -56695,7 +56695,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-basketball-rim-100141",
+      "local": "/products/100141",
       "api": "/api/products/100141",
       "source": "https://dummyjson.com/products/141"
     },
@@ -57075,7 +57075,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-cricket-ball-100142",
+      "canonicalUrl": "https://www.arogga.com/products/100142",
       "openGraph": {
         "title": "Buy Sports Accessories Cricket Ball Online in Bangladesh | Arogga",
         "description": "The Cricket Ball is a hard leather ball used in the sport of cricket. It is bowled and batted in the game, and its hardness and seam contribute to the dynamics of cricket play.",
@@ -57086,7 +57086,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-cricket-ball-100142",
+      "local": "/products/100142",
       "api": "/api/products/100142",
       "source": "https://dummyjson.com/products/142"
     },
@@ -57466,7 +57466,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-cricket-bat-100143",
+      "canonicalUrl": "https://www.arogga.com/products/100143",
       "openGraph": {
         "title": "Buy Sports Accessories Cricket Bat Online in Bangladesh | Arogga",
         "description": "The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood and comes in various sizes and designs.",
@@ -57477,7 +57477,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-cricket-bat-100143",
+      "local": "/products/100143",
       "api": "/api/products/100143",
       "source": "https://dummyjson.com/products/143"
     },
@@ -57887,7 +57887,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-cricket-helmet-100144",
+      "canonicalUrl": "https://www.arogga.com/products/100144",
       "openGraph": {
         "title": "Buy Sports Accessories Cricket Helmet Online in Bangladesh | Arogga",
         "description": "The Cricket Helmet is a protective headgear worn by cricket players, especially batsmen and wicketkeepers. It provides protection against fast bowling and bouncers.",
@@ -57898,7 +57898,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-cricket-helmet-100144",
+      "local": "/products/100144",
       "api": "/api/products/100144",
       "source": "https://dummyjson.com/products/144"
     },
@@ -58278,7 +58278,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-cricket-wicket-100145",
+      "canonicalUrl": "https://www.arogga.com/products/100145",
       "openGraph": {
         "title": "Buy Sports Accessories Cricket Wicket Online in Bangladesh | Arogga",
         "description": "The Cricket Wicket is a set of three stumps and two bails, forming a wicket used in the sport of cricket. Batsmen aim to protect the wicket while scoring runs.",
@@ -58289,7 +58289,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-cricket-wicket-100145",
+      "local": "/products/100145",
       "api": "/api/products/100145",
       "source": "https://dummyjson.com/products/145"
     },
@@ -58669,7 +58669,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-feather-shuttlecock-100146",
+      "canonicalUrl": "https://www.arogga.com/products/100146",
       "openGraph": {
         "title": "Buy Sports Accessories Feather Shuttlecock Online in Bangladesh | Arogga",
         "description": "The Feather Shuttlecock is used in the sport of badminton. It features natural feathers and is designed for high-speed play, providing stability and accuracy during matches.",
@@ -58680,7 +58680,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-feather-shuttlecock-100146",
+      "local": "/products/100146",
       "api": "/api/products/100146",
       "source": "https://dummyjson.com/products/146"
     },
@@ -59060,7 +59060,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-football-100147",
+      "canonicalUrl": "https://www.arogga.com/products/100147",
       "openGraph": {
         "title": "Buy Sports Accessories Football Online in Bangladesh | Arogga",
         "description": "The Football, also known as a soccer ball, is the standard ball used in the sport of football (soccer). It is designed for kicking and passing in the game.",
@@ -59071,7 +59071,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-football-100147",
+      "local": "/products/100147",
       "api": "/api/products/100147",
       "source": "https://dummyjson.com/products/147"
     },
@@ -59451,7 +59451,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-golf-ball-100148",
+      "canonicalUrl": "https://www.arogga.com/products/100148",
       "openGraph": {
         "title": "Buy Sports Accessories Golf Ball Online in Bangladesh | Arogga",
         "description": "The Golf Ball is a small ball used in the sport of golf. It features dimples on its surface, providing aerodynamic lift and distance when struck by a golf club.",
@@ -59462,7 +59462,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-golf-ball-100148",
+      "local": "/products/100148",
       "api": "/api/products/100148",
       "source": "https://dummyjson.com/products/148"
     },
@@ -59842,7 +59842,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-iron-golf-100149",
+      "canonicalUrl": "https://www.arogga.com/products/100149",
       "openGraph": {
         "title": "Buy Sports Accessories Iron Golf Online in Bangladesh | Arogga",
         "description": "The Iron Golf is a type of golf club designed for various golf shots. It features a solid metal head and is used for approach shots, chipping, and other golfing techniques.",
@@ -59853,7 +59853,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-iron-golf-100149",
+      "local": "/products/100149",
       "api": "/api/products/100149",
       "source": "https://dummyjson.com/products/149"
     },
@@ -60233,7 +60233,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-metal-baseball-bat-100150",
+      "canonicalUrl": "https://www.arogga.com/products/100150",
       "openGraph": {
         "title": "Buy Sports Accessories Metal Baseball Bat Online in Bangladesh | Arogga",
         "description": "The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball games for hitting and batting practice.",
@@ -60244,7 +60244,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-metal-baseball-bat-100150",
+      "local": "/products/100150",
       "api": "/api/products/100150",
       "source": "https://dummyjson.com/products/150"
     },
@@ -60624,7 +60624,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-tennis-ball-100151",
+      "canonicalUrl": "https://www.arogga.com/products/100151",
       "openGraph": {
         "title": "Buy Sports Accessories Tennis Ball Online in Bangladesh | Arogga",
         "description": "The Tennis Ball is a standard ball used in the sport of tennis. It is designed for bouncing and hitting with tennis rackets during matches or practice sessions.",
@@ -60635,7 +60635,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-tennis-ball-100151",
+      "local": "/products/100151",
       "api": "/api/products/100151",
       "source": "https://dummyjson.com/products/151"
     },
@@ -61015,7 +61015,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-tennis-racket-100152",
+      "canonicalUrl": "https://www.arogga.com/products/100152",
       "openGraph": {
         "title": "Buy Sports Accessories Tennis Racket Online in Bangladesh | Arogga",
         "description": "The Tennis Racket is an essential piece of equipment used in the sport of tennis. It features a frame with strings and a grip, allowing players to hit the tennis ball.",
@@ -61026,7 +61026,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-tennis-racket-100152",
+      "local": "/products/100152",
       "api": "/api/products/100152",
       "source": "https://dummyjson.com/products/152"
     },
@@ -61406,7 +61406,7 @@
         "Supplement",
         "online shopping"
       ],
-      "canonicalUrl": "/products/sports-accessories-volleyball-100153",
+      "canonicalUrl": "https://www.arogga.com/products/100153",
       "openGraph": {
         "title": "Buy Sports Accessories Volleyball Online in Bangladesh | Arogga",
         "description": "The Volleyball is a standard ball used in the sport of volleyball. It is designed for passing, setting, and spiking over the net during volleyball matches.",
@@ -61417,7 +61417,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/sports-accessories-volleyball-100153",
+      "local": "/products/100153",
       "api": "/api/products/100153",
       "source": "https://dummyjson.com/products/153"
     },
@@ -61817,7 +61817,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-shades-black-sun-glasses-100154",
+      "canonicalUrl": "https://www.arogga.com/products/100154",
       "openGraph": {
         "title": "Buy Fashion Shades Black Sun Glasses Online in Bangladesh | Arogga",
         "description": "The Black Sun Glasses are a classic and stylish choice, featuring a sleek black frame and tinted lenses. They provide both UV protection and a fashionable look.",
@@ -61828,7 +61828,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-shades-black-sun-glasses-100154",
+      "local": "/products/100154",
       "api": "/api/products/100154",
       "source": "https://dummyjson.com/products/154"
     },
@@ -62228,7 +62228,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-shades-classic-sun-glasses-100155",
+      "canonicalUrl": "https://www.arogga.com/products/100155",
       "openGraph": {
         "title": "Buy Fashion Shades Classic Sun Glasses Online in Bangladesh | Arogga",
         "description": "The Classic Sun Glasses offer a timeless design with a neutral frame and UV-protected lenses. These sunglasses are versatile and suitable for various occasions.",
@@ -62239,7 +62239,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-shades-classic-sun-glasses-100155",
+      "local": "/products/100155",
       "api": "/api/products/100155",
       "source": "https://dummyjson.com/products/155"
     },
@@ -62639,7 +62639,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-shades-green-and-black-glasses-100156",
+      "canonicalUrl": "https://www.arogga.com/products/100156",
       "openGraph": {
         "title": "Buy Fashion Shades Green and Black Glasses Online in Bangladesh | Arogga",
         "description": "The Green and Black Glasses feature a bold combination of green and black colors, adding a touch of vibrancy to your eyewear collection. They are both stylish and eye-catching.",
@@ -62650,7 +62650,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-shades-green-and-black-glasses-100156",
+      "local": "/products/100156",
       "api": "/api/products/100156",
       "source": "https://dummyjson.com/products/156"
     },
@@ -63050,7 +63050,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-fun-party-glasses-100157",
+      "canonicalUrl": "https://www.arogga.com/products/100157",
       "openGraph": {
         "title": "Buy Fashion Fun Party Glasses Online in Bangladesh | Arogga",
         "description": "The Party Glasses are designed to add flair to your party outfit. With unique shapes or colorful frames, they're perfect for adding a playful touch to your look during celebrations.",
@@ -63061,7 +63061,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-fun-party-glasses-100157",
+      "local": "/products/100157",
       "api": "/api/products/100157",
       "source": "https://dummyjson.com/products/157"
     },
@@ -63461,7 +63461,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-shades-sunglasses-100158",
+      "canonicalUrl": "https://www.arogga.com/products/100158",
       "openGraph": {
         "title": "Buy Fashion Shades Sunglasses Online in Bangladesh | Arogga",
         "description": "The Sunglasses offer a classic and simple design with a focus on functionality. These sunglasses provide essential UV protection while maintaining a timeless look.",
@@ -63472,7 +63472,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-shades-sunglasses-100158",
+      "local": "/products/100158",
       "api": "/api/products/100158",
       "source": "https://dummyjson.com/products/158"
     },
@@ -63882,7 +63882,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/apple-ipad-mini-2021-starlight-100159",
+      "canonicalUrl": "https://www.arogga.com/products/100159",
       "openGraph": {
         "title": "Buy Apple iPad Mini 2021 Starlight Online in Bangladesh | Arogga",
         "description": "The iPad Mini 2021 in Starlight is a compact and powerful tablet from Apple. Featuring a stunning Retina display, powerful A-series chip, and a sleek design, it offers a premium tablet experience.",
@@ -63893,7 +63893,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/apple-ipad-mini-2021-starlight-100159",
+      "local": "/products/100159",
       "api": "/api/products/100159",
       "source": "https://dummyjson.com/products/159"
     },
@@ -64303,7 +64303,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/samsung-galaxy-tab-s8-plus-grey-100160",
+      "canonicalUrl": "https://www.arogga.com/products/100160",
       "openGraph": {
         "title": "Buy Samsung Galaxy Tab S8 Plus Grey Online in Bangladesh | Arogga",
         "description": "The Samsung Galaxy Tab S8 Plus in Grey is a high-performance Android tablet by Samsung. With a large AMOLED display, powerful processor, and S Pen support, it's ideal for productivity and entertainment.",
@@ -64314,7 +64314,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/samsung-galaxy-tab-s8-plus-grey-100160",
+      "local": "/products/100160",
       "api": "/api/products/100160",
       "source": "https://dummyjson.com/products/160"
     },
@@ -64724,7 +64724,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/samsung-galaxy-tab-white-100161",
+      "canonicalUrl": "https://www.arogga.com/products/100161",
       "openGraph": {
         "title": "Buy Samsung Galaxy Tab White Online in Bangladesh | Arogga",
         "description": "The Samsung Galaxy Tab in White is a sleek and versatile Android tablet. With a vibrant display, long-lasting battery, and a range of features, it offers a great user experience for various tasks.",
@@ -64735,7 +64735,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/samsung-galaxy-tab-white-100161",
+      "local": "/products/100161",
       "api": "/api/products/100161",
       "source": "https://dummyjson.com/products/161"
     },
@@ -65145,7 +65145,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/tops-blue-frock-100162",
+      "canonicalUrl": "https://www.arogga.com/products/100162",
       "openGraph": {
         "title": "Buy Tops Blue Frock Online in Bangladesh | Arogga",
         "description": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
@@ -65156,7 +65156,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/tops-blue-frock-100162",
+      "local": "/products/100162",
       "api": "/api/products/100162",
       "source": "https://dummyjson.com/products/162"
     },
@@ -65566,7 +65566,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/tops-girl-summer-dress-100163",
+      "canonicalUrl": "https://www.arogga.com/products/100163",
       "openGraph": {
         "title": "Buy Tops Girl Summer Dress Online in Bangladesh | Arogga",
         "description": "The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric, it's perfect for keeping cool and stylish during the summer.",
@@ -65577,7 +65577,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/tops-girl-summer-dress-100163",
+      "local": "/products/100163",
       "api": "/api/products/100163",
       "source": "https://dummyjson.com/products/163"
     },
@@ -65987,7 +65987,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/tops-gray-dress-100164",
+      "canonicalUrl": "https://www.arogga.com/products/100164",
       "openGraph": {
         "title": "Buy Tops Gray Dress Online in Bangladesh | Arogga",
         "description": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
@@ -65998,7 +65998,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/tops-gray-dress-100164",
+      "local": "/products/100164",
       "api": "/api/products/100164",
       "source": "https://dummyjson.com/products/164"
     },
@@ -66408,7 +66408,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/tops-short-frock-100165",
+      "canonicalUrl": "https://www.arogga.com/products/100165",
       "openGraph": {
         "title": "Buy Tops Short Frock Online in Bangladesh | Arogga",
         "description": "The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it combines style and comfort for a fashionable look.",
@@ -66419,7 +66419,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/tops-short-frock-100165",
+      "local": "/products/100165",
       "api": "/api/products/100165",
       "source": "https://dummyjson.com/products/165"
     },
@@ -66829,7 +66829,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/tops-tartan-dress-100166",
+      "canonicalUrl": "https://www.arogga.com/products/100166",
       "openGraph": {
         "title": "Buy Tops Tartan Dress Online in Bangladesh | Arogga",
         "description": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
@@ -66840,7 +66840,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/tops-tartan-dress-100166",
+      "local": "/products/100166",
       "api": "/api/products/100166",
       "source": "https://dummyjson.com/products/166"
     },
@@ -67260,7 +67260,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/chrysler-300-touring-100167",
+      "canonicalUrl": "https://www.arogga.com/products/100167",
       "openGraph": {
         "title": "Buy Chrysler 300 Touring Online in Bangladesh | Arogga",
         "description": "The 300 Touring is a stylish and comfortable sedan, known for its luxurious features and smooth performance.",
@@ -67271,7 +67271,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/chrysler-300-touring-100167",
+      "local": "/products/100167",
       "api": "/api/products/100167",
       "source": "https://dummyjson.com/products/167"
     },
@@ -67691,7 +67691,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/dodge-charger-sxt-rwd-100168",
+      "canonicalUrl": "https://www.arogga.com/products/100168",
       "openGraph": {
         "title": "Buy Dodge Charger SXT RWD Online in Bangladesh | Arogga",
         "description": "The Charger SXT RWD is a powerful and sporty rear-wheel-drive sedan, offering a blend of performance and practicality.",
@@ -67702,7 +67702,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/dodge-charger-sxt-rwd-100168",
+      "local": "/products/100168",
       "api": "/api/products/100168",
       "source": "https://dummyjson.com/products/168"
     },
@@ -68122,7 +68122,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/dodge-hornet-gt-plus-100169",
+      "canonicalUrl": "https://www.arogga.com/products/100169",
       "openGraph": {
         "title": "Buy Dodge Hornet GT Plus Online in Bangladesh | Arogga",
         "description": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
@@ -68133,7 +68133,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/dodge-hornet-gt-plus-100169",
+      "local": "/products/100169",
       "api": "/api/products/100169",
       "source": "https://dummyjson.com/products/169"
     },
@@ -68553,7 +68553,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/dodge-durango-sxt-rwd-100170",
+      "canonicalUrl": "https://www.arogga.com/products/100170",
       "openGraph": {
         "title": "Buy Dodge Durango SXT RWD Online in Bangladesh | Arogga",
         "description": "The Durango SXT RWD is a spacious and versatile SUV, known for its strong performance and family-friendly features.",
@@ -68564,7 +68564,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/dodge-durango-sxt-rwd-100170",
+      "local": "/products/100170",
       "api": "/api/products/100170",
       "source": "https://dummyjson.com/products/170"
     },
@@ -68984,7 +68984,7 @@
         "Healthcare",
         "online shopping"
       ],
-      "canonicalUrl": "/products/chrysler-pacifica-touring-100171",
+      "canonicalUrl": "https://www.arogga.com/products/100171",
       "openGraph": {
         "title": "Buy Chrysler Pacifica Touring Online in Bangladesh | Arogga",
         "description": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
@@ -68995,7 +68995,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/chrysler-pacifica-touring-100171",
+      "local": "/products/100171",
       "api": "/api/products/100171",
       "source": "https://dummyjson.com/products/171"
     },
@@ -69395,7 +69395,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashionista-blue-women-s-handbag-100172",
+      "canonicalUrl": "https://www.arogga.com/products/100172",
       "openGraph": {
         "title": "Buy Fashionista Blue Women's Handbag Online in Bangladesh | Arogga",
         "description": "The Blue Women's Handbag is a stylish and spacious accessory for everyday use. With a vibrant blue color and multiple compartments, it combines fashion and functionality.",
@@ -69406,7 +69406,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashionista-blue-women-s-handbag-100172",
+      "local": "/products/100172",
       "api": "/api/products/100172",
       "source": "https://dummyjson.com/products/172"
     },
@@ -69806,7 +69806,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/heshe-women-s-leather-bag-100173",
+      "canonicalUrl": "https://www.arogga.com/products/100173",
       "openGraph": {
         "title": "Buy Heshe Women's Leather Bag Online in Bangladesh | Arogga",
         "description": "The Heshe Women's Leather Bag is a luxurious and high-quality leather bag for the sophisticated woman. With a timeless design and durable craftsmanship, it's a versatile accessory.",
@@ -69817,7 +69817,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/heshe-women-s-leather-bag-100173",
+      "local": "/products/100173",
       "api": "/api/products/100173",
       "source": "https://dummyjson.com/products/173"
     },
@@ -70217,7 +70217,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/prada-women-bag-100174",
+      "canonicalUrl": "https://www.arogga.com/products/100174",
       "openGraph": {
         "title": "Buy Prada Women Bag Online in Bangladesh | Arogga",
         "description": "The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the Prada logo, it's a statement piece for fashion enthusiasts.",
@@ -70228,7 +70228,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/prada-women-bag-100174",
+      "local": "/products/100174",
       "api": "/api/products/100174",
       "source": "https://dummyjson.com/products/174"
     },
@@ -70628,7 +70628,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/urban-chic-white-faux-leather-backpack-100175",
+      "canonicalUrl": "https://www.arogga.com/products/100175",
       "openGraph": {
         "title": "Buy Urban Chic White Faux Leather Backpack Online in Bangladesh | Arogga",
         "description": "The White Faux Leather Backpack is a trendy and practical backpack for the modern woman. With a sleek white design and ample storage space, it's perfect for both casual and on-the-go styles.",
@@ -70639,7 +70639,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/urban-chic-white-faux-leather-backpack-100175",
+      "local": "/products/100175",
       "api": "/api/products/100175",
       "source": "https://dummyjson.com/products/175"
     },
@@ -71039,7 +71039,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/elegance-collection-women-handbag-black-100176",
+      "canonicalUrl": "https://www.arogga.com/products/100176",
       "openGraph": {
         "title": "Buy Elegance Collection Women Handbag Black Online in Bangladesh | Arogga",
         "description": "The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black color and functional design, it's a must-have in every woman's wardrobe.",
@@ -71050,7 +71050,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/elegance-collection-women-handbag-black-100176",
+      "local": "/products/100176",
       "api": "/api/products/100176",
       "source": "https://dummyjson.com/products/176"
     },
@@ -71460,7 +71460,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/womens-dresses-black-women-s-gown-100177",
+      "canonicalUrl": "https://www.arogga.com/products/100177",
       "openGraph": {
         "title": "Buy Womens Dresses Black Women's Gown Online in Bangladesh | Arogga",
         "description": "The Black Women's Gown is an elegant and timeless evening gown. With a sleek black design, it's perfect for formal events and special occasions, exuding sophistication and style.",
@@ -71471,7 +71471,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/womens-dresses-black-women-s-gown-100177",
+      "local": "/products/100177",
       "api": "/api/products/100177",
       "source": "https://dummyjson.com/products/177"
     },
@@ -71881,7 +71881,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/womens-dresses-corset-leather-with-skirt-100178",
+      "canonicalUrl": "https://www.arogga.com/products/100178",
       "openGraph": {
         "title": "Buy Womens Dresses Corset Leather With Skirt Online in Bangladesh | Arogga",
         "description": "The Corset Leather With Skirt is a bold and edgy ensemble that combines a stylish corset with a matching skirt. Ideal for fashion-forward individuals, it makes a statement at any event.",
@@ -71892,7 +71892,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/womens-dresses-corset-leather-with-skirt-100178",
+      "local": "/products/100178",
       "api": "/api/products/100178",
       "source": "https://dummyjson.com/products/178"
     },
@@ -72302,7 +72302,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/womens-dresses-corset-with-black-skirt-100179",
+      "canonicalUrl": "https://www.arogga.com/products/100179",
       "openGraph": {
         "title": "Buy Womens Dresses Corset With Black Skirt Online in Bangladesh | Arogga",
         "description": "The Corset With Black Skirt is a chic and versatile outfit that pairs a fashionable corset with a classic black skirt. It offers a trendy and coordinated look for various occasions.",
@@ -72313,7 +72313,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/womens-dresses-corset-with-black-skirt-100179",
+      "local": "/products/100179",
       "api": "/api/products/100179",
       "source": "https://dummyjson.com/products/179"
     },
@@ -72723,7 +72723,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/womens-dresses-dress-pea-100180",
+      "canonicalUrl": "https://www.arogga.com/products/100180",
       "openGraph": {
         "title": "Buy Womens Dresses Dress Pea Online in Bangladesh | Arogga",
         "description": "The Dress Pea is a stylish and comfortable dress with a pea pattern. Perfect for casual outings, it adds a playful and fun element to your wardrobe, making it a great choice for day-to-day wear.",
@@ -72734,7 +72734,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/womens-dresses-dress-pea-100180",
+      "local": "/products/100180",
       "api": "/api/products/100180",
       "source": "https://dummyjson.com/products/180"
     },
@@ -73144,7 +73144,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/womens-dresses-marni-red-black-suit-100181",
+      "canonicalUrl": "https://www.arogga.com/products/100181",
       "openGraph": {
         "title": "Buy Womens Dresses Marni Red & Black Suit Online in Bangladesh | Arogga",
         "description": "The Marni Red & Black Suit is a sophisticated and fashion-forward suit ensemble. With a combination of red and black tones, it showcases a modern design for a bold and confident look.",
@@ -73155,7 +73155,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/womens-dresses-marni-red-black-suit-100181",
+      "local": "/products/100181",
       "api": "/api/products/100181",
       "source": "https://dummyjson.com/products/181"
     },
@@ -73555,7 +73555,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/womens-jewellery-green-crystal-earring-100182",
+      "canonicalUrl": "https://www.arogga.com/products/100182",
       "openGraph": {
         "title": "Buy Womens Jewellery Green Crystal Earring Online in Bangladesh | Arogga",
         "description": "The Green Crystal Earring is a dazzling accessory that features a vibrant green crystal. With a classic design, it adds a touch of elegance to your ensemble, perfect for formal or special occasions.",
@@ -73566,7 +73566,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/womens-jewellery-green-crystal-earring-100182",
+      "local": "/products/100182",
       "api": "/api/products/100182",
       "source": "https://dummyjson.com/products/182"
     },
@@ -73966,7 +73966,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/womens-jewellery-green-oval-earring-100183",
+      "canonicalUrl": "https://www.arogga.com/products/100183",
       "openGraph": {
         "title": "Buy Womens Jewellery Green Oval Earring Online in Bangladesh | Arogga",
         "description": "The Green Oval Earring is a stylish and versatile accessory with a unique oval shape. Whether for casual or dressy occasions, its green hue and contemporary design make it a standout piece.",
@@ -73977,7 +73977,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/womens-jewellery-green-oval-earring-100183",
+      "local": "/products/100183",
       "api": "/api/products/100183",
       "source": "https://dummyjson.com/products/183"
     },
@@ -74377,7 +74377,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/womens-jewellery-tropical-earring-100184",
+      "canonicalUrl": "https://www.arogga.com/products/100184",
       "openGraph": {
         "title": "Buy Womens Jewellery Tropical Earring Online in Bangladesh | Arogga",
         "description": "The Tropical Earring is a fun and playful accessory inspired by tropical elements. Featuring vibrant colors and a lively design, it's perfect for adding a touch of summer to your look.",
@@ -74388,7 +74388,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/womens-jewellery-tropical-earring-100184",
+      "local": "/products/100184",
       "api": "/api/products/100184",
       "source": "https://dummyjson.com/products/184"
     },
@@ -74798,7 +74798,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/comfort-trends-black-brown-slipper-100185",
+      "canonicalUrl": "https://www.arogga.com/products/100185",
       "openGraph": {
         "title": "Buy Comfort Trends Black & Brown Slipper Online in Bangladesh | Arogga",
         "description": "The Black & Brown Slipper is a comfortable and stylish choice for casual wear. Featuring a blend of black and brown colors, it adds a touch of sophistication to your relaxation.",
@@ -74809,7 +74809,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/comfort-trends-black-brown-slipper-100185",
+      "local": "/products/100185",
       "api": "/api/products/100185",
       "source": "https://dummyjson.com/products/185"
     },
@@ -75219,7 +75219,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/calvin-klein-heel-shoes-100186",
+      "canonicalUrl": "https://www.arogga.com/products/100186",
       "openGraph": {
         "title": "Buy Calvin Klein Heel Shoes Online in Bangladesh | Arogga",
         "description": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
@@ -75230,7 +75230,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/calvin-klein-heel-shoes-100186",
+      "local": "/products/100186",
       "api": "/api/products/100186",
       "source": "https://dummyjson.com/products/186"
     },
@@ -75640,7 +75640,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-diva-golden-shoes-woman-100187",
+      "canonicalUrl": "https://www.arogga.com/products/100187",
       "openGraph": {
         "title": "Buy Fashion Diva Golden Shoes Woman Online in Bangladesh | Arogga",
         "description": "The Golden Shoes for Women are a glamorous choice for special occasions. Featuring a golden hue and stylish design, they add a touch of luxury to your outfit.",
@@ -75651,7 +75651,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-diva-golden-shoes-woman-100187",
+      "local": "/products/100187",
       "api": "/api/products/100187",
       "source": "https://dummyjson.com/products/187"
     },
@@ -76061,7 +76061,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/pampi-shoes-100188",
+      "canonicalUrl": "https://www.arogga.com/products/100188",
       "openGraph": {
         "title": "Buy Pampi Shoes Online in Bangladesh | Arogga",
         "description": "Pampi Shoes offer a blend of comfort and style for everyday use. With a versatile design, they are suitable for various casual occasions, providing a trendy and relaxed look.",
@@ -76072,7 +76072,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/pampi-shoes-100188",
+      "local": "/products/100188",
       "api": "/api/products/100188",
       "source": "https://dummyjson.com/products/188"
     },
@@ -76482,7 +76482,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-express-red-shoes-100189",
+      "canonicalUrl": "https://www.arogga.com/products/100189",
       "openGraph": {
         "title": "Buy Fashion Express Red Shoes Online in Bangladesh | Arogga",
         "description": "The Red Shoes make a bold statement with their vibrant red color. Whether for a party or a casual outing, these shoes add a pop of color and style to your wardrobe.",
@@ -76493,7 +76493,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-express-red-shoes-100189",
+      "local": "/products/100189",
       "api": "/api/products/100189",
       "source": "https://dummyjson.com/products/189"
     },
@@ -76893,7 +76893,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/iwc-ingenieur-automatic-steel-100190",
+      "canonicalUrl": "https://www.arogga.com/products/100190",
       "openGraph": {
         "title": "Buy IWC Ingenieur Automatic Steel Online in Bangladesh | Arogga",
         "description": "The IWC Ingenieur Automatic Steel watch is a durable and sophisticated timepiece. With a stainless steel case and automatic movement, it combines precision and style for watch enthusiasts.",
@@ -76904,7 +76904,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/iwc-ingenieur-automatic-steel-100190",
+      "local": "/products/100190",
       "api": "/api/products/100190",
       "source": "https://dummyjson.com/products/190"
     },
@@ -77304,7 +77304,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/rolex-cellini-moonphase-100191",
+      "canonicalUrl": "https://www.arogga.com/products/100191",
       "openGraph": {
         "title": "Buy Rolex Cellini Moonphase Online in Bangladesh | Arogga",
         "description": "The Rolex Cellini Moonphase watch is a masterpiece of horology. Featuring a moon phase complication, it showcases the craftsmanship and elegance that Rolex is renowned for.",
@@ -77315,7 +77315,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/rolex-cellini-moonphase-100191",
+      "local": "/products/100191",
       "api": "/api/products/100191",
       "source": "https://dummyjson.com/products/191"
     },
@@ -77715,7 +77715,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/rolex-datejust-women-100192",
+      "canonicalUrl": "https://www.arogga.com/products/100192",
       "openGraph": {
         "title": "Buy Rolex Datejust Women Online in Bangladesh | Arogga",
         "description": "The Rolex Datejust Women's watch is an iconic timepiece designed for women. With a timeless design and a date complication, it offers both elegance and functionality.",
@@ -77726,7 +77726,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/rolex-datejust-women-100192",
+      "local": "/products/100192",
       "api": "/api/products/100192",
       "source": "https://dummyjson.com/products/192"
     },
@@ -78126,7 +78126,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-gold-watch-gold-for-women-100193",
+      "canonicalUrl": "https://www.arogga.com/products/100193",
       "openGraph": {
         "title": "Buy Fashion Gold Watch Gold for Women Online in Bangladesh | Arogga",
         "description": "The Gold Women's Watch is a stunning accessory that combines luxury and style. Featuring a gold-plated case and a chic design, it adds a touch of glamour to any outfit.",
@@ -78137,7 +78137,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-gold-watch-gold-for-women-100193",
+      "local": "/products/100193",
       "api": "/api/products/100193",
       "source": "https://dummyjson.com/products/193"
     },
@@ -78537,7 +78537,7 @@
         "Beauty",
         "online shopping"
       ],
-      "canonicalUrl": "/products/fashion-co-women-s-wrist-watch-100194",
+      "canonicalUrl": "https://www.arogga.com/products/100194",
       "openGraph": {
         "title": "Buy Fashion Co. Women's Wrist Watch Online in Bangladesh | Arogga",
         "description": "The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simple yet elegant design, it complements various styles.",
@@ -78548,7 +78548,7 @@
       "follow": true
     },
     "urls": {
-      "local": "/products/fashion-co-women-s-wrist-watch-100194",
+      "local": "/products/100194",
       "api": "/api/products/100194",
       "source": "https://dummyjson.com/products/194"
     },

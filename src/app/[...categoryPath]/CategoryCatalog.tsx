@@ -179,12 +179,12 @@ export default function CategoryCatalog({ category, products }: Props) {
                     <article className={styles.productCard} key={product.id}>
                       <button type="button" className={styles.favorite} aria-label={`Save ${product.name}`}><Heart size={16} /></button>
                       {discount > 0 && <span className={styles.discount}>{discount}% OFF</span>}
-                      <Link href={`/products/${product.slug}`} className={styles.imageWrap}>
+                      <Link href={`/products/${product.id}`} className={styles.imageWrap}>
                         <Image src={image} alt={product.media?.featuredImage?.alt || product.name} fill sizes="(max-width: 640px) 50vw, (max-width: 1000px) 25vw, 180px" className={styles.productImage} unoptimized />
                       </Link>
                       <div className={styles.productBody}>
                         <p className={styles.brand}>{product.brand?.name || "Arogga"}</p>
-                        <Link href={`/products/${product.slug}`} className={styles.productName}>{product.name}</Link>
+                        <Link href={`/products/${product.id}`} className={styles.productName}>{product.name}</Link>
                         <div className={styles.rating}><Star size={12} fill="#f5a623" strokeWidth={0} /><strong>{rating.toFixed(1)}</strong><span>({product.ratings?.count ?? 0})</span></div>
                         <div className={styles.price}><strong>{symbol}{price.toFixed(0)}</strong>{regular > price && <del>{symbol}{regular.toFixed(0)}</del>}</div>
                         <div className={styles.cardBottom}>

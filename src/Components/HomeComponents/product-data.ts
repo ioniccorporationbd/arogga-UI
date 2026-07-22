@@ -83,7 +83,7 @@ export function normalizeProduct(product: JsonProduct): ProductCardData {
   return {
     id: String(product.id),
     slug: product.slug,
-    href: product.urls?.local || `/products/${product.slug}`,
+    href: `/products/${product.id}`,
     name: product.name,
     brand: product.brand?.name || "Brand",
     category: product.taxonomy?.subCategory?.name || product.taxonomy?.category?.name || product.taxonomy?.department?.name || "Product",

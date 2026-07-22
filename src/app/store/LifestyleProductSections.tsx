@@ -121,14 +121,14 @@ export default function LifestyleProductSections() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/tara.json", {
+        const response = await fetch("/data.json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load /tara.json. Status: ${response.status}`,
+            `Unable to load /data.json. Status: ${response.status}`,
           );
         }
 
@@ -136,7 +136,7 @@ export default function LifestyleProductSections() {
 
         if (!Array.isArray(data)) {
           throw new Error(
-            "public/tara.json must contain a JSON array.",
+            "public/data.json must contain a JSON array.",
           );
         }
 
@@ -1450,7 +1450,7 @@ function normalizeProduct(
   return {
     ...product,
     uniqueId: `product-${product.id}-${index}`,
-    href: `/product/${createSlug(product.title)}`,
+    href: `/products/${product.id}`,
     salePrice,
     originalPrice:
       salePrice / (1 - discount / 100),

@@ -64,7 +64,7 @@ export default function CraveCartSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/tara.json", {
+        const response = await fetch("/data.json", {
           cache: "no-store",
           signal: controller.signal,
         });
@@ -79,7 +79,7 @@ export default function CraveCartSection() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/tara.json must contain a JSON array.",
+            "public/data.json must contain a JSON array.",
           );
         }
 
@@ -1377,9 +1377,7 @@ function normalizeProduct(
 
   return {
     ...product,
-    href: `/product/${createSlug(
-      product.title,
-    )}`,
+    href: `/products/${product.id}`,
     salePrice,
     originalPrice,
     discount,
