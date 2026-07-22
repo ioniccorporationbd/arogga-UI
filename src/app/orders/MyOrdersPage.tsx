@@ -78,6 +78,8 @@ type Store = {
   postAction: (phone: string, orderId: string, action: string, body?: unknown) => Promise<Record<string, unknown>>;
 };
 
+const ORDERS_PATH = "/account/orders";
+
 const useOrdersStore = create<Store>((set) => ({
   orders: [], summary: {}, statusCounts: {}, total: 0, totalPages: 1, loading: true, actionLoading: "", error: "",
   async fetchOrders(phone, query) {
@@ -158,7 +160,7 @@ function Toast({ message, onClose }: { message: string; onClose: () => void }) {
   return <div className="orders-toast" role="status"><CheckCircle2 />{message}</div>;
 }
 
-export default function MyOrdersPage() {
+export default function MyOrdersPage({ embedded = false }: { embedded?: boolean } = {}) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { user, ready, openLoginModal, logout } = useAuth();
@@ -192,7 +194,7 @@ export default function MyOrdersPage() {
 
   useEffect(() => {
     if (ready && !user) {
-      sessionStorage.setItem("arogga-intended-destination", "/orders");
+      sessionStorage.setItem("arogga-intended-destination", ORDERS_PATH);
       openLoginModal("Login with mobile number to view My Orders.");
     }
   }, [ready, user, openLoginModal]);
@@ -202,7 +204,7 @@ export default function MyOrdersPage() {
       const next = getQuery(searchParams);
       if (queryText) next.set("search", queryText); else next.delete("search");
       next.set("page", "1");
-      router.replace(`/orders?${next.toString()}`, { scroll: false });
+      router.replace(`${ORDERS_PATH}?${next.toString()}`, { scroll: false });
     }, 350);
     return () => window.clearTimeout(id);
   }, [queryText]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -215,7 +217,7 @@ export default function MyOrdersPage() {
     const next = getQuery(searchParams);
     if (!value || value === "all") next.delete(key); else next.set(key, value);
     if (key !== "page") next.set("page", "1");
-    router.push(`/orders?${next.toString()}`, { scroll: false });
+    router.push(`${ORDERS_PATH}?${next.toString()}`, { scroll: false });
   }
 
   function applyFilters() {
@@ -223,13 +225,13 @@ export default function MyOrdersPage() {
     Object.entries(filters).forEach(([key, value]) => value && value !== "all" ? next.set(key, value) : next.delete(key));
     next.set("page", "1");
     setFilterOpen(false);
-    router.push(`/orders?${next.toString()}`, { scroll: false });
+    router.push(`${ORDERS_PATH}?${next.toString()}`, { scroll: false });
   }
 
   function resetFilters() {
     setFilters({ status: "all", paymentStatus: "all", paymentMethod: "all", deliveryStatus: "all", returnStatus: "all", minAmount: "", maxAmount: "", from: "", to: "" });
     setQueryText("");
-    router.push("/orders", { scroll: false });
+    router.push(ORDERS_PATH, { scroll: false });
   }
 
   async function refresh() { if (user?.phone) await store.fetchOrders(user.phone, getQuery(searchParams)); }
@@ -267,7 +269,7 @@ export default function MyOrdersPage() {
 
   if (ready && !user) return <ProtectedActionPrompt title="Login to view orders" message="Your order history and delivery status are private. Login to continue." reason="Login to see your orders." />;
 
-  return <main className="mo-page"><aside className={`account-sidebar ${sidebarOpen ? "open" : ""}`}><div><UserRound /><span>{user?.phone || "Guest"}</span><button type="button" onClick={() => setSidebarOpen(false)}><X /></button></div><nav>{[["/account/profile", "Dashboard", PanelLeft], ["/orders", "My Orders", Package], ["/wishlist", "Wishlist", Heart], ["/inbox", "Inbox", Inbox], ["/account/addresses", "Saved Addresses", MapPin], ["/account/payment", "Payment Methods", CreditCard], ["/account/reviews", "Reviews", Star], ["/account/returns", "Returns and Refunds", RotateCcw], ["/account/settings", "Profile Settings", UserRound]].map(([href, label, Icon]) => { const I = Icon as typeof Package; return <Link key={String(href)} href={String(href)} className={href === "/orders" ? "active" : ""}><I />{String(label)}</Link>; })}<button type="button" onClick={() => { logout(); router.push("/"); }}><LogOut />Logout</button></nav></aside><section className="mo-main"><header className="orders-header"><button type="button" className="mobile-menu" onClick={() => setSidebarOpen(true)}><Menu /></button><nav><Link href="/"><Home size={14} />Home</Link><span>/</span><Link href="/account/profile">My Account</Link><span>/</span><b>My Orders</b></nav><div><div><h1>My Orders</h1><p>Track, manage, and review all your orders</p></div><button type="button" onClick={() => setFilterOpen(true)}><Filter />Filter</button></div><div className="orders-tools"><label><Search /><input value={queryText} onChange={(e) => setQueryText(e.target.value)} placeholder="Search by order ID, product, seller, tracking" />{queryText ? <button type="button" onClick={() => setQueryText("")}><X /></button> : null}</label><select value={sort} onChange={(e) => setParam("sort", e.target.value)} aria-label="Sort orders"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="highest">Highest amount</option><option value="lowest">Lowest amount</option><option value="updated">Recently updated</option></select></div></header>
+  return <main className={`mo-page ${embedded ? "embedded" : ""}`}>{!embedded ? <aside className={`account-sidebar ${sidebarOpen ? "open" : ""}`}><div><UserRound /><span>{user?.phone || "Guest"}</span><button type="button" onClick={() => setSidebarOpen(false)}><X /></button></div><nav>{[["/account/profile", "Dashboard", PanelLeft], [ORDERS_PATH, "My Orders", Package], ["/wishlist", "Wishlist", Heart], ["/inbox", "Inbox", Inbox], ["/account/addresses", "Saved Addresses", MapPin], ["/account/payment", "Payment Methods", CreditCard], ["/account/reviews", "Reviews", Star], ["/account/returns", "Returns and Refunds", RotateCcw], ["/account/settings", "Profile Settings", UserRound]].map(([href, label, Icon]) => { const I = Icon as typeof Package; return <Link key={String(href)} href={String(href)} className={href === ORDERS_PATH ? "active" : ""}><I />{String(label)}</Link>; })}<button type="button" onClick={() => { logout(); router.push("/"); }}><LogOut />Logout</button></nav></aside> : null}<section className="mo-main"><header className="orders-header"><button type="button" className="mobile-menu" onClick={() => setSidebarOpen(true)}><Menu /></button><nav><Link href="/"><Home size={14} />Home</Link><span>/</span><Link href="/account/profile">My Account</Link><span>/</span><b>My Orders</b></nav><div><div><h1>My Orders</h1><p>Track, manage, and review all your orders</p></div><button type="button" onClick={() => setFilterOpen(true)}><Filter />Filter</button></div><div className="orders-tools"><label><Search /><input value={queryText} onChange={(e) => setQueryText(e.target.value)} placeholder="Search by order ID, product, seller, tracking" />{queryText ? <button type="button" onClick={() => setQueryText("")}><X /></button> : null}</label><select value={sort} onChange={(e) => setParam("sort", e.target.value)} aria-label="Sort orders"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="highest">Highest amount</option><option value="lowest">Lowest amount</option><option value="updated">Recently updated</option></select></div></header>
 
   <section className="summary-grid">{store.loading ? Array.from({ length: 6 }).map((_, i) => <div className="summary-card skeleton" key={i} />) : summaryCards.map(([key, label, Icon, help]) => <button type="button" key={key} className={`summary-card ${activeStatus === key || (key === "total" && activeStatus === "all") ? "active" : ""}`} onClick={() => setParam("status", key === "total" ? "all" : key)}><Icon /><span>{label}</span><strong>{store.summary[key] || 0}</strong><small>{help}</small></button>)}</section>
   <nav className="status-tabs" aria-label="Order status tabs">{tabs.map((tab) => { const meta = statusMeta[tab]; const Icon = meta.icon; return <button type="button" key={tab} onClick={() => setParam("status", tab)} className={activeStatus === tab ? "active" : ""}><Icon size={15} />{meta.label}<b>{store.statusCounts[tab] || 0}</b></button>; })}</nav>

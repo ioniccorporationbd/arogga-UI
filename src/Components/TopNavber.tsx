@@ -188,7 +188,7 @@ export default function TopNavber() {
                 <Link href="/wishlist" onClick={() => setDropdown(null)}>
                   <Heart /> Wishlist
                 </Link>
-                <Link href="/orders" onClick={() => setDropdown(null)}>
+                <Link href="/account/orders" onClick={() => setDropdown(null)}>
                   <Package /> Orders
                 </Link>
                 {user ? (
@@ -205,10 +205,10 @@ export default function TopNavber() {
               </div>
             </div>
 
-            <Link href="/orders" onClick={(event) => {
+            <Link href="/account/orders" onClick={(event) => {
               if (user) return;
               event.preventDefault();
-              openProtectedRoute("/orders", "Login to see your orders.");
+              openProtectedRoute("/account/orders", "Login to see your orders.");
             }}>
               <Package />
               <span>
@@ -314,7 +314,7 @@ export default function TopNavber() {
         ))}
         <button type="button" onClick={() => {
           setDrawerOpen(false);
-          openProtectedRoute("/orders", "Login to see your orders.");
+          openProtectedRoute("/account/orders", "Login to see your orders.");
         }}>
           <Package /> Orders
         </button>

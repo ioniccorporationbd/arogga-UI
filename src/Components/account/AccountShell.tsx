@@ -72,8 +72,8 @@ export default function AccountShell({ children }: { children: ReactNode }) {
             {links.map(([slug, label, Icon]) => (
               <Link
                 key={slug}
-                href={slug === "orders" ? "/orders" : slug === "wishlist" ? "/wishlist" : `/account/${slug}`}
-                className={path.endsWith(`/${slug}`) ? styles.active : ""}
+                href={slug === "orders" ? "/account/orders" : slug === "wishlist" ? "/wishlist" : `/account/${slug}`}
+                className={path.endsWith(`/${slug}`) || (slug === "orders" && path === "/account/orders") ? styles.active : ""}
               >
                 <Icon /><span>{label}</span><ChevronRight />
               </Link>

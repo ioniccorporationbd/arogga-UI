@@ -1,10 +1,5 @@
-import { Suspense } from "react";
-import MyOrdersPage from "./MyOrdersPage";
+import { redirect } from "next/navigation";
 
 export default function Page() {
-  return (
-    <Suspense fallback={<main className="orders-page"><section>Loading orders...</section></main>}>
-      <MyOrdersPage />
-    </Suspense>
-  );
+  redirect("/account/orders");
 }
