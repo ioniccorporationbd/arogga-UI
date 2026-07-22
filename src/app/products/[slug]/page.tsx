@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -20,6 +19,7 @@ import {
 import { getCurrencySymbol, getProductDiscount, getProductPrice } from "@/lib/products";
 import { getServerProductByIdentifier } from "@/lib/server-products";
 import ProductDetailActions from "./ProductDetailActions";
+import ProductImageSlider from "./ProductImageSlider";
 import ProductRecommendations from "./ProductRecommendations";
 import "./product-detail.css";
 
@@ -76,9 +76,11 @@ export default async function ProductDetailsPage({
   const image = product.media?.featuredImage?.url || "/images/product-fallback.png";
   const imageAlt = product.media?.featuredImage?.alt || product.name;
   const gallery = [
-    image,
-    ...(product.media?.gallery || []).map((item) => item.url).filter(Boolean),
-  ].slice(0, 5);
+    { src: image, alt: imageAlt },
+    ...(product.media?.gallery || [])
+      .map((item) => ({ src: item.url, alt: item.alt || item.title || imageAlt }))
+      .filter((item) => Boolean(item.src)),
+  ];
   const rating = numberOrFallback(product.ratings?.average, 0);
   const ratingCount = numberOrFallback(product.ratings?.count, 0);
   const distribution = product.ratings?.distribution || { "5": 0, "4": 0, "3": 0, "2": 0, "1": 0 };
@@ -123,33 +125,12 @@ export default async function ProductDetailsPage({
         </nav>
 
         <section className="pd-main">
-          <div className="pd-gallery-column">
-            <div className="pd-thumbnails" aria-label="Product images">
-              {gallery.map((galleryImage, index) => (
-                <div className={`pd-thumb ${index === 0 ? "active" : ""}`} key={`${galleryImage}-${index}`}>
-                  <Image src={galleryImage} alt={`${imageAlt} view ${index + 1}`} fill sizes="72px" className="pd-thumb-image" unoptimized />
-                </div>
-              ))}
-            </div>
-
-            <div className="pd-media">
-              <div className="pd-media-badges">
-                {discount > 0 && <span className="pd-discount">{discount}% OFF</span>}
-                {product.shipping?.freeShipping ? <span className="pd-free">Free delivery</span> : null}
-              </div>
-              <div className="pd-image-wrap">
-                <Image
-                  src={image}
-                  alt={imageAlt}
-                  fill
-                  sizes="(max-width: 900px) 100vw, 48vw"
-                  priority
-                  className="pd-image"
-                  unoptimized
-                />
-              </div>
-            </div>
-          </div>
+          <ProductImageSlider
+            images={gallery}
+            discount={discount}
+            freeShipping={Boolean(product.shipping?.freeShipping)}
+            productName={product.name}
+          />
 
           <aside className="pd-purchase-card">
             <div className="pd-topline">
