@@ -1,141 +1,78 @@
 import Link from "next/link";
 import {
-  AlertTriangle,
-  Ban,
-  Hash,
+  ArrowLeft,
   Home,
-  Minus,
-  Plus,
+  Search,
+  ShoppingBag,
+  Sparkles,
+  Stethoscope,
 } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <main className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-white px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#f5fbfa] blur-3xl sm:h-[620px] sm:w-[620px]"
-      />
+    <main className="relative isolate flex min-h-screen w-full items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_15%_15%,rgba(8,123,117,.16),transparent_30%),radial-gradient(circle_at_86%_20%,rgba(255,183,3,.18),transparent_28%),linear-gradient(180deg,#f7fbfa_0%,#fff_46%,#effaf8_100%)] px-4 py-10 sm:px-6 lg:px-8">
+      <style>{`
+        @keyframes nfFloat { 0%,100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-14px) rotate(1.5deg); } }
+        @keyframes nfOrbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes nfPulse { 0%,100% { opacity: .45; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+        @keyframes nfEnter { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+        .nf-enter { animation: nfEnter .72s cubic-bezier(.22,.8,.22,1) both; }
+        .nf-float { animation: nfFloat 6s ease-in-out infinite; }
+        .nf-orbit { animation: nfOrbit 18s linear infinite; }
+        .nf-pulse { animation: nfPulse 3s ease-in-out infinite; }
+      `}</style>
 
-      <section
-        aria-labelledby="not-found-title"
-        className="relative z-10 mx-auto flex w-full max-w-[760px] flex-col items-center text-center"
-      >
-        <NotFoundIllustration />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-20 opacity-[0.26] [background-image:linear-gradient(rgba(8,123,117,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(8,123,117,0.05)_1px,transparent_1px)] [background-size:44px_44px]" />
+      <div aria-hidden="true" className="pointer-events-none absolute -left-44 top-10 -z-10 h-[430px] w-[430px] rounded-full bg-[#dff7f2]/80 blur-3xl" />
+      <div aria-hidden="true" className="pointer-events-none absolute -right-44 bottom-4 -z-10 h-[430px] w-[430px] rounded-full bg-[#fff1d8]/80 blur-3xl" />
 
-        <div className="mt-8 sm:mt-10">
-          <p className="text-[13px] font-bold uppercase tracking-[0.18em] text-[#087b75]">
-            Error 404
-          </p>
+      <section aria-labelledby="not-found-title" className="nf-enter mx-auto grid w-full max-w-[1120px] items-center gap-8 lg:grid-cols-[.9fr_1.1fr] lg:gap-12">
+        <div className="relative mx-auto w-full max-w-[500px] lg:max-w-none">
+          <div className="nf-float relative aspect-square overflow-hidden rounded-[38px] border border-white/85 bg-white/86 p-5 shadow-[0_42px_110px_-64px_rgba(15,23,42,.62)] backdrop-blur-2xl">
+            <div className="relative grid h-full place-items-center overflow-hidden rounded-[30px] bg-[radial-gradient(circle_at_50%_35%,#ffffff_0%,#f0fbf8_48%,#dff5f1_100%)]">
+              <div className="nf-orbit absolute h-[78%] w-[78%] rounded-full border border-dashed border-[#9bd8cf]" />
+              <div className="nf-orbit absolute h-[60%] w-[60%] rounded-full border border-dashed border-[#ffd28b]" style={{ animationDirection: "reverse", animationDuration: "22s" }} />
 
-          <h1
-            id="not-found-title"
-            className="mt-3 text-[20px] font-extrabold leading-[1.4] tracking-[-0.025em] text-black"
-          >
-            Page Not Found
-          </h1>
+              <div className="relative text-center">
+                <p className="text-[86px] font-black leading-none tracking-[-0.12em] text-[#087b75] sm:text-[118px]">404</p>
+                <div className="mx-auto mt-3 inline-flex items-center gap-2 rounded-full border border-[#cfeae6] bg-white/88 px-4 py-2 text-[12px] font-extrabold text-[#087b75] shadow-sm">
+                  <Search size={15} /> Page route missing
+                </div>
+              </div>
 
-          <p className="mx-auto mt-3 max-w-[560px] text-[16px] leading-7 text-[#52606d]">
-            We&apos;re sorry, the page you requested could not be found.
-            Please return to the Anukov home page.
-          </p>
-
-          <Link
-            href="/"
-            className="group mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-[8px] bg-[#087b75] px-6 text-[13px] font-bold text-white shadow-[0_12px_25px_-16px_rgba(8,123,117,0.72)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#066b66] hover:shadow-[0_18px_32px_-18px_rgba(8,123,117,0.78)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#087b75] focus-visible:ring-offset-4 active:translate-y-0"
-          >
-            <Home
-              size={18}
-              strokeWidth={1.8}
-              className="transition-transform duration-300 group-hover:scale-105"
-            />
-
-            Home
-          </Link>
-        </div>
-      </section>
-    </main>
-  );
-}
-
-function NotFoundIllustration() {
-  return (
-    <div
-      aria-hidden="true"
-      className="relative mx-auto h-[250px] w-full max-w-[620px] sm:h-[300px] lg:h-[340px]"
-    >
-      <div className="absolute left-1/2 top-1/2 h-[190px] w-[270px] -translate-x-1/2 -translate-y-1/2 sm:h-[220px] sm:w-[330px] lg:h-[250px] lg:w-[380px]">
-        <div className="absolute bottom-[26px] left-[22px] h-[112px] w-[180px] rounded-[7px] border-2 border-[#dde6ee] bg-white sm:h-[130px] sm:w-[215px] lg:h-[145px] lg:w-[245px]">
-          <div className="flex h-8 items-center gap-2 border-b-2 border-[#e3eaf0] px-3">
-            <span className="h-2 w-2 rounded-full border border-[#cad6df]" />
-            <span className="h-2 w-2 rounded-full border border-[#cad6df]" />
-            <span className="h-2 w-2 rounded-full border border-[#cad6df]" />
+              <span className="nf-pulse absolute left-8 top-10 grid h-12 w-12 place-items-center rounded-2xl bg-white text-[#087b75] shadow-[0_18px_44px_-28px_rgba(15,23,42,.55)]"><ShoppingBag size={22} /></span>
+              <span className="nf-pulse absolute bottom-12 right-10 grid h-12 w-12 place-items-center rounded-2xl bg-white text-[#087b75] shadow-[0_18px_44px_-28px_rgba(15,23,42,.55)]" style={{ animationDelay: ".45s" }}><Stethoscope size={22} /></span>
+              <span className="absolute right-11 top-12 rounded-full bg-[#ffb703] p-2 text-white shadow-lg"><Sparkles size={18} /></span>
+            </div>
           </div>
         </div>
 
-        <div className="absolute right-[5px] top-[8px] min-h-[120px] w-[205px] rounded-[14px] border-2 border-[#dce5ed] bg-white px-4 py-4 shadow-[0_15px_40px_-30px_rgba(15,23,42,0.28)] sm:min-h-[140px] sm:w-[240px] sm:px-5 sm:py-5 lg:min-h-[160px] lg:w-[270px] lg:px-6 lg:py-6">
-          <strong className="block text-center text-[20px] font-black leading-none tracking-[-0.04em] text-[#ff6269]">
-            404
-          </strong>
+        <div className="text-center lg:text-left">
+          <div className="inline-flex min-h-10 items-center gap-2 rounded-full border border-[#cae7e3] bg-white/82 px-4 text-[12px] font-extrabold uppercase tracking-[0.16em] text-[#087b75] shadow-sm backdrop-blur">
+            <Sparkles size={16} /> Better navigation
+          </div>
 
-          <span className="absolute -bottom-[14px] right-4 h-7 w-7 rotate-45 border-b-2 border-r-2 border-[#dce5ed] bg-white" />
+          <h1 id="not-found-title" className="mt-5 text-[34px] font-black leading-[1.08] tracking-[-0.055em] text-[#101828] sm:text-[48px] lg:text-[64px]">
+            This page is not available, but your care journey can continue.
+          </h1>
+
+          <p className="mx-auto mt-5 max-w-[680px] text-[15px] leading-7 text-[#5f6b78] sm:text-[17px] lg:mx-0">
+            The link may be old, moved, or typed incorrectly. Use the improved navigation below to return home, continue shopping, or explore doctor and lab services.
+          </p>
+
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+            <Link href="/" className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-[#087b75] px-6 text-[14px] font-extrabold text-white shadow-[0_22px_46px_-30px_rgba(8,123,117,.74)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#066b66] hover:shadow-[0_30px_58px_-34px_rgba(8,123,117,.82)]">
+              <Home size={17} /> Go home
+            </Link>
+            <Link href="/store" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-[#b9ddd8] bg-white/90 px-6 text-[14px] font-extrabold text-[#087b75] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#087b75] hover:bg-[#f1fbf9]">
+              <ShoppingBag size={17} /> Shop products
+            </Link>
+            <Link href="/doctor" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-[#dce8e6] bg-white/70 px-6 text-[14px] font-extrabold text-[#344054] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#087b75] hover:text-[#087b75]">
+              <ArrowLeft size={17} /> Doctor page
+            </Link>
+          </div>
         </div>
-      </div>
-
-      <span className="absolute left-[9%] top-[44%] h-[3px] w-12 rounded-full bg-[#d8e2ea] sm:left-[12%] sm:w-16" />
-
-      <span className="absolute left-[13%] top-[39%] h-[3px] w-6 rounded-full bg-[#d8e2ea]" />
-
-      <span className="absolute right-[9%] top-[40%] h-[3px] w-14 rounded-full bg-[#d8e2ea] sm:right-[12%] sm:w-20" />
-
-      <span className="absolute right-[13%] top-[45%] h-[3px] w-8 rounded-full bg-[#d8e2ea]" />
-
-      <span className="absolute left-[18%] top-[16%] text-[#d3dee7]">
-        <Plus size={16} strokeWidth={1.6} />
-      </span>
-
-      <span className="absolute left-[12%] top-[64%] text-[#d3dee7]">
-        <Plus size={13} strokeWidth={1.6} />
-      </span>
-
-      <span className="absolute left-[40%] top-[24%] text-[#d3dee7]">
-        <Plus size={18} strokeWidth={1.6} />
-      </span>
-
-      <span className="absolute right-[22%] top-[18%] text-[#d3dee7]">
-        <Plus size={15} strokeWidth={1.6} />
-      </span>
-
-      <span className="absolute right-[12%] top-[60%] text-[#d3dee7]">
-        <Plus size={13} strokeWidth={1.6} />
-      </span>
-
-      <span className="absolute left-[24%] top-[28%] flex h-10 w-10 items-center justify-center rounded-[6px] border-2 border-[#dce5ed] text-[#cbd7e0] sm:h-11 sm:w-11">
-        <Ban size={20} strokeWidth={1.4} />
-      </span>
-
-      <span className="absolute right-[25%] top-[25%] flex h-9 w-9 items-center justify-center rounded-[6px] border-2 border-[#dce5ed] text-[#cbd7e0] sm:h-10 sm:w-10">
-        <Hash size={18} strokeWidth={1.5} />
-      </span>
-
-      <span className="absolute right-[16%] top-[58%] flex h-11 w-11 items-center justify-center rounded-[7px] border-2 border-[#dce5ed] text-[#cbd7e0]">
-        <AlertTriangle size={22} strokeWidth={1.4} />
-      </span>
-
-      <span className="absolute left-[7%] top-[53%] text-[#d7e1e9]">
-        <Minus size={24} strokeWidth={1.6} />
-      </span>
-
-      <span className="absolute right-[34%] top-[29%] text-[#d7e1e9]">
-        <Minus size={22} strokeWidth={1.6} />
-      </span>
-
-      <span className="absolute left-[14%] top-[33%] h-1.5 w-1.5 rounded-full border border-[#d7e1e9]" />
-
-      <span className="absolute right-[30%] top-[12%] h-1.5 w-1.5 rounded-full border border-[#d7e1e9]" />
-
-      <span className="absolute right-[20%] top-[35%] h-1.5 w-1.5 rounded-full border border-[#d7e1e9]" />
-
-      <span className="absolute right-[38%] bottom-[9%] h-1.5 w-1.5 rounded-full border border-[#d7e1e9]" />
-    </div>
+      </section>
+    </main>
   );
 }

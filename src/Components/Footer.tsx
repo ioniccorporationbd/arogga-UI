@@ -268,7 +268,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative isolate overflow-hidden border-t border-[#e0e9e7] bg-[#f7fbfa] text-[#111827]">
+    <footer className="relative isolate overflow-hidden border-t border-[#cfe7e3] bg-[radial-gradient(circle_at_12%_10%,rgba(8,123,117,0.16),transparent_30%),radial-gradient(circle_at_88%_18%,rgba(255,183,3,0.18),transparent_26%),linear-gradient(180deg,#f5fbfa_0%,#eef8f6_42%,#f9fffd_100%)] text-[#111827]">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -left-52 top-12 -z-10 h-[420px] w-[420px] rounded-full bg-[#d9f5ef]/80 blur-3xl"
@@ -285,29 +285,40 @@ export default function Footer() {
       />
 
       <div className="mx-auto w-full max-w-[1440px] px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-14 xl:px-10 xl:py-16">
-        <section className="overflow-hidden rounded-[22px] border border-white/90 bg-white/90 p-5 shadow-[0_28px_75px_-50px_rgba(15,23,42,0.48)] backdrop-blur-xl sm:p-6 lg:p-8">
-          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.75fr] lg:items-center lg:gap-10">
+        <section className="relative overflow-hidden rounded-[28px] border border-white/95 bg-white/88 p-5 shadow-[0_34px_95px_-55px_rgba(15,23,42,0.55)] backdrop-blur-2xl transition-all duration-500 hover:shadow-[0_42px_110px_-62px_rgba(8,123,117,0.62)] sm:p-6 lg:p-8">
+          <div aria-hidden="true" className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-[#087b75]/35 to-transparent" />
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.75fr] lg:items-center lg:gap-10">
             <div>
               <Link
                 href="/"
                 aria-label="Arogga home"
-                className="inline-flex rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-[#087b75] focus-visible:ring-offset-4"
+                className="group inline-flex items-center gap-3 rounded-[20px] border border-[#d9ebe7] bg-gradient-to-br from-white via-[#f6fffd] to-[#edf9f7] p-3 pr-5 shadow-[0_20px_42px_-34px_rgba(8,123,117,0.55)] outline-none transition-all duration-500 hover:-translate-y-1 hover:border-[#9ad5cd] hover:shadow-[0_28px_58px_-34px_rgba(8,123,117,0.68)] focus-visible:ring-2 focus-visible:ring-[#087b75] focus-visible:ring-offset-4"
               >
-                <img
-                  src={IMAGE_URLS.logo}
-                  alt="Arogga"
-                  width={184}
-                  height={64}
-                  draggable={false}
-                  className="h-[52px] w-auto object-contain sm:h-[58px]"
-                />
+                <span className="relative grid h-16 w-16 place-items-center overflow-hidden rounded-[18px] bg-[#087b75] text-white shadow-[inset_0_1px_0_rgba(255,255,255,.28)] transition-transform duration-500 group-hover:rotate-[-3deg] group-hover:scale-105">
+                  <span aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_28%_22%,rgba(255,255,255,.42),transparent_28%),linear-gradient(135deg,#0aa69b,#087b75)]" />
+                  <span className="relative text-[28px] font-black tracking-[-0.12em]">a+</span>
+                </span>
+                <span>
+                  <img
+                    src={IMAGE_URLS.logo}
+                    alt="Arogga"
+                    width={156}
+                    height={52}
+                    draggable={false}
+                    className="h-[38px] w-auto object-contain transition-transform duration-500 group-hover:translate-x-0.5 sm:h-[42px]"
+                  />
+                  <span className="mt-1 block text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#087b75]">Care made simple</span>
+                </span>
               </Link>
 
-              <p className="mt-4 max-w-[470px] text-[16px] leading-7 text-[#5f6b78]">
-                Bangladesh&apos;s trusted healthcare
-                platform for authentic medicines, doctor
-                consultation, lab tests and everyday
-                wellness support.
+              <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#cfe9e5] bg-white/85 px-3 py-2 text-[12px] font-extrabold text-[#087b75] shadow-sm">
+                <ShieldCheck size={15} /> Trusted healthcare super app
+              </div>
+
+              <p className="mt-4 max-w-[500px] text-[15px] leading-7 text-[#5f6b78]">
+                Bangladesh&apos;s trusted healthcare platform for authentic medicines,
+                doctor consultation, lab tests and everyday wellness support — all
+                designed with secure checkout and responsive customer care.
               </p>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -938,8 +949,9 @@ function PartnerPanel({
   partners: PartnerLogo[];
 }) {
   return (
-    <div className="rounded-[20px] border border-[#dfe8e6] bg-white/90 p-5 shadow-[0_20px_46px_-38px_rgba(15,23,42,0.4)] sm:p-6">
-      <div className="flex flex-wrap items-center justify-between gap-4">
+    <div className="group relative overflow-hidden rounded-[22px] border border-[#d7e9e6] bg-white/92 p-5 shadow-[0_24px_58px_-42px_rgba(15,23,42,0.48)] transition-all duration-500 hover:-translate-y-1 hover:border-[#a5d9d1] hover:shadow-[0_34px_72px_-45px_rgba(8,123,117,0.45)] sm:p-6">
+      <div aria-hidden="true" className="absolute -right-14 -top-14 h-32 w-32 rounded-full bg-[#ecfaf8] transition-transform duration-700 group-hover:scale-125" />
+      <div className="relative flex flex-wrap items-center justify-between gap-4">
         <div>
           <h3 className="text-[18px] font-bold leading-6 text-[#101828]">
             {title}
@@ -953,7 +965,7 @@ function PartnerPanel({
         {verifier}
       </div>
 
-      <div className="mt-5 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 xl:flex xl:flex-wrap">
+      <div className="relative mt-5 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 xl:flex xl:flex-wrap">
         {partners.map((partner) => (
           <PartnerImage
             key={partner.name}
@@ -973,7 +985,7 @@ function PartnerImage({
   return (
     <div
       title={partner.name}
-      className="group flex h-[46px] min-w-0 items-center justify-center rounded-[11px] border border-[#dce5e3] bg-white px-2 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#aedad4] hover:shadow-md xl:min-w-[74px] xl:px-3"
+      className="group flex min-h-[58px] min-w-0 flex-col items-center justify-center gap-1 rounded-[15px] border border-[#dce5e3] bg-gradient-to-br from-white to-[#f8fffd] px-3 py-2 text-center shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-[#86cec5] hover:shadow-[0_20px_42px_-28px_rgba(8,123,117,0.52)] xl:min-w-[92px] xl:px-4"
     >
       <img
         src={partner.src}
@@ -986,8 +998,11 @@ function PartnerImage({
           event.currentTarget.style.display =
             "none";
         }}
-        className="max-h-[25px] max-w-full object-contain transition-transform duration-300 group-hover:scale-105 xl:max-w-[64px]"
+        className="max-h-[22px] max-w-full object-contain transition-transform duration-300 group-hover:scale-110 xl:max-w-[72px]"
       />
+      <span className="block max-w-full truncate text-[10px] font-extrabold uppercase tracking-[0.04em] text-[#425466]">
+        {partner.name}
+      </span>
     </div>
   );
 }
