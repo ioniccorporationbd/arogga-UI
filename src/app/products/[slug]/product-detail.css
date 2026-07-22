@@ -35,8 +35,8 @@
 
 .pd-main {
   display: grid;
-  grid-template-columns: minmax(0, 1.42fr) minmax(380px, 0.82fr);
-  gap: 20px;
+  grid-template-columns: minmax(0, 1.38fr) minmax(400px, 0.82fr);
+  gap: 24px;
   align-items: start;
 }
 
@@ -79,9 +79,9 @@
   min-width: 0;
   overflow: hidden;
   border: 1px solid #e2e8e6;
-  border-radius: 24px;
+  border-radius: 28px;
   background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 28px 70px -54px rgba(15, 23, 42, 0.58);
+  box-shadow: 0 34px 90px -58px rgba(15, 23, 42, 0.68);
 }
 
 .pd-media::after {
@@ -107,6 +107,7 @@
   min-height: 610px;
   background:
     radial-gradient(circle at 50% 42%, #ffffff 0%, #f8fbfb 54%, #edf7f4 100%);
+  transition: opacity .38s ease;
 }
 
 .pd-slider-arrow,
@@ -221,11 +222,11 @@
   position: sticky;
   top: 18px;
   overflow: hidden;
-  padding: 22px;
+  padding: 24px;
   border: 1px solid #e2e8e6;
-  border-radius: 24px;
+  border-radius: 28px;
   background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 30px 80px -56px rgba(15, 23, 42, 0.62);
+  box-shadow: 0 34px 90px -56px rgba(15, 23, 42, 0.66);
   backdrop-filter: blur(14px);
 }
 
@@ -555,9 +556,9 @@
 .pd-content-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.55fr);
-  gap: 20px;
+  gap: 24px;
   align-items: start;
-  margin-top: 22px;
+  margin-top: 26px;
 }
 
 .pd-content-main { display: grid; gap: 18px; }
@@ -565,11 +566,11 @@
 
 .pd-panel {
   overflow: hidden;
-  padding: 22px;
+  padding: 24px;
   border: 1px solid #e3ebe8;
-  border-radius: 22px;
+  border-radius: 24px;
   background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 24px 68px -56px rgba(15, 23, 42, 0.52);
+  box-shadow: 0 26px 74px -58px rgba(15, 23, 42, 0.56);
 }
 
 .pd-panel-heading span {
@@ -616,6 +617,85 @@
 
 .pd-info-cards strong { display: block; color: #101828; font-size: 13px; }
 .pd-info-cards span { display: block; margin-top: 4px; color: #667085; font-size: 10px; font-weight: 800; }
+
+.pd-catalog-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 18px 0 20px;
+  padding: 16px;
+  border: 1px solid rgba(8, 123, 117, .18);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 95% 20%, rgba(255, 183, 3, .2), transparent 28%),
+    linear-gradient(135deg, #eefbf8, #ffffff);
+}
+
+.pd-catalog-card span {
+  display: block;
+  color: #087b75;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.pd-catalog-card strong {
+  display: block;
+  margin-top: 4px;
+  color: #101828;
+  font-size: 15px;
+  font-weight: 950;
+}
+
+.pd-catalog-card p { max-width: 470px; margin: 0; font-size: 12px; }
+
+.pd-complete-data-panel {
+  background:
+    radial-gradient(circle at 0 0, rgba(8, 123, 117, .08), transparent 26%),
+    #fff;
+}
+
+.pd-data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.pd-data-grid article {
+  padding: 16px;
+  border: 1px solid #e3ebe8;
+  border-radius: 18px;
+  background: rgba(248, 252, 251, .78);
+}
+
+.pd-data-grid h3 { margin-top: 0; }
+.pd-data-grid dl { margin-top: 12px; }
+.pd-data-grid dd { max-width: 58%; overflow-wrap: anywhere; }
+
+.pd-chip-groups {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.pd-chip-groups div {
+  padding: 13px 14px;
+  border: 1px dashed #cfe4e0;
+  border-radius: 16px;
+  background: #fbfefd;
+}
+
+.pd-chip-groups strong {
+  display: block;
+  color: #087b75;
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.pd-chip-groups p { margin-top: 5px; }
 
 .pd-rating-summary {
   display: grid;
@@ -716,6 +796,7 @@
   .pd-services { grid-template-columns: 1fr; }
   .pd-content-grid { grid-template-columns: minmax(0, 1.45fr) minmax(260px, .75fr); }
   .pd-info-cards { grid-template-columns: repeat(2, 1fr); }
+  .pd-data-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 900px) {
@@ -752,6 +833,8 @@
   .pd-services,
   .pd-info-cards,
   .pd-rating-summary { grid-template-columns: 1fr; }
+  .pd-catalog-card { align-items: flex-start; flex-direction: column; }
+  .pd-data-grid dd { max-width: 55%; }
   .pd-disclaimer { width: min(100% - 20px, 1440px); flex-direction: column; align-items: flex-start; }
   .pd-review-list article { padding-right: 14px; }
   .pd-review-list article span { position: static; display: block; margin-top: 8px; }

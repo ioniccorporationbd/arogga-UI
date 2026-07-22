@@ -107,6 +107,14 @@ export default async function ProductDetailsPage({
   const wishlistCount = numberOrFallback(product.analytics?.wishlistCount, 0);
   const prescriptionRequired = Boolean(product.purchaseRules?.prescriptionRequired);
   const isAvailable = availableQuantity > 0 && product.availability?.isAvailable !== false;
+  const tags = product.taxonomy?.tags || [];
+  const collections = product.taxonomy?.collections || [];
+  const attributes = product.attributes || [];
+  const options = product.options || [];
+  const returnConditions = product.seller?.returnPolicy?.conditions || [];
+  const salesChannels = product.availability?.salesChannels || [];
+  const regions = product.availability?.regions || [];
+  const additionalInfo = Object.entries(product.content?.additionalInfo || {}).filter(([, value]) => Boolean(value));
 
   const dynamicReviews = [
     `${product.brand?.name || "This brand"} ${categoryName.toLowerCase()} is rated ${rating.toFixed(1)} by verified shoppers.`,
@@ -213,6 +221,14 @@ export default async function ProductDetailsPage({
                 <article><strong>{prescriptionRequired ? "Required" : "Not required"}</strong><span>Prescription</span></article>
               </div>
 
+              <div className="pd-catalog-card">
+                <div>
+                  <span>Single catalog file</span>
+                  <strong>public/product-data.Json</strong>
+                </div>
+                <p>Cards, search and product details now read the same item record, same featured image and same 5-image gallery.</p>
+              </div>
+
               <h3>Key Features</h3>
               <ul>{highlights.map((item) => <li key={item}>{item}</li>)}</ul>
 
@@ -273,7 +289,76 @@ export default async function ProductDetailsPage({
               </p>
             </section>
 
-            <section className="pd-panel pd-faq-panel">
+            <section className="pd-panel pd-complete-data-panel">
+              <div className="pd-panel-heading">
+                <span><BadgeCheck size={16} /> Complete catalog data</span>
+                <h2>All Product Data</h2>
+              </div>
+              <div className="pd-data-grid">
+                <article>
+                  <h3>Catalog identity</h3>
+                  <dl>
+                    <div><dt>Product ID</dt><dd>{product.id}</dd></div>
+                    <div><dt>UUID</dt><dd>{product.uuid || "Not available"}</dd></div>
+                    <div><dt>Slug</dt><dd>{product.slug}</dd></div>
+                    <div><dt>SKU</dt><dd>{product.sku || "Not available"}</dd></div>
+                    <div><dt>Barcode</dt><dd>{product.barcode || "Not available"}</dd></div>
+                    <div><dt>Status</dt><dd>{product.status}</dd></div>
+                    <div><dt>Visibility</dt><dd>{product.visibility}</dd></div>
+                  </dl>
+                </article>
+
+                <article>
+                  <h3>Brand & taxonomy</h3>
+                  <dl>
+                    <div><dt>Brand</dt><dd>{product.brand?.name || "Not available"}</dd></div>
+                    <div><dt>Manufacturer</dt><dd>{product.brand?.manufacturer || "Not available"}</dd></div>
+                    <div><dt>Country</dt><dd>{product.brand?.countryOfOrigin || "Not available"}</dd></div>
+                    <div><dt>Department</dt><dd>{departmentName}</dd></div>
+                    <div><dt>Category</dt><dd>{product.taxonomy?.category?.name || "Not available"}</dd></div>
+                    <div><dt>Collections</dt><dd>{collections.map((item) => item.name).join(", ") || "Not available"}</dd></div>
+                    <div><dt>Tags</dt><dd>{tags.join(", ") || "Not available"}</dd></div>
+                  </dl>
+                </article>
+
+                <article>
+                  <h3>Price & inventory</h3>
+                  <dl>
+                    <div><dt>Sale price</dt><dd>{symbol}{formatPrice(price)}</dd></div>
+                    <div><dt>Regular price</dt><dd>{symbol}{formatPrice(regularPrice)}</dd></div>
+                    <div><dt>Discount</dt><dd>{discount}%</dd></div>
+                    <div><dt>Stock status</dt><dd>{product.inventory?.stockStatus || "Not available"}</dd></div>
+                    <div><dt>Available</dt><dd>{availableQuantity}</dd></div>
+                    <div><dt>Min/Max order</dt><dd>{product.purchaseRules?.minimumQuantity || 1} / {maximumQuantity}</dd></div>
+                    <div><dt>Prescription</dt><dd>{prescriptionRequired ? "Required" : "Not required"}</dd></div>
+                  </dl>
+                </article>
+
+                <article>
+                  <h3>Delivery & seller</h3>
+                  <dl>
+                    <div><dt>Seller</dt><dd>{product.seller?.name || "Not available"}</dd></div>
+                    <div><dt>Fulfilled by</dt><dd>{product.seller?.fulfilledBy || "Arogga"}</dd></div>
+                    <div><dt>Delivery</dt><dd>{minimumDelivery}-{maximumDelivery} days</dd></div>
+                    <div><dt>Free shipping</dt><dd>{product.shipping?.freeShipping ? "Yes" : "No"}</dd></div>
+                    <div><dt>Return policy</dt><dd>{product.seller?.returnPolicy?.returnable ? `${returnDays} days` : "Not returnable"}</dd></div>
+                    <div><dt>Channels</dt><dd>{salesChannels.join(", ") || "Online"}</dd></div>
+                    <div><dt>Regions</dt><dd>{regions.join(", ") || "Supported locations"}</dd></div>
+                  </dl>
+                </article>
+              </div>
+
+              {(attributes.length > 0 || options.length > 0 || additionalInfo.length > 0 || returnConditions.length > 0) && (
+                <div className="pd-chip-groups">
+                  {options.length > 0 && <div><strong>Options</strong><p>{options.map((item) => `${item.name || "Option"}: ${item.value || "N/A"}`).join(" • ")}</p></div>}
+                  {attributes.length > 0 && <div><strong>Attributes</strong><p>{attributes.map((item) => `${item.name}: ${item.value}`).join(" • ")}</p></div>}
+                  {additionalInfo.length > 0 && <div><strong>Additional info</strong><p>{additionalInfo.map(([key, value]) => `${key}: ${value}`).join(" • ")}</p></div>}
+                  {returnConditions.length > 0 && <div><strong>Return conditions</strong><p>{returnConditions.join(" • ")}</p></div>}
+                </div>
+              )}
+            </section>
+
+            <section className="pd-faq-panel">
               <h2>Frequently Asked Questions & Answers</h2>
               {[
                 ["Is this product authentic?", `${product.brand?.name || "The brand"} products in this catalog are listed with verified ecommerce product information.`],

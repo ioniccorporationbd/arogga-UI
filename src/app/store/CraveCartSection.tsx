@@ -64,14 +64,14 @@ export default function CraveCartSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/product-data.Json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load data.json. Status: ${response.status}`,
+            `Unable to load product-data.Json. Status: ${response.status}`,
           );
         }
 
@@ -79,7 +79,7 @@ export default function CraveCartSection() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/data.json must contain a JSON array.",
+            "public/product-data.Json must contain a JSON array.",
           );
         }
 

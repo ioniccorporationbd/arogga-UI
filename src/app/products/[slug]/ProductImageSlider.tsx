@@ -46,6 +46,8 @@ export default function ProductImageSlider({
 
   if (slides.length === 0) return null;
 
+  const safeActive = Math.min(active, slides.length - 1);
+
   const previous = () => setActive((current) => (current - 1 + slides.length) % slides.length);
   const next = () => setActive((current) => (current + 1) % slides.length);
 
@@ -55,11 +57,11 @@ export default function ProductImageSlider({
         {slides.map((slide, index) => (
           <button
             type="button"
-            className={`pd-thumb ${index === active ? "active" : ""}`}
+            className={`pd-thumb ${index === safeActive ? "active" : ""}`}
             key={`${slide.src}-${index}`}
             onClick={() => setActive(index)}
             aria-label={`Show ${productName} image ${index + 1}`}
-            aria-current={index === active ? "true" : undefined}
+            aria-current={index === safeActive ? "true" : undefined}
           >
             <Image src={slide.src} alt={slide.alt} fill sizes="72px" className="pd-thumb-image" unoptimized />
           </button>
@@ -76,9 +78,9 @@ export default function ProductImageSlider({
           {freeShipping ? <span className="pd-free">Free delivery</span> : null}
         </div>
 
-        <div className="pd-slider-track" style={{ transform: `translateX(-${active * 100}%)` }}>
+        <div className="pd-slider-track" style={{ transform: `translateX(-${safeActive * 100}%)` }}>
           {slides.map((slide, index) => (
-            <div className="pd-slide" key={`${slide.src}-slide-${index}`} aria-hidden={index !== active}>
+            <div className="pd-slide" key={`${slide.src}-slide-${index}`} aria-hidden={index !== safeActive}>
               <Image
                 src={slide.src}
                 alt={slide.alt}
@@ -109,7 +111,7 @@ export default function ProductImageSlider({
                 <button
                   type="button"
                   key={`${slide.src}-dot`}
-                  className={index === active ? "active" : ""}
+                  className={index === safeActive ? "active" : ""}
                   onClick={() => setActive(index)}
                   aria-label={`Go to image ${index + 1}`}
                 />

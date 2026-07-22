@@ -1,6 +1,6 @@
 # HomeComponents — 20 Product Sections
 
-This folder contains 20 independent home-page product section components. Each component renders one section and requests at least 20 product cards from `/public/data.json`.
+This folder contains 20 independent home-page product section components. Each component renders one section and requests at least 20 product cards from `/public/product-data.Json`.
 
 ## Usage
 
@@ -22,7 +22,7 @@ import { BestSellingProducts, FlashSale } from "@/components/HomeComponents";
 
 ## Data rules
 
-- Reads `/data.json` from the public directory.
+- Reads `/product-data.Json` from the public directory.
 - Supports the nested product structure (`brand.name`, `pricing.regularPrice`, `media.featuredImage.url`, etc.).
 - Shows active/public products.
 - Each section uses a keyword filter and falls back to all catalog products when no section-specific match exists.

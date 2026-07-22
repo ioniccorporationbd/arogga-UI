@@ -8,7 +8,7 @@ import AddToCartButton from "@/Components/cart/AddToCartButton";
 import {
   FALLBACK_IMAGE,
   type ProductCardData,
-  fetchTaraProducts,
+  fetchProductCatalog,
   getRandomProducts,
 } from "./product-data";
 
@@ -36,7 +36,7 @@ export function ProductSectionCollection({ sections }: { sections: ProductSectio
       try {
         setLoading(true);
         setError("");
-        setProducts(await fetchTaraProducts(controller.signal));
+        setProducts(await fetchProductCatalog(controller.signal));
       } catch (errorValue) {
         if (errorValue instanceof DOMException && errorValue.name === "AbortError") return;
         setError(errorValue instanceof Error ? errorValue.message : "Product data could not be loaded.");

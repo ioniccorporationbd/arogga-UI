@@ -163,14 +163,14 @@ export default function VetCareAndBrandsSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/product-data.Json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load public/data.json. Status: ${response.status}`,
+            `Unable to load public/product-data.Json. Status: ${response.status}`,
           );
         }
 
@@ -178,7 +178,7 @@ export default function VetCareAndBrandsSection() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/data.json must contain a JSON array of products.",
+            "public/product-data.Json must contain a JSON array of products.",
           );
         }
 
@@ -1851,7 +1851,7 @@ function EmptyProducts() {
 
         <p className="vet-empty-description">
           Products will appear here when they are
-          available in data.json.
+          available in product-data.Json.
         </p>
       </div>
     </div>

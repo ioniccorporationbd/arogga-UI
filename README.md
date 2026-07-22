@@ -37,10 +37,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Product data integration
 
-The store loads every product card from `public/data.json` using the full nested e-commerce structure.
+The storefront uses one canonical public catalog file: `public/product-data.Json`.
 
-- Store page: `/store`
-- Product detail route: `/products/[slug]`
-- Product image and title open the product detail page.
-- The ADD button saves the product to `localStorage` under `arogga-cart` and opens its detail page.
-- The current `data.json` contains three products with separate online product image URLs.
+- Store, home product cards, lab product sections, search API and product details all read from the same file.
+- Product detail route: `/products/[id]` with slug fallback support.
+- Product image and title open the matching product detail page.
+- Product cards and product details use the same featured image URL from each catalog record.
+- The catalog currently contains 194 products and each product has a 5-image gallery.

@@ -49,7 +49,7 @@ export type ProductCardData = {
   sourceUrl: string | null;
 };
 
-export const PRODUCT_DATA_URL = "/data.json";
+export const PRODUCT_DATA_URL = "/product-data.Json";
 export const FALLBACK_IMAGE = "/images/product-fallback.png";
 
 export function isValidProduct(value: unknown): value is JsonProduct {
@@ -87,7 +87,7 @@ export function normalizeProduct(product: JsonProduct): ProductCardData {
     name: product.name,
     brand: product.brand?.name || "Brand",
     category: product.taxonomy?.subCategory?.name || product.taxonomy?.category?.name || product.taxonomy?.department?.name || "Product",
-    image: product.media.featuredImage.thumbnailUrl || product.media.featuredImage.url || FALLBACK_IMAGE,
+    image: product.media.featuredImage.url || product.media.featuredImage.thumbnailUrl || FALLBACK_IMAGE,
     imageAlt: product.media.featuredImage.alt || product.name,
     currencySymbol: getCurrencySymbol(product.pricing.currency),
     regularPrice,
@@ -104,7 +104,7 @@ export function normalizeProduct(product: JsonProduct): ProductCardData {
 
 let productDataPromise: Promise<ProductCardData[]> | null = null;
 
-export async function fetchTaraProducts(_signal?: AbortSignal): Promise<ProductCardData[]> {
+export async function fetchProductCatalog(_signal?: AbortSignal): Promise<ProductCardData[]> {
   void _signal;
 
   productDataPromise ??= fetch(PRODUCT_DATA_URL, { cache: "force-cache" })

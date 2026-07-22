@@ -35,7 +35,7 @@ function toIndex(product: EcommerceProduct): ProductIndex {
     subCategory: product.taxonomy?.subCategory?.name || product.taxonomy?.category?.name || "Products",
     price: getProductPrice(product),
     currency: getCurrencySymbol(currency),
-    image: product.media?.featuredImage?.thumbnailUrl || product.media?.featuredImage?.url || "/images/product-fallback.png",
+    image: product.media?.featuredImage?.url || product.media?.featuredImage?.thumbnailUrl || "/images/product-fallback.png",
     href: `/products/${product.id}`,
   };
 }
@@ -43,7 +43,7 @@ function toIndex(product: EcommerceProduct): ProductIndex {
 async function getIndex() {
   if (cache) return cache;
 
-  const file = await readFile(path.join(process.cwd(), "public", "data.json"), "utf8");
+  const file = await readFile(path.join(process.cwd(), "public", "product-data.Json"), "utf8");
   const parsed: unknown = JSON.parse(file);
   const products = Array.isArray(parsed) ? (parsed as EcommerceProduct[]) : [];
 
