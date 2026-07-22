@@ -2,9 +2,13 @@
   position: relative;
   z-index: 95;
   width: 100%;
-  border-bottom: 1px solid #e5e7eb;
-  background: #ffffff;
+  border-bottom: 1px solid rgba(8, 123, 117, 0.13);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(8, 123, 117, 0.12), transparent 34%),
+    linear-gradient(180deg, rgba(255,255,255,0.98), rgba(248,253,252,0.96));
+  box-shadow: 0 18px 42px -38px rgba(15, 23, 42, 0.55);
   font-family: inherit;
+  backdrop-filter: blur(18px);
 }
 
 .shell {
@@ -43,6 +47,184 @@
 
 .tabsContainer {
   position: relative;
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: minmax(230px, 1fr) auto auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 0 8px;
+}
+
+.toolbarTitle {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.toolbarTitle > span {
+  color: #087b75;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+.toolbarTitle > strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #101828;
+  font-size: 15px;
+  letter-spacing: -.02em;
+}
+
+.toolbarTitle > strong svg { color: #087b75; }
+
+.toolbarTitle > small {
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.modeSwitch,
+.quickActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px;
+  border: 1px solid rgba(8, 123, 117, .12);
+  border-radius: 999px;
+  background: rgba(255,255,255,.82);
+  box-shadow: inset 0 1px rgba(255,255,255,.9), 0 12px 28px -26px rgba(15,23,42,.48);
+}
+
+.modeSwitch a,
+.quickActions button {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 999px;
+  color: #475467;
+  background: transparent;
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 850;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 160ms ease, color 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.modeSwitch a:hover,
+.quickActions button:hover,
+.modeActive,
+.quickActive {
+  color: #087b75 !important;
+  background: #eaf8f6 !important;
+  box-shadow: 0 10px 22px -18px rgba(8, 123, 117, .75);
+  transform: translateY(-1px);
+}
+
+.quickPanel {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 14px;
+  margin: 0 0 10px;
+  padding: 14px;
+  border: 1px solid rgba(8, 123, 117, .13);
+  border-radius: 20px;
+  background:
+    linear-gradient(135deg, rgba(8,123,117,.08), rgba(255,255,255,.92)),
+    #ffffff;
+  box-shadow: 0 24px 55px -42px rgba(15,23,42,.58);
+  animation: megaIn 150ms ease both;
+}
+
+.quickPanelHero {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  min-height: 126px;
+  padding: 18px;
+  border-radius: 17px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 90% 12%, rgba(255,255,255,.24), transparent 34%),
+    linear-gradient(135deg, #087b75, #0f948c 58%, #0b5d58);
+  box-shadow: inset 0 1px rgba(255,255,255,.22), 0 18px 34px -28px rgba(8,123,117,.95);
+}
+
+.quickPanelHero svg { opacity: .96; }
+
+.quickPanelHero strong {
+  font-size: 16px;
+  letter-spacing: -.03em;
+}
+
+.quickPanelHero span {
+  color: rgba(255,255,255,.82);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.quickCardGrid,
+.filterGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.filterGrid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+.quickCardGrid a,
+.filterGrid a {
+  display: grid;
+  min-height: 94px;
+  align-content: center;
+  gap: 5px;
+  padding: 12px;
+  border: 1px solid rgba(208, 213, 221, .85);
+  border-radius: 15px;
+  color: #101828;
+  background: rgba(255,255,255,.9);
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.quickCardGrid a:hover,
+.filterGrid a:hover {
+  border-color: #a5dcd6;
+  background: #f3fbfa;
+  box-shadow: 0 18px 28px -24px rgba(8,123,117,.75);
+  transform: translateY(-2px);
+}
+
+.quickCardGrid a > span,
+.filterGrid a > span {
+  font-size: 19px;
+}
+
+.quickCardGrid a > strong,
+.filterGrid a > strong {
+  overflow: hidden;
+  color: #172033;
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1.28;
+  text-overflow: ellipsis;
+}
+
+.quickCardGrid a > small,
+.filterGrid a > small {
+  overflow: hidden;
+  color: #667085;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .tabs {
@@ -375,6 +557,31 @@
     width: calc(100% - 24px);
   }
 
+  .toolbar {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .modeSwitch,
+  .quickActions {
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .modeSwitch::-webkit-scrollbar,
+  .quickActions::-webkit-scrollbar { display: none; }
+
+  .quickPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .quickCardGrid,
+  .filterGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .megaMenu {
     margin-left: 12px;
   }
@@ -383,6 +590,47 @@
 @media (max-width: 767px) {
   .shell {
     width: 100%;
+  }
+
+  .toolbar {
+    padding: 10px 12px 8px;
+  }
+
+  .toolbarTitle > small { display: none; }
+
+  .modeSwitch,
+  .quickActions {
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 16px;
+  }
+
+  .modeSwitch a,
+  .quickActions button {
+    flex: 1 0 auto;
+    justify-content: center;
+    padding-inline: 10px;
+  }
+
+  .quickPanel {
+    margin: 0 12px 10px;
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .quickPanelHero {
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .quickCardGrid,
+  .filterGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quickCardGrid a,
+  .filterGrid a {
+    min-height: 82px;
   }
 
   .tabs {
@@ -454,6 +702,8 @@
 }
 
 @media (max-width: 480px) {
+  .quickCardGrid,
+  .filterGrid,
   .groups,
   .childGrid {
     grid-template-columns: 1fr;

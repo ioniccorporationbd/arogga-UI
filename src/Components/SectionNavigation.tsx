@@ -1,11 +1,18 @@
 "use client";
 
 import {
+  BadgePercent,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
+  Filter,
+  FlaskConical,
   Home,
+  SlidersHorizontal,
+  Stethoscope,
+  Store,
   X,
+  Zap,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -22,7 +29,8 @@ import {
 import styles from "./SectionNavigation.module.css";
 
 type MenuSection = "store" | "lab" | "doctor";
-type NavigationMode = MenuSection;
+type NavigationMode = MenuSection | "auto";
+type QuickPanel = "browse" | "filters" | null;
 
 type RelatedLink = {
   relation?: string;
@@ -259,7 +267,7 @@ function isMenuData(value: unknown): value is Partial<MenuData> {
 
 function getSectionItems(
   menuData: MenuData,
-  mode: NavigationMode,
+  mode: MenuSection,
 ) {
   return menuData[mode] ?? [];
 }
@@ -281,12 +289,80 @@ function getNavigationLabel(mode: NavigationMode) {
   return "Store categories";
 }
 
+function resolveMode(pathname: string, mode: NavigationMode): MenuSection {
+  if (mode !== "auto") return mode;
+  if (pathname === "/lab" || pathname.startsWith("/lab/")) return "lab";
+  if (pathname === "/doctor" || pathname.startsWith("/doctor/")) return "doctor";
+  return "store";
+}
+
+function getModeMeta(mode: MenuSection) {
+  if (mode === "lab") {
+    return {
+      eyebrow: "LAB FILTERS",
+      title: "Find tests faster",
+      subtitle: "Browse health concern, organ packages and checkup groups.",
+      cta: "Lab Menu",
+    };
+  }
+
+  if (mode === "doctor") {
+    return {
+      eyebrow: "DOCTOR FILTERS",
+      title: "Find the right care",
+      subtitle: "Choose physicians, specialists and family care quickly.",
+      cta: "Doctor Menu",
+    };
+  }
+
+  return {
+    eyebrow: "STORE FILTERS",
+    title: "Shop by category",
+    subtitle: "Medicine, healthcare, beauty and wellness filters in one menu.",
+    cta: "Store Menu",
+  };
+}
+
+function getModeIcon(mode: MenuSection) {
+  if (mode === "lab") return <FlaskConical size={16} />;
+  if (mode === "doctor") return <Stethoscope size={16} />;
+  return <Store size={16} />;
+}
+
+function collectQuickFilters(items: MegaItem[]) {
+  const links: Array<{ label: string; href: string; emoji: string; eyebrow: string }> = [];
+
+  for (const item of items) {
+    for (const group of item.groups ?? []) {
+      const groupHref = getGroupHref(group);
+      const groupName = getGroupName(group);
+      if (groupHref && links.length < 4) {
+        links.push({ label: groupName, href: groupHref, emoji: getGroupEmoji(groupName), eyebrow: getMainName(item) });
+      }
+
+      for (const leaf of group.children ?? []) {
+        const leafHref = getLeafHref(leaf);
+        const leafName = getLeafName(leaf);
+        if (leafHref && links.length < 10) {
+          links.push({ label: leafName, href: leafHref, emoji: getChildEmoji(leafName), eyebrow: groupName });
+        }
+      }
+
+      if (links.length >= 10) return links;
+    }
+  }
+
+  return links;
+}
+
 export default function SectionNavigation({
-  mode = "store",
+  mode = "auto",
   dataUrl = "/menu-links.json",
   className = "",
 }: SectionNavigationProps) {
   const pathname = usePathname();
+  const currentMode = resolveMode(pathname, mode);
+  const modeMeta = getModeMeta(currentMode);
 
   const rootRef = useRef<HTMLElement | null>(null);
   const tabsRef = useRef<HTMLElement | null>(null);
@@ -301,6 +377,8 @@ export default function SectionNavigation({
     useState<string | null>(null);
   const [openDropdownId, setOpenDropdownId] =
     useState<string | null>(null);
+  const [quickPanel, setQuickPanel] =
+    useState<QuickPanel>(null);
   const [activeGroupId, setActiveGroupId] =
     useState<string | null>(null);
   const [canScrollLeft, setCanScrollLeft] =
@@ -397,8 +475,13 @@ export default function SectionNavigation({
   }, [dataUrl]);
 
   const items = useMemo(
-    () => getSectionItems(menuData, mode),
-    [menuData, mode],
+    () => getSectionItems(menuData, currentMode),
+    [menuData, currentMode],
+  );
+
+  const quickFilters = useMemo(
+    () => collectQuickFilters(items),
+    [items],
   );
 
   const openItem = useMemo(() => {
@@ -444,6 +527,7 @@ export default function SectionNavigation({
     clearCloseTimer();
     setOpenDropdownId(null);
     setActiveGroupId(null);
+    setQuickPanel(null);
   }, [clearCloseTimer]);
 
   const scheduleClose = useCallback(() => {
@@ -452,6 +536,7 @@ export default function SectionNavigation({
     closeTimerRef.current = setTimeout(() => {
       setOpenDropdownId(null);
       setActiveGroupId(null);
+      setQuickPanel(null);
     }, CLOSE_DELAY);
   }, [clearCloseTimer]);
 
@@ -479,6 +564,7 @@ export default function SectionNavigation({
       const selected =
         itemGroups[bestIndex] ?? itemGroups[0];
 
+      setQuickPanel(null);
       setOpenDropdownId(getMainDropdownId(item));
       setActiveGroupId(
         selected
@@ -543,7 +629,7 @@ export default function SectionNavigation({
   useEffect(() => {
     const frame = window.requestAnimationFrame(closeMenu);
     return () => window.cancelAnimationFrame(frame);
-  }, [pathname, mode, closeMenu]);
+  }, [pathname, currentMode, closeMenu]);
 
   useEffect(() => {
     function handleOutsideClick(
@@ -696,7 +782,7 @@ export default function SectionNavigation({
     return (
       <section
         className={`${styles.navigation} ${className}`}
-        aria-label={getNavigationLabel(mode)}
+        aria-label={getNavigationLabel(currentMode)}
       >
         <div className={styles.shell}>
           <div className={styles.status}>
@@ -711,7 +797,7 @@ export default function SectionNavigation({
     <section
       ref={rootRef}
       className={`${styles.navigation} ${className}`}
-      aria-label={getNavigationLabel(mode)}
+      aria-label={getNavigationLabel(currentMode)}
       onMouseEnter={clearCloseTimer}
       onMouseLeave={scheduleClose}
     >
@@ -723,6 +809,103 @@ export default function SectionNavigation({
               Put the JSON file at{" "}
               <code>public/menu-links.json</code>.
             </span>
+          </div>
+        ) : null}
+
+        <div className={styles.toolbar}>
+          <div className={styles.toolbarTitle}>
+            <span>{modeMeta.eyebrow}</span>
+            <strong>{getModeIcon(currentMode)} {modeMeta.title}</strong>
+            <small>{modeMeta.subtitle}</small>
+          </div>
+
+          <div className={styles.modeSwitch} aria-label="Section shortcuts">
+            <Link href="/store" className={currentMode === "store" ? styles.modeActive : ""} onClick={closeMenu}>
+              <Store size={15} /> Store
+            </Link>
+            <Link href="/lab" className={currentMode === "lab" ? styles.modeActive : ""} onClick={closeMenu}>
+              <FlaskConical size={15} /> Lab
+            </Link>
+            <Link href="/doctor" className={currentMode === "doctor" ? styles.modeActive : ""} onClick={closeMenu}>
+              <Stethoscope size={15} /> Doctor
+            </Link>
+          </div>
+
+          <div className={styles.quickActions}>
+            <button
+              type="button"
+              className={quickPanel === "browse" ? styles.quickActive : ""}
+              aria-expanded={quickPanel === "browse"}
+              onClick={() => {
+                clearCloseTimer();
+                setOpenDropdownId(null);
+                setActiveGroupId(null);
+                setQuickPanel((current) => current === "browse" ? null : "browse");
+              }}
+            >
+              <SlidersHorizontal size={15} /> {modeMeta.cta}
+              <ChevronDown size={13} />
+            </button>
+            <button
+              type="button"
+              className={quickPanel === "filters" ? styles.quickActive : ""}
+              aria-expanded={quickPanel === "filters"}
+              onClick={() => {
+                clearCloseTimer();
+                setOpenDropdownId(null);
+                setActiveGroupId(null);
+                setQuickPanel((current) => current === "filters" ? null : "filters");
+              }}
+            >
+              <Filter size={15} /> Wise filters
+              <ChevronDown size={13} />
+            </button>
+          </div>
+        </div>
+
+        {quickPanel ? (
+          <div className={styles.quickPanel} role="menu" aria-label={`${modeMeta.title} dropdown`}>
+            {quickPanel === "browse" ? (
+              <>
+                <div className={styles.quickPanelHero}>
+                  <BadgePercent size={18} />
+                  <strong>{currentMode === "lab" ? "Lab test menu" : currentMode === "doctor" ? "Doctor care menu" : "Store mega menu"}</strong>
+                  <span>Open a main dropdown or jump directly to a high value category.</span>
+                </div>
+                <div className={styles.quickCardGrid}>
+                  {items.slice(0, 8).map((item) => {
+                    const name = getMainName(item);
+                    const href = getMainHref(item);
+                    const dropdownId = getMainDropdownId(item);
+                    if (!href) return null;
+                    return (
+                      <Link key={dropdownId} href={href} role="menuitem" onClick={closeMenu}>
+                        <span>{getGroupEmoji(name)}</span>
+                        <strong>{name}</strong>
+                        <small>{(item.groups ?? []).length} dropdowns</small>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </>
+            ) : (
+              <>
+                <div className={styles.quickPanelHero}>
+                  <Zap size={18} />
+                  <strong>Popular wise filters</strong>
+                  <span>Fast filters from {currentMode === "lab" ? "lab tests" : currentMode === "doctor" ? "doctor care" : "store categories"}.</span>
+                </div>
+                <div className={styles.filterGrid}>
+                  {quickFilters.map((filter) => (
+                    <Link key={`${filter.eyebrow}-${filter.href}`} href={filter.href} role="menuitem" onClick={closeMenu}>
+                      <span>{filter.emoji}</span>
+                      <strong>{filter.label}</strong>
+                      <small>{filter.eyebrow}</small>
+                    </Link>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         ) : null}
 
@@ -741,7 +924,7 @@ export default function SectionNavigation({
           <nav
             ref={tabsRef}
             className={styles.tabs}
-            aria-label={getNavigationLabel(mode)}
+            aria-label={getNavigationLabel(currentMode)}
           >
             {items.map((item, index) => {
               const mainName = getMainName(item);
