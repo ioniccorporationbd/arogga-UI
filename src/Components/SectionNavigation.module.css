@@ -51,7 +51,7 @@
 
 .toolbar {
   display: grid;
-  grid-template-columns: minmax(230px, 1fr) auto auto;
+  grid-template-columns: minmax(260px, 1fr) auto;
   gap: 14px;
   align-items: center;
   padding: 12px 0 8px;
@@ -717,5 +717,108 @@
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+
+/* Professional dropdown/navigation polish and duplicate shortcut cleanup */
+.navigation {
+  z-index: 94;
+  border-bottom-color: rgba(8, 123, 117, 0.1);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(8,123,117,.1), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,.96), rgba(248,253,252,.94));
+}
+
+.toolbar {
+  padding: 10px 0 8px;
+}
+
+.toolbarTitle > span {
+  font-size: 9.5px;
+}
+
+.toolbarTitle > strong {
+  font-size: 14px;
+}
+
+.toolbarTitle > small {
+  max-width: 560px;
+  font-size: 11.5px;
+}
+
+.quickActions {
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.94), rgba(244,252,250,.88));
+}
+
+.quickActions button {
+  min-height: 36px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.quickActive,
+.quickActions button:hover {
+  background: #087b75 !important;
+  color: #fff !important;
+  box-shadow: 0 16px 30px -22px rgba(8,123,117,.95) !important;
+}
+
+.quickPanel {
+  grid-template-columns: 280px minmax(0, 1fr);
+  border-color: rgba(8,123,117,.14);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(8,123,117,.12), transparent 28%),
+    linear-gradient(135deg, rgba(255,255,255,.98), rgba(244,253,251,.96));
+  box-shadow: 0 30px 75px -45px rgba(15,23,42,.68);
+}
+
+.quickPanelHero {
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 86% 14%, rgba(255,255,255,.28), transparent 36%),
+    linear-gradient(135deg, #075f5b, #0c8f86 58%, #10b59e);
+}
+
+.quickCardGrid a,
+.filterGrid a {
+  min-height: 92px;
+  border-color: rgba(8, 123, 117, .11);
+  border-radius: 18px;
+  background: rgba(255,255,255,.92);
+}
+
+.quickCardGrid a:hover,
+.filterGrid a:hover {
+  border-color: rgba(8,123,117,.28);
+  background: linear-gradient(135deg, #f1fbf9, #fff);
+}
+
+.tabs {
+  min-height: 46px;
+}
+
+.tab {
+  min-height: 46px;
+  padding-inline: 13px;
+  font-size: 12.5px;
+  font-weight: 750;
+}
+
+.megaMenu {
+  border-color: rgba(8,123,117,.14);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(8,123,117,.08), transparent 30%),
+    #fff;
+  box-shadow: 0 32px 80px -42px rgba(15,23,42,.72);
+}
+
+@media (max-width: 1023px) {
+  .quickPanel {
+    grid-template-columns: 1fr;
   }
 }

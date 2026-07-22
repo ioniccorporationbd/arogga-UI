@@ -28,9 +28,21 @@ export default function AppProviders({ children }: { children: ReactNode }) {
       <AuthProvider>
         <WishlistProvider>
           <CartProvider>
-            {children}
+            <div className="arogga-app-shell">{children}</div>
             <GlobalLoginModal />
-            <Toaster richColors position="top-right" />
+            <Toaster
+              richColors
+              closeButton
+              position="top-right"
+              toastOptions={{
+                style: {
+                  borderRadius: "18px",
+                  border: "1px solid rgba(8, 123, 117, 0.16)",
+                  boxShadow: "0 24px 60px -42px rgba(15, 23, 42, 0.7)",
+                  fontSize: "13px",
+                },
+              }}
+            />
           </CartProvider>
         </WishlistProvider>
       </AuthProvider>

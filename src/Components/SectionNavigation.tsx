@@ -819,18 +819,6 @@ export default function SectionNavigation({
             <small>{modeMeta.subtitle}</small>
           </div>
 
-          <div className={styles.modeSwitch} aria-label="Section shortcuts">
-            <Link href="/store" className={currentMode === "store" ? styles.modeActive : ""} onClick={closeMenu}>
-              <Store size={15} /> Store
-            </Link>
-            <Link href="/lab" className={currentMode === "lab" ? styles.modeActive : ""} onClick={closeMenu}>
-              <FlaskConical size={15} /> Lab
-            </Link>
-            <Link href="/doctor" className={currentMode === "doctor" ? styles.modeActive : ""} onClick={closeMenu}>
-              <Stethoscope size={15} /> Doctor
-            </Link>
-          </div>
-
           <div className={styles.quickActions}>
             <button
               type="button"
