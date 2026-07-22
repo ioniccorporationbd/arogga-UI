@@ -106,6 +106,16 @@ const bannerSlides: BannerSlide[] = [
   },
 ];
 
+const slideCopy = [
+  { eyebrow: "Beauty flash", title: "Real beauty products, real savings", subtitle: "Cosmetics, skin care and grooming picks with fast delivery.", cta: "Shop beauty", offer: "7 live banners" },
+  { eyebrow: "Pharmacy", title: "Medicine essentials delivered safely", subtitle: "Order authentic pharmacy items and daily healthcare products.", cta: "Order now", offer: "Trusted care" },
+  { eyebrow: "Healthcare", title: "Wellness support for every family", subtitle: "Devices, first-aid, hygiene and doctor-backed essentials.", cta: "Explore care", offer: "Top brands" },
+  { eyebrow: "Baby & mom", title: "Gentle care for parents and babies", subtitle: "Diapers, wipes, feeding and mother care in one store.", cta: "Shop baby", offer: "Soft picks" },
+  { eyebrow: "Supplements", title: "Build your wellness routine", subtitle: "Vitamins, minerals and nutrition support for active days.", cta: "View wellness", offer: "Fresh stock" },
+  { eyebrow: "Home care", title: "Clean home essentials that work", subtitle: "Hygiene, cleaning and household care with bundle savings.", cta: "Shop home", offer: "Bundle deal" },
+  { eyebrow: "Skincare", title: "Daily care with trusted products", subtitle: "Hydration, cleanser, serum and sun-care category picks.", cta: "Shop skincare", offer: "New drops" },
+];
+
 export default function HeroBannerSlider() {
   return (
     <>
@@ -213,6 +223,13 @@ export default function HeroBannerSlider() {
                           aria-hidden="true"
                           className="anukov-hero-overlay"
                         />
+
+                        <span className="anukov-hero-copy">
+                          <span>{slideCopy[index].eyebrow}</span>
+                          <strong>{slideCopy[index].title}</strong>
+                          <small>{slideCopy[index].subtitle}</small>
+                          <em><b>{slideCopy[index].cta}</b>{slideCopy[index].offer}</em>
+                        </span>
 
                         <span
                           aria-hidden="true"
@@ -393,6 +410,63 @@ export default function HeroBannerSlider() {
               rgba(6, 20, 35, 0.1)
             );
           opacity: 0.72;
+        }
+
+
+        .anukov-hero-copy {
+          position: absolute;
+          z-index: 25;
+          left: clamp(22px, 6vw, 84px);
+          top: 50%;
+          display: grid;
+          max-width: 470px;
+          gap: 10px;
+          color: #ffffff;
+          transform: translateY(-50%);
+          pointer-events: none;
+          text-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+        }
+
+        .anukov-hero-copy > span {
+          width: max-content;
+          border: 1px solid rgba(255, 255, 255, 0.36);
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.2);
+          padding: 8px 11px;
+          font-size: 12px;
+          font-weight: 950;
+          backdrop-filter: blur(12px);
+        }
+
+        .anukov-hero-copy strong {
+          max-width: 560px;
+          font-size: clamp(30px, 4vw, 58px);
+          line-height: 0.98;
+          letter-spacing: -0.06em;
+        }
+
+        .anukov-hero-copy small {
+          max-width: 420px;
+          color: rgba(255, 255, 255, 0.9);
+          font-size: 14px;
+          line-height: 1.55;
+        }
+
+        .anukov-hero-copy em {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          width: max-content;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 900;
+        }
+
+        .anukov-hero-copy em b {
+          border-radius: 13px;
+          background: #ffffff;
+          color: #087b75;
+          padding: 10px 13px;
         }
 
         .anukov-hero-shine {

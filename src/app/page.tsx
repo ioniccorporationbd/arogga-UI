@@ -2,6 +2,7 @@ import AllYouNeed from "@/Components/HomeComponents/AllYouNeed";
 import BasicSiteBanner from "@/Components/HomeComponents/BasicSiteBanner";
 import BlueDealSections from "@/Components/HomeComponents/BlueDealSections";
 import CategoryDealSections from "@/Components/HomeComponents/CategoryDealSections";
+import EcommerceImageShowcase from "@/Components/HomeComponents/EcommerceImageShowcase";
 import EspeciallyForYou from "@/Components/HomeComponents/EspeciallyForYou";
 import FragrancePerfume from "@/Components/HomeComponents/FragrancePerfume";
 import MultiDealSections from "@/Components/HomeComponents/MultiDealSections";
@@ -16,6 +17,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-white">
       <BasicSiteBanner />
+
+      <EcommerceImageShowcase />
 
       <EspeciallyForYou />
 
