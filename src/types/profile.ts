@@ -1,4 +1,4 @@
-export type ProfileSection = "profile" | "balance" | "offers" | "orders" | "wishlist" | "prescriptions" | "addresses" | "patients" | "reviews" | "reports" | "blog" | "faq" | "privacy-policy";
+export type ProfileSection = "profile" | "balance" | "offers" | "orders" | "wishlist" | "prescriptions" | "addresses" | "patients" | "reviews" | "reports" | "inbox" | "blog" | "faq" | "privacy-policy";
 
 export type DashboardRecord = {
   id: string;

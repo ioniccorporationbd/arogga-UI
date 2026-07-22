@@ -12,6 +12,7 @@ const routeMap: Record<string, string> = {
   reviews: "/profile/reviews",
   support: "/profile/reports",
   reports: "/profile/reports",
+  inbox: "/profile/inbox",
   blog: "/profile/blog",
   faq: "/profile/faq",
   privacy: "/profile/privacy-policy",

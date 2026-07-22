@@ -215,10 +215,10 @@ export default function TopNavber() {
                 Orders<strong>0</strong>
               </span>
             </Link>
-            <Link href="/inbox" onClick={(event) => {
+            <Link href="/profile/inbox" onClick={(event) => {
               if (user) return;
               event.preventDefault();
-              openProtectedRoute("/inbox", "Login to read your inbox messages.");
+              openProtectedRoute("/profile/inbox", "Login to read your inbox messages.");
             }}>
               <Inbox />
               <span>
@@ -320,7 +320,7 @@ export default function TopNavber() {
         </button>
         <button type="button" onClick={() => {
           setDrawerOpen(false);
-          openProtectedRoute("/inbox", "Login to read your inbox messages.");
+          openProtectedRoute("/profile/inbox", "Login to read your inbox messages.");
         }}>
           <Inbox /> Inbox
         </button>
