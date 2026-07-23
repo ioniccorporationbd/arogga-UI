@@ -27,6 +27,7 @@ import { FormEvent, useEffect, useState } from "react";
 
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
+import { notify } from "@/lib/toast";
 import CartDrawer from "./cart/CartDrawer";
 import styles from "./TopNavber.module.css";
 
@@ -68,7 +69,11 @@ export default function TopNavber() {
   function submitSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const trimmedQuery = query.trim();
-    if (!trimmedQuery) return;
+    if (!trimmedQuery) {
+      notify.warning("Type a product name before searching");
+      return;
+    }
+    notify.info(`Searching for ${trimmedQuery}`);
     router.push(`/search?q=${encodeURIComponent(trimmedQuery)}`);
   }
 
@@ -146,7 +151,7 @@ export default function TopNavber() {
                 <small>Faster delivery with accurate location</small>
               </div>
               {deliveryOptions.map((option) => (
-                <button type="button" key={option} onClick={() => setDropdown(null)}>
+                <button type="button" key={option} onClick={() => { setDropdown(null); notify.success(`Delivery area set to ${option}`); }}>
                   <MapPin />
                   <span>{option}</span>
                   <small>Available</small>
@@ -204,6 +209,7 @@ export default function TopNavber() {
                     type="button"
                     onClick={() => {
                       logout();
+                      notify.success("Logged out successfully");
                       setDropdown(null);
                     }}
                   >
@@ -271,6 +277,7 @@ export default function TopNavber() {
                 <button type="button" key={option} onClick={() => {
                   setDropdown(null);
                   if (!requireAuth({ reason: `Login to continue with ${option}.` })) return;
+                  notify.info(`${option} flow is ready`);
                 }}>
                   <Clock3 /> {option}
                 </button>

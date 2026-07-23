@@ -32,6 +32,7 @@ import { FormEvent, useMemo, useState } from "react";
 
 import { useAuth } from "@/context/AuthContext";
 import { useCart, type CartItem } from "@/context/CartContext";
+import { notify } from "@/lib/toast";
 import styles from "./CartDrawer.module.css";
 
 type AddressType = "Home" | "Office" | "Others";
@@ -182,6 +183,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
     setSavedAddress(nextAddress);
     setAddress(nextAddress);
     setAddressOpen(false);
+    notify.success("Delivery address saved successfully");
     setPaymentOpen(true);
   }
 
@@ -191,6 +193,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
       method,
       option: paymentOptions[method][0],
     }));
+    notify.info(`${method === "online" ? "Online wallet" : method === "card" ? "Card" : "Bank"} payment selected`);
   }
 
   function submitPayment(event: FormEvent<HTMLFormElement>) {
@@ -199,6 +202,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
     setOrderId(getOrderId());
     setDeliveryDate(getDeliveryDate());
     clearCart();
+    notify.success("Order placed successfully");
     setSuccessOpen(true);
   }
 

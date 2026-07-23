@@ -1466,3 +1466,25 @@ article {
     scroll-padding-top: 72px;
   }
 }
+
+
+/* React Toastify: premium Arogga action feedback */
+.arogga-toastify-toast {
+  border: 1px solid rgba(8, 123, 117, 0.18) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 24px 60px -42px rgba(15, 23, 42, 0.7) !important;
+  color: #1f2a37 !important;
+  font-family: inherit !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+}
+
+.arogga-toastify-body {
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.Toastify__progress-bar--success { background: linear-gradient(90deg, #087b75, #16a34a) !important; }
+.Toastify__progress-bar--info { background: linear-gradient(90deg, #087b75, #2563eb) !important; }
+.Toastify__progress-bar--warning { background: linear-gradient(90deg, #f59e0b, #f97316) !important; }
+.Toastify__progress-bar--error { background: linear-gradient(90deg, #dc2626, #f43f5e) !important; }
