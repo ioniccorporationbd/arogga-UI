@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 
 import LoginModal from "@/components/auth/LoginModal";
 import PendingAuthActionExecutor from "@/components/auth/PendingAuthActionExecutor";
+import AccountDrawer from "@/features/account/components/AccountDrawer";
 import { showToast, type AroggaToastDetail } from "@/lib/notify";
 import { AuthProvider, useAuth } from "./AuthContext";
 import { CartProvider } from "./CartContext";
@@ -48,6 +49,7 @@ export default function AppProviders({ children }: { children: ReactNode }) {
           <CartProvider>
             <div className="arogga-app-shell">{children}</div>
             <PendingAuthActionExecutor />
+            <AccountDrawer />
             <ToastEventBridge />
             <GlobalLoginModal />
             <ToastContainer

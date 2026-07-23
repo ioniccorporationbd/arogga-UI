@@ -26,10 +26,10 @@ import {
 import { FormEvent, useEffect, useState } from "react";
 
 import { useAuth } from "@/context/AuthContext";
-import { useCart } from "@/context/CartContext";
-import { useWishlist } from "@/context/WishlistContext";
 import { notify } from "@/lib/notify";
 import CartDrawer from "@/components/cart/CartDrawer";
+import { openAccountDrawer } from "@/features/account/accountDrawerStore";
+import { useAccountSummary } from "@/features/account/useAccountSummary";
 import styles from "./TopNavber.module.css";
 
 const nav = [
@@ -48,8 +48,7 @@ export default function TopNavber() {
   const path = usePathname();
   const router = useRouter();
   const { user, logout, requireAuth, openLoginModal } = useAuth();
-  const { count } = useCart();
-  const wishlist = useWishlist();
+  const summary = useAccountSummary();
 
   const [query, setQuery] = useState("");
   const [cartOpen, setCartOpen] = useState(false);
@@ -91,7 +90,8 @@ export default function TopNavber() {
 
   function handleAccountClick() {
     if (user) {
-      toggleDropdown("account");
+      setDropdown(null);
+      openAccountDrawer("overview");
       return;
     }
 
@@ -112,7 +112,11 @@ export default function TopNavber() {
         ? { type: "OPEN_INBOX" as const }
         : { type: "OPEN_ACCOUNT_SECTION" as const, payload: { section: "profile" as const } };
     if (!requireAuth({ reason, pendingAction })) return;
-    router.push(href);
+    if (href.includes("orders")) openAccountDrawer("orders");
+    else if (href.includes("inbox")) openAccountDrawer("inbox");
+    else if (href.includes("wishlist")) openAccountDrawer("wishlist");
+    else if (href.includes("addresses")) openAccountDrawer("addresses");
+    else router.push(href);
   }
 
   function openProtectedCart() {
@@ -212,7 +216,7 @@ export default function TopNavber() {
                   <UserRound /> Profile
                 </Link>
                 <Link href="/account/wishlist" onClick={() => setDropdown(null)}>
-                  <Heart /> Wishlist <small>{wishlist.count}</small>
+                  <Heart /> Wishlist <small>{summary.wishlistCount}</small>
                 </Link>
                 <Link href="/account/orders" onClick={() => setDropdown(null)}>
                   <Package /> Orders
@@ -238,7 +242,7 @@ export default function TopNavber() {
             }}>
               <Package />
               <span>
-                Orders<strong>0</strong>
+                Orders<strong>{summary.orderCount}</strong>
               </span>
             </Link>
             <Link href="/account/inbox" onClick={(event) => {
@@ -248,12 +252,12 @@ export default function TopNavber() {
             }}>
               <Inbox />
               <span>
-                Inbox<strong>0</strong>
+                Inbox<strong>{summary.unreadInboxCount}</strong>
               </span>
             </Link>
             <button type="button" onClick={openProtectedCart} className={styles.cart}>
               <ShoppingCart />
-              <b>{count}</b>
+              <b>{summary.cartCount}</b>
               <span>Cart</span>
             </button>
           </div>

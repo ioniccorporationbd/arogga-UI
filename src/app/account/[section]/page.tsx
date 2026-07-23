@@ -1,24 +1,23 @@
-import { redirect } from "next/navigation";
+import { AccountTabContent, type AccountTab } from "@/features/account/components/AccountDrawer";
 
-const routeMap: Record<string, string> = {
-  profile: "/profile",
-  balance: "/profile/balance",
-  offers: "/profile/offers",
-  orders: "/profile/orders",
-  wishlist: "/profile/wishlist",
-  prescriptions: "/profile/prescriptions",
-  addresses: "/profile/addresses",
-  patients: "/profile/patients",
-  reviews: "/profile/reviews",
-  support: "/profile/reports",
-  reports: "/profile/reports",
-  inbox: "/profile/inbox",
-  blog: "/profile/blog",
-  faq: "/profile/faq",
-  privacy: "/profile/privacy-policy",
+const routeMap: Record<string, AccountTab> = {
+  profile: "overview",
+  overview: "overview",
+  orders: "orders",
+  inbox: "inbox",
+  wishlist: "wishlist",
+  addresses: "addresses",
+  patients: "patients",
+  prescriptions: "prescriptions",
+  reviews: "reviews",
+  wallet: "wallet",
+  balance: "wallet",
+  offers: "offers",
+  support: "support",
+  reports: "support",
 };
 
 export default async function Page({ params }: { params: Promise<{ section: string }> }) {
   const { section } = await params;
-  redirect(routeMap[section] || "/profile");
+  return <AccountTabContent tab={routeMap[section] || "overview"} />;
 }
