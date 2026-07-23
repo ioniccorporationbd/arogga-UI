@@ -11,6 +11,8 @@ import {
   type ReactNode,
 } from "react";
 
+import { notify } from "@/lib/toast";
+
 export type AuthUser = { phone: string; name: string };
 
 type AuthGateOptions = {
@@ -23,8 +25,9 @@ type Value = {
   isAuthenticated: boolean;
   loginModalOpen: boolean;
   loginReason: string;
-  login: (phone: string) => void;
-  logout: () => void;
+  login: (phone: string, user?: AuthUser) => void;
+  logout: () => Promise<void>;
+  refreshSession: () => Promise<AuthUser | null>;
   openLoginModal: (reason?: string) => void;
   closeLoginModal: () => void;
   requireAuth: (options?: AuthGateOptions) => boolean;
@@ -34,21 +37,44 @@ const AuthContext = createContext<Value | null>(null);
 const KEY = "arogga-auth-user";
 const DEFAULT_LOGIN_REASON = "Login to continue with this action.";
 
+function readLocalUser() {
+  try {
+    const raw = localStorage.getItem(KEY);
+    return raw ? (JSON.parse(raw) as AuthUser) : null;
+  } catch {
+    localStorage.removeItem(KEY);
+    return null;
+  }
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [ready, setReady] = useState(false);
   const [loginModalOpen, setLoginModalOpen] = useState(false);
   const [loginReason, setLoginReason] = useState(DEFAULT_LOGIN_REASON);
 
-  useEffect(() => {
+  const refreshSession = useCallback(async () => {
     try {
-      const raw = localStorage.getItem(KEY);
-      if (raw) setUser(JSON.parse(raw) as AuthUser);
+      const response = await fetch("/api/auth/session", { cache: "no-store", credentials: "include" });
+      const data = await response.json();
+      if (data?.authenticated && data.user) {
+        const nextUser = data.user as AuthUser;
+        localStorage.setItem(KEY, JSON.stringify(nextUser));
+        setUser(nextUser);
+        return nextUser;
+      }
     } catch {
-      localStorage.removeItem(KEY);
+      // keep guest/local fallback usable in development
     }
-    setReady(true);
+
+    const fallback = readLocalUser();
+    setUser(fallback);
+    return fallback;
   }, []);
+
+  useEffect(() => {
+    refreshSession().finally(() => setReady(true));
+  }, [refreshSession]);
 
   const closeLoginModal = useCallback(() => {
     setLoginModalOpen(false);
@@ -60,14 +86,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setLoginModalOpen(true);
   }, []);
 
-  const login = useCallback((phone: string) => {
-    const next = { phone, name: "Arogga User" };
-    localStorage.setItem(KEY, JSON.stringify(next));
-    setUser(next);
+  const login = useCallback((phone: string, nextUser?: AuthUser) => {
+    const authenticatedUser = nextUser || { phone, name: "Arogga User" };
+    localStorage.setItem(KEY, JSON.stringify(authenticatedUser));
+    setUser(authenticatedUser);
     closeLoginModal();
+    notify.success("Logged in successfully");
   }, [closeLoginModal]);
 
-  const logout = useCallback(() => {
+  const logout = useCallback(async () => {
+    try {
+      await fetch("/api/auth/logout", { method: "POST", credentials: "include" });
+    } catch {
+      // Local cleanup still runs so users are not stuck in an authenticated shell.
+    }
     localStorage.removeItem(KEY);
     setUser(null);
   }, []);
@@ -87,6 +119,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loginReason,
       login,
       logout,
+      refreshSession,
       openLoginModal,
       closeLoginModal,
       requireAuth,
@@ -98,6 +131,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loginReason,
       login,
       logout,
+      refreshSession,
       openLoginModal,
       closeLoginModal,
       requireAuth,
