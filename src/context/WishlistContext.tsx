@@ -12,7 +12,7 @@ import {
 } from "react";
 
 import { useAuth } from "@/context/AuthContext";
-import { notify } from "@/lib/toast";
+import { notify } from "@/lib/notify";
 
 export type WishlistItem = {
   id: string;
@@ -100,7 +100,7 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
     save(exists
       ? current.map((entry) => entry.id === item.id ? { ...entry, ...normalized } : entry)
       : [normalized, ...current]);
-    notify.success(exists ? `${item.name} wishlist details updated` : `${item.name} saved to wishlist`);
+    notify.wishlist.added(item.name);
   }, [phone, save]);
 
   const toggle = useCallback((item: WishlistItem) => {
@@ -109,14 +109,14 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
     save(exists
       ? current.filter((entry) => entry.id !== item.id)
       : [normalizeItem(item), ...current]);
-    notify[exists ? "info" : "success"](exists ? `${item.name} removed from wishlist` : `${item.name} saved to wishlist`);
+    if (exists) notify.wishlist.removed(item.name); else notify.wishlist.added(item.name);
   }, [phone, save]);
 
   const remove = useCallback((id: string) => {
     const current = read(phone);
     const removed = current.find((item) => item.id === id);
     save(current.filter((item) => item.id !== id));
-    if (removed) notify.info(`${removed.name} removed from wishlist`);
+    if (removed) notify.wishlist.removed(removed.name);
   }, [phone, save]);
 
   const value = useMemo(

@@ -27,7 +27,7 @@ import { FormEvent, useEffect, useState } from "react";
 
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
-import { notify } from "@/lib/toast";
+import { notify } from "@/lib/notify";
 import CartDrawer from "./cart/CartDrawer";
 import styles from "./TopNavber.module.css";
 
@@ -62,8 +62,14 @@ export default function TopNavber() {
       }
     }
 
+    function openCartFromPendingAction() { setCartOpen(true); }
+
     document.addEventListener("keydown", closeOnEscape);
-    return () => document.removeEventListener("keydown", closeOnEscape);
+    window.addEventListener("arogga-open-cart", openCartFromPendingAction);
+    return () => {
+      document.removeEventListener("keydown", closeOnEscape);
+      window.removeEventListener("arogga-open-cart", openCartFromPendingAction);
+    };
   }, []);
 
   function submitSearch(event: FormEvent<HTMLFormElement>) {
@@ -98,7 +104,12 @@ export default function TopNavber() {
 
   function openProtectedRoute(href: string, reason: string) {
     setDropdown(null);
-    if (!requireAuth({ reason })) return;
+    const pendingAction = href.includes("orders")
+      ? { type: "OPEN_ORDERS" as const }
+      : href.includes("inbox")
+        ? { type: "OPEN_INBOX" as const }
+        : { type: "OPEN_ACCOUNT_SECTION" as const, payload: { section: "profile" as const } };
+    if (!requireAuth({ reason, pendingAction })) return;
     router.push(href);
   }
 
@@ -195,13 +206,13 @@ export default function TopNavber() {
                     <small>Manage your Arogga account</small>
                   </div>
                 </div>
-                <Link href="/profile" onClick={() => setDropdown(null)}>
+                <Link href="/account" onClick={() => setDropdown(null)}>
                   <UserRound /> Profile
                 </Link>
-                <Link href="/wishlist" onClick={() => setDropdown(null)}>
+                <Link href="/account/wishlist" onClick={() => setDropdown(null)}>
                   <Heart /> Wishlist
                 </Link>
-                <Link href="/profile/orders" onClick={() => setDropdown(null)}>
+                <Link href="/account/orders" onClick={() => setDropdown(null)}>
                   <Package /> Orders
                 </Link>
                 {user ? (
@@ -209,7 +220,6 @@ export default function TopNavber() {
                     type="button"
                     onClick={() => {
                       logout();
-                      notify.success("Logged out successfully");
                       setDropdown(null);
                     }}
                   >
@@ -219,20 +229,20 @@ export default function TopNavber() {
               </div>
             </div>
 
-            <Link href="/profile/orders" onClick={(event) => {
+            <Link href="/account/orders" onClick={(event) => {
               if (user) return;
               event.preventDefault();
-              openProtectedRoute("/profile/orders", "Login to see your orders.");
+              openProtectedRoute("/account/orders", "Login to see your orders.");
             }}>
               <Package />
               <span>
                 Orders<strong>0</strong>
               </span>
             </Link>
-            <Link href="/profile/inbox" onClick={(event) => {
+            <Link href="/account/inbox" onClick={(event) => {
               if (user) return;
               event.preventDefault();
-              openProtectedRoute("/profile/inbox", "Login to read your inbox messages.");
+              openProtectedRoute("/account/inbox", "Login to read your inbox messages.");
             }}>
               <Inbox />
               <span>
@@ -309,7 +319,7 @@ export default function TopNavber() {
           type="button"
           className={styles.drawerAccount}
           onClick={() => {
-            if (user) closeDrawerAndGo("/profile");
+            if (user) closeDrawerAndGo("/account");
             else {
               setDrawerOpen(false);
               openLoginModal("Login to manage your Arogga account.");
@@ -329,13 +339,13 @@ export default function TopNavber() {
         ))}
         <button type="button" onClick={() => {
           setDrawerOpen(false);
-          openProtectedRoute("/profile/orders", "Login to see your orders.");
+          openProtectedRoute("/account/orders", "Login to see your orders.");
         }}>
           <Package /> Orders
         </button>
         <button type="button" onClick={() => {
           setDrawerOpen(false);
-          openProtectedRoute("/profile/inbox", "Login to read your inbox messages.");
+          openProtectedRoute("/account/inbox", "Login to read your inbox messages.");
         }}>
           <Inbox /> Inbox
         </button>

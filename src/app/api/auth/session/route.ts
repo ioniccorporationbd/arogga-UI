@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
-import { AUTH_COOKIE_NAME, parseDemoSession } from "@/lib/auth-server";
+import { AUTH_COOKIE_NAME, parseSession } from "@/lib/auth/session";
 
 export async function GET(request: Request) {
   const cookie = request.headers.get("cookie") || "";
   const match = cookie.match(/(?:^|; )arogga_session=([^;]+)/);
-  const session = parseDemoSession(match ? decodeURIComponent(match[1]) : undefined);
+  const session = parseSession(match ? decodeURIComponent(match[1]) : undefined);
 
   if (!session) {
     return NextResponse.json({ ok: true, authenticated: false, user: null }, { headers: { "Cache-Control": "no-store" } });

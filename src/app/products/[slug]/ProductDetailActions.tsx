@@ -72,14 +72,20 @@ export default function ProductDetailActions({
 
   function handleAddToCart() {
     if (disabled) return;
-    if (!requireAuth({ reason: "Login to add this product to cart." })) return;
+    if (!requireAuth({
+      reason: "Login to add this product to cart.",
+      pendingAction: { type: "ADD_TO_CART", payload: { productId: product.id, variantId: cartProduct.id, quantity } },
+    })) return;
     addItem(cartProduct, quantity);
     setAdded(true);
     window.setTimeout(() => setAdded(false), 1400);
   }
 
   function handleWishlist() {
-    if (!requireAuth({ reason: "Login to save products to wishlist." })) return;
+    if (!requireAuth({
+      reason: "Login to save products to wishlist.",
+      pendingAction: { type: "ADD_TO_WISHLIST", payload: { productId: product.id } },
+    })) return;
     wishlist.toggle({
       id: product.id,
       slug: product.slug,

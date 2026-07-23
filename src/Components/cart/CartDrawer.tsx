@@ -32,7 +32,7 @@ import { FormEvent, useMemo, useState } from "react";
 
 import { useAuth } from "@/context/AuthContext";
 import { useCart, type CartItem } from "@/context/CartContext";
-import { notify } from "@/lib/toast";
+import { notify } from "@/lib/notify";
 import styles from "./CartDrawer.module.css";
 
 type AddressType = "Home" | "Office" | "Others";
@@ -164,7 +164,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
   }
 
   function startAddressFlow() {
-    if (!requireAuth({ reason: "Login to add a delivery address and checkout." })) return;
+    if (!requireAuth({ reason: "Login to add a delivery address and checkout.", pendingAction: { type: "CHECKOUT" } })) return;
     setAddressOpen(true);
   }
 
@@ -183,7 +183,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
     setSavedAddress(nextAddress);
     setAddress(nextAddress);
     setAddressOpen(false);
-    notify.success("Delivery address saved successfully");
+    notify.address.saved();
     setPaymentOpen(true);
   }
 
@@ -202,7 +202,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
     setOrderId(getOrderId());
     setDeliveryDate(getDeliveryDate());
     clearCart();
-    notify.success("Order placed successfully");
+    notify.order.placed();
     setSuccessOpen(true);
   }
 

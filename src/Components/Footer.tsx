@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import type { FormEvent, ReactNode } from "react";
 import { useEffect, useMemo, useState } from "react";
-import { notify } from "@/lib/toast";
+import { notify } from "@/lib/notify";
 
 type FooterLink = {
   label: string;

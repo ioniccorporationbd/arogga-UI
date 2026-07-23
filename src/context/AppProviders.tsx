@@ -1,21 +1,21 @@
 "use client";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "sonner";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, type ToastOptions } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import type { ReactNode } from "react";
 import { useEffect, useState } from "react";
 
-import MobileLoginModal from "@/Components/auth/MobileLoginModal";
-import { showToast, type AroggaToastDetail } from "@/lib/toast";
+import LoginModal from "@/components/auth/LoginModal";
+import PendingAuthActionExecutor from "@/components/auth/PendingAuthActionExecutor";
+import { showToast, type AroggaToastDetail } from "@/lib/notify";
 import { AuthProvider, useAuth } from "./AuthContext";
 import { CartProvider } from "./CartContext";
 import { WishlistProvider } from "./WishlistContext";
 
 function GlobalLoginModal() {
   const { loginModalOpen, closeLoginModal } = useAuth();
-  return <MobileLoginModal open={loginModalOpen} onClose={closeLoginModal} />;
+  return <LoginModal open={loginModalOpen} onClose={closeLoginModal} />;
 }
 
 function ToastEventBridge() {
@@ -23,7 +23,7 @@ function ToastEventBridge() {
     const handleToast = (event: Event) => {
       const detail = (event as CustomEvent<AroggaToastDetail>).detail;
       if (!detail?.message) return;
-      showToast(detail.type, detail.message, detail.options);
+      showToast(detail.type, detail.message, detail.options as ToastOptions | undefined);
     };
 
     window.addEventListener("arogga-toast", handleToast);
@@ -47,6 +47,7 @@ export default function AppProviders({ children }: { children: ReactNode }) {
         <WishlistProvider>
           <CartProvider>
             <div className="arogga-app-shell">{children}</div>
+            <PendingAuthActionExecutor />
             <ToastEventBridge />
             <GlobalLoginModal />
             <ToastContainer
@@ -60,19 +61,6 @@ export default function AppProviders({ children }: { children: ReactNode }) {
               pauseOnHover
               theme="light"
               toastClassName="arogga-toastify-toast"
-            />
-            <Toaster
-              richColors
-              closeButton
-              position="top-right"
-              toastOptions={{
-                style: {
-                  borderRadius: "18px",
-                  border: "1px solid rgba(8, 123, 117, 0.16)",
-                  boxShadow: "0 24px 60px -42px rgba(15, 23, 42, 0.7)",
-                  fontSize: "13px",
-                },
-              }}
             />
           </CartProvider>
         </WishlistProvider>
