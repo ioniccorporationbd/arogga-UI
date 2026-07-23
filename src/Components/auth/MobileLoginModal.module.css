@@ -413,3 +413,8 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* 300px–2000px auth modal responsiveness */
+.backdrop{padding:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left))}.modal{width:min(900px,100%)!important;max-height:min(92dvh,760px);overflow:auto}.phoneField{min-width:0}.formSide input,.formSide button{min-height:44px}
+@media(max-width:767px){.modal{grid-template-columns:1fr!important;width:min(100%,calc(100vw - 18px))!important;border-radius:22px}.visual{display:none!important}.formSide{min-height:auto!important;padding:54px 18px 20px!important}.close{top:10px;right:10px}}

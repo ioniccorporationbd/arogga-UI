@@ -822,3 +822,24 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* 300px–2000px responsive category/navigation hardening */
+@media (max-width: 1023px) {
+  .shell { width: min(100%, calc(100% - 24px)); }
+  .toolbar { grid-template-columns: 1fr; align-items: stretch; }
+  .quickActions { width: 100%; overflow-x: auto; }
+  .quickActions button { flex: 1 0 auto; }
+  .quickPanel { grid-template-columns: 1fr; max-height: min(72dvh, 620px); overflow: auto; }
+  .quickCardGrid, .filterGrid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
+}
+@media (max-width: 767px) {
+  .navigation { position: relative; z-index: 80; }
+  .shell { width: 100%; }
+  .toolbar { padding-inline: 12px; }
+  .toolbarTitle > small { display: none; }
+  .quickPanel { margin-inline: 10px; border-radius: 18px; }
+  .tabs { min-height: 46px; padding-inline: 8px; }
+  .tab { min-height: 46px; padding-inline: 11px; font-size: 12px; }
+  .megaMenu { max-height: 86dvh; }
+}

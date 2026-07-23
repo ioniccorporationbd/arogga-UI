@@ -1189,3 +1189,176 @@ a[href] {
     padding-inline: 0.875rem;
   }
 }
+
+
+/* =========================================================
+   RESPONSIVE PRODUCTION FOUNDATION: 300px–2000px
+   Mobile-first hardening layer for every route/component.
+========================================================= */
+:root {
+  --rs-max: 1640px;
+  --rs-gutter: clamp(12px, 2.2vw, 32px);
+  --rs-section-y: clamp(32px, 5vw, 104px);
+  --rs-touch: 44px;
+  --text-xs: clamp(0.72rem, 0.68rem + 0.15vw, 0.8rem);
+  --text-sm: clamp(0.82rem, 0.76rem + 0.2vw, 0.95rem);
+  --text-base: clamp(0.92rem, 0.84rem + 0.28vw, 1.05rem);
+  --text-lg: clamp(1.05rem, 0.96rem + 0.4vw, 1.3rem);
+  --text-xl: clamp(1.2rem, 1rem + 0.7vw, 1.7rem);
+  --text-2xl: clamp(1.45rem, 1.15rem + 1vw, 2.2rem);
+  --text-3xl: clamp(1.8rem, 1.35rem + 1.6vw, 3rem);
+  --text-hero: clamp(2rem, 1.4rem + 3vw, 4.8rem);
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+body {
+  font-size: var(--text-base);
+  padding-inline: env(safe-area-inset-left) env(safe-area-inset-right);
+}
+
+.arogga-app-shell,
+.site-wrapper,
+.site-main,
+main,
+section,
+article,
+header,
+footer,
+nav,
+form,
+fieldset,
+label,
+div {
+  min-width: 0;
+}
+
+.site-main {
+  overflow-x: clip;
+}
+
+.site-container,
+.section-shell,
+.responsive-container,
+.arogga-container {
+  width: min(var(--rs-max), calc(100% - (var(--rs-gutter) * 2)));
+  max-width: var(--rs-max);
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+.page-title,
+.section-title {
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+p,
+li,
+span,
+small,
+strong,
+a,
+button,
+input,
+textarea,
+select,
+td,
+th {
+  overflow-wrap: anywhere;
+}
+
+button,
+a[href],
+[role="button"],
+input,
+select,
+textarea,
+summary {
+  min-height: var(--rs-touch);
+}
+
+button,
+a[href],
+[role="button"] {
+  touch-action: manipulation;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+img,
+video,
+svg,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+iframe,
+video {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-responsive,
+[data-table-scroll] {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.line-clamp-2,
+.productName,
+.wish-title,
+.pd-record h3,
+.orders-product-title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media (min-width: 1600px) {
+  :root { --rs-gutter: 34px; }
+}
+
+@media (min-width: 1920px) {
+  :root { --rs-gutter: 40px; }
+}
+
+@media (max-width: 479px) {
+  :root { --rs-gutter: 12px; }
+  body { font-size: 0.94rem; }
+  h1 { font-size: clamp(1.75rem, 11vw, 2.65rem); }
+  h2 { font-size: clamp(1.35rem, 8vw, 2rem); }
+}
+
+@media (max-width: 360px) {
+  :root { --rs-gutter: 10px; --rs-touch: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

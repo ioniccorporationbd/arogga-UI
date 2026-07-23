@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arogga UI
+
+A responsive healthcare e-commerce interface built with Next.js App Router.
+
+For the full 300px–2000px responsive page/component documentation, see:
+
+```text
+RESPONSIVE_ECOMMERCE_README.md
+```
+
 
 ## Getting Started
 

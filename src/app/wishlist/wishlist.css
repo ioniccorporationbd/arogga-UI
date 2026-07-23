@@ -422,3 +422,9 @@
     transition-duration: .01ms !important;
   }
 }
+
+
+/* 300px–2000px wishlist responsiveness */
+.wish-page{width:min(1640px,calc(100% - clamp(20px,4vw,64px)))!important}.wish-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))!important}.wish-card{min-width:0}.wish-actions{display:flex;flex-wrap:wrap}.wish-actions>*{min-height:44px;flex:1 1 120px}
+@media(max-width:767px){.wish-page{width:min(100%,calc(100% - 20px))!important;margin-top:18px}.wish-hero{align-items:flex-start;flex-direction:column;padding:18px;border-radius:20px}.wish-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))!important;gap:12px}.wish-card-body{padding:11px}.wish-title{font-size:13px}.wish-card-info strong{font-size:16px}}
+@media(max-width:340px){.wish-grid{grid-template-columns:1fr!important}}
