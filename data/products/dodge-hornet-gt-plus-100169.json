@@ -1,0 +1,507 @@
+{
+  "id": "100169",
+  "uuid": "dummy-catalog-100169",
+  "productGroupId": "group-5042",
+  "sourceProductId": "169",
+  "sku": "HEA-LIF-100169",
+  "barcode": "8800000100169",
+  "slug": "dodge-hornet-gt-plus-100169",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Dodge Hornet GT Plus",
+  "shortName": "Dodge Hornet GT Plus",
+  "subtitle": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+  "brand": {
+    "id": "brand-dodge",
+    "name": "Dodge",
+    "slug": "dodge",
+    "logo": null,
+    "manufacturer": "Dodge",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "slug": "healthcare"
+    },
+    "category": {
+      "id": "lifestyle",
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "subCategory": {
+      "id": "vehicle",
+      "name": "Vehicle",
+      "slug": "vehicle"
+    },
+    "collections": [
+      {
+        "id": "healthcare-collection",
+        "name": "Healthcare Collection",
+        "slug": "healthcare-collection"
+      }
+    ],
+    "tags": [
+      "vehicle",
+      "dodge",
+      "dodge hornet gt plus",
+      "healthcare",
+      "lifestyle"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+    "description": "Dodge Hornet GT Plus is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+    "highlights": [
+      "Vehicle product",
+      "Dodge item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Vehicle"
+      },
+      {
+        "title": "Brand",
+        "value": "Dodge"
+      },
+      {
+        "title": "Department",
+        "value": "Healthcare"
+      },
+      {
+        "title": "Category",
+        "value": "Lifestyle"
+      },
+      {
+        "title": "Rating",
+        "value": "2.65"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 3124999,
+    "salePrice": 3031249,
+    "costPrice": 3.71,
+    "compareAtPrice": 3124999,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 3,
+      "percentage": 3,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 3031249,
+      "maximum": 3124999
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 101,
+    "reservedQuantity": 5,
+    "availableQuantity": 82,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100169",
+      "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+      "alt": "Dodge Hornet GT Plus",
+      "title": "Dodge Hornet GT Plus",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100169-1",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+        "alt": "Dodge Hornet GT Plus image 1",
+        "title": "Dodge Hornet GT Plus image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100169-2",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/1.webp",
+        "alt": "Dodge Hornet GT Plus image 2",
+        "title": "Dodge Hornet GT Plus image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100169-3",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/2.webp",
+        "alt": "Dodge Hornet GT Plus image 3",
+        "title": "Dodge Hornet GT Plus image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100169-4",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/3.webp",
+        "alt": "Dodge Hornet GT Plus image 4",
+        "title": "Dodge Hornet GT Plus image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100169-5",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/4.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/4.webp",
+        "alt": "Dodge Hornet GT Plus image 5",
+        "title": "Dodge Hornet GT Plus image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/lifestyle.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+      "title": "Dodge Hornet GT Plus product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "1 year warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100169-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Dodge",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100169-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Lifestyle",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100169-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1 month",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 5,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 2.6,
+    "count": 399,
+    "verifiedPurchaseCount": 287,
+    "distribution": {
+      "5": 157,
+      "4": 71,
+      "3": 171,
+      "2": 4,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 3,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Dodge Hornet GT Plus Online in Bangladesh | Arogga",
+    "metaDescription": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+    "keywords": [
+      "Dodge Hornet GT Plus",
+      "Dodge",
+      "Lifestyle",
+      "Healthcare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100169",
+    "openGraph": {
+      "title": "Buy Dodge Hornet GT Plus Online in Bangladesh | Arogga",
+      "description": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+      "image": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100169",
+    "api": "/api/products/100169",
+    "source": "https://dummyjson.com/products/169"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 6400,
+    "salesCount": 1295,
+    "wishlistCount": 75,
+    "cartAdditionCount": 606,
+    "conversionRate": 5.63
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100169,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Dodge",
+  "genericName": "Dodge Hornet GT Plus",
+  "category": "Lifestyle",
+  "subcategory": "Vehicle",
+  "type": "simple",
+  "price": 3124999,
+  "discountPrice": 3031249,
+  "discountPercentage": 3,
+  "currency": "BDT",
+  "stock": 82,
+  "sold": 1295,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/1.webp",
+    "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/2.webp",
+    "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/3.webp",
+    "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/4.webp"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+  "video": "/videos/catalog/lifestyle.mp4",
+  "description": "Dodge Hornet GT Plus is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+  "shortDescription": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Vehicle product",
+    "Dodge item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Vehicle",
+    "Brand": "Dodge",
+    "Department": "Healthcare",
+    "Category": "Lifestyle",
+    "Rating": "2.65"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 2.6,
+  "reviewCount": 399,
+  "faq": [],
+  "tags": [
+    "vehicle",
+    "dodge",
+    "dodge hornet gt plus",
+    "healthcare",
+    "lifestyle"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": true,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

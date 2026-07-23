@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { AUTH_COOKIE_NAME, parseSession } from "@/lib/auth/session";
 import type { ProfileDashboardData, ProfileSection } from "@/types/profile";
 
 const image = "https://images.unsplash.com/photo-1606813902914-5f8f7ec4d1ad?auto=format&fit=crop&w=500&q=80";
@@ -48,7 +49,8 @@ function buildData(phone = "01711111111"): ProfileDashboardData {
 }
 
 function auth(request: NextRequest) {
-  return request.headers.get("x-user-phone") || request.nextUrl.searchParams.get("phone");
+  const value = request.cookies.get(AUTH_COOKIE_NAME)?.value;
+  return parseSession(value)?.phone;
 }
 
 export async function GET(request: NextRequest, { params }: { params: Promise<{ section?: string[] }> }) {

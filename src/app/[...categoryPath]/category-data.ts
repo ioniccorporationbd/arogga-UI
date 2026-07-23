@@ -33,6 +33,16 @@ type MenuData = {
   doctor?: MenuItem[];
 };
 
+type DynamicPageLink = {
+  label: string;
+  href: string;
+  description?: string;
+};
+
+type PageLinkData = {
+  links?: DynamicPageLink[];
+};
+
 export type CategoryRoute = {
   label: string;
   href: string;
@@ -42,6 +52,7 @@ export type CategoryRoute = {
 };
 
 let menuCache: MenuData | null = null;
+let pageLinkCache: DynamicPageLink[] | null = null;
 
 function normalizeHref(value?: string) {
   const href = value?.trim();
@@ -63,7 +74,34 @@ async function getMenuData() {
   return menuCache;
 }
 
-export async function findCategoryRoute(pathname: string): Promise<CategoryRoute | null> {
+async function getPageLinks() {
+  if (pageLinkCache) return pageLinkCache;
+
+  try {
+    const filePath = path.join(process.cwd(), "public", "page-links.json");
+    const raw = await readFile(filePath, "utf8");
+    const parsed: unknown = JSON.parse(raw);
+    pageLinkCache = parsed && typeof parsed === "object" && Array.isArray((parsed as PageLinkData).links)
+      ? ((parsed as PageLinkData).links ?? [])
+      : [];
+  } catch {
+    pageLinkCache = [];
+  }
+
+  return pageLinkCache;
+}
+
+function labelFromPath(pathname: string) {
+  const parts = normalizeHref(pathname).split("/").filter(Boolean);
+  const last = parts.at(-1) || "products";
+  return last
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ") || "Products";
+}
+
+export async function findCategoryRoute(pathname: string): Promise<CategoryRoute> {
   const menu = await getMenuData();
   const normalizedPath = normalizeHref(pathname);
   const sections = [menu.store ?? [], menu.lab ?? [], menu.doctor ?? []];
@@ -131,7 +169,28 @@ export async function findCategoryRoute(pathname: string): Promise<CategoryRoute
     }
   }
 
-  return null;
+  const pageLinks = await getPageLinks();
+  const pageLink = pageLinks.find((entry) => normalizeHref(entry.href) === normalizedPath);
+  if (pageLink) {
+    return {
+      label: pageLink.label,
+      href: normalizeHref(pageLink.href),
+      rootLabel: "Dynamic Page",
+      siblings: pageLinks
+        .filter((entry) => normalizeHref(entry.href) !== normalizedPath)
+        .slice(0, 12)
+        .map((entry) => ({ label: entry.label, href: normalizeHref(entry.href) })),
+    };
+  }
+
+  // Final data-driven fallback: any top/footer link that reaches the catch-all route renders
+  // a dynamic catalog page instead of a static 404 page.
+  return {
+    label: labelFromPath(normalizedPath),
+    href: normalizedPath,
+    rootLabel: "Dynamic Catalog",
+    siblings: pageLinks.slice(0, 12).map((entry) => ({ label: entry.label, href: normalizeHref(entry.href) })),
+  };
 }
 
 function normalizeSearchText(value: string) {

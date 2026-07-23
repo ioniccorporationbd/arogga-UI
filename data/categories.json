@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "accessories",
+    "name": "Accessories",
+    "productCount": 14,
+    "href": "/category/accessories"
+  },
+  {
+    "slug": "digital-devices",
+    "name": "Digital Devices",
+    "productCount": 24,
+    "href": "/category/digital-devices"
+  },
+  {
+    "slug": "fashion",
+    "name": "Fashion",
+    "productCount": 25,
+    "href": "/category/fashion"
+  },
+  {
+    "slug": "fashion-accessories",
+    "name": "Fashion Accessories",
+    "productCount": 24,
+    "href": "/category/fashion-accessories"
+  },
+  {
+    "slug": "fitness-accessories",
+    "name": "Fitness Accessories",
+    "productCount": 17,
+    "href": "/category/fitness-accessories"
+  },
+  {
+    "slug": "grocery-essentials",
+    "name": "Grocery Essentials",
+    "productCount": 27,
+    "href": "/category/grocery-essentials"
+  },
+  {
+    "slug": "home-decor",
+    "name": "Home Decor",
+    "productCount": 5,
+    "href": "/category/home-decor"
+  },
+  {
+    "slug": "home-essentials",
+    "name": "Home Essentials",
+    "productCount": 5,
+    "href": "/category/home-essentials"
+  },
+  {
+    "slug": "kitchen-essentials",
+    "name": "Kitchen Essentials",
+    "productCount": 30,
+    "href": "/category/kitchen-essentials"
+  },
+  {
+    "slug": "lifestyle",
+    "name": "Lifestyle",
+    "productCount": 10,
+    "href": "/category/lifestyle"
+  },
+  {
+    "slug": "makeup",
+    "name": "Makeup",
+    "productCount": 5,
+    "href": "/category/makeup"
+  },
+  {
+    "slug": "perfume",
+    "name": "Perfume",
+    "productCount": 5,
+    "href": "/category/perfume"
+  },
+  {
+    "slug": "skincare",
+    "name": "Skincare",
+    "productCount": 3,
+    "href": "/category/skincare"
+  }
+]

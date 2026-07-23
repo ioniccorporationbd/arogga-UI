@@ -1,0 +1,507 @@
+{
+  "id": "100047",
+  "uuid": "dummy-catalog-100047",
+  "productGroupId": "group-5011",
+  "sourceProductId": "47",
+  "sku": "HOM-HOM-100047",
+  "barcode": "8800000100047",
+  "slug": "home-decoration-table-lamp-100047",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Home Decoration Table Lamp",
+  "shortName": "Table Lamp",
+  "subtitle": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides",
+  "brand": {
+    "id": "brand-home-decoration",
+    "name": "Home Decoration",
+    "slug": "home-decoration",
+    "logo": null,
+    "manufacturer": "Home Decoration",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "homecare",
+      "name": "Homecare",
+      "slug": "homecare"
+    },
+    "category": {
+      "id": "home-decor",
+      "name": "Home Decor",
+      "slug": "home-decor"
+    },
+    "subCategory": {
+      "id": "home-decor",
+      "name": "Home Decor",
+      "slug": "home-decor"
+    },
+    "collections": [
+      {
+        "id": "homecare-collection",
+        "name": "Homecare Collection",
+        "slug": "homecare-collection"
+      }
+    ],
+    "tags": [
+      "home-decoration",
+      "home decoration",
+      "table lamp",
+      "homecare",
+      "home decor"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+    "description": "Home Decoration Table Lamp is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+    "highlights": [
+      "Home Decor product",
+      "Home Decoration item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Home Decor"
+      },
+      {
+        "title": "Brand",
+        "value": "Home Decoration"
+      },
+      {
+        "title": "Department",
+        "value": "Homecare"
+      },
+      {
+        "title": "Category",
+        "value": "Home Decor"
+      },
+      {
+        "title": "Rating",
+        "value": "3.55"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 6249,
+    "salePrice": 5811,
+    "costPrice": 3.71,
+    "compareAtPrice": 6249,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 7,
+      "percentage": 7,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 5811,
+      "maximum": 6249
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 18,
+    "reservedQuantity": 1,
+    "availableQuantity": 9,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100047",
+      "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+      "alt": "Home Decoration Table Lamp",
+      "title": "Home Decoration Table Lamp",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100047-1",
+        "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+        "alt": "Home Decoration Table Lamp image 1",
+        "title": "Home Decoration Table Lamp image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100047-2",
+        "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+        "alt": "Home Decoration Table Lamp image 2",
+        "title": "Home Decoration Table Lamp image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100047-3",
+        "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=3",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=3",
+        "alt": "Home Decoration Table Lamp image 3",
+        "title": "Home Decoration Table Lamp image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100047-4",
+        "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp?view=4",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp?view=4",
+        "alt": "Home Decoration Table Lamp image 4",
+        "title": "Home Decoration Table Lamp image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100047-5",
+        "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=5",
+        "alt": "Home Decoration Table Lamp image 5",
+        "title": "Home Decoration Table Lamp image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/home-decor.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+      "title": "Home Decoration Table Lamp product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "3 months warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100047-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Home Decoration",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100047-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Home Decor",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100047-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1-2 business days",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 4,
+      "sameDayEligible": true
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 9,
+    "quantityStep": 1,
+    "maximumPerOrder": 9,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.5,
+    "count": 1145,
+    "verifiedPurchaseCount": 824,
+    "distribution": {
+      "5": 609,
+      "4": 206,
+      "3": 326,
+      "2": 22,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 3,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Home Decoration Table Lamp Online in Bangladesh | Arogga",
+    "metaDescription": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+    "keywords": [
+      "Home Decoration Table Lamp",
+      "Home Decoration",
+      "Home Decor",
+      "Homecare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100047",
+    "openGraph": {
+      "title": "Buy Home Decoration Table Lamp Online in Bangladesh | Arogga",
+      "description": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+      "image": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100047",
+    "api": "/api/products/100047",
+    "source": "https://dummyjson.com/products/47"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 6923,
+    "salesCount": 155,
+    "wishlistCount": 161,
+    "cartAdditionCount": 1756,
+    "conversionRate": 6.76
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100047,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Home Decoration",
+  "genericName": "Table Lamp",
+  "category": "Home Decor",
+  "subcategory": "Home Decor",
+  "type": "simple",
+  "price": 6249,
+  "discountPrice": 5811,
+  "discountPercentage": 7,
+  "currency": "BDT",
+  "stock": 9,
+  "sold": 155,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+    "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=3",
+    "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp?view=4",
+    "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+  "video": "/videos/catalog/home-decor.mp4",
+  "description": "Home Decoration Table Lamp is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+  "shortDescription": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Home Decor product",
+    "Home Decoration item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Home Decor",
+    "Brand": "Home Decoration",
+    "Department": "Homecare",
+    "Category": "Home Decor",
+    "Rating": "3.55"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.5,
+  "reviewCount": 1145,
+  "faq": [],
+  "tags": [
+    "home-decoration",
+    "home decoration",
+    "table lamp",
+    "homecare",
+    "home decor"
+  ],
+  "featured": false,
+  "bestSeller": false,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

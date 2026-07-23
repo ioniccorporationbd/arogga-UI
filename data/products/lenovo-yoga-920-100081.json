@@ -1,0 +1,507 @@
+{
+  "id": "100081",
+  "uuid": "dummy-catalog-100081",
+  "productGroupId": "group-5020",
+  "sourceProductId": "81",
+  "sku": "HEA-DIG-100081",
+  "barcode": "8800000100081",
+  "slug": "lenovo-yoga-920-100081",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Lenovo Yoga 920",
+  "shortName": "Lenovo Yoga 920",
+  "subtitle": "The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, ",
+  "brand": {
+    "id": "brand-lenovo",
+    "name": "Lenovo",
+    "slug": "lenovo",
+    "logo": null,
+    "manufacturer": "Lenovo",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "slug": "healthcare"
+    },
+    "category": {
+      "id": "digital-devices",
+      "name": "Digital Devices",
+      "slug": "digital-devices"
+    },
+    "subCategory": {
+      "id": "laptops",
+      "name": "Laptops",
+      "slug": "laptops"
+    },
+    "collections": [
+      {
+        "id": "healthcare-collection",
+        "name": "Healthcare Collection",
+        "slug": "healthcare-collection"
+      }
+    ],
+    "tags": [
+      "laptops",
+      "lenovo",
+      "lenovo yoga 920",
+      "healthcare",
+      "digital devices"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
+    "description": "Lenovo Yoga 920 is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
+    "highlights": [
+      "Laptops product",
+      "Lenovo item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Laptops"
+      },
+      {
+        "title": "Brand",
+        "value": "Lenovo"
+      },
+      {
+        "title": "Department",
+        "value": "Healthcare"
+      },
+      {
+        "title": "Category",
+        "value": "Digital Devices"
+      },
+      {
+        "title": "Rating",
+        "value": "2.86"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 137499,
+    "salePrice": 127874,
+    "costPrice": 3.71,
+    "compareAtPrice": 137499,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 7,
+      "percentage": 7,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 127874,
+      "maximum": 137499
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 58,
+    "reservedQuantity": 5,
+    "availableQuantity": 40,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100081",
+      "url": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+      "alt": "Lenovo Yoga 920",
+      "title": "Lenovo Yoga 920",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100081-1",
+        "url": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+        "alt": "Lenovo Yoga 920 image 1",
+        "title": "Lenovo Yoga 920 image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100081-2",
+        "url": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/1.webp",
+        "alt": "Lenovo Yoga 920 image 2",
+        "title": "Lenovo Yoga 920 image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100081-3",
+        "url": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/2.webp",
+        "alt": "Lenovo Yoga 920 image 3",
+        "title": "Lenovo Yoga 920 image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100081-4",
+        "url": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/3.webp",
+        "alt": "Lenovo Yoga 920 image 4",
+        "title": "Lenovo Yoga 920 image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100081-5",
+        "url": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp?view=5",
+        "alt": "Lenovo Yoga 920 image 5",
+        "title": "Lenovo Yoga 920 image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/digital-devices.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+      "title": "Lenovo Yoga 920 product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "6 months warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100081-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Lenovo",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100081-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Digital Devices",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100081-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 2 weeks",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 2,
+      "estimatedMaximumDays": 3,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 2.9,
+    "count": 1173,
+    "verifiedPurchaseCount": 844,
+    "distribution": {
+      "5": 517,
+      "4": 211,
+      "3": 442,
+      "2": 23,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 7,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Lenovo Yoga 920 Online in Bangladesh | Arogga",
+    "metaDescription": "The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
+    "keywords": [
+      "Lenovo Yoga 920",
+      "Lenovo",
+      "Digital Devices",
+      "Healthcare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100081",
+    "openGraph": {
+      "title": "Buy Lenovo Yoga 920 Online in Bangladesh | Arogga",
+      "description": "The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
+      "image": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100081",
+    "api": "/api/products/100081",
+    "source": "https://dummyjson.com/products/81"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 12286,
+    "salesCount": 1556,
+    "wishlistCount": 166,
+    "cartAdditionCount": 534,
+    "conversionRate": 9.45
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100081,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Lenovo",
+  "genericName": "Lenovo Yoga 920",
+  "category": "Digital Devices",
+  "subcategory": "Laptops",
+  "type": "simple",
+  "price": 137499,
+  "discountPrice": 127874,
+  "discountPercentage": 7,
+  "currency": "BDT",
+  "stock": 40,
+  "sold": 1556,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/1.webp",
+    "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/2.webp",
+    "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/3.webp",
+    "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+  "video": "/videos/catalog/digital-devices.mp4",
+  "description": "Lenovo Yoga 920 is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
+  "shortDescription": "The Lenovo Yoga 920 is a 2-in-1 convertible laptop with a flexible hinge, allowing you to use it as a laptop or tablet, offering versatility and portability.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Laptops product",
+    "Lenovo item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Laptops",
+    "Brand": "Lenovo",
+    "Department": "Healthcare",
+    "Category": "Digital Devices",
+    "Rating": "2.86"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 2.9,
+  "reviewCount": 1173,
+  "faq": [],
+  "tags": [
+    "laptops",
+    "lenovo",
+    "lenovo yoga 920",
+    "healthcare",
+    "digital devices"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

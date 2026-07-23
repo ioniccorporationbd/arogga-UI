@@ -1,0 +1,2035 @@
+{
+  "slug": "fashion-shades",
+  "name": "Fashion Shades",
+  "products": [
+    {
+      "id": "100154",
+      "uuid": "dummy-catalog-100154",
+      "productGroupId": "group-5038",
+      "sourceProductId": "154",
+      "sku": "BEA-FAS-100154",
+      "barcode": "8800000100154",
+      "slug": "fashion-shades-black-sun-glasses-100154",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Fashion Shades Black Sun Glasses",
+      "shortName": "Black Sun Glasses",
+      "subtitle": "The Black Sun Glasses are a classic and stylish choice, featuring a sleek black frame and tinted lenses. They provide bo",
+      "brand": {
+        "id": "brand-fashion-shades",
+        "name": "Fashion Shades",
+        "slug": "fashion-shades",
+        "logo": null,
+        "manufacturer": "Fashion Shades",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion-accessories",
+          "name": "Fashion Accessories",
+          "slug": "fashion-accessories"
+        },
+        "subCategory": {
+          "id": "sunglasses",
+          "name": "Sunglasses",
+          "slug": "sunglasses"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "sunglasses",
+          "fashion shades",
+          "black sun glasses",
+          "beauty",
+          "fashion accessories"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Black Sun Glasses are a classic and stylish choice, featuring a sleek black frame and tinted lenses. They provide both UV protection and a fashionable look.",
+        "description": "Fashion Shades Black Sun Glasses is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Black Sun Glasses are a classic and stylish choice, featuring a sleek black frame and tinted lenses. They provide both UV protection and a fashionable look.",
+        "highlights": [
+          "Sunglasses product",
+          "Fashion Shades item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Sunglasses"
+          },
+          {
+            "title": "Brand",
+            "value": "Fashion Shades"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion Accessories"
+          },
+          {
+            "title": "Rating",
+            "value": "4.41"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 3749,
+        "salePrice": 3561,
+        "costPrice": 3.71,
+        "compareAtPrice": 3749,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 5,
+          "percentage": 5,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 3561,
+          "maximum": 3749
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 99,
+        "reservedQuantity": 2,
+        "availableQuantity": 60,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100154",
+          "url": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp",
+          "alt": "Fashion Shades Black Sun Glasses",
+          "title": "Fashion Shades Black Sun Glasses",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100154-1",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp",
+            "alt": "Fashion Shades Black Sun Glasses image 1",
+            "title": "Fashion Shades Black Sun Glasses image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100154-2",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/1.webp",
+            "alt": "Fashion Shades Black Sun Glasses image 2",
+            "title": "Fashion Shades Black Sun Glasses image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100154-3",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/2.webp",
+            "alt": "Fashion Shades Black Sun Glasses image 3",
+            "title": "Fashion Shades Black Sun Glasses image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100154-4",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/3.webp",
+            "alt": "Fashion Shades Black Sun Glasses image 4",
+            "title": "Fashion Shades Black Sun Glasses image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100154-5",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp?view=5",
+            "alt": "Fashion Shades Black Sun Glasses image 5",
+            "title": "Fashion Shades Black Sun Glasses image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion-accessories.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp",
+          "title": "Fashion Shades Black Sun Glasses product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "No warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100154-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Fashion Shades",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100154-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion Accessories",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100154-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1-2 business days",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.4,
+        "count": 697,
+        "verifiedPurchaseCount": 501,
+        "distribution": {
+          "5": 466,
+          "4": 125,
+          "3": 101,
+          "2": 3,
+          "1": 2
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Fashion Shades Black Sun Glasses Online in Bangladesh | Arogga",
+        "metaDescription": "The Black Sun Glasses are a classic and stylish choice, featuring a sleek black frame and tinted lenses. They provide both UV protection and a fashionable look.",
+        "keywords": [
+          "Fashion Shades Black Sun Glasses",
+          "Fashion Shades",
+          "Fashion Accessories",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100154",
+        "openGraph": {
+          "title": "Buy Fashion Shades Black Sun Glasses Online in Bangladesh | Arogga",
+          "description": "The Black Sun Glasses are a classic and stylish choice, featuring a sleek black frame and tinted lenses. They provide both UV protection and a fashionable look.",
+          "image": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100154",
+        "api": "/api/products/100154",
+        "source": "https://dummyjson.com/products/154"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 8630,
+        "salesCount": 1514,
+        "wishlistCount": 866,
+        "cartAdditionCount": 263,
+        "conversionRate": 2.04
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100154,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Fashion Shades",
+      "genericName": "Black Sun Glasses",
+      "category": "Fashion Accessories",
+      "subcategory": "Sunglasses",
+      "type": "simple",
+      "price": 3749,
+      "discountPrice": 3561,
+      "discountPercentage": 5,
+      "currency": "BDT",
+      "stock": 60,
+      "sold": 1514,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/1.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/2.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/3.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp",
+      "video": "/videos/catalog/fashion-accessories.mp4",
+      "description": "Fashion Shades Black Sun Glasses is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Black Sun Glasses are a classic and stylish choice, featuring a sleek black frame and tinted lenses. They provide both UV protection and a fashionable look.",
+      "shortDescription": "The Black Sun Glasses are a classic and stylish choice, featuring a sleek black frame and tinted lenses. They provide both UV protection and a fashionable look.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Sunglasses product",
+        "Fashion Shades item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Sunglasses",
+        "Brand": "Fashion Shades",
+        "Department": "Beauty",
+        "Category": "Fashion Accessories",
+        "Rating": "4.41"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.4,
+      "reviewCount": 697,
+      "faq": [],
+      "tags": [
+        "sunglasses",
+        "fashion shades",
+        "black sun glasses",
+        "beauty",
+        "fashion accessories"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100155",
+      "uuid": "dummy-catalog-100155",
+      "productGroupId": "group-5038",
+      "sourceProductId": "155",
+      "sku": "BEA-FAS-100155",
+      "barcode": "8800000100155",
+      "slug": "fashion-shades-classic-sun-glasses-100155",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Fashion Shades Classic Sun Glasses",
+      "shortName": "Classic Sun Glasses",
+      "subtitle": "The Classic Sun Glasses offer a timeless design with a neutral frame and UV-protected lenses. These sunglasses are versa",
+      "brand": {
+        "id": "brand-fashion-shades",
+        "name": "Fashion Shades",
+        "slug": "fashion-shades",
+        "logo": null,
+        "manufacturer": "Fashion Shades",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion-accessories",
+          "name": "Fashion Accessories",
+          "slug": "fashion-accessories"
+        },
+        "subCategory": {
+          "id": "sunglasses",
+          "name": "Sunglasses",
+          "slug": "sunglasses"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "sunglasses",
+          "fashion shades",
+          "classic sun glasses",
+          "beauty",
+          "fashion accessories"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Classic Sun Glasses offer a timeless design with a neutral frame and UV-protected lenses. These sunglasses are versatile and suitable for various occasions.",
+        "description": "Fashion Shades Classic Sun Glasses is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Classic Sun Glasses offer a timeless design with a neutral frame and UV-protected lenses. These sunglasses are versatile and suitable for various occasions.",
+        "highlights": [
+          "Sunglasses product",
+          "Fashion Shades item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Sunglasses"
+          },
+          {
+            "title": "Brand",
+            "value": "Fashion Shades"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion Accessories"
+          },
+          {
+            "title": "Rating",
+            "value": "3.86"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 3124,
+        "salePrice": 2968,
+        "costPrice": 3.71,
+        "compareAtPrice": 3124,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 5,
+          "percentage": 5,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 2968,
+          "maximum": 3124
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 7,
+        "reservedQuantity": 1,
+        "availableQuantity": 1,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100155",
+          "url": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp",
+          "alt": "Fashion Shades Classic Sun Glasses",
+          "title": "Fashion Shades Classic Sun Glasses",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100155-1",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp",
+            "alt": "Fashion Shades Classic Sun Glasses image 1",
+            "title": "Fashion Shades Classic Sun Glasses image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100155-2",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/1.webp",
+            "alt": "Fashion Shades Classic Sun Glasses image 2",
+            "title": "Fashion Shades Classic Sun Glasses image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100155-3",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/2.webp",
+            "alt": "Fashion Shades Classic Sun Glasses image 3",
+            "title": "Fashion Shades Classic Sun Glasses image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100155-4",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/3.webp",
+            "alt": "Fashion Shades Classic Sun Glasses image 4",
+            "title": "Fashion Shades Classic Sun Glasses image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100155-5",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp?view=5",
+            "alt": "Fashion Shades Classic Sun Glasses image 5",
+            "title": "Fashion Shades Classic Sun Glasses image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion-accessories.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp",
+          "title": "Fashion Shades Classic Sun Glasses product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "Low Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "6 months warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100155-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Fashion Shades",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100155-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion Accessories",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100155-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 month",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 3,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 1,
+        "quantityStep": 1,
+        "maximumPerOrder": 1,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.9,
+        "count": 983,
+        "verifiedPurchaseCount": 707,
+        "distribution": {
+          "5": 582,
+          "4": 176,
+          "3": 217,
+          "2": 5,
+          "1": 3
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Fashion Shades Classic Sun Glasses Online in Bangladesh | Arogga",
+        "metaDescription": "The Classic Sun Glasses offer a timeless design with a neutral frame and UV-protected lenses. These sunglasses are versatile and suitable for various occasions.",
+        "keywords": [
+          "Fashion Shades Classic Sun Glasses",
+          "Fashion Shades",
+          "Fashion Accessories",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100155",
+        "openGraph": {
+          "title": "Buy Fashion Shades Classic Sun Glasses Online in Bangladesh | Arogga",
+          "description": "The Classic Sun Glasses offer a timeless design with a neutral frame and UV-protected lenses. These sunglasses are versatile and suitable for various occasions.",
+          "image": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100155",
+        "api": "/api/products/100155",
+        "source": "https://dummyjson.com/products/155"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 20802,
+        "salesCount": 1620,
+        "wishlistCount": 605,
+        "cartAdditionCount": 1352,
+        "conversionRate": 4.62
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100155,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Fashion Shades",
+      "genericName": "Classic Sun Glasses",
+      "category": "Fashion Accessories",
+      "subcategory": "Sunglasses",
+      "type": "simple",
+      "price": 3124,
+      "discountPrice": 2968,
+      "discountPercentage": 5,
+      "currency": "BDT",
+      "stock": 1,
+      "sold": 1620,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/1.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/2.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/3.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/thumbnail.webp",
+      "video": "/videos/catalog/fashion-accessories.mp4",
+      "description": "Fashion Shades Classic Sun Glasses is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Classic Sun Glasses offer a timeless design with a neutral frame and UV-protected lenses. These sunglasses are versatile and suitable for various occasions.",
+      "shortDescription": "The Classic Sun Glasses offer a timeless design with a neutral frame and UV-protected lenses. These sunglasses are versatile and suitable for various occasions.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Sunglasses product",
+        "Fashion Shades item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Sunglasses",
+        "Brand": "Fashion Shades",
+        "Department": "Beauty",
+        "Category": "Fashion Accessories",
+        "Rating": "3.86"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.9,
+      "reviewCount": 983,
+      "faq": [],
+      "tags": [
+        "sunglasses",
+        "fashion shades",
+        "classic sun glasses",
+        "beauty",
+        "fashion accessories"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100156",
+      "uuid": "dummy-catalog-100156",
+      "productGroupId": "group-5038",
+      "sourceProductId": "156",
+      "sku": "BEA-FAS-100156",
+      "barcode": "8800000100156",
+      "slug": "fashion-shades-green-and-black-glasses-100156",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Fashion Shades Green and Black Glasses",
+      "shortName": "Green and Black Glasses",
+      "subtitle": "The Green and Black Glasses feature a bold combination of green and black colors, adding a touch of vibrancy to your eye",
+      "brand": {
+        "id": "brand-fashion-shades",
+        "name": "Fashion Shades",
+        "slug": "fashion-shades",
+        "logo": null,
+        "manufacturer": "Fashion Shades",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion-accessories",
+          "name": "Fashion Accessories",
+          "slug": "fashion-accessories"
+        },
+        "subCategory": {
+          "id": "sunglasses",
+          "name": "Sunglasses",
+          "slug": "sunglasses"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "sunglasses",
+          "fashion shades",
+          "green and black glasses",
+          "beauty",
+          "fashion accessories"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Green and Black Glasses feature a bold combination of green and black colors, adding a touch of vibrancy to your eyewear collection. They are both stylish and eye-catching.",
+        "description": "Fashion Shades Green and Black Glasses is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Green and Black Glasses feature a bold combination of green and black colors, adding a touch of vibrancy to your eyewear collection. They are both stylish and eye-catching.",
+        "highlights": [
+          "Sunglasses product",
+          "Fashion Shades item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Sunglasses"
+          },
+          {
+            "title": "Brand",
+            "value": "Fashion Shades"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion Accessories"
+          },
+          {
+            "title": "Rating",
+            "value": "4.55"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 4374,
+        "salePrice": 4330,
+        "costPrice": 3.71,
+        "compareAtPrice": 4374,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 1,
+          "percentage": 1,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 4330,
+          "maximum": 4374
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 59,
+        "reservedQuantity": 4,
+        "availableQuantity": 24,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100156",
+          "url": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp",
+          "alt": "Fashion Shades Green and Black Glasses",
+          "title": "Fashion Shades Green and Black Glasses",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100156-1",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp",
+            "alt": "Fashion Shades Green and Black Glasses image 1",
+            "title": "Fashion Shades Green and Black Glasses image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100156-2",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/1.webp",
+            "alt": "Fashion Shades Green and Black Glasses image 2",
+            "title": "Fashion Shades Green and Black Glasses image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100156-3",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/2.webp",
+            "alt": "Fashion Shades Green and Black Glasses image 3",
+            "title": "Fashion Shades Green and Black Glasses image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100156-4",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/3.webp",
+            "alt": "Fashion Shades Green and Black Glasses image 4",
+            "title": "Fashion Shades Green and Black Glasses image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100156-5",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp?view=5",
+            "alt": "Fashion Shades Green and Black Glasses image 5",
+            "title": "Fashion Shades Green and Black Glasses image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion-accessories.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp",
+          "title": "Fashion Shades Green and Black Glasses product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100156-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Fashion Shades",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100156-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion Accessories",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100156-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 652,
+        "verifiedPurchaseCount": 469,
+        "distribution": {
+          "5": 445,
+          "4": 117,
+          "3": 82,
+          "2": 5,
+          "1": 3
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Fashion Shades Green and Black Glasses Online in Bangladesh | Arogga",
+        "metaDescription": "The Green and Black Glasses feature a bold combination of green and black colors, adding a touch of vibrancy to your eyewear collection. They are both stylish and eye-catching.",
+        "keywords": [
+          "Fashion Shades Green and Black Glasses",
+          "Fashion Shades",
+          "Fashion Accessories",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100156",
+        "openGraph": {
+          "title": "Buy Fashion Shades Green and Black Glasses Online in Bangladesh | Arogga",
+          "description": "The Green and Black Glasses feature a bold combination of green and black colors, adding a touch of vibrancy to your eyewear collection. They are both stylish and eye-catching.",
+          "image": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100156",
+        "api": "/api/products/100156",
+        "source": "https://dummyjson.com/products/156"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 10551,
+        "salesCount": 2149,
+        "wishlistCount": 283,
+        "cartAdditionCount": 1783,
+        "conversionRate": 7.65
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100156,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Fashion Shades",
+      "genericName": "Green and Black Glasses",
+      "category": "Fashion Accessories",
+      "subcategory": "Sunglasses",
+      "type": "simple",
+      "price": 4374,
+      "discountPrice": 4330,
+      "discountPercentage": 1,
+      "currency": "BDT",
+      "stock": 24,
+      "sold": 2149,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/1.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/2.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/3.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/thumbnail.webp",
+      "video": "/videos/catalog/fashion-accessories.mp4",
+      "description": "Fashion Shades Green and Black Glasses is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Green and Black Glasses feature a bold combination of green and black colors, adding a touch of vibrancy to your eyewear collection. They are both stylish and eye-catching.",
+      "shortDescription": "The Green and Black Glasses feature a bold combination of green and black colors, adding a touch of vibrancy to your eyewear collection. They are both stylish and eye-catching.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Sunglasses product",
+        "Fashion Shades item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Sunglasses",
+        "Brand": "Fashion Shades",
+        "Department": "Beauty",
+        "Category": "Fashion Accessories",
+        "Rating": "4.55"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.5,
+      "reviewCount": 652,
+      "faq": [],
+      "tags": [
+        "sunglasses",
+        "fashion shades",
+        "green and black glasses",
+        "beauty",
+        "fashion accessories"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100158",
+      "uuid": "dummy-catalog-100158",
+      "productGroupId": "group-5039",
+      "sourceProductId": "158",
+      "sku": "BEA-FAS-100158",
+      "barcode": "8800000100158",
+      "slug": "fashion-shades-sunglasses-100158",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Fashion Shades Sunglasses",
+      "shortName": "Sunglasses",
+      "subtitle": "The Sunglasses offer a classic and simple design with a focus on functionality. These sunglasses provide essential UV pr",
+      "brand": {
+        "id": "brand-fashion-shades",
+        "name": "Fashion Shades",
+        "slug": "fashion-shades",
+        "logo": null,
+        "manufacturer": "Fashion Shades",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion-accessories",
+          "name": "Fashion Accessories",
+          "slug": "fashion-accessories"
+        },
+        "subCategory": {
+          "id": "sunglasses",
+          "name": "Sunglasses",
+          "slug": "sunglasses"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "sunglasses",
+          "fashion shades",
+          "sunglasses",
+          "beauty",
+          "fashion accessories"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Sunglasses offer a classic and simple design with a focus on functionality. These sunglasses provide essential UV protection while maintaining a timeless look.",
+        "description": "Fashion Shades Sunglasses is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Sunglasses offer a classic and simple design with a focus on functionality. These sunglasses provide essential UV protection while maintaining a timeless look.",
+        "highlights": [
+          "Sunglasses product",
+          "Fashion Shades item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Sunglasses"
+          },
+          {
+            "title": "Brand",
+            "value": "Fashion Shades"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion Accessories"
+          },
+          {
+            "title": "Rating",
+            "value": "3.02"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 2874,
+        "salePrice": 2816,
+        "costPrice": 3.71,
+        "compareAtPrice": 2874,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 2,
+          "percentage": 2,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 2816,
+          "maximum": 2874
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 37,
+        "reservedQuantity": 2,
+        "availableQuantity": 27,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100158",
+          "url": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp",
+          "alt": "Fashion Shades Sunglasses",
+          "title": "Fashion Shades Sunglasses",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100158-1",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp",
+            "alt": "Fashion Shades Sunglasses image 1",
+            "title": "Fashion Shades Sunglasses image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100158-2",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/1.webp",
+            "alt": "Fashion Shades Sunglasses image 2",
+            "title": "Fashion Shades Sunglasses image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100158-3",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/2.webp",
+            "alt": "Fashion Shades Sunglasses image 3",
+            "title": "Fashion Shades Sunglasses image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100158-4",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/3.webp",
+            "alt": "Fashion Shades Sunglasses image 4",
+            "title": "Fashion Shades Sunglasses image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100158-5",
+            "url": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp?view=5",
+            "alt": "Fashion Shades Sunglasses image 5",
+            "title": "Fashion Shades Sunglasses image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion-accessories.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp",
+          "title": "Fashion Shades Sunglasses product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "3 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100158-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Fashion Shades",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100158-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion Accessories",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100158-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 3-5 business days",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.0,
+        "count": 374,
+        "verifiedPurchaseCount": 269,
+        "distribution": {
+          "5": 170,
+          "4": 67,
+          "3": 129,
+          "2": 4,
+          "1": 4
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Fashion Shades Sunglasses Online in Bangladesh | Arogga",
+        "metaDescription": "The Sunglasses offer a classic and simple design with a focus on functionality. These sunglasses provide essential UV protection while maintaining a timeless look.",
+        "keywords": [
+          "Fashion Shades Sunglasses",
+          "Fashion Shades",
+          "Fashion Accessories",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100158",
+        "openGraph": {
+          "title": "Buy Fashion Shades Sunglasses Online in Bangladesh | Arogga",
+          "description": "The Sunglasses offer a classic and simple design with a focus on functionality. These sunglasses provide essential UV protection while maintaining a timeless look.",
+          "image": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100158",
+        "api": "/api/products/100158",
+        "source": "https://dummyjson.com/products/158"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 248,
+        "salesCount": 1956,
+        "wishlistCount": 267,
+        "cartAdditionCount": 136,
+        "conversionRate": 6.05
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100158,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Fashion Shades",
+      "genericName": "Sunglasses",
+      "category": "Fashion Accessories",
+      "subcategory": "Sunglasses",
+      "type": "simple",
+      "price": 2874,
+      "discountPrice": 2816,
+      "discountPercentage": 2,
+      "currency": "BDT",
+      "stock": 27,
+      "sold": 1956,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/1.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/2.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/3.webp",
+        "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/thumbnail.webp",
+      "video": "/videos/catalog/fashion-accessories.mp4",
+      "description": "Fashion Shades Sunglasses is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Sunglasses offer a classic and simple design with a focus on functionality. These sunglasses provide essential UV protection while maintaining a timeless look.",
+      "shortDescription": "The Sunglasses offer a classic and simple design with a focus on functionality. These sunglasses provide essential UV protection while maintaining a timeless look.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Sunglasses product",
+        "Fashion Shades item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Sunglasses",
+        "Brand": "Fashion Shades",
+        "Department": "Beauty",
+        "Category": "Fashion Accessories",
+        "Rating": "3.02"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.0,
+      "reviewCount": 374,
+      "faq": [],
+      "tags": [
+        "sunglasses",
+        "fashion shades",
+        "sunglasses",
+        "beauty",
+        "fashion accessories"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 4
+}

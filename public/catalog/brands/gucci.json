@@ -1,0 +1,514 @@
+{
+  "slug": "gucci",
+  "name": "Gucci",
+  "products": [
+    {
+      "id": "100010",
+      "uuid": "dummy-catalog-100010",
+      "productGroupId": "group-5002",
+      "sourceProductId": "10",
+      "sku": "FRA-PER-100010",
+      "barcode": "8800000100010",
+      "slug": "gucci-bloom-eau-de-100010",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Gucci Bloom Eau de",
+      "shortName": "Gucci Bloom Eau de",
+      "subtitle": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a",
+      "brand": {
+        "id": "brand-gucci",
+        "name": "Gucci",
+        "slug": "gucci",
+        "logo": null,
+        "manufacturer": "Gucci",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "category": {
+          "id": "perfume",
+          "name": "Perfume",
+          "slug": "perfume"
+        },
+        "subCategory": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "collections": [
+          {
+            "id": "fragrance-collection",
+            "name": "Fragrance Collection",
+            "slug": "fragrance-collection"
+          }
+        ],
+        "tags": [
+          "fragrances",
+          "gucci",
+          "gucci bloom eau de",
+          "fragrance",
+          "perfume"
+        ]
+      },
+      "content": {
+        "shortDescription": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+        "description": "Gucci Bloom Eau de is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+        "highlights": [
+          "Fragrance product",
+          "Gucci item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Brand",
+            "value": "Gucci"
+          },
+          {
+            "title": "Department",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Category",
+            "value": "Perfume"
+          },
+          {
+            "title": "Rating",
+            "value": "2.74"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 9999,
+        "salePrice": 8599,
+        "costPrice": 3.71,
+        "compareAtPrice": 9999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 14,
+          "percentage": 14,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 8599,
+          "maximum": 9999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 120,
+        "reservedQuantity": 0,
+        "availableQuantity": 91,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100010",
+          "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+          "alt": "Gucci Bloom Eau de",
+          "title": "Gucci Bloom Eau de",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100010-1",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+            "alt": "Gucci Bloom Eau de image 1",
+            "title": "Gucci Bloom Eau de image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100010-2",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+            "alt": "Gucci Bloom Eau de image 2",
+            "title": "Gucci Bloom Eau de image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100010-3",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
+            "alt": "Gucci Bloom Eau de image 3",
+            "title": "Gucci Bloom Eau de image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100010-4",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp",
+            "alt": "Gucci Bloom Eau de image 4",
+            "title": "Gucci Bloom Eau de image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100010-5",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp?view=5",
+            "alt": "Gucci Bloom Eau de image 5",
+            "title": "Gucci Bloom Eau de image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/perfume.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+          "title": "Gucci Bloom Eau de product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "6 months warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100010-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Gucci",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100010-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Perfume",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100010-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 2.7,
+        "count": 109,
+        "verifiedPurchaseCount": 78,
+        "distribution": {
+          "5": 44,
+          "4": 19,
+          "3": 41,
+          "2": 1,
+          "1": 4
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Gucci Bloom Eau de Online in Bangladesh | Arogga",
+        "metaDescription": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+        "keywords": [
+          "Gucci Bloom Eau de",
+          "Gucci",
+          "Perfume",
+          "Fragrance",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100010",
+        "openGraph": {
+          "title": "Buy Gucci Bloom Eau de Online in Bangladesh | Arogga",
+          "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+          "image": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100010",
+        "api": "/api/products/100010",
+        "source": "https://dummyjson.com/products/10"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 1182,
+        "salesCount": 1381,
+        "wishlistCount": 426,
+        "cartAdditionCount": 718,
+        "conversionRate": 1.98
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100010,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Gucci",
+      "genericName": "Gucci Bloom Eau de",
+      "category": "Perfume",
+      "subcategory": "Fragrance",
+      "type": "simple",
+      "price": 9999,
+      "discountPrice": 8599,
+      "discountPercentage": 14,
+      "currency": "BDT",
+      "stock": 91,
+      "sold": 1381,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+      "video": "/videos/catalog/perfume.mp4",
+      "description": "Gucci Bloom Eau de is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+      "shortDescription": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Fragrance product",
+        "Gucci item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Fragrance",
+        "Brand": "Gucci",
+        "Department": "Fragrance",
+        "Category": "Perfume",
+        "Rating": "2.74"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 2.7,
+      "reviewCount": 109,
+      "faq": [],
+      "tags": [
+        "fragrances",
+        "gucci",
+        "gucci bloom eau de",
+        "fragrance",
+        "perfume"
+      ],
+      "featured": true,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 1
+}

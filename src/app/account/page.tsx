@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import { AccountTabContent } from "@/features/account/components/AccountDrawer";
 
 export default function Page() {
-  redirect("/profile");
+  return <AccountTabContent tab="overview" />;
 }

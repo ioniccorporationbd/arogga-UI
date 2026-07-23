@@ -66,7 +66,7 @@ const useOrdersStore = create<Store>((set) => ({
   async fetchOrders(phone, query) {
     set({ loading: true, error: "" });
     try {
-      const res = await fetch(`/api/orders?${query.toString()}`, { headers: { "x-user-phone": phone } });
+      const res = await fetch(`/api/orders?${query.toString()}`, { credentials: "include" });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed order loading");
       const payload = data as OrderListResponse;

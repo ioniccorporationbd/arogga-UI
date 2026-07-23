@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 import { getServerProducts } from "@/lib/server-products";
 import CategoryCatalog from "./CategoryCatalog";
 import { findCategoryRoute, selectCategoryProducts } from "./category-data";
@@ -30,7 +29,6 @@ export default async function DynamicCategoryPage({
   const { categoryPath } = await params;
   const pathname = makePath(categoryPath);
   const category = await findCategoryRoute(pathname);
-  if (!category) notFound();
 
   const products = await getServerProducts();
   const selectedProducts = selectCategoryProducts(products, category);

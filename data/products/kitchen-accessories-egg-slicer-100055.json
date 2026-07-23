@@ -1,0 +1,507 @@
+{
+  "id": "100055",
+  "uuid": "dummy-catalog-100055",
+  "productGroupId": "group-5013",
+  "sourceProductId": "55",
+  "sku": "HOM-KIT-100055",
+  "barcode": "8800000100055",
+  "slug": "kitchen-accessories-egg-slicer-100055",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Kitchen Accessories Egg Slicer",
+  "shortName": "Egg Slicer",
+  "subtitle": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishe",
+  "brand": {
+    "id": "brand-kitchen-accessories",
+    "name": "Kitchen Accessories",
+    "slug": "kitchen-accessories",
+    "logo": null,
+    "manufacturer": "Kitchen Accessories",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "homecare",
+      "name": "Homecare",
+      "slug": "homecare"
+    },
+    "category": {
+      "id": "kitchen-essentials",
+      "name": "Kitchen Essentials",
+      "slug": "kitchen-essentials"
+    },
+    "subCategory": {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "slug": "kitchen"
+    },
+    "collections": [
+      {
+        "id": "homecare-collection",
+        "name": "Homecare Collection",
+        "slug": "homecare-collection"
+      }
+    ],
+    "tags": [
+      "kitchen-accessories",
+      "kitchen accessories",
+      "egg slicer",
+      "homecare",
+      "kitchen essentials"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
+    "description": "Kitchen Accessories Egg Slicer is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
+    "highlights": [
+      "Kitchen product",
+      "Kitchen Accessories item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Kitchen"
+      },
+      {
+        "title": "Brand",
+        "value": "Kitchen Accessories"
+      },
+      {
+        "title": "Department",
+        "value": "Homecare"
+      },
+      {
+        "title": "Category",
+        "value": "Kitchen Essentials"
+      },
+      {
+        "title": "Rating",
+        "value": "3.09"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 874,
+    "salePrice": 743,
+    "costPrice": 3.71,
+    "compareAtPrice": 874,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 15,
+      "percentage": 15,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 743,
+      "maximum": 874
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 54,
+    "reservedQuantity": 2,
+    "availableQuantity": 40,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100055",
+      "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+      "alt": "Kitchen Accessories Egg Slicer",
+      "title": "Kitchen Accessories Egg Slicer",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100055-1",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+        "alt": "Kitchen Accessories Egg Slicer image 1",
+        "title": "Kitchen Accessories Egg Slicer image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100055-2",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp",
+        "alt": "Kitchen Accessories Egg Slicer image 2",
+        "title": "Kitchen Accessories Egg Slicer image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100055-3",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp?view=3",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp?view=3",
+        "alt": "Kitchen Accessories Egg Slicer image 3",
+        "title": "Kitchen Accessories Egg Slicer image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100055-4",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp?view=4",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp?view=4",
+        "alt": "Kitchen Accessories Egg Slicer image 4",
+        "title": "Kitchen Accessories Egg Slicer image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100055-5",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp?view=5",
+        "alt": "Kitchen Accessories Egg Slicer image 5",
+        "title": "Kitchen Accessories Egg Slicer image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/kitchen-essentials.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+      "title": "Kitchen Accessories Egg Slicer product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "1 week warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100055-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Kitchen Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100055-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Kitchen Essentials",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100055-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1 month",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": false,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 3,
+      "sameDayEligible": true
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.1,
+    "count": 392,
+    "verifiedPurchaseCount": 282,
+    "distribution": {
+      "5": 184,
+      "4": 70,
+      "3": 132,
+      "2": 2,
+      "1": 4
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 10,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Kitchen Accessories Egg Slicer Online in Bangladesh | Arogga",
+    "metaDescription": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
+    "keywords": [
+      "Kitchen Accessories Egg Slicer",
+      "Kitchen Accessories",
+      "Kitchen Essentials",
+      "Homecare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100055",
+    "openGraph": {
+      "title": "Buy Kitchen Accessories Egg Slicer Online in Bangladesh | Arogga",
+      "description": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100055",
+    "api": "/api/products/100055",
+    "source": "https://dummyjson.com/products/55"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 8260,
+    "salesCount": 2093,
+    "wishlistCount": 671,
+    "cartAdditionCount": 379,
+    "conversionRate": 7.74
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100055,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Kitchen Accessories",
+  "genericName": "Egg Slicer",
+  "category": "Kitchen Essentials",
+  "subcategory": "Kitchen",
+  "type": "simple",
+  "price": 874,
+  "discountPrice": 743,
+  "discountPercentage": 15,
+  "currency": "BDT",
+  "stock": 40,
+  "sold": 2093,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp?view=3",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp?view=4",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/thumbnail.webp",
+  "video": "/videos/catalog/kitchen-essentials.mp4",
+  "description": "Kitchen Accessories Egg Slicer is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
+  "shortDescription": "The Egg Slicer is a convenient tool for slicing boiled eggs evenly. It's perfect for salads, sandwiches, and other dishes where sliced eggs are desired.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Kitchen product",
+    "Kitchen Accessories item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Kitchen",
+    "Brand": "Kitchen Accessories",
+    "Department": "Homecare",
+    "Category": "Kitchen Essentials",
+    "Rating": "3.09"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.1,
+  "reviewCount": 392,
+  "faq": [],
+  "tags": [
+    "kitchen-accessories",
+    "kitchen accessories",
+    "egg slicer",
+    "homecare",
+    "kitchen essentials"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

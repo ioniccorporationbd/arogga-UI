@@ -1,0 +1,507 @@
+{
+  "id": "100176",
+  "uuid": "dummy-catalog-100176",
+  "productGroupId": "group-5043",
+  "sourceProductId": "176",
+  "sku": "BEA-FAS-100176",
+  "barcode": "8800000100176",
+  "slug": "elegance-collection-women-handbag-black-100176",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Elegance Collection Women Handbag Black",
+  "shortName": "Women Handbag Black",
+  "subtitle": "The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black ",
+  "brand": {
+    "id": "brand-elegance-collection",
+    "name": "Elegance Collection",
+    "slug": "elegance-collection",
+    "logo": null,
+    "manufacturer": "Elegance Collection",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "beauty",
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "category": {
+      "id": "fashion-accessories",
+      "name": "Fashion Accessories",
+      "slug": "fashion-accessories"
+    },
+    "subCategory": {
+      "id": "bags",
+      "name": "Bags",
+      "slug": "bags"
+    },
+    "collections": [
+      {
+        "id": "beauty-collection",
+        "name": "Beauty Collection",
+        "slug": "beauty-collection"
+      }
+    ],
+    "tags": [
+      "womens-bags",
+      "elegance collection",
+      "women handbag black",
+      "beauty",
+      "fashion accessories"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black color and functional design, it's a must-have in every woman's wardrobe.",
+    "description": "Elegance Collection Women Handbag Black is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black color and functional design, it's a must-have in every woman's wardrobe.",
+    "highlights": [
+      "Bags product",
+      "Elegance Collection item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Bags"
+      },
+      {
+        "title": "Brand",
+        "value": "Elegance Collection"
+      },
+      {
+        "title": "Department",
+        "value": "Beauty"
+      },
+      {
+        "title": "Category",
+        "value": "Fashion Accessories"
+      },
+      {
+        "title": "Rating",
+        "value": "2.89"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 7499,
+    "salePrice": 6599,
+    "costPrice": 3.71,
+    "compareAtPrice": 7499,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 12,
+      "percentage": 12,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 6599,
+      "maximum": 7499
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 46,
+    "reservedQuantity": 0,
+    "availableQuantity": 11,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100176",
+      "url": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp",
+      "alt": "Elegance Collection Women Handbag Black",
+      "title": "Elegance Collection Women Handbag Black",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100176-1",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp",
+        "alt": "Elegance Collection Women Handbag Black image 1",
+        "title": "Elegance Collection Women Handbag Black image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100176-2",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/1.webp",
+        "alt": "Elegance Collection Women Handbag Black image 2",
+        "title": "Elegance Collection Women Handbag Black image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100176-3",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/2.webp",
+        "alt": "Elegance Collection Women Handbag Black image 3",
+        "title": "Elegance Collection Women Handbag Black image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100176-4",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/3.webp",
+        "alt": "Elegance Collection Women Handbag Black image 4",
+        "title": "Elegance Collection Women Handbag Black image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100176-5",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp?view=5",
+        "alt": "Elegance Collection Women Handbag Black image 5",
+        "title": "Elegance Collection Women Handbag Black image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/fashion-accessories.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp",
+      "title": "Elegance Collection Women Handbag Black product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "Lifetime warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100176-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Elegance Collection",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100176-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Fashion Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100176-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1 month",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 3,
+      "estimatedMaximumDays": 5,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 2.9,
+    "count": 720,
+    "verifiedPurchaseCount": 518,
+    "distribution": {
+      "5": 317,
+      "4": 129,
+      "3": 272,
+      "2": 10,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 10,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Elegance Collection Women Handbag Black Online in Bangladesh | Arogga",
+    "metaDescription": "The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black color and functional design, it's a must-have in every woman's wardrobe.",
+    "keywords": [
+      "Elegance Collection Women Handbag Black",
+      "Elegance Collection",
+      "Fashion Accessories",
+      "Beauty",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100176",
+    "openGraph": {
+      "title": "Buy Elegance Collection Women Handbag Black Online in Bangladesh | Arogga",
+      "description": "The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black color and functional design, it's a must-have in every woman's wardrobe.",
+      "image": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100176",
+    "api": "/api/products/100176",
+    "source": "https://dummyjson.com/products/176"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 8507,
+    "salesCount": 213,
+    "wishlistCount": 737,
+    "cartAdditionCount": 677,
+    "conversionRate": 4.53
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100176,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Elegance Collection",
+  "genericName": "Women Handbag Black",
+  "category": "Fashion Accessories",
+  "subcategory": "Bags",
+  "type": "simple",
+  "price": 7499,
+  "discountPrice": 6599,
+  "discountPercentage": 12,
+  "currency": "BDT",
+  "stock": 11,
+  "sold": 213,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/1.webp",
+    "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/2.webp",
+    "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/3.webp",
+    "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/thumbnail.webp",
+  "video": "/videos/catalog/fashion-accessories.mp4",
+  "description": "Elegance Collection Women Handbag Black is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black color and functional design, it's a must-have in every woman's wardrobe.",
+  "shortDescription": "The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black color and functional design, it's a must-have in every woman's wardrobe.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Bags product",
+    "Elegance Collection item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Bags",
+    "Brand": "Elegance Collection",
+    "Department": "Beauty",
+    "Category": "Fashion Accessories",
+    "Rating": "2.89"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 2.9,
+  "reviewCount": 720,
+  "faq": [],
+  "tags": [
+    "womens-bags",
+    "elegance collection",
+    "women handbag black",
+    "beauty",
+    "fashion accessories"
+  ],
+  "featured": false,
+  "bestSeller": false,
+  "newArrival": true,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

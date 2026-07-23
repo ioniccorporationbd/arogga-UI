@@ -42,7 +42,10 @@ export default function AddToCartButton({
 
   function handleAddToCart() {
     if (disabled) return;
-    if (!requireAuth({ reason: "Login to add products to your cart." })) return;
+    if (!requireAuth({
+      reason: "Login to add products to your cart.",
+      pendingAction: { type: "ADD_TO_CART", payload: { productId: product.id, variantId: product.id, quantity } },
+    })) return;
 
     addItem(product, quantity);
     setAdded(true);

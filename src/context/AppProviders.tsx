@@ -1,18 +1,37 @@
 "use client";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "sonner";
+import { ToastContainer, type ToastOptions } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import type { ReactNode } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import MobileLoginModal from "@/Components/auth/MobileLoginModal";
+import LoginModal from "@/components/auth/LoginModal";
+import PendingAuthActionExecutor from "@/components/auth/PendingAuthActionExecutor";
+import AccountDrawer from "@/features/account/components/AccountDrawer";
+import { showToast, type AroggaToastDetail } from "@/lib/notify";
 import { AuthProvider, useAuth } from "./AuthContext";
 import { CartProvider } from "./CartContext";
 import { WishlistProvider } from "./WishlistContext";
 
 function GlobalLoginModal() {
   const { loginModalOpen, closeLoginModal } = useAuth();
-  return <MobileLoginModal open={loginModalOpen} onClose={closeLoginModal} />;
+  return <LoginModal open={loginModalOpen} onClose={closeLoginModal} />;
+}
+
+function ToastEventBridge() {
+  useEffect(() => {
+    const handleToast = (event: Event) => {
+      const detail = (event as CustomEvent<AroggaToastDetail>).detail;
+      if (!detail?.message) return;
+      showToast(detail.type, detail.message, detail.options as ToastOptions | undefined);
+    };
+
+    window.addEventListener("arogga-toast", handleToast);
+    return () => window.removeEventListener("arogga-toast", handleToast);
+  }, []);
+
+  return null;
 }
 
 export default function AppProviders({ children }: { children: ReactNode }) {
@@ -29,19 +48,21 @@ export default function AppProviders({ children }: { children: ReactNode }) {
         <WishlistProvider>
           <CartProvider>
             <div className="arogga-app-shell">{children}</div>
+            <PendingAuthActionExecutor />
+            <AccountDrawer />
+            <ToastEventBridge />
             <GlobalLoginModal />
-            <Toaster
-              richColors
-              closeButton
+            <ToastContainer
               position="top-right"
-              toastOptions={{
-                style: {
-                  borderRadius: "18px",
-                  border: "1px solid rgba(8, 123, 117, 0.16)",
-                  boxShadow: "0 24px 60px -42px rgba(15, 23, 42, 0.7)",
-                  fontSize: "13px",
-                },
-              }}
+              autoClose={2300}
+              hideProgressBar={false}
+              newestOnTop
+              closeOnClick
+              pauseOnFocusLoss={false}
+              draggable
+              pauseOnHover
+              theme="light"
+              toastClassName="arogga-toastify-toast"
             />
           </CartProvider>
         </WishlistProvider>

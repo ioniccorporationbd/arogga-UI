@@ -1,0 +1,507 @@
+{
+  "id": "100042",
+  "uuid": "dummy-catalog-100042",
+  "productGroupId": "group-5010",
+  "sourceProductId": "42",
+  "sku": "FOO-GRO-100042",
+  "barcode": "8800000100042",
+  "slug": "groceries-water-100042",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Groceries Water",
+  "shortName": "Water",
+  "subtitle": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+  "brand": {
+    "id": "brand-groceries",
+    "name": "Groceries",
+    "slug": "groceries",
+    "logo": null,
+    "manufacturer": "Groceries",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "food-nutrition",
+      "name": "Food & Nutrition",
+      "slug": "food-nutrition"
+    },
+    "category": {
+      "id": "grocery-essentials",
+      "name": "Grocery Essentials",
+      "slug": "grocery-essentials"
+    },
+    "subCategory": {
+      "id": "grocery",
+      "name": "Grocery",
+      "slug": "grocery"
+    },
+    "collections": [
+      {
+        "id": "food-nutrition-collection",
+        "name": "Food & Nutrition Collection",
+        "slug": "food-nutrition-collection"
+      }
+    ],
+    "tags": [
+      "groceries",
+      "groceries",
+      "water",
+      "food & nutrition",
+      "grocery essentials"
+    ]
+  },
+  "content": {
+    "shortDescription": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+    "description": "Groceries Water is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+    "highlights": [
+      "Grocery product",
+      "Groceries item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Grocery"
+      },
+      {
+        "title": "Brand",
+        "value": "Groceries"
+      },
+      {
+        "title": "Department",
+        "value": "Food & Nutrition"
+      },
+      {
+        "title": "Category",
+        "value": "Grocery Essentials"
+      },
+      {
+        "title": "Rating",
+        "value": "4.96"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 124,
+    "salePrice": 105,
+    "costPrice": 3.71,
+    "compareAtPrice": 124,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 15,
+      "percentage": 15,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 105,
+      "maximum": 124
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 77,
+    "reservedQuantity": 3,
+    "availableQuantity": 53,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100042",
+      "url": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+      "alt": "Groceries Water",
+      "title": "Groceries Water",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100042-1",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+        "alt": "Groceries Water image 1",
+        "title": "Groceries Water image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100042-2",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/water/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/water/1.webp",
+        "alt": "Groceries Water image 2",
+        "title": "Groceries Water image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100042-3",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp?view=3",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp?view=3",
+        "alt": "Groceries Water image 3",
+        "title": "Groceries Water image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100042-4",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/water/1.webp?view=4",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/water/1.webp?view=4",
+        "alt": "Groceries Water image 4",
+        "title": "Groceries Water image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100042-5",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp?view=5",
+        "alt": "Groceries Water image 5",
+        "title": "Groceries Water image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/grocery-essentials.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+      "title": "Groceries Water product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "3 months warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100042-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Groceries",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100042-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Grocery Essentials",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100042-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1 month",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": false,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 3,
+      "sameDayEligible": true
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 5.0,
+    "count": 281,
+    "verifiedPurchaseCount": 202,
+    "distribution": {
+      "5": 213,
+      "4": 50,
+      "3": 17,
+      "2": 3,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 7,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Groceries Water Online in Bangladesh | Arogga",
+    "metaDescription": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+    "keywords": [
+      "Groceries Water",
+      "Groceries",
+      "Grocery Essentials",
+      "Food & Nutrition",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100042",
+    "openGraph": {
+      "title": "Buy Groceries Water Online in Bangladesh | Arogga",
+      "description": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+      "image": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100042",
+    "api": "/api/products/100042",
+    "source": "https://dummyjson.com/products/42"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 11856,
+    "salesCount": 748,
+    "wishlistCount": 841,
+    "cartAdditionCount": 275,
+    "conversionRate": 4.78
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100042,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Groceries",
+  "genericName": "Water",
+  "category": "Grocery Essentials",
+  "subcategory": "Grocery",
+  "type": "simple",
+  "price": 124,
+  "discountPrice": 105,
+  "discountPercentage": 15,
+  "currency": "BDT",
+  "stock": 53,
+  "sold": 748,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/groceries/water/1.webp",
+    "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp?view=3",
+    "https://cdn.dummyjson.com/product-images/groceries/water/1.webp?view=4",
+    "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/water/thumbnail.webp",
+  "video": "/videos/catalog/grocery-essentials.mp4",
+  "description": "Groceries Water is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+  "shortDescription": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Grocery product",
+    "Groceries item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Grocery",
+    "Brand": "Groceries",
+    "Department": "Food & Nutrition",
+    "Category": "Grocery Essentials",
+    "Rating": "4.96"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 5.0,
+  "reviewCount": 281,
+  "faq": [],
+  "tags": [
+    "groceries",
+    "groceries",
+    "water",
+    "food & nutrition",
+    "grocery essentials"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

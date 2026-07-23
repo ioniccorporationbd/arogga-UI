@@ -1,0 +1,5077 @@
+{
+  "slug": "lifestyle",
+  "name": "Lifestyle",
+  "products": [
+    {
+      "id": "100113",
+      "uuid": "dummy-catalog-100113",
+      "productGroupId": "group-5028",
+      "sourceProductId": "113",
+      "sku": "HEA-LIF-100113",
+      "barcode": "8800000100113",
+      "slug": "generic-motors-generic-motorcycle-100113",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Generic Motors Generic Motorcycle",
+      "shortName": "Generic Motorcycle",
+      "subtitle": "The Generic Motorcycle is a versatile and reliable bike suitable for various riding preferences. With a balanced design,",
+      "brand": {
+        "id": "brand-generic-motors",
+        "name": "Generic Motors",
+        "slug": "generic-motors",
+        "logo": null,
+        "manufacturer": "Generic Motors",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "motorcycle",
+          "name": "Motorcycle",
+          "slug": "motorcycle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "motorcycle",
+          "generic motors",
+          "generic motorcycle",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Generic Motorcycle is a versatile and reliable bike suitable for various riding preferences. With a balanced design, it provides a comfortable and efficient riding experience.",
+        "description": "Generic Motors Generic Motorcycle is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Generic Motorcycle is a versatile and reliable bike suitable for various riding preferences. With a balanced design, it provides a comfortable and efficient riding experience.",
+        "highlights": [
+          "Motorcycle product",
+          "Generic Motors item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Motorcycle"
+          },
+          {
+            "title": "Brand",
+            "value": "Generic Motors"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "4.91"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 499999,
+        "salePrice": 439999,
+        "costPrice": 3.71,
+        "compareAtPrice": 499999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 12,
+          "percentage": 12,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 439999,
+          "maximum": 499999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 49,
+        "reservedQuantity": 0,
+        "availableQuantity": 34,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100113",
+          "url": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp",
+          "alt": "Generic Motors Generic Motorcycle",
+          "title": "Generic Motors Generic Motorcycle",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100113-1",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp",
+            "alt": "Generic Motors Generic Motorcycle image 1",
+            "title": "Generic Motors Generic Motorcycle image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100113-2",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/1.webp",
+            "alt": "Generic Motors Generic Motorcycle image 2",
+            "title": "Generic Motors Generic Motorcycle image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100113-3",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/2.webp",
+            "alt": "Generic Motors Generic Motorcycle image 3",
+            "title": "Generic Motors Generic Motorcycle image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100113-4",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/3.webp",
+            "alt": "Generic Motors Generic Motorcycle image 4",
+            "title": "Generic Motors Generic Motorcycle image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100113-5",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/4.webp",
+            "alt": "Generic Motors Generic Motorcycle image 5",
+            "title": "Generic Motors Generic Motorcycle image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp",
+          "title": "Generic Motors Generic Motorcycle product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100113-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Generic Motors",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100113-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100113-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 2 weeks",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.9,
+        "count": 504,
+        "verifiedPurchaseCount": 362,
+        "distribution": {
+          "5": 375,
+          "4": 90,
+          "3": 32,
+          "2": 6,
+          "1": 1
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Generic Motors Generic Motorcycle Online in Bangladesh | Arogga",
+        "metaDescription": "The Generic Motorcycle is a versatile and reliable bike suitable for various riding preferences. With a balanced design, it provides a comfortable and efficient riding experience.",
+        "keywords": [
+          "Generic Motors Generic Motorcycle",
+          "Generic Motors",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100113",
+        "openGraph": {
+          "title": "Buy Generic Motors Generic Motorcycle Online in Bangladesh | Arogga",
+          "description": "The Generic Motorcycle is a versatile and reliable bike suitable for various riding preferences. With a balanced design, it provides a comfortable and efficient riding experience.",
+          "image": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100113",
+        "api": "/api/products/100113",
+        "source": "https://dummyjson.com/products/113"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 9805,
+        "salesCount": 1288,
+        "wishlistCount": 308,
+        "cartAdditionCount": 1581,
+        "conversionRate": 9.15
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100113,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Generic Motors",
+      "genericName": "Generic Motorcycle",
+      "category": "Lifestyle",
+      "subcategory": "Motorcycle",
+      "type": "simple",
+      "price": 499999,
+      "discountPrice": 439999,
+      "discountPercentage": 12,
+      "currency": "BDT",
+      "stock": 34,
+      "sold": 1288,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/1.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/2.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/3.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "Generic Motors Generic Motorcycle is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Generic Motorcycle is a versatile and reliable bike suitable for various riding preferences. With a balanced design, it provides a comfortable and efficient riding experience.",
+      "shortDescription": "The Generic Motorcycle is a versatile and reliable bike suitable for various riding preferences. With a balanced design, it provides a comfortable and efficient riding experience.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Motorcycle product",
+        "Generic Motors item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Motorcycle",
+        "Brand": "Generic Motors",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "4.91"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.9,
+      "reviewCount": 504,
+      "faq": [],
+      "tags": [
+        "motorcycle",
+        "generic motors",
+        "generic motorcycle",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100114",
+      "uuid": "dummy-catalog-100114",
+      "productGroupId": "group-5028",
+      "sourceProductId": "114",
+      "sku": "HEA-LIF-100114",
+      "barcode": "8800000100114",
+      "slug": "kawasaki-z800-100114",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Kawasaki Z800",
+      "shortName": "Kawasaki Z800",
+      "subtitle": "The Kawasaki Z800 is a powerful and agile sportbike known for its striking design and performance. It's equipped with ad",
+      "brand": {
+        "id": "brand-kawasaki",
+        "name": "Kawasaki",
+        "slug": "kawasaki",
+        "logo": null,
+        "manufacturer": "Kawasaki",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "motorcycle",
+          "name": "Motorcycle",
+          "slug": "motorcycle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "motorcycle",
+          "kawasaki",
+          "kawasaki z800",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Kawasaki Z800 is a powerful and agile sportbike known for its striking design and performance. It's equipped with advanced features, making it a favorite among motorcycle enthusiasts.",
+        "description": "Kawasaki Z800 is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Kawasaki Z800 is a powerful and agile sportbike known for its striking design and performance. It's equipped with advanced features, making it a favorite among motorcycle enthusiasts.",
+        "highlights": [
+          "Motorcycle product",
+          "Kawasaki item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Motorcycle"
+          },
+          {
+            "title": "Brand",
+            "value": "Kawasaki"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "3.98"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 1124999,
+        "salePrice": 1012499,
+        "costPrice": 3.71,
+        "compareAtPrice": 1124999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 10,
+          "percentage": 10,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 1012499,
+          "maximum": 1124999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 60,
+        "reservedQuantity": 5,
+        "availableQuantity": 52,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100114",
+          "url": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/thumbnail.webp",
+          "alt": "Kawasaki Z800",
+          "title": "Kawasaki Z800",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100114-1",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/thumbnail.webp",
+            "alt": "Kawasaki Z800 image 1",
+            "title": "Kawasaki Z800 image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100114-2",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/1.webp",
+            "alt": "Kawasaki Z800 image 2",
+            "title": "Kawasaki Z800 image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100114-3",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/2.webp",
+            "alt": "Kawasaki Z800 image 3",
+            "title": "Kawasaki Z800 image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100114-4",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/3.webp",
+            "alt": "Kawasaki Z800 image 4",
+            "title": "Kawasaki Z800 image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100114-5",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/4.webp",
+            "alt": "Kawasaki Z800 image 5",
+            "title": "Kawasaki Z800 image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/thumbnail.webp",
+          "title": "Kawasaki Z800 product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "Lifetime warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100114-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Kawasaki",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100114-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100114-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 3-5 business days",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.0,
+        "count": 131,
+        "verifiedPurchaseCount": 94,
+        "distribution": {
+          "5": 79,
+          "4": 23,
+          "3": 24,
+          "2": 1,
+          "1": 4
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Kawasaki Z800 Online in Bangladesh | Arogga",
+        "metaDescription": "The Kawasaki Z800 is a powerful and agile sportbike known for its striking design and performance. It's equipped with advanced features, making it a favorite among motorcycle enthusiasts.",
+        "keywords": [
+          "Kawasaki Z800",
+          "Kawasaki",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100114",
+        "openGraph": {
+          "title": "Buy Kawasaki Z800 Online in Bangladesh | Arogga",
+          "description": "The Kawasaki Z800 is a powerful and agile sportbike known for its striking design and performance. It's equipped with advanced features, making it a favorite among motorcycle enthusiasts.",
+          "image": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100114",
+        "api": "/api/products/100114",
+        "source": "https://dummyjson.com/products/114"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 13970,
+        "salesCount": 273,
+        "wishlistCount": 200,
+        "cartAdditionCount": 1571,
+        "conversionRate": 5.34
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100114,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Kawasaki",
+      "genericName": "Kawasaki Z800",
+      "category": "Lifestyle",
+      "subcategory": "Motorcycle",
+      "type": "simple",
+      "price": 1124999,
+      "discountPrice": 1012499,
+      "discountPercentage": 10,
+      "currency": "BDT",
+      "stock": 52,
+      "sold": 273,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/1.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/2.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/3.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "Kawasaki Z800 is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Kawasaki Z800 is a powerful and agile sportbike known for its striking design and performance. It's equipped with advanced features, making it a favorite among motorcycle enthusiasts.",
+      "shortDescription": "The Kawasaki Z800 is a powerful and agile sportbike known for its striking design and performance. It's equipped with advanced features, making it a favorite among motorcycle enthusiasts.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Motorcycle product",
+        "Kawasaki item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Motorcycle",
+        "Brand": "Kawasaki",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "3.98"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.0,
+      "reviewCount": 131,
+      "faq": [],
+      "tags": [
+        "motorcycle",
+        "kawasaki",
+        "kawasaki z800",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": false,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100115",
+      "uuid": "dummy-catalog-100115",
+      "productGroupId": "group-5028",
+      "sourceProductId": "115",
+      "sku": "HEA-LIF-100115",
+      "barcode": "8800000100115",
+      "slug": "motogp-ci-h1-100115",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "MotoGP CI.H1",
+      "shortName": "MotoGP CI.H1",
+      "subtitle": "The MotoGP CI.H1 is a high-performance motorcycle inspired by MotoGP racing technology. It offers cutting-edge features ",
+      "brand": {
+        "id": "brand-motogp",
+        "name": "MotoGP",
+        "slug": "motogp",
+        "logo": null,
+        "manufacturer": "MotoGP",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "motorcycle",
+          "name": "Motorcycle",
+          "slug": "motorcycle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "motorcycle",
+          "motogp",
+          "motogp ci.h1",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The MotoGP CI.H1 is a high-performance motorcycle inspired by MotoGP racing technology. It offers cutting-edge features and precision engineering for an exhilarating riding experience.",
+        "description": "MotoGP CI.H1 is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The MotoGP CI.H1 is a high-performance motorcycle inspired by MotoGP racing technology. It offers cutting-edge features and precision engineering for an exhilarating riding experience.",
+        "highlights": [
+          "Motorcycle product",
+          "MotoGP item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Motorcycle"
+          },
+          {
+            "title": "Brand",
+            "value": "MotoGP"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "2.97"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 1874999,
+        "salePrice": 1743749,
+        "costPrice": 3.71,
+        "compareAtPrice": 1874999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 7,
+          "percentage": 7,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 1743749,
+          "maximum": 1874999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 25,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100115",
+          "url": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/thumbnail.webp",
+          "alt": "MotoGP CI.H1",
+          "title": "MotoGP CI.H1",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100115-1",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/thumbnail.webp",
+            "alt": "MotoGP CI.H1 image 1",
+            "title": "MotoGP CI.H1 image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100115-2",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/1.webp",
+            "alt": "MotoGP CI.H1 image 2",
+            "title": "MotoGP CI.H1 image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100115-3",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/2.webp",
+            "alt": "MotoGP CI.H1 image 3",
+            "title": "MotoGP CI.H1 image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100115-4",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/3.webp",
+            "alt": "MotoGP CI.H1 image 4",
+            "title": "MotoGP CI.H1 image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100115-5",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/4.webp",
+            "alt": "MotoGP CI.H1 image 5",
+            "title": "MotoGP CI.H1 image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/thumbnail.webp",
+          "title": "MotoGP CI.H1 product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 month warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100115-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "MotoGP",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100115-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100115-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 3-5 business days",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 3,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.0,
+        "count": 414,
+        "verifiedPurchaseCount": 298,
+        "distribution": {
+          "5": 188,
+          "4": 74,
+          "3": 144,
+          "2": 8,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy MotoGP CI.H1 Online in Bangladesh | Arogga",
+        "metaDescription": "The MotoGP CI.H1 is a high-performance motorcycle inspired by MotoGP racing technology. It offers cutting-edge features and precision engineering for an exhilarating riding experience.",
+        "keywords": [
+          "MotoGP CI.H1",
+          "MotoGP",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100115",
+        "openGraph": {
+          "title": "Buy MotoGP CI.H1 Online in Bangladesh | Arogga",
+          "description": "The MotoGP CI.H1 is a high-performance motorcycle inspired by MotoGP racing technology. It offers cutting-edge features and precision engineering for an exhilarating riding experience.",
+          "image": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100115",
+        "api": "/api/products/100115",
+        "source": "https://dummyjson.com/products/115"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 17080,
+        "salesCount": 36,
+        "wishlistCount": 62,
+        "cartAdditionCount": 189,
+        "conversionRate": 3.66
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100115,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "MotoGP",
+      "genericName": "MotoGP CI.H1",
+      "category": "Lifestyle",
+      "subcategory": "Motorcycle",
+      "type": "simple",
+      "price": 1874999,
+      "discountPrice": 1743749,
+      "discountPercentage": 7,
+      "currency": "BDT",
+      "stock": 10,
+      "sold": 36,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/1.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/2.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/3.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "MotoGP CI.H1 is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The MotoGP CI.H1 is a high-performance motorcycle inspired by MotoGP racing technology. It offers cutting-edge features and precision engineering for an exhilarating riding experience.",
+      "shortDescription": "The MotoGP CI.H1 is a high-performance motorcycle inspired by MotoGP racing technology. It offers cutting-edge features and precision engineering for an exhilarating riding experience.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Motorcycle product",
+        "MotoGP item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Motorcycle",
+        "Brand": "MotoGP",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "2.97"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.0,
+      "reviewCount": 414,
+      "faq": [],
+      "tags": [
+        "motorcycle",
+        "motogp",
+        "motogp ci.h1",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": false,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100116",
+      "uuid": "dummy-catalog-100116",
+      "productGroupId": "group-5028",
+      "sourceProductId": "116",
+      "sku": "HEA-LIF-100116",
+      "barcode": "8800000100116",
+      "slug": "scootmaster-scooter-motorcycle-100116",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "ScootMaster Scooter Motorcycle",
+      "shortName": "Scooter Motorcycle",
+      "subtitle": "The Scooter Motorcycle is a practical and fuel-efficient bike ideal for urban commuting. It features a step-through desi",
+      "brand": {
+        "id": "brand-scootmaster",
+        "name": "ScootMaster",
+        "slug": "scootmaster",
+        "logo": null,
+        "manufacturer": "ScootMaster",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "motorcycle",
+          "name": "Motorcycle",
+          "slug": "motorcycle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "motorcycle",
+          "scootmaster",
+          "scooter motorcycle",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Scooter Motorcycle is a practical and fuel-efficient bike ideal for urban commuting. It features a step-through design and user-friendly controls for easy maneuverability.",
+        "description": "ScootMaster Scooter Motorcycle is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Scooter Motorcycle is a practical and fuel-efficient bike ideal for urban commuting. It features a step-through design and user-friendly controls for easy maneuverability.",
+        "highlights": [
+          "Motorcycle product",
+          "ScootMaster item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Motorcycle"
+          },
+          {
+            "title": "Brand",
+            "value": "ScootMaster"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "2.53"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 374999,
+        "salePrice": 352499,
+        "costPrice": 3.71,
+        "compareAtPrice": 374999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 6,
+          "percentage": 6,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 352499,
+          "maximum": 374999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 119,
+        "reservedQuantity": 5,
+        "availableQuantity": 84,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100116",
+          "url": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/thumbnail.webp",
+          "alt": "ScootMaster Scooter Motorcycle",
+          "title": "ScootMaster Scooter Motorcycle",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100116-1",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/thumbnail.webp",
+            "alt": "ScootMaster Scooter Motorcycle image 1",
+            "title": "ScootMaster Scooter Motorcycle image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100116-2",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/1.webp",
+            "alt": "ScootMaster Scooter Motorcycle image 2",
+            "title": "ScootMaster Scooter Motorcycle image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100116-3",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/2.webp",
+            "alt": "ScootMaster Scooter Motorcycle image 3",
+            "title": "ScootMaster Scooter Motorcycle image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100116-4",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/3.webp",
+            "alt": "ScootMaster Scooter Motorcycle image 4",
+            "title": "ScootMaster Scooter Motorcycle image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100116-5",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/4.webp",
+            "alt": "ScootMaster Scooter Motorcycle image 5",
+            "title": "ScootMaster Scooter Motorcycle image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/thumbnail.webp",
+          "title": "ScootMaster Scooter Motorcycle product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "5 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100116-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "ScootMaster",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100116-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100116-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 2.5,
+        "count": 913,
+        "verifiedPurchaseCount": 657,
+        "distribution": {
+          "5": 346,
+          "4": 164,
+          "3": 396,
+          "2": 3,
+          "1": 4
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy ScootMaster Scooter Motorcycle Online in Bangladesh | Arogga",
+        "metaDescription": "The Scooter Motorcycle is a practical and fuel-efficient bike ideal for urban commuting. It features a step-through design and user-friendly controls for easy maneuverability.",
+        "keywords": [
+          "ScootMaster Scooter Motorcycle",
+          "ScootMaster",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100116",
+        "openGraph": {
+          "title": "Buy ScootMaster Scooter Motorcycle Online in Bangladesh | Arogga",
+          "description": "The Scooter Motorcycle is a practical and fuel-efficient bike ideal for urban commuting. It features a step-through design and user-friendly controls for easy maneuverability.",
+          "image": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100116",
+        "api": "/api/products/100116",
+        "source": "https://dummyjson.com/products/116"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 22813,
+        "salesCount": 1065,
+        "wishlistCount": 219,
+        "cartAdditionCount": 1305,
+        "conversionRate": 4.75
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100116,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "ScootMaster",
+      "genericName": "Scooter Motorcycle",
+      "category": "Lifestyle",
+      "subcategory": "Motorcycle",
+      "type": "simple",
+      "price": 374999,
+      "discountPrice": 352499,
+      "discountPercentage": 6,
+      "currency": "BDT",
+      "stock": 84,
+      "sold": 1065,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/1.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/2.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/3.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "ScootMaster Scooter Motorcycle is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Scooter Motorcycle is a practical and fuel-efficient bike ideal for urban commuting. It features a step-through design and user-friendly controls for easy maneuverability.",
+      "shortDescription": "The Scooter Motorcycle is a practical and fuel-efficient bike ideal for urban commuting. It features a step-through design and user-friendly controls for easy maneuverability.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Motorcycle product",
+        "ScootMaster item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Motorcycle",
+        "Brand": "ScootMaster",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "2.53"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 2.5,
+      "reviewCount": 913,
+      "faq": [],
+      "tags": [
+        "motorcycle",
+        "scootmaster",
+        "scooter motorcycle",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100117",
+      "uuid": "dummy-catalog-100117",
+      "productGroupId": "group-5029",
+      "sourceProductId": "117",
+      "sku": "HEA-LIF-100117",
+      "barcode": "8800000100117",
+      "slug": "speedmaster-sportbike-motorcycle-100117",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "SpeedMaster Sportbike Motorcycle",
+      "shortName": "Sportbike Motorcycle",
+      "subtitle": "The Sportbike Motorcycle is designed for speed and agility, with a sleek and aerodynamic profile. It's suitable for ride",
+      "brand": {
+        "id": "brand-speedmaster",
+        "name": "SpeedMaster",
+        "slug": "speedmaster",
+        "logo": null,
+        "manufacturer": "SpeedMaster",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "motorcycle",
+          "name": "Motorcycle",
+          "slug": "motorcycle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "motorcycle",
+          "speedmaster",
+          "sportbike motorcycle",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Sportbike Motorcycle is designed for speed and agility, with a sleek and aerodynamic profile. It's suitable for riders looking for a dynamic and thrilling riding experience.",
+        "description": "SpeedMaster Sportbike Motorcycle is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Sportbike Motorcycle is designed for speed and agility, with a sleek and aerodynamic profile. It's suitable for riders looking for a dynamic and thrilling riding experience.",
+        "highlights": [
+          "Motorcycle product",
+          "SpeedMaster item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Motorcycle"
+          },
+          {
+            "title": "Brand",
+            "value": "SpeedMaster"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "3.94"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 937499,
+        "salePrice": 824999,
+        "costPrice": 3.71,
+        "compareAtPrice": 937499,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 12,
+          "percentage": 12,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 824999,
+          "maximum": 937499
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 132,
+        "reservedQuantity": 4,
+        "availableQuantity": 95,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100117",
+          "url": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/thumbnail.webp",
+          "alt": "SpeedMaster Sportbike Motorcycle",
+          "title": "SpeedMaster Sportbike Motorcycle",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100117-1",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/thumbnail.webp",
+            "alt": "SpeedMaster Sportbike Motorcycle image 1",
+            "title": "SpeedMaster Sportbike Motorcycle image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100117-2",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/1.webp",
+            "alt": "SpeedMaster Sportbike Motorcycle image 2",
+            "title": "SpeedMaster Sportbike Motorcycle image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100117-3",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/2.webp",
+            "alt": "SpeedMaster Sportbike Motorcycle image 3",
+            "title": "SpeedMaster Sportbike Motorcycle image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100117-4",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/3.webp",
+            "alt": "SpeedMaster Sportbike Motorcycle image 4",
+            "title": "SpeedMaster Sportbike Motorcycle image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100117-5",
+            "url": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/4.webp",
+            "alt": "SpeedMaster Sportbike Motorcycle image 5",
+            "title": "SpeedMaster Sportbike Motorcycle image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/thumbnail.webp",
+          "title": "SpeedMaster Sportbike Motorcycle product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "Out of Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "5 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100117-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "SpeedMaster",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100117-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100117-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 2 weeks",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.9,
+        "count": 459,
+        "verifiedPurchaseCount": 330,
+        "distribution": {
+          "5": 272,
+          "4": 82,
+          "3": 101,
+          "2": 2,
+          "1": 2
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy SpeedMaster Sportbike Motorcycle Online in Bangladesh | Arogga",
+        "metaDescription": "The Sportbike Motorcycle is designed for speed and agility, with a sleek and aerodynamic profile. It's suitable for riders looking for a dynamic and thrilling riding experience.",
+        "keywords": [
+          "SpeedMaster Sportbike Motorcycle",
+          "SpeedMaster",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100117",
+        "openGraph": {
+          "title": "Buy SpeedMaster Sportbike Motorcycle Online in Bangladesh | Arogga",
+          "description": "The Sportbike Motorcycle is designed for speed and agility, with a sleek and aerodynamic profile. It's suitable for riders looking for a dynamic and thrilling riding experience.",
+          "image": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100117",
+        "api": "/api/products/100117",
+        "source": "https://dummyjson.com/products/117"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 719,
+        "salesCount": 1658,
+        "wishlistCount": 870,
+        "cartAdditionCount": 290,
+        "conversionRate": 4.21
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100117,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "SpeedMaster",
+      "genericName": "Sportbike Motorcycle",
+      "category": "Lifestyle",
+      "subcategory": "Motorcycle",
+      "type": "simple",
+      "price": 937499,
+      "discountPrice": 824999,
+      "discountPercentage": 12,
+      "currency": "BDT",
+      "stock": 95,
+      "sold": 1658,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/1.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/2.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/3.webp",
+        "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "SpeedMaster Sportbike Motorcycle is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Sportbike Motorcycle is designed for speed and agility, with a sleek and aerodynamic profile. It's suitable for riders looking for a dynamic and thrilling riding experience.",
+      "shortDescription": "The Sportbike Motorcycle is designed for speed and agility, with a sleek and aerodynamic profile. It's suitable for riders looking for a dynamic and thrilling riding experience.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Motorcycle product",
+        "SpeedMaster item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Motorcycle",
+        "Brand": "SpeedMaster",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "3.94"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.9,
+      "reviewCount": 459,
+      "faq": [],
+      "tags": [
+        "motorcycle",
+        "speedmaster",
+        "sportbike motorcycle",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100167",
+      "uuid": "dummy-catalog-100167",
+      "productGroupId": "group-5041",
+      "sourceProductId": "167",
+      "sku": "HEA-LIF-100167",
+      "barcode": "8800000100167",
+      "slug": "chrysler-300-touring-100167",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Chrysler 300 Touring",
+      "shortName": "300 Touring",
+      "subtitle": "The 300 Touring is a stylish and comfortable sedan, known for its luxurious features and smooth performance.",
+      "brand": {
+        "id": "brand-chrysler",
+        "name": "Chrysler",
+        "slug": "chrysler",
+        "logo": null,
+        "manufacturer": "Chrysler",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "vehicle",
+          "name": "Vehicle",
+          "slug": "vehicle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "vehicle",
+          "chrysler",
+          "300 touring",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The 300 Touring is a stylish and comfortable sedan, known for its luxurious features and smooth performance.",
+        "description": "Chrysler 300 Touring is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The 300 Touring is a stylish and comfortable sedan, known for its luxurious features and smooth performance.",
+        "highlights": [
+          "Vehicle product",
+          "Chrysler item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Vehicle"
+          },
+          {
+            "title": "Brand",
+            "value": "Chrysler"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "4.05"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 3624999,
+        "salePrice": 3479999,
+        "costPrice": 3.71,
+        "compareAtPrice": 3624999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 4,
+          "percentage": 4,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 3479999,
+          "maximum": 3624999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 75,
+        "reservedQuantity": 0,
+        "availableQuantity": 54,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100167",
+          "url": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/thumbnail.webp",
+          "alt": "Chrysler 300 Touring",
+          "title": "Chrysler 300 Touring",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100167-1",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/thumbnail.webp",
+            "alt": "Chrysler 300 Touring image 1",
+            "title": "Chrysler 300 Touring image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100167-2",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/1.webp",
+            "alt": "Chrysler 300 Touring image 2",
+            "title": "Chrysler 300 Touring image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100167-3",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/2.webp",
+            "alt": "Chrysler 300 Touring image 3",
+            "title": "Chrysler 300 Touring image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100167-4",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/3.webp",
+            "alt": "Chrysler 300 Touring image 4",
+            "title": "Chrysler 300 Touring image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100167-5",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/4.webp",
+            "alt": "Chrysler 300 Touring image 5",
+            "title": "Chrysler 300 Touring image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/thumbnail.webp",
+          "title": "Chrysler 300 Touring product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "3 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100167-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Chrysler",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100167-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100167-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 2 weeks",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 3,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.0,
+        "count": 276,
+        "verifiedPurchaseCount": 198,
+        "distribution": {
+          "5": 167,
+          "4": 49,
+          "3": 56,
+          "2": 1,
+          "1": 3
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Chrysler 300 Touring Online in Bangladesh | Arogga",
+        "metaDescription": "The 300 Touring is a stylish and comfortable sedan, known for its luxurious features and smooth performance.",
+        "keywords": [
+          "Chrysler 300 Touring",
+          "Chrysler",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100167",
+        "openGraph": {
+          "title": "Buy Chrysler 300 Touring Online in Bangladesh | Arogga",
+          "description": "The 300 Touring is a stylish and comfortable sedan, known for its luxurious features and smooth performance.",
+          "image": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100167",
+        "api": "/api/products/100167",
+        "source": "https://dummyjson.com/products/167"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 17544,
+        "salesCount": 420,
+        "wishlistCount": 151,
+        "cartAdditionCount": 1250,
+        "conversionRate": 8.88
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100167,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Chrysler",
+      "genericName": "300 Touring",
+      "category": "Lifestyle",
+      "subcategory": "Vehicle",
+      "type": "simple",
+      "price": 3624999,
+      "discountPrice": 3479999,
+      "discountPercentage": 4,
+      "currency": "BDT",
+      "stock": 54,
+      "sold": 420,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/vehicle/300-touring/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/300-touring/1.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/300-touring/2.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/300-touring/3.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/300-touring/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/300-touring/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "Chrysler 300 Touring is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The 300 Touring is a stylish and comfortable sedan, known for its luxurious features and smooth performance.",
+      "shortDescription": "The 300 Touring is a stylish and comfortable sedan, known for its luxurious features and smooth performance.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Vehicle product",
+        "Chrysler item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Vehicle",
+        "Brand": "Chrysler",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "4.05"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.0,
+      "reviewCount": 276,
+      "faq": [],
+      "tags": [
+        "vehicle",
+        "chrysler",
+        "300 touring",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": false,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100168",
+      "uuid": "dummy-catalog-100168",
+      "productGroupId": "group-5041",
+      "sourceProductId": "168",
+      "sku": "HEA-LIF-100168",
+      "barcode": "8800000100168",
+      "slug": "dodge-charger-sxt-rwd-100168",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Dodge Charger SXT RWD",
+      "shortName": "Charger SXT RWD",
+      "subtitle": "The Charger SXT RWD is a powerful and sporty rear-wheel-drive sedan, offering a blend of performance and practicality.",
+      "brand": {
+        "id": "brand-dodge",
+        "name": "Dodge",
+        "slug": "dodge",
+        "logo": null,
+        "manufacturer": "Dodge",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "vehicle",
+          "name": "Vehicle",
+          "slug": "vehicle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "vehicle",
+          "dodge",
+          "charger sxt rwd",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Charger SXT RWD is a powerful and sporty rear-wheel-drive sedan, offering a blend of performance and practicality.",
+        "description": "Dodge Charger SXT RWD is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Charger SXT RWD is a powerful and sporty rear-wheel-drive sedan, offering a blend of performance and practicality.",
+        "highlights": [
+          "Vehicle product",
+          "Dodge item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Vehicle"
+          },
+          {
+            "title": "Brand",
+            "value": "Dodge"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "2.58"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 4124999,
+        "salePrice": 3794999,
+        "costPrice": 3.71,
+        "compareAtPrice": 4124999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 8,
+          "percentage": 8,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 3794999,
+          "maximum": 4124999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 65,
+        "reservedQuantity": 5,
+        "availableQuantity": 57,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100168",
+          "url": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp",
+          "alt": "Dodge Charger SXT RWD",
+          "title": "Dodge Charger SXT RWD",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100168-1",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp",
+            "alt": "Dodge Charger SXT RWD image 1",
+            "title": "Dodge Charger SXT RWD image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100168-2",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/1.webp",
+            "alt": "Dodge Charger SXT RWD image 2",
+            "title": "Dodge Charger SXT RWD image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100168-3",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/2.webp",
+            "alt": "Dodge Charger SXT RWD image 3",
+            "title": "Dodge Charger SXT RWD image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100168-4",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/3.webp",
+            "alt": "Dodge Charger SXT RWD image 4",
+            "title": "Dodge Charger SXT RWD image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100168-5",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/4.webp",
+            "alt": "Dodge Charger SXT RWD image 5",
+            "title": "Dodge Charger SXT RWD image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp",
+          "title": "Dodge Charger SXT RWD product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 month warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100168-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Dodge",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100168-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100168-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 3-5 business days",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 2.6,
+        "count": 226,
+        "verifiedPurchaseCount": 162,
+        "distribution": {
+          "5": 89,
+          "4": 40,
+          "3": 90,
+          "2": 2,
+          "1": 5
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Dodge Charger SXT RWD Online in Bangladesh | Arogga",
+        "metaDescription": "The Charger SXT RWD is a powerful and sporty rear-wheel-drive sedan, offering a blend of performance and practicality.",
+        "keywords": [
+          "Dodge Charger SXT RWD",
+          "Dodge",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100168",
+        "openGraph": {
+          "title": "Buy Dodge Charger SXT RWD Online in Bangladesh | Arogga",
+          "description": "The Charger SXT RWD is a powerful and sporty rear-wheel-drive sedan, offering a blend of performance and practicality.",
+          "image": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100168",
+        "api": "/api/products/100168",
+        "source": "https://dummyjson.com/products/168"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 3971,
+        "salesCount": 1525,
+        "wishlistCount": 453,
+        "cartAdditionCount": 360,
+        "conversionRate": 2.38
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100168,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Dodge",
+      "genericName": "Charger SXT RWD",
+      "category": "Lifestyle",
+      "subcategory": "Vehicle",
+      "type": "simple",
+      "price": 4124999,
+      "discountPrice": 3794999,
+      "discountPercentage": 8,
+      "currency": "BDT",
+      "stock": 57,
+      "sold": 1525,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/1.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/2.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/3.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "Dodge Charger SXT RWD is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Charger SXT RWD is a powerful and sporty rear-wheel-drive sedan, offering a blend of performance and practicality.",
+      "shortDescription": "The Charger SXT RWD is a powerful and sporty rear-wheel-drive sedan, offering a blend of performance and practicality.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Vehicle product",
+        "Dodge item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Vehicle",
+        "Brand": "Dodge",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "2.58"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 2.6,
+      "reviewCount": 226,
+      "faq": [],
+      "tags": [
+        "vehicle",
+        "dodge",
+        "charger sxt rwd",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100169",
+      "uuid": "dummy-catalog-100169",
+      "productGroupId": "group-5042",
+      "sourceProductId": "169",
+      "sku": "HEA-LIF-100169",
+      "barcode": "8800000100169",
+      "slug": "dodge-hornet-gt-plus-100169",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Dodge Hornet GT Plus",
+      "shortName": "Dodge Hornet GT Plus",
+      "subtitle": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+      "brand": {
+        "id": "brand-dodge",
+        "name": "Dodge",
+        "slug": "dodge",
+        "logo": null,
+        "manufacturer": "Dodge",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "vehicle",
+          "name": "Vehicle",
+          "slug": "vehicle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "vehicle",
+          "dodge",
+          "dodge hornet gt plus",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+        "description": "Dodge Hornet GT Plus is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+        "highlights": [
+          "Vehicle product",
+          "Dodge item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Vehicle"
+          },
+          {
+            "title": "Brand",
+            "value": "Dodge"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "2.65"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 3124999,
+        "salePrice": 3031249,
+        "costPrice": 3.71,
+        "compareAtPrice": 3124999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 3,
+          "percentage": 3,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 3031249,
+          "maximum": 3124999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 101,
+        "reservedQuantity": 5,
+        "availableQuantity": 82,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100169",
+          "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+          "alt": "Dodge Hornet GT Plus",
+          "title": "Dodge Hornet GT Plus",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100169-1",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+            "alt": "Dodge Hornet GT Plus image 1",
+            "title": "Dodge Hornet GT Plus image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100169-2",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/1.webp",
+            "alt": "Dodge Hornet GT Plus image 2",
+            "title": "Dodge Hornet GT Plus image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100169-3",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/2.webp",
+            "alt": "Dodge Hornet GT Plus image 3",
+            "title": "Dodge Hornet GT Plus image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100169-4",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/3.webp",
+            "alt": "Dodge Hornet GT Plus image 4",
+            "title": "Dodge Hornet GT Plus image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100169-5",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/4.webp",
+            "alt": "Dodge Hornet GT Plus image 5",
+            "title": "Dodge Hornet GT Plus image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+          "title": "Dodge Hornet GT Plus product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100169-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Dodge",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100169-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100169-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 month",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 2.6,
+        "count": 399,
+        "verifiedPurchaseCount": 287,
+        "distribution": {
+          "5": 157,
+          "4": 71,
+          "3": 171,
+          "2": 4,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Dodge Hornet GT Plus Online in Bangladesh | Arogga",
+        "metaDescription": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+        "keywords": [
+          "Dodge Hornet GT Plus",
+          "Dodge",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100169",
+        "openGraph": {
+          "title": "Buy Dodge Hornet GT Plus Online in Bangladesh | Arogga",
+          "description": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+          "image": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100169",
+        "api": "/api/products/100169",
+        "source": "https://dummyjson.com/products/169"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 6400,
+        "salesCount": 1295,
+        "wishlistCount": 75,
+        "cartAdditionCount": 606,
+        "conversionRate": 5.63
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100169,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Dodge",
+      "genericName": "Dodge Hornet GT Plus",
+      "category": "Lifestyle",
+      "subcategory": "Vehicle",
+      "type": "simple",
+      "price": 3124999,
+      "discountPrice": 3031249,
+      "discountPercentage": 3,
+      "currency": "BDT",
+      "stock": 82,
+      "sold": 1295,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/1.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/2.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/3.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "Dodge Hornet GT Plus is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+      "shortDescription": "The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urban driving with a touch of sportiness.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Vehicle product",
+        "Dodge item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Vehicle",
+        "Brand": "Dodge",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "2.65"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 2.6,
+      "reviewCount": 399,
+      "faq": [],
+      "tags": [
+        "vehicle",
+        "dodge",
+        "dodge hornet gt plus",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100170",
+      "uuid": "dummy-catalog-100170",
+      "productGroupId": "group-5042",
+      "sourceProductId": "170",
+      "sku": "HEA-LIF-100170",
+      "barcode": "8800000100170",
+      "slug": "dodge-durango-sxt-rwd-100170",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Dodge Durango SXT RWD",
+      "shortName": "Durango SXT RWD",
+      "subtitle": "The Durango SXT RWD is a spacious and versatile SUV, known for its strong performance and family-friendly features.",
+      "brand": {
+        "id": "brand-dodge",
+        "name": "Dodge",
+        "slug": "dodge",
+        "logo": null,
+        "manufacturer": "Dodge",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "vehicle",
+          "name": "Vehicle",
+          "slug": "vehicle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "vehicle",
+          "dodge",
+          "durango sxt rwd",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Durango SXT RWD is a spacious and versatile SUV, known for its strong performance and family-friendly features.",
+        "description": "Dodge Durango SXT RWD is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Durango SXT RWD is a spacious and versatile SUV, known for its strong performance and family-friendly features.",
+        "highlights": [
+          "Vehicle product",
+          "Dodge item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Vehicle"
+          },
+          {
+            "title": "Brand",
+            "value": "Dodge"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "4.07"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 4624999,
+        "salePrice": 3884999,
+        "costPrice": 3.71,
+        "compareAtPrice": 4624999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 16,
+          "percentage": 16,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 3884999,
+          "maximum": 4624999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 105,
+        "reservedQuantity": 0,
+        "availableQuantity": 95,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100170",
+          "url": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/thumbnail.webp",
+          "alt": "Dodge Durango SXT RWD",
+          "title": "Dodge Durango SXT RWD",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100170-1",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/thumbnail.webp",
+            "alt": "Dodge Durango SXT RWD image 1",
+            "title": "Dodge Durango SXT RWD image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100170-2",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/1.webp",
+            "alt": "Dodge Durango SXT RWD image 2",
+            "title": "Dodge Durango SXT RWD image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100170-3",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/2.webp",
+            "alt": "Dodge Durango SXT RWD image 3",
+            "title": "Dodge Durango SXT RWD image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100170-4",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/3.webp",
+            "alt": "Dodge Durango SXT RWD image 4",
+            "title": "Dodge Durango SXT RWD image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100170-5",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/4.webp",
+            "alt": "Dodge Durango SXT RWD image 5",
+            "title": "Dodge Durango SXT RWD image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/thumbnail.webp",
+          "title": "Dodge Durango SXT RWD product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "2 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100170-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Dodge",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100170-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100170-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 month",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.1,
+        "count": 860,
+        "verifiedPurchaseCount": 619,
+        "distribution": {
+          "5": 535,
+          "4": 154,
+          "3": 164,
+          "2": 13,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Dodge Durango SXT RWD Online in Bangladesh | Arogga",
+        "metaDescription": "The Durango SXT RWD is a spacious and versatile SUV, known for its strong performance and family-friendly features.",
+        "keywords": [
+          "Dodge Durango SXT RWD",
+          "Dodge",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100170",
+        "openGraph": {
+          "title": "Buy Dodge Durango SXT RWD Online in Bangladesh | Arogga",
+          "description": "The Durango SXT RWD is a spacious and versatile SUV, known for its strong performance and family-friendly features.",
+          "image": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100170",
+        "api": "/api/products/100170",
+        "source": "https://dummyjson.com/products/170"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 2791,
+        "salesCount": 1221,
+        "wishlistCount": 119,
+        "cartAdditionCount": 1722,
+        "conversionRate": 3.63
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100170,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Dodge",
+      "genericName": "Durango SXT RWD",
+      "category": "Lifestyle",
+      "subcategory": "Vehicle",
+      "type": "simple",
+      "price": 4624999,
+      "discountPrice": 3884999,
+      "discountPercentage": 16,
+      "currency": "BDT",
+      "stock": 95,
+      "sold": 1221,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/1.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/2.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/3.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "Dodge Durango SXT RWD is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Durango SXT RWD is a spacious and versatile SUV, known for its strong performance and family-friendly features.",
+      "shortDescription": "The Durango SXT RWD is a spacious and versatile SUV, known for its strong performance and family-friendly features.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Vehicle product",
+        "Dodge item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Vehicle",
+        "Brand": "Dodge",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "4.07"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.1,
+      "reviewCount": 860,
+      "faq": [],
+      "tags": [
+        "vehicle",
+        "dodge",
+        "durango sxt rwd",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100171",
+      "uuid": "dummy-catalog-100171",
+      "productGroupId": "group-5042",
+      "sourceProductId": "171",
+      "sku": "HEA-LIF-100171",
+      "barcode": "8800000100171",
+      "slug": "chrysler-pacifica-touring-100171",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Chrysler Pacifica Touring",
+      "shortName": "Pacifica Touring",
+      "subtitle": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+      "brand": {
+        "id": "brand-chrysler",
+        "name": "Chrysler",
+        "slug": "chrysler",
+        "logo": null,
+        "manufacturer": "Chrysler",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "healthcare",
+          "name": "Healthcare",
+          "slug": "healthcare"
+        },
+        "category": {
+          "id": "lifestyle",
+          "name": "Lifestyle",
+          "slug": "lifestyle"
+        },
+        "subCategory": {
+          "id": "vehicle",
+          "name": "Vehicle",
+          "slug": "vehicle"
+        },
+        "collections": [
+          {
+            "id": "healthcare-collection",
+            "name": "Healthcare Collection",
+            "slug": "healthcare-collection"
+          }
+        ],
+        "tags": [
+          "vehicle",
+          "chrysler",
+          "pacifica touring",
+          "healthcare",
+          "lifestyle"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+        "description": "Chrysler Pacifica Touring is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+        "highlights": [
+          "Vehicle product",
+          "Chrysler item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Vehicle"
+          },
+          {
+            "title": "Brand",
+            "value": "Chrysler"
+          },
+          {
+            "title": "Department",
+            "value": "Healthcare"
+          },
+          {
+            "title": "Category",
+            "value": "Lifestyle"
+          },
+          {
+            "title": "Rating",
+            "value": "3.62"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 3999999,
+        "salePrice": 3399999,
+        "costPrice": 3.71,
+        "compareAtPrice": 3999999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 15,
+          "percentage": 15,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 3399999,
+          "maximum": 3999999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 72,
+        "reservedQuantity": 2,
+        "availableQuantity": 53,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100171",
+          "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+          "alt": "Chrysler Pacifica Touring",
+          "title": "Chrysler Pacifica Touring",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100171-1",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+            "alt": "Chrysler Pacifica Touring image 1",
+            "title": "Chrysler Pacifica Touring image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100171-2",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/1.webp",
+            "alt": "Chrysler Pacifica Touring image 2",
+            "title": "Chrysler Pacifica Touring image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100171-3",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/2.webp",
+            "alt": "Chrysler Pacifica Touring image 3",
+            "title": "Chrysler Pacifica Touring image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100171-4",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/3.webp",
+            "alt": "Chrysler Pacifica Touring image 4",
+            "title": "Chrysler Pacifica Touring image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100171-5",
+            "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/4.webp",
+            "alt": "Chrysler Pacifica Touring image 5",
+            "title": "Chrysler Pacifica Touring image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/lifestyle.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+          "title": "Chrysler Pacifica Touring product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 month warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100171-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Chrysler",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100171-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Lifestyle",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100171-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 3,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.6,
+        "count": 135,
+        "verifiedPurchaseCount": 97,
+        "distribution": {
+          "5": 73,
+          "4": 24,
+          "3": 32,
+          "2": 1,
+          "1": 5
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Chrysler Pacifica Touring Online in Bangladesh | Arogga",
+        "metaDescription": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+        "keywords": [
+          "Chrysler Pacifica Touring",
+          "Chrysler",
+          "Lifestyle",
+          "Healthcare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100171",
+        "openGraph": {
+          "title": "Buy Chrysler Pacifica Touring Online in Bangladesh | Arogga",
+          "description": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+          "image": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100171",
+        "api": "/api/products/100171",
+        "source": "https://dummyjson.com/products/171"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 14005,
+        "salesCount": 624,
+        "wishlistCount": 447,
+        "cartAdditionCount": 593,
+        "conversionRate": 4.66
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100171,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Chrysler",
+      "genericName": "Pacifica Touring",
+      "category": "Lifestyle",
+      "subcategory": "Vehicle",
+      "type": "simple",
+      "price": 3999999,
+      "discountPrice": 3399999,
+      "discountPercentage": 15,
+      "currency": "BDT",
+      "stock": 53,
+      "sold": 624,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/1.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/2.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/3.webp",
+        "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+      "video": "/videos/catalog/lifestyle.mp4",
+      "description": "Chrysler Pacifica Touring is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+      "shortDescription": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Vehicle product",
+        "Chrysler item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Vehicle",
+        "Brand": "Chrysler",
+        "Department": "Healthcare",
+        "Category": "Lifestyle",
+        "Rating": "3.62"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.6,
+      "reviewCount": 135,
+      "faq": [],
+      "tags": [
+        "vehicle",
+        "chrysler",
+        "pacifica touring",
+        "healthcare",
+        "lifestyle"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 10
+}

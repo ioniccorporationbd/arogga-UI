@@ -1,19 +1,12 @@
-import HeroBannerSlider from "./HeroBannerSlider";
-import HomeLabTestSection from "./HomeLabTestSection";
-import HealthPackageExplorer from "./HealthPackageExplorer";
-import LabProductSections from "./LabProductSections";
-import TrustedLabPartners from "./TrustedLabPartners";
-import LabSeoContentSection from "./LabSeoContentSection";
+import LabHomeExperience from "@/features/lab/components/LabHomeExperience";
+import { getLabRepository } from "@/features/lab/repository";
 
-export default function LabPage() {
-  return (
-    <div className="min-h-screen overflow-x-hidden bg-white">
-      <HeroBannerSlider />
-      <HomeLabTestSection />
-      <HealthPackageExplorer />
-      <LabProductSections />
-      <TrustedLabPartners />
-      <LabSeoContentSection />
-    </div>
-  );
+export default async function LabPage() {
+  const repo = getLabRepository();
+  const [tests, centers] = await Promise.all([
+    repo.listTests({ limit: 220, sort: "popular" }),
+    repo.listDiagnosticCenters(),
+  ]);
+
+  return <LabHomeExperience initialTests={tests.items} initialCenters={centers} />;
 }

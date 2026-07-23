@@ -1,0 +1,2 @@
+import type { PaymentProvider, PaymentRequest, PaymentResult } from "./providers";
+export class LocalPaymentSimulator implements PaymentProvider { async charge(request: PaymentRequest): Promise<PaymentResult> { return { ok: true, provider: request.method, transactionId: `SIM-${Date.now()}`, simulated: request.method !== "Cash on Delivery", message: request.method === "Cash on Delivery" ? "Cash on Delivery selected." : "Simulated local payment — no real money will be transferred." }; } }

@@ -1,0 +1,507 @@
+{
+  "id": "100063",
+  "uuid": "dummy-catalog-100063",
+  "productGroupId": "group-5015",
+  "sourceProductId": "63",
+  "sku": "HOM-KIT-100063",
+  "barcode": "8800000100063",
+  "slug": "kitchen-accessories-kitchen-sieve-100063",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Kitchen Accessories Kitchen Sieve",
+  "shortName": "Kitchen Sieve",
+  "subtitle": "The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures sm",
+  "brand": {
+    "id": "brand-kitchen-accessories",
+    "name": "Kitchen Accessories",
+    "slug": "kitchen-accessories",
+    "logo": null,
+    "manufacturer": "Kitchen Accessories",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "homecare",
+      "name": "Homecare",
+      "slug": "homecare"
+    },
+    "category": {
+      "id": "kitchen-essentials",
+      "name": "Kitchen Essentials",
+      "slug": "kitchen-essentials"
+    },
+    "subCategory": {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "slug": "kitchen"
+    },
+    "collections": [
+      {
+        "id": "homecare-collection",
+        "name": "Homecare Collection",
+        "slug": "homecare-collection"
+      }
+    ],
+    "tags": [
+      "kitchen-accessories",
+      "kitchen accessories",
+      "kitchen sieve",
+      "homecare",
+      "kitchen essentials"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures smooth results in your cooking and baking.",
+    "description": "Kitchen Accessories Kitchen Sieve is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures smooth results in your cooking and baking.",
+    "highlights": [
+      "Kitchen product",
+      "Kitchen Accessories item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Kitchen"
+      },
+      {
+        "title": "Brand",
+        "value": "Kitchen Accessories"
+      },
+      {
+        "title": "Department",
+        "value": "Homecare"
+      },
+      {
+        "title": "Category",
+        "value": "Kitchen Essentials"
+      },
+      {
+        "title": "Rating",
+        "value": "3.09"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 999,
+    "salePrice": 809,
+    "costPrice": 3.71,
+    "compareAtPrice": 999,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 19,
+      "percentage": 19,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 809,
+      "maximum": 999
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 75,
+    "reservedQuantity": 3,
+    "availableQuantity": 68,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100063",
+      "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp",
+      "alt": "Kitchen Accessories Kitchen Sieve",
+      "title": "Kitchen Accessories Kitchen Sieve",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100063-1",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp",
+        "alt": "Kitchen Accessories Kitchen Sieve image 1",
+        "title": "Kitchen Accessories Kitchen Sieve image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100063-2",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/1.webp",
+        "alt": "Kitchen Accessories Kitchen Sieve image 2",
+        "title": "Kitchen Accessories Kitchen Sieve image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100063-3",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp?view=3",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp?view=3",
+        "alt": "Kitchen Accessories Kitchen Sieve image 3",
+        "title": "Kitchen Accessories Kitchen Sieve image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100063-4",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/1.webp?view=4",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/1.webp?view=4",
+        "alt": "Kitchen Accessories Kitchen Sieve image 4",
+        "title": "Kitchen Accessories Kitchen Sieve image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100063-5",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp?view=5",
+        "alt": "Kitchen Accessories Kitchen Sieve image 5",
+        "title": "Kitchen Accessories Kitchen Sieve image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/kitchen-essentials.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp",
+      "title": "Kitchen Accessories Kitchen Sieve product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "1 month warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100063-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Kitchen Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100063-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Kitchen Essentials",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100063-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships overnight",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": false,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 3,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.1,
+    "count": 1089,
+    "verifiedPurchaseCount": 784,
+    "distribution": {
+      "5": 513,
+      "4": 196,
+      "3": 374,
+      "2": 12,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 10,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Kitchen Accessories Kitchen Sieve Online in Bangladesh | Arogga",
+    "metaDescription": "The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures smooth results in your cooking and baking.",
+    "keywords": [
+      "Kitchen Accessories Kitchen Sieve",
+      "Kitchen Accessories",
+      "Kitchen Essentials",
+      "Homecare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100063",
+    "openGraph": {
+      "title": "Buy Kitchen Accessories Kitchen Sieve Online in Bangladesh | Arogga",
+      "description": "The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures smooth results in your cooking and baking.",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100063",
+    "api": "/api/products/100063",
+    "source": "https://dummyjson.com/products/63"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 10989,
+    "salesCount": 1516,
+    "wishlistCount": 359,
+    "cartAdditionCount": 134,
+    "conversionRate": 4.36
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100063,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Kitchen Accessories",
+  "genericName": "Kitchen Sieve",
+  "category": "Kitchen Essentials",
+  "subcategory": "Kitchen",
+  "type": "simple",
+  "price": 999,
+  "discountPrice": 809,
+  "discountPercentage": 19,
+  "currency": "BDT",
+  "stock": 68,
+  "sold": 1516,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/1.webp",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp?view=3",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/1.webp?view=4",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/thumbnail.webp",
+  "video": "/videos/catalog/kitchen-essentials.mp4",
+  "description": "Kitchen Accessories Kitchen Sieve is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures smooth results in your cooking and baking.",
+  "shortDescription": "The Kitchen Sieve is a versatile tool for sifting and straining dry and wet ingredients. Its fine mesh design ensures smooth results in your cooking and baking.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Kitchen product",
+    "Kitchen Accessories item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Kitchen",
+    "Brand": "Kitchen Accessories",
+    "Department": "Homecare",
+    "Category": "Kitchen Essentials",
+    "Rating": "3.09"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.1,
+  "reviewCount": 1089,
+  "faq": [],
+  "tags": [
+    "kitchen-accessories",
+    "kitchen accessories",
+    "kitchen sieve",
+    "homecare",
+    "kitchen essentials"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

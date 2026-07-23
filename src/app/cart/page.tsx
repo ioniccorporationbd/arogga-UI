@@ -49,20 +49,20 @@ export default function CartPage() {
         <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) 330px", gap: 24, marginTop: 26 }}>
           <section style={{ display: "grid", gap: 12 }}>
             {items.map((item) => (
-              <article key={item.id} style={{ display: "grid", gridTemplateColumns: "92px 1fr auto", gap: 16, alignItems: "center", padding: 16, border: "1px solid #e4e7ec", borderRadius: 15, background: "#fff" }}>
+              <article key={item.cartKey} style={{ display: "grid", gridTemplateColumns: "92px 1fr auto", gap: 16, alignItems: "center", padding: 16, border: "1px solid #e4e7ec", borderRadius: 15, background: "#fff" }}>
                 <div style={{ position: "relative", height: 92, borderRadius: 12, background: "#f8faf9", overflow: "hidden" }}>
                   {item.image && <Image src={item.image} alt={item.name} fill sizes="92px" style={{ objectFit: "contain" }} unoptimized />}
                 </div>
                 <div>
-                  <Link href={`/product/${item.slug || item.id}`} style={{ color: "#101828", fontWeight: 750, textDecoration: "none" }}>{item.name}</Link>
-                  <strong style={{ display: "block", marginTop: 8, color: "#087b75" }}>৳{item.price.toFixed(2)}</strong>
+                  <Link href={`/product/${item.slug || item.productId}`} style={{ color: "#101828", fontWeight: 750, textDecoration: "none" }}>{item.name}</Link>
+                  <strong style={{ display: "block", marginTop: 8, color: "#087b75" }}>৳{(item.salePrice ?? item.regularPrice ?? 0).toFixed(2)}</strong>
                   <div style={{ display: "inline-flex", alignItems: "center", marginTop: 10, border: "1px solid #d0d5dd", borderRadius: 9 }}>
-                    <button onClick={() => updateQuantity(item.id, item.quantity - 1)} style={qtyButton}><Minus size={13} /></button>
+                    <button onClick={() => updateQuantity(item.cartKey, item.quantity - 1)} style={qtyButton}><Minus size={13} /></button>
                     <span style={{ minWidth: 34, textAlign: "center", fontWeight: 800 }}>{item.quantity}</span>
-                    <button onClick={() => updateQuantity(item.id, item.quantity + 1)} style={qtyButton}><Plus size={13} /></button>
+                    <button onClick={() => updateQuantity(item.cartKey, item.quantity + 1)} style={qtyButton}><Plus size={13} /></button>
                   </div>
                 </div>
-                <button onClick={() => removeItem(item.id)} style={{ border: 0, background: "#fff1f2", color: "#e11d48", width: 38, height: 38, borderRadius: 11, cursor: "pointer" }} aria-label={`Remove ${item.name}`}>
+                <button onClick={() => removeItem(item.cartKey)} style={{ border: 0, background: "#fff1f2", color: "#e11d48", width: 38, height: 38, borderRadius: 11, cursor: "pointer" }} aria-label={`Remove ${item.name}`}>
                   <Trash2 size={17} />
                 </button>
               </article>

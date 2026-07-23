@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import type { FormEvent, ReactNode } from "react";
 import { useEffect, useMemo, useState } from "react";
+import { notify } from "@/lib/notify";
 
 type FooterLink = {
   label: string;
@@ -260,10 +261,12 @@ export default function Footer() {
 
     if (!validEmail) {
       setStatus("error");
+      notify.error("Please enter a valid email address");
       return;
     }
 
     setStatus("success");
+    notify.success("Newsletter subscription saved");
     setEmail("");
   };
 
@@ -796,11 +799,13 @@ function ContactInfo() {
     try {
       await navigator.clipboard.writeText(value);
       setCopied(key);
+      notify.success("Copied to clipboard");
 
       window.setTimeout(() => {
         setCopied(null);
       }, 1500);
     } catch {
+      notify.error("Copy failed. Please copy manually.");
       setCopied(null);
     }
   };

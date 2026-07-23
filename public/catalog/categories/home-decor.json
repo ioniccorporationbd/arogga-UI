@@ -1,0 +1,2542 @@
+{
+  "slug": "home-decor",
+  "name": "Home Decor",
+  "products": [
+    {
+      "id": "100043",
+      "uuid": "dummy-catalog-100043",
+      "productGroupId": "group-5010",
+      "sourceProductId": "43",
+      "sku": "HOM-HOM-100043",
+      "barcode": "8800000100043",
+      "slug": "home-decoration-decoration-swing-100043",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Home Decoration Decoration Swing",
+      "shortName": "Decoration Swing",
+      "subtitle": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elega",
+      "brand": {
+        "id": "brand-home-decoration",
+        "name": "Home Decoration",
+        "slug": "home-decoration",
+        "logo": null,
+        "manufacturer": "Home Decoration",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "subCategory": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "home-decoration",
+          "home decoration",
+          "decoration swing",
+          "homecare",
+          "home decor"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
+        "description": "Home Decoration Decoration Swing is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
+        "highlights": [
+          "Home Decor product",
+          "Home Decoration item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Brand",
+            "value": "Home Decoration"
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Rating",
+            "value": "3.16"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 7499,
+        "salePrice": 6749,
+        "costPrice": 3.71,
+        "compareAtPrice": 7499,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 10,
+          "percentage": 10,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 6749,
+          "maximum": 7499
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 78,
+        "reservedQuantity": 1,
+        "availableQuantity": 47,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100043",
+          "url": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+          "alt": "Home Decoration Decoration Swing",
+          "title": "Home Decoration Decoration Swing",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100043-1",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+            "alt": "Home Decoration Decoration Swing image 1",
+            "title": "Home Decoration Decoration Swing image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100043-2",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/1.webp",
+            "alt": "Home Decoration Decoration Swing image 2",
+            "title": "Home Decoration Decoration Swing image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100043-3",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/2.webp",
+            "alt": "Home Decoration Decoration Swing image 3",
+            "title": "Home Decoration Decoration Swing image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100043-4",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/3.webp",
+            "alt": "Home Decoration Decoration Swing image 4",
+            "title": "Home Decoration Decoration Swing image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100043-5",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp?view=5",
+            "alt": "Home Decoration Decoration Swing image 5",
+            "title": "Home Decoration Decoration Swing image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-decor.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+          "title": "Home Decoration Decoration Swing product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 week warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100043-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Home Decoration",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100043-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Decor",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100043-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 month",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 3,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.2,
+        "count": 315,
+        "verifiedPurchaseCount": 226,
+        "distribution": {
+          "5": 153,
+          "4": 56,
+          "3": 105,
+          "2": 1,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Home Decoration Decoration Swing Online in Bangladesh | Arogga",
+        "metaDescription": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
+        "keywords": [
+          "Home Decoration Decoration Swing",
+          "Home Decoration",
+          "Home Decor",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100043",
+        "openGraph": {
+          "title": "Buy Home Decoration Decoration Swing Online in Bangladesh | Arogga",
+          "description": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
+          "image": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100043",
+        "api": "/api/products/100043",
+        "source": "https://dummyjson.com/products/43"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 8838,
+        "salesCount": 1735,
+        "wishlistCount": 174,
+        "cartAdditionCount": 1597,
+        "conversionRate": 8.61
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100043,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Home Decoration",
+      "genericName": "Decoration Swing",
+      "category": "Home Decor",
+      "subcategory": "Home Decor",
+      "type": "simple",
+      "price": 7499,
+      "discountPrice": 6749,
+      "discountPercentage": 10,
+      "currency": "BDT",
+      "stock": 47,
+      "sold": 1735,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/1.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/2.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/3.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+      "video": "/videos/catalog/home-decor.mp4",
+      "description": "Home Decoration Decoration Swing is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
+      "shortDescription": "The Decoration Swing is a charming addition to your home decor. Crafted with intricate details, it adds a touch of elegance and whimsy to any room.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Home Decor product",
+        "Home Decoration item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Home Decor",
+        "Brand": "Home Decoration",
+        "Department": "Homecare",
+        "Category": "Home Decor",
+        "Rating": "3.16"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.2,
+      "reviewCount": 315,
+      "faq": [],
+      "tags": [
+        "home-decoration",
+        "home decoration",
+        "decoration swing",
+        "homecare",
+        "home decor"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100044",
+      "uuid": "dummy-catalog-100044",
+      "productGroupId": "group-5010",
+      "sourceProductId": "44",
+      "sku": "HOM-HOM-100044",
+      "barcode": "8800000100044",
+      "slug": "home-decoration-family-tree-photo-frame-100044",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Home Decoration Family Tree Photo Frame",
+      "shortName": "Family Tree Photo Frame",
+      "subtitle": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple ph",
+      "brand": {
+        "id": "brand-home-decoration",
+        "name": "Home Decoration",
+        "slug": "home-decoration",
+        "logo": null,
+        "manufacturer": "Home Decoration",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "subCategory": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "home-decoration",
+          "home decoration",
+          "family tree photo frame",
+          "homecare",
+          "home decor"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
+        "description": "Home Decoration Family Tree Photo Frame is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
+        "highlights": [
+          "Home Decor product",
+          "Home Decoration item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Brand",
+            "value": "Home Decoration"
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Rating",
+            "value": "4.53"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 3749,
+        "salePrice": 3186,
+        "costPrice": 3.71,
+        "compareAtPrice": 3749,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 15,
+          "percentage": 15,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 3186,
+          "maximum": 3749
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 101,
+        "reservedQuantity": 0,
+        "availableQuantity": 77,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100044",
+          "url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+          "alt": "Home Decoration Family Tree Photo Frame",
+          "title": "Home Decoration Family Tree Photo Frame",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100044-1",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+            "alt": "Home Decoration Family Tree Photo Frame image 1",
+            "title": "Home Decoration Family Tree Photo Frame image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100044-2",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp",
+            "alt": "Home Decoration Family Tree Photo Frame image 2",
+            "title": "Home Decoration Family Tree Photo Frame image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100044-3",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp?view=3",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp?view=3",
+            "alt": "Home Decoration Family Tree Photo Frame image 3",
+            "title": "Home Decoration Family Tree Photo Frame image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100044-4",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp?view=4",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp?view=4",
+            "alt": "Home Decoration Family Tree Photo Frame image 4",
+            "title": "Home Decoration Family Tree Photo Frame image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100044-5",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp?view=5",
+            "alt": "Home Decoration Family Tree Photo Frame image 5",
+            "title": "Home Decoration Family Tree Photo Frame image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-decor.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+          "title": "Home Decoration Family Tree Photo Frame product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 month warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100044-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Home Decoration",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100044-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Decor",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100044-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 2 weeks",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 3,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 856,
+        "verifiedPurchaseCount": 616,
+        "distribution": {
+          "5": 585,
+          "4": 154,
+          "3": 113,
+          "2": 1,
+          "1": 3
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Home Decoration Family Tree Photo Frame Online in Bangladesh | Arogga",
+        "metaDescription": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
+        "keywords": [
+          "Home Decoration Family Tree Photo Frame",
+          "Home Decoration",
+          "Home Decor",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100044",
+        "openGraph": {
+          "title": "Buy Home Decoration Family Tree Photo Frame Online in Bangladesh | Arogga",
+          "description": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
+          "image": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100044",
+        "api": "/api/products/100044",
+        "source": "https://dummyjson.com/products/44"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 22210,
+        "salesCount": 780,
+        "wishlistCount": 898,
+        "cartAdditionCount": 640,
+        "conversionRate": 4.2
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100044,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Home Decoration",
+      "genericName": "Family Tree Photo Frame",
+      "category": "Home Decor",
+      "subcategory": "Home Decor",
+      "type": "simple",
+      "price": 3749,
+      "discountPrice": 3186,
+      "discountPercentage": 15,
+      "currency": "BDT",
+      "stock": 77,
+      "sold": 780,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp?view=3",
+        "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp?view=4",
+        "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+      "video": "/videos/catalog/home-decor.mp4",
+      "description": "Home Decoration Family Tree Photo Frame is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
+      "shortDescription": "The Family Tree Photo Frame is a sentimental and stylish way to display your cherished family memories. With multiple photo slots, it tells the story of your loved ones.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Home Decor product",
+        "Home Decoration item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Home Decor",
+        "Brand": "Home Decoration",
+        "Department": "Homecare",
+        "Category": "Home Decor",
+        "Rating": "4.53"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.5,
+      "reviewCount": 856,
+      "faq": [],
+      "tags": [
+        "home-decoration",
+        "home decoration",
+        "family tree photo frame",
+        "homecare",
+        "home decor"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100045",
+      "uuid": "dummy-catalog-100045",
+      "productGroupId": "group-5011",
+      "sourceProductId": "45",
+      "sku": "HOM-HOM-100045",
+      "barcode": "8800000100045",
+      "slug": "home-decoration-house-showpiece-plant-100045",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Home Decoration House Showpiece Plant",
+      "shortName": "House Showpiece Plant",
+      "subtitle": "The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for mainten",
+      "brand": {
+        "id": "brand-home-decoration",
+        "name": "Home Decoration",
+        "slug": "home-decoration",
+        "logo": null,
+        "manufacturer": "Home Decoration",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "subCategory": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "home-decoration",
+          "home decoration",
+          "house showpiece plant",
+          "homecare",
+          "home decor"
+        ]
+      },
+      "content": {
+        "shortDescription": "The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
+        "description": "Home Decoration House Showpiece Plant is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
+        "highlights": [
+          "Home Decor product",
+          "Home Decoration item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Brand",
+            "value": "Home Decoration"
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Rating",
+            "value": "4.67"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 4999,
+        "salePrice": 4649,
+        "costPrice": 3.71,
+        "compareAtPrice": 4999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 7,
+          "percentage": 7,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 4649,
+          "maximum": 4999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 68,
+        "reservedQuantity": 5,
+        "availableQuantity": 28,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100045",
+          "url": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+          "alt": "Home Decoration House Showpiece Plant",
+          "title": "Home Decoration House Showpiece Plant",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100045-1",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+            "alt": "Home Decoration House Showpiece Plant image 1",
+            "title": "Home Decoration House Showpiece Plant image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100045-2",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/1.webp",
+            "alt": "Home Decoration House Showpiece Plant image 2",
+            "title": "Home Decoration House Showpiece Plant image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100045-3",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/2.webp",
+            "alt": "Home Decoration House Showpiece Plant image 3",
+            "title": "Home Decoration House Showpiece Plant image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100045-4",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/3.webp",
+            "alt": "Home Decoration House Showpiece Plant image 4",
+            "title": "Home Decoration House Showpiece Plant image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100045-5",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp?view=5",
+            "alt": "Home Decoration House Showpiece Plant image 5",
+            "title": "Home Decoration House Showpiece Plant image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-decor.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+          "title": "Home Decoration House Showpiece Plant product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100045-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Home Decoration",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100045-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Decor",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100045-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 week",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 3,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 681,
+        "verifiedPurchaseCount": 490,
+        "distribution": {
+          "5": 486,
+          "4": 122,
+          "3": 69,
+          "2": 3,
+          "1": 1
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Home Decoration House Showpiece Plant Online in Bangladesh | Arogga",
+        "metaDescription": "The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
+        "keywords": [
+          "Home Decoration House Showpiece Plant",
+          "Home Decoration",
+          "Home Decor",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100045",
+        "openGraph": {
+          "title": "Buy Home Decoration House Showpiece Plant Online in Bangladesh | Arogga",
+          "description": "The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
+          "image": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100045",
+        "api": "/api/products/100045",
+        "source": "https://dummyjson.com/products/45"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 7045,
+        "salesCount": 2047,
+        "wishlistCount": 48,
+        "cartAdditionCount": 870,
+        "conversionRate": 2.31
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100045,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Home Decoration",
+      "genericName": "House Showpiece Plant",
+      "category": "Home Decor",
+      "subcategory": "Home Decor",
+      "type": "simple",
+      "price": 4999,
+      "discountPrice": 4649,
+      "discountPercentage": 7,
+      "currency": "BDT",
+      "stock": 28,
+      "sold": 2047,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/1.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/2.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/3.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+      "video": "/videos/catalog/home-decor.mp4",
+      "description": "Home Decoration House Showpiece Plant is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
+      "shortDescription": "The House Showpiece Plant is an artificial plant that brings a touch of nature to your home without the need for maintenance. It adds greenery and style to any space.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Home Decor product",
+        "Home Decoration item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Home Decor",
+        "Brand": "Home Decoration",
+        "Department": "Homecare",
+        "Category": "Home Decor",
+        "Rating": "4.67"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.7,
+      "reviewCount": 681,
+      "faq": [],
+      "tags": [
+        "home-decoration",
+        "home decoration",
+        "house showpiece plant",
+        "homecare",
+        "home decor"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100046",
+      "uuid": "dummy-catalog-100046",
+      "productGroupId": "group-5011",
+      "sourceProductId": "46",
+      "sku": "HOM-HOM-100046",
+      "barcode": "8800000100046",
+      "slug": "home-decoration-plant-pot-100046",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Home Decoration Plant Pot",
+      "shortName": "Plant Pot",
+      "subtitle": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoo",
+      "brand": {
+        "id": "brand-home-decoration",
+        "name": "Home Decoration",
+        "slug": "home-decoration",
+        "logo": null,
+        "manufacturer": "Home Decoration",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "subCategory": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "home-decoration",
+          "home decoration",
+          "plant pot",
+          "homecare",
+          "home decor"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
+        "description": "Home Decoration Plant Pot is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
+        "highlights": [
+          "Home Decor product",
+          "Home Decoration item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Brand",
+            "value": "Home Decoration"
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Rating",
+            "value": "3.01"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 1874,
+        "salePrice": 1743,
+        "costPrice": 3.71,
+        "compareAtPrice": 1874,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 7,
+          "percentage": 7,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 1743,
+          "maximum": 1874
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 73,
+        "reservedQuantity": 1,
+        "availableQuantity": 59,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100046",
+          "url": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+          "alt": "Home Decoration Plant Pot",
+          "title": "Home Decoration Plant Pot",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100046-1",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+            "alt": "Home Decoration Plant Pot image 1",
+            "title": "Home Decoration Plant Pot image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100046-2",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/1.webp",
+            "alt": "Home Decoration Plant Pot image 2",
+            "title": "Home Decoration Plant Pot image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100046-3",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/2.webp",
+            "alt": "Home Decoration Plant Pot image 3",
+            "title": "Home Decoration Plant Pot image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100046-4",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/3.webp",
+            "alt": "Home Decoration Plant Pot image 4",
+            "title": "Home Decoration Plant Pot image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100046-5",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/4.webp",
+            "alt": "Home Decoration Plant Pot image 5",
+            "title": "Home Decoration Plant Pot image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-decor.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+          "title": "Home Decoration Plant Pot product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "Lifetime warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100046-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Home Decoration",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100046-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Decor",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100046-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 3-5 business days",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 3,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.0,
+        "count": 178,
+        "verifiedPurchaseCount": 128,
+        "distribution": {
+          "5": 81,
+          "4": 32,
+          "3": 58,
+          "2": 1,
+          "1": 6
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Home Decoration Plant Pot Online in Bangladesh | Arogga",
+        "metaDescription": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
+        "keywords": [
+          "Home Decoration Plant Pot",
+          "Home Decoration",
+          "Home Decor",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100046",
+        "openGraph": {
+          "title": "Buy Home Decoration Plant Pot Online in Bangladesh | Arogga",
+          "description": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
+          "image": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100046",
+        "api": "/api/products/100046",
+        "source": "https://dummyjson.com/products/46"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 18756,
+        "salesCount": 1787,
+        "wishlistCount": 730,
+        "cartAdditionCount": 1100,
+        "conversionRate": 9.03
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100046,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Home Decoration",
+      "genericName": "Plant Pot",
+      "category": "Home Decor",
+      "subcategory": "Home Decor",
+      "type": "simple",
+      "price": 1874,
+      "discountPrice": 1743,
+      "discountPercentage": 7,
+      "currency": "BDT",
+      "stock": 59,
+      "sold": 1787,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/1.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/2.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/3.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp",
+      "video": "/videos/catalog/home-decor.mp4",
+      "description": "Home Decoration Plant Pot is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
+      "shortDescription": "The Plant Pot is a stylish container for your favorite plants. With a sleek design, it complements your indoor or outdoor garden, adding a modern touch to your plant display.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Home Decor product",
+        "Home Decoration item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Home Decor",
+        "Brand": "Home Decoration",
+        "Department": "Homecare",
+        "Category": "Home Decor",
+        "Rating": "3.01"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.0,
+      "reviewCount": 178,
+      "faq": [],
+      "tags": [
+        "home-decoration",
+        "home decoration",
+        "plant pot",
+        "homecare",
+        "home decor"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100047",
+      "uuid": "dummy-catalog-100047",
+      "productGroupId": "group-5011",
+      "sourceProductId": "47",
+      "sku": "HOM-HOM-100047",
+      "barcode": "8800000100047",
+      "slug": "home-decoration-table-lamp-100047",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Home Decoration Table Lamp",
+      "shortName": "Table Lamp",
+      "subtitle": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides",
+      "brand": {
+        "id": "brand-home-decoration",
+        "name": "Home Decoration",
+        "slug": "home-decoration",
+        "logo": null,
+        "manufacturer": "Home Decoration",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "subCategory": {
+          "id": "home-decor",
+          "name": "Home Decor",
+          "slug": "home-decor"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "home-decoration",
+          "home decoration",
+          "table lamp",
+          "homecare",
+          "home decor"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+        "description": "Home Decoration Table Lamp is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+        "highlights": [
+          "Home Decor product",
+          "Home Decoration item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Brand",
+            "value": "Home Decoration"
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Decor"
+          },
+          {
+            "title": "Rating",
+            "value": "3.55"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 6249,
+        "salePrice": 5811,
+        "costPrice": 3.71,
+        "compareAtPrice": 6249,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 7,
+          "percentage": 7,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 5811,
+          "maximum": 6249
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 18,
+        "reservedQuantity": 1,
+        "availableQuantity": 9,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100047",
+          "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+          "alt": "Home Decoration Table Lamp",
+          "title": "Home Decoration Table Lamp",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100047-1",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+            "alt": "Home Decoration Table Lamp image 1",
+            "title": "Home Decoration Table Lamp image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100047-2",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+            "alt": "Home Decoration Table Lamp image 2",
+            "title": "Home Decoration Table Lamp image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100047-3",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=3",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=3",
+            "alt": "Home Decoration Table Lamp image 3",
+            "title": "Home Decoration Table Lamp image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100047-4",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp?view=4",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp?view=4",
+            "alt": "Home Decoration Table Lamp image 4",
+            "title": "Home Decoration Table Lamp image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100047-5",
+            "url": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=5",
+            "alt": "Home Decoration Table Lamp image 5",
+            "title": "Home Decoration Table Lamp image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-decor.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+          "title": "Home Decoration Table Lamp product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "3 months warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100047-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Home Decoration",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100047-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Decor",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100047-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1-2 business days",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 9,
+        "quantityStep": 1,
+        "maximumPerOrder": 9,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.5,
+        "count": 1145,
+        "verifiedPurchaseCount": 824,
+        "distribution": {
+          "5": 609,
+          "4": 206,
+          "3": 326,
+          "2": 22,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Home Decoration Table Lamp Online in Bangladesh | Arogga",
+        "metaDescription": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+        "keywords": [
+          "Home Decoration Table Lamp",
+          "Home Decoration",
+          "Home Decor",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100047",
+        "openGraph": {
+          "title": "Buy Home Decoration Table Lamp Online in Bangladesh | Arogga",
+          "description": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+          "image": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100047",
+        "api": "/api/products/100047",
+        "source": "https://dummyjson.com/products/47"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 6923,
+        "salesCount": 155,
+        "wishlistCount": 161,
+        "cartAdditionCount": 1756,
+        "conversionRate": 6.76
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100047,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Home Decoration",
+      "genericName": "Table Lamp",
+      "category": "Home Decor",
+      "subcategory": "Home Decor",
+      "type": "simple",
+      "price": 6249,
+      "discountPrice": 5811,
+      "discountPercentage": 7,
+      "currency": "BDT",
+      "stock": 9,
+      "sold": 155,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=3",
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp?view=4",
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp",
+      "video": "/videos/catalog/home-decor.mp4",
+      "description": "Home Decoration Table Lamp is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+      "shortDescription": "The Table Lamp is a functional and decorative lighting solution for your living space. With a modern design, it provides both ambient and task lighting, enhancing the atmosphere.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Home Decor product",
+        "Home Decoration item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Home Decor",
+        "Brand": "Home Decoration",
+        "Department": "Homecare",
+        "Category": "Home Decor",
+        "Rating": "3.55"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.5,
+      "reviewCount": 1145,
+      "faq": [],
+      "tags": [
+        "home-decoration",
+        "home decoration",
+        "table lamp",
+        "homecare",
+        "home decor"
+      ],
+      "featured": false,
+      "bestSeller": false,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 5
+}

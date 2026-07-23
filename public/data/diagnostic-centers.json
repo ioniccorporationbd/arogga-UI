@@ -1,0 +1,218 @@
+[
+  {
+    "id": "dc-ibn-sina",
+    "slug": "the-ibn-sina-trust",
+    "name": "The Ibn Sina Trust",
+    "logo": "/images/lab-partners/the-ibn-sina-trust.svg",
+    "rating": 4.2,
+    "address": "Dhanmondi, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur"
+    ],
+    "homeCollection": false,
+    "reportDeliveryHours": 12,
+    "verified": true,
+    "phone": "09610010000"
+  },
+  {
+    "id": "dc-popular",
+    "slug": "popular-diagnostic-centre-ltd",
+    "name": "Popular Diagnostic Centre Ltd",
+    "logo": "/images/lab-partners/popular-diagnostic-centre-ltd.svg",
+    "rating": 4.3,
+    "address": "Mirpur, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur",
+      "Narayanganj"
+    ],
+    "homeCollection": true,
+    "reportDeliveryHours": 18,
+    "verified": true,
+    "phone": "09610010001"
+  },
+  {
+    "id": "dc-labaid",
+    "slug": "labaid-diagnostic",
+    "name": "Labaid Diagnostic",
+    "logo": "/images/lab-partners/labaid-diagnostic.svg",
+    "rating": 4.4,
+    "address": "Uttara, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur",
+      "Narayanganj",
+      "Chattogram"
+    ],
+    "homeCollection": true,
+    "reportDeliveryHours": 24,
+    "verified": true,
+    "phone": "09610010002"
+  },
+  {
+    "id": "dc-praava",
+    "slug": "praava-health",
+    "name": "Praava Health",
+    "logo": "/images/lab-partners/praava-health.svg",
+    "rating": 4.5,
+    "address": "Banani, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur"
+    ],
+    "homeCollection": false,
+    "reportDeliveryHours": 30,
+    "verified": true,
+    "phone": "09610010003"
+  },
+  {
+    "id": "dc-brac",
+    "slug": "brac-healthcare",
+    "name": "Brac Healthcare",
+    "logo": "/images/lab-partners/brac-healthcare.svg",
+    "rating": 4.6,
+    "address": "Gulshan, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur",
+      "Narayanganj"
+    ],
+    "homeCollection": true,
+    "reportDeliveryHours": 12,
+    "verified": true,
+    "phone": "09610010004"
+  },
+  {
+    "id": "dc-thyrocare",
+    "slug": "thyrocare-bangladesh-ltd",
+    "name": "Thyrocare Bangladesh Ltd",
+    "logo": "/images/lab-partners/thyrocare-bangladesh-ltd.svg",
+    "rating": 4.7,
+    "address": "Mohakhali, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur",
+      "Narayanganj",
+      "Chattogram"
+    ],
+    "homeCollection": true,
+    "reportDeliveryHours": 18,
+    "verified": true,
+    "phone": "09610010005"
+  },
+  {
+    "id": "dc-omnicare",
+    "slug": "omnicare-diagnostic-limited",
+    "name": "Omnicare Diagnostic Limited",
+    "logo": "/images/lab-partners/omnicare-diagnostic-limited.svg",
+    "rating": 4.8,
+    "address": "Bashundhara, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur"
+    ],
+    "homeCollection": false,
+    "reportDeliveryHours": 24,
+    "verified": true,
+    "phone": "09610010006"
+  },
+  {
+    "id": "dc-ascent",
+    "slug": "ascent-health-limited",
+    "name": "Ascent Health Limited",
+    "logo": "/images/lab-partners/ascent-health-limited.svg",
+    "rating": 4.2,
+    "address": "Wari, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur",
+      "Narayanganj"
+    ],
+    "homeCollection": true,
+    "reportDeliveryHours": 30,
+    "verified": true,
+    "phone": "09610010007"
+  },
+  {
+    "id": "dc-jg",
+    "slug": "jg-healthcare",
+    "name": "JG Healthcare",
+    "logo": "/images/lab-partners/jg-healthcare.svg",
+    "rating": 4.3,
+    "address": "Badda, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur",
+      "Narayanganj",
+      "Chattogram"
+    ],
+    "homeCollection": true,
+    "reportDeliveryHours": 12,
+    "verified": true,
+    "phone": "09610010008"
+  },
+  {
+    "id": "dc-probe",
+    "slug": "probe-bangladesh-limited",
+    "name": "Probe Bangladesh Limited",
+    "logo": "/images/lab-partners/probe-bangladesh-limited.svg",
+    "rating": 4.4,
+    "address": "Farmgate, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur"
+    ],
+    "homeCollection": false,
+    "reportDeliveryHours": 18,
+    "verified": true,
+    "phone": "09610010009"
+  },
+  {
+    "id": "dc-dna",
+    "slug": "dna-solution-ltd",
+    "name": "DNA Solution Ltd",
+    "logo": "/images/lab-partners/dna-solution-ltd.svg",
+    "rating": 4.5,
+    "address": "Shantinagar, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur",
+      "Narayanganj"
+    ],
+    "homeCollection": true,
+    "reportDeliveryHours": 24,
+    "verified": true,
+    "phone": "09610010010"
+  },
+  {
+    "id": "dc-drlal",
+    "slug": "dr-lal-pathlabs",
+    "name": "Dr Lal PathLabs",
+    "logo": "/images/lab-partners/dr-lal-pathlabs.svg",
+    "rating": 4.6,
+    "address": "Savar, Dhaka",
+    "city": "Dhaka",
+    "coverageDistricts": [
+      "Dhaka",
+      "Gazipur",
+      "Narayanganj",
+      "Chattogram"
+    ],
+    "homeCollection": true,
+    "reportDeliveryHours": 30,
+    "verified": true,
+    "phone": "09610010011"
+  }
+]

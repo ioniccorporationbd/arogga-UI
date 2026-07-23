@@ -1,0 +1,263 @@
+{
+  "links": [
+    {
+      "label": "All Categories",
+      "href": "/categories",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Brands",
+      "href": "/brands",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Careers",
+      "href": "/careers",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy-policy",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Terms and Conditions",
+      "href": "/terms",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Terms and Conditions",
+      "href": "/terms-and-conditions",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Return and Refund Policy",
+      "href": "/return-and-refund-policy",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Refund and Return Policy",
+      "href": "/refund-return-policy",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Health Blog",
+      "href": "/blog",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Frequently Asked Questions",
+      "href": "/faq",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Register Your Pharmacy",
+      "href": "/register-your-pharmacy",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Special Offers",
+      "href": "/special-offers",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Upload Prescription",
+      "href": "/upload-prescription",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Register Pharmacy",
+      "href": "/register-pharmacy",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Lab Tests",
+      "href": "/lab-tests",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Flash Sale",
+      "href": "/offers/flash-sale",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Sun and Splash Offers",
+      "href": "/offers/sun-splash",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Supplement Festival",
+      "href": "/offers/supplement-festival",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "All In One Care Deals",
+      "href": "/offers/all-in-one-care",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Baby Care",
+      "href": "/category/baby-care",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Kitchen and Home",
+      "href": "/category/kitchen-home",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Grocery Essentials",
+      "href": "/category/grocery",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Supplements",
+      "href": "/category/supplements",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "OTC Medicine",
+      "href": "/category/otc-medicine",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "CeraVe Brand",
+      "href": "/brands/cerave",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Cetaphil Brand",
+      "href": "/brands/cetaphil",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "TRESemme Brand",
+      "href": "/brands/tresemme",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Head and Shoulders Brand",
+      "href": "/brands/head-and-shoulders",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Marico Brand",
+      "href": "/brands/marico",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Innsaei Brand",
+      "href": "/brands/innsaei",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Naturebell Brand",
+      "href": "/brands/naturebell",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Reckitt Brand",
+      "href": "/brands/reckitt",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Himalaya Brand",
+      "href": "/brands/himalaya",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Square Toiletries Brand",
+      "href": "/brands/square-toiletries",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "Beauty Glazed Brand",
+      "href": "/brands/beauty-glazed",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    },
+    {
+      "label": "AMA Brand",
+      "href": "/brands/ama",
+      "routeType": "dynamic-content",
+      "isDynamic": true,
+      "source": "public/page-links.json"
+    }
+  ]
+}

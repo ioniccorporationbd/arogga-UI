@@ -1,0 +1,30 @@
+{
+  "primary": [
+    {
+      "label": "Store",
+      "href": "/store"
+    },
+    {
+      "label": "Lab",
+      "href": "/lab"
+    },
+    {
+      "label": "Doctor",
+      "href": "/doctor"
+    }
+  ],
+  "account": [
+    "overview",
+    "orders",
+    "inbox",
+    "wishlist",
+    "addresses",
+    "patients",
+    "prescriptions",
+    "reviews",
+    "wallet",
+    "offers",
+    "support"
+  ],
+  "generatedFrom": "public/data.json"
+}

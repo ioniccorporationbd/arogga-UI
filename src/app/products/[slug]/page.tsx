@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 
 import { getCurrencySymbol, getProductDiscount, getProductPrice } from "@/lib/products";
+import { normalizeProductVariants } from "@/lib/product-variants";
 import { getServerProductByIdentifier } from "@/lib/server-products";
 import ProductDetailActions from "./ProductDetailActions";
 import ProductImageSlider from "./ProductImageSlider";
@@ -111,10 +112,13 @@ export default async function ProductDetailsPage({
   const collections = product.taxonomy?.collections || [];
   const attributes = product.attributes || [];
   const options = product.options || [];
+  const variants = normalizeProductVariants(product as Parameters<typeof normalizeProductVariants>[0]);
   const returnConditions = product.seller?.returnPolicy?.conditions || [];
   const salesChannels = product.availability?.salesChannels || [];
   const regions = product.availability?.regions || [];
   const additionalInfo = Object.entries(product.content?.additionalInfo || {}).filter(([, value]) => Boolean(value));
+  const productVideoUrl = product.media?.video?.url || product.video || "";
+  const productVideoPoster = product.media?.video?.thumbnail || image;
 
   const dynamicReviews = [
     `${product.brand?.name || "This brand"} ${categoryName.toLowerCase()} is rated ${rating.toFixed(1)} by verified shoppers.`,
@@ -192,8 +196,8 @@ export default async function ProductDetailsPage({
               }}
               maxQuantity={maximumQuantity}
               disabled={!isAvailable}
-              options={product.options}
-              packageLabel={packageLabel}
+              options={options}
+              variants={variants}
               prescriptionRequired={prescriptionRequired}
             />
 
@@ -258,6 +262,26 @@ export default async function ProductDetailsPage({
               <h3>Warnings</h3>
               <ul>{warnings.map((item) => <li key={item}>{item}</li>)}</ul>
             </section>
+
+            {productVideoUrl ? (
+              <section className="pd-panel pd-video-panel" aria-labelledby="product-video-title">
+                <div className="pd-panel-heading">
+                  <span><Sparkles size={16} /> Product video</span>
+                  <h2 id="product-video-title">Watch {product.shortName || product.name}</h2>
+                </div>
+                <video
+                  className="pd-product-video"
+                  controls
+                  preload="metadata"
+                  poster={productVideoPoster}
+                  aria-label={`${product.name} product video`}
+                >
+                  <source src={productVideoUrl} type="video/mp4" />
+                  Your browser does not support the product video player.
+                </video>
+                <p className="pd-video-note">This video is loaded dynamically from the product record in <strong>public/data.json</strong>.</p>
+              </section>
+            ) : null}
 
             <section className="pd-panel pd-rating-panel" id="ratings">
               <div className="pd-panel-heading">

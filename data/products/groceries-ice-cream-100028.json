@@ -1,0 +1,507 @@
+{
+  "id": "100028",
+  "uuid": "dummy-catalog-100028",
+  "productGroupId": "group-5006",
+  "sourceProductId": "28",
+  "sku": "FOO-GRO-100028",
+  "barcode": "8800000100028",
+  "slug": "groceries-ice-cream-100028",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Groceries Ice Cream",
+  "shortName": "Ice Cream",
+  "subtitle": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+  "brand": {
+    "id": "brand-groceries",
+    "name": "Groceries",
+    "slug": "groceries",
+    "logo": null,
+    "manufacturer": "Groceries",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "food-nutrition",
+      "name": "Food & Nutrition",
+      "slug": "food-nutrition"
+    },
+    "category": {
+      "id": "grocery-essentials",
+      "name": "Grocery Essentials",
+      "slug": "grocery-essentials"
+    },
+    "subCategory": {
+      "id": "grocery",
+      "name": "Grocery",
+      "slug": "grocery"
+    },
+    "collections": [
+      {
+        "id": "food-nutrition-collection",
+        "name": "Food & Nutrition Collection",
+        "slug": "food-nutrition-collection"
+      }
+    ],
+    "tags": [
+      "groceries",
+      "groceries",
+      "ice cream",
+      "food & nutrition",
+      "grocery essentials"
+    ]
+  },
+  "content": {
+    "shortDescription": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+    "description": "Groceries Ice Cream is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+    "highlights": [
+      "Grocery product",
+      "Groceries item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Grocery"
+      },
+      {
+        "title": "Brand",
+        "value": "Groceries"
+      },
+      {
+        "title": "Department",
+        "value": "Food & Nutrition"
+      },
+      {
+        "title": "Category",
+        "value": "Grocery Essentials"
+      },
+      {
+        "title": "Rating",
+        "value": "3.39"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 686,
+    "salePrice": 624,
+    "costPrice": 3.71,
+    "compareAtPrice": 686,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 9,
+      "percentage": 9,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 624,
+      "maximum": 686
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 33,
+    "reservedQuantity": 0,
+    "availableQuantity": 27,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100028",
+      "url": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+      "alt": "Groceries Ice Cream",
+      "title": "Groceries Ice Cream",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100028-1",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+        "alt": "Groceries Ice Cream image 1",
+        "title": "Groceries Ice Cream image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100028-2",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp",
+        "alt": "Groceries Ice Cream image 2",
+        "title": "Groceries Ice Cream image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100028-3",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/2.webp",
+        "alt": "Groceries Ice Cream image 3",
+        "title": "Groceries Ice Cream image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100028-4",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp",
+        "alt": "Groceries Ice Cream image 4",
+        "title": "Groceries Ice Cream image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100028-5",
+        "url": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp",
+        "alt": "Groceries Ice Cream image 5",
+        "title": "Groceries Ice Cream image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/grocery-essentials.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+      "title": "Groceries Ice Cream product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "1 month warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100028-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Groceries",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100028-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Grocery Essentials",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100028-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 2 weeks",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": false,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 5,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.4,
+    "count": 942,
+    "verifiedPurchaseCount": 678,
+    "distribution": {
+      "5": 486,
+      "4": 169,
+      "3": 283,
+      "2": 5,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 7,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Groceries Ice Cream Online in Bangladesh | Arogga",
+    "metaDescription": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+    "keywords": [
+      "Groceries Ice Cream",
+      "Groceries",
+      "Grocery Essentials",
+      "Food & Nutrition",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100028",
+    "openGraph": {
+      "title": "Buy Groceries Ice Cream Online in Bangladesh | Arogga",
+      "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+      "image": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100028",
+    "api": "/api/products/100028",
+    "source": "https://dummyjson.com/products/28"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 3793,
+    "salesCount": 1167,
+    "wishlistCount": 689,
+    "cartAdditionCount": 1321,
+    "conversionRate": 8.13
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100028,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Groceries",
+  "genericName": "Ice Cream",
+  "category": "Grocery Essentials",
+  "subcategory": "Grocery",
+  "type": "simple",
+  "price": 686,
+  "discountPrice": 624,
+  "discountPercentage": 9,
+  "currency": "BDT",
+  "stock": 27,
+  "sold": 1167,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp",
+    "https://cdn.dummyjson.com/product-images/groceries/ice-cream/2.webp",
+    "https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp",
+    "https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+  "video": "/videos/catalog/grocery-essentials.mp4",
+  "description": "Groceries Ice Cream is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+  "shortDescription": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Grocery product",
+    "Groceries item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Grocery",
+    "Brand": "Groceries",
+    "Department": "Food & Nutrition",
+    "Category": "Grocery Essentials",
+    "Rating": "3.39"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.4,
+  "reviewCount": 942,
+  "faq": [],
+  "tags": [
+    "groceries",
+    "groceries",
+    "ice cream",
+    "food & nutrition",
+    "grocery essentials"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

@@ -651,6 +651,29 @@
 
 .pd-catalog-card p { max-width: 470px; margin: 0; font-size: 12px; }
 
+.pd-video-panel {
+  background:
+    radial-gradient(circle at 8% 0, rgba(8, 123, 117, .12), transparent 28%),
+    linear-gradient(135deg, #ffffff, #f2fbfa);
+}
+
+.pd-product-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid rgba(8, 123, 117, .16);
+  border-radius: 20px;
+  background: #071f1d;
+  box-shadow: 0 30px 72px -52px rgba(8, 123, 117, .75);
+}
+
+.pd-video-note {
+  margin-top: 12px !important;
+  color: #5f6b78;
+  font-size: 12px !important;
+}
+
 .pd-complete-data-panel {
   background:
     radial-gradient(circle at 0 0, rgba(8, 123, 117, .08), transparent 26%),
