@@ -42,6 +42,7 @@ export type EcommerceProduct = {
   media: {
     featuredImage: { url: string; thumbnailUrl: string; alt: string; title: string; width: number | null; height: number | null; mimeType: string | null };
     gallery: { url: string; thumbnailUrl?: string; alt?: string; title?: string; width?: number | null; height?: number | null; mimeType?: string | null }[];
+    video?: { url: string; thumbnail?: string | null; title?: string | null } | null;
   };
   options?: { name?: string; slug?: string; value?: string; colorHex?: string | null }[];
   attributes: { id: string; name: string; slug: string; value: string; visible: boolean; filterable: boolean; comparable: boolean }[];

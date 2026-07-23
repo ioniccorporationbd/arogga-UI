@@ -1,0 +1,514 @@
+{
+  "slug": "fashion-co",
+  "name": "Fashion Co.",
+  "products": [
+    {
+      "id": "100194",
+      "uuid": "dummy-catalog-100194",
+      "productGroupId": "group-5048",
+      "sourceProductId": "194",
+      "sku": "BEA-FAS-100194",
+      "barcode": "8800000100194",
+      "slug": "fashion-co-women-s-wrist-watch-100194",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Fashion Co. Women's Wrist Watch",
+      "shortName": "Women's Wrist Watch",
+      "subtitle": "The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simpl",
+      "brand": {
+        "id": "brand-fashion-co",
+        "name": "Fashion Co.",
+        "slug": "fashion-co",
+        "logo": null,
+        "manufacturer": "Fashion Co.",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion-accessories",
+          "name": "Fashion Accessories",
+          "slug": "fashion-accessories"
+        },
+        "subCategory": {
+          "id": "watches",
+          "name": "Watches",
+          "slug": "watches"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "womens-watches",
+          "fashion co.",
+          "women's wrist watch",
+          "beauty",
+          "fashion accessories"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simple yet elegant design, it complements various styles.",
+        "description": "Fashion Co. Women's Wrist Watch is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simple yet elegant design, it complements various styles.",
+        "highlights": [
+          "Watches product",
+          "Fashion Co. item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Watches"
+          },
+          {
+            "title": "Brand",
+            "value": "Fashion Co."
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion Accessories"
+          },
+          {
+            "title": "Rating",
+            "value": "3.52"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 16249,
+        "salePrice": 14136,
+        "costPrice": 3.71,
+        "compareAtPrice": 16249,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 13,
+          "percentage": 13,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 14136,
+          "maximum": 16249
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 26,
+        "reservedQuantity": 4,
+        "availableQuantity": 12,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100194",
+          "url": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
+          "alt": "Fashion Co. Women's Wrist Watch",
+          "title": "Fashion Co. Women's Wrist Watch",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100194-1",
+            "url": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
+            "alt": "Fashion Co. Women's Wrist Watch image 1",
+            "title": "Fashion Co. Women's Wrist Watch image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100194-2",
+            "url": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/1.webp",
+            "alt": "Fashion Co. Women's Wrist Watch image 2",
+            "title": "Fashion Co. Women's Wrist Watch image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100194-3",
+            "url": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/2.webp",
+            "alt": "Fashion Co. Women's Wrist Watch image 3",
+            "title": "Fashion Co. Women's Wrist Watch image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100194-4",
+            "url": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/3.webp",
+            "alt": "Fashion Co. Women's Wrist Watch image 4",
+            "title": "Fashion Co. Women's Wrist Watch image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100194-5",
+            "url": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp?view=5",
+            "alt": "Fashion Co. Women's Wrist Watch image 5",
+            "title": "Fashion Co. Women's Wrist Watch image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion-accessories.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
+          "title": "Fashion Co. Women's Wrist Watch product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100194-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Fashion Co.",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100194-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion Accessories",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100194-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 2 weeks",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.5,
+        "count": 187,
+        "verifiedPurchaseCount": 134,
+        "distribution": {
+          "5": 99,
+          "4": 33,
+          "3": 48,
+          "2": 0,
+          "1": 7
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Fashion Co. Women's Wrist Watch Online in Bangladesh | Arogga",
+        "metaDescription": "The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simple yet elegant design, it complements various styles.",
+        "keywords": [
+          "Fashion Co. Women's Wrist Watch",
+          "Fashion Co.",
+          "Fashion Accessories",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100194",
+        "openGraph": {
+          "title": "Buy Fashion Co. Women's Wrist Watch Online in Bangladesh | Arogga",
+          "description": "The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simple yet elegant design, it complements various styles.",
+          "image": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100194",
+        "api": "/api/products/100194",
+        "source": "https://dummyjson.com/products/194"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 2036,
+        "salesCount": 909,
+        "wishlistCount": 128,
+        "cartAdditionCount": 832,
+        "conversionRate": 2.24
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100194,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Fashion Co.",
+      "genericName": "Women's Wrist Watch",
+      "category": "Fashion Accessories",
+      "subcategory": "Watches",
+      "type": "simple",
+      "price": 16249,
+      "discountPrice": 14136,
+      "discountPercentage": 13,
+      "currency": "BDT",
+      "stock": 12,
+      "sold": 909,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/1.webp",
+        "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/2.webp",
+        "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/3.webp",
+        "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/thumbnail.webp",
+      "video": "/videos/catalog/fashion-accessories.mp4",
+      "description": "Fashion Co. Women's Wrist Watch is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simple yet elegant design, it complements various styles.",
+      "shortDescription": "The Women's Wrist Watch is a versatile and fashionable timepiece for everyday wear. With a comfortable strap and a simple yet elegant design, it complements various styles.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Watches product",
+        "Fashion Co. item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Watches",
+        "Brand": "Fashion Co.",
+        "Department": "Beauty",
+        "Category": "Fashion Accessories",
+        "Rating": "3.52"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.5,
+      "reviewCount": 187,
+      "faq": [],
+      "tags": [
+        "womens-watches",
+        "fashion co.",
+        "women's wrist watch",
+        "beauty",
+        "fashion accessories"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 1
+}

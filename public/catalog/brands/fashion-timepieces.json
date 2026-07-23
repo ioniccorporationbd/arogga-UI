@@ -1,0 +1,514 @@
+{
+  "slug": "fashion-timepieces",
+  "name": "Fashion Timepieces",
+  "products": [
+    {
+      "id": "100093",
+      "uuid": "dummy-catalog-100093",
+      "productGroupId": "group-5023",
+      "sourceProductId": "93",
+      "sku": "BEA-FAS-100093",
+      "barcode": "8800000100093",
+      "slug": "fashion-timepieces-brown-leather-belt-watch-100093",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Fashion Timepieces Brown Leather Belt Watch",
+      "shortName": "Brown Leather Belt Watch",
+      "subtitle": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek",
+      "brand": {
+        "id": "brand-fashion-timepieces",
+        "name": "Fashion Timepieces",
+        "slug": "fashion-timepieces",
+        "logo": null,
+        "manufacturer": "Fashion Timepieces",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion-accessories",
+          "name": "Fashion Accessories",
+          "slug": "fashion-accessories"
+        },
+        "subCategory": {
+          "id": "men-watches",
+          "name": "Men Watches",
+          "slug": "men-watches"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "mens-watches",
+          "fashion timepieces",
+          "brown leather belt watch",
+          "beauty",
+          "fashion accessories"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
+        "description": "Fashion Timepieces Brown Leather Belt Watch is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
+        "highlights": [
+          "Men Watches product",
+          "Fashion Timepieces item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Men Watches"
+          },
+          {
+            "title": "Brand",
+            "value": "Fashion Timepieces"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion Accessories"
+          },
+          {
+            "title": "Rating",
+            "value": "4.19"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 11249,
+        "salePrice": 10574,
+        "costPrice": 3.71,
+        "compareAtPrice": 11249,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 6,
+          "percentage": 6,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 10574,
+          "maximum": 11249
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 68,
+        "reservedQuantity": 4,
+        "availableQuantity": 32,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100093",
+          "url": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
+          "alt": "Fashion Timepieces Brown Leather Belt Watch",
+          "title": "Fashion Timepieces Brown Leather Belt Watch",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100093-1",
+            "url": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
+            "alt": "Fashion Timepieces Brown Leather Belt Watch image 1",
+            "title": "Fashion Timepieces Brown Leather Belt Watch image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100093-2",
+            "url": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/1.webp",
+            "alt": "Fashion Timepieces Brown Leather Belt Watch image 2",
+            "title": "Fashion Timepieces Brown Leather Belt Watch image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100093-3",
+            "url": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/2.webp",
+            "alt": "Fashion Timepieces Brown Leather Belt Watch image 3",
+            "title": "Fashion Timepieces Brown Leather Belt Watch image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100093-4",
+            "url": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/3.webp",
+            "alt": "Fashion Timepieces Brown Leather Belt Watch image 4",
+            "title": "Fashion Timepieces Brown Leather Belt Watch image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100093-5",
+            "url": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp?view=5",
+            "alt": "Fashion Timepieces Brown Leather Belt Watch image 5",
+            "title": "Fashion Timepieces Brown Leather Belt Watch image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion-accessories.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
+          "title": "Fashion Timepieces Brown Leather Belt Watch product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100093-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Fashion Timepieces",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100093-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion Accessories",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100093-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 month",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.2,
+        "count": 940,
+        "verifiedPurchaseCount": 676,
+        "distribution": {
+          "5": 600,
+          "4": 169,
+          "3": 171,
+          "2": 11,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Fashion Timepieces Brown Leather Belt Watch Online in Bangladesh | Arogga",
+        "metaDescription": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
+        "keywords": [
+          "Fashion Timepieces Brown Leather Belt Watch",
+          "Fashion Timepieces",
+          "Fashion Accessories",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100093",
+        "openGraph": {
+          "title": "Buy Fashion Timepieces Brown Leather Belt Watch Online in Bangladesh | Arogga",
+          "description": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
+          "image": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100093",
+        "api": "/api/products/100093",
+        "source": "https://dummyjson.com/products/93"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 22391,
+        "salesCount": 2029,
+        "wishlistCount": 661,
+        "cartAdditionCount": 437,
+        "conversionRate": 3.41
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100093,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Fashion Timepieces",
+      "genericName": "Brown Leather Belt Watch",
+      "category": "Fashion Accessories",
+      "subcategory": "Men Watches",
+      "type": "simple",
+      "price": 11249,
+      "discountPrice": 10574,
+      "discountPercentage": 6,
+      "currency": "BDT",
+      "stock": 32,
+      "sold": 2029,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/1.webp",
+        "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/2.webp",
+        "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/3.webp",
+        "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
+      "video": "/videos/catalog/fashion-accessories.mp4",
+      "description": "Fashion Timepieces Brown Leather Belt Watch is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
+      "shortDescription": "The Brown Leather Belt Watch is a stylish timepiece with a classic design. Featuring a genuine leather strap and a sleek dial, it adds a touch of sophistication to your look.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Men Watches product",
+        "Fashion Timepieces item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Men Watches",
+        "Brand": "Fashion Timepieces",
+        "Department": "Beauty",
+        "Category": "Fashion Accessories",
+        "Rating": "4.19"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.2,
+      "reviewCount": 940,
+      "faq": [],
+      "tags": [
+        "mens-watches",
+        "fashion timepieces",
+        "brown leather belt watch",
+        "beauty",
+        "fashion accessories"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 1
+}

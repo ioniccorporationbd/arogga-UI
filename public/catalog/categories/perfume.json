@@ -1,0 +1,2542 @@
+{
+  "slug": "perfume",
+  "name": "Perfume",
+  "products": [
+    {
+      "id": "100006",
+      "uuid": "dummy-catalog-100006",
+      "productGroupId": "group-5001",
+      "sourceProductId": "6",
+      "sku": "FRA-PER-100006",
+      "barcode": "8800000100006",
+      "slug": "calvin-klein-ck-one-100006",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Calvin Klein CK One",
+      "shortName": "Calvin Klein CK One",
+      "subtitle": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance su",
+      "brand": {
+        "id": "brand-calvin-klein",
+        "name": "Calvin Klein",
+        "slug": "calvin-klein",
+        "logo": null,
+        "manufacturer": "Calvin Klein",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "category": {
+          "id": "perfume",
+          "name": "Perfume",
+          "slug": "perfume"
+        },
+        "subCategory": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "collections": [
+          {
+            "id": "fragrance-collection",
+            "name": "Fragrance Collection",
+            "slug": "fragrance-collection"
+          }
+        ],
+        "tags": [
+          "fragrances",
+          "calvin klein",
+          "calvin klein ck one",
+          "fragrance",
+          "perfume"
+        ]
+      },
+      "content": {
+        "shortDescription": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+        "description": "Calvin Klein CK One is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+        "highlights": [
+          "Fragrance product",
+          "Calvin Klein item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Brand",
+            "value": "Calvin Klein"
+          },
+          {
+            "title": "Department",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Category",
+            "value": "Perfume"
+          },
+          {
+            "title": "Rating",
+            "value": "4.37"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 6249,
+        "salePrice": 6124,
+        "costPrice": 3.71,
+        "compareAtPrice": 6249,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 2,
+          "percentage": 2,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 6124,
+          "maximum": 6249
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 59,
+        "reservedQuantity": 0,
+        "availableQuantity": 29,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100006",
+          "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+          "alt": "Calvin Klein CK One",
+          "title": "Calvin Klein CK One",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100006-1",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+            "alt": "Calvin Klein CK One image 1",
+            "title": "Calvin Klein CK One image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100006-2",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+            "alt": "Calvin Klein CK One image 2",
+            "title": "Calvin Klein CK One image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100006-3",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
+            "alt": "Calvin Klein CK One image 3",
+            "title": "Calvin Klein CK One image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100006-4",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp",
+            "alt": "Calvin Klein CK One image 4",
+            "title": "Calvin Klein CK One image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100006-5",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp?view=5",
+            "alt": "Calvin Klein CK One image 5",
+            "title": "Calvin Klein CK One image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/perfume.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+          "title": "Calvin Klein CK One product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 week warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100006-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Calvin Klein",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100006-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Perfume",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100006-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.4,
+        "count": 738,
+        "verifiedPurchaseCount": 531,
+        "distribution": {
+          "5": 493,
+          "4": 132,
+          "3": 113,
+          "2": 3,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Calvin Klein CK One Online in Bangladesh | Arogga",
+        "metaDescription": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+        "keywords": [
+          "Calvin Klein CK One",
+          "Calvin Klein",
+          "Perfume",
+          "Fragrance",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100006",
+        "openGraph": {
+          "title": "Buy Calvin Klein CK One Online in Bangladesh | Arogga",
+          "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+          "image": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100006",
+        "api": "/api/products/100006",
+        "source": "https://dummyjson.com/products/6"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 2988,
+        "salesCount": 1498,
+        "wishlistCount": 15,
+        "cartAdditionCount": 725,
+        "conversionRate": 9.48
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100006,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Calvin Klein",
+      "genericName": "Calvin Klein CK One",
+      "category": "Perfume",
+      "subcategory": "Fragrance",
+      "type": "simple",
+      "price": 6249,
+      "discountPrice": 6124,
+      "discountPercentage": 2,
+      "currency": "BDT",
+      "stock": 29,
+      "sold": 1498,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+      "video": "/videos/catalog/perfume.mp4",
+      "description": "Calvin Klein CK One is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+      "shortDescription": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Fragrance product",
+        "Calvin Klein item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Fragrance",
+        "Brand": "Calvin Klein",
+        "Department": "Fragrance",
+        "Category": "Perfume",
+        "Rating": "4.37"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.4,
+      "reviewCount": 738,
+      "faq": [],
+      "tags": [
+        "fragrances",
+        "calvin klein",
+        "calvin klein ck one",
+        "fragrance",
+        "perfume"
+      ],
+      "featured": true,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100007",
+      "uuid": "dummy-catalog-100007",
+      "productGroupId": "group-5001",
+      "sourceProductId": "7",
+      "sku": "FRA-PER-100007",
+      "barcode": "8800000100007",
+      "slug": "chanel-coco-noir-eau-de-100007",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Chanel Coco Noir Eau De",
+      "shortName": "Chanel Coco Noir Eau De",
+      "subtitle": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect",
+      "brand": {
+        "id": "brand-chanel",
+        "name": "Chanel",
+        "slug": "chanel",
+        "logo": null,
+        "manufacturer": "Chanel",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "category": {
+          "id": "perfume",
+          "name": "Perfume",
+          "slug": "perfume"
+        },
+        "subCategory": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "collections": [
+          {
+            "id": "fragrance-collection",
+            "name": "Fragrance Collection",
+            "slug": "fragrance-collection"
+          }
+        ],
+        "tags": [
+          "fragrances",
+          "chanel",
+          "chanel coco noir eau de",
+          "fragrance",
+          "perfume"
+        ]
+      },
+      "content": {
+        "shortDescription": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+        "description": "Chanel Coco Noir Eau De is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+        "highlights": [
+          "Fragrance product",
+          "Chanel item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Brand",
+            "value": "Chanel"
+          },
+          {
+            "title": "Department",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Category",
+            "value": "Perfume"
+          },
+          {
+            "title": "Rating",
+            "value": "4.26"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 16249,
+        "salePrice": 13486,
+        "costPrice": 3.71,
+        "compareAtPrice": 16249,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 17,
+          "percentage": 17,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 13486,
+          "maximum": 16249
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 88,
+        "reservedQuantity": 4,
+        "availableQuantity": 58,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100007",
+          "url": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+          "alt": "Chanel Coco Noir Eau De",
+          "title": "Chanel Coco Noir Eau De",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100007-1",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+            "alt": "Chanel Coco Noir Eau De image 1",
+            "title": "Chanel Coco Noir Eau De image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100007-2",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
+            "alt": "Chanel Coco Noir Eau De image 2",
+            "title": "Chanel Coco Noir Eau De image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100007-3",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp",
+            "alt": "Chanel Coco Noir Eau De image 3",
+            "title": "Chanel Coco Noir Eau De image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100007-4",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp",
+            "alt": "Chanel Coco Noir Eau De image 4",
+            "title": "Chanel Coco Noir Eau De image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100007-5",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp?view=5",
+            "alt": "Chanel Coco Noir Eau De image 5",
+            "title": "Chanel Coco Noir Eau De image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/perfume.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+          "title": "Chanel Coco Noir Eau De product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "3 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100007-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Chanel",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100007-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Perfume",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100007-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.3,
+        "count": 172,
+        "verifiedPurchaseCount": 123,
+        "distribution": {
+          "5": 112,
+          "4": 30,
+          "3": 26,
+          "2": 3,
+          "1": 1
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Chanel Coco Noir Eau De Online in Bangladesh | Arogga",
+        "metaDescription": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+        "keywords": [
+          "Chanel Coco Noir Eau De",
+          "Chanel",
+          "Perfume",
+          "Fragrance",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100007",
+        "openGraph": {
+          "title": "Buy Chanel Coco Noir Eau De Online in Bangladesh | Arogga",
+          "description": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+          "image": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100007",
+        "api": "/api/products/100007",
+        "source": "https://dummyjson.com/products/7"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 23702,
+        "salesCount": 965,
+        "wishlistCount": 559,
+        "cartAdditionCount": 995,
+        "conversionRate": 9.35
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100007,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Chanel",
+      "genericName": "Chanel Coco Noir Eau De",
+      "category": "Perfume",
+      "subcategory": "Fragrance",
+      "type": "simple",
+      "price": 16249,
+      "discountPrice": 13486,
+      "discountPercentage": 17,
+      "currency": "BDT",
+      "stock": 58,
+      "sold": 965,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+      "video": "/videos/catalog/perfume.mp4",
+      "description": "Chanel Coco Noir Eau De is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+      "shortDescription": "Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Fragrance product",
+        "Chanel item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Fragrance",
+        "Brand": "Chanel",
+        "Department": "Fragrance",
+        "Category": "Perfume",
+        "Rating": "4.26"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.3,
+      "reviewCount": 172,
+      "faq": [],
+      "tags": [
+        "fragrances",
+        "chanel",
+        "chanel coco noir eau de",
+        "fragrance",
+        "perfume"
+      ],
+      "featured": true,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100008",
+      "uuid": "dummy-catalog-100008",
+      "productGroupId": "group-5001",
+      "sourceProductId": "8",
+      "sku": "FRA-PER-100008",
+      "barcode": "8800000100008",
+      "slug": "dior-j-adore-100008",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Dior J'adore",
+      "shortName": "Dior J'adore",
+      "subtitle": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies ",
+      "brand": {
+        "id": "brand-dior",
+        "name": "Dior",
+        "slug": "dior",
+        "logo": null,
+        "manufacturer": "Dior",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "category": {
+          "id": "perfume",
+          "name": "Perfume",
+          "slug": "perfume"
+        },
+        "subCategory": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "collections": [
+          {
+            "id": "fragrance-collection",
+            "name": "Fragrance Collection",
+            "slug": "fragrance-collection"
+          }
+        ],
+        "tags": [
+          "fragrances",
+          "dior",
+          "dior j'adore",
+          "fragrance",
+          "perfume"
+        ]
+      },
+      "content": {
+        "shortDescription": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+        "description": "Dior J'adore is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+        "highlights": [
+          "Fragrance product",
+          "Dior item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Brand",
+            "value": "Dior"
+          },
+          {
+            "title": "Department",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Category",
+            "value": "Perfume"
+          },
+          {
+            "title": "Rating",
+            "value": "3.8"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 11249,
+        "salePrice": 9561,
+        "costPrice": 3.71,
+        "compareAtPrice": 11249,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 15,
+          "percentage": 15,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 9561,
+          "maximum": 11249
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 112,
+        "reservedQuantity": 4,
+        "availableQuantity": 98,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100008",
+          "url": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+          "alt": "Dior J'adore",
+          "title": "Dior J'adore",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100008-1",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+            "alt": "Dior J'adore image 1",
+            "title": "Dior J'adore image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100008-2",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
+            "alt": "Dior J'adore image 2",
+            "title": "Dior J'adore image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100008-3",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp",
+            "alt": "Dior J'adore image 3",
+            "title": "Dior J'adore image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100008-4",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp",
+            "alt": "Dior J'adore image 4",
+            "title": "Dior J'adore image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100008-5",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp?view=5",
+            "alt": "Dior J'adore image 5",
+            "title": "Dior J'adore image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/perfume.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+          "title": "Dior J'adore product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 week warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100008-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Dior",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100008-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Perfume",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100008-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 2 weeks",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.8,
+        "count": 140,
+        "verifiedPurchaseCount": 100,
+        "distribution": {
+          "5": 80,
+          "4": 25,
+          "3": 35,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Dior J'adore Online in Bangladesh | Arogga",
+        "metaDescription": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+        "keywords": [
+          "Dior J'adore",
+          "Dior",
+          "Perfume",
+          "Fragrance",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100008",
+        "openGraph": {
+          "title": "Buy Dior J'adore Online in Bangladesh | Arogga",
+          "description": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+          "image": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100008",
+        "api": "/api/products/100008",
+        "source": "https://dummyjson.com/products/8"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 6430,
+        "salesCount": 96,
+        "wishlistCount": 264,
+        "cartAdditionCount": 1641,
+        "conversionRate": 4.51
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100008,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Dior",
+      "genericName": "Dior J'adore",
+      "category": "Perfume",
+      "subcategory": "Fragrance",
+      "type": "simple",
+      "price": 11249,
+      "discountPrice": 9561,
+      "discountPercentage": 15,
+      "currency": "BDT",
+      "stock": 98,
+      "sold": 96,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+      "video": "/videos/catalog/perfume.mp4",
+      "description": "Dior J'adore is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+      "shortDescription": "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Fragrance product",
+        "Dior item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Fragrance",
+        "Brand": "Dior",
+        "Department": "Fragrance",
+        "Category": "Perfume",
+        "Rating": "3.8"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.8,
+      "reviewCount": 140,
+      "faq": [],
+      "tags": [
+        "fragrances",
+        "dior",
+        "dior j'adore",
+        "fragrance",
+        "perfume"
+      ],
+      "featured": true,
+      "bestSeller": false,
+      "newArrival": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100009",
+      "uuid": "dummy-catalog-100009",
+      "productGroupId": "group-5002",
+      "sourceProductId": "9",
+      "sku": "FRA-PER-100009",
+      "barcode": "8800000100009",
+      "slug": "dolce-gabbana-dolce-shine-eau-de-100009",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Dolce & Gabbana Dolce Shine Eau de",
+      "shortName": "Dolce Shine Eau de",
+      "subtitle": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. I",
+      "brand": {
+        "id": "brand-dolce-gabbana",
+        "name": "Dolce & Gabbana",
+        "slug": "dolce-gabbana",
+        "logo": null,
+        "manufacturer": "Dolce & Gabbana",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "category": {
+          "id": "perfume",
+          "name": "Perfume",
+          "slug": "perfume"
+        },
+        "subCategory": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "collections": [
+          {
+            "id": "fragrance-collection",
+            "name": "Fragrance Collection",
+            "slug": "fragrance-collection"
+          }
+        ],
+        "tags": [
+          "fragrances",
+          "dolce & gabbana",
+          "dolce shine eau de",
+          "fragrance",
+          "perfume"
+        ]
+      },
+      "content": {
+        "shortDescription": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+        "description": "Dolce & Gabbana Dolce Shine Eau de is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+        "highlights": [
+          "Fragrance product",
+          "Dolce & Gabbana item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Brand",
+            "value": "Dolce & Gabbana"
+          },
+          {
+            "title": "Department",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Category",
+            "value": "Perfume"
+          },
+          {
+            "title": "Rating",
+            "value": "3.96"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 8749,
+        "salePrice": 8661,
+        "costPrice": 3.71,
+        "compareAtPrice": 8749,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 1,
+          "percentage": 1,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 8661,
+          "maximum": 8749
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 26,
+        "reservedQuantity": 3,
+        "availableQuantity": 4,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100009",
+          "url": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+          "alt": "Dolce & Gabbana Dolce Shine Eau de",
+          "title": "Dolce & Gabbana Dolce Shine Eau de",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100009-1",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+            "alt": "Dolce & Gabbana Dolce Shine Eau de image 1",
+            "title": "Dolce & Gabbana Dolce Shine Eau de image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100009-2",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp",
+            "alt": "Dolce & Gabbana Dolce Shine Eau de image 2",
+            "title": "Dolce & Gabbana Dolce Shine Eau de image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100009-3",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp",
+            "alt": "Dolce & Gabbana Dolce Shine Eau de image 3",
+            "title": "Dolce & Gabbana Dolce Shine Eau de image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100009-4",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp",
+            "alt": "Dolce & Gabbana Dolce Shine Eau de image 4",
+            "title": "Dolce & Gabbana Dolce Shine Eau de image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100009-5",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp?view=5",
+            "alt": "Dolce & Gabbana Dolce Shine Eau de image 5",
+            "title": "Dolce & Gabbana Dolce Shine Eau de image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/perfume.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+          "title": "Dolce & Gabbana Dolce Shine Eau de product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "Low Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "3 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100009-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Dolce & Gabbana",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100009-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Perfume",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100009-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 month",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 4,
+        "quantityStep": 1,
+        "maximumPerOrder": 4,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.0,
+        "count": 178,
+        "verifiedPurchaseCount": 128,
+        "distribution": {
+          "5": 108,
+          "4": 32,
+          "3": 30,
+          "2": 2,
+          "1": 6
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Dolce & Gabbana Dolce Shine Eau de Online in Bangladesh | Arogga",
+        "metaDescription": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+        "keywords": [
+          "Dolce & Gabbana Dolce Shine Eau de",
+          "Dolce & Gabbana",
+          "Perfume",
+          "Fragrance",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100009",
+        "openGraph": {
+          "title": "Buy Dolce & Gabbana Dolce Shine Eau de Online in Bangladesh | Arogga",
+          "description": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+          "image": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100009",
+        "api": "/api/products/100009",
+        "source": "https://dummyjson.com/products/9"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 3009,
+        "salesCount": 349,
+        "wishlistCount": 445,
+        "cartAdditionCount": 22,
+        "conversionRate": 7.93
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100009,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Dolce & Gabbana",
+      "genericName": "Dolce Shine Eau de",
+      "category": "Perfume",
+      "subcategory": "Fragrance",
+      "type": "simple",
+      "price": 8749,
+      "discountPrice": 8661,
+      "discountPercentage": 1,
+      "currency": "BDT",
+      "stock": 4,
+      "sold": 349,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
+      "video": "/videos/catalog/perfume.mp4",
+      "description": "Dolce & Gabbana Dolce Shine Eau de is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+      "shortDescription": "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Fragrance product",
+        "Dolce & Gabbana item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Fragrance",
+        "Brand": "Dolce & Gabbana",
+        "Department": "Fragrance",
+        "Category": "Perfume",
+        "Rating": "3.96"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.0,
+      "reviewCount": 178,
+      "faq": [],
+      "tags": [
+        "fragrances",
+        "dolce & gabbana",
+        "dolce shine eau de",
+        "fragrance",
+        "perfume"
+      ],
+      "featured": true,
+      "bestSeller": false,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100010",
+      "uuid": "dummy-catalog-100010",
+      "productGroupId": "group-5002",
+      "sourceProductId": "10",
+      "sku": "FRA-PER-100010",
+      "barcode": "8800000100010",
+      "slug": "gucci-bloom-eau-de-100010",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Gucci Bloom Eau de",
+      "shortName": "Gucci Bloom Eau de",
+      "subtitle": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a",
+      "brand": {
+        "id": "brand-gucci",
+        "name": "Gucci",
+        "slug": "gucci",
+        "logo": null,
+        "manufacturer": "Gucci",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "category": {
+          "id": "perfume",
+          "name": "Perfume",
+          "slug": "perfume"
+        },
+        "subCategory": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "collections": [
+          {
+            "id": "fragrance-collection",
+            "name": "Fragrance Collection",
+            "slug": "fragrance-collection"
+          }
+        ],
+        "tags": [
+          "fragrances",
+          "gucci",
+          "gucci bloom eau de",
+          "fragrance",
+          "perfume"
+        ]
+      },
+      "content": {
+        "shortDescription": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+        "description": "Gucci Bloom Eau de is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+        "highlights": [
+          "Fragrance product",
+          "Gucci item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Brand",
+            "value": "Gucci"
+          },
+          {
+            "title": "Department",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Category",
+            "value": "Perfume"
+          },
+          {
+            "title": "Rating",
+            "value": "2.74"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 9999,
+        "salePrice": 8599,
+        "costPrice": 3.71,
+        "compareAtPrice": 9999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 14,
+          "percentage": 14,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 8599,
+          "maximum": 9999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 120,
+        "reservedQuantity": 0,
+        "availableQuantity": 91,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100010",
+          "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+          "alt": "Gucci Bloom Eau de",
+          "title": "Gucci Bloom Eau de",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100010-1",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+            "alt": "Gucci Bloom Eau de image 1",
+            "title": "Gucci Bloom Eau de image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100010-2",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+            "alt": "Gucci Bloom Eau de image 2",
+            "title": "Gucci Bloom Eau de image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100010-3",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
+            "alt": "Gucci Bloom Eau de image 3",
+            "title": "Gucci Bloom Eau de image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100010-4",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp",
+            "alt": "Gucci Bloom Eau de image 4",
+            "title": "Gucci Bloom Eau de image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100010-5",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp?view=5",
+            "alt": "Gucci Bloom Eau de image 5",
+            "title": "Gucci Bloom Eau de image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/perfume.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+          "title": "Gucci Bloom Eau de product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "6 months warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100010-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Gucci",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100010-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Perfume",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100010-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 2.7,
+        "count": 109,
+        "verifiedPurchaseCount": 78,
+        "distribution": {
+          "5": 44,
+          "4": 19,
+          "3": 41,
+          "2": 1,
+          "1": 4
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Gucci Bloom Eau de Online in Bangladesh | Arogga",
+        "metaDescription": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+        "keywords": [
+          "Gucci Bloom Eau de",
+          "Gucci",
+          "Perfume",
+          "Fragrance",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100010",
+        "openGraph": {
+          "title": "Buy Gucci Bloom Eau de Online in Bangladesh | Arogga",
+          "description": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+          "image": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100010",
+        "api": "/api/products/100010",
+        "source": "https://dummyjson.com/products/10"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 1182,
+        "salesCount": 1381,
+        "wishlistCount": 426,
+        "cartAdditionCount": 718,
+        "conversionRate": 1.98
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100010,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Gucci",
+      "genericName": "Gucci Bloom Eau de",
+      "category": "Perfume",
+      "subcategory": "Fragrance",
+      "type": "simple",
+      "price": 9999,
+      "discountPrice": 8599,
+      "discountPercentage": 14,
+      "currency": "BDT",
+      "stock": 91,
+      "sold": 1381,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
+      "video": "/videos/catalog/perfume.mp4",
+      "description": "Gucci Bloom Eau de is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+      "shortDescription": "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Fragrance product",
+        "Gucci item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Fragrance",
+        "Brand": "Gucci",
+        "Department": "Fragrance",
+        "Category": "Perfume",
+        "Rating": "2.74"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 2.7,
+      "reviewCount": 109,
+      "faq": [],
+      "tags": [
+        "fragrances",
+        "gucci",
+        "gucci bloom eau de",
+        "fragrance",
+        "perfume"
+      ],
+      "featured": true,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 5
+}

@@ -1,0 +1,2542 @@
+{
+  "slug": "tops",
+  "name": "Tops",
+  "products": [
+    {
+      "id": "100162",
+      "uuid": "dummy-catalog-100162",
+      "productGroupId": "group-5040",
+      "sourceProductId": "162",
+      "sku": "BEA-FAS-100162",
+      "barcode": "8800000100162",
+      "slug": "tops-blue-frock-100162",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Tops Blue Frock",
+      "shortName": "Blue Frock",
+      "subtitle": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design",
+      "brand": {
+        "id": "brand-tops",
+        "name": "Tops",
+        "slug": "tops",
+        "logo": null,
+        "manufacturer": "Tops",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion",
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        "subCategory": {
+          "id": "tops",
+          "name": "Tops",
+          "slug": "tops"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "tops",
+          "tops",
+          "blue frock",
+          "beauty",
+          "fashion"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
+        "description": "Tops Blue Frock is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
+        "highlights": [
+          "Tops product",
+          "Tops item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Tops"
+          },
+          {
+            "title": "Brand",
+            "value": "Tops"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion"
+          },
+          {
+            "title": "Rating",
+            "value": "4.17"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 3749,
+        "salePrice": 3299,
+        "costPrice": 3.71,
+        "compareAtPrice": 3749,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 12,
+          "percentage": 12,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 3299,
+          "maximum": 3749
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 89,
+        "reservedQuantity": 2,
+        "availableQuantity": 52,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100162",
+          "url": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+          "alt": "Tops Blue Frock",
+          "title": "Tops Blue Frock",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100162-1",
+            "url": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+            "alt": "Tops Blue Frock image 1",
+            "title": "Tops Blue Frock image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100162-2",
+            "url": "https://cdn.dummyjson.com/product-images/tops/blue-frock/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/blue-frock/1.webp",
+            "alt": "Tops Blue Frock image 2",
+            "title": "Tops Blue Frock image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100162-3",
+            "url": "https://cdn.dummyjson.com/product-images/tops/blue-frock/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/blue-frock/2.webp",
+            "alt": "Tops Blue Frock image 3",
+            "title": "Tops Blue Frock image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100162-4",
+            "url": "https://cdn.dummyjson.com/product-images/tops/blue-frock/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/blue-frock/3.webp",
+            "alt": "Tops Blue Frock image 4",
+            "title": "Tops Blue Frock image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100162-5",
+            "url": "https://cdn.dummyjson.com/product-images/tops/blue-frock/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/blue-frock/4.webp",
+            "alt": "Tops Blue Frock image 5",
+            "title": "Tops Blue Frock image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+          "title": "Tops Blue Frock product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "Lifetime warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100162-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Tops",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100162-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100162-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 2 weeks",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.2,
+        "count": 631,
+        "verifiedPurchaseCount": 454,
+        "distribution": {
+          "5": 402,
+          "4": 113,
+          "3": 113,
+          "2": 5,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Tops Blue Frock Online in Bangladesh | Arogga",
+        "metaDescription": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
+        "keywords": [
+          "Tops Blue Frock",
+          "Tops",
+          "Fashion",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100162",
+        "openGraph": {
+          "title": "Buy Tops Blue Frock Online in Bangladesh | Arogga",
+          "description": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
+          "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100162",
+        "api": "/api/products/100162",
+        "source": "https://dummyjson.com/products/162"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 4474,
+        "salesCount": 1988,
+        "wishlistCount": 717,
+        "cartAdditionCount": 206,
+        "conversionRate": 9.05
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100162,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Tops",
+      "genericName": "Blue Frock",
+      "category": "Fashion",
+      "subcategory": "Tops",
+      "type": "simple",
+      "price": 3749,
+      "discountPrice": 3299,
+      "discountPercentage": 12,
+      "currency": "BDT",
+      "stock": 52,
+      "sold": 1988,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/blue-frock/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+      "video": "/videos/catalog/fashion.mp4",
+      "description": "Tops Blue Frock is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
+      "shortDescription": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Tops product",
+        "Tops item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Tops",
+        "Brand": "Tops",
+        "Department": "Beauty",
+        "Category": "Fashion",
+        "Rating": "4.17"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.2,
+      "reviewCount": 631,
+      "faq": [],
+      "tags": [
+        "tops",
+        "tops",
+        "blue frock",
+        "beauty",
+        "fashion"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100163",
+      "uuid": "dummy-catalog-100163",
+      "productGroupId": "group-5040",
+      "sourceProductId": "163",
+      "sku": "BEA-FAS-100163",
+      "barcode": "8800000100163",
+      "slug": "tops-girl-summer-dress-100163",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Tops Girl Summer Dress",
+      "shortName": "Girl Summer Dress",
+      "subtitle": "The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric",
+      "brand": {
+        "id": "brand-tops",
+        "name": "Tops",
+        "slug": "tops",
+        "logo": null,
+        "manufacturer": "Tops",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion",
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        "subCategory": {
+          "id": "tops",
+          "name": "Tops",
+          "slug": "tops"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "tops",
+          "tops",
+          "girl summer dress",
+          "beauty",
+          "fashion"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric, it's perfect for keeping cool and stylish during the summer.",
+        "description": "Tops Girl Summer Dress is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric, it's perfect for keeping cool and stylish during the summer.",
+        "highlights": [
+          "Tops product",
+          "Tops item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Tops"
+          },
+          {
+            "title": "Brand",
+            "value": "Tops"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion"
+          },
+          {
+            "title": "Rating",
+            "value": "4.77"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 2499,
+        "salePrice": 2024,
+        "costPrice": 3.71,
+        "compareAtPrice": 2499,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 19,
+          "percentage": 19,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 2024,
+          "maximum": 2499
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 57,
+        "reservedQuantity": 0,
+        "availableQuantity": 43,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100163",
+          "url": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
+          "alt": "Tops Girl Summer Dress",
+          "title": "Tops Girl Summer Dress",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100163-1",
+            "url": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
+            "alt": "Tops Girl Summer Dress image 1",
+            "title": "Tops Girl Summer Dress image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100163-2",
+            "url": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/1.webp",
+            "alt": "Tops Girl Summer Dress image 2",
+            "title": "Tops Girl Summer Dress image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100163-3",
+            "url": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/2.webp",
+            "alt": "Tops Girl Summer Dress image 3",
+            "title": "Tops Girl Summer Dress image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100163-4",
+            "url": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/3.webp",
+            "alt": "Tops Girl Summer Dress image 4",
+            "title": "Tops Girl Summer Dress image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100163-5",
+            "url": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/4.webp",
+            "alt": "Tops Girl Summer Dress image 5",
+            "title": "Tops Girl Summer Dress image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
+          "title": "Tops Girl Summer Dress product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "Lifetime warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100163-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Tops",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100163-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100163-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 month",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 249,
+        "verifiedPurchaseCount": 179,
+        "distribution": {
+          "5": 181,
+          "4": 44,
+          "3": 21,
+          "2": 3,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Tops Girl Summer Dress Online in Bangladesh | Arogga",
+        "metaDescription": "The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric, it's perfect for keeping cool and stylish during the summer.",
+        "keywords": [
+          "Tops Girl Summer Dress",
+          "Tops",
+          "Fashion",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100163",
+        "openGraph": {
+          "title": "Buy Tops Girl Summer Dress Online in Bangladesh | Arogga",
+          "description": "The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric, it's perfect for keeping cool and stylish during the summer.",
+          "image": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100163",
+        "api": "/api/products/100163",
+        "source": "https://dummyjson.com/products/163"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 2512,
+        "salesCount": 307,
+        "wishlistCount": 196,
+        "cartAdditionCount": 1745,
+        "conversionRate": 6.17
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100163,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Tops",
+      "genericName": "Girl Summer Dress",
+      "category": "Fashion",
+      "subcategory": "Tops",
+      "type": "simple",
+      "price": 2499,
+      "discountPrice": 2024,
+      "discountPercentage": 19,
+      "currency": "BDT",
+      "stock": 43,
+      "sold": 307,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
+      "video": "/videos/catalog/fashion.mp4",
+      "description": "Tops Girl Summer Dress is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric, it's perfect for keeping cool and stylish during the summer.",
+      "shortDescription": "The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric, it's perfect for keeping cool and stylish during the summer.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Tops product",
+        "Tops item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Tops",
+        "Brand": "Tops",
+        "Department": "Beauty",
+        "Category": "Fashion",
+        "Rating": "4.77"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.8,
+      "reviewCount": 249,
+      "faq": [],
+      "tags": [
+        "tops",
+        "tops",
+        "girl summer dress",
+        "beauty",
+        "fashion"
+      ],
+      "featured": false,
+      "bestSeller": false,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100164",
+      "uuid": "dummy-catalog-100164",
+      "productGroupId": "group-5040",
+      "sourceProductId": "164",
+      "sku": "BEA-FAS-100164",
+      "barcode": "8800000100164",
+      "slug": "tops-gray-dress-100164",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Tops Gray Dress",
+      "shortName": "Gray Dress",
+      "subtitle": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or ",
+      "brand": {
+        "id": "brand-tops",
+        "name": "Tops",
+        "slug": "tops",
+        "logo": null,
+        "manufacturer": "Tops",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion",
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        "subCategory": {
+          "id": "tops",
+          "name": "Tops",
+          "slug": "tops"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "tops",
+          "tops",
+          "gray dress",
+          "beauty",
+          "fashion"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
+        "description": "Tops Gray Dress is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
+        "highlights": [
+          "Tops product",
+          "Tops item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Tops"
+          },
+          {
+            "title": "Brand",
+            "value": "Tops"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion"
+          },
+          {
+            "title": "Rating",
+            "value": "2.72"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 4374,
+        "salePrice": 3761,
+        "costPrice": 3.71,
+        "compareAtPrice": 4374,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 14,
+          "percentage": 14,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 3761,
+          "maximum": 4374
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 82,
+        "reservedQuantity": 3,
+        "availableQuantity": 55,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100164",
+          "url": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+          "alt": "Tops Gray Dress",
+          "title": "Tops Gray Dress",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100164-1",
+            "url": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+            "alt": "Tops Gray Dress image 1",
+            "title": "Tops Gray Dress image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100164-2",
+            "url": "https://cdn.dummyjson.com/product-images/tops/gray-dress/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/gray-dress/1.webp",
+            "alt": "Tops Gray Dress image 2",
+            "title": "Tops Gray Dress image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100164-3",
+            "url": "https://cdn.dummyjson.com/product-images/tops/gray-dress/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/gray-dress/2.webp",
+            "alt": "Tops Gray Dress image 3",
+            "title": "Tops Gray Dress image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100164-4",
+            "url": "https://cdn.dummyjson.com/product-images/tops/gray-dress/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/gray-dress/3.webp",
+            "alt": "Tops Gray Dress image 4",
+            "title": "Tops Gray Dress image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100164-5",
+            "url": "https://cdn.dummyjson.com/product-images/tops/gray-dress/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/gray-dress/4.webp",
+            "alt": "Tops Gray Dress image 5",
+            "title": "Tops Gray Dress image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+          "title": "Tops Gray Dress product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 month warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100164-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Tops",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100164-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100164-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 month",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 2.7,
+        "count": 993,
+        "verifiedPurchaseCount": 714,
+        "distribution": {
+          "5": 407,
+          "4": 178,
+          "3": 401,
+          "2": 18,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Tops Gray Dress Online in Bangladesh | Arogga",
+        "metaDescription": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
+        "keywords": [
+          "Tops Gray Dress",
+          "Tops",
+          "Fashion",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100164",
+        "openGraph": {
+          "title": "Buy Tops Gray Dress Online in Bangladesh | Arogga",
+          "description": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
+          "image": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100164",
+        "api": "/api/products/100164",
+        "source": "https://dummyjson.com/products/164"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 24296,
+        "salesCount": 2033,
+        "wishlistCount": 227,
+        "cartAdditionCount": 878,
+        "conversionRate": 8.28
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100164,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Tops",
+      "genericName": "Gray Dress",
+      "category": "Fashion",
+      "subcategory": "Tops",
+      "type": "simple",
+      "price": 4374,
+      "discountPrice": 3761,
+      "discountPercentage": 14,
+      "currency": "BDT",
+      "stock": 55,
+      "sold": 2033,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/gray-dress/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+      "video": "/videos/catalog/fashion.mp4",
+      "description": "Tops Gray Dress is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
+      "shortDescription": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Tops product",
+        "Tops item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Tops",
+        "Brand": "Tops",
+        "Department": "Beauty",
+        "Category": "Fashion",
+        "Rating": "2.72"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 2.7,
+      "reviewCount": 993,
+      "faq": [],
+      "tags": [
+        "tops",
+        "tops",
+        "gray dress",
+        "beauty",
+        "fashion"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100165",
+      "uuid": "dummy-catalog-100165",
+      "productGroupId": "group-5041",
+      "sourceProductId": "165",
+      "sku": "BEA-FAS-100165",
+      "barcode": "8800000100165",
+      "slug": "tops-short-frock-100165",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Tops Short Frock",
+      "shortName": "Short Frock",
+      "subtitle": "The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it c",
+      "brand": {
+        "id": "brand-tops",
+        "name": "Tops",
+        "slug": "tops",
+        "logo": null,
+        "manufacturer": "Tops",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion",
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        "subCategory": {
+          "id": "tops",
+          "name": "Tops",
+          "slug": "tops"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "tops",
+          "tops",
+          "short frock",
+          "beauty",
+          "fashion"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it combines style and comfort for a fashionable look.",
+        "description": "Tops Short Frock is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it combines style and comfort for a fashionable look.",
+        "highlights": [
+          "Tops product",
+          "Tops item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Tops"
+          },
+          {
+            "title": "Brand",
+            "value": "Tops"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion"
+          },
+          {
+            "title": "Rating",
+            "value": "3.23"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 3124,
+        "salePrice": 2718,
+        "costPrice": 3.71,
+        "compareAtPrice": 3124,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 13,
+          "percentage": 13,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 2718,
+          "maximum": 3124
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 50,
+        "reservedQuantity": 3,
+        "availableQuantity": 22,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100165",
+          "url": "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
+          "alt": "Tops Short Frock",
+          "title": "Tops Short Frock",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100165-1",
+            "url": "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
+            "alt": "Tops Short Frock image 1",
+            "title": "Tops Short Frock image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100165-2",
+            "url": "https://cdn.dummyjson.com/product-images/tops/short-frock/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/short-frock/1.webp",
+            "alt": "Tops Short Frock image 2",
+            "title": "Tops Short Frock image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100165-3",
+            "url": "https://cdn.dummyjson.com/product-images/tops/short-frock/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/short-frock/2.webp",
+            "alt": "Tops Short Frock image 3",
+            "title": "Tops Short Frock image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100165-4",
+            "url": "https://cdn.dummyjson.com/product-images/tops/short-frock/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/short-frock/3.webp",
+            "alt": "Tops Short Frock image 4",
+            "title": "Tops Short Frock image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100165-5",
+            "url": "https://cdn.dummyjson.com/product-images/tops/short-frock/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/short-frock/4.webp",
+            "alt": "Tops Short Frock image 5",
+            "title": "Tops Short Frock image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
+          "title": "Tops Short Frock product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100165-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Tops",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100165-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100165-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1-2 business days",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 3,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.2,
+        "count": 1034,
+        "verifiedPurchaseCount": 744,
+        "distribution": {
+          "5": 502,
+          "4": 186,
+          "3": 342,
+          "2": 7,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Tops Short Frock Online in Bangladesh | Arogga",
+        "metaDescription": "The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it combines style and comfort for a fashionable look.",
+        "keywords": [
+          "Tops Short Frock",
+          "Tops",
+          "Fashion",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100165",
+        "openGraph": {
+          "title": "Buy Tops Short Frock Online in Bangladesh | Arogga",
+          "description": "The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it combines style and comfort for a fashionable look.",
+          "image": "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100165",
+        "api": "/api/products/100165",
+        "source": "https://dummyjson.com/products/165"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 23414,
+        "salesCount": 1812,
+        "wishlistCount": 658,
+        "cartAdditionCount": 1034,
+        "conversionRate": 5.41
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100165,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Tops",
+      "genericName": "Short Frock",
+      "category": "Fashion",
+      "subcategory": "Tops",
+      "type": "simple",
+      "price": 3124,
+      "discountPrice": 2718,
+      "discountPercentage": 13,
+      "currency": "BDT",
+      "stock": 22,
+      "sold": 1812,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/tops/short-frock/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/short-frock/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/short-frock/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/short-frock/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
+      "video": "/videos/catalog/fashion.mp4",
+      "description": "Tops Short Frock is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it combines style and comfort for a fashionable look.",
+      "shortDescription": "The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it combines style and comfort for a fashionable look.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Tops product",
+        "Tops item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Tops",
+        "Brand": "Tops",
+        "Department": "Beauty",
+        "Category": "Fashion",
+        "Rating": "3.23"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.2,
+      "reviewCount": 1034,
+      "faq": [],
+      "tags": [
+        "tops",
+        "tops",
+        "short frock",
+        "beauty",
+        "fashion"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100166",
+      "uuid": "dummy-catalog-100166",
+      "productGroupId": "group-5041",
+      "sourceProductId": "166",
+      "sku": "BEA-FAS-100166",
+      "barcode": "8800000100166",
+      "slug": "tops-tartan-dress-100166",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Tops Tartan Dress",
+      "shortName": "Tartan Dress",
+      "subtitle": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfec",
+      "brand": {
+        "id": "brand-tops",
+        "name": "Tops",
+        "slug": "tops",
+        "logo": null,
+        "manufacturer": "Tops",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion",
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        "subCategory": {
+          "id": "tops",
+          "name": "Tops",
+          "slug": "tops"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "tops",
+          "tops",
+          "tartan dress",
+          "beauty",
+          "fashion"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
+        "description": "Tops Tartan Dress is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
+        "highlights": [
+          "Tops product",
+          "Tops item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Tops"
+          },
+          {
+            "title": "Brand",
+            "value": "Tops"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion"
+          },
+          {
+            "title": "Rating",
+            "value": "4.05"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 4999,
+        "salePrice": 4349,
+        "costPrice": 3.71,
+        "compareAtPrice": 4999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 13,
+          "percentage": 13,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 4349,
+          "maximum": 4999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 109,
+        "reservedQuantity": 2,
+        "availableQuantity": 73,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100166",
+          "url": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+          "alt": "Tops Tartan Dress",
+          "title": "Tops Tartan Dress",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100166-1",
+            "url": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+            "alt": "Tops Tartan Dress image 1",
+            "title": "Tops Tartan Dress image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100166-2",
+            "url": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/1.webp",
+            "alt": "Tops Tartan Dress image 2",
+            "title": "Tops Tartan Dress image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100166-3",
+            "url": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/2.webp",
+            "alt": "Tops Tartan Dress image 3",
+            "title": "Tops Tartan Dress image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100166-4",
+            "url": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/3.webp",
+            "alt": "Tops Tartan Dress image 4",
+            "title": "Tops Tartan Dress image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100166-5",
+            "url": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/4.webp",
+            "alt": "Tops Tartan Dress image 5",
+            "title": "Tops Tartan Dress image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+          "title": "Tops Tartan Dress product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 month warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100166-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Tops",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100166-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100166-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.0,
+        "count": 1102,
+        "verifiedPurchaseCount": 793,
+        "distribution": {
+          "5": 670,
+          "4": 198,
+          "3": 230,
+          "2": 15,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Tops Tartan Dress Online in Bangladesh | Arogga",
+        "metaDescription": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
+        "keywords": [
+          "Tops Tartan Dress",
+          "Tops",
+          "Fashion",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100166",
+        "openGraph": {
+          "title": "Buy Tops Tartan Dress Online in Bangladesh | Arogga",
+          "description": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
+          "image": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100166",
+        "api": "/api/products/100166",
+        "source": "https://dummyjson.com/products/166"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 3700,
+        "salesCount": 1376,
+        "wishlistCount": 388,
+        "cartAdditionCount": 149,
+        "conversionRate": 9.46
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100166,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Tops",
+      "genericName": "Tartan Dress",
+      "category": "Fashion",
+      "subcategory": "Tops",
+      "type": "simple",
+      "price": 4999,
+      "discountPrice": 4349,
+      "discountPercentage": 13,
+      "currency": "BDT",
+      "stock": 73,
+      "sold": 1376,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/1.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/2.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/3.webp",
+        "https://cdn.dummyjson.com/product-images/tops/tartan-dress/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+      "video": "/videos/catalog/fashion.mp4",
+      "description": "Tops Tartan Dress is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
+      "shortDescription": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Tops product",
+        "Tops item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Tops",
+        "Brand": "Tops",
+        "Department": "Beauty",
+        "Category": "Fashion",
+        "Rating": "4.05"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.0,
+      "reviewCount": 1102,
+      "faq": [],
+      "tags": [
+        "tops",
+        "tops",
+        "tartan dress",
+        "beauty",
+        "fashion"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 5
+}

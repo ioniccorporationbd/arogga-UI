@@ -1,0 +1,2542 @@
+{
+  "slug": "home-essentials",
+  "name": "Home Essentials",
+  "products": [
+    {
+      "id": "100011",
+      "uuid": "dummy-catalog-100011",
+      "productGroupId": "group-5002",
+      "sourceProductId": "11",
+      "sku": "HOM-HOM-100011",
+      "barcode": "8800000100011",
+      "slug": "annibale-colombo-bed-100011",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Annibale Colombo Bed",
+      "shortName": "Annibale Colombo Bed",
+      "subtitle": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and",
+      "brand": {
+        "id": "brand-annibale-colombo",
+        "name": "Annibale Colombo",
+        "slug": "annibale-colombo",
+        "logo": null,
+        "manufacturer": "Annibale Colombo",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-essentials",
+          "name": "Home Essentials",
+          "slug": "home-essentials"
+        },
+        "subCategory": {
+          "id": "furniture",
+          "name": "Furniture",
+          "slug": "furniture"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "furniture",
+          "annibale colombo",
+          "annibale colombo bed",
+          "homecare",
+          "home essentials"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+        "description": "Annibale Colombo Bed is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+        "highlights": [
+          "Furniture product",
+          "Annibale Colombo item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Furniture"
+          },
+          {
+            "title": "Brand",
+            "value": "Annibale Colombo"
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Essentials"
+          },
+          {
+            "title": "Rating",
+            "value": "4.77"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 237499,
+        "salePrice": 216124,
+        "costPrice": 3.71,
+        "compareAtPrice": 237499,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 9,
+          "percentage": 9,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 216124,
+          "maximum": 237499
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 103,
+        "reservedQuantity": 3,
+        "availableQuantity": 88,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100011",
+          "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+          "alt": "Annibale Colombo Bed",
+          "title": "Annibale Colombo Bed",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100011-1",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+            "alt": "Annibale Colombo Bed image 1",
+            "title": "Annibale Colombo Bed image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100011-2",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
+            "alt": "Annibale Colombo Bed image 2",
+            "title": "Annibale Colombo Bed image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100011-3",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
+            "alt": "Annibale Colombo Bed image 3",
+            "title": "Annibale Colombo Bed image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100011-4",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp",
+            "alt": "Annibale Colombo Bed image 4",
+            "title": "Annibale Colombo Bed image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100011-5",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp?view=5",
+            "alt": "Annibale Colombo Bed image 5",
+            "title": "Annibale Colombo Bed image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-essentials.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+          "title": "Annibale Colombo Bed product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100011-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Annibale Colombo",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100011-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Essentials",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100011-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 month",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.8,
+        "count": 344,
+        "verifiedPurchaseCount": 247,
+        "distribution": {
+          "5": 250,
+          "4": 61,
+          "3": 28,
+          "2": 5,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Annibale Colombo Bed Online in Bangladesh | Arogga",
+        "metaDescription": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+        "keywords": [
+          "Annibale Colombo Bed",
+          "Annibale Colombo",
+          "Home Essentials",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100011",
+        "openGraph": {
+          "title": "Buy Annibale Colombo Bed Online in Bangladesh | Arogga",
+          "description": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+          "image": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100011",
+        "api": "/api/products/100011",
+        "source": "https://dummyjson.com/products/11"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 24483,
+        "salesCount": 331,
+        "wishlistCount": 846,
+        "cartAdditionCount": 1290,
+        "conversionRate": 2.24
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100011,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Annibale Colombo",
+      "genericName": "Annibale Colombo Bed",
+      "category": "Home Essentials",
+      "subcategory": "Furniture",
+      "type": "simple",
+      "price": 237499,
+      "discountPrice": 216124,
+      "discountPercentage": 9,
+      "currency": "BDT",
+      "stock": 88,
+      "sold": 331,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+      "video": "/videos/catalog/home-essentials.mp4",
+      "description": "Annibale Colombo Bed is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+      "shortDescription": "The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Furniture product",
+        "Annibale Colombo item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Furniture",
+        "Brand": "Annibale Colombo",
+        "Department": "Homecare",
+        "Category": "Home Essentials",
+        "Rating": "4.77"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.8,
+      "reviewCount": 344,
+      "faq": [],
+      "tags": [
+        "furniture",
+        "annibale colombo",
+        "annibale colombo bed",
+        "homecare",
+        "home essentials"
+      ],
+      "featured": true,
+      "bestSeller": false,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100012",
+      "uuid": "dummy-catalog-100012",
+      "productGroupId": "group-5002",
+      "sourceProductId": "12",
+      "sku": "HOM-HOM-100012",
+      "barcode": "8800000100012",
+      "slug": "annibale-colombo-sofa-100012",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Annibale Colombo Sofa",
+      "shortName": "Annibale Colombo Sofa",
+      "subtitle": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upho",
+      "brand": {
+        "id": "brand-annibale-colombo",
+        "name": "Annibale Colombo",
+        "slug": "annibale-colombo",
+        "logo": null,
+        "manufacturer": "Annibale Colombo",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-essentials",
+          "name": "Home Essentials",
+          "slug": "home-essentials"
+        },
+        "subCategory": {
+          "id": "furniture",
+          "name": "Furniture",
+          "slug": "furniture"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "furniture",
+          "annibale colombo",
+          "annibale colombo sofa",
+          "homecare",
+          "home essentials"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+        "description": "Annibale Colombo Sofa is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+        "highlights": [
+          "Furniture product",
+          "Annibale Colombo item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Furniture"
+          },
+          {
+            "title": "Brand",
+            "value": "Annibale Colombo"
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Essentials"
+          },
+          {
+            "title": "Rating",
+            "value": "3.92"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 312499,
+        "salePrice": 268749,
+        "costPrice": 3.71,
+        "compareAtPrice": 312499,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 14,
+          "percentage": 14,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 268749,
+          "maximum": 312499
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 98,
+        "reservedQuantity": 3,
+        "availableQuantity": 60,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100012",
+          "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+          "alt": "Annibale Colombo Sofa",
+          "title": "Annibale Colombo Sofa",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100012-1",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+            "alt": "Annibale Colombo Sofa image 1",
+            "title": "Annibale Colombo Sofa image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100012-2",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
+            "alt": "Annibale Colombo Sofa image 2",
+            "title": "Annibale Colombo Sofa image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100012-3",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
+            "alt": "Annibale Colombo Sofa image 3",
+            "title": "Annibale Colombo Sofa image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100012-4",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp",
+            "alt": "Annibale Colombo Sofa image 4",
+            "title": "Annibale Colombo Sofa image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100012-5",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp?view=5",
+            "alt": "Annibale Colombo Sofa image 5",
+            "title": "Annibale Colombo Sofa image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-essentials.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+          "title": "Annibale Colombo Sofa product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "Lifetime warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100012-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Annibale Colombo",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100012-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Essentials",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100012-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 week",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.9,
+        "count": 646,
+        "verifiedPurchaseCount": 465,
+        "distribution": {
+          "5": 382,
+          "4": 116,
+          "3": 142,
+          "2": 5,
+          "1": 1
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Annibale Colombo Sofa Online in Bangladesh | Arogga",
+        "metaDescription": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+        "keywords": [
+          "Annibale Colombo Sofa",
+          "Annibale Colombo",
+          "Home Essentials",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100012",
+        "openGraph": {
+          "title": "Buy Annibale Colombo Sofa Online in Bangladesh | Arogga",
+          "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+          "image": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100012",
+        "api": "/api/products/100012",
+        "source": "https://dummyjson.com/products/12"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 17628,
+        "salesCount": 1393,
+        "wishlistCount": 531,
+        "cartAdditionCount": 249,
+        "conversionRate": 6.65
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100012,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Annibale Colombo",
+      "genericName": "Annibale Colombo Sofa",
+      "category": "Home Essentials",
+      "subcategory": "Furniture",
+      "type": "simple",
+      "price": 312499,
+      "discountPrice": 268749,
+      "discountPercentage": 14,
+      "currency": "BDT",
+      "stock": 60,
+      "sold": 1393,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+      "video": "/videos/catalog/home-essentials.mp4",
+      "description": "Annibale Colombo Sofa is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+      "shortDescription": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Furniture product",
+        "Annibale Colombo item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Furniture",
+        "Brand": "Annibale Colombo",
+        "Department": "Homecare",
+        "Category": "Home Essentials",
+        "Rating": "3.92"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.9,
+      "reviewCount": 646,
+      "faq": [],
+      "tags": [
+        "furniture",
+        "annibale colombo",
+        "annibale colombo sofa",
+        "homecare",
+        "home essentials"
+      ],
+      "featured": true,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100013",
+      "uuid": "dummy-catalog-100013",
+      "productGroupId": "group-5003",
+      "sourceProductId": "13",
+      "sku": "HOM-HOM-100013",
+      "barcode": "8800000100013",
+      "slug": "furniture-co-bedside-table-african-cherry-100013",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Furniture Co. Bedside Table African Cherry",
+      "shortName": "Bedside Table African Cherry",
+      "subtitle": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage s",
+      "brand": {
+        "id": "brand-furniture-co",
+        "name": "Furniture Co.",
+        "slug": "furniture-co",
+        "logo": null,
+        "manufacturer": "Furniture Co.",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-essentials",
+          "name": "Home Essentials",
+          "slug": "home-essentials"
+        },
+        "subCategory": {
+          "id": "furniture",
+          "name": "Furniture",
+          "slug": "furniture"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "furniture",
+          "furniture co.",
+          "bedside table african cherry",
+          "homecare",
+          "home essentials"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+        "description": "Furniture Co. Bedside Table African Cherry is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+        "highlights": [
+          "Furniture product",
+          "Furniture Co. item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Furniture"
+          },
+          {
+            "title": "Brand",
+            "value": "Furniture Co."
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Essentials"
+          },
+          {
+            "title": "Rating",
+            "value": "2.87"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 37499,
+        "salePrice": 30374,
+        "costPrice": 3.71,
+        "compareAtPrice": 37499,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 19,
+          "percentage": 19,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 30374,
+          "maximum": 37499
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 93,
+        "reservedQuantity": 3,
+        "availableQuantity": 64,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100013",
+          "url": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+          "alt": "Furniture Co. Bedside Table African Cherry",
+          "title": "Furniture Co. Bedside Table African Cherry",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100013-1",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+            "alt": "Furniture Co. Bedside Table African Cherry image 1",
+            "title": "Furniture Co. Bedside Table African Cherry image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100013-2",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
+            "alt": "Furniture Co. Bedside Table African Cherry image 2",
+            "title": "Furniture Co. Bedside Table African Cherry image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100013-3",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
+            "alt": "Furniture Co. Bedside Table African Cherry image 3",
+            "title": "Furniture Co. Bedside Table African Cherry image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100013-4",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp",
+            "alt": "Furniture Co. Bedside Table African Cherry image 4",
+            "title": "Furniture Co. Bedside Table African Cherry image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100013-5",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp?view=5",
+            "alt": "Furniture Co. Bedside Table African Cherry image 5",
+            "title": "Furniture Co. Bedside Table African Cherry image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-essentials.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+          "title": "Furniture Co. Bedside Table African Cherry product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "5 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100013-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Furniture Co.",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100013-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Essentials",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100013-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 1,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 2.9,
+        "count": 92,
+        "verifiedPurchaseCount": 66,
+        "distribution": {
+          "5": 40,
+          "4": 16,
+          "3": 31,
+          "2": 1,
+          "1": 4
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Furniture Co. Bedside Table African Cherry Online in Bangladesh | Arogga",
+        "metaDescription": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+        "keywords": [
+          "Furniture Co. Bedside Table African Cherry",
+          "Furniture Co.",
+          "Home Essentials",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100013",
+        "openGraph": {
+          "title": "Buy Furniture Co. Bedside Table African Cherry Online in Bangladesh | Arogga",
+          "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+          "image": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100013",
+        "api": "/api/products/100013",
+        "source": "https://dummyjson.com/products/13"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 24353,
+        "salesCount": 1857,
+        "wishlistCount": 313,
+        "cartAdditionCount": 883,
+        "conversionRate": 7.89
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100013,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Furniture Co.",
+      "genericName": "Bedside Table African Cherry",
+      "category": "Home Essentials",
+      "subcategory": "Furniture",
+      "type": "simple",
+      "price": 37499,
+      "discountPrice": 30374,
+      "discountPercentage": 19,
+      "currency": "BDT",
+      "stock": 64,
+      "sold": 1857,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+      "video": "/videos/catalog/home-essentials.mp4",
+      "description": "Furniture Co. Bedside Table African Cherry is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+      "shortDescription": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Furniture product",
+        "Furniture Co. item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Furniture",
+        "Brand": "Furniture Co.",
+        "Department": "Homecare",
+        "Category": "Home Essentials",
+        "Rating": "2.87"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 2.9,
+      "reviewCount": 92,
+      "faq": [],
+      "tags": [
+        "furniture",
+        "furniture co.",
+        "bedside table african cherry",
+        "homecare",
+        "home essentials"
+      ],
+      "featured": true,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100014",
+      "uuid": "dummy-catalog-100014",
+      "productGroupId": "group-5003",
+      "sourceProductId": "14",
+      "sku": "HOM-HOM-100014",
+      "barcode": "8800000100014",
+      "slug": "knoll-saarinen-executive-conference-chair-100014",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Knoll Saarinen Executive Conference Chair",
+      "shortName": "Knoll Saarinen Executive Conference Chair",
+      "subtitle": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference roo",
+      "brand": {
+        "id": "brand-knoll",
+        "name": "Knoll",
+        "slug": "knoll",
+        "logo": null,
+        "manufacturer": "Knoll",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-essentials",
+          "name": "Home Essentials",
+          "slug": "home-essentials"
+        },
+        "subCategory": {
+          "id": "furniture",
+          "name": "Furniture",
+          "slug": "furniture"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "furniture",
+          "knoll",
+          "knoll saarinen executive conference chair",
+          "homecare",
+          "home essentials"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+        "description": "Knoll Saarinen Executive Conference Chair is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+        "highlights": [
+          "Furniture product",
+          "Knoll item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Furniture"
+          },
+          {
+            "title": "Brand",
+            "value": "Knoll"
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Essentials"
+          },
+          {
+            "title": "Rating",
+            "value": "4.88"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 62499,
+        "salePrice": 61249,
+        "costPrice": 3.71,
+        "compareAtPrice": 62499,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 2,
+          "percentage": 2,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 61249,
+          "maximum": 62499
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 32,
+        "reservedQuantity": 1,
+        "availableQuantity": 26,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100014",
+          "url": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+          "alt": "Knoll Saarinen Executive Conference Chair",
+          "title": "Knoll Saarinen Executive Conference Chair",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100014-1",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+            "alt": "Knoll Saarinen Executive Conference Chair image 1",
+            "title": "Knoll Saarinen Executive Conference Chair image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100014-2",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
+            "alt": "Knoll Saarinen Executive Conference Chair image 2",
+            "title": "Knoll Saarinen Executive Conference Chair image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100014-3",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
+            "alt": "Knoll Saarinen Executive Conference Chair image 3",
+            "title": "Knoll Saarinen Executive Conference Chair image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100014-4",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp",
+            "alt": "Knoll Saarinen Executive Conference Chair image 4",
+            "title": "Knoll Saarinen Executive Conference Chair image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100014-5",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp?view=5",
+            "alt": "Knoll Saarinen Executive Conference Chair image 5",
+            "title": "Knoll Saarinen Executive Conference Chair image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-essentials.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+          "title": "Knoll Saarinen Executive Conference Chair product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "2 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100014-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Knoll",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100014-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Essentials",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100014-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.9,
+        "count": 1104,
+        "verifiedPurchaseCount": 794,
+        "distribution": {
+          "5": 822,
+          "4": 198,
+          "3": 76,
+          "2": 4,
+          "1": 4
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 7,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Knoll Saarinen Executive Conference Chair Online in Bangladesh | Arogga",
+        "metaDescription": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+        "keywords": [
+          "Knoll Saarinen Executive Conference Chair",
+          "Knoll",
+          "Home Essentials",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100014",
+        "openGraph": {
+          "title": "Buy Knoll Saarinen Executive Conference Chair Online in Bangladesh | Arogga",
+          "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+          "image": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100014",
+        "api": "/api/products/100014",
+        "source": "https://dummyjson.com/products/14"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 16488,
+        "salesCount": 439,
+        "wishlistCount": 560,
+        "cartAdditionCount": 1492,
+        "conversionRate": 4.64
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100014,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Knoll",
+      "genericName": "Knoll Saarinen Executive Conference Chair",
+      "category": "Home Essentials",
+      "subcategory": "Furniture",
+      "type": "simple",
+      "price": 62499,
+      "discountPrice": 61249,
+      "discountPercentage": 2,
+      "currency": "BDT",
+      "stock": 26,
+      "sold": 439,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp",
+      "video": "/videos/catalog/home-essentials.mp4",
+      "description": "Knoll Saarinen Executive Conference Chair is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+      "shortDescription": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Furniture product",
+        "Knoll item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Furniture",
+        "Brand": "Knoll",
+        "Department": "Homecare",
+        "Category": "Home Essentials",
+        "Rating": "4.88"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.9,
+      "reviewCount": 1104,
+      "faq": [],
+      "tags": [
+        "furniture",
+        "knoll",
+        "knoll saarinen executive conference chair",
+        "homecare",
+        "home essentials"
+      ],
+      "featured": true,
+      "bestSeller": false,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100015",
+      "uuid": "dummy-catalog-100015",
+      "productGroupId": "group-5003",
+      "sourceProductId": "15",
+      "sku": "HOM-HOM-100015",
+      "barcode": "8800000100015",
+      "slug": "bath-trends-wooden-bathroom-sink-with-mirror-100015",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Bath Trends Wooden Bathroom Sink With Mirror",
+      "shortName": "Wooden Bathroom Sink With Mirror",
+      "subtitle": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countert",
+      "brand": {
+        "id": "brand-bath-trends",
+        "name": "Bath Trends",
+        "slug": "bath-trends",
+        "logo": null,
+        "manufacturer": "Bath Trends",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "homecare",
+          "name": "Homecare",
+          "slug": "homecare"
+        },
+        "category": {
+          "id": "home-essentials",
+          "name": "Home Essentials",
+          "slug": "home-essentials"
+        },
+        "subCategory": {
+          "id": "furniture",
+          "name": "Furniture",
+          "slug": "furniture"
+        },
+        "collections": [
+          {
+            "id": "homecare-collection",
+            "name": "Homecare Collection",
+            "slug": "homecare-collection"
+          }
+        ],
+        "tags": [
+          "furniture",
+          "bath trends",
+          "wooden bathroom sink with mirror",
+          "homecare",
+          "home essentials"
+        ]
+      },
+      "content": {
+        "shortDescription": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+        "description": "Bath Trends Wooden Bathroom Sink With Mirror is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+        "highlights": [
+          "Furniture product",
+          "Bath Trends item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Furniture"
+          },
+          {
+            "title": "Brand",
+            "value": "Bath Trends"
+          },
+          {
+            "title": "Department",
+            "value": "Homecare"
+          },
+          {
+            "title": "Category",
+            "value": "Home Essentials"
+          },
+          {
+            "title": "Rating",
+            "value": "3.59"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 99999,
+        "salePrice": 90999,
+        "costPrice": 3.71,
+        "compareAtPrice": 99999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 9,
+          "percentage": 9,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 90999,
+          "maximum": 99999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 33,
+        "reservedQuantity": 0,
+        "availableQuantity": 7,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100015",
+          "url": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+          "alt": "Bath Trends Wooden Bathroom Sink With Mirror",
+          "title": "Bath Trends Wooden Bathroom Sink With Mirror",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100015-1",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+            "alt": "Bath Trends Wooden Bathroom Sink With Mirror image 1",
+            "title": "Bath Trends Wooden Bathroom Sink With Mirror image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100015-2",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp",
+            "alt": "Bath Trends Wooden Bathroom Sink With Mirror image 2",
+            "title": "Bath Trends Wooden Bathroom Sink With Mirror image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100015-3",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp",
+            "alt": "Bath Trends Wooden Bathroom Sink With Mirror image 3",
+            "title": "Bath Trends Wooden Bathroom Sink With Mirror image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100015-4",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp",
+            "alt": "Bath Trends Wooden Bathroom Sink With Mirror image 4",
+            "title": "Bath Trends Wooden Bathroom Sink With Mirror image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100015-5",
+            "url": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp?view=5",
+            "alt": "Bath Trends Wooden Bathroom Sink With Mirror image 5",
+            "title": "Bath Trends Wooden Bathroom Sink With Mirror image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/home-essentials.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+          "title": "Bath Trends Wooden Bathroom Sink With Mirror product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "Low Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "3 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100015-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Bath Trends",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100015-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Home Essentials",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100015-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 3-5 business days",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 5,
+          "sameDayEligible": true
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 7,
+        "quantityStep": 1,
+        "maximumPerOrder": 7,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 3.6,
+        "count": 709,
+        "verifiedPurchaseCount": 510,
+        "distribution": {
+          "5": 387,
+          "4": 127,
+          "3": 191,
+          "2": 6,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Bath Trends Wooden Bathroom Sink With Mirror Online in Bangladesh | Arogga",
+        "metaDescription": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+        "keywords": [
+          "Bath Trends Wooden Bathroom Sink With Mirror",
+          "Bath Trends",
+          "Home Essentials",
+          "Homecare",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100015",
+        "openGraph": {
+          "title": "Buy Bath Trends Wooden Bathroom Sink With Mirror Online in Bangladesh | Arogga",
+          "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+          "image": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100015",
+        "api": "/api/products/100015",
+        "source": "https://dummyjson.com/products/15"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 16501,
+        "salesCount": 339,
+        "wishlistCount": 203,
+        "cartAdditionCount": 1039,
+        "conversionRate": 3.34
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100015,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Bath Trends",
+      "genericName": "Wooden Bathroom Sink With Mirror",
+      "category": "Home Essentials",
+      "subcategory": "Furniture",
+      "type": "simple",
+      "price": 99999,
+      "discountPrice": 90999,
+      "discountPercentage": 9,
+      "currency": "BDT",
+      "stock": 7,
+      "sold": 339,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp",
+      "video": "/videos/catalog/home-essentials.mp4",
+      "description": "Bath Trends Wooden Bathroom Sink With Mirror is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+      "shortDescription": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Furniture product",
+        "Bath Trends item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Furniture",
+        "Brand": "Bath Trends",
+        "Department": "Homecare",
+        "Category": "Home Essentials",
+        "Rating": "3.59"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 3.6,
+      "reviewCount": 709,
+      "faq": [],
+      "tags": [
+        "furniture",
+        "bath trends",
+        "wooden bathroom sink with mirror",
+        "homecare",
+        "home essentials"
+      ],
+      "featured": true,
+      "bestSeller": false,
+      "newArrival": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 5
+}

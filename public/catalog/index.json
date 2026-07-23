@@ -1,0 +1,591 @@
+{
+  "generatedFrom": "public/data.json",
+  "categoryCount": 13,
+  "brandCount": 70,
+  "productCount": 194,
+  "categories": [
+    {
+      "slug": "accessories",
+      "name": "Accessories",
+      "href": "/category/accessories",
+      "json": "/catalog/categories/accessories.json",
+      "productCount": 14
+    },
+    {
+      "slug": "digital-devices",
+      "name": "Digital Devices",
+      "href": "/category/digital-devices",
+      "json": "/catalog/categories/digital-devices.json",
+      "productCount": 24
+    },
+    {
+      "slug": "fashion",
+      "name": "Fashion",
+      "href": "/category/fashion",
+      "json": "/catalog/categories/fashion.json",
+      "productCount": 25
+    },
+    {
+      "slug": "fashion-accessories",
+      "name": "Fashion Accessories",
+      "href": "/category/fashion-accessories",
+      "json": "/catalog/categories/fashion-accessories.json",
+      "productCount": 24
+    },
+    {
+      "slug": "fitness-accessories",
+      "name": "Fitness Accessories",
+      "href": "/category/fitness-accessories",
+      "json": "/catalog/categories/fitness-accessories.json",
+      "productCount": 17
+    },
+    {
+      "slug": "grocery-essentials",
+      "name": "Grocery Essentials",
+      "href": "/category/grocery-essentials",
+      "json": "/catalog/categories/grocery-essentials.json",
+      "productCount": 27
+    },
+    {
+      "slug": "home-decor",
+      "name": "Home Decor",
+      "href": "/category/home-decor",
+      "json": "/catalog/categories/home-decor.json",
+      "productCount": 5
+    },
+    {
+      "slug": "home-essentials",
+      "name": "Home Essentials",
+      "href": "/category/home-essentials",
+      "json": "/catalog/categories/home-essentials.json",
+      "productCount": 5
+    },
+    {
+      "slug": "kitchen-essentials",
+      "name": "Kitchen Essentials",
+      "href": "/category/kitchen-essentials",
+      "json": "/catalog/categories/kitchen-essentials.json",
+      "productCount": 30
+    },
+    {
+      "slug": "lifestyle",
+      "name": "Lifestyle",
+      "href": "/category/lifestyle",
+      "json": "/catalog/categories/lifestyle.json",
+      "productCount": 10
+    },
+    {
+      "slug": "makeup",
+      "name": "Makeup",
+      "href": "/category/makeup",
+      "json": "/catalog/categories/makeup.json",
+      "productCount": 5
+    },
+    {
+      "slug": "perfume",
+      "name": "Perfume",
+      "href": "/category/perfume",
+      "json": "/catalog/categories/perfume.json",
+      "productCount": 5
+    },
+    {
+      "slug": "skincare",
+      "name": "Skincare",
+      "href": "/category/skincare",
+      "json": "/catalog/categories/skincare.json",
+      "productCount": 3
+    }
+  ],
+  "brands": [
+    {
+      "slug": "amazon",
+      "name": "Amazon",
+      "href": "/brand/amazon",
+      "json": "/catalog/brands/amazon.json",
+      "productCount": 1
+    },
+    {
+      "slug": "annibale-colombo",
+      "name": "Annibale Colombo",
+      "href": "/brand/annibale-colombo",
+      "json": "/catalog/brands/annibale-colombo.json",
+      "productCount": 2
+    },
+    {
+      "slug": "apple",
+      "name": "Apple",
+      "href": "/brand/apple",
+      "json": "/catalog/brands/apple.json",
+      "productCount": 14
+    },
+    {
+      "slug": "asus",
+      "name": "Asus",
+      "href": "/brand/asus",
+      "json": "/catalog/brands/asus.json",
+      "productCount": 1
+    },
+    {
+      "slug": "attitude",
+      "name": "Attitude",
+      "href": "/brand/attitude",
+      "json": "/catalog/brands/attitude.json",
+      "productCount": 1
+    },
+    {
+      "slug": "bath-trends",
+      "name": "Bath Trends",
+      "href": "/brand/bath-trends",
+      "json": "/catalog/brands/bath-trends.json",
+      "productCount": 1
+    },
+    {
+      "slug": "beats",
+      "name": "Beats",
+      "href": "/brand/beats",
+      "json": "/catalog/brands/beats.json",
+      "productCount": 1
+    },
+    {
+      "slug": "calvin-klein",
+      "name": "Calvin Klein",
+      "href": "/brand/calvin-klein",
+      "json": "/catalog/brands/calvin-klein.json",
+      "productCount": 2
+    },
+    {
+      "slug": "casual-comfort",
+      "name": "Casual Comfort",
+      "href": "/brand/casual-comfort",
+      "json": "/catalog/brands/casual-comfort.json",
+      "productCount": 1
+    },
+    {
+      "slug": "chanel",
+      "name": "Chanel",
+      "href": "/brand/chanel",
+      "json": "/catalog/brands/chanel.json",
+      "productCount": 1
+    },
+    {
+      "slug": "chic-cosmetics",
+      "name": "Chic Cosmetics",
+      "href": "/brand/chic-cosmetics",
+      "json": "/catalog/brands/chic-cosmetics.json",
+      "productCount": 1
+    },
+    {
+      "slug": "chrysler",
+      "name": "Chrysler",
+      "href": "/brand/chrysler",
+      "json": "/catalog/brands/chrysler.json",
+      "productCount": 2
+    },
+    {
+      "slug": "classic-wear",
+      "name": "Classic Wear",
+      "href": "/brand/classic-wear",
+      "json": "/catalog/brands/classic-wear.json",
+      "productCount": 1
+    },
+    {
+      "slug": "comfort-trends",
+      "name": "Comfort Trends",
+      "href": "/brand/comfort-trends",
+      "json": "/catalog/brands/comfort-trends.json",
+      "productCount": 1
+    },
+    {
+      "slug": "dell",
+      "name": "Dell",
+      "href": "/brand/dell",
+      "json": "/catalog/brands/dell.json",
+      "productCount": 1
+    },
+    {
+      "slug": "dior",
+      "name": "Dior",
+      "href": "/brand/dior",
+      "json": "/catalog/brands/dior.json",
+      "productCount": 1
+    },
+    {
+      "slug": "dodge",
+      "name": "Dodge",
+      "href": "/brand/dodge",
+      "json": "/catalog/brands/dodge.json",
+      "productCount": 3
+    },
+    {
+      "slug": "dolce-gabbana",
+      "name": "Dolce & Gabbana",
+      "href": "/brand/dolce-gabbana",
+      "json": "/catalog/brands/dolce-gabbana.json",
+      "productCount": 1
+    },
+    {
+      "slug": "elegance-collection",
+      "name": "Elegance Collection",
+      "href": "/brand/elegance-collection",
+      "json": "/catalog/brands/elegance-collection.json",
+      "productCount": 1
+    },
+    {
+      "slug": "essence",
+      "name": "Essence",
+      "href": "/brand/essence",
+      "json": "/catalog/brands/essence.json",
+      "productCount": 1
+    },
+    {
+      "slug": "fashion-co",
+      "name": "Fashion Co.",
+      "href": "/brand/fashion-co",
+      "json": "/catalog/brands/fashion-co.json",
+      "productCount": 1
+    },
+    {
+      "slug": "fashion-diva",
+      "name": "Fashion Diva",
+      "href": "/brand/fashion-diva",
+      "json": "/catalog/brands/fashion-diva.json",
+      "productCount": 1
+    },
+    {
+      "slug": "fashion-express",
+      "name": "Fashion Express",
+      "href": "/brand/fashion-express",
+      "json": "/catalog/brands/fashion-express.json",
+      "productCount": 1
+    },
+    {
+      "slug": "fashion-fun",
+      "name": "Fashion Fun",
+      "href": "/brand/fashion-fun",
+      "json": "/catalog/brands/fashion-fun.json",
+      "productCount": 1
+    },
+    {
+      "slug": "fashion-gold",
+      "name": "Fashion Gold",
+      "href": "/brand/fashion-gold",
+      "json": "/catalog/brands/fashion-gold.json",
+      "productCount": 1
+    },
+    {
+      "slug": "fashion-shades",
+      "name": "Fashion Shades",
+      "href": "/brand/fashion-shades",
+      "json": "/catalog/brands/fashion-shades.json",
+      "productCount": 4
+    },
+    {
+      "slug": "fashion-timepieces",
+      "name": "Fashion Timepieces",
+      "href": "/brand/fashion-timepieces",
+      "json": "/catalog/brands/fashion-timepieces.json",
+      "productCount": 1
+    },
+    {
+      "slug": "fashion-trends",
+      "name": "Fashion Trends",
+      "href": "/brand/fashion-trends",
+      "json": "/catalog/brands/fashion-trends.json",
+      "productCount": 1
+    },
+    {
+      "slug": "fashionista",
+      "name": "Fashionista",
+      "href": "/brand/fashionista",
+      "json": "/catalog/brands/fashionista.json",
+      "productCount": 1
+    },
+    {
+      "slug": "furniture-co",
+      "name": "Furniture Co.",
+      "href": "/brand/furniture-co",
+      "json": "/catalog/brands/furniture-co.json",
+      "productCount": 1
+    },
+    {
+      "slug": "gadgetmaster",
+      "name": "GadgetMaster",
+      "href": "/brand/gadgetmaster",
+      "json": "/catalog/brands/gadgetmaster.json",
+      "productCount": 1
+    },
+    {
+      "slug": "generic-motors",
+      "name": "Generic Motors",
+      "href": "/brand/generic-motors",
+      "json": "/catalog/brands/generic-motors.json",
+      "productCount": 1
+    },
+    {
+      "slug": "gigabyte",
+      "name": "Gigabyte",
+      "href": "/brand/gigabyte",
+      "json": "/catalog/brands/gigabyte.json",
+      "productCount": 1
+    },
+    {
+      "slug": "glamour-beauty",
+      "name": "Glamour Beauty",
+      "href": "/brand/glamour-beauty",
+      "json": "/catalog/brands/glamour-beauty.json",
+      "productCount": 1
+    },
+    {
+      "slug": "groceries",
+      "name": "Groceries",
+      "href": "/brand/groceries",
+      "json": "/catalog/brands/groceries.json",
+      "productCount": 27
+    },
+    {
+      "slug": "gucci",
+      "name": "Gucci",
+      "href": "/brand/gucci",
+      "json": "/catalog/brands/gucci.json",
+      "productCount": 1
+    },
+    {
+      "slug": "heshe",
+      "name": "Heshe",
+      "href": "/brand/heshe",
+      "json": "/catalog/brands/heshe.json",
+      "productCount": 1
+    },
+    {
+      "slug": "home-decoration",
+      "name": "Home Decoration",
+      "href": "/brand/home-decoration",
+      "json": "/catalog/brands/home-decoration.json",
+      "productCount": 5
+    },
+    {
+      "slug": "huawei",
+      "name": "Huawei",
+      "href": "/brand/huawei",
+      "json": "/catalog/brands/huawei.json",
+      "productCount": 1
+    },
+    {
+      "slug": "iwc",
+      "name": "IWC",
+      "href": "/brand/iwc",
+      "json": "/catalog/brands/iwc.json",
+      "productCount": 1
+    },
+    {
+      "slug": "kawasaki",
+      "name": "Kawasaki",
+      "href": "/brand/kawasaki",
+      "json": "/catalog/brands/kawasaki.json",
+      "productCount": 1
+    },
+    {
+      "slug": "kitchen-accessories",
+      "name": "Kitchen Accessories",
+      "href": "/brand/kitchen-accessories",
+      "json": "/catalog/brands/kitchen-accessories.json",
+      "productCount": 30
+    },
+    {
+      "slug": "knoll",
+      "name": "Knoll",
+      "href": "/brand/knoll",
+      "json": "/catalog/brands/knoll.json",
+      "productCount": 1
+    },
+    {
+      "slug": "lenovo",
+      "name": "Lenovo",
+      "href": "/brand/lenovo",
+      "json": "/catalog/brands/lenovo.json",
+      "productCount": 1
+    },
+    {
+      "slug": "longines",
+      "name": "Longines",
+      "href": "/brand/longines",
+      "json": "/catalog/brands/longines.json",
+      "productCount": 1
+    },
+    {
+      "slug": "motogp",
+      "name": "MotoGP",
+      "href": "/brand/motogp",
+      "json": "/catalog/brands/motogp.json",
+      "productCount": 1
+    },
+    {
+      "slug": "nail-couture",
+      "name": "Nail Couture",
+      "href": "/brand/nail-couture",
+      "json": "/catalog/brands/nail-couture.json",
+      "productCount": 1
+    },
+    {
+      "slug": "nike",
+      "name": "Nike",
+      "href": "/brand/nike",
+      "json": "/catalog/brands/nike.json",
+      "productCount": 2
+    },
+    {
+      "slug": "off-white",
+      "name": "Off White",
+      "href": "/brand/off-white",
+      "json": "/catalog/brands/off-white.json",
+      "productCount": 2
+    },
+    {
+      "slug": "olay",
+      "name": "Olay",
+      "href": "/brand/olay",
+      "json": "/catalog/brands/olay.json",
+      "productCount": 1
+    },
+    {
+      "slug": "oppo",
+      "name": "Oppo",
+      "href": "/brand/oppo",
+      "json": "/catalog/brands/oppo.json",
+      "productCount": 3
+    },
+    {
+      "slug": "pampi",
+      "name": "Pampi",
+      "href": "/brand/pampi",
+      "json": "/catalog/brands/pampi.json",
+      "productCount": 1
+    },
+    {
+      "slug": "prada",
+      "name": "Prada",
+      "href": "/brand/prada",
+      "json": "/catalog/brands/prada.json",
+      "productCount": 1
+    },
+    {
+      "slug": "provision",
+      "name": "ProVision",
+      "href": "/brand/provision",
+      "json": "/catalog/brands/provision.json",
+      "productCount": 1
+    },
+    {
+      "slug": "puma",
+      "name": "Puma",
+      "href": "/brand/puma",
+      "json": "/catalog/brands/puma.json",
+      "productCount": 1
+    },
+    {
+      "slug": "realme",
+      "name": "Realme",
+      "href": "/brand/realme",
+      "json": "/catalog/brands/realme.json",
+      "productCount": 3
+    },
+    {
+      "slug": "rolex",
+      "name": "Rolex",
+      "href": "/brand/rolex",
+      "json": "/catalog/brands/rolex.json",
+      "productCount": 6
+    },
+    {
+      "slug": "samsung",
+      "name": "Samsung",
+      "href": "/brand/samsung",
+      "json": "/catalog/brands/samsung.json",
+      "productCount": 5
+    },
+    {
+      "slug": "scootmaster",
+      "name": "ScootMaster",
+      "href": "/brand/scootmaster",
+      "json": "/catalog/brands/scootmaster.json",
+      "productCount": 1
+    },
+    {
+      "slug": "snaptech",
+      "name": "SnapTech",
+      "href": "/brand/snaptech",
+      "json": "/catalog/brands/snaptech.json",
+      "productCount": 1
+    },
+    {
+      "slug": "speedmaster",
+      "name": "SpeedMaster",
+      "href": "/brand/speedmaster",
+      "json": "/catalog/brands/speedmaster.json",
+      "productCount": 1
+    },
+    {
+      "slug": "sports-accessories",
+      "name": "Sports Accessories",
+      "href": "/brand/sports-accessories",
+      "json": "/catalog/brands/sports-accessories.json",
+      "productCount": 17
+    },
+    {
+      "slug": "techgear",
+      "name": "TechGear",
+      "href": "/brand/techgear",
+      "json": "/catalog/brands/techgear.json",
+      "productCount": 1
+    },
+    {
+      "slug": "tops",
+      "name": "Tops",
+      "href": "/brand/tops",
+      "json": "/catalog/brands/tops.json",
+      "productCount": 5
+    },
+    {
+      "slug": "urban-chic",
+      "name": "Urban Chic",
+      "href": "/brand/urban-chic",
+      "json": "/catalog/brands/urban-chic.json",
+      "productCount": 2
+    },
+    {
+      "slug": "vaseline",
+      "name": "Vaseline",
+      "href": "/brand/vaseline",
+      "json": "/catalog/brands/vaseline.json",
+      "productCount": 1
+    },
+    {
+      "slug": "velvet-touch",
+      "name": "Velvet Touch",
+      "href": "/brand/velvet-touch",
+      "json": "/catalog/brands/velvet-touch.json",
+      "productCount": 1
+    },
+    {
+      "slug": "vivo",
+      "name": "Vivo",
+      "href": "/brand/vivo",
+      "json": "/catalog/brands/vivo.json",
+      "productCount": 3
+    },
+    {
+      "slug": "womens-dresses",
+      "name": "Womens Dresses",
+      "href": "/brand/womens-dresses",
+      "json": "/catalog/brands/womens-dresses.json",
+      "productCount": 5
+    },
+    {
+      "slug": "womens-jewellery",
+      "name": "Womens Jewellery",
+      "href": "/brand/womens-jewellery",
+      "json": "/catalog/brands/womens-jewellery.json",
+      "productCount": 3
+    }
+  ]
+}

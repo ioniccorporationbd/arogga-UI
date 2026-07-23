@@ -1,0 +1,1021 @@
+{
+  "slug": "calvin-klein",
+  "name": "Calvin Klein",
+  "products": [
+    {
+      "id": "100006",
+      "uuid": "dummy-catalog-100006",
+      "productGroupId": "group-5001",
+      "sourceProductId": "6",
+      "sku": "FRA-PER-100006",
+      "barcode": "8800000100006",
+      "slug": "calvin-klein-ck-one-100006",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Calvin Klein CK One",
+      "shortName": "Calvin Klein CK One",
+      "subtitle": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance su",
+      "brand": {
+        "id": "brand-calvin-klein",
+        "name": "Calvin Klein",
+        "slug": "calvin-klein",
+        "logo": null,
+        "manufacturer": "Calvin Klein",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "category": {
+          "id": "perfume",
+          "name": "Perfume",
+          "slug": "perfume"
+        },
+        "subCategory": {
+          "id": "fragrance",
+          "name": "Fragrance",
+          "slug": "fragrance"
+        },
+        "collections": [
+          {
+            "id": "fragrance-collection",
+            "name": "Fragrance Collection",
+            "slug": "fragrance-collection"
+          }
+        ],
+        "tags": [
+          "fragrances",
+          "calvin klein",
+          "calvin klein ck one",
+          "fragrance",
+          "perfume"
+        ]
+      },
+      "content": {
+        "shortDescription": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+        "description": "Calvin Klein CK One is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+        "highlights": [
+          "Fragrance product",
+          "Calvin Klein item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Brand",
+            "value": "Calvin Klein"
+          },
+          {
+            "title": "Department",
+            "value": "Fragrance"
+          },
+          {
+            "title": "Category",
+            "value": "Perfume"
+          },
+          {
+            "title": "Rating",
+            "value": "4.37"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 6249,
+        "salePrice": 6124,
+        "costPrice": 3.71,
+        "compareAtPrice": 6249,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 2,
+          "percentage": 2,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 6124,
+          "maximum": 6249
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 59,
+        "reservedQuantity": 0,
+        "availableQuantity": 29,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100006",
+          "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+          "alt": "Calvin Klein CK One",
+          "title": "Calvin Klein CK One",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100006-1",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+            "alt": "Calvin Klein CK One image 1",
+            "title": "Calvin Klein CK One image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100006-2",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+            "alt": "Calvin Klein CK One image 2",
+            "title": "Calvin Klein CK One image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100006-3",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
+            "alt": "Calvin Klein CK One image 3",
+            "title": "Calvin Klein CK One image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100006-4",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp",
+            "alt": "Calvin Klein CK One image 4",
+            "title": "Calvin Klein CK One image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100006-5",
+            "url": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp?view=5",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp?view=5",
+            "alt": "Calvin Klein CK One image 5",
+            "title": "Calvin Klein CK One image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/perfume.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+          "title": "Calvin Klein CK One product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "1 week warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100006-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Calvin Klein",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100006-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Perfume",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100006-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships overnight",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 3,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.4,
+        "count": 738,
+        "verifiedPurchaseCount": 531,
+        "distribution": {
+          "5": 493,
+          "4": 132,
+          "3": 113,
+          "2": 3,
+          "1": 0
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 10,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Calvin Klein CK One Online in Bangladesh | Arogga",
+        "metaDescription": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+        "keywords": [
+          "Calvin Klein CK One",
+          "Calvin Klein",
+          "Perfume",
+          "Fragrance",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100006",
+        "openGraph": {
+          "title": "Buy Calvin Klein CK One Online in Bangladesh | Arogga",
+          "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+          "image": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100006",
+        "api": "/api/products/100006",
+        "source": "https://dummyjson.com/products/6"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 2988,
+        "salesCount": 1498,
+        "wishlistCount": 15,
+        "cartAdditionCount": 725,
+        "conversionRate": 9.48
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100006,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Calvin Klein",
+      "genericName": "Calvin Klein CK One",
+      "category": "Perfume",
+      "subcategory": "Fragrance",
+      "type": "simple",
+      "price": 6249,
+      "discountPrice": 6124,
+      "discountPercentage": 2,
+      "currency": "BDT",
+      "stock": 29,
+      "sold": 1498,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp",
+        "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp?view=5"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+      "video": "/videos/catalog/perfume.mp4",
+      "description": "Calvin Klein CK One is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+      "shortDescription": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Fragrance product",
+        "Calvin Klein item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Fragrance",
+        "Brand": "Calvin Klein",
+        "Department": "Fragrance",
+        "Category": "Perfume",
+        "Rating": "4.37"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.4,
+      "reviewCount": 738,
+      "faq": [],
+      "tags": [
+        "fragrances",
+        "calvin klein",
+        "calvin klein ck one",
+        "fragrance",
+        "perfume"
+      ],
+      "featured": true,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    },
+    {
+      "id": "100186",
+      "uuid": "dummy-catalog-100186",
+      "productGroupId": "group-5046",
+      "sourceProductId": "186",
+      "sku": "BEA-FAS-100186",
+      "barcode": "8800000100186",
+      "slug": "calvin-klein-heel-shoes-100186",
+      "status": "active",
+      "visibility": "public",
+      "productType": "simple",
+      "condition": "new",
+      "name": "Calvin Klein Heel Shoes",
+      "shortName": "Calvin Klein Heel Shoes",
+      "subtitle": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-qua",
+      "brand": {
+        "id": "brand-calvin-klein",
+        "name": "Calvin Klein",
+        "slug": "calvin-klein",
+        "logo": null,
+        "manufacturer": "Calvin Klein",
+        "countryOfOrigin": null
+      },
+      "taxonomy": {
+        "department": {
+          "id": "beauty",
+          "name": "Beauty",
+          "slug": "beauty"
+        },
+        "category": {
+          "id": "fashion",
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        "subCategory": {
+          "id": "shoes",
+          "name": "Shoes",
+          "slug": "shoes"
+        },
+        "collections": [
+          {
+            "id": "beauty-collection",
+            "name": "Beauty Collection",
+            "slug": "beauty-collection"
+          }
+        ],
+        "tags": [
+          "womens-shoes",
+          "calvin klein",
+          "calvin klein heel shoes",
+          "beauty",
+          "fashion"
+        ]
+      },
+      "content": {
+        "shortDescription": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
+        "description": "Calvin Klein Heel Shoes is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
+        "highlights": [
+          "Shoes product",
+          "Calvin Klein item",
+          "Unique product image",
+          "Dynamic catalog data"
+        ],
+        "features": [
+          {
+            "title": "Product Type",
+            "value": "Shoes"
+          },
+          {
+            "title": "Brand",
+            "value": "Calvin Klein"
+          },
+          {
+            "title": "Department",
+            "value": "Beauty"
+          },
+          {
+            "title": "Category",
+            "value": "Fashion"
+          },
+          {
+            "title": "Rating",
+            "value": "4.92"
+          }
+        ],
+        "benefits": [
+          "Easy to compare online",
+          "Current catalog price and stock",
+          "Suitable for ecommerce product detail testing"
+        ],
+        "howToUse": [
+          "Review product information and images.",
+          "Choose preferred quantity or pack.",
+          "Add to cart or save to wishlist."
+        ],
+        "ingredients": [
+          "See seller or manufacturer information for full product composition."
+        ],
+        "warnings": [
+          "Review the product label before use.",
+          "Keep product in suitable storage condition.",
+          "Return policy depends on category and seller condition."
+        ],
+        "storageInstructions": [
+          "Store safely according to product type.",
+          "Avoid damage, heat or direct sunlight where applicable."
+        ],
+        "additionalInfo": {
+          "shade": "Classic",
+          "shadeHex": "#C48A6A",
+          "finish": "Luminous",
+          "coverage": null,
+          "skinType": "All skin types",
+          "form": "Bronzer"
+        }
+      },
+      "pricing": {
+        "currency": "BDT",
+        "regularPrice": 9999,
+        "salePrice": 9699,
+        "costPrice": 3.71,
+        "compareAtPrice": 9999,
+        "discount": {
+          "isDiscounted": true,
+          "type": "percentage",
+          "value": 3,
+          "percentage": 3,
+          "startsAt": null,
+          "endsAt": null
+        },
+        "tax": {
+          "taxable": true,
+          "taxClass": "standard",
+          "rate": 0,
+          "priceIncludesTax": false
+        },
+        "priceRange": {
+          "minimum": 9699,
+          "maximum": 9999
+        }
+      },
+      "inventory": {
+        "trackQuantity": true,
+        "stockStatus": "in_stock",
+        "totalQuantity": 109,
+        "reservedQuantity": 4,
+        "availableQuantity": 93,
+        "incomingQuantity": 0,
+        "lowStockThreshold": 10,
+        "allowBackorder": false,
+        "backorderLimit": 0,
+        "warehouses": [
+          {
+            "warehouseId": "main-warehouse",
+            "warehouseName": "Main Warehouse",
+            "quantity": 10,
+            "reservedQuantity": 0,
+            "availableQuantity": 10,
+            "location": "Dhaka"
+          }
+        ]
+      },
+      "media": {
+        "featuredImage": {
+          "id": "image-100186",
+          "url": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+          "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+          "alt": "Calvin Klein Heel Shoes",
+          "title": "Calvin Klein Heel Shoes",
+          "width": 600,
+          "height": 600,
+          "mimeType": "image/webp"
+        },
+        "gallery": [
+          {
+            "id": "image-100186-1",
+            "url": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+            "alt": "Calvin Klein Heel Shoes image 1",
+            "title": "Calvin Klein Heel Shoes image 1",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100186-2",
+            "url": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/1.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/1.webp",
+            "alt": "Calvin Klein Heel Shoes image 2",
+            "title": "Calvin Klein Heel Shoes image 2",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100186-3",
+            "url": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/2.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/2.webp",
+            "alt": "Calvin Klein Heel Shoes image 3",
+            "title": "Calvin Klein Heel Shoes image 3",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100186-4",
+            "url": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/3.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/3.webp",
+            "alt": "Calvin Klein Heel Shoes image 4",
+            "title": "Calvin Klein Heel Shoes image 4",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          },
+          {
+            "id": "image-100186-5",
+            "url": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/4.webp",
+            "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/4.webp",
+            "alt": "Calvin Klein Heel Shoes image 5",
+            "title": "Calvin Klein Heel Shoes image 5",
+            "width": 600,
+            "height": 600,
+            "mimeType": "image/webp"
+          }
+        ],
+        "video": {
+          "url": "/videos/catalog/fashion.mp4",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+          "title": "Calvin Klein Heel Shoes product video"
+        }
+      },
+      "variants": [],
+      "options": [
+        {
+          "name": "Pack",
+          "slug": "pack",
+          "value": "Standard Pack",
+          "colorHex": null
+        },
+        {
+          "name": "Availability",
+          "slug": "availability",
+          "value": "In Stock",
+          "colorHex": null
+        },
+        {
+          "name": "Warranty",
+          "slug": "warranty",
+          "value": "2 year warranty",
+          "colorHex": null
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr-100186-brand",
+          "name": "Brand",
+          "slug": "brand",
+          "value": "Calvin Klein",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100186-category",
+          "name": "Category",
+          "slug": "category",
+          "value": "Fashion",
+          "visible": true,
+          "filterable": true,
+          "comparable": true
+        },
+        {
+          "id": "attr-100186-shipping",
+          "name": "Shipping",
+          "slug": "shipping",
+          "value": "Ships in 1 week",
+          "visible": true,
+          "filterable": false,
+          "comparable": false
+        }
+      ],
+      "shipping": {
+        "requiresShipping": true,
+        "shippingClass": "standard",
+        "freeShipping": true,
+        "weight": {
+          "value": 120,
+          "unit": "g"
+        },
+        "dimensions": {
+          "length": 10,
+          "width": 7,
+          "height": 4,
+          "unit": "cm"
+        },
+        "package": {
+          "type": "Standard Pack",
+          "quantityPerPackage": 1
+        },
+        "delivery": {
+          "estimatedMinimumDays": 2,
+          "estimatedMaximumDays": 4,
+          "sameDayEligible": false
+        }
+      },
+      "purchaseRules": {
+        "minimumQuantity": 1,
+        "maximumQuantity": 10,
+        "quantityStep": 1,
+        "maximumPerOrder": 10,
+        "prescriptionRequired": false,
+        "ageRestricted": false,
+        "requiresApproval": false
+      },
+      "ratings": {
+        "average": 4.9,
+        "count": 381,
+        "verifiedPurchaseCount": 274,
+        "distribution": {
+          "5": 283,
+          "4": 68,
+          "3": 26,
+          "2": 3,
+          "1": 1
+        }
+      },
+      "reviews": {
+        "enabled": true,
+        "requiresPurchase": true,
+        "requiresApproval": true
+      },
+      "seller": {
+        "id": "default-store",
+        "name": "Arogga Verified Store",
+        "type": "first_party",
+        "fulfilledBy": "Arogga",
+        "warranty": {
+          "available": false,
+          "duration": null,
+          "durationUnit": null,
+          "description": null
+        },
+        "returnPolicy": {
+          "returnable": true,
+          "returnWindowDays": 3,
+          "conditions": [
+            "Product must remain unused and in original packaging.",
+            "Category policy and seller approval may apply."
+          ]
+        }
+      },
+      "compliance": {
+        "isHazardous": false,
+        "isFragile": true,
+        "requiresColdStorage": false,
+        "regulatedProduct": false,
+        "licenseRequired": false,
+        "documents": []
+      },
+      "seo": {
+        "metaTitle": "Buy Calvin Klein Heel Shoes Online in Bangladesh | Arogga",
+        "metaDescription": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
+        "keywords": [
+          "Calvin Klein Heel Shoes",
+          "Calvin Klein",
+          "Fashion",
+          "Beauty",
+          "online shopping"
+        ],
+        "canonicalUrl": "https://www.arogga.com/products/100186",
+        "openGraph": {
+          "title": "Buy Calvin Klein Heel Shoes Online in Bangladesh | Arogga",
+          "description": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
+          "image": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+          "type": "product"
+        },
+        "index": true,
+        "follow": true
+      },
+      "urls": {
+        "local": "/products/100186",
+        "api": "/api/products/100186",
+        "source": "https://dummyjson.com/products/186"
+      },
+      "relatedProducts": [
+        "relatedProductIds",
+        "frequentlyBoughtTogetherIds",
+        "crossSellProductIds",
+        "upSellProductIds"
+      ],
+      "availability": {
+        "isAvailable": true,
+        "availableFrom": null,
+        "availableUntil": null,
+        "salesChannels": [
+          "website"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "analytics": {
+        "viewCount": 24236,
+        "salesCount": 1908,
+        "wishlistCount": 98,
+        "cartAdditionCount": 1453,
+        "conversionRate": 8.86
+      },
+      "localization": {
+        "defaultLanguage": "en",
+        "translations": {
+          "en": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "Fast relief for fever and mild pain."
+          },
+          "bn": {
+            "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+            "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+          }
+        }
+      },
+      "audit": {
+        "source": "dummyjson-relatable-ecommerce-catalog",
+        "legacyId": 100186,
+        "sourceRecordIsReal": true,
+        "catalogVariantGenerated": true,
+        "createdBy": "system",
+        "updatedBy": "system",
+        "createdAt": "2026-07-18T00:00:00Z",
+        "updatedAt": "2026-07-21T00:00:00.000Z",
+        "publishedAt": "2026-07-18T00:00:00Z",
+        "deletedAt": null,
+        "version": 3
+      },
+      "manufacturer": "Calvin Klein",
+      "genericName": "Calvin Klein Heel Shoes",
+      "category": "Fashion",
+      "subcategory": "Shoes",
+      "type": "simple",
+      "price": 9999,
+      "discountPrice": 9699,
+      "discountPercentage": 3,
+      "currency": "BDT",
+      "stock": 93,
+      "sold": 1908,
+      "prescriptionRequired": false,
+      "images": [
+        "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/1.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/2.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/3.webp",
+        "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/4.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+      "video": "/videos/catalog/fashion.mp4",
+      "description": "Calvin Klein Heel Shoes is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
+      "shortDescription": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
+      "ingredients": [
+        "See seller or manufacturer information for full product composition."
+      ],
+      "benefits": [
+        "Easy to compare online",
+        "Current catalog price and stock",
+        "Suitable for ecommerce product detail testing"
+      ],
+      "highlights": [
+        "Shoes product",
+        "Calvin Klein item",
+        "Unique product image",
+        "Dynamic catalog data"
+      ],
+      "specifications": {
+        "Product Type": "Shoes",
+        "Brand": "Calvin Klein",
+        "Department": "Beauty",
+        "Category": "Fashion",
+        "Rating": "4.92"
+      },
+      "dosage": "Use as directed on packaging or by a healthcare professional.",
+      "warnings": [
+        "Review the product label before use.",
+        "Keep product in suitable storage condition.",
+        "Return policy depends on category and seller condition."
+      ],
+      "sideEffects": [],
+      "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+      "packageSize": "Standard Pack",
+      "weight": "",
+      "unit": "piece",
+      "country": "Bangladesh",
+      "expiry": "2028-12-31",
+      "rating": 4.9,
+      "reviewCount": 381,
+      "faq": [],
+      "tags": [
+        "womens-shoes",
+        "calvin klein",
+        "calvin klein heel shoes",
+        "beauty",
+        "fashion"
+      ],
+      "featured": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-07-23T04:47:05Z"
+    }
+  ],
+  "productCount": 2
+}
