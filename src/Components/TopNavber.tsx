@@ -23,131 +23,57 @@ import {
   UserRound,
   X,
 } from "lucide-react";
-import {
-  type FormEvent,
-  useEffect,
-  useState,
-} from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
-
 import CartDrawer from "./cart/CartDrawer";
 import styles from "./TopNavber.module.css";
 
 const nav = [
-  {
-    label: "All",
-    href: "/",
-    icon: <Home />,
-  },
-  {
-    label: "Store",
-    href: "/store",
-    icon: <Store />,
-  },
-  {
-    label: "Lab",
-    href: "/lab",
-    icon: <FlaskConical />,
-  },
-  {
-    label: "Doctor",
-    href: "/doctor",
-    icon: <Stethoscope />,
-  },
+  { label: "All", href: "/", icon: <Home /> },
+  { label: "Store", href: "/store", icon: <Store /> },
+  { label: "Lab", href: "/lab", icon: <FlaskConical /> },
+  { label: "Doctor", href: "/doctor", icon: <Stethoscope /> },
 ];
 
-const deliveryOptions = [
-  "Dhaka",
-  "Chattogram",
-  "Sylhet",
-  "Bangladesh",
-];
+const deliveryOptions = ["Dhaka", "Chattogram", "Sylhet", "Bangladesh"];
+const orderOptions = ["Medicines", "Lab test", "Doctor consult", "Health package"];
 
-const orderOptions = [
-  "Medicines",
-  "Lab test",
-  "Doctor consult",
-  "Health package",
-];
-
-type DropdownName =
-  | "location"
-  | "account"
-  | "order"
-  | null;
+type DropdownName = "location" | "account" | "order" | null;
 
 export default function TopNavber() {
   const path = usePathname();
   const router = useRouter();
-
-  const {
-    user,
-    logout,
-    requireAuth,
-    openLoginModal,
-  } = useAuth();
-
+  const { user, logout, requireAuth, openLoginModal } = useAuth();
   const { count } = useCart();
 
   const [query, setQuery] = useState("");
-  const [cartOpen, setCartOpen] =
-    useState(false);
-
-  const [drawerOpen, setDrawerOpen] =
-    useState(false);
-
-  const [dropdown, setDropdown] =
-    useState<DropdownName>(null);
+  const [cartOpen, setCartOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [dropdown, setDropdown] = useState<DropdownName>(null);
 
   useEffect(() => {
-    function closeOnEscape(
-      event: KeyboardEvent,
-    ) {
+    function closeOnEscape(event: KeyboardEvent) {
       if (event.key === "Escape") {
         setDropdown(null);
         setDrawerOpen(false);
       }
     }
 
-    document.addEventListener(
-      "keydown",
-      closeOnEscape,
-    );
-
-    return () => {
-      document.removeEventListener(
-        "keydown",
-        closeOnEscape,
-      );
-    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
   }, []);
 
-  function submitSearch(
-    event: FormEvent<HTMLFormElement>,
-  ) {
+  function submitSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
     const trimmedQuery = query.trim();
-
-    if (!trimmedQuery) {
-      return;
-    }
-
-    router.push(
-      `/search?q=${encodeURIComponent(
-        trimmedQuery,
-      )}`,
-    );
+    if (!trimmedQuery) return;
+    router.push(`/search?q=${encodeURIComponent(trimmedQuery)}`);
   }
 
-  function toggleDropdown(
-    name: Exclude<DropdownName, null>,
-  ) {
-    setDropdown((current) =>
-      current === name ? null : name,
-    );
+  function toggleDropdown(name: Exclude<DropdownName, null>) {
+    setDropdown((current) => (current === name ? null : name));
   }
 
   function handleAccountClick() {
@@ -157,10 +83,7 @@ export default function TopNavber() {
     }
 
     setDropdown(null);
-
-    openLoginModal(
-      "Login to manage your Arogga account.",
-    );
+    openLoginModal("Login to manage your Arogga account.");
   }
 
   function closeDrawerAndGo(href: string) {
@@ -168,41 +91,15 @@ export default function TopNavber() {
     router.push(href);
   }
 
-  function openProtectedRoute(
-    href: string,
-    reason: string,
-  ) {
+  function openProtectedRoute(href: string, reason: string) {
     setDropdown(null);
-
-    if (!requireAuth({ reason })) {
-      return;
-    }
-
+    if (!requireAuth({ reason })) return;
     router.push(href);
   }
 
   function openProtectedCart() {
-    const allowed = requireAuth({
-      reason:
-        "Login to view cart and add products.",
-    });
-
-    if (!allowed) {
-      return;
-    }
-
+    if (!requireAuth({ reason: "Login to view cart and add products." })) return;
     setCartOpen(true);
-  }
-
-  function isActiveRoute(href: string) {
-    if (href === "/") {
-      return path === "/";
-    }
-
-    return (
-      path === href ||
-      path.startsWith(`${href}/`)
-    );
   }
 
   return (
@@ -212,24 +109,18 @@ export default function TopNavber() {
           <button
             type="button"
             className={styles.menu}
-            onClick={() =>
-              setDrawerOpen(true)
-            }
+            onClick={() => setDrawerOpen(true)}
             aria-label="Open navigation menu"
           >
             <Menu />
           </button>
 
-          <Link
-            className={styles.logo}
-            href="/"
-            aria-label="Arogga home"
-          >
+          <Link className={styles.logo} href="/" aria-label="Arogga home">
             <Image
               src="/arogga-logo.svg"
               alt="Arogga"
-              width={158}
-              height={58}
+              width={220}
+              height={70}
               priority
               className={styles.logoImage}
             />
@@ -238,177 +129,76 @@ export default function TopNavber() {
           <div className={styles.dropdownWrap}>
             <button
               type="button"
-              className={[
-                styles.location,
-                dropdown === "location"
-                  ? styles.dropdownActive
-                  : "",
-              ].join(" ")}
-              onClick={() =>
-                toggleDropdown("location")
-              }
-              aria-expanded={
-                dropdown === "location"
-              }
+              className={`${styles.location} ${dropdown === "location" ? styles.dropdownActive : ""}`}
+              onClick={() => toggleDropdown("location")}
+              aria-expanded={dropdown === "location"}
             >
               <MapPin />
-
               <span>
-                Delivery To
-                <strong>Bangladesh</strong>
+                Delivery To<strong>Bangladesh</strong>
               </span>
-
               <ChevronDown />
             </button>
 
-            <div
-              className={[
-                styles.dropdownPanel,
-                dropdown === "location"
-                  ? styles.showDropdown
-                  : "",
-              ].join(" ")}
-            >
-              <div
-                className={styles.dropdownHeader}
-              >
-                <strong>
-                  Choose delivery area
-                </strong>
-
-                <small>
-                  Faster delivery with accurate
-                  location
-                </small>
+            <div className={`${styles.dropdownPanel} ${dropdown === "location" ? styles.showDropdown : ""}`}>
+              <div className={styles.dropdownHeader}>
+                <strong>Choose delivery area</strong>
+                <small>Faster delivery with accurate location</small>
               </div>
-
-              {deliveryOptions.map(
-                (option) => (
-                  <button
-                    type="button"
-                    key={option}
-                    onClick={() =>
-                      setDropdown(null)
-                    }
-                  >
-                    <MapPin />
-
-                    <span>{option}</span>
-
-                    <small>Available</small>
-                  </button>
-                ),
-              )}
+              {deliveryOptions.map((option) => (
+                <button type="button" key={option} onClick={() => setDropdown(null)}>
+                  <MapPin />
+                  <span>{option}</span>
+                  <small>Available</small>
+                </button>
+              ))}
             </div>
           </div>
 
-          <form
-            className={styles.search}
-            onSubmit={submitSearch}
-          >
+          <form className={styles.search} onSubmit={submitSearch}>
             <Search />
-
             <input
               value={query}
-              onChange={(event) =>
-                setQuery(event.target.value)
-              }
+              onChange={(event) => setQuery(event.target.value)}
               placeholder='Search "Products"'
               aria-label="Search products"
             />
-
-            <button type="submit">
-              Search
-            </button>
+            <button type="submit">Search</button>
           </form>
 
           <div className={styles.actions}>
-            <div
-              className={styles.dropdownWrap}
-            >
+            <div className={styles.dropdownWrap}>
               <button
                 type="button"
                 onClick={handleAccountClick}
-                className={
-                  dropdown === "account"
-                    ? styles.dropdownActive
-                    : ""
-                }
-                aria-expanded={
-                  dropdown === "account"
-                }
+                className={dropdown === "account" ? styles.dropdownActive : ""}
+                aria-expanded={dropdown === "account"}
               >
                 <UserRound />
-
                 <span>
-                  Account
-                  <strong>
-                    {user
-                      ? user.phone
-                      : "Login"}
-                  </strong>
+                  Account<strong>{user ? user.phone : "Login"}</strong>
                 </span>
               </button>
 
-              <div
-                className={[
-                  styles.dropdownPanel,
-                  styles.accountPanel,
-                  dropdown === "account"
-                    ? styles.showDropdown
-                    : "",
-                ].join(" ")}
-              >
-                <div
-                  className={styles.profileCard}
-                >
+              <div className={`${styles.dropdownPanel} ${styles.accountPanel} ${dropdown === "account" ? styles.showDropdown : ""}`}>
+                <div className={styles.profileCard}>
                   <span>
                     <UserRound />
                   </span>
-
                   <div>
-                    <strong>
-                      {user?.phone ??
-                        "Welcome"}
-                    </strong>
-
-                    <small>
-                      Manage your Arogga
-                      account
-                    </small>
+                    <strong>{user?.phone ?? "Welcome"}</strong>
+                    <small>Manage your Arogga account</small>
                   </div>
                 </div>
-
-                <Link
-                  href="/profile"
-                  onClick={() =>
-                    setDropdown(null)
-                  }
-                >
-                  <UserRound />
-                  Profile
+                <Link href="/profile" onClick={() => setDropdown(null)}>
+                  <UserRound /> Profile
                 </Link>
-
-                <Link
-                  href="/wishlist"
-                  onClick={() =>
-                    setDropdown(null)
-                  }
-                >
-                  <Heart />
-                  Wishlist
+                <Link href="/wishlist" onClick={() => setDropdown(null)}>
+                  <Heart /> Wishlist
                 </Link>
-
-                <Link
-                  href="/profile/orders"
-                  onClick={() =>
-                    setDropdown(null)
-                  }
-                >
-                  <Package />
-                  Orders
+                <Link href="/profile/orders" onClick={() => setDropdown(null)}>
+                  <Package /> Orders
                 </Link>
-
                 {user ? (
                   <button
                     type="button"
@@ -417,68 +207,35 @@ export default function TopNavber() {
                       setDropdown(null);
                     }}
                   >
-                    <LogOut />
-                    Logout
+                    <LogOut /> Logout
                   </button>
                 ) : null}
               </div>
             </div>
 
-            <Link
-              href="/profile/orders"
-              onClick={(event) => {
-                if (user) {
-                  return;
-                }
-
-                event.preventDefault();
-
-                openProtectedRoute(
-                  "/profile/orders",
-                  "Login to see your orders.",
-                );
-              }}
-            >
+            <Link href="/profile/orders" onClick={(event) => {
+              if (user) return;
+              event.preventDefault();
+              openProtectedRoute("/profile/orders", "Login to see your orders.");
+            }}>
               <Package />
-
               <span>
-                Orders
-                <strong>0</strong>
+                Orders<strong>0</strong>
               </span>
             </Link>
-
-            <Link
-              href="/profile/inbox"
-              onClick={(event) => {
-                if (user) {
-                  return;
-                }
-
-                event.preventDefault();
-
-                openProtectedRoute(
-                  "/profile/inbox",
-                  "Login to read your inbox messages.",
-                );
-              }}
-            >
+            <Link href="/profile/inbox" onClick={(event) => {
+              if (user) return;
+              event.preventDefault();
+              openProtectedRoute("/profile/inbox", "Login to read your inbox messages.");
+            }}>
               <Inbox />
-
               <span>
-                Inbox
-                <strong>0</strong>
+                Inbox<strong>0</strong>
               </span>
             </Link>
-
-            <button
-              type="button"
-              onClick={openProtectedCart}
-              className={styles.cart}
-            >
+            <button type="button" onClick={openProtectedCart} className={styles.cart}>
               <ShoppingCart />
-
               <b>{count}</b>
-
               <span>Cart</span>
             </button>
           </div>
@@ -486,82 +243,38 @@ export default function TopNavber() {
 
         <div className={styles.bottom}>
           <Link href="/offers">
-            <Sparkles />
-
-            Flash Sale
-
-            <span>
-              Save upto 74%
-            </span>
+            <Sparkles /> Flash Sale <span>Save upto 74%</span>
           </Link>
-
           <nav aria-label="Primary navigation">
             {nav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={
-                  isActiveRoute(item.href)
-                    ? styles.active
-                    : ""
-                }
+                className={path === item.href || path.startsWith(`${item.href}/`) ? styles.active : ""}
               >
                 {item.icon}
-
                 <span>{item.label}</span>
               </Link>
             ))}
           </nav>
-
-          <div
-            className={styles.dropdownWrap}
-          >
+          <div className={styles.dropdownWrap}>
             <button
               type="button"
-              className={[
-                styles.orderButton,
-                dropdown === "order"
-                  ? styles.dropdownActive
-                  : "",
-              ].join(" ")}
-              onClick={() =>
-                toggleDropdown("order")
-              }
-              aria-expanded={
-                dropdown === "order"
-              }
+              className={`${styles.orderButton} ${dropdown === "order" ? styles.dropdownActive : ""}`}
+              onClick={() => toggleDropdown("order")}
+              aria-expanded={dropdown === "order"}
             >
-              Order By
-              <ChevronDown />
+              Order By <ChevronDown />
             </button>
-
-            <div
-              className={[
-                styles.dropdownPanel,
-                styles.orderPanel,
-                dropdown === "order"
-                  ? styles.showDropdown
-                  : "",
-              ].join(" ")}
-            >
-              {orderOptions.map(
-                (option) => (
-                  <button
-                    type="button"
-                    key={option}
-                    onClick={() => {
-                      setDropdown(null);
-
-                      requireAuth({
-                        reason: `Login to continue with ${option}.`,
-                      });
-                    }}
-                  >
-                    <Clock3 />
-                    {option}
-                  </button>
-                ),
-              )}
+            <div className={`${styles.dropdownPanel} ${styles.orderPanel} ${dropdown === "order" ? styles.showDropdown : ""}`}>
+              {orderOptions.map((option) => (
+                <button type="button" key={option} onClick={() => {
+                  setDropdown(null);
+                  if (!requireAuth({ reason: `Login to continue with ${option}.` })) return;
+                }}>
+                  <Clock3 /> {option}
+                </button>
+              ))}
             </div>
           </div>
         </div>
@@ -570,38 +283,17 @@ export default function TopNavber() {
       <button
         type="button"
         aria-label="Close navigation menu"
-        className={[
-          styles.mobileShade,
-          drawerOpen ? styles.open : "",
-        ].join(" ")}
-        onClick={() =>
-          setDrawerOpen(false)
-        }
+        className={`${styles.mobileShade} ${drawerOpen ? styles.open : ""}`}
+        onClick={() => setDrawerOpen(false)}
       />
 
-      <aside
-        className={[
-          styles.mobileDrawer,
-          drawerOpen ? styles.open : "",
-        ].join(" ")}
-        aria-hidden={!drawerOpen}
-      >
+      <aside className={`${styles.mobileDrawer} ${drawerOpen ? styles.open : ""}`} aria-hidden={!drawerOpen}>
         <header>
           <div>
             <span>Menu</span>
-
-            <small>
-              Browse Arogga smoothly
-            </small>
+            <small>Browse Arogga smoothly</small>
           </div>
-
-          <button
-            type="button"
-            onClick={() =>
-              setDrawerOpen(false)
-            }
-            aria-label="Close navigation menu"
-          >
+          <button type="button" onClick={() => setDrawerOpen(false)} aria-label="Close navigation menu">
             <X />
           </button>
         </header>
@@ -610,92 +302,44 @@ export default function TopNavber() {
           type="button"
           className={styles.drawerAccount}
           onClick={() => {
-            if (user) {
-              closeDrawerAndGo("/profile");
-              return;
+            if (user) closeDrawerAndGo("/profile");
+            else {
+              setDrawerOpen(false);
+              openLoginModal("Login to manage your Arogga account.");
             }
-
-            setDrawerOpen(false);
-
-            openLoginModal(
-              "Login to manage your Arogga account.",
-            );
           }}
         >
           <UserRound />
-
-          <span>
-            {user
-              ? user.phone
-              : "Login / Register"}
-          </span>
-
+          <span>{user ? user.phone : "Login / Register"}</span>
           <ShieldCheck />
         </button>
 
         {nav.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            onClick={() =>
-              setDrawerOpen(false)
-            }
-          >
+          <Link key={item.href} href={item.href} onClick={() => setDrawerOpen(false)}>
             {item.icon}
             {item.label}
           </Link>
         ))}
-
-        <button
-          type="button"
-          onClick={() => {
-            setDrawerOpen(false);
-
-            openProtectedRoute(
-              "/profile/orders",
-              "Login to see your orders.",
-            );
-          }}
-        >
-          <Package />
-          Orders
+        <button type="button" onClick={() => {
+          setDrawerOpen(false);
+          openProtectedRoute("/profile/orders", "Login to see your orders.");
+        }}>
+          <Package /> Orders
         </button>
-
-        <button
-          type="button"
-          onClick={() => {
-            setDrawerOpen(false);
-
-            openProtectedRoute(
-              "/profile/inbox",
-              "Login to read your inbox messages.",
-            );
-          }}
-        >
-          <Inbox />
-          Inbox
+        <button type="button" onClick={() => {
+          setDrawerOpen(false);
+          openProtectedRoute("/profile/inbox", "Login to read your inbox messages.");
+        }}>
+          <Inbox /> Inbox
         </button>
-
         {user ? (
-          <button
-            type="button"
-            onClick={() => {
-              logout();
-              setDrawerOpen(false);
-            }}
-          >
-            <LogOut />
-            Logout
+          <button type="button" onClick={logout}>
+            <LogOut /> Logout
           </button>
         ) : null}
       </aside>
 
-      <CartDrawer
-        open={cartOpen}
-        onClose={() =>
-          setCartOpen(false)
-        }
-      />
+      <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
     </>
   );
 }

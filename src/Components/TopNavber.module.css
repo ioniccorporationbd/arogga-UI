@@ -19,13 +19,22 @@
 }
 
 .logo {
+  display: inline-flex;
   flex: none;
-  color: #0a7e78;
-  font-size: 36px;
-  font-weight: 950;
-  letter-spacing: -4px;
+  align-items: center;
+  justify-content: center;
+  width: clamp(126px, 12vw, 174px);
+  min-height: 48px;
   text-decoration: none;
   transition: transform 180ms ease, filter 180ms ease;
+}
+
+.logoImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 54px;
+  object-fit: contain;
 }
 
 .logo:hover {
@@ -33,18 +42,10 @@
   filter: drop-shadow(0 8px 16px rgba(10, 126, 120, 0.16));
 }
 
-.logo span {
-  display: inline-grid;
-  width: 29px;
-  height: 29px;
-  place-items: center;
-  margin: 0 1px;
-  border-radius: 50%;
-  color: #fff;
-  background: linear-gradient(135deg, #ff5a60, #d92d20);
-  box-shadow: 0 9px 18px -10px rgba(217, 45, 32, 0.95);
-  font-size: 23px;
-  letter-spacing: 0;
+.logo:focus-visible {
+  outline: 2px solid #087b75;
+  outline-offset: 5px;
+  border-radius: 14px;
 }
 
 .dropdownWrap {
@@ -486,14 +487,7 @@
   }
 
   .logo {
-    font-size: 29px;
-    letter-spacing: -3px;
-  }
-
-  .logo span {
-    width: 25px;
-    height: 25px;
-    font-size: 20px;
+    width: clamp(118px, 30vw, 150px);
   }
 
   .menu {
@@ -653,7 +647,7 @@
   }
 
   .logo {
-    font-size: 27px;
+    width: 126px;
   }
 }
 
@@ -691,16 +685,6 @@
 .top {
   min-height: 70px;
   gap: 12px;
-}
-
-.logo {
-  font-size: 32px;
-}
-
-.logo span {
-  width: 25px;
-  height: 25px;
-  font-size: 20px;
 }
 
 .location,
@@ -797,7 +781,7 @@
   .header { position: sticky; top: 0; padding-top: env(safe-area-inset-top); }
   .top { width: calc(100% - 20px); gap: 8px; }
   .menu { display: grid !important; width: 44px; height: 44px; }
-  .logo { font-size: clamp(24px, 9vw, 30px); letter-spacing: -3px; }
+  .logo { width: clamp(108px, 32vw, 136px); }
   .location, .actions > .dropdownWrap, .actions > a, .bottom > a, .bottom .dropdownWrap { display: none !important; }
   .actions { margin-left: auto; gap: 6px; }
   .actions .cart { display: inline-flex !important; min-width: 44px; height: 44px; padding-inline: 10px; }
@@ -809,7 +793,7 @@
 }
 @media (max-width: 360px) {
   .top { width: calc(100% - 16px); }
-  .logo span { width: 22px; height: 22px; font-size: 18px; }
+  .logo { width: 104px; }
   .search button { padding-inline: 9px; }
 }
 
