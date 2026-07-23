@@ -812,3 +812,9 @@
   .logo span { width: 22px; height: 22px; font-size: 18px; }
   .search button { padding-inline: 9px; }
 }
+
+
+/* Ultra-wide centered premium header shell */
+@media(min-width:1920px){.top{width:min(1760px,calc(100% - 96px))}.bottom{padding-inline:calc((100vw - min(1760px,calc(100vw - 96px)))/2)}}
+@media(min-width:2560px){.top{width:min(1840px,calc(100% - 128px))}.bottom{padding-inline:calc((100vw - min(1840px,calc(100vw - 128px)))/2)}}
+@media(min-width:3840px){.top{width:min(1920px,calc(100% - 160px))}.bottom{padding-inline:calc((100vw - min(1920px,calc(100vw - 160px)))/2)}}

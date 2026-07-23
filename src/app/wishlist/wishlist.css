@@ -428,3 +428,16 @@
 .wish-page{width:min(1640px,calc(100% - clamp(20px,4vw,64px)))!important}.wish-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))!important}.wish-card{min-width:0}.wish-actions{display:flex;flex-wrap:wrap}.wish-actions>*{min-height:44px;flex:1 1 120px}
 @media(max-width:767px){.wish-page{width:min(100%,calc(100% - 20px))!important;margin-top:18px}.wish-hero{align-items:flex-start;flex-direction:column;padding:18px;border-radius:20px}.wish-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))!important;gap:12px}.wish-card-body{padding:11px}.wish-title{font-size:13px}.wish-card-info strong{font-size:16px}}
 @media(max-width:340px){.wish-grid{grid-template-columns:1fr!important}}
+
+
+/* Exact wishlist/ecommerce grid columns requested for 320px–3840px */
+@media(max-width:339px){.wish-grid{grid-template-columns:1fr!important}}
+@media(min-width:340px) and (max-width:575px){.wish-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(min-width:576px) and (max-width:767px){.wish-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(min-width:768px) and (max-width:1023px){.wish-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(min-width:1024px) and (max-width:1279px){.wish-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
+@media(min-width:1280px) and (max-width:1439px){.wish-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
+@media(min-width:1440px) and (max-width:1919px){.wish-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}}
+@media(min-width:1920px){.wish-page{width:min(1760px,calc(100% - 96px))!important}.wish-grid{grid-template-columns:repeat(6,minmax(0,1fr))!important}}
+@media(min-width:2560px){.wish-page{width:min(1840px,calc(100% - 128px))!important}}
+@media(min-width:3840px){.wish-page{width:min(1920px,calc(100% - 160px))!important}}

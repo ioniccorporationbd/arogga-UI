@@ -843,3 +843,9 @@
   .tab { min-height: 46px; padding-inline: 11px; font-size: 12px; }
   .megaMenu { max-height: 86dvh; }
 }
+
+
+/* Ultra-wide centered professional category shell */
+@media(min-width:1920px){.shell{width:min(1760px,calc(100% - 96px))}}
+@media(min-width:2560px){.shell{width:min(1840px,calc(100% - 128px))}}
+@media(min-width:3840px){.shell{width:min(1920px,calc(100% - 160px))}}

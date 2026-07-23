@@ -1192,11 +1192,11 @@ a[href] {
 
 
 /* =========================================================
-   RESPONSIVE PRODUCTION FOUNDATION: 300px–2000px
-   Mobile-first hardening layer for every route/component.
+   RESPONSIVE PRODUCTION FOUNDATION: 320px–3840px
+   Mobile-first hardening layer for every route/component, including 2K/4K displays.
 ========================================================= */
 :root {
-  --rs-max: 1640px;
+  --rs-max: 1760px;
   --rs-gutter: clamp(12px, 2.2vw, 32px);
   --rs-section-y: clamp(32px, 5vw, 104px);
   --rs-touch: 44px;
@@ -1360,5 +1360,109 @@ table {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* =========================================================
+   PREMIUM 320px–3840px ECOMMERCE RESPONSIVE LAYER
+   World-class shopping layout rules for Full HD, 2K and 4K.
+========================================================= */
+:root {
+  --rs-product-min: 210px;
+  --rs-product-gap: clamp(10px, 1.4vw, 22px);
+  --rs-card-radius: clamp(16px, 1vw, 24px);
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --rs-max: 1760px;
+    --rs-gutter: 48px;
+    --rs-product-min: 238px;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --rs-max: 1840px;
+    --rs-gutter: 64px;
+  }
+}
+
+@media (min-width: 3840px) {
+  :root {
+    --rs-max: 1920px;
+    --rs-gutter: 80px;
+  }
+}
+
+[class*="product-card"],
+[class*="ProductCard"],
+.productCard,
+.wish-card,
+.pd-record,
+article {
+  min-width: 0;
+}
+
+[class*="product-name"],
+[class*="ProductName"],
+.productName,
+.wish-title,
+.pd-record h3 {
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+}
+
+[class*="product-image"],
+[class*="ProductImage"],
+.productImage,
+.imageWrap img,
+.wish-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+[class*="product-grid"],
+[class*="products-grid"],
+[class*="ProductGrid"],
+.product-grid,
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--rs-product-min)), 1fr));
+  gap: var(--rs-product-gap);
+}
+
+@media (max-width: 575px) {
+  [class*="product-grid"],
+  [class*="products-grid"],
+  [class*="ProductGrid"],
+  .product-grid,
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 145px), 1fr));
+  }
+}
+
+@media (max-width: 339px) {
+  [class*="product-grid"],
+  [class*="products-grid"],
+  [class*="ProductGrid"],
+  .product-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  [class*="product-card"]:hover,
+  .productCard:hover,
+  .wish-card:hover {
+    will-change: transform;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 620px) {
+  .site-main {
+    scroll-padding-top: 72px;
   }
 }
