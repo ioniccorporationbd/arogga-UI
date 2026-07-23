@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
@@ -115,7 +116,14 @@ export default function TopNavber() {
           </button>
 
           <Link className={styles.logo} href="/" aria-label="Arogga home">
-            ar<span>+</span>gga
+            <Image
+              src="/arogga-logo.svg"
+              alt="Arogga"
+              width={220}
+              height={70}
+              priority
+              className={styles.logoImage}
+            />
           </Link>
 
           <div className={styles.dropdownWrap}>

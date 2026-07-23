@@ -38,7 +38,7 @@ type FooterSection = {
 type NewsletterStatus = "idle" | "success" | "error";
 
 const IMAGE_URLS = {
-  logo: "https://www.arogga.com/assets/arogga-logo.svg",
+  logo: "/arogga-logo.svg",
 
   authenticity:
     "https://www.arogga.com/assets/svg/icon-v2/footer/authenticity.svg",
@@ -294,18 +294,14 @@ export default function Footer() {
                 aria-label="Arogga home"
                 className="group inline-flex items-center gap-3 rounded-[20px] border border-[#d9ebe7] bg-gradient-to-br from-white via-[#f6fffd] to-[#edf9f7] p-3 pr-5 shadow-[0_20px_42px_-34px_rgba(8,123,117,0.55)] outline-none transition-all duration-500 hover:-translate-y-1 hover:border-[#9ad5cd] hover:shadow-[0_28px_58px_-34px_rgba(8,123,117,0.68)] focus-visible:ring-2 focus-visible:ring-[#087b75] focus-visible:ring-offset-4"
               >
-                <span className="relative grid h-16 w-16 place-items-center overflow-hidden rounded-[18px] bg-[#087b75] text-white shadow-[inset_0_1px_0_rgba(255,255,255,.28)] transition-transform duration-500 group-hover:rotate-[-3deg] group-hover:scale-105">
-                  <span aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_28%_22%,rgba(255,255,255,.42),transparent_28%),linear-gradient(135deg,#0aa69b,#087b75)]" />
-                  <span className="relative text-[28px] font-black tracking-[-0.12em]">a+</span>
-                </span>
                 <span>
                   <img
                     src={IMAGE_URLS.logo}
                     alt="Arogga"
-                    width={156}
-                    height={52}
+                    width={220}
+                    height={70}
                     draggable={false}
-                    className="h-[38px] w-auto object-contain transition-transform duration-500 group-hover:translate-x-0.5 sm:h-[42px]"
+                    className="h-[44px] w-auto object-contain transition-transform duration-500 group-hover:translate-x-0.5 sm:h-[52px]"
                   />
                   <span className="mt-1 block text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#087b75]">Care made simple</span>
                 </span>
