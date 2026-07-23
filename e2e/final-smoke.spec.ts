@@ -9,6 +9,10 @@ test("core local ecommerce routes render and expose drawers", async ({ page }) =
   await expect(page.locator("body")).toContainText(/Orders|Login|Account/i);
   await page.goto("/checkout");
   await expect(page.locator("body")).toContainText(/Checkout|Login/i);
+  await page.goto("/lab/tests");
+  await expect(page.locator("body")).toContainText(/Book Lab Tests from Home|CBC/i);
+  await page.goto("/lab/tests/cbc-1000");
+  await expect(page.locator("body")).toContainText(/CBC|Book Test|Sample Type/i);
 });
 
 test("catalog API paginates card-sized product responses", async ({ request }) => {
@@ -19,4 +23,14 @@ test("catalog API paginates card-sized product responses", async ({ request }) =
   expect(data.items[0]).toHaveProperty("id");
   expect(data.items[0]).toHaveProperty("image");
   expect(data.items[0]).not.toHaveProperty("description");
+});
+
+
+test("lab API serves independent paginated lab tests", async ({ request }) => {
+  const response = await request.get("/api/lab/tests?limit=5&q=cbc");
+  expect(response.ok()).toBeTruthy();
+  const data = await response.json();
+  expect(data.items.length).toBeGreaterThan(0);
+  expect(data.items.length).toBeLessThanOrEqual(5);
+  expect(data.facets.centers.length).toBeGreaterThanOrEqual(10);
 });
