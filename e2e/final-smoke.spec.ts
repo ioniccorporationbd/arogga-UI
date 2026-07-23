@@ -9,6 +9,13 @@ test("core local ecommerce routes render and expose drawers", async ({ page }) =
   await expect(page.locator("body")).toContainText(/Orders|Login|Account/i);
   await page.goto("/checkout");
   await expect(page.locator("body")).toContainText(/Checkout|Login/i);
+  await page.goto("/lab");
+  await expect(page.locator("body")).toContainText(/All Lab Tests|Book lab tests with trusted diagnostic partners/i);
+  await expect(page.locator(".lab-test-row").first()).toBeVisible({ timeout: 15000 });
+  await expect(page.locator(".lab-test-row")).toHaveCount(220, { timeout: 15000 });
+  await page.locator(".lab-test-row a[href^='/lab/tests/']").first().click();
+  await expect(page).toHaveURL(/\/lab\/tests\//);
+  await expect(page.locator("body")).toContainText(/Book Test|Sample Type/i);
   await page.goto("/lab/tests");
   await expect(page.locator("body")).toContainText(/Book Lab Tests from Home|CBC/i);
   await page.goto("/lab/tests/cbc-1000");

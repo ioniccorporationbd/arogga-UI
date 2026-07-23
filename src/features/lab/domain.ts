@@ -72,7 +72,7 @@ function includes(value: string, q: string) {
 
 export function queryLabTests(input: LabTest[], query: LabQuery = {}) {
   const page = Math.max(1, query.page || 1);
-  const limit = Math.min(60, Math.max(1, query.limit || 20));
+  const limit = Math.min(240, Math.max(1, query.limit || 20));
   const q = query.q?.trim() || "";
   let items = [...input];
 
