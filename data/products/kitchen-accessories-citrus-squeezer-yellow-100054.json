@@ -1,0 +1,507 @@
+{
+  "id": "100054",
+  "uuid": "dummy-catalog-100054",
+  "productGroupId": "group-5013",
+  "sourceProductId": "54",
+  "sku": "HOM-KIT-100054",
+  "barcode": "8800000100054",
+  "slug": "kitchen-accessories-citrus-squeezer-yellow-100054",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Kitchen Accessories Citrus Squeezer Yellow",
+  "shortName": "Citrus Squeezer Yellow",
+  "subtitle": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful",
+  "brand": {
+    "id": "brand-kitchen-accessories",
+    "name": "Kitchen Accessories",
+    "slug": "kitchen-accessories",
+    "logo": null,
+    "manufacturer": "Kitchen Accessories",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "homecare",
+      "name": "Homecare",
+      "slug": "homecare"
+    },
+    "category": {
+      "id": "kitchen-essentials",
+      "name": "Kitchen Essentials",
+      "slug": "kitchen-essentials"
+    },
+    "subCategory": {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "slug": "kitchen"
+    },
+    "collections": [
+      {
+        "id": "homecare-collection",
+        "name": "Homecare Collection",
+        "slug": "homecare-collection"
+      }
+    ],
+    "tags": [
+      "kitchen-accessories",
+      "kitchen accessories",
+      "citrus squeezer yellow",
+      "homecare",
+      "kitchen essentials"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
+    "description": "Kitchen Accessories Citrus Squeezer Yellow is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
+    "highlights": [
+      "Kitchen product",
+      "Kitchen Accessories item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Kitchen"
+      },
+      {
+        "title": "Brand",
+        "value": "Kitchen Accessories"
+      },
+      {
+        "title": "Department",
+        "value": "Homecare"
+      },
+      {
+        "title": "Category",
+        "value": "Kitchen Essentials"
+      },
+      {
+        "title": "Rating",
+        "value": "4.63"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 1124,
+    "salePrice": 989,
+    "costPrice": 3.71,
+    "compareAtPrice": 1124,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 12,
+      "percentage": 12,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 989,
+      "maximum": 1124
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 53,
+    "reservedQuantity": 5,
+    "availableQuantity": 22,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100054",
+      "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+      "alt": "Kitchen Accessories Citrus Squeezer Yellow",
+      "title": "Kitchen Accessories Citrus Squeezer Yellow",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100054-1",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+        "alt": "Kitchen Accessories Citrus Squeezer Yellow image 1",
+        "title": "Kitchen Accessories Citrus Squeezer Yellow image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100054-2",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp",
+        "alt": "Kitchen Accessories Citrus Squeezer Yellow image 2",
+        "title": "Kitchen Accessories Citrus Squeezer Yellow image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100054-3",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp?view=3",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp?view=3",
+        "alt": "Kitchen Accessories Citrus Squeezer Yellow image 3",
+        "title": "Kitchen Accessories Citrus Squeezer Yellow image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100054-4",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp?view=4",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp?view=4",
+        "alt": "Kitchen Accessories Citrus Squeezer Yellow image 4",
+        "title": "Kitchen Accessories Citrus Squeezer Yellow image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100054-5",
+        "url": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp?view=5",
+        "alt": "Kitchen Accessories Citrus Squeezer Yellow image 5",
+        "title": "Kitchen Accessories Citrus Squeezer Yellow image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/kitchen-essentials.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+      "title": "Kitchen Accessories Citrus Squeezer Yellow product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "2 year warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100054-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Kitchen Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100054-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Kitchen Essentials",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100054-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 3-5 business days",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": false,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 2,
+      "estimatedMaximumDays": 4,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 4.6,
+    "count": 411,
+    "verifiedPurchaseCount": 295,
+    "distribution": {
+      "5": 287,
+      "4": 73,
+      "3": 48,
+      "2": 1,
+      "1": 2
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 10,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Kitchen Accessories Citrus Squeezer Yellow Online in Bangladesh | Arogga",
+    "metaDescription": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
+    "keywords": [
+      "Kitchen Accessories Citrus Squeezer Yellow",
+      "Kitchen Accessories",
+      "Kitchen Essentials",
+      "Homecare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100054",
+    "openGraph": {
+      "title": "Buy Kitchen Accessories Citrus Squeezer Yellow Online in Bangladesh | Arogga",
+      "description": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
+      "image": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100054",
+    "api": "/api/products/100054",
+    "source": "https://dummyjson.com/products/54"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 23455,
+    "salesCount": 226,
+    "wishlistCount": 709,
+    "cartAdditionCount": 1061,
+    "conversionRate": 7.28
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100054,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Kitchen Accessories",
+  "genericName": "Citrus Squeezer Yellow",
+  "category": "Kitchen Essentials",
+  "subcategory": "Kitchen",
+  "type": "simple",
+  "price": 1124,
+  "discountPrice": 989,
+  "discountPercentage": 12,
+  "currency": "BDT",
+  "stock": 22,
+  "sold": 226,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp?view=3",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp?view=4",
+    "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/thumbnail.webp",
+  "video": "/videos/catalog/kitchen-essentials.mp4",
+  "description": "Kitchen Accessories Citrus Squeezer Yellow is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
+  "shortDescription": "The Citrus Squeezer in Yellow is a handy tool for extracting juice from citrus fruits. Its vibrant color adds a cheerful touch to your kitchen gadgets.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Kitchen product",
+    "Kitchen Accessories item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Kitchen",
+    "Brand": "Kitchen Accessories",
+    "Department": "Homecare",
+    "Category": "Kitchen Essentials",
+    "Rating": "4.63"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 4.6,
+  "reviewCount": 411,
+  "faq": [],
+  "tags": [
+    "kitchen-accessories",
+    "kitchen accessories",
+    "citrus squeezer yellow",
+    "homecare",
+    "kitchen essentials"
+  ],
+  "featured": false,
+  "bestSeller": false,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

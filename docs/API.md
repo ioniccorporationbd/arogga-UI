@@ -1,27 +1,29 @@
-# API
+Updated: 2026-07-23
 
-## Auth
+Branch: test-branch
 
-| Method | Route | Status |
-|---|---|---|
-| `POST` | `/api/auth/request-otp` | local/demo OTP, rate-limit hook |
-| `POST` | `/api/auth/verify-otp` | validates demo OTP and sets HttpOnly session cookie |
-| `POST` | `/api/auth/logout` | clears cookies |
-| `GET` | `/api/auth/session` | returns session user from cookie |
-| `DELETE` | `/api/auth/session` | clears session |
+# API Inventory
 
-## Catalog
+- `/api/auth/logout`
+- `/api/auth/request-otp`
+- `/api/auth/session`
+- `/api/auth/verify-otp`
+- `/api/cart/recalculate`
+- `/api/catalog/products`
+- `/api/catalog/suggest`
+- `/api/orders`
+- `/api/orders/[orderId]`
+- `/api/orders/[orderId]/buy-again`
+- `/api/orders/[orderId]/cancel`
+- `/api/orders/[orderId]/invoice`
+- `/api/orders/[orderId]/return`
+- `/api/orders/[orderId]/review`
+- `/api/orders/[orderId]/tracking`
+- `/api/products/search`
+- `/api/profile/[[...section]]`
 
-| Method | Route | Status |
-|---|---|---|
-| `GET` | `/api/catalog/products` | local JSON index, filter/sort/pagination |
-| `GET` | `/api/catalog/suggest` | local JSON index suggestions |
-| `GET` | `/api/products/search` | existing search route preserved |
-
-## Orders/profile
-
-Existing local API routes remain under `/api/orders` and `/api/profile`. They are not production authority yet and should be moved behind repositories/server validation before external checkout/payment launch.
-
-## Environment
-
-See `.env.example` for `DATA_SOURCE`, `API_BASE_URL`, OTP, payment, search and analytics placeholders.
+Important endpoints:
+- `POST /api/cart/recalculate` recalculates trusted local cart totals.
+- `GET /api/catalog/products` returns paginated card-sized product responses.
+- `GET /api/catalog/suggest` returns search suggestions.
+- Auth endpoints use session cookies, not client-provided phone headers.

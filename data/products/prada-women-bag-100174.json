@@ -1,0 +1,507 @@
+{
+  "id": "100174",
+  "uuid": "dummy-catalog-100174",
+  "productGroupId": "group-5043",
+  "sourceProductId": "174",
+  "sku": "BEA-FAS-100174",
+  "barcode": "8800000100174",
+  "slug": "prada-women-bag-100174",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Prada Women Bag",
+  "shortName": "Prada Women Bag",
+  "subtitle": "The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the ",
+  "brand": {
+    "id": "brand-prada",
+    "name": "Prada",
+    "slug": "prada",
+    "logo": null,
+    "manufacturer": "Prada",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "beauty",
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "category": {
+      "id": "fashion-accessories",
+      "name": "Fashion Accessories",
+      "slug": "fashion-accessories"
+    },
+    "subCategory": {
+      "id": "bags",
+      "name": "Bags",
+      "slug": "bags"
+    },
+    "collections": [
+      {
+        "id": "beauty-collection",
+        "name": "Beauty Collection",
+        "slug": "beauty-collection"
+      }
+    ],
+    "tags": [
+      "womens-bags",
+      "prada",
+      "prada women bag",
+      "beauty",
+      "fashion accessories"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the Prada logo, it's a statement piece for fashion enthusiasts.",
+    "description": "Prada Women Bag is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the Prada logo, it's a statement piece for fashion enthusiasts.",
+    "highlights": [
+      "Bags product",
+      "Prada item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Bags"
+      },
+      {
+        "title": "Brand",
+        "value": "Prada"
+      },
+      {
+        "title": "Department",
+        "value": "Beauty"
+      },
+      {
+        "title": "Category",
+        "value": "Fashion Accessories"
+      },
+      {
+        "title": "Rating",
+        "value": "2.71"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 74999,
+    "salePrice": 64499,
+    "costPrice": 3.71,
+    "compareAtPrice": 74999,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 14,
+      "percentage": 14,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 64499,
+      "maximum": 74999
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 94,
+    "reservedQuantity": 3,
+    "availableQuantity": 75,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100174",
+      "url": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
+      "alt": "Prada Women Bag",
+      "title": "Prada Women Bag",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100174-1",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
+        "alt": "Prada Women Bag image 1",
+        "title": "Prada Women Bag image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100174-2",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/1.webp",
+        "alt": "Prada Women Bag image 2",
+        "title": "Prada Women Bag image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100174-3",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/2.webp",
+        "alt": "Prada Women Bag image 3",
+        "title": "Prada Women Bag image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100174-4",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/3.webp",
+        "alt": "Prada Women Bag image 4",
+        "title": "Prada Women Bag image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100174-5",
+        "url": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp?view=5",
+        "alt": "Prada Women Bag image 5",
+        "title": "Prada Women Bag image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/fashion-accessories.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
+      "title": "Prada Women Bag product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "3 year warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100174-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Prada",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100174-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Fashion Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100174-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1-2 business days",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 2,
+      "estimatedMaximumDays": 4,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 2.7,
+    "count": 511,
+    "verifiedPurchaseCount": 367,
+    "distribution": {
+      "5": 209,
+      "4": 91,
+      "3": 204,
+      "2": 5,
+      "1": 2
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 7,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Prada Women Bag Online in Bangladesh | Arogga",
+    "metaDescription": "The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the Prada logo, it's a statement piece for fashion enthusiasts.",
+    "keywords": [
+      "Prada Women Bag",
+      "Prada",
+      "Fashion Accessories",
+      "Beauty",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100174",
+    "openGraph": {
+      "title": "Buy Prada Women Bag Online in Bangladesh | Arogga",
+      "description": "The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the Prada logo, it's a statement piece for fashion enthusiasts.",
+      "image": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100174",
+    "api": "/api/products/100174",
+    "source": "https://dummyjson.com/products/174"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 19257,
+    "salesCount": 437,
+    "wishlistCount": 275,
+    "cartAdditionCount": 1268,
+    "conversionRate": 8.26
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100174,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Prada",
+  "genericName": "Prada Women Bag",
+  "category": "Fashion Accessories",
+  "subcategory": "Bags",
+  "type": "simple",
+  "price": 74999,
+  "discountPrice": 64499,
+  "discountPercentage": 14,
+  "currency": "BDT",
+  "stock": 75,
+  "sold": 437,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/1.webp",
+    "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/2.webp",
+    "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/3.webp",
+    "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
+  "video": "/videos/catalog/fashion-accessories.mp4",
+  "description": "Prada Women Bag is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the Prada logo, it's a statement piece for fashion enthusiasts.",
+  "shortDescription": "The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the Prada logo, it's a statement piece for fashion enthusiasts.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Bags product",
+    "Prada item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Bags",
+    "Brand": "Prada",
+    "Department": "Beauty",
+    "Category": "Fashion Accessories",
+    "Rating": "2.71"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 2.7,
+  "reviewCount": 511,
+  "faq": [],
+  "tags": [
+    "womens-bags",
+    "prada",
+    "prada women bag",
+    "beauty",
+    "fashion accessories"
+  ],
+  "featured": false,
+  "bestSeller": false,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

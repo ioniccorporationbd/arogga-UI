@@ -1,0 +1,507 @@
+{
+  "id": "100129",
+  "uuid": "dummy-catalog-100129",
+  "productGroupId": "group-5032",
+  "sourceProductId": "129",
+  "sku": "HEA-DIG-100129",
+  "barcode": "8800000100129",
+  "slug": "realme-x-100129",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Realme X",
+  "shortName": "Realme X",
+  "subtitle": "The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of pe",
+  "brand": {
+    "id": "brand-realme",
+    "name": "Realme",
+    "slug": "realme",
+    "logo": null,
+    "manufacturer": "Realme",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "slug": "healthcare"
+    },
+    "category": {
+      "id": "digital-devices",
+      "name": "Digital Devices",
+      "slug": "digital-devices"
+    },
+    "subCategory": {
+      "id": "smartphones",
+      "name": "Smartphones",
+      "slug": "smartphones"
+    },
+    "collections": [
+      {
+        "id": "healthcare-collection",
+        "name": "Healthcare Collection",
+        "slug": "healthcare-collection"
+      }
+    ],
+    "tags": [
+      "smartphones",
+      "realme",
+      "realme x",
+      "healthcare",
+      "digital devices"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
+    "description": "Realme X is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
+    "highlights": [
+      "Smartphones product",
+      "Realme item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Smartphones"
+      },
+      {
+        "title": "Brand",
+        "value": "Realme"
+      },
+      {
+        "title": "Department",
+        "value": "Healthcare"
+      },
+      {
+        "title": "Category",
+        "value": "Digital Devices"
+      },
+      {
+        "title": "Rating",
+        "value": "3.7"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 37499,
+    "salePrice": 34874,
+    "costPrice": 3.71,
+    "compareAtPrice": 37499,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 7,
+      "percentage": 7,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 34874,
+      "maximum": 37499
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 19,
+    "reservedQuantity": 0,
+    "availableQuantity": 12,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100129",
+      "url": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+      "alt": "Realme X",
+      "title": "Realme X",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100129-1",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+        "alt": "Realme X image 1",
+        "title": "Realme X image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100129-2",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/1.webp",
+        "alt": "Realme X image 2",
+        "title": "Realme X image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100129-3",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/2.webp",
+        "alt": "Realme X image 3",
+        "title": "Realme X image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100129-4",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/3.webp",
+        "alt": "Realme X image 4",
+        "title": "Realme X image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100129-5",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp?view=5",
+        "alt": "Realme X image 5",
+        "title": "Realme X image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/digital-devices.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+      "title": "Realme X product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "1 month warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100129-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Realme",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100129-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Digital Devices",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100129-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 3-5 business days",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 3,
+      "estimatedMaximumDays": 5,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.7,
+    "count": 415,
+    "verifiedPurchaseCount": 298,
+    "distribution": {
+      "5": 233,
+      "4": 74,
+      "3": 103,
+      "2": 4,
+      "1": 1
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 3,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Realme X Online in Bangladesh | Arogga",
+    "metaDescription": "The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
+    "keywords": [
+      "Realme X",
+      "Realme",
+      "Digital Devices",
+      "Healthcare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100129",
+    "openGraph": {
+      "title": "Buy Realme X Online in Bangladesh | Arogga",
+      "description": "The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100129",
+    "api": "/api/products/100129",
+    "source": "https://dummyjson.com/products/129"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 16887,
+    "salesCount": 1381,
+    "wishlistCount": 684,
+    "cartAdditionCount": 1507,
+    "conversionRate": 6.9
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100129,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Realme",
+  "genericName": "Realme X",
+  "category": "Digital Devices",
+  "subcategory": "Smartphones",
+  "type": "simple",
+  "price": 37499,
+  "discountPrice": 34874,
+  "discountPercentage": 7,
+  "currency": "BDT",
+  "stock": 12,
+  "sold": 1381,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/smartphones/realme-x/1.webp",
+    "https://cdn.dummyjson.com/product-images/smartphones/realme-x/2.webp",
+    "https://cdn.dummyjson.com/product-images/smartphones/realme-x/3.webp",
+    "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+  "video": "/videos/catalog/digital-devices.mp4",
+  "description": "Realme X is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
+  "shortDescription": "The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Smartphones product",
+    "Realme item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Smartphones",
+    "Brand": "Realme",
+    "Department": "Healthcare",
+    "Category": "Digital Devices",
+    "Rating": "3.7"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.7,
+  "reviewCount": 415,
+  "faq": [],
+  "tags": [
+    "smartphones",
+    "realme",
+    "realme x",
+    "healthcare",
+    "digital devices"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

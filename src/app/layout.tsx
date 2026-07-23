@@ -35,8 +35,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="site-wrapper" suppressHydrationWarning>
+    <html lang="en">
+      <body className="site-wrapper">
         <AppProviders>
         <TopNavber />
         <SectionNavigation />

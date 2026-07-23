@@ -1,0 +1,507 @@
+{
+  "id": "100171",
+  "uuid": "dummy-catalog-100171",
+  "productGroupId": "group-5042",
+  "sourceProductId": "171",
+  "sku": "HEA-LIF-100171",
+  "barcode": "8800000100171",
+  "slug": "chrysler-pacifica-touring-100171",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Chrysler Pacifica Touring",
+  "shortName": "Pacifica Touring",
+  "subtitle": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+  "brand": {
+    "id": "brand-chrysler",
+    "name": "Chrysler",
+    "slug": "chrysler",
+    "logo": null,
+    "manufacturer": "Chrysler",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "slug": "healthcare"
+    },
+    "category": {
+      "id": "lifestyle",
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    "subCategory": {
+      "id": "vehicle",
+      "name": "Vehicle",
+      "slug": "vehicle"
+    },
+    "collections": [
+      {
+        "id": "healthcare-collection",
+        "name": "Healthcare Collection",
+        "slug": "healthcare-collection"
+      }
+    ],
+    "tags": [
+      "vehicle",
+      "chrysler",
+      "pacifica touring",
+      "healthcare",
+      "lifestyle"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+    "description": "Chrysler Pacifica Touring is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+    "highlights": [
+      "Vehicle product",
+      "Chrysler item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Vehicle"
+      },
+      {
+        "title": "Brand",
+        "value": "Chrysler"
+      },
+      {
+        "title": "Department",
+        "value": "Healthcare"
+      },
+      {
+        "title": "Category",
+        "value": "Lifestyle"
+      },
+      {
+        "title": "Rating",
+        "value": "3.62"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 3999999,
+    "salePrice": 3399999,
+    "costPrice": 3.71,
+    "compareAtPrice": 3999999,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 15,
+      "percentage": 15,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 3399999,
+      "maximum": 3999999
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 72,
+    "reservedQuantity": 2,
+    "availableQuantity": 53,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100171",
+      "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+      "alt": "Chrysler Pacifica Touring",
+      "title": "Chrysler Pacifica Touring",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100171-1",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+        "alt": "Chrysler Pacifica Touring image 1",
+        "title": "Chrysler Pacifica Touring image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100171-2",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/1.webp",
+        "alt": "Chrysler Pacifica Touring image 2",
+        "title": "Chrysler Pacifica Touring image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100171-3",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/2.webp",
+        "alt": "Chrysler Pacifica Touring image 3",
+        "title": "Chrysler Pacifica Touring image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100171-4",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/3.webp",
+        "alt": "Chrysler Pacifica Touring image 4",
+        "title": "Chrysler Pacifica Touring image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100171-5",
+        "url": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/4.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/4.webp",
+        "alt": "Chrysler Pacifica Touring image 5",
+        "title": "Chrysler Pacifica Touring image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/lifestyle.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+      "title": "Chrysler Pacifica Touring product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "1 month warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100171-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Chrysler",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100171-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Lifestyle",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100171-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships overnight",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 3,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.6,
+    "count": 135,
+    "verifiedPurchaseCount": 97,
+    "distribution": {
+      "5": 73,
+      "4": 24,
+      "3": 32,
+      "2": 1,
+      "1": 5
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 10,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Chrysler Pacifica Touring Online in Bangladesh | Arogga",
+    "metaDescription": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+    "keywords": [
+      "Chrysler Pacifica Touring",
+      "Chrysler",
+      "Lifestyle",
+      "Healthcare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100171",
+    "openGraph": {
+      "title": "Buy Chrysler Pacifica Touring Online in Bangladesh | Arogga",
+      "description": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+      "image": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100171",
+    "api": "/api/products/100171",
+    "source": "https://dummyjson.com/products/171"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 14005,
+    "salesCount": 624,
+    "wishlistCount": 447,
+    "cartAdditionCount": 593,
+    "conversionRate": 4.66
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100171,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Chrysler",
+  "genericName": "Pacifica Touring",
+  "category": "Lifestyle",
+  "subcategory": "Vehicle",
+  "type": "simple",
+  "price": 3999999,
+  "discountPrice": 3399999,
+  "discountPercentage": 15,
+  "currency": "BDT",
+  "stock": 53,
+  "sold": 624,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/1.webp",
+    "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/2.webp",
+    "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/3.webp",
+    "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/4.webp"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/thumbnail.webp",
+  "video": "/videos/catalog/lifestyle.mp4",
+  "description": "Chrysler Pacifica Touring is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+  "shortDescription": "The Pacifica Touring is a stylish and well-equipped minivan, offering comfort and convenience for family journeys.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Vehicle product",
+    "Chrysler item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Vehicle",
+    "Brand": "Chrysler",
+    "Department": "Healthcare",
+    "Category": "Lifestyle",
+    "Rating": "3.62"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.6,
+  "reviewCount": 135,
+  "faq": [],
+  "tags": [
+    "vehicle",
+    "chrysler",
+    "pacifica touring",
+    "healthcare",
+    "lifestyle"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

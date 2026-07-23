@@ -1,0 +1,507 @@
+{
+  "id": "100099",
+  "uuid": "dummy-catalog-100099",
+  "productGroupId": "group-5024",
+  "sourceProductId": "99",
+  "sku": "HEA-ACC-100099",
+  "barcode": "8800000100099",
+  "slug": "amazon-echo-plus-100099",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Amazon Echo Plus",
+  "shortName": "Amazon Echo Plus",
+  "subtitle": "The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves ",
+  "brand": {
+    "id": "brand-amazon",
+    "name": "Amazon",
+    "slug": "amazon",
+    "logo": null,
+    "manufacturer": "Amazon",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "slug": "healthcare"
+    },
+    "category": {
+      "id": "accessories",
+      "name": "Accessories",
+      "slug": "accessories"
+    },
+    "subCategory": {
+      "id": "mobile-accessories",
+      "name": "Mobile Accessories",
+      "slug": "mobile-accessories"
+    },
+    "collections": [
+      {
+        "id": "healthcare-collection",
+        "name": "Healthcare Collection",
+        "slug": "healthcare-collection"
+      }
+    ],
+    "tags": [
+      "mobile-accessories",
+      "amazon",
+      "amazon echo plus",
+      "healthcare",
+      "accessories"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves as a hub for controlling smart home devices.",
+    "description": "Amazon Echo Plus is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves as a hub for controlling smart home devices.",
+    "highlights": [
+      "Mobile Accessories product",
+      "Amazon item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Mobile Accessories"
+      },
+      {
+        "title": "Brand",
+        "value": "Amazon"
+      },
+      {
+        "title": "Department",
+        "value": "Healthcare"
+      },
+      {
+        "title": "Category",
+        "value": "Accessories"
+      },
+      {
+        "title": "Rating",
+        "value": "4.99"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 12499,
+    "salePrice": 10999,
+    "costPrice": 3.71,
+    "compareAtPrice": 12499,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 12,
+      "percentage": 12,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 10999,
+      "maximum": 12499
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 96,
+    "reservedQuantity": 2,
+    "availableQuantity": 61,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100099",
+      "url": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+      "alt": "Amazon Echo Plus",
+      "title": "Amazon Echo Plus",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100099-1",
+        "url": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+        "alt": "Amazon Echo Plus image 1",
+        "title": "Amazon Echo Plus image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100099-2",
+        "url": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/1.webp",
+        "alt": "Amazon Echo Plus image 2",
+        "title": "Amazon Echo Plus image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100099-3",
+        "url": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/2.webp",
+        "alt": "Amazon Echo Plus image 3",
+        "title": "Amazon Echo Plus image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100099-4",
+        "url": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp?view=4",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp?view=4",
+        "alt": "Amazon Echo Plus image 4",
+        "title": "Amazon Echo Plus image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100099-5",
+        "url": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/1.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/1.webp?view=5",
+        "alt": "Amazon Echo Plus image 5",
+        "title": "Amazon Echo Plus image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/accessories.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+      "title": "Amazon Echo Plus product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "6 months warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100099-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Amazon",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100099-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100099-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1 week",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 3,
+      "estimatedMaximumDays": 3,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 5.0,
+    "count": 1069,
+    "verifiedPurchaseCount": 769,
+    "distribution": {
+      "5": 812,
+      "4": 192,
+      "3": 58,
+      "2": 18,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 10,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Amazon Echo Plus Online in Bangladesh | Arogga",
+    "metaDescription": "The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves as a hub for controlling smart home devices.",
+    "keywords": [
+      "Amazon Echo Plus",
+      "Amazon",
+      "Accessories",
+      "Healthcare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100099",
+    "openGraph": {
+      "title": "Buy Amazon Echo Plus Online in Bangladesh | Arogga",
+      "description": "The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves as a hub for controlling smart home devices.",
+      "image": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100099",
+    "api": "/api/products/100099",
+    "source": "https://dummyjson.com/products/99"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 20483,
+    "salesCount": 984,
+    "wishlistCount": 119,
+    "cartAdditionCount": 870,
+    "conversionRate": 2.64
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100099,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Amazon",
+  "genericName": "Amazon Echo Plus",
+  "category": "Accessories",
+  "subcategory": "Mobile Accessories",
+  "type": "simple",
+  "price": 12499,
+  "discountPrice": 10999,
+  "discountPercentage": 12,
+  "currency": "BDT",
+  "stock": 61,
+  "sold": 984,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/1.webp",
+    "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/2.webp",
+    "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp?view=4",
+    "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/1.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+  "video": "/videos/catalog/accessories.mp4",
+  "description": "Amazon Echo Plus is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves as a hub for controlling smart home devices.",
+  "shortDescription": "The Amazon Echo Plus is a smart speaker with built-in Alexa voice control. It features premium sound quality and serves as a hub for controlling smart home devices.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Mobile Accessories product",
+    "Amazon item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Mobile Accessories",
+    "Brand": "Amazon",
+    "Department": "Healthcare",
+    "Category": "Accessories",
+    "Rating": "4.99"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 5.0,
+  "reviewCount": 1069,
+  "faq": [],
+  "tags": [
+    "mobile-accessories",
+    "amazon",
+    "amazon echo plus",
+    "healthcare",
+    "accessories"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": true,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

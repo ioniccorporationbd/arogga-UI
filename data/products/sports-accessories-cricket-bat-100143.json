@@ -1,0 +1,507 @@
+{
+  "id": "100143",
+  "uuid": "dummy-catalog-100143",
+  "productGroupId": "group-5035",
+  "sourceProductId": "143",
+  "sku": "SUP-FIT-100143",
+  "barcode": "8800000100143",
+  "slug": "sports-accessories-cricket-bat-100143",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Sports Accessories Cricket Bat",
+  "shortName": "Cricket Bat",
+  "subtitle": "The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood a",
+  "brand": {
+    "id": "brand-sports-accessories",
+    "name": "Sports Accessories",
+    "slug": "sports-accessories",
+    "logo": null,
+    "manufacturer": "Sports Accessories",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "supplement",
+      "name": "Supplement",
+      "slug": "supplement"
+    },
+    "category": {
+      "id": "fitness-accessories",
+      "name": "Fitness Accessories",
+      "slug": "fitness-accessories"
+    },
+    "subCategory": {
+      "id": "sports",
+      "name": "Sports",
+      "slug": "sports"
+    },
+    "collections": [
+      {
+        "id": "supplement-collection",
+        "name": "Supplement Collection",
+        "slug": "supplement-collection"
+      }
+    ],
+    "tags": [
+      "sports-accessories",
+      "sports accessories",
+      "cricket bat",
+      "supplement",
+      "fitness accessories"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood and comes in various sizes and designs.",
+    "description": "Sports Accessories Cricket Bat is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood and comes in various sizes and designs.",
+    "highlights": [
+      "Sports product",
+      "Sports Accessories item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Sports"
+      },
+      {
+        "title": "Brand",
+        "value": "Sports Accessories"
+      },
+      {
+        "title": "Department",
+        "value": "Supplement"
+      },
+      {
+        "title": "Category",
+        "value": "Fitness Accessories"
+      },
+      {
+        "title": "Rating",
+        "value": "3.17"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 3749,
+    "salePrice": 3636,
+    "costPrice": 3.71,
+    "compareAtPrice": 3749,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 3,
+      "percentage": 3,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 3636,
+      "maximum": 3749
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 111,
+    "reservedQuantity": 2,
+    "availableQuantity": 98,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100143",
+      "url": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp",
+      "alt": "Sports Accessories Cricket Bat",
+      "title": "Sports Accessories Cricket Bat",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100143-1",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp",
+        "alt": "Sports Accessories Cricket Bat image 1",
+        "title": "Sports Accessories Cricket Bat image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100143-2",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/1.webp",
+        "alt": "Sports Accessories Cricket Bat image 2",
+        "title": "Sports Accessories Cricket Bat image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100143-3",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp?view=3",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp?view=3",
+        "alt": "Sports Accessories Cricket Bat image 3",
+        "title": "Sports Accessories Cricket Bat image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100143-4",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/1.webp?view=4",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/1.webp?view=4",
+        "alt": "Sports Accessories Cricket Bat image 4",
+        "title": "Sports Accessories Cricket Bat image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100143-5",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp?view=5",
+        "alt": "Sports Accessories Cricket Bat image 5",
+        "title": "Sports Accessories Cricket Bat image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/fitness-accessories.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp",
+      "title": "Sports Accessories Cricket Bat product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "1 year warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100143-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Sports Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100143-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Fitness Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100143-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1-2 business days",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 4,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.2,
+    "count": 325,
+    "verifiedPurchaseCount": 234,
+    "distribution": {
+      "5": 158,
+      "4": 58,
+      "3": 108,
+      "2": 5,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 3,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Sports Accessories Cricket Bat Online in Bangladesh | Arogga",
+    "metaDescription": "The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood and comes in various sizes and designs.",
+    "keywords": [
+      "Sports Accessories Cricket Bat",
+      "Sports Accessories",
+      "Fitness Accessories",
+      "Supplement",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100143",
+    "openGraph": {
+      "title": "Buy Sports Accessories Cricket Bat Online in Bangladesh | Arogga",
+      "description": "The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood and comes in various sizes and designs.",
+      "image": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100143",
+    "api": "/api/products/100143",
+    "source": "https://dummyjson.com/products/143"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 18693,
+    "salesCount": 300,
+    "wishlistCount": 370,
+    "cartAdditionCount": 682,
+    "conversionRate": 5.77
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100143,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Sports Accessories",
+  "genericName": "Cricket Bat",
+  "category": "Fitness Accessories",
+  "subcategory": "Sports",
+  "type": "simple",
+  "price": 3749,
+  "discountPrice": 3636,
+  "discountPercentage": 3,
+  "currency": "BDT",
+  "stock": 98,
+  "sold": 300,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/1.webp",
+    "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp?view=3",
+    "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/1.webp?view=4",
+    "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/thumbnail.webp",
+  "video": "/videos/catalog/fitness-accessories.mp4",
+  "description": "Sports Accessories Cricket Bat is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood and comes in various sizes and designs.",
+  "shortDescription": "The Cricket Bat is an essential piece of cricket equipment used by batsmen to hit the cricket ball. It is made of wood and comes in various sizes and designs.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Sports product",
+    "Sports Accessories item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Sports",
+    "Brand": "Sports Accessories",
+    "Department": "Supplement",
+    "Category": "Fitness Accessories",
+    "Rating": "3.17"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.2,
+  "reviewCount": 325,
+  "faq": [],
+  "tags": [
+    "sports-accessories",
+    "sports accessories",
+    "cricket bat",
+    "supplement",
+    "fitness accessories"
+  ],
+  "featured": false,
+  "bestSeller": false,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

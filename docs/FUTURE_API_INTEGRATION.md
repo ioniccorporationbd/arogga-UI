@@ -1,35 +1,17 @@
-# Future API Integration
+Updated: 2026-07-23
 
-## Switching source
+Branch: test-branch
 
-```env
-DATA_SOURCE=api
-API_BASE_URL=https://api.example.com
-```
+# Future API Integration Guide
 
-Remote repositories currently throw `NotConfiguredError` by design. Implement each remote adapter to call the backend while preserving the same interfaces.
+Set `DATA_SOURCE=api` and provide `API_BASE_URL` only after backend endpoints exist.
 
-## Frappe / ERPNext mapping
+External providers still required:
+- SMS OTP provider.
+- Frappe/ERPNext or commerce backend.
+- Real payment providers: bKash, Nagad, SSLCommerz, Stripe, PayPal.
+- Webhook signing secrets.
+- File storage and virus scanning for prescriptions.
+- Production search provider.
 
-Recommended mapping:
-
-| UI repository | Frappe/ERPNext source |
-|---|---|
-| ProductRepository | Item, Item Price, Website Item, Item Group, Brand, Bin |
-| CartRepository | Quotation or custom Cart DocType |
-| WishlistRepository | custom Wishlist DocType |
-| OrderRepository | Sales Order, Sales Invoice, Delivery Note |
-| ProfileRepository | User, Customer, Contact |
-| AddressRepository | Address linked to Customer/Contact |
-| NotificationRepository | Notification Log, Communication, custom inbox DocType |
-
-## Backend rules
-
-Never trust client-submitted price, discount, tax, shipping, stock, payment status, order status, role or wallet balance. The backend must recalculate checkout and verify payment webhooks with idempotency keys.
-
-## Migration risks
-
-- Product field names can differ between current JSON and ERPNext. Use normalization at repository boundary.
-- Guest cart migration needs a server merge policy.
-- Payment webhooks need signature verification and audit logs.
-- Search may require Typesense/Meilisearch/Algolia/OpenSearch once catalog size grows.
+Never trust browser-submitted price, stock, discount, shipping, VAT, user ID, role, order status, or payment status.

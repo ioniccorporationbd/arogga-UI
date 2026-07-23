@@ -1,32 +1,23 @@
-# Architecture
+Updated: 2026-07-23
 
-## Current mode
+Branch: test-branch
 
-Arogga UI is a Next.js 16 App Router application that currently runs from local JSON/browser state while preserving Arogga-style UI. The architecture added in Part 1 introduces a repository boundary so UI and feature modules can move from local data to API-backed data without rewriting components.
+# Architecture Report
 
-## Repository pattern
+## Current architecture
+- Next.js App Router with local-first repositories.
+- `DATA_SOURCE=local` by default.
+- Server catalog API uses cached product indexes for card responses.
+- Product details continue to load full local product data.
+- Auth uses HttpOnly session-cookie APIs.
+- Cart/wishlist/order/account are local-first and API-ready.
 
-Repositories live under `src/repositories/`:
+## Repository seam
+`src/repositories` contains interface contracts plus local/remote implementations. Remote implementations intentionally remain not configured until a real API exists.
 
-- `interfaces/` defines contracts for auth, catalog, cart, wishlist, orders, profile, addresses and notifications.
-- `local/` preserves current local behavior using JSON APIs and browser storage where needed.
-- `remote/` exposes matching adapter classes that throw `NotConfiguredError` until real APIs exist.
-- `index.ts` selects implementations using `DATA_SOURCE`.
-
-```env
-DATA_SOURCE=local
-API_BASE_URL=https://api.example.com
-```
-
-## Decisions
-
-- Local app remains functional; no database/payment/SMS claims are faked.
-- Product list/search can use lightweight server-side indexes instead of loading the full catalog in the browser.
-- Auth has HttpOnly-cookie-compatible endpoints even though the OTP provider is still demo/local.
-- Canonical account/product routes are defined while legacy routes redirect for compatibility.
-
-## Production-ready vs simulated
-
-Production-ready foundation: route/API shape, repository seam, typed domain contracts, catalog index cache, SEO/error foundations.
-
-Simulated/local-only: SMS OTP delivery, payments, checkout authority, order persistence, profile persistence, notification source, ERP/Frappe sync.
+## Final foundations added
+- `data/` canonical generated indexes.
+- `src/styles/design-tokens.css`.
+- `src/components/ui`.
+- `src/lib/security`.
+- Playwright/Vitest/MSW configs.

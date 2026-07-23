@@ -1,0 +1,507 @@
+{
+  "id": "100133",
+  "uuid": "dummy-catalog-100133",
+  "productGroupId": "group-5033",
+  "sourceProductId": "133",
+  "sku": "HEA-DIG-100133",
+  "barcode": "8800000100133",
+  "slug": "samsung-galaxy-s10-100133",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Samsung Galaxy S10",
+  "shortName": "Samsung Galaxy S10",
+  "subtitle": "The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful pe",
+  "brand": {
+    "id": "brand-samsung",
+    "name": "Samsung",
+    "slug": "samsung",
+    "logo": null,
+    "manufacturer": "Samsung",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "slug": "healthcare"
+    },
+    "category": {
+      "id": "digital-devices",
+      "name": "Digital Devices",
+      "slug": "digital-devices"
+    },
+    "subCategory": {
+      "id": "smartphones",
+      "name": "Smartphones",
+      "slug": "smartphones"
+    },
+    "collections": [
+      {
+        "id": "healthcare-collection",
+        "name": "Healthcare Collection",
+        "slug": "healthcare-collection"
+      }
+    ],
+    "tags": [
+      "smartphones",
+      "samsung",
+      "samsung galaxy s10",
+      "healthcare",
+      "digital devices"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful performance. It represents innovation and excellence in smartphone technology.",
+    "description": "Samsung Galaxy S10 is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful performance. It represents innovation and excellence in smartphone technology.",
+    "highlights": [
+      "Smartphones product",
+      "Samsung item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Smartphones"
+      },
+      {
+        "title": "Brand",
+        "value": "Samsung"
+      },
+      {
+        "title": "Department",
+        "value": "Healthcare"
+      },
+      {
+        "title": "Category",
+        "value": "Digital Devices"
+      },
+      {
+        "title": "Rating",
+        "value": "3.06"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 87499,
+    "salePrice": 82249,
+    "costPrice": 3.71,
+    "compareAtPrice": 87499,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 6,
+      "percentage": 6,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 82249,
+      "maximum": 87499
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 27,
+    "reservedQuantity": 5,
+    "availableQuantity": 19,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100133",
+      "url": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
+      "alt": "Samsung Galaxy S10",
+      "title": "Samsung Galaxy S10",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100133-1",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
+        "alt": "Samsung Galaxy S10 image 1",
+        "title": "Samsung Galaxy S10 image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100133-2",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/1.webp",
+        "alt": "Samsung Galaxy S10 image 2",
+        "title": "Samsung Galaxy S10 image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100133-3",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/2.webp",
+        "alt": "Samsung Galaxy S10 image 3",
+        "title": "Samsung Galaxy S10 image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100133-4",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/3.webp",
+        "alt": "Samsung Galaxy S10 image 4",
+        "title": "Samsung Galaxy S10 image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100133-5",
+        "url": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp?view=5",
+        "alt": "Samsung Galaxy S10 image 5",
+        "title": "Samsung Galaxy S10 image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/digital-devices.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
+      "title": "Samsung Galaxy S10 product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "No warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100133-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Samsung",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100133-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Digital Devices",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100133-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 2 weeks",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 2,
+      "estimatedMaximumDays": 5,
+      "sameDayEligible": true
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.1,
+    "count": 539,
+    "verifiedPurchaseCount": 388,
+    "distribution": {
+      "5": 253,
+      "4": 97,
+      "3": 189,
+      "2": 3,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 10,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Samsung Galaxy S10 Online in Bangladesh | Arogga",
+    "metaDescription": "The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful performance. It represents innovation and excellence in smartphone technology.",
+    "keywords": [
+      "Samsung Galaxy S10",
+      "Samsung",
+      "Digital Devices",
+      "Healthcare",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100133",
+    "openGraph": {
+      "title": "Buy Samsung Galaxy S10 Online in Bangladesh | Arogga",
+      "description": "The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful performance. It represents innovation and excellence in smartphone technology.",
+      "image": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100133",
+    "api": "/api/products/100133",
+    "source": "https://dummyjson.com/products/133"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 5340,
+    "salesCount": 745,
+    "wishlistCount": 49,
+    "cartAdditionCount": 1326,
+    "conversionRate": 7.11
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100133,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Samsung",
+  "genericName": "Samsung Galaxy S10",
+  "category": "Digital Devices",
+  "subcategory": "Smartphones",
+  "type": "simple",
+  "price": 87499,
+  "discountPrice": 82249,
+  "discountPercentage": 6,
+  "currency": "BDT",
+  "stock": 19,
+  "sold": 745,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/1.webp",
+    "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/2.webp",
+    "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/3.webp",
+    "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
+  "video": "/videos/catalog/digital-devices.mp4",
+  "description": "Samsung Galaxy S10 is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful performance. It represents innovation and excellence in smartphone technology.",
+  "shortDescription": "The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful performance. It represents innovation and excellence in smartphone technology.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Smartphones product",
+    "Samsung item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Smartphones",
+    "Brand": "Samsung",
+    "Department": "Healthcare",
+    "Category": "Digital Devices",
+    "Rating": "3.06"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.1,
+  "reviewCount": 539,
+  "faq": [],
+  "tags": [
+    "smartphones",
+    "samsung",
+    "samsung galaxy s10",
+    "healthcare",
+    "digital devices"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

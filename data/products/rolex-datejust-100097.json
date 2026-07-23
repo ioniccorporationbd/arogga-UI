@@ -1,0 +1,507 @@
+{
+  "id": "100097",
+  "uuid": "dummy-catalog-100097",
+  "productGroupId": "group-5024",
+  "sourceProductId": "97",
+  "sku": "BEA-FAS-100097",
+  "barcode": "8800000100097",
+  "slug": "rolex-datejust-100097",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Rolex Datejust",
+  "shortName": "Rolex Datejust",
+  "subtitle": "The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliabilit",
+  "brand": {
+    "id": "brand-rolex",
+    "name": "Rolex",
+    "slug": "rolex",
+    "logo": null,
+    "manufacturer": "Rolex",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "beauty",
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "category": {
+      "id": "fashion-accessories",
+      "name": "Fashion Accessories",
+      "slug": "fashion-accessories"
+    },
+    "subCategory": {
+      "id": "men-watches",
+      "name": "Men Watches",
+      "slug": "men-watches"
+    },
+    "collections": [
+      {
+        "id": "beauty-collection",
+        "name": "Beauty Collection",
+        "slug": "beauty-collection"
+      }
+    ],
+    "tags": [
+      "mens-watches",
+      "rolex",
+      "rolex datejust",
+      "beauty",
+      "fashion accessories"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
+    "description": "Rolex Datejust is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
+    "highlights": [
+      "Men Watches product",
+      "Rolex item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Men Watches"
+      },
+      {
+        "title": "Brand",
+        "value": "Rolex"
+      },
+      {
+        "title": "Department",
+        "value": "Beauty"
+      },
+      {
+        "title": "Category",
+        "value": "Fashion Accessories"
+      },
+      {
+        "title": "Rating",
+        "value": "3.66"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 1374999,
+    "salePrice": 1319999,
+    "costPrice": 3.71,
+    "compareAtPrice": 1374999,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 4,
+      "percentage": 4,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 1319999,
+      "maximum": 1374999
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 93,
+    "reservedQuantity": 1,
+    "availableQuantity": 86,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100097",
+      "url": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp",
+      "alt": "Rolex Datejust",
+      "title": "Rolex Datejust",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100097-1",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp",
+        "alt": "Rolex Datejust image 1",
+        "title": "Rolex Datejust image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100097-2",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/1.webp",
+        "alt": "Rolex Datejust image 2",
+        "title": "Rolex Datejust image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100097-3",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/2.webp",
+        "alt": "Rolex Datejust image 3",
+        "title": "Rolex Datejust image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100097-4",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/3.webp",
+        "alt": "Rolex Datejust image 4",
+        "title": "Rolex Datejust image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100097-5",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp?view=5",
+        "alt": "Rolex Datejust image 5",
+        "title": "Rolex Datejust image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/fashion-accessories.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp",
+      "title": "Rolex Datejust product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "2 year warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100097-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Rolex",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100097-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Fashion Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100097-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1 month",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 2,
+      "estimatedMaximumDays": 5,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.7,
+    "count": 988,
+    "verifiedPurchaseCount": 711,
+    "distribution": {
+      "5": 555,
+      "4": 177,
+      "3": 255,
+      "2": 0,
+      "1": 1
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 7,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Rolex Datejust Online in Bangladesh | Arogga",
+    "metaDescription": "The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
+    "keywords": [
+      "Rolex Datejust",
+      "Rolex",
+      "Fashion Accessories",
+      "Beauty",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100097",
+    "openGraph": {
+      "title": "Buy Rolex Datejust Online in Bangladesh | Arogga",
+      "description": "The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
+      "image": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100097",
+    "api": "/api/products/100097",
+    "source": "https://dummyjson.com/products/97"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 703,
+    "salesCount": 243,
+    "wishlistCount": 413,
+    "cartAdditionCount": 133,
+    "conversionRate": 3.06
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100097,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Rolex",
+  "genericName": "Rolex Datejust",
+  "category": "Fashion Accessories",
+  "subcategory": "Men Watches",
+  "type": "simple",
+  "price": 1374999,
+  "discountPrice": 1319999,
+  "discountPercentage": 4,
+  "currency": "BDT",
+  "stock": 86,
+  "sold": 243,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/1.webp",
+    "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/2.webp",
+    "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/3.webp",
+    "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/rolex-datejust/thumbnail.webp",
+  "video": "/videos/catalog/fashion-accessories.mp4",
+  "description": "Rolex Datejust is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
+  "shortDescription": "The Rolex Datejust is an iconic and versatile timepiece with a date window. Known for its timeless design and reliability, it's a symbol of Rolex's watchmaking excellence.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Men Watches product",
+    "Rolex item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Men Watches",
+    "Brand": "Rolex",
+    "Department": "Beauty",
+    "Category": "Fashion Accessories",
+    "Rating": "3.66"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.7,
+  "reviewCount": 988,
+  "faq": [],
+  "tags": [
+    "mens-watches",
+    "rolex",
+    "rolex datejust",
+    "beauty",
+    "fashion accessories"
+  ],
+  "featured": false,
+  "bestSeller": false,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

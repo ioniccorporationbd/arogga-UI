@@ -1,0 +1,507 @@
+{
+  "id": "100150",
+  "uuid": "dummy-catalog-100150",
+  "productGroupId": "group-5037",
+  "sourceProductId": "150",
+  "sku": "SUP-FIT-100150",
+  "barcode": "8800000100150",
+  "slug": "sports-accessories-metal-baseball-bat-100150",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Sports Accessories Metal Baseball Bat",
+  "shortName": "Metal Baseball Bat",
+  "subtitle": "The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball",
+  "brand": {
+    "id": "brand-sports-accessories",
+    "name": "Sports Accessories",
+    "slug": "sports-accessories",
+    "logo": null,
+    "manufacturer": "Sports Accessories",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "supplement",
+      "name": "Supplement",
+      "slug": "supplement"
+    },
+    "category": {
+      "id": "fitness-accessories",
+      "name": "Fitness Accessories",
+      "slug": "fitness-accessories"
+    },
+    "subCategory": {
+      "id": "sports",
+      "name": "Sports",
+      "slug": "sports"
+    },
+    "collections": [
+      {
+        "id": "supplement-collection",
+        "name": "Supplement Collection",
+        "slug": "supplement-collection"
+      }
+    ],
+    "tags": [
+      "sports-accessories",
+      "sports accessories",
+      "metal baseball bat",
+      "supplement",
+      "fitness accessories"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball games for hitting and batting practice.",
+    "description": "Sports Accessories Metal Baseball Bat is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball games for hitting and batting practice.",
+    "highlights": [
+      "Sports product",
+      "Sports Accessories item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Sports"
+      },
+      {
+        "title": "Brand",
+        "value": "Sports Accessories"
+      },
+      {
+        "title": "Department",
+        "value": "Supplement"
+      },
+      {
+        "title": "Category",
+        "value": "Fitness Accessories"
+      },
+      {
+        "title": "Rating",
+        "value": "4.66"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 3749,
+    "salePrice": 2999,
+    "costPrice": 3.71,
+    "compareAtPrice": 3749,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 20,
+      "percentage": 20,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 2999,
+      "maximum": 3749
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 44,
+    "reservedQuantity": 5,
+    "availableQuantity": 16,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100150",
+      "url": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp",
+      "alt": "Sports Accessories Metal Baseball Bat",
+      "title": "Sports Accessories Metal Baseball Bat",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100150-1",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp",
+        "alt": "Sports Accessories Metal Baseball Bat image 1",
+        "title": "Sports Accessories Metal Baseball Bat image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100150-2",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/1.webp",
+        "alt": "Sports Accessories Metal Baseball Bat image 2",
+        "title": "Sports Accessories Metal Baseball Bat image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100150-3",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp?view=3",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp?view=3",
+        "alt": "Sports Accessories Metal Baseball Bat image 3",
+        "title": "Sports Accessories Metal Baseball Bat image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100150-4",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/1.webp?view=4",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/1.webp?view=4",
+        "alt": "Sports Accessories Metal Baseball Bat image 4",
+        "title": "Sports Accessories Metal Baseball Bat image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100150-5",
+        "url": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp?view=5",
+        "alt": "Sports Accessories Metal Baseball Bat image 5",
+        "title": "Sports Accessories Metal Baseball Bat image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/fitness-accessories.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp",
+      "title": "Sports Accessories Metal Baseball Bat product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "3 year warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100150-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Sports Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100150-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Fitness Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100150-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1 week",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 3,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 4.7,
+    "count": 984,
+    "verifiedPurchaseCount": 708,
+    "distribution": {
+      "5": 702,
+      "4": 177,
+      "3": 105,
+      "2": 4,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 10,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Sports Accessories Metal Baseball Bat Online in Bangladesh | Arogga",
+    "metaDescription": "The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball games for hitting and batting practice.",
+    "keywords": [
+      "Sports Accessories Metal Baseball Bat",
+      "Sports Accessories",
+      "Fitness Accessories",
+      "Supplement",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100150",
+    "openGraph": {
+      "title": "Buy Sports Accessories Metal Baseball Bat Online in Bangladesh | Arogga",
+      "description": "The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball games for hitting and batting practice.",
+      "image": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100150",
+    "api": "/api/products/100150",
+    "source": "https://dummyjson.com/products/150"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 1098,
+    "salesCount": 286,
+    "wishlistCount": 847,
+    "cartAdditionCount": 261,
+    "conversionRate": 3.38
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100150,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Sports Accessories",
+  "genericName": "Metal Baseball Bat",
+  "category": "Fitness Accessories",
+  "subcategory": "Sports",
+  "type": "simple",
+  "price": 3749,
+  "discountPrice": 2999,
+  "discountPercentage": 20,
+  "currency": "BDT",
+  "stock": 16,
+  "sold": 286,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/1.webp",
+    "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp?view=3",
+    "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/1.webp?view=4",
+    "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/thumbnail.webp",
+  "video": "/videos/catalog/fitness-accessories.mp4",
+  "description": "Sports Accessories Metal Baseball Bat is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball games for hitting and batting practice.",
+  "shortDescription": "The Metal Baseball Bat is a durable and lightweight baseball bat made from metal alloys. It is commonly used in baseball games for hitting and batting practice.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Sports product",
+    "Sports Accessories item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Sports",
+    "Brand": "Sports Accessories",
+    "Department": "Supplement",
+    "Category": "Fitness Accessories",
+    "Rating": "4.66"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 4.7,
+  "reviewCount": 984,
+  "faq": [],
+  "tags": [
+    "sports-accessories",
+    "sports accessories",
+    "metal baseball bat",
+    "supplement",
+    "fitness accessories"
+  ],
+  "featured": false,
+  "bestSeller": false,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

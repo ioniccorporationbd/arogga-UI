@@ -19,7 +19,7 @@ export function useStoreProducts() {
         setLoading(true);
         setError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/api/catalog/products?shape=legacy", {
           cache: "no-store",
           signal: controller.signal,
         });
@@ -31,7 +31,8 @@ export function useStoreProducts() {
         }
 
         const payload: unknown = await response.json();
-        const array = Array.isArray(payload) ? payload : [payload];
+        const payloadItems = payload && typeof payload === "object" && Array.isArray((payload as { items?: unknown }).items) ? (payload as { items: unknown[] }).items : payload;
+        const array = Array.isArray(payloadItems) ? payloadItems : [payloadItems];
 
         setProducts(
           array

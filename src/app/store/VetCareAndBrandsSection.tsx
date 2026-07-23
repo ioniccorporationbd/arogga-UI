@@ -163,14 +163,14 @@ export default function VetCareAndBrandsSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/api/catalog/products?shape=legacy", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load public/data.json. Status: ${response.status}`,
+            `Unable to load catalog products. Status: ${response.status}`,
           );
         }
 
@@ -1881,7 +1881,7 @@ function ProductLoadError({
 
         <button
           type="button"
-          onClick={() => window.location.reload()}
+          onClick={() => window.dispatchEvent(new Event("arogga-catalog-retry"))}
           className="mt-4 min-h-[42px] rounded-[9px] bg-[#087b75] px-5 text-[13px] font-bold text-white"
         >
           Try Again

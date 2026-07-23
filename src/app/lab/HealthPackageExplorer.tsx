@@ -337,14 +337,14 @@ export default function HealthPackageExplorer() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/api/catalog/products?shape=legacy", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load /data.json. Status: ${response.status}`,
+            `Unable to load catalog products. Status: ${response.status}`,
           );
         }
 

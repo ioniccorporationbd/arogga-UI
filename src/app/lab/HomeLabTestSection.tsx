@@ -104,14 +104,14 @@ export default function HomeLabTestSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/api/catalog/products?shape=legacy", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load /data.json. Status: ${response.status}`,
+            `Unable to load catalog products. Status: ${response.status}`,
           );
         }
 
@@ -1991,7 +1991,7 @@ function LabTestError({
         <button
           type="button"
           onClick={() =>
-            window.location.reload()
+            window.dispatchEvent(new Event("arogga-catalog-retry"))
           }
           className="mt-4 min-h-[42px] rounded-[9px] bg-[#087b75] px-5 text-[13px] font-bold text-white"
         >

@@ -1,0 +1,507 @@
+{
+  "id": "100183",
+  "uuid": "dummy-catalog-100183",
+  "productGroupId": "group-5045",
+  "sourceProductId": "183",
+  "sku": "BEA-FAS-100183",
+  "barcode": "8800000100183",
+  "slug": "womens-jewellery-green-oval-earring-100183",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Womens Jewellery Green Oval Earring",
+  "shortName": "Green Oval Earring",
+  "subtitle": "The Green Oval Earring is a stylish and versatile accessory with a unique oval shape. Whether for casual or dressy occas",
+  "brand": {
+    "id": "brand-womens-jewellery",
+    "name": "Womens Jewellery",
+    "slug": "womens-jewellery",
+    "logo": null,
+    "manufacturer": "Womens Jewellery",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "beauty",
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "category": {
+      "id": "fashion-accessories",
+      "name": "Fashion Accessories",
+      "slug": "fashion-accessories"
+    },
+    "subCategory": {
+      "id": "jewellery",
+      "name": "Jewellery",
+      "slug": "jewellery"
+    },
+    "collections": [
+      {
+        "id": "beauty-collection",
+        "name": "Beauty Collection",
+        "slug": "beauty-collection"
+      }
+    ],
+    "tags": [
+      "womens-jewellery",
+      "womens jewellery",
+      "green oval earring",
+      "beauty",
+      "fashion accessories"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Green Oval Earring is a stylish and versatile accessory with a unique oval shape. Whether for casual or dressy occasions, its green hue and contemporary design make it a standout piece.",
+    "description": "Womens Jewellery Green Oval Earring is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Green Oval Earring is a stylish and versatile accessory with a unique oval shape. Whether for casual or dressy occasions, its green hue and contemporary design make it a standout piece.",
+    "highlights": [
+      "Jewellery product",
+      "Womens Jewellery item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Jewellery"
+      },
+      {
+        "title": "Brand",
+        "value": "Womens Jewellery"
+      },
+      {
+        "title": "Department",
+        "value": "Beauty"
+      },
+      {
+        "title": "Category",
+        "value": "Fashion Accessories"
+      },
+      {
+        "title": "Rating",
+        "value": "3.57"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 3124,
+    "salePrice": 2655,
+    "costPrice": 3.71,
+    "compareAtPrice": 3124,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 15,
+      "percentage": 15,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 2655,
+      "maximum": 3124
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 112,
+    "reservedQuantity": 2,
+    "availableQuantity": 73,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100183",
+      "url": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp",
+      "alt": "Womens Jewellery Green Oval Earring",
+      "title": "Womens Jewellery Green Oval Earring",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100183-1",
+        "url": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp",
+        "alt": "Womens Jewellery Green Oval Earring image 1",
+        "title": "Womens Jewellery Green Oval Earring image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100183-2",
+        "url": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/1.webp",
+        "alt": "Womens Jewellery Green Oval Earring image 2",
+        "title": "Womens Jewellery Green Oval Earring image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100183-3",
+        "url": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/2.webp",
+        "alt": "Womens Jewellery Green Oval Earring image 3",
+        "title": "Womens Jewellery Green Oval Earring image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100183-4",
+        "url": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/3.webp",
+        "alt": "Womens Jewellery Green Oval Earring image 4",
+        "title": "Womens Jewellery Green Oval Earring image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100183-5",
+        "url": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp?view=5",
+        "alt": "Womens Jewellery Green Oval Earring image 5",
+        "title": "Womens Jewellery Green Oval Earring image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/fashion-accessories.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp",
+      "title": "Womens Jewellery Green Oval Earring product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "3 months warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100183-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Womens Jewellery",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100183-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Fashion Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100183-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 3-5 business days",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 1,
+      "estimatedMaximumDays": 5,
+      "sameDayEligible": false
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.6,
+    "count": 810,
+    "verifiedPurchaseCount": 583,
+    "distribution": {
+      "5": 443,
+      "4": 145,
+      "3": 222,
+      "2": 13,
+      "1": 0
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 3,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Womens Jewellery Green Oval Earring Online in Bangladesh | Arogga",
+    "metaDescription": "The Green Oval Earring is a stylish and versatile accessory with a unique oval shape. Whether for casual or dressy occasions, its green hue and contemporary design make it a standout piece.",
+    "keywords": [
+      "Womens Jewellery Green Oval Earring",
+      "Womens Jewellery",
+      "Fashion Accessories",
+      "Beauty",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100183",
+    "openGraph": {
+      "title": "Buy Womens Jewellery Green Oval Earring Online in Bangladesh | Arogga",
+      "description": "The Green Oval Earring is a stylish and versatile accessory with a unique oval shape. Whether for casual or dressy occasions, its green hue and contemporary design make it a standout piece.",
+      "image": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100183",
+    "api": "/api/products/100183",
+    "source": "https://dummyjson.com/products/183"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 9601,
+    "salesCount": 545,
+    "wishlistCount": 66,
+    "cartAdditionCount": 1720,
+    "conversionRate": 4.75
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100183,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Womens Jewellery",
+  "genericName": "Green Oval Earring",
+  "category": "Fashion Accessories",
+  "subcategory": "Jewellery",
+  "type": "simple",
+  "price": 3124,
+  "discountPrice": 2655,
+  "discountPercentage": 15,
+  "currency": "BDT",
+  "stock": 73,
+  "sold": 545,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/1.webp",
+    "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/2.webp",
+    "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/3.webp",
+    "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/thumbnail.webp",
+  "video": "/videos/catalog/fashion-accessories.mp4",
+  "description": "Womens Jewellery Green Oval Earring is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Green Oval Earring is a stylish and versatile accessory with a unique oval shape. Whether for casual or dressy occasions, its green hue and contemporary design make it a standout piece.",
+  "shortDescription": "The Green Oval Earring is a stylish and versatile accessory with a unique oval shape. Whether for casual or dressy occasions, its green hue and contemporary design make it a standout piece.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Jewellery product",
+    "Womens Jewellery item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Jewellery",
+    "Brand": "Womens Jewellery",
+    "Department": "Beauty",
+    "Category": "Fashion Accessories",
+    "Rating": "3.57"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.6,
+  "reviewCount": 810,
+  "faq": [],
+  "tags": [
+    "womens-jewellery",
+    "womens jewellery",
+    "green oval earring",
+    "beauty",
+    "fashion accessories"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": true,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

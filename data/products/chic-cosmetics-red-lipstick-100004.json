@@ -1,0 +1,507 @@
+{
+  "id": "100004",
+  "uuid": "dummy-catalog-100004",
+  "productGroupId": "group-5000",
+  "sourceProductId": "4",
+  "sku": "BEA-MAK-100004",
+  "barcode": "8800000100004",
+  "slug": "chic-cosmetics-red-lipstick-100004",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Chic Cosmetics Red Lipstick",
+  "shortName": "Red Lipstick",
+  "subtitle": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formul",
+  "brand": {
+    "id": "brand-chic-cosmetics",
+    "name": "Chic Cosmetics",
+    "slug": "chic-cosmetics",
+    "logo": null,
+    "manufacturer": "Chic Cosmetics",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "beauty",
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "category": {
+      "id": "makeup",
+      "name": "Makeup",
+      "slug": "makeup"
+    },
+    "subCategory": {
+      "id": "cosmetics",
+      "name": "Cosmetics",
+      "slug": "cosmetics"
+    },
+    "collections": [
+      {
+        "id": "beauty-collection",
+        "name": "Beauty Collection",
+        "slug": "beauty-collection"
+      }
+    ],
+    "tags": [
+      "beauty",
+      "chic cosmetics",
+      "red lipstick",
+      "beauty",
+      "makeup"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+    "description": "Chic Cosmetics Red Lipstick is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+    "highlights": [
+      "Cosmetics product",
+      "Chic Cosmetics item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Cosmetics"
+      },
+      {
+        "title": "Brand",
+        "value": "Chic Cosmetics"
+      },
+      {
+        "title": "Department",
+        "value": "Beauty"
+      },
+      {
+        "title": "Category",
+        "value": "Makeup"
+      },
+      {
+        "title": "Rating",
+        "value": "4.36"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 1624,
+    "salePrice": 1429,
+    "costPrice": 3.71,
+    "compareAtPrice": 1624,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 12,
+      "percentage": 12,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 1429,
+      "maximum": 1624
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 115,
+    "reservedQuantity": 2,
+    "availableQuantity": 91,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100004",
+      "url": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+      "alt": "Chic Cosmetics Red Lipstick",
+      "title": "Chic Cosmetics Red Lipstick",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100004-1",
+        "url": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+        "alt": "Chic Cosmetics Red Lipstick image 1",
+        "title": "Chic Cosmetics Red Lipstick image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100004-2",
+        "url": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
+        "alt": "Chic Cosmetics Red Lipstick image 2",
+        "title": "Chic Cosmetics Red Lipstick image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100004-3",
+        "url": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp?view=3",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp?view=3",
+        "alt": "Chic Cosmetics Red Lipstick image 3",
+        "title": "Chic Cosmetics Red Lipstick image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100004-4",
+        "url": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp?view=4",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp?view=4",
+        "alt": "Chic Cosmetics Red Lipstick image 4",
+        "title": "Chic Cosmetics Red Lipstick image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100004-5",
+        "url": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp?view=5",
+        "alt": "Chic Cosmetics Red Lipstick image 5",
+        "title": "Chic Cosmetics Red Lipstick image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/makeup.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+      "title": "Chic Cosmetics Red Lipstick product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "3 year warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100004-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Chic Cosmetics",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100004-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Makeup",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100004-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1 week",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": false,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 3,
+      "estimatedMaximumDays": 4,
+      "sameDayEligible": true
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 4.4,
+    "count": 1129,
+    "verifiedPurchaseCount": 812,
+    "distribution": {
+      "5": 755,
+      "4": 203,
+      "3": 166,
+      "2": 0,
+      "1": 5
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 7,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Chic Cosmetics Red Lipstick Online in Bangladesh | Arogga",
+    "metaDescription": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+    "keywords": [
+      "Chic Cosmetics Red Lipstick",
+      "Chic Cosmetics",
+      "Makeup",
+      "Beauty",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100004",
+    "openGraph": {
+      "title": "Buy Chic Cosmetics Red Lipstick Online in Bangladesh | Arogga",
+      "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+      "image": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100004",
+    "api": "/api/products/100004",
+    "source": "https://dummyjson.com/products/4"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 21273,
+    "salesCount": 2110,
+    "wishlistCount": 446,
+    "cartAdditionCount": 1407,
+    "conversionRate": 5.95
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100004,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Chic Cosmetics",
+  "genericName": "Red Lipstick",
+  "category": "Makeup",
+  "subcategory": "Cosmetics",
+  "type": "simple",
+  "price": 1624,
+  "discountPrice": 1429,
+  "discountPercentage": 12,
+  "currency": "BDT",
+  "stock": 91,
+  "sold": 2110,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
+    "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp?view=3",
+    "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp?view=4",
+    "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+  "video": "/videos/catalog/makeup.mp4",
+  "description": "Chic Cosmetics Red Lipstick is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+  "shortDescription": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Cosmetics product",
+    "Chic Cosmetics item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Cosmetics",
+    "Brand": "Chic Cosmetics",
+    "Department": "Beauty",
+    "Category": "Makeup",
+    "Rating": "4.36"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 4.4,
+  "reviewCount": 1129,
+  "faq": [],
+  "tags": [
+    "beauty",
+    "chic cosmetics",
+    "red lipstick",
+    "beauty",
+    "makeup"
+  ],
+  "featured": true,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

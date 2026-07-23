@@ -1,0 +1,507 @@
+{
+  "id": "100094",
+  "uuid": "dummy-catalog-100094",
+  "productGroupId": "group-5023",
+  "sourceProductId": "94",
+  "sku": "BEA-FAS-100094",
+  "barcode": "8800000100094",
+  "slug": "longines-master-collection-100094",
+  "status": "active",
+  "visibility": "public",
+  "productType": "simple",
+  "condition": "new",
+  "name": "Longines Master Collection",
+  "shortName": "Longines Master Collection",
+  "subtitle": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeles",
+  "brand": {
+    "id": "brand-longines",
+    "name": "Longines",
+    "slug": "longines",
+    "logo": null,
+    "manufacturer": "Longines",
+    "countryOfOrigin": null
+  },
+  "taxonomy": {
+    "department": {
+      "id": "beauty",
+      "name": "Beauty",
+      "slug": "beauty"
+    },
+    "category": {
+      "id": "fashion-accessories",
+      "name": "Fashion Accessories",
+      "slug": "fashion-accessories"
+    },
+    "subCategory": {
+      "id": "men-watches",
+      "name": "Men Watches",
+      "slug": "men-watches"
+    },
+    "collections": [
+      {
+        "id": "beauty-collection",
+        "name": "Beauty Collection",
+        "slug": "beauty-collection"
+      }
+    ],
+    "tags": [
+      "mens-watches",
+      "longines",
+      "longines master collection",
+      "beauty",
+      "fashion accessories"
+    ]
+  },
+  "content": {
+    "shortDescription": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
+    "description": "Longines Master Collection is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
+    "highlights": [
+      "Men Watches product",
+      "Longines item",
+      "Unique product image",
+      "Dynamic catalog data"
+    ],
+    "features": [
+      {
+        "title": "Product Type",
+        "value": "Men Watches"
+      },
+      {
+        "title": "Brand",
+        "value": "Longines"
+      },
+      {
+        "title": "Department",
+        "value": "Beauty"
+      },
+      {
+        "title": "Category",
+        "value": "Fashion Accessories"
+      },
+      {
+        "title": "Rating",
+        "value": "3.87"
+      }
+    ],
+    "benefits": [
+      "Easy to compare online",
+      "Current catalog price and stock",
+      "Suitable for ecommerce product detail testing"
+    ],
+    "howToUse": [
+      "Review product information and images.",
+      "Choose preferred quantity or pack.",
+      "Add to cart or save to wishlist."
+    ],
+    "ingredients": [
+      "See seller or manufacturer information for full product composition."
+    ],
+    "warnings": [
+      "Review the product label before use.",
+      "Keep product in suitable storage condition.",
+      "Return policy depends on category and seller condition."
+    ],
+    "storageInstructions": [
+      "Store safely according to product type.",
+      "Avoid damage, heat or direct sunlight where applicable."
+    ],
+    "additionalInfo": {
+      "shade": "Classic",
+      "shadeHex": "#C48A6A",
+      "finish": "Luminous",
+      "coverage": null,
+      "skinType": "All skin types",
+      "form": "Bronzer"
+    }
+  },
+  "pricing": {
+    "currency": "BDT",
+    "regularPrice": 187499,
+    "salePrice": 155624,
+    "costPrice": 3.71,
+    "compareAtPrice": 187499,
+    "discount": {
+      "isDiscounted": true,
+      "type": "percentage",
+      "value": 17,
+      "percentage": 17,
+      "startsAt": null,
+      "endsAt": null
+    },
+    "tax": {
+      "taxable": true,
+      "taxClass": "standard",
+      "rate": 0,
+      "priceIncludesTax": false
+    },
+    "priceRange": {
+      "minimum": 155624,
+      "maximum": 187499
+    }
+  },
+  "inventory": {
+    "trackQuantity": true,
+    "stockStatus": "in_stock",
+    "totalQuantity": 106,
+    "reservedQuantity": 1,
+    "availableQuantity": 100,
+    "incomingQuantity": 0,
+    "lowStockThreshold": 10,
+    "allowBackorder": false,
+    "backorderLimit": 0,
+    "warehouses": [
+      {
+        "warehouseId": "main-warehouse",
+        "warehouseName": "Main Warehouse",
+        "quantity": 10,
+        "reservedQuantity": 0,
+        "availableQuantity": 10,
+        "location": "Dhaka"
+      }
+    ]
+  },
+  "media": {
+    "featuredImage": {
+      "id": "image-100094",
+      "url": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
+      "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
+      "alt": "Longines Master Collection",
+      "title": "Longines Master Collection",
+      "width": 600,
+      "height": 600,
+      "mimeType": "image/webp"
+    },
+    "gallery": [
+      {
+        "id": "image-100094-1",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
+        "alt": "Longines Master Collection image 1",
+        "title": "Longines Master Collection image 1",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100094-2",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/1.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/1.webp",
+        "alt": "Longines Master Collection image 2",
+        "title": "Longines Master Collection image 2",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100094-3",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/2.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/2.webp",
+        "alt": "Longines Master Collection image 3",
+        "title": "Longines Master Collection image 3",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100094-4",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/3.webp",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/3.webp",
+        "alt": "Longines Master Collection image 4",
+        "title": "Longines Master Collection image 4",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      },
+      {
+        "id": "image-100094-5",
+        "url": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp?view=5",
+        "thumbnailUrl": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp?view=5",
+        "alt": "Longines Master Collection image 5",
+        "title": "Longines Master Collection image 5",
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/webp"
+      }
+    ],
+    "video": {
+      "url": "/videos/catalog/fashion-accessories.mp4",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
+      "title": "Longines Master Collection product video"
+    }
+  },
+  "variants": [],
+  "options": [
+    {
+      "name": "Pack",
+      "slug": "pack",
+      "value": "Standard Pack",
+      "colorHex": null
+    },
+    {
+      "name": "Availability",
+      "slug": "availability",
+      "value": "In Stock",
+      "colorHex": null
+    },
+    {
+      "name": "Warranty",
+      "slug": "warranty",
+      "value": "1 week warranty",
+      "colorHex": null
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-100094-brand",
+      "name": "Brand",
+      "slug": "brand",
+      "value": "Longines",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100094-category",
+      "name": "Category",
+      "slug": "category",
+      "value": "Fashion Accessories",
+      "visible": true,
+      "filterable": true,
+      "comparable": true
+    },
+    {
+      "id": "attr-100094-shipping",
+      "name": "Shipping",
+      "slug": "shipping",
+      "value": "Ships in 1-2 business days",
+      "visible": true,
+      "filterable": false,
+      "comparable": false
+    }
+  ],
+  "shipping": {
+    "requiresShipping": true,
+    "shippingClass": "standard",
+    "freeShipping": true,
+    "weight": {
+      "value": 120,
+      "unit": "g"
+    },
+    "dimensions": {
+      "length": 10,
+      "width": 7,
+      "height": 4,
+      "unit": "cm"
+    },
+    "package": {
+      "type": "Standard Pack",
+      "quantityPerPackage": 1
+    },
+    "delivery": {
+      "estimatedMinimumDays": 3,
+      "estimatedMaximumDays": 3,
+      "sameDayEligible": true
+    }
+  },
+  "purchaseRules": {
+    "minimumQuantity": 1,
+    "maximumQuantity": 10,
+    "quantityStep": 1,
+    "maximumPerOrder": 10,
+    "prescriptionRequired": false,
+    "ageRestricted": false,
+    "requiresApproval": false
+  },
+  "ratings": {
+    "average": 3.9,
+    "count": 310,
+    "verifiedPurchaseCount": 223,
+    "distribution": {
+      "5": 183,
+      "4": 55,
+      "3": 68,
+      "2": 1,
+      "1": 3
+    }
+  },
+  "reviews": {
+    "enabled": true,
+    "requiresPurchase": true,
+    "requiresApproval": true
+  },
+  "seller": {
+    "id": "default-store",
+    "name": "Arogga Verified Store",
+    "type": "first_party",
+    "fulfilledBy": "Arogga",
+    "warranty": {
+      "available": false,
+      "duration": null,
+      "durationUnit": null,
+      "description": null
+    },
+    "returnPolicy": {
+      "returnable": true,
+      "returnWindowDays": 7,
+      "conditions": [
+        "Product must remain unused and in original packaging.",
+        "Category policy and seller approval may apply."
+      ]
+    }
+  },
+  "compliance": {
+    "isHazardous": false,
+    "isFragile": true,
+    "requiresColdStorage": false,
+    "regulatedProduct": false,
+    "licenseRequired": false,
+    "documents": []
+  },
+  "seo": {
+    "metaTitle": "Buy Longines Master Collection Online in Bangladesh | Arogga",
+    "metaDescription": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
+    "keywords": [
+      "Longines Master Collection",
+      "Longines",
+      "Fashion Accessories",
+      "Beauty",
+      "online shopping"
+    ],
+    "canonicalUrl": "https://www.arogga.com/products/100094",
+    "openGraph": {
+      "title": "Buy Longines Master Collection Online in Bangladesh | Arogga",
+      "description": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
+      "image": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
+      "type": "product"
+    },
+    "index": true,
+    "follow": true
+  },
+  "urls": {
+    "local": "/products/100094",
+    "api": "/api/products/100094",
+    "source": "https://dummyjson.com/products/94"
+  },
+  "relatedProducts": [
+    "relatedProductIds",
+    "frequentlyBoughtTogetherIds",
+    "crossSellProductIds",
+    "upSellProductIds"
+  ],
+  "availability": {
+    "isAvailable": true,
+    "availableFrom": null,
+    "availableUntil": null,
+    "salesChannels": [
+      "website"
+    ],
+    "regions": [
+      "BD"
+    ]
+  },
+  "analytics": {
+    "viewCount": 4582,
+    "salesCount": 2114,
+    "wishlistCount": 393,
+    "cartAdditionCount": 780,
+    "conversionRate": 7.56
+  },
+  "localization": {
+    "defaultLanguage": "en",
+    "translations": {
+      "en": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "Fast relief for fever and mild pain."
+      },
+      "bn": {
+        "name": "Eskayef Pharma Paracetamol 500mg Tablet - Standard Pack",
+        "shortDescription": "বিশ্বস্ত অনলাইন কেনাকাটার জন্য নির্বাচিত পণ্য।"
+      }
+    }
+  },
+  "audit": {
+    "source": "dummyjson-relatable-ecommerce-catalog",
+    "legacyId": 100094,
+    "sourceRecordIsReal": true,
+    "catalogVariantGenerated": true,
+    "createdBy": "system",
+    "updatedBy": "system",
+    "createdAt": "2026-07-18T00:00:00Z",
+    "updatedAt": "2026-07-21T00:00:00.000Z",
+    "publishedAt": "2026-07-18T00:00:00Z",
+    "deletedAt": null,
+    "version": 3
+  },
+  "manufacturer": "Longines",
+  "genericName": "Longines Master Collection",
+  "category": "Fashion Accessories",
+  "subcategory": "Men Watches",
+  "type": "simple",
+  "price": 187499,
+  "discountPrice": 155624,
+  "discountPercentage": 17,
+  "currency": "BDT",
+  "stock": 100,
+  "sold": 2114,
+  "prescriptionRequired": false,
+  "images": [
+    "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
+    "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/1.webp",
+    "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/2.webp",
+    "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/3.webp",
+    "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp?view=5"
+  ],
+  "thumbnail": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
+  "video": "/videos/catalog/fashion-accessories.mp4",
+  "description": "Longines Master Collection is a real ecommerce catalog item with dynamic product details, unique product imagery, current price, stock, ratings and delivery information for online shopping. The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
+  "shortDescription": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
+  "ingredients": [
+    "See seller or manufacturer information for full product composition."
+  ],
+  "benefits": [
+    "Easy to compare online",
+    "Current catalog price and stock",
+    "Suitable for ecommerce product detail testing"
+  ],
+  "highlights": [
+    "Men Watches product",
+    "Longines item",
+    "Unique product image",
+    "Dynamic catalog data"
+  ],
+  "specifications": {
+    "Product Type": "Men Watches",
+    "Brand": "Longines",
+    "Department": "Beauty",
+    "Category": "Fashion Accessories",
+    "Rating": "3.87"
+  },
+  "dosage": "Use as directed on packaging or by a healthcare professional.",
+  "warnings": [
+    "Review the product label before use.",
+    "Keep product in suitable storage condition.",
+    "Return policy depends on category and seller condition."
+  ],
+  "sideEffects": [],
+  "storage": "Store safely according to product type.; Avoid damage, heat or direct sunlight where applicable.",
+  "packageSize": "Standard Pack",
+  "weight": "",
+  "unit": "piece",
+  "country": "Bangladesh",
+  "expiry": "2028-12-31",
+  "rating": 3.9,
+  "reviewCount": 310,
+  "faq": [],
+  "tags": [
+    "mens-watches",
+    "longines",
+    "longines master collection",
+    "beauty",
+    "fashion accessories"
+  ],
+  "featured": false,
+  "bestSeller": true,
+  "newArrival": false,
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-07-23T04:47:05Z"
+}

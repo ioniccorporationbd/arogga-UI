@@ -1,38 +1,37 @@
-# Routes
+Updated: 2026-07-23
 
-## Canonical routes
+Branch: test-branch
 
-```text
-/products/[slug]
-/account
-/account/orders
-/account/inbox
-/account/wishlist
-/account/addresses
-/account/patients
-/account/prescriptions
-/account/reviews
-/cart
-/checkout
-/orders
-/inbox
-/wishlist
-```
+# Route Inventory
 
-## Legacy redirects
-
-Configured in `next.config.ts`:
-
-| Legacy route | Canonical route |
-|---|---|
-| `/product/:slug` | `/products/:slug` |
-| `/profile` | `/account` |
-| `/profile/orders` | `/account/orders` |
-| `/profile/inbox` | `/account/inbox` |
-| `/profile/wishlist` | `/account/wishlist` |
-| `/profile/addresses` | `/account/addresses` |
-| `/profile/patients` | `/account/patients` |
-| `/profile/prescriptions` | `/account/prescriptions` |
-| `/profile/reviews` | `/account/reviews` |
-
-Legacy route files are not deleted yet; redirects must remain verified before route removal.
+- `/`
+- `/[...categoryPath]`
+- `/account`
+- `/account/[section]`
+- `/brand/[slug]`
+- `/cart`
+- `/category/[slug]`
+- `/checkout`
+- `/doctor`
+- `/inbox`
+- `/lab`
+- `/orders`
+- `/product/[slug]`
+- `/products/[slug]`
+- `/profile`
+- `/profile/addresses`
+- `/profile/balance`
+- `/profile/blog`
+- `/profile/faq`
+- `/profile/inbox`
+- `/profile/offers`
+- `/profile/orders`
+- `/profile/patients`
+- `/profile/prescriptions`
+- `/profile/privacy-policy`
+- `/profile/reports`
+- `/profile/reviews`
+- `/profile/wishlist`
+- `/search`
+- `/store`
+- `/wishlist`

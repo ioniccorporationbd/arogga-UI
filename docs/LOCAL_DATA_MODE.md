@@ -1,29 +1,26 @@
-# Local Data Mode
+Updated: 2026-07-23
 
-`DATA_SOURCE=local` is the default and keeps the current application usable without external services.
+Branch: test-branch
 
-## Product data
+# Local Data Guide
 
-- Full legacy catalog: `public/data.json`
-- Backward-compatible full records: `public/data/products.json`
-- Lightweight list index: `public/data/products-index.json`
-- Search index: `public/data/search-index.json`
-- Category summaries: `public/data/categories.json`
-- Brand summaries: `public/data/brands.json`
+Fully local features:
+- Catalog indexes and product detail records generated from `public/data.json`.
+- Product listing/search/filter/sort via `/api/catalog/products`.
+- Cart and wishlist local persistence.
+- Account drawer, inbox, addresses, local orders.
+- Local checkout and local simulated payment.
 
-The `JsonProductRepository` uses server-side helpers so list/search features can avoid downloading the entire catalog.
-
-## Browser state
-
-Cart, wishlist, profile and local orders may still use `localStorage` in local mode. Those reads should be contained behind context/repository modules as pages are refactored.
-
-## Auth
-
-Development auth uses:
-
+Local data paths:
 ```text
-Mobile: 01712345678
-OTP: 123456
+data/products/
+data/products-index.json
+data/search-index.json
+data/categories.json
+data/brands.json
+data/navigation.json
+public/data.json
+public/data/*.json
 ```
 
-The API sets HttpOnly cookies to match the production session shape, but a real OTP provider/session store must replace demo behavior before production.
+Browser storage is used only for local demo cart/wishlist/account/order state, not auth truth.

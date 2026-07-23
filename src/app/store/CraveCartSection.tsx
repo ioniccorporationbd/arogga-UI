@@ -64,7 +64,7 @@ export default function CraveCartSection() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/api/catalog/products?shape=legacy", {
           cache: "no-store",
           signal: controller.signal,
         });
@@ -1525,7 +1525,7 @@ function ProductError({
         <button
           type="button"
           onClick={() =>
-            window.location.reload()
+            window.dispatchEvent(new Event("arogga-catalog-retry"))
           }
           className="mt-4 min-h-[42px] rounded-[9px] bg-[#145ca0] px-5 text-[13px] font-bold text-white"
         >

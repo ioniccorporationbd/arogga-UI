@@ -1,0 +1,44 @@
+:root {
+  --arogga-color-brand: #087b75;
+  --arogga-color-brand-600: #075f5a;
+  --arogga-color-accent: #0d9488;
+  --arogga-color-text: #101828;
+  --arogga-color-muted: #667085;
+  --arogga-color-border: #e4e7ec;
+  --arogga-color-surface: #ffffff;
+  --arogga-color-success: #12b76a;
+  --arogga-color-warning: #f79009;
+  --arogga-color-danger: #f04438;
+  --arogga-space-1: 4px;
+  --arogga-space-2: 8px;
+  --arogga-space-3: 12px;
+  --arogga-space-4: 16px;
+  --arogga-space-5: 20px;
+  --arogga-space-6: 24px;
+  --arogga-radius-sm: 8px;
+  --arogga-radius-md: 12px;
+  --arogga-radius-lg: 18px;
+  --arogga-radius-xl: 24px;
+  --arogga-shadow-card: 0 18px 50px -34px rgba(15, 23, 42, 0.45);
+  --arogga-shadow-drawer: -28px 0 80px -44px rgba(15, 23, 42, 0.75);
+  --arogga-container: 1200px;
+  --arogga-transition: 180ms ease;
+  --arogga-z-modal: 500;
+  --arogga-z-drawer: 430;
+  --arogga-button-height: 44px;
+  --arogga-input-height: 44px;
+}
+
+*:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--arogga-color-brand) 55%, white);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

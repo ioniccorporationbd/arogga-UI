@@ -185,14 +185,14 @@ export default function LabSeoContentSection() {
         setLoading(true);
         setDataError("");
 
-        const response = await fetch("/data.json", {
+        const response = await fetch("/api/catalog/products?shape=legacy", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load public/data.json. Status: ${response.status}`,
+            `Unable to load catalog products. Status: ${response.status}`,
           );
         }
 
