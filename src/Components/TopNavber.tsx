@@ -27,8 +27,9 @@ import { FormEvent, useEffect, useState } from "react";
 
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
+import { useWishlist } from "@/context/WishlistContext";
 import { notify } from "@/lib/notify";
-import CartDrawer from "./cart/CartDrawer";
+import CartDrawer from "@/components/cart/CartDrawer";
 import styles from "./TopNavber.module.css";
 
 const nav = [
@@ -48,6 +49,7 @@ export default function TopNavber() {
   const router = useRouter();
   const { user, logout, requireAuth, openLoginModal } = useAuth();
   const { count } = useCart();
+  const wishlist = useWishlist();
 
   const [query, setQuery] = useState("");
   const [cartOpen, setCartOpen] = useState(false);
@@ -210,7 +212,7 @@ export default function TopNavber() {
                   <UserRound /> Profile
                 </Link>
                 <Link href="/account/wishlist" onClick={() => setDropdown(null)}>
-                  <Heart /> Wishlist
+                  <Heart /> Wishlist <small>{wishlist.count}</small>
                 </Link>
                 <Link href="/account/orders" onClick={() => setDropdown(null)}>
                   <Package /> Orders

@@ -59,12 +59,15 @@ export default function PendingAuthActionExecutor() {
               return;
             }
             cart.addItem({
-              id: action.payload.variantId || product.id,
+              cartKey: `${product.id}:${action.payload.variantId || product.id}`,
+              productId: product.id,
+              variantId: action.payload.variantId || product.id,
               slug: product.slug,
               name: product.name,
               price,
               image: product.image || "/placeholder-product.png",
               sku: product.sku || action.payload.variantId,
+              selectedOptions: {},
               maxQuantity: product.stock || 99,
               regularPrice: product.regularPrice,
             }, action.payload.quantity);

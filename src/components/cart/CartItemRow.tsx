@@ -1,0 +1,6 @@
+"use client";
+import Image from "next/image";
+import { Heart, Trash2 } from "lucide-react";
+import type { CartItem } from "@/lib/cart/cart-domain";
+import CartQuantity from "./CartQuantity";
+export default function CartItemRow({ item, onQuantity, onRemove, onMoveToWishlist }: { item: CartItem; onQuantity: (cartKey: string, quantity: number) => void; onRemove: (cartKey: string) => void; onMoveToWishlist: (cartKey: string) => void }) { const price=item.salePrice ?? item.regularPrice ?? 0; return <article className="cart-item-row"><Image src={item.image || "/images/product-fallback.png"} alt={item.name} width={76} height={76} unoptimized/><div className="cart-item-body"><h3>{item.name}</h3><p>{item.sku}</p><div className="cart-options">{Object.entries(item.selectedOptions).map(([k,v]) => <span key={k}>{k}: {v}</span>)}</div>{item.quantity >= item.maxQuantity ? <small className="stock-warning">Maximum available quantity selected</small> : null}<strong>৳{Math.round(price).toLocaleString()}</strong><CartQuantity value={item.quantity} max={item.maxQuantity} onChange={(qty)=>onQuantity(item.cartKey, qty)}/><div className="cart-row-actions"><button type="button" onClick={()=>onMoveToWishlist(item.cartKey)}><Heart/> Move to wishlist</button><button type="button" onClick={()=>onRemove(item.cartKey)}><Trash2/> Remove</button></div></div></article>; }

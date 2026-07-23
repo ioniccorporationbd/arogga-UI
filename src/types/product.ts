@@ -1,20 +1,15 @@
 export type ProductVariant = {
   id: string;
+  productId: string;
   sku: string;
   name: string;
-  options: {
-    size?: string;
-    color?: string;
-    pack?: string;
-    weight?: string;
-    volume?: string;
-    strength?: string;
-    flavor?: string;
-  };
+  options: Record<string, string>;
   regularPrice: number;
   salePrice?: number;
   stock: number;
   image?: string;
+  maxQuantity: number;
+  available: boolean;
 };
 
 export type Product = {

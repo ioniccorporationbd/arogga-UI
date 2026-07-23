@@ -1,24 +1,25 @@
-import type { ProductVariant } from "./product";
-
 export type CartItem = {
   cartKey: string;
   productId: string;
+  variantId: string;
   slug: string;
   name: string;
-  image?: string;
-  variant?: ProductVariant;
+  image: string;
+  sku: string;
+  selectedOptions: Record<string, string>;
   quantity: number;
-  unitPrice: number;
+  maxQuantity: number;
   regularPrice?: number;
-  maxQuantity?: number;
-  stockStatus?: string;
+  salePrice?: number;
 };
 
 export type CartSummary = {
   items: CartItem[];
+  count: number;
   subtotal: number;
-  discountTotal: number;
-  deliveryFee: number;
-  taxTotal: number;
+  discount: number;
+  vat: number;
+  shipping: number;
+  total: number;
   grandTotal: number;
 };

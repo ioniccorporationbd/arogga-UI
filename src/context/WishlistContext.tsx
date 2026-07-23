@@ -1,21 +1,15 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type ReactNode,
-} from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 
 import { useAuth } from "@/context/AuthContext";
 import { notify } from "@/lib/notify";
+import { mergeGuestWishlist, shouldRequireWishlistLogin, wishlistKey } from "@/lib/wishlist/wishlist-domain";
 
 export type WishlistItem = {
   id: string;
+  productId?: string;
   slug: string;
   name: string;
   price: number;
@@ -30,105 +24,123 @@ export type WishlistItem = {
 
 type Value = {
   items: WishlistItem[];
+  count: number;
+  loading: boolean;
+  error: string;
   has: (id: string) => boolean;
-  toggle: (item: WishlistItem) => void;
   add: (item: WishlistItem) => void;
+  addWithAuth: (item: WishlistItem) => boolean;
+  toggle: (item: WishlistItem) => void;
+  toggleWithAuth: (item: WishlistItem) => boolean;
   remove: (id: string) => void;
+  moveToCart: (id: string) => WishlistItem | null;
+  mergeGuestWishlist: () => void;
+  clear: () => void;
 };
 
 const WishlistContext = createContext<Value | null>(null);
-const LEGACY_KEY = "arogga-wishlist";
-const USER_KEY_PREFIX = "arogga-wishlist:";
+const GUEST_KEY = wishlistKey();
 
-function getWishlistKey(phone?: string) {
-  return `${USER_KEY_PREFIX}${phone || "guest"}`;
-}
-
-function normalizeItem(item: WishlistItem): WishlistItem {
-  return {
-    ...item,
-    slug: item.slug || item.id,
-    addedAt: item.addedAt || new Date().toISOString(),
-  };
-}
-
+function idOf(item: WishlistItem) { return item.productId || item.id; }
+function normalizeItem(item: WishlistItem): WishlistItem { return { ...item, productId: idOf(item), id: idOf(item), slug: item.slug || idOf(item), addedAt: item.addedAt || new Date().toISOString() }; }
 function readFromKey(key: string): WishlistItem[] {
   try {
     const value = JSON.parse(localStorage.getItem(key) || "[]");
-    return Array.isArray(value)
-      ? value.filter((item): item is WishlistItem => Boolean(item && typeof item === "object" && typeof item.id === "string"))
-      : [];
-  } catch {
-    localStorage.removeItem(key);
-    return [];
-  }
-}
-
-function read(phone?: string): WishlistItem[] {
-  const scopedKey = getWishlistKey(phone);
-  const scopedItems = readFromKey(scopedKey);
-  if (scopedItems.length > 0 || !phone) return scopedItems;
-
-  const legacyItems = readFromKey(LEGACY_KEY);
-  if (legacyItems.length > 0) {
-    localStorage.setItem(scopedKey, JSON.stringify(legacyItems.map(normalizeItem)));
-    return legacyItems.map(normalizeItem);
-  }
-
-  return [];
+    return Array.isArray(value) ? value.filter((item): item is WishlistItem => Boolean(item && typeof item === "object" && typeof item.id === "string")).map(normalizeItem) : [];
+  } catch { localStorage.removeItem(key); return []; }
 }
 
 export function WishlistProvider({ children }: { children: ReactNode }) {
-  const { user } = useAuth();
-  const phone = user?.phone;
+  const { user, requireAuth } = useAuth();
+  const key = wishlistKey(user?.phone);
   const [items, setItems] = useState<WishlistItem[]>([]);
-
-  useEffect(() => {
-    setItems(read(phone));
-  }, [phone]);
+  const [loading] = useState(false);
+  const [error] = useState("");
 
   const save = useCallback((nextItems: WishlistItem[]) => {
     const normalized = nextItems.map(normalizeItem);
     setItems(normalized);
-    localStorage.setItem(getWishlistKey(phone), JSON.stringify(normalized));
-  }, [phone]);
+    localStorage.setItem(key, JSON.stringify(normalized));
+    window.dispatchEvent(new Event("arogga-wishlist-updated"));
+  }, [key]);
+
+  const mergeGuest = useCallback(() => {
+    if (!user?.phone) return;
+    const merged = mergeGuestWishlist(readFromKey(GUEST_KEY).map((item) => ({ productId: idOf(item), slug: item.slug, name: item.name, image: item.image, addedAt: item.addedAt })), readFromKey(key).map((item) => ({ productId: idOf(item), slug: item.slug, name: item.name, image: item.image, addedAt: item.addedAt })));
+    const next = merged.map((item) => ({ ...item, id: item.productId, price: 0 }));
+    localStorage.removeItem(GUEST_KEY);
+    save(next);
+  }, [key, save, user?.phone]);
+
+  useEffect(() => {
+    if (user?.phone && readFromKey(GUEST_KEY).length > 0) mergeGuest();
+    else setItems(readFromKey(key));
+  }, [key, mergeGuest, user?.phone]);
 
   const add = useCallback((item: WishlistItem) => {
-    const current = read(phone);
+    const current = readFromKey(key);
     const normalized = normalizeItem(item);
-    const exists = current.some((entry) => entry.id === item.id);
-    save(exists
-      ? current.map((entry) => entry.id === item.id ? { ...entry, ...normalized } : entry)
-      : [normalized, ...current]);
+    const exists = current.some((entry) => idOf(entry) === idOf(normalized));
+    save(exists ? current.map((entry) => idOf(entry) === idOf(normalized) ? { ...entry, ...normalized } : entry) : [normalized, ...current]);
     notify.wishlist.added(item.name);
-  }, [phone, save]);
+  }, [key, save]);
+
+  const addWithAuth = useCallback((item: WishlistItem) => {
+    if (shouldRequireWishlistLogin(user)) {
+      requireAuth({ reason: "Login to save products to wishlist.", pendingAction: { type: "ADD_TO_WISHLIST", payload: { productId: idOf(item) } } });
+      return false;
+    }
+    add(item);
+    return true;
+  }, [add, requireAuth, user]);
 
   const toggle = useCallback((item: WishlistItem) => {
-    const current = read(phone);
-    const exists = current.some((entry) => entry.id === item.id);
-    save(exists
-      ? current.filter((entry) => entry.id !== item.id)
-      : [normalizeItem(item), ...current]);
+    const current = readFromKey(key);
+    const exists = current.some((entry) => idOf(entry) === idOf(item));
+    save(exists ? current.filter((entry) => idOf(entry) !== idOf(item)) : [normalizeItem(item), ...current]);
     if (exists) notify.wishlist.removed(item.name); else notify.wishlist.added(item.name);
-  }, [phone, save]);
+  }, [key, save]);
+
+  const toggleWithAuth = useCallback((item: WishlistItem) => {
+    if (shouldRequireWishlistLogin(user)) {
+      requireAuth({ reason: "Login to save products to wishlist.", pendingAction: { type: "ADD_TO_WISHLIST", payload: { productId: idOf(item) } } });
+      return false;
+    }
+    toggle(item);
+    return true;
+  }, [requireAuth, toggle, user]);
 
   const remove = useCallback((id: string) => {
-    const current = read(phone);
-    const removed = current.find((item) => item.id === id);
-    save(current.filter((item) => item.id !== id));
+    const current = readFromKey(key);
+    const removed = current.find((item) => idOf(item) === id);
+    save(current.filter((item) => idOf(item) !== id));
     if (removed) notify.wishlist.removed(removed.name);
-  }, [phone, save]);
+  }, [key, save]);
 
-  const value = useMemo(
-    () => ({
-      items,
-      has: (id: string) => items.some((item) => item.id === id),
-      toggle,
-      add,
-      remove,
-    }),
-    [items, toggle, add, remove],
-  );
+  const moveToCart = useCallback((id: string) => {
+    const current = readFromKey(key);
+    const item = current.find((entry) => idOf(entry) === id) || null;
+    if (item) remove(id);
+    return item;
+  }, [key, remove]);
+
+  const clear = useCallback(() => save([]), [save]);
+
+  const value = useMemo(() => ({
+    items,
+    count: items.length,
+    loading,
+    error,
+    has: (id: string) => items.some((item) => idOf(item) === id),
+    add,
+    addWithAuth,
+    toggle,
+    toggleWithAuth,
+    remove,
+    moveToCart,
+    mergeGuestWishlist: mergeGuest,
+    clear,
+  }), [items, loading, error, add, addWithAuth, toggle, toggleWithAuth, remove, moveToCart, mergeGuest, clear]);
 
   return <WishlistContext.Provider value={value}>{children}</WishlistContext.Provider>;
 }

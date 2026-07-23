@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 
 import { getCurrencySymbol, getProductDiscount, getProductPrice } from "@/lib/products";
+import { normalizeProductVariants } from "@/lib/product-variants";
 import { getServerProductByIdentifier } from "@/lib/server-products";
 import ProductDetailActions from "./ProductDetailActions";
 import ProductImageSlider from "./ProductImageSlider";
@@ -111,6 +112,7 @@ export default async function ProductDetailsPage({
   const collections = product.taxonomy?.collections || [];
   const attributes = product.attributes || [];
   const options = product.options || [];
+  const variants = normalizeProductVariants(product as Parameters<typeof normalizeProductVariants>[0]);
   const returnConditions = product.seller?.returnPolicy?.conditions || [];
   const salesChannels = product.availability?.salesChannels || [];
   const regions = product.availability?.regions || [];
@@ -194,8 +196,8 @@ export default async function ProductDetailsPage({
               }}
               maxQuantity={maximumQuantity}
               disabled={!isAvailable}
-              options={product.options}
-              packageLabel={packageLabel}
+              options={options}
+              variants={variants}
               prescriptionRequired={prescriptionRequired}
             />
 
