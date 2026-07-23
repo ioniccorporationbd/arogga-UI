@@ -46,7 +46,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Product data integration
 
-The storefront uses one canonical public catalog file: `public/product-data.Json`.
+The storefront uses one canonical public catalog file: `public/data.json`.
 
 - Store, home product cards, lab product sections, search API and product details all read from the same file.
 - Product detail route: `/products/[id]` with slug fallback support.

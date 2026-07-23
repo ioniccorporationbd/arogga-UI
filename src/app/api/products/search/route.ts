@@ -43,7 +43,7 @@ function toIndex(product: EcommerceProduct): ProductIndex {
 async function getIndex() {
   if (cache) return cache;
 
-  const file = await readFile(path.join(process.cwd(), "public", "product-data.Json"), "utf8");
+  const file = await readFile(path.join(process.cwd(), "public", "data.json"), "utf8");
   const parsed: unknown = JSON.parse(file);
   const products = Array.isArray(parsed) ? (parsed as EcommerceProduct[]) : [];
 

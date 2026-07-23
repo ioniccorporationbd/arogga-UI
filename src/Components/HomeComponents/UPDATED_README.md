@@ -1,6 +1,6 @@
 # Updated Home Components
 
-All product-based home components now use the nested `public/product-data.Json` model through shared files:
+All product-based home components now use the nested `public/data.json` model through shared files:
 
 - `ProductSection.tsx`
 - `product-data.ts`
@@ -19,4 +19,4 @@ Expected data fields include:
 - `shipping.delivery`
 - `urls.local`
 
-Place the folder in your components directory and keep product data at `public/product-data.Json`.
+Place the folder in your components directory and keep product data at `public/data.json`.

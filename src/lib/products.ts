@@ -74,6 +74,48 @@ export type EcommerceProduct = {
   urls: { local: string; api: string; source: string };
   availability?: { isAvailable: boolean; availableFrom: string | null; availableUntil: string | null; salesChannels: string[]; regions: string[] };
   analytics?: { viewCount: number; salesCount: number; wishlistCount: number; cartAdditionCount: number; conversionRate: number };
+
+  // Flat API-ready fields mirrored in public/data.json. Existing nested fields stay for backward compatibility.
+  genericName?: string;
+  manufacturer?: string;
+  category?: string;
+  subcategory?: string;
+  type?: string;
+  price?: number;
+  discountPrice?: number;
+  discountPercentage?: number;
+  currency?: string;
+  stock?: number;
+  sold?: number;
+  prescriptionRequired?: boolean;
+  images?: string[];
+  thumbnail?: string;
+  video?: string;
+  description?: string;
+  shortDescription?: string;
+  ingredients?: string[];
+  benefits?: string[];
+  highlights?: string[];
+  specifications?: Record<string, string>;
+  dosage?: string;
+  warnings?: string[];
+  sideEffects?: string[];
+  storage?: string;
+  packageSize?: string;
+  weight?: string;
+  unit?: string;
+  country?: string;
+  expiry?: string;
+  rating?: number;
+  reviewCount?: number;
+  faq?: Array<{ question?: string; answer?: string }>;
+  tags?: string[];
+  relatedProducts?: string[];
+  featured?: boolean;
+  bestSeller?: boolean;
+  newArrival?: boolean;
+  createdAt?: string;
+  updatedAt?: string;
 };
 
 export function getCurrencySymbol(currency: string) {

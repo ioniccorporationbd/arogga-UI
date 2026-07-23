@@ -49,7 +49,7 @@ export type ProductCardData = {
   sourceUrl: string | null;
 };
 
-export const PRODUCT_DATA_URL = "/product-data.Json";
+export const PRODUCT_DATA_URL = "/data.json";
 export const FALLBACK_IMAGE = "/images/product-fallback.png";
 
 export function isValidProduct(value: unknown): value is JsonProduct {
@@ -83,7 +83,7 @@ export function normalizeProduct(product: JsonProduct): ProductCardData {
   return {
     id: String(product.id),
     slug: product.slug,
-    href: `/products/${product.id}`,
+    href: `/product/${product.slug || product.id}`,
     name: product.name,
     brand: product.brand?.name || "Brand",
     category: product.taxonomy?.subCategory?.name || product.taxonomy?.category?.name || product.taxonomy?.department?.name || "Product",

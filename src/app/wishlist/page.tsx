@@ -11,7 +11,7 @@ import { useWishlist, type WishlistItem } from "@/context/WishlistContext";
 import "./wishlist.css";
 
 function getProductHref(product: WishlistItem) {
-  return `/products/${product.id || product.slug}`;
+  return `/product/${product.slug || product.id}`;
 }
 
 export default function WishlistPage() {

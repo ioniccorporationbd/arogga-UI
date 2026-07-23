@@ -176,14 +176,14 @@ export default function TrustedLabPartners() {
         setLoading(true);
         setLoadError("");
 
-        const response = await fetch("/product-data.Json", {
+        const response = await fetch("/data.json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load /product-data.Json. Status: ${response.status}`,
+            `Unable to load /data.json. Status: ${response.status}`,
           );
         }
 
@@ -191,7 +191,7 @@ export default function TrustedLabPartners() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/product-data.Json must contain a JSON array.",
+            "public/data.json must contain a JSON array.",
           );
         }
 
@@ -209,7 +209,7 @@ export default function TrustedLabPartners() {
         setLoadError(
           error instanceof Error
             ? error.message
-            : "Unable to load product-data.Json.",
+            : "Unable to load data.json.",
         );
       } finally {
         if (!controller.signal.aborted) {

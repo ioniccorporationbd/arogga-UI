@@ -10,7 +10,7 @@ import { useCart } from "@/context/CartContext";
 
 export default function CartPage() {
   const { user, ready } = useAuth();
-  const { items, subtotal, removeItem, updateQuantity, clearCart } = useCart();
+  const { items, subtotal, discount, vat, shipping, grandTotal, removeItem, updateQuantity, clearCart } = useCart();
 
   if (ready && !user) {
     return (
@@ -54,7 +54,7 @@ export default function CartPage() {
                   {item.image && <Image src={item.image} alt={item.name} fill sizes="92px" style={{ objectFit: "contain" }} unoptimized />}
                 </div>
                 <div>
-                  <Link href={`/products/${item.slug}`} style={{ color: "#101828", fontWeight: 750, textDecoration: "none" }}>{item.name}</Link>
+                  <Link href={`/product/${item.slug || item.id}`} style={{ color: "#101828", fontWeight: 750, textDecoration: "none" }}>{item.name}</Link>
                   <strong style={{ display: "block", marginTop: 8, color: "#087b75" }}>৳{item.price.toFixed(2)}</strong>
                   <div style={{ display: "inline-flex", alignItems: "center", marginTop: 10, border: "1px solid #d0d5dd", borderRadius: 9 }}>
                     <button onClick={() => updateQuantity(item.id, item.quantity - 1)} style={qtyButton}><Minus size={13} /></button>
@@ -71,6 +71,10 @@ export default function CartPage() {
           <aside style={{ padding: 20, border: "1px solid #e4e7ec", borderRadius: 16, background: "#fff", height: "fit-content" }}>
             <h2>Order summary</h2>
             <div style={{ display: "flex", justifyContent: "space-between", marginTop: 18 }}><span>Subtotal</span><strong>৳{subtotal.toFixed(2)}</strong></div>
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: 10, color: "#087b75" }}><span>Discount</span><strong>-৳{discount.toFixed(2)}</strong></div>
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: 10 }}><span>VAT</span><strong>৳{vat.toFixed(2)}</strong></div>
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: 10 }}><span>Shipping</span><strong>৳{shipping.toFixed(2)}</strong></div>
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: 14, paddingTop: 14, borderTop: "1px solid #e4e7ec" }}><span>Grand total</span><strong>৳{grandTotal.toFixed(2)}</strong></div>
             <Link href="/checkout" style={{ display: "grid", placeItems: "center", minHeight: 46, marginTop: 20, borderRadius: 11, color: "#fff", background: "#087b75", textDecoration: "none", fontWeight: 850 }}>Checkout</Link>
           </aside>
         </div>

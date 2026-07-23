@@ -185,14 +185,14 @@ export default function LabSeoContentSection() {
         setLoading(true);
         setDataError("");
 
-        const response = await fetch("/product-data.Json", {
+        const response = await fetch("/data.json", {
           cache: "no-store",
           signal: controller.signal,
         });
 
         if (!response.ok) {
           throw new Error(
-            `Unable to load public/product-data.Json. Status: ${response.status}`,
+            `Unable to load public/data.json. Status: ${response.status}`,
           );
         }
 
@@ -200,7 +200,7 @@ export default function LabSeoContentSection() {
 
         if (!Array.isArray(result)) {
           throw new Error(
-            "public/product-data.Json must contain a JSON array of products.",
+            "public/data.json must contain a JSON array of products.",
           );
         }
 
@@ -216,7 +216,7 @@ export default function LabSeoContentSection() {
         setDataError(
           error instanceof Error
             ? error.message
-            : "Unable to load product-data.Json.",
+            : "Unable to load data.json.",
         );
       } finally {
         if (!controller.signal.aborted) {

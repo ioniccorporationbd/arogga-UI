@@ -183,7 +183,7 @@ public/banners/ecommerce-banner-07.webp
 The canonical catalog file is:
 
 ```text
-public/product-data.Json
+public/data.json
 ```
 
 Do not reintroduce duplicate product files:

@@ -235,7 +235,7 @@ export default async function ProductDetailsPage({
               <div className="pd-catalog-card">
                 <div>
                   <span>Single catalog file</span>
-                  <strong>public/product-data.Json</strong>
+                  <strong>public/data.json</strong>
                 </div>
                 <p>Cards, search and product details now read the same item record, same featured image and same 5-image gallery.</p>
               </div>
